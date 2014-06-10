@@ -31,6 +31,14 @@ If there's anything I forgot to mention,I would be very appreciated for helping 
 
 And there are also many useful feature like TripleDes Utils,WebViewUtils,Md5Utils etc.
 
+TripleDes Utils,WebViewUtils,Md5Utils
+
+
+目前主要包含的功能有View Injection,ORM,异步网络请求和图片加载，自动化脚本测试,磁盘LRU等功能，同时提供了类似于TripleDes、Webview快速设置、Md5
+处理、String处理等常用工具类，还有类似于滑动返回、带动画的expandable listview等UI效果，以及类似于圆角图片，图像模糊等多种
+控件效果。并且这些功能正在逐步增加中。
+
+欢迎各种fork与提意见，
 
 
 License
