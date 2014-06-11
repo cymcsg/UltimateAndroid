@@ -3,8 +3,16 @@ CommonLibs of Android Development
 
 A fast way to develop Android apps.
 
-The lib contains many feature like View Injection,ORM,Asynchronous Http and Image,User scenario testing,etc.And it will
-be added by more feature in the future.
+The lib contains many feature like View Injection,ORM,Asynchronous Http and Image,User scenario testing,etc.And it will be added by more feature in the future.
+
+
+About Demos and docs: I will add some demos and docs in next two weeks with some other
+fuctional feature.Thanks very much for star the project.
+
+在未来的两周将进行Demo和文档的更新，同时还有一系列功能上的改进，感谢大家支持。
+
+
+
 
 The CommonLibs use many opensource program and I am very grateful to the author of them.
 The opensource program which I use:
@@ -38,7 +46,7 @@ TripleDes Utils,WebViewUtils,Md5Utils
 处理、String处理等常用工具类，还有类似于滑动返回、带动画的expandable listview等UI效果，以及类似于圆角图片，图像模糊等多种
 控件效果。并且这些功能正在逐步增加中。
 
-欢迎各种fork与提意见，
+欢迎各种fork与提意见。
 
 
 License
