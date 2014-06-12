@@ -19,9 +19,14 @@ import com.nostra13.universalimageloader.utils.StorageUtils;
 import java.io.File;
 
 /**
- * Created by cym on 14-4-30.
+ * Get Config of UniversalImageLoader
  */
 public class UniversalImageLoader {
+    /**
+     * The method is to get the Default UniversalImageLoader config
+     * @param context
+     * @return ImageLoaderConfiguration
+     */
     public static ImageLoaderConfiguration getDefaultImageLoaderConfiguration(Context context) {
         File cacheDir = StorageUtils.getCacheDirectory(context);
         ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(context)

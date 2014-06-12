@@ -7,11 +7,11 @@ import android.net.NetworkInfo;
 
 
 /**
- * Created with IntelliJ IDEA.
+ *
  * User: cym
  * Date: 13-9-22
  * Time: 下午2:09
- * To change this template use File | Settings | File Templates.
+ *
  */
 public class BasicNetworkUtils {
     public static boolean checkNetwork(Context context) {

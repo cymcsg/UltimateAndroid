@@ -9,22 +9,22 @@ import com.fss.Common.commonUtils.logUtils.Logs;
 import java.io.*;
 
 /**
- * Created with IntelliJ IDEA.
+ * @deprecated To copy database from asset or sdcard to the app directory.
  * User: cym
  * Date: 13-9-25
  * Time: 下午2:30
- * To change this template use File | Settings | File Templates.
+ * .
  */
 public class PackageUtils {
 
-    public static boolean copyDateBaseToMemory(Context context, String dbname,int resource) {
+    public static boolean copyDateBaseToMemory(Context context, String dbname, int resource) {
         String packageName = context.getPackageName();
         String DATABASE_PATH = "/data/data/" + packageName + "/databases/";
         try {
-            String path=context.getDatabasePath(dbname).getAbsolutePath();
-            if (context.getDatabasePath(dbname).getAbsolutePath().substring(0,path.lastIndexOf("/"))
-                    .contains("qingdaonews")){
-                DATABASE_PATH=path.substring(0,path.lastIndexOf("/")+1);
+            String path = context.getDatabasePath(dbname).getAbsolutePath();
+            if (context.getDatabasePath(dbname).getAbsolutePath().substring(0, path.lastIndexOf("/"))
+                    .contains("qingdaonews")) {
+                DATABASE_PATH = path.substring(0, path.lastIndexOf("/") + 1);
             }
             Logs.d(context.getDatabasePath(dbname).getAbsolutePath() + "  " + context.getApplicationContext().getPackageResourcePath());
 
@@ -34,7 +34,7 @@ public class PackageUtils {
         }
 
         try {
-            copyDataBaseToPhone(DATABASE_PATH, dbname, context,resource);
+            copyDataBaseToPhone(DATABASE_PATH, dbname, context, resource);
             return true;
         } catch (Exception e) {
             e.printStackTrace();
@@ -44,7 +44,7 @@ public class PackageUtils {
 
     }
 
-    private static void copyDataBaseToPhone(String DATABASE_PATH, String dbName, Context context,int resource) {
+    private static void copyDataBaseToPhone(String DATABASE_PATH, String dbName, Context context, int resource) {
 
         // 判断数据库是否存在
         boolean dbExist = checkDataBase(DATABASE_PATH, dbName);
@@ -53,7 +53,7 @@ public class PackageUtils {
             Logs.d("The database is exist.");
         } else {// 不存在就把raw里的数据库写入手机
             try {
-                copyDataBase(DATABASE_PATH, dbName, context,resource);
+                copyDataBase(DATABASE_PATH, dbName, context, resource);
             } catch (IOException e) {
                 throw new Error("Error copying database");
             }
@@ -71,7 +71,7 @@ public class PackageUtils {
             String databaseFilename = DATABASE_PATH + dbName;
             db = SQLiteDatabase.openDatabase(databaseFilename, null, SQLiteDatabase.OPEN_READONLY);
         } catch (SQLiteException e) {
-               Logs.e(e,"");
+            Logs.e(e, "");
         }
         if (db != null) {
             db.close();
@@ -84,14 +84,14 @@ public class PackageUtils {
      *
      * @throws java.io.IOException
      */
-    private static void copyDataBase(String DATABASE_PATH, String dbName, Context context,int resource) throws IOException {
+    private static void copyDataBase(String DATABASE_PATH, String dbName, Context context, int resource) throws IOException {
         String databaseFilenames = DATABASE_PATH + dbName;
         File dir = new File(DATABASE_PATH);
         if (!dir.exists())// 判断文件夹是否存在，不存在就新建一个
             dir.mkdir();
         FileOutputStream os = new FileOutputStream(databaseFilenames);// 得到数据库文件的写入流
         InputStream is = context.getResources().openRawResource(resource);// 得到数据库文件的数据流
-       // InputStream is=context.getAssets().open(dbName);
+        // InputStream is=context.getAssets().open(dbName);
         byte[] buffer = new byte[8192];
         int count = 0;
         while ((count = is.read(buffer)) > 0) {

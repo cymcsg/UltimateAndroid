@@ -8,13 +8,15 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 /**
- * Created with IntelliJ IDEA.
+ * To get the HEX,SHA1,Unicode of String
  * User: cym
  * Date: 13-10-18
  * Time: 上午9:16
- * To change this template use File | Settings | File Templates.
+ *
  */
 public class StringUtils {
     /**
@@ -98,4 +100,48 @@ public class StringUtils {
         }
         return total.toString();
     }
+
+    public static String decodeHtml(String str){
+
+        String rst = str;
+
+        rst = rst.replaceAll("&lt;", "<");
+        rst = rst.replaceAll("&gt;", ">");
+        rst = rst.replaceAll("&quot;", "\"");
+        rst = rst.replaceAll("&amp;", "&");
+
+
+        return rst;
+
+    }
+
+    public static String SHA1(String s) {
+        try {
+            MessageDigest digest = MessageDigest.getInstance("SHA-1");
+            digest.update(s.getBytes());
+            byte messageDigest[] = digest.digest();
+            return toHexString(messageDigest);
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        }
+        return "";
+    }
+
+    public static String toHexString(byte[] keyData) {
+        if (keyData == null) {
+            return null;
+        }
+        int expectedStringLen = keyData.length * 2;
+        StringBuilder sb = new StringBuilder(expectedStringLen);
+        for (int i = 0; i < keyData.length; i++) {
+            String hexStr = Integer.toString(keyData[i] & 0x00FF,16);
+            if (hexStr.length() == 1) {
+                hexStr = "0" + hexStr;
+            }
+            sb.append(hexStr);
+        }
+        return sb.toString();
+    }
+
+
 }

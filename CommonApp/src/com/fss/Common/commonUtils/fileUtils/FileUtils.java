@@ -7,7 +7,7 @@ import com.fss.Common.commonUtils.logUtils.Logs;
 import java.io.*;
 
 /**
- * Created with IntelliJ IDEA.
+ * TO do something with File,like read ,del etc.
  * User: cym
  * Date: 13-10-23
  * Time: 上午11:01

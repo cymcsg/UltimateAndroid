@@ -5,11 +5,11 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 
 /**
- * Created with IntelliJ IDEA.
+ * Some default value of webview
  * User: cym
  * Date: 13-10-31
  * Time: 下午3:48
- * To change this template use File | Settings | File Templates.
+ *
  */
 //WebViewUtils
 public class WebViewUtils {

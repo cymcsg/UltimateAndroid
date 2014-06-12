@@ -7,11 +7,11 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /**
- * Created with IntelliJ IDEA.
+ *
  * User: cym
  * Date: 13-10-23
  * Time: 上午9:55
- * To change this template use File | Settings | File Templates.
+ *
  */
 public class UpdateUtils {
     public static void updateInMemory(String fileName) {

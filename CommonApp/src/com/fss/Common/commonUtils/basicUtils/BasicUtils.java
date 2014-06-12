@@ -25,11 +25,15 @@ import java.util.Map;
  * To change this template use File | Settings | File Templates.
  */
 public class BasicUtils {
+    /**
+     * Print all items of HashMap(which value is or can be convert to String)
+     * @param hashMap
+     * @param classAndMethodName
+     */
     public static void iterateHashMap(HashMap hashMap, String classAndMethodName) {
         Iterator iterator = hashMap.entrySet().iterator();
         Logs.d(classAndMethodName);
         while (iterator.hasNext()) {
-            //Method1
             Object obj = iterator.next();
             Logs.d(obj.toString());
             //Method2

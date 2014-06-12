@@ -11,6 +11,9 @@ fuctional feature.Thanks very much for star the project.
 
 在未来的两周将进行Demo和文档的更新，同时还有一系列功能上的改进，感谢大家支持。
 
+2014.6.12:Add descriptions of most of the classes.
+          增加了类说明，还有一些方法名相对明确。
+
 
 
 
