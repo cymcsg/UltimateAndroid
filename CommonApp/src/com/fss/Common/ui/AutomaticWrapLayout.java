@@ -10,11 +10,11 @@ import com.fss.Common.commonUtils.uiUtils.BasicUiUtils;
 
 
 /**
- * Created with IntelliJ IDEA.
+ *
  * User: cym
  * Date: 13-10-28
  * Time: 下午4:45
- * To change this template use File | Settings | File Templates.
+ *
  */
 //AutomaticWrapLayout
 public class AutomaticWrapLayout extends ViewGroup {

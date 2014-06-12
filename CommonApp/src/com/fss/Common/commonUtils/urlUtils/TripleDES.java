@@ -10,7 +10,7 @@ import javax.crypto.spec.SecretKeySpec;
 import java.security.MessageDigest;
 
 /**
- * Created with IntelliJ IDEA.
+ *
  * User: marshalchen
  * Date: 13-7-4
  */

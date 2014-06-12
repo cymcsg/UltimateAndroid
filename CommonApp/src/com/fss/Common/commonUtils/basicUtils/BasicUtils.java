@@ -18,11 +18,11 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created with IntelliJ IDEA.
+ *
  * User: cym
  * Date: 13-9-24
  * Time: 下午3:28
- * To change this template use File | Settings | File Templates.
+ *
  */
 public class BasicUtils {
     /**

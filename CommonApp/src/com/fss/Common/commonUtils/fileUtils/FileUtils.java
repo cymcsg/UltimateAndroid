@@ -11,7 +11,7 @@ import java.io.*;
  * User: cym
  * Date: 13-10-23
  * Time: 上午11:01
- * To change this template use File | Settings | File Templates.
+ *
  */
 public class FileUtils {
     public static String readFilesToString(String fileName) throws IOException {
