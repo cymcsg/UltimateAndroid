@@ -11,8 +11,12 @@ fuctional feature.Thanks very much for star the project.
 
 在未来的两周将进行Demo和文档的更新，同时还有一系列功能上的改进，感谢大家支持。
 
+
+
+Update：
 2014.6.12:Add descriptions of most of the classes.
           增加了类说明，还有一些方法名相对明确。
+2014.6.14：Add NineOldAndroids
 
 
 
@@ -37,6 +41,10 @@ The opensource program which I use:
 8.[google-gson][8]
 
 9.RobotiumTech's [robotium][9]
+
+10.JakeWharton's [NineOldAndroids][10]
+
+11.JakeWharton's [Android-ViewPagerIndicator][11]
 
 If there's anything I forgot to mention,I would be very appreciated for helping me notice it.
 
@@ -79,6 +87,8 @@ License
  [7]: https://github.com/Issacw0ng/SwipeBackLayout
  [8]: https://code.google.com/p/google-gson/
  [9]: https://github.com/RobotiumTech/robotium
+ [10]:https://github.com/JakeWharton/NineOldAndroids
+ [11]:https://github.com/JakeWharton/Android-ViewPagerIndicator
 =======
 
 
