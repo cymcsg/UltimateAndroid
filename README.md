@@ -16,7 +16,8 @@ fuctional feature.Thanks very much for star the project.
 Update：
 2014.6.12:Add descriptions of most of the classes.
           增加了类说明，还有一些方法名相对明确。
-2014.6.14：Add NineOldAndroids
+2014.6.14：Add NineOldAndroids to support Android 2.1~2.3
+           增加了支持2.3的android动画，毕竟在某些地方2.3的占有率并不低。该类库如果不需要可移除。
 
 
 
@@ -58,6 +59,8 @@ TripleDes Utils,WebViewUtils,Md5Utils
 控件效果。并且这些功能正在逐步增加中。
 
 欢迎各种fork与提意见。
+
+如果大家有需要的功能，欢迎随时提意见。
 
 
 License
