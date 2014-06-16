@@ -14,10 +14,18 @@ fuctional feature.Thanks very much for star the project.
 
 
 Update：
+
 2014.6.12:Add descriptions of most of the classes.
           增加了类说明，还有一些方法名相对明确。
+
+
 2014.6.14：Add NineOldAndroids to support Android 2.1~2.3
            增加了支持2.3的android动画，毕竟在某些地方2.3的占有率并不低。该类库如果不需要可移除。
+
+2014.6.16  Add enhanceListView for swipe to dismiss;
+           Move NineOldAndroids to Main Lib project.
+           增加了滑动删除的Listview；
+           将NineOldAndroids从依赖项目改为放入主Lib工程，方便大家配置使用。
 
 
 
