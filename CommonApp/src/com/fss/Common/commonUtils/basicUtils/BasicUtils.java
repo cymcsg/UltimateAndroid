@@ -18,15 +18,14 @@ import java.util.List;
 import java.util.Map;
 
 /**
- *
  * User: cym
  * Date: 13-9-24
  * Time: 下午3:28
- *
  */
 public class BasicUtils {
     /**
      * Print all items of HashMap(which value is or can be convert to String)
+     *
      * @param hashMap
      * @param classAndMethodName
      */
@@ -199,6 +198,13 @@ public class BasicUtils {
         context.startActivity(intent);
     }
 
+    public static void sendIntent(Context context, Class classes, String key, String value) {
+        Intent intent = new Intent();
+        intent.setClass(context, classes);
+        intent.putExtra(key, value);
+        context.startActivity(intent);
+    }
+
     public static String getSharedPreferences(Context context, String fileName, String parameterName) {
         SharedPreferences sp = context.getSharedPreferences(fileName, 0);
         String parameter = sp.getString(parameterName, "");
@@ -247,6 +253,7 @@ public class BasicUtils {
     public static boolean judgeIfNull(Map map) {
         return map != null && map.size() > 0 ? true : false;
     }
+
     public static boolean judgeIfNull(List list) {
         return list != null && list.size() > 0 ? true : false;
     }
