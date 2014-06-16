@@ -2,7 +2,7 @@ package com.fss.Common.nineoldandroids.view;
 
 import android.view.View;
 import android.view.animation.Interpolator;
-import com.nineoldandroids.animation.Animator.AnimatorListener;
+import com.fss.Common.nineoldandroids.animation.Animator.AnimatorListener;
 
 import java.lang.ref.WeakReference;
 

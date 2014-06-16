@@ -17,7 +17,7 @@
 package com.fss.Common.nineoldandroids.animation;
 
 import android.view.animation.Interpolator;
-import com.nineoldandroids.animation.Keyframe.IntKeyframe;
+import com.fss.Common.nineoldandroids.animation.Keyframe.IntKeyframe;
 
 import java.util.ArrayList;
 

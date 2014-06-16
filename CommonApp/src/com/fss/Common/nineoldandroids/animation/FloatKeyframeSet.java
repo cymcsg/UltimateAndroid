@@ -17,7 +17,7 @@
 package com.fss.Common.nineoldandroids.animation;
 
 import android.view.animation.Interpolator;
-import com.nineoldandroids.animation.Keyframe.FloatKeyframe;
+import com.fss.Common.nineoldandroids.animation.Keyframe.FloatKeyframe;
 
 import java.util.ArrayList;
 
@@ -31,7 +31,7 @@ import java.util.ArrayList;
  * TypeEvaluator set for the animation, so that values can be calculated without autoboxing to the
  * Object equivalents of these primitive types.</p>
  */
-class FloatKeyframeSet extends com.nineoldandroids.animation.KeyframeSet {
+class FloatKeyframeSet extends com.fss.Common.nineoldandroids.animation.KeyframeSet {
     private float firstValue;
     private float lastValue;
     private float deltaValue;
