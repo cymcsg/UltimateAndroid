@@ -10,11 +10,11 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.RelativeLayout;
 
 /**
- * Some method help do some UI works
+ * Created with IntelliJ IDEA.
  * User: cym
  * Date: 13-9-22
  * Time: 上午10:56
- *
+ * To change this template use File | Settings | File Templates.
  */
 public class BasicUiUtils {
     public static void hiddenKeyboard(Class className, Context context, Activity activity) {

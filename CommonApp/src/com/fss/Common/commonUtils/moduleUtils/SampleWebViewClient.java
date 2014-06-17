@@ -5,11 +5,11 @@ import android.webkit.WebViewClient;
 import com.fss.Common.commonUtils.logUtils.Logs;
 
 /**
- * A webview which can open itself and add some error info instead of the url
+ * Created with IntelliJ IDEA.
  * User: cym
  * Date: 13-11-4
  * Time: 下午4:48
- *
+ * To change this template use File | Settings | File Templates.
  */
 
 public  class SampleWebViewClient extends WebViewClient {

@@ -7,11 +7,11 @@ import com.fss.Common.commonUtils.logUtils.Logs;
 import java.io.*;
 
 /**
- * TO do something with File,like read ,del etc.
+ * Created with IntelliJ IDEA.
  * User: cym
  * Date: 13-10-23
  * Time: 上午11:01
- *
+ * To change this template use File | Settings | File Templates.
  */
 public class FileUtils {
     public static String readFilesToString(String fileName) throws IOException {

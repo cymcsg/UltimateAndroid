@@ -2,11 +2,11 @@ package com.fss.Common.commonUtils.logUtils;
 
 import android.util.Log;
 /**
- * A useful log class to help you auto add Tag and easy to disable log
+ * Created with IntelliJ IDEA.
  * User: cym
  * Date: 13-9-3
  * Time: 上午11:16
- *
+ * To change this template use File | Settings | File Templates.
  */
 public final class Logs {
 

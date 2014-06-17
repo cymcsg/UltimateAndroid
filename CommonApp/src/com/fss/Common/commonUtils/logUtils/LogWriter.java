@@ -1,6 +1,12 @@
 package com.fss.Common.commonUtils.logUtils;
 
-
+/**
+ * Created with IntelliJ IDEA.
+ * User: cym
+ * Date: 13-9-3
+ * Time: 下午1:32
+ * To change this template use File | Settings | File Templates.
+ */
 
 import java.io.*;
 import java.util.Properties;
