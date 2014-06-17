@@ -12,7 +12,9 @@ import com.google.gson.reflect.TypeToken;
 import java.util.*;
 
 /**
- * Created by cym on 14-4-30.
+ * Use Gson to parse jsons
+ * @t unfinish
+ *
  */
 public class JsonUtils {
     public static <T> T getListFromJson(String jsonString, TypeToken typeToken) {

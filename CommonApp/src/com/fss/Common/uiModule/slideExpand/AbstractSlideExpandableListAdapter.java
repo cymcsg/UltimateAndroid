@@ -270,10 +270,10 @@ public abstract class AbstractSlideExpandableListAdapter extends WrapperListAdap
                     // remember the state
                     if (type == ExpandCollapseAnimation.EXPAND) {
                         openItems.set(position, true);
-                        ((ImageView) button).setImageResource(R.drawable.abc_ic_clear);
+                        ((ImageView) button).setImageResource(R.drawable.ico_arrow2x);
                     } else {
                         openItems.set(position, false);
-                        ((ImageView) button).setImageResource(R.drawable.abc_ic_go);
+                        ((ImageView) button).setImageResource(R.drawable.ico_arrow_grey2x);
                     }
                     // check if we need to collapse a different view
                     if (type == ExpandCollapseAnimation.EXPAND) {
@@ -285,7 +285,7 @@ public abstract class AbstractSlideExpandableListAdapter extends WrapperListAdap
                                         lastOpen, lastOpenPosition);
 //                                Logs.d("lastopen--" + (lastOpenButton != null)+lastOpenButton.toString());
                                 if (lastOpenButton != null)
-                                    ((ImageView) lastOpenButton).setImageResource(R.drawable.abc_ic_go);
+                                    ((ImageView) lastOpenButton).setImageResource(R.drawable.ico_arrow2x);
 
                             }
 

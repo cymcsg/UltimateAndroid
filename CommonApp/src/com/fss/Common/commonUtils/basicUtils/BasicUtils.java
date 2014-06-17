@@ -18,18 +18,21 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created with IntelliJ IDEA.
  * User: cym
  * Date: 13-9-24
  * Time: 下午3:28
- * To change this template use File | Settings | File Templates.
  */
 public class BasicUtils {
+    /**
+     * Print all items of HashMap(which value is or can be convert to String)
+     *
+     * @param hashMap
+     * @param classAndMethodName
+     */
     public static void iterateHashMap(HashMap hashMap, String classAndMethodName) {
         Iterator iterator = hashMap.entrySet().iterator();
         Logs.d(classAndMethodName);
         while (iterator.hasNext()) {
-            //Method1
             Object obj = iterator.next();
             Logs.d(obj.toString());
             //Method2
@@ -195,6 +198,13 @@ public class BasicUtils {
         context.startActivity(intent);
     }
 
+    public static void sendIntent(Context context, Class classes, String key, String value) {
+        Intent intent = new Intent();
+        intent.setClass(context, classes);
+        intent.putExtra(key, value);
+        context.startActivity(intent);
+    }
+
     public static String getSharedPreferences(Context context, String fileName, String parameterName) {
         SharedPreferences sp = context.getSharedPreferences(fileName, 0);
         String parameter = sp.getString(parameterName, "");
@@ -243,6 +253,7 @@ public class BasicUtils {
     public static boolean judgeIfNull(Map map) {
         return map != null && map.size() > 0 ? true : false;
     }
+
     public static boolean judgeIfNull(List list) {
         return list != null && list.size() > 0 ? true : false;
     }
