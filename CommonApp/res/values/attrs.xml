@@ -64,5 +64,7 @@
     </declare-styleable>
 
     <attr name="SwipeBackLayoutStyle" format="reference"/>
-
+    <declare-styleable name="ShimmerView">
+        <attr name="reflectionColor" format="color"/>
+    </declare-styleable>
 </resources>
