@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="nav_bg">#0099CC</color>
+    <color name="lightgrey">#fff7f7f7</color>
+    <color name="click_real_item">#fffff9ee</color>
+    <color name="redOrange">#ff6100</color>
+    <color name="orange">#ffffa500</color>
+    <color name="oranged">#ccffa500</color>
+    <color name="greyline">#ff646464</color>
+    <color name="purpled">#cc9933cc</color>
+    <color name="dimgray">#696969</color>
+    <color name="collect_press">#33b5e5</color>
+    <color name="Translucent">#00000000</color>
+    <color name="TranslucentWhite">#aaffffff</color>
+    <color name="White90percent">#e6ffffff</color>
+    <color name="Whiteccpercent">#ccffffff</color>
+
+</resources>
