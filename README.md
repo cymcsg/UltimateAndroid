@@ -11,6 +11,16 @@ fuctional feature.Thanks very much for star the project.
 
 在未来的两周将进行Demo和文档的更新，同时还有一系列功能上的改进，感谢大家支持。
 
+Demo Manual
+Demo 使用方法
+--------------
+Demo is rely on appcompat and the CommonLibs, you can change CONFIGURATION in your IDES etc.
+Some IDEs require additional configuration in order to enable annotation processing for Butter Knife,
+or you can see [IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse Configuration for butter Knife][102].
+
+Demo依赖于appcompat 和 CommonLibs，你可以在IDE或者配置文件里面添加一下依赖。部分IDE需要开启annotation的编译（因为Butter Knife）的缘故，如果不清楚如何开启可以看一下[IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse Configuration for butter Knife][102].
+
+目前Demo非常简陋，不断完善中。
 
 
 Update：
@@ -20,13 +30,22 @@ Update：
 
 
 2014.6.14：Add NineOldAndroids to support Android 2.1~2.3
+
            增加了支持2.3的android动画，毕竟在某些地方2.3的占有率并不低。该类库如果不需要可移除。
 
 2014.6.16  Add enhanceListView for swipe to dismiss;
            Move NineOldAndroids to Main Lib project.
+
            增加了滑动删除的Listview；
            将NineOldAndroids从依赖项目改为放入主Lib工程，方便大家配置使用。
 
+2014.6.18  Add [Shimmer-Android][12]
+
+           增加了Shimmer类库
+
+##2014.6.19  Add Sample Demo!! It is very sample demo but I will add more in the next week.
+
+##           增加了Demo！现在还很简单，但是我再慢慢补充中。
 
 
 
@@ -100,6 +119,9 @@ License
  [9]: https://github.com/RobotiumTech/robotium
  [10]:https://github.com/JakeWharton/NineOldAndroids
  [11]:https://github.com/JakeWharton/Android-ViewPagerIndicator
+ [12]:https://github.com/RomainPiel/Shimmer-android
+ [101]:http://jakewharton.github.io/butterknife/ide-idea.html
+ [102]:http://jakewharton.github.io/butterknife/ide-eclipse.html
 =======
 
 
