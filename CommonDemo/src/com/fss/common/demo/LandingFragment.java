@@ -16,13 +16,9 @@ import android.widget.TextView;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import com.fss.Common.commonUtils.basicUtils.BasicUtils;
-import com.fss.Common.nineoldandroids.animation.Animator;
-import com.fss.Common.ui.ToastUtil;
 import com.fss.Common.uiModule.enhanceListView.EnhancedListView;
-import com.fss.Common.uiModule.shimmer.Shimmer;
-import com.fss.Common.uiModule.shimmer.ShimmerTextView;
-import com.fss.Common.uiModule.tileView.tileview.TileView;
 import com.fss.Common.uiModule.viewpagerindicator.CirclePageIndicator;
+import com.fss.common.demo.dynamicgrid.example.DynamicGridActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -61,23 +57,24 @@ public class LandingFragment extends Fragment {
 
     private void initEnhanceList() {
         HashMap<String, String> map = new HashMap<>();
-        map.put("name", "name1");
-        map.put("detail", "detail1");
-        map.put("subname", "sub1");
+
+        map.put("name", "TileActivity");
+        map.put("detail", "try");
+        map.put("subname", "click to TileActivity");
         enhanceList.add(map);
         map = new HashMap<>();
-        map.put("name", "name2");
-        map.put("detail", "detail2");
-        map.put("subname", "sub2");
+        map.put("name", "DynamicGrid");
+        map.put("detail", "try");
+        map.put("subname", "click to DynamicGrid");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "name3");
-        map.put("detail", "detail3");
+        map.put("detail", "try");
         map.put("subname", "sub3");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "name4");
-        map.put("detail", "detail4");
+        map.put("detail", "try");
         map.put("subname", "sub4");
         enhanceList.add(map);
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -216,11 +213,21 @@ public class LandingFragment extends Fragment {
             holder.mTextView.setText(mLists.get(position).get("name"));
             holder.mTextViewDir.setText(mLists.get(position).get("detail"));
             holder.mTextViewDetail.setText(mLists.get(position).get("subname"));
+            final int tempPostion = position;
             holder.reacolReaLyout.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     //ToastUtil.show(getActivity(), "hh", 300);
-                    BasicUtils.sendIntent(getActivity(), TileActivity.class);
+                    switch (tempPostion) {
+                        case 0:
+                            BasicUtils.sendIntent(getActivity(), TileActivity.class);
+                            break;
+                        case 1:
+                            BasicUtils.sendIntent(getActivity(), DynamicGridActivity.class);
+                            break;
+                    }
+
+
                 }
             });
             //    map.put("route_id", busInfoFav.getRouteId());
