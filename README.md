@@ -15,10 +15,11 @@ Demo Manual
 Demo 使用方法
 --------------
 Demo is rely on appcompat and the CommonLibs, you can change CONFIGURATION in your IDES etc.
-Some IDEs require additional configuration in order to enable annotation processing for Butter Knife,
+##Some IDEs require additional configuration in order to enable annotation processing for Butter Knife,
 or you can see [IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse Configuration for butter Knife][102].
 
-Demo依赖于appcompat 和 CommonLibs，你可以在IDE或者配置文件里面添加一下依赖。部分IDE需要开启annotation的编译（因为Butter Knife）的缘故，如果不清楚如何开启可以看一下[IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse Configuration for butter Knife][102].
+Demo依赖于appcompat 和 CommonLibs，你可以在IDE或者配置文件里面添加一下依赖。
+##部分IDE需要开启annotation的编译（因为Butter Knife）的缘故，如果不清楚如何开启可以看一下[IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse Configuration for butter Knife][102].
 
 目前Demo非常简陋，不断完善中。
 
@@ -43,9 +44,11 @@ Update：
 
            增加了Shimmer类库
 
-##2014.6.19  Add Sample Demo!! It is very sample demo but I will add more in the next week.
+2014.6.19  Add Sample Demo!! It is very sample demo but I will add more in the next week.
 
-##           增加了Demo！现在还很简单，但是我再慢慢补充中。
+          增加了Demo！现在还很简单，但是我再慢慢补充中。
+
+2014.6.20  Add [TileView][13] and Add demo of TileView
 
 
 
@@ -122,6 +125,7 @@ License
  [12]:https://github.com/RomainPiel/Shimmer-android
  [101]:http://jakewharton.github.io/butterknife/ide-idea.html
  [102]:http://jakewharton.github.io/butterknife/ide-eclipse.html
+ [13]:https://github.com/moagrius/TileView/tree/master
 =======
 
 
