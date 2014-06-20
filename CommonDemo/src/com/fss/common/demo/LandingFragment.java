@@ -18,6 +18,7 @@ import butterknife.InjectView;
 import com.fss.Common.commonUtils.basicUtils.BasicUtils;
 import com.fss.Common.uiModule.enhanceListView.EnhancedListView;
 import com.fss.Common.uiModule.viewpagerindicator.CirclePageIndicator;
+import com.fss.common.demo.cooldraganddrop.CoolDragAndDropActivity;
 import com.fss.common.demo.dynamicgrid.example.DynamicGridActivity;
 
 import java.util.ArrayList;
@@ -224,6 +225,9 @@ public class LandingFragment extends Fragment {
                             break;
                         case 1:
                             BasicUtils.sendIntent(getActivity(), DynamicGridActivity.class);
+                            break;
+                        case 2:
+                            BasicUtils.sendIntent(getActivity(), CoolDragAndDropActivity.class);
                             break;
                     }
 
