@@ -11,13 +11,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
+import com.fss.Common.commonUtils.basicUtils.BasicUtils;
 import com.fss.Common.nineoldandroids.animation.Animator;
+import com.fss.Common.ui.ToastUtil;
 import com.fss.Common.uiModule.enhanceListView.EnhancedListView;
 import com.fss.Common.uiModule.shimmer.Shimmer;
 import com.fss.Common.uiModule.shimmer.ShimmerTextView;
+import com.fss.Common.uiModule.tileView.tileview.TileView;
 import com.fss.Common.uiModule.viewpagerindicator.CirclePageIndicator;
 
 import java.util.ArrayList;
@@ -37,9 +41,7 @@ public class LandingFragment extends Fragment {
     ViewPager landingMallViewpager;
     CirclePageIndicator landingMallViewPagerIndicator;
     private List<View> viewpagerList = new ArrayList<View>();
-    @InjectView(R.id.landingShimmerTextView)
-    ShimmerTextView landingShimmerTextView;
-    Shimmer shimmer;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -47,7 +49,7 @@ public class LandingFragment extends Fragment {
         ButterKnife.inject(this, mainView);
         initEnhanceList();
         initViewPager();
-        initShimmerTextView();
+
         return mainView;
     }
 
@@ -125,35 +127,6 @@ public class LandingFragment extends Fragment {
 //        landingMallViewPagerIndicator.setStrokeWidth(1 * 1.0f);
     }
 
-    private void initShimmerTextView() {
-        shimmer = new Shimmer();
-        shimmer.setRepeatCount(10)
-                .setDuration(1500)
-                .setStartDelay(300)
-                .setDirection(Shimmer.ANIMATION_DIRECTION_LTR)
-                .setAnimatorListener(new Animator.AnimatorListener() {
-                    @Override
-                    public void onAnimationStart(Animator animation) {
-
-                    }
-
-                    @Override
-                    public void onAnimationEnd(Animator animation) {
-
-                    }
-
-                    @Override
-                    public void onAnimationCancel(Animator animation) {
-
-                    }
-
-                    @Override
-                    public void onAnimationRepeat(Animator animation) {
-
-                    }
-                });
-        shimmer.start(landingShimmerTextView);
-    }
 
     private class EnhancedListAdapter extends BaseAdapter {
         //private List<String> mItems = new ArrayList<String>();
@@ -233,6 +206,7 @@ public class LandingFragment extends Fragment {
                 holder.mTextView = (TextView) convertView.findViewById(R.id.reacolhistextview);
                 holder.mTextViewDir = (TextView) convertView.findViewById(R.id.reacolhistextviewDir);
                 holder.mTextViewDetail = (TextView) convertView.findViewById(R.id.reacolhistextviewDetail);
+                holder.reacolReaLyout = (RelativeLayout) convertView.findViewById(R.id.reacolReaLyout);
                 convertView.setTag(holder);
             } else {
                 holder = (ViewHolder) convertView.getTag();
@@ -242,6 +216,13 @@ public class LandingFragment extends Fragment {
             holder.mTextView.setText(mLists.get(position).get("name"));
             holder.mTextViewDir.setText(mLists.get(position).get("detail"));
             holder.mTextViewDetail.setText(mLists.get(position).get("subname"));
+            holder.reacolReaLyout.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    //ToastUtil.show(getActivity(), "hh", 300);
+                    BasicUtils.sendIntent(getActivity(), TileActivity.class);
+                }
+            });
             //    map.put("route_id", busInfoFav.getRouteId());
 //
             return convertView;
@@ -251,6 +232,7 @@ public class LandingFragment extends Fragment {
             TextView mTextView;
             TextView mTextViewDir;
             TextView mTextViewDetail;
+            RelativeLayout reacolReaLyout;
             int position;
         }
 

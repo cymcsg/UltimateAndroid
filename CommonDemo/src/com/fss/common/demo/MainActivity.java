@@ -16,6 +16,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -24,8 +25,10 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 
 import com.fss.Common.commonUtils.logUtils.Logs;
+import com.fss.Common.nineoldandroids.animation.Animator;
 import com.fss.Common.ui.ToastUtil;
-
+import com.fss.Common.uiModule.shimmer.Shimmer;
+import com.fss.Common.uiModule.shimmer.ShimmerTextView;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -38,6 +41,13 @@ public class MainActivity extends ActionBarActivity {
     @InjectView(R.id.left_drawer_listview)
     ListView mDrawerList;
     private Fragment mContent;
+    @InjectView(R.id.favShimmerTextView)
+    ShimmerTextView favShimmerTextView;
+    Shimmer shimmer;
+    @InjectView(R.id.main_content_frame)
+    View main_content_frame;
+    @InjectView(R.id.favShimmerReaLayout)
+    View favShimmerReaLayout;
 
     /**
      * Called when the activity is first created.
@@ -51,6 +61,7 @@ public class MainActivity extends ActionBarActivity {
         getSupportFragmentManager().beginTransaction()
                 .add(R.id.main_content_frame, mContent).commit();
         initViews();
+        initShimmerTextView();
     }
 
     @Override
@@ -215,7 +226,38 @@ public class MainActivity extends ActionBarActivity {
         // getSupportParentActivityIntent();
     }
 
+    private void initShimmerTextView() {
+        main_content_frame.setVisibility(View.INVISIBLE);
+        shimmer = new Shimmer();
+        shimmer.setRepeatCount(0)
+                .setDuration(800)
+                .setStartDelay(300)
+                .setDirection(Shimmer.ANIMATION_DIRECTION_LTR)
+                .setAnimatorListener(new Animator.AnimatorListener() {
+                    @Override
+                    public void onAnimationStart(Animator animation) {
 
+                    }
+
+                    @Override
+                    public void onAnimationEnd(Animator animation) {
+                        main_content_frame.setVisibility(View.VISIBLE);
+                        main_content_frame.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.fade_ins));
+                        favShimmerReaLayout.setVisibility(View.GONE);
+                    }
+
+                    @Override
+                    public void onAnimationCancel(Animator animation) {
+
+                    }
+
+                    @Override
+                    public void onAnimationRepeat(Animator animation) {
+
+                    }
+                });
+        shimmer.start(favShimmerTextView);
+    }
 
 
 }

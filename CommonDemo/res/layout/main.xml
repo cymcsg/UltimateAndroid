@@ -9,22 +9,34 @@
             android:id="@+id/main_content_frame"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
+    <RelativeLayout android:layout_width="fill_parent" android:id="@+id/favShimmerReaLayout" android:layout_height="fill_parent">
+        <com.fss.Common.uiModule.shimmer.ShimmerTextView
+                android:id="@+id/favShimmerTextView"
+                android:text="Loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#444"
+                android:textSize="50sp"
+                android:layout_centerInParent="true"
+                />
+    </RelativeLayout>
+
     <!-- The navigation drawer -->
     <ListView android:id="@+id/left_drawer_listview"
-    android:layout_width="240dp"
-    android:layout_height="match_parent"
-    android:layout_gravity="start"
-    android:choiceMode="singleChoice"
-    android:divider="@android:color/transparent"
-    android:dividerHeight="0dp"
-    android:background="@color/white"/>
+              android:layout_width="240dp"
+              android:layout_height="match_parent"
+              android:layout_gravity="start"
+              android:choiceMode="singleChoice"
+              android:divider="@android:color/transparent"
+              android:dividerHeight="0dp"
+              android:background="@color/white"/>
     <!--<com.fss.Common.uiModule.slideExpand.ActionSlideExpandableListView-->
-            <!--android:id="@+id/left_drawer_listview"-->
-            <!--android:layout_width="240dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_gravity="start"-->
-            <!--android:choiceMode="singleChoice"-->
-            <!--android:divider="@android:color/transparent"-->
-            <!--android:dividerHeight="0dp" android:fadingEdge="none"-->
-            <!--android:background="@color/white"/>-->
+    <!--android:id="@+id/left_drawer_listview"-->
+    <!--android:layout_width="240dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="start"-->
+    <!--android:choiceMode="singleChoice"-->
+    <!--android:divider="@android:color/transparent"-->
+    <!--android:dividerHeight="0dp" android:fadingEdge="none"-->
+    <!--android:background="@color/white"/>-->
 </android.support.v4.widget.DrawerLayout>

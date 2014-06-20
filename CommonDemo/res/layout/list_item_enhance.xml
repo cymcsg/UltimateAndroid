@@ -24,7 +24,7 @@
                  android:layout_height="match_parent" android:visibility="visible">
         <RelativeLayout
                 android:paddingLeft="16dp"
-                android:background="@anim/collect_item_real_coll_new"
+                android:background="@anim/collect_item_real_coll_new" android:id="@+id/reacolReaLyout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
             <RelativeLayout android:layout_width="wrap_content" android:layout_marginTop="11dp"

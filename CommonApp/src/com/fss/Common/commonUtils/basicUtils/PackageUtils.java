@@ -9,7 +9,7 @@ import com.fss.Common.commonUtils.logUtils.Logs;
 import java.io.*;
 
 /**
- * @deprecated To copy database from asset or sdcard to the app directory.
+ * To copy database from asset or sdcard to the app directory.
  * User: cym
  * Date: 13-9-25
  * Time: 下午2:30
@@ -17,13 +17,13 @@ import java.io.*;
  */
 public class PackageUtils {
 
-    public static boolean copyDateBaseToMemory(Context context, String dbname, int resource) {
+    public static boolean copyDateBaseToMemory(Context context, String dbname, int resource,String signName) {
         String packageName = context.getPackageName();
         String DATABASE_PATH = "/data/data/" + packageName + "/databases/";
         try {
             String path = context.getDatabasePath(dbname).getAbsolutePath();
             if (context.getDatabasePath(dbname).getAbsolutePath().substring(0, path.lastIndexOf("/"))
-                    .contains("qingdaonews")) {
+                    .contains(signName)) {
                 DATABASE_PATH = path.substring(0, path.lastIndexOf("/") + 1);
             }
             Logs.d(context.getDatabasePath(dbname).getAbsolutePath() + "  " + context.getApplicationContext().getPackageResourcePath());
