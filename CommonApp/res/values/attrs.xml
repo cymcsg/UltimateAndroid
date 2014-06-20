@@ -67,4 +67,9 @@
     <declare-styleable name="ShimmerView">
         <attr name="reflectionColor" format="color"/>
     </declare-styleable>
+
+    <declare-styleable name="SpanVariableGridView">
+        <attr name="numColumns" format="integer" />
+        <attr name="itemMargin" format="dimension" />
+    </declare-styleable>
 </resources>
