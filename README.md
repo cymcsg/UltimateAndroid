@@ -50,7 +50,7 @@ Update：
 
 2014.6.20  Add [TileView][13] and Add demo of TileView
 
-
+2014.6.22  Add colors resource
 
 The CommonLibs use many opensource program and I am very grateful to the author of them.
 The opensource program which I use:
