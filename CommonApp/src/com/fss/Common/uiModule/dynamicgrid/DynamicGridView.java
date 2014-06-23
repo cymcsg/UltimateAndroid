@@ -945,17 +945,38 @@ public class DynamicGridView extends GridView {
 
     public interface OnSelectedItemBitmapCreationListener {
         public void OnPreSelectedItemBitmapCreation(View selectedView, int position, long itemId);
+
         public void OnPostSelectedItemBitmapCreation(View selectedView, int position, long itemId);
+    }
+
+    private boolean haveScrollbar = true;
+
+    public boolean isHaveScrollbar() {
+        return haveScrollbar;
+    }
+
+    public void setHaveScrollbar(boolean haveScrollbar) {
+        this.haveScrollbar = haveScrollbar;
+    }
+
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        if (haveScrollbar == false) {
+            int expandSpec = View.MeasureSpec.makeMeasureSpec(Integer.MAX_VALUE >> 2, View.MeasureSpec.AT_MOST);
+            super.onMeasure(widthMeasureSpec, expandSpec);
+        } else {
+            super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+        }
     }
 }
 
 class DynamicGridModification {
 
-    private List<Pair<Integer,Integer>> transitions;
+    private List<Pair<Integer, Integer>> transitions;
 
     DynamicGridModification() {
         super();
-        this.transitions = new Stack<Pair<Integer,Integer>>();
+        this.transitions = new Stack<Pair<Integer, Integer>>();
     }
 
     public boolean hasTransitions() {
@@ -966,8 +987,9 @@ class DynamicGridModification {
         transitions.add(new Pair<Integer, Integer>(oldPosition, newPosition));
     }
 
-    public List<Pair<Integer,Integer>> getTransitions() {
+    public List<Pair<Integer, Integer>> getTransitions() {
         Collections.reverse(transitions);
         return transitions;
     }
+
 }
