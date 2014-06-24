@@ -9,10 +9,7 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
+import android.widget.*;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import com.fss.Common.commonUtils.basicUtils.BasicUtils;
@@ -59,25 +56,26 @@ public class LandingFragment extends Fragment {
     private void initEnhanceList() {
         HashMap<String, String> map = new HashMap<>();
 
-        map.put("name", "TileActivity");
+        map.put("name", "SmoothBar");
         map.put("detail", "try");
-        map.put("subname", "click to TileActivity");
+        map.put("subname", "to ProgressBar");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "DynamicGrid");
         map.put("detail", "try");
-        map.put("subname", "click to DynamicGrid");
+        map.put("subname", "to DynamicGrid");
         enhanceList.add(map);
         map = new HashMap<>();
-        map.put("name", "name3");
+        map.put("name", "Cool Drag Drop ");
         map.put("detail", "try");
-        map.put("subname", "sub3");
+        map.put("subname", "to DragDrop");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "name4");
         map.put("detail", "try");
         map.put("subname", "sub4");
         enhanceList.add(map);
+
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
         landingEnhanceListView.setAdapter(enhancedListAdapter);
         landingEnhanceListView.setDismissCallback(new EnhancedListView.OnDismissCallback() {
@@ -89,8 +87,25 @@ public class LandingFragment extends Fragment {
         });
         landingEnhanceListView.setSwipingLayout(R.id.swiping_layout);
         landingEnhanceListView.setUndoStyle(null);
+
         landingEnhanceListView.enableSwipeToDismiss();
         landingEnhanceListView.setSwipeDirection(EnhancedListView.SwipeDirection.START);
+        landingEnhanceListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                switch (position) {
+                    case 0:
+                        BasicUtils.sendIntent(getActivity(), SmoothProgressBarActivity.class);
+                        break;
+                    case 1:
+                        BasicUtils.sendIntent(getActivity(), DynamicGridActivity.class);
+                        break;
+                    case 2:
+                        BasicUtils.sendIntent(getActivity(), CoolDragAndDropActivity.class);
+                        break;
+                }
+            }
+        });
     }
 
 
@@ -204,7 +219,7 @@ public class LandingFragment extends Fragment {
                 holder.mTextView = (TextView) convertView.findViewById(R.id.reacolhistextview);
                 holder.mTextViewDir = (TextView) convertView.findViewById(R.id.reacolhistextviewDir);
                 holder.mTextViewDetail = (TextView) convertView.findViewById(R.id.reacolhistextviewDetail);
-                holder.reacolReaLyout = (RelativeLayout) convertView.findViewById(R.id.reacolReaLyout);
+                //holder.reacolReaLyout = (RelativeLayout) convertView.findViewById(R.id.reacolReaLyout);
                 convertView.setTag(holder);
             } else {
                 holder = (ViewHolder) convertView.getTag();
@@ -214,27 +229,7 @@ public class LandingFragment extends Fragment {
             holder.mTextView.setText(mLists.get(position).get("name"));
             holder.mTextViewDir.setText(mLists.get(position).get("detail"));
             holder.mTextViewDetail.setText(mLists.get(position).get("subname"));
-            final int tempPostion = position;
-            holder.reacolReaLyout.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    //ToastUtil.show(getActivity(), "hh", 300);
-                    switch (tempPostion) {
-                        case 0:
-                            BasicUtils.sendIntent(getActivity(), TileActivity.class);
-                            break;
-                        case 1:
-                            BasicUtils.sendIntent(getActivity(), DynamicGridActivity.class);
-                            break;
-                        case 2:
-                            BasicUtils.sendIntent(getActivity(), CoolDragAndDropActivity.class);
-                            break;
-                    }
 
-
-                }
-            });
-            //    map.put("route_id", busInfoFav.getRouteId());
 //
             return convertView;
         }

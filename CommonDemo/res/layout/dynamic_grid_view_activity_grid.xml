@@ -4,12 +4,13 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
-
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="231231"/>
     <com.fss.Common.uiModule.dynamicgrid.DynamicGridView
             android:id="@+id/dynamic_grid_view"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:numColumns="3"
             />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="2222"/>
 
 </LinearLayout>

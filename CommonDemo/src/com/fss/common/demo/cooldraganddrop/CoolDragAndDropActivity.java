@@ -4,7 +4,11 @@ import java.util.LinkedList;
 import java.util.List;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.TaskStackBuilder;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ScrollView;
@@ -13,7 +17,7 @@ import com.fss.Common.uiModule.cooldraganddrop.SimpleScrollingStrategy;
 import com.fss.Common.uiModule.cooldraganddrop.SpanVariableGridView;
 import com.fss.common.demo.R;
 
-public class CoolDragAndDropActivity extends Activity implements CoolDragAndDropGridView.DragAndDropListener, SpanVariableGridView.OnItemClickListener,
+public class CoolDragAndDropActivity extends ActionBarActivity implements CoolDragAndDropGridView.DragAndDropListener, SpanVariableGridView.OnItemClickListener,
 		SpanVariableGridView.OnItemLongClickListener {
 
 	ItemAdapter mItemAdapter;
@@ -24,23 +28,24 @@ public class CoolDragAndDropActivity extends Activity implements CoolDragAndDrop
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.cooldrag_drop_activity);
-
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
 		ScrollView scrollView = (ScrollView) findViewById(R.id.scrollView);
 		mCoolDragAndDropGridView = (CoolDragAndDropGridView) findViewById(R.id.coolDragAndDropGridView);
 
 		for (int r = 0; r < 2; r++) {
 			mItems.add(new Item(R.drawable.cool_drag_drop_ic_local_search_airport_highlighted, 1, "Airport", "Heathrow"));
-			mItems.add(new Item(R.drawable.cool_drag_drop_ic_local_search_bar_highlighted, 1, "Bar", "Connaught Bar"));
-			mItems.add(new Item(R.drawable.cool_drag_drop_ic_local_search_drink_highlighted, 1, "Drink", "Tequila"));
-			mItems.add(new Item(R.drawable.cool_drag_drop_ic_local_search_eat_highlighted, 1, "Eat", "Sliced Steaks"));
+			mItems.add(new Item(R.drawable.cool_drag_drop_ic_local_search_bar_highlighted, 2, "Bar", "Connaught Bar"));
+			mItems.add(new Item(R.drawable.cool_drag_drop_ic_local_search_drink_highlighted, 2, "Drink", "Tequila"));
+			mItems.add(new Item(R.drawable.cool_drag_drop_ic_local_search_eat_highlighted, 2, "Eat", "Sliced Steaks"));
 			mItems.add(new Item(R.drawable.cool_drag_drop_ic_local_search_florist_highlighted, 1, "Florist", "Roses"));
-			mItems.add(new Item(R.drawable.cool_drag_drop_ic_local_search_gas_station_highlighted, 1, "Gas station", "QuickChek"));
+			mItems.add(new Item(R.drawable.cool_drag_drop_ic_local_search_gas_station_highlighted, 3, "Gas station", "QuickChek"));
 			mItems.add(new Item(R.drawable.cool_drag_drop_ic_local_search_general_highlighted, 1, "General", "Service Station"));
 			mItems.add(new Item(R.drawable.cool_drag_drop_ic_local_search_grocery_store_highlighted, 1, "Grocery", "E-Z-Mart"));
 			mItems.add(new Item(R.drawable.cool_drag_drop_ic_local_search_pizza_highlighted, 1, "Pizza", "Pizza Hut"));
-			mItems.add(new Item(R.drawable.cool_drag_drop_ic_local_search_post_office_highlighted, 1, "Post office", "USPS"));
-			mItems.add(new Item(R.drawable.cool_drag_drop_ic_local_search_see_highlighted, 1, "See", "Tower Bridge"));
-			mItems.add(new Item(R.drawable.cool_drag_drop_ic_local_search_shipping_service_highlighted, 1, "Shipping service", "Celio*"));
+			mItems.add(new Item(R.drawable.cool_drag_drop_ic_local_search_post_office_highlighted, 2, "Post office", "USPS"));
+			mItems.add(new Item(R.drawable.cool_drag_drop_ic_local_search_see_highlighted, 2, "See", "Tower Bridge"));
+			mItems.add(new Item(R.drawable.cool_drag_drop_ic_local_search_shipping_service_highlighted, 3, "Shipping service", "Celio*"));
 		}
 
 		mItemAdapter = new ItemAdapter(this, mItems);
@@ -56,6 +61,16 @@ public class CoolDragAndDropActivity extends Activity implements CoolDragAndDrop
 		mItemAdapter.notifyDataSetChanged();
 		super.onPostCreate(savedInstanceState);
 	}
+    @Override
+    public Intent getSupportParentActivityIntent() {
+        this.finish();
+        return super.getSupportParentActivityIntent();
+    }
+
+    @Override
+    public void onCreateSupportNavigateUpTaskStack(TaskStackBuilder builder) {
+        super.onCreateSupportNavigateUpTaskStack(builder);
+    }
 
 //	@Override
 //	public boolean onCreateOptionsMenu(Menu menu) {

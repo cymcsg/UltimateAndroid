@@ -24,7 +24,7 @@
                  android:layout_height="match_parent" android:visibility="visible">
         <RelativeLayout
                 android:paddingLeft="16dp"
-                android:background="@anim/collect_item_real_coll_new" android:id="@+id/reacolReaLyout"
+                android:background="@anim/collect_item_real_coll_new"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
             <RelativeLayout android:layout_width="wrap_content" android:layout_marginTop="11dp"
@@ -44,7 +44,6 @@
                           android:textColor="@color/three6_white_color"
                           android:layout_width="wrap_content" android:text=""
                           android:layout_height="wrap_content" android:textSize="20sp"/>
-
             </RelativeLayout>
 
             <ImageView android:layout_width="fill_parent" android:layout_height="1px"  android:src="@color/threec" android:layout_marginTop="2dp" android:layout_below="@id/enhance_list_item"  />

@@ -1,7 +1,12 @@
 package com.fss.common.demo.dynamicgrid.example;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.TaskStackBuilder;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Toast;
@@ -12,7 +17,7 @@ import com.fss.common.demo.R;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class DynamicGridActivity extends Activity {
+public class DynamicGridActivity extends ActionBarActivity {
 
     private DynamicGridView gridView;
 
@@ -20,6 +25,8 @@ public class DynamicGridActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dynamic_grid_view_activity_grid);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
         gridView = (DynamicGridView) findViewById(R.id.dynamic_grid_view);
         gridView.setAdapter(new CheeseDynamicAdapter(this,
                 new ArrayList<String>(Arrays.asList(Cheeses.sCheeseStrings)),
@@ -33,6 +40,15 @@ public class DynamicGridActivity extends Activity {
 //                gridView.stopEditMode();
 //            }
 //        });
+        gridView.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if (gridView.isEditMode()) {
+                    gridView.stopEditMode();
+                }
+                return false;
+            }
+        });
         gridView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
@@ -44,10 +60,12 @@ public class DynamicGridActivity extends Activity {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(DynamicGridActivity.this, parent.getAdapter().getItem(position).toString(),
+                Toast.makeText(DynamicGridActivity.this, parent.getAdapter().getItem(position).toString()+"  "+gridView.isEditMode(),
                         Toast.LENGTH_SHORT).show();
+
             }
         });
+
     }
 
     @Override
@@ -57,5 +75,15 @@ public class DynamicGridActivity extends Activity {
         } else {
             super.onBackPressed();
         }
+    }
+    @Override
+    public Intent getSupportParentActivityIntent() {
+        this.finish();
+        return super.getSupportParentActivityIntent();
+    }
+
+    @Override
+    public void onCreateSupportNavigateUpTaskStack(TaskStackBuilder builder) {
+        super.onCreateSupportNavigateUpTaskStack(builder);
     }
 }

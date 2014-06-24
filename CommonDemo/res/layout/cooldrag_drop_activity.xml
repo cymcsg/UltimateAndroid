@@ -11,14 +11,22 @@
             android:id="@+id/scrollView"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:orientation="vertical"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="231231"/>
+            <com.fss.Common.uiModule.cooldraganddrop.CoolDragAndDropGridView
+                    android:id="@+id/coolDragAndDropGridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    dragAndDrop:itemMargin="5dp"
+                    dragAndDrop:numColumns="3">
+            </com.fss.Common.uiModule.cooldraganddrop.CoolDragAndDropGridView>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="2222"/>
 
-        <com.fss.Common.uiModule.cooldraganddrop.CoolDragAndDropGridView
-                android:id="@+id/coolDragAndDropGridView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                dragAndDrop:itemMargin="5dp"
-                dragAndDrop:numColumns="3">
-        </com.fss.Common.uiModule.cooldraganddrop.CoolDragAndDropGridView>
+        </LinearLayout>
+
     </ScrollView>
 
 </RelativeLayout>
