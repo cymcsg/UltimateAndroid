@@ -132,43 +132,6 @@ public class BasicUtils {
                 .setMessage(message).show();
     }
 
-    public static void sendMessageHandler(Handler handler, int what) {
-        Message message = new Message();
-        message.what = what;
-        handler.sendMessage(message);
-    }
-
-    public static void sendMessageHandler(Handler handler, int what, String key, String value) {
-        Message message = new Message();
-        message.what = what;
-        Bundle bundle = new Bundle();
-        bundle.putString(key, value);
-        message.setData(bundle);
-        handler.sendMessage(message);
-    }
-
-    public static void sendMessageHandlerDelay(Handler handler, int what, String key, String value, long delayTime) {
-        Message message = new Message();
-        message.what = what;
-        Bundle bundle = new Bundle();
-        bundle.putString(key, value);
-        message.setData(bundle);
-        // handler.sendMessage(message);
-        handler.sendMessageDelayed(message, delayTime);
-    }
-
-    public static void sendMessageHandlerDelay(Handler handler, int what, long delayTime) {
-        Message message = new Message();
-        message.what = what;
-        handler.sendMessageDelayed(message, delayTime);
-    }
-
-    public static void sendMessageHandler(Handler handler, int what, Bundle bundle) {
-        Message message = new Message();
-        message.what = what;
-        message.setData(bundle);
-        handler.sendMessage(message);
-    }
 
     /**
      * @param str

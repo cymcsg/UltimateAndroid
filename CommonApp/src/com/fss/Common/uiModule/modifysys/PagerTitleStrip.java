@@ -246,7 +246,7 @@ public class PagerTitleStrip extends ViewGroup implements ViewPager.Decor {
 //                    Bundle bundle=new Bundle();
 //                    bundle.putInt("color",color);
 //                    bundle.putInt("transColor",transColor);
-//                    BasicUtils.sendMessageHandler(textColorHandler,0,bundle);
+//                    HandlerUtils.sendMessageHandler(textColorHandler,0,bundle);
 //                } catch (InterruptedException e) {
 //                    e.printStackTrace();
 //                    Logs.e(e, "");
@@ -366,7 +366,7 @@ public class PagerTitleStrip extends ViewGroup implements ViewPager.Decor {
 //                        Bundle bundle=new Bundle();
 //                        bundle.putString("string",tempString);
 //                        bundle.putInt("int",tempInt);
-//                        BasicUtils.sendMessageHandler(textHandler,1,bundle);
+//                        HandlerUtils.sendMessageHandler(textHandler,1,bundle);
 //                    } catch (InterruptedException e) {
 //                        e.printStackTrace();
 //                        Logs.e(e, "");
@@ -374,7 +374,7 @@ public class PagerTitleStrip extends ViewGroup implements ViewPager.Decor {
 //                }
 //            }.start();
 //    }else{
-//            BasicUtils.sendMessageHandler(textHandler,2);
+//            HandlerUtils.sendMessageHandler(textHandler,2);
 //        }
 
 
