@@ -17,6 +17,8 @@ import com.fss.Common.uiModule.enhanceListView.EnhancedListView;
 import com.fss.Common.uiModule.viewpagerindicator.CirclePageIndicator;
 import com.fss.common.demo.cooldraganddrop.CoolDragAndDropActivity;
 import com.fss.common.demo.dynamicgrid.example.DynamicGridActivity;
+import com.fss.common.demo.listviewfilter.ui.ListViewFilterActivity;
+import com.fss.common.demo.stickygridheadersexample.StickGridItemListActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -71,9 +73,14 @@ public class LandingFragment extends Fragment {
         map.put("subname", "to DragDrop");
         enhanceList.add(map);
         map = new HashMap<>();
-        map.put("name", "name4");
+        map.put("name", "Stickyheader");
         map.put("detail", "try");
-        map.put("subname", "sub4");
+        map.put("subname", "to StickyHeader");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "ListViewFilter");
+        map.put("detail", "try");
+        map.put("subname", "to ListViewFilter");
         enhanceList.add(map);
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -102,6 +109,12 @@ public class LandingFragment extends Fragment {
                         break;
                     case 2:
                         BasicUtils.sendIntent(getActivity(), CoolDragAndDropActivity.class);
+                        break;
+                    case 3:
+                        BasicUtils.sendIntent(getActivity(), StickGridItemListActivity.class);
+                        break;
+                    case 4:
+                        BasicUtils.sendIntent(getActivity(), ListViewFilterActivity.class);
                         break;
                 }
             }
