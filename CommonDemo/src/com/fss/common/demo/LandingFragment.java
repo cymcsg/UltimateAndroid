@@ -18,6 +18,7 @@ import com.fss.Common.uiModule.viewpagerindicator.CirclePageIndicator;
 import com.fss.common.demo.cooldraganddrop.CoolDragAndDropActivity;
 import com.fss.common.demo.dynamicgrid.example.DynamicGridActivity;
 import com.fss.common.demo.listviewfilter.ui.ListViewFilterActivity;
+import com.fss.common.demo.sampleModules.FlipViewActivity;
 import com.fss.common.demo.stickygridheadersexample.StickGridItemListActivity;
 
 import java.util.ArrayList;
@@ -82,6 +83,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "to ListViewFilter");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "FlipView");
+        map.put("detail", "try");
+        map.put("subname", "to FlipView");
+        enhanceList.add(map);
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
         landingEnhanceListView.setAdapter(enhancedListAdapter);
@@ -115,6 +121,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 4:
                         BasicUtils.sendIntent(getActivity(), ListViewFilterActivity.class);
+                        break;
+                    case 5:
+                        BasicUtils.sendIntent(getActivity(), FlipViewActivity.class);
                         break;
                 }
             }

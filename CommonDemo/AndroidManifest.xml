@@ -18,5 +18,6 @@
         <activity android:name=".cooldraganddrop.CoolDragAndDropActivity"></activity>
         <activity android:name=".stickygridheadersexample.StickGridItemListActivity"></activity>
         <activity android:name=".listviewfilter.ui.ListViewFilterActivity"></activity>
+        <activity android:name=".sampleModules.FlipViewActivity"></activity>
     </application>
 </manifest>
