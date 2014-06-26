@@ -1,9 +1,12 @@
 CommonLibs of Android Development
 ===================================
 
-A fast way to develop Android apps.
+###A fast way to develop Android apps.
+### 快速开发Android应用的框架
 
-The lib contains many feature like View Injection,ORM,Asynchronous Http and Image,User scenario testing,etc.And it will be added by more feature in the future.
+
+
+The lib contains many feature like View Injection,ORM,Asynchronous Http and Image,User scenario testing,many UI Modules etc.And it will be added by more feature in the future.
 
 
 About Demos and docs: I will add some demos and docs in next two weeks with some other
@@ -11,7 +14,16 @@ fuctional feature.Thanks very much for star the project.
 
 在未来的两周将进行Demo和文档的更新，同时还有一系列功能上的改进，感谢大家支持。
 
+
+      If I add a new feature,I will write a demo for it at a same time.Some old features do not have demo but I will try to complete them
+
+      部分老的功能还没有Demo，但我会不断的完善。目前每加入一个新功能都会增加Demo.
+
+
+
+
 Demo Manual
+-----
 Demo 使用方法
 --------------
 Demo is rely on appcompat and the CommonLibs, you can change CONFIGURATION in your IDES etc.
@@ -20,6 +32,7 @@ or you can see [IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse 
 
 Demo依赖于appcompat 和 CommonLibs，你可以在IDE或者配置文件里面添加一下依赖。
 **部分IDE需要开启annotation的编译（因为Butter Knife）的缘故，如果不清楚如何开启可以看一下[IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse Configuration for butter Knife][102].**
+
 
 目前Demo非常简陋，不断完善中。
 
@@ -41,7 +54,7 @@ Update：
            增加了滑动删除的Listview；
            将NineOldAndroids从依赖项目改为放入主Lib工程，方便大家配置使用。
 
-2014.6.18  ```Add [Shimmer-Android][12]```
+2014.6.18  Add [Shimmer-Android][12]
 
            增加了Shimmer类库
 
@@ -49,14 +62,22 @@ Update：
 
           增加了Demo！现在还很简单，但是我再慢慢补充中。
 
-2014.6.20  ```Add [TileView][13] and Add demo of TileView```
+2014.6.20  Add [TileView][13] and Add demo of TileView
 
 2014.6.22  ``Add colors resource``
 
-2014.6.24  ```Add [SmoothProgressBar](https://github.com/castorflex/SmoothProgressBar)```
+2014.6.24  Add [SmoothProgressBar](https://github.com/castorflex/SmoothProgressBar)
 
           增加了Android风格的进度条的Demo。
-
+2014.6.25 Add [StickyGridHeaders](https://github.com/TonicArtos/StickyGridHeaders)
+			
+		  增加了头部浮现控件和根据Letter过滤控件
+		  
+2014.6.26 Add [Flip View](https://github.com/emilsjolander/android-FlipView) like FlipBoard
+          Add [PhotoView](https://github.com/chrisbanes/PhotoView)which can help you zoom image by various touch gestures.
+          
+          增加了类似FlipBoard的效果。
+          增加了手势放缩图片的控件。
 
 
 
