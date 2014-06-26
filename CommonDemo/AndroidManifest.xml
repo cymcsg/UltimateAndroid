@@ -19,5 +19,6 @@
         <activity android:name=".stickygridheadersexample.StickGridItemListActivity"></activity>
         <activity android:name=".listviewfilter.ui.ListViewFilterActivity"></activity>
         <activity android:name=".sampleModules.FlipViewActivity"></activity>
+        <activity android:name=".sampleModules.PhotoViewActivity"></activity>
     </application>
 </manifest>
