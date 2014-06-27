@@ -100,11 +100,30 @@ public class HandlerUtils {
         handler.sendMessage(message);
     }
 
+    public static void sendMessageHandler(Handler handler, int what, String key, int value) {
+        Message message = new Message();
+        message.what = what;
+        Bundle bundle = new Bundle();
+        bundle.putInt(key, value);
+        message.setData(bundle);
+        handler.sendMessage(message);
+    }
+
     public static void sendMessageHandlerDelay(Handler handler, int what, String key, String value, long delayTime) {
         Message message = new Message();
         message.what = what;
         Bundle bundle = new Bundle();
         bundle.putString(key, value);
+        message.setData(bundle);
+        // handler.sendMessage(message);
+        handler.sendMessageDelayed(message, delayTime);
+    }
+
+    public static void sendMessageHandlerDelay(Handler handler, int what, String key, int value, long delayTime) {
+        Message message = new Message();
+        message.what = what;
+        Bundle bundle = new Bundle();
+        bundle.putInt(key, value);
         message.setData(bundle);
         // handler.sendMessage(message);
         handler.sendMessageDelayed(message, delayTime);

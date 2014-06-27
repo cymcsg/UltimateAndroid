@@ -18,8 +18,10 @@ import com.fss.Common.uiModule.viewpagerindicator.CirclePageIndicator;
 import com.fss.common.demo.cooldraganddrop.CoolDragAndDropActivity;
 import com.fss.common.demo.dynamicgrid.example.DynamicGridActivity;
 import com.fss.common.demo.listviewfilter.ui.ListViewFilterActivity;
+import com.fss.common.demo.sampleModules.CircularBarActivity;
 import com.fss.common.demo.sampleModules.FlipViewActivity;
 import com.fss.common.demo.sampleModules.PhotoViewActivity;
+import com.fss.common.demo.sampleModules.SquareProgressBarActivity;
 import com.fss.common.demo.stickygridheadersexample.StickGridItemListActivity;
 
 import java.util.ArrayList;
@@ -94,6 +96,16 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "to Photoview");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "SquareProgress");
+        map.put("detail", "try");
+        map.put("subname", "to Square");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "CircularBar");
+        map.put("detail", "try");
+        map.put("subname", "to CircularBar");
+        enhanceList.add(map);
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
         landingEnhanceListView.setAdapter(enhancedListAdapter);
@@ -133,6 +145,12 @@ public class LandingFragment extends Fragment {
                         break;
                     case 6:
                         BasicUtils.sendIntent(getActivity(), PhotoViewActivity.class);
+                        break;
+                    case 7:
+                        BasicUtils.sendIntent(getActivity(), SquareProgressBarActivity.class);
+                        break;
+                    case 8:
+                        BasicUtils.sendIntent(getActivity(), CircularBarActivity.class);
                         break;
                 }
             }

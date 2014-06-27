@@ -26,7 +26,7 @@ public class HomeasUpActionbarActivity extends ActionBarActivity {
     @Override
     public Intent getSupportParentActivityIntent() {
 
-        //   finish();
+        finish();
         return super.getSupportParentActivityIntent();
     }
 
