@@ -90,6 +90,7 @@ public class UnfoldableDetailsActivity extends BaseActivity {
         // description.setText(painting.getTitle());
 
         mUnfoldableView.unfold(coverView, mDetailsLayout);
+        
     }
 
 }

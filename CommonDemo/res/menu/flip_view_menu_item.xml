@@ -3,13 +3,13 @@
     <item
             android:id="@+id/menu_vertical_flip_view"
             android:orderInCategory="1"
-            android:showAsAction="collapseActionView"
+            android:showAsAction="ifRoom"
             android:icon="@drawable/ico_arrow2x"
             android:title="Vertical"/>
     <item
             android:id="@+id/menu_horizontal_flip_view"
             android:orderInCategory="2"
-            android:showAsAction="collapseActionView"
+            android:showAsAction="ifRoom"
 
             android:icon="@drawable/ico_arrow_grey2x"
             android:title="Horizontal"/>

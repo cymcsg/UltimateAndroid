@@ -28,6 +28,7 @@
         <activity android:name=".foldingDrawer.FoldingPaneLayoutActivity"></activity>
         <activity android:name=".foldableLayout.activities.FoldableListActivity"></activity>
         <activity android:name=".foldableLayout.activities.UnfoldableDetailsActivity"></activity>
+        <activity android:name=".sampleModules.CalendarSquareActivity"></activity>
 
     </application>
 </manifest>

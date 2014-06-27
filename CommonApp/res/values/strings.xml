@@ -4,4 +4,9 @@
     <string name="elv_undo_all">Undo All</string>
     <string name="elv_item_deleted">Item deleted</string>
     <string name="elv_n_items_deleted">%1$s items deleted</string>
+
+
+    <string name="day_name_format">EEE</string>
+    <string name="invalid_date">Date must be between %1$s and %2$s.</string>
+    <string name="month_name_format">LLLL yyyy</string>
 </resources>

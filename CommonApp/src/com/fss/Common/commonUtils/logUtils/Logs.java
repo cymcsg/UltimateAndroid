@@ -107,6 +107,11 @@ public final class Logs {
             Log.i(tag, getContent(getCurrentStackTraceElement()) + ">" + msg);
         }
     }
+    public static void d(String message, Object... args) {
+        if (sIsLogEnabled) {
+            d(String.format(message, args));
+        }
+    }
     public static void w(String tag,String msg){
         if (sIsLogEnabled) {
             Log.w(tag, getContent(getCurrentStackTraceElement()) + ">" + msg);
@@ -186,4 +191,6 @@ public final class Logs {
 //        }
 //        return paramNames;
 //    }
+
+
 }

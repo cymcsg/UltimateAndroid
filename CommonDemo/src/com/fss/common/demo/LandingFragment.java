@@ -21,6 +21,7 @@ import com.fss.common.demo.foldableLayout.activities.FoldableListActivity;
 import com.fss.common.demo.foldableLayout.activities.UnfoldableDetailsActivity;
 import com.fss.common.demo.foldingDrawer.FoldingActivitys;
 import com.fss.common.demo.listviewfilter.ui.ListViewFilterActivity;
+import com.fss.common.demo.sampleModules.CalendarSquareActivity;
 import com.fss.common.demo.sampleModules.CircularBarActivity;
 import com.fss.common.demo.sampleModules.FlipViewActivity;
 import com.fss.common.demo.sampleModules.PhotoViewActivity;
@@ -118,6 +119,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "to UnfoldableList");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "TimeSquare");
+        map.put("detail", "try");
+        map.put("subname", "to TimeSquare");
+        enhanceList.add(map);
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
         landingEnhanceListView.setAdapter(enhancedListAdapter);
         landingEnhanceListView.setDismissCallback(new EnhancedListView.OnDismissCallback() {
@@ -168,6 +174,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 10:
                         BasicUtils.sendIntent(getActivity(), UnfoldableDetailsActivity.class);
+                        break;
+                    case 11:
+                        BasicUtils.sendIntent(getActivity(), CalendarSquareActivity.class);
                         break;
                 }
             }
