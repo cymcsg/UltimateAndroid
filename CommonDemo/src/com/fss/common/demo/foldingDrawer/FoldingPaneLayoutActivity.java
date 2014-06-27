@@ -17,25 +17,19 @@
 
 package com.fss.common.demo.foldingDrawer;
 
-import android.app.SearchManager;
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Spinner;
-import android.widget.Toast;
-import com.fss.Common.foldingLayout.FoldingPaneLayout;
+import com.fss.Common.uiModule.foldingLayout.FoldingPaneLayout;
 import com.fss.common.demo.R;
 
 

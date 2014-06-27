@@ -17,6 +17,8 @@ import com.fss.Common.uiModule.enhanceListView.EnhancedListView;
 import com.fss.Common.uiModule.viewpagerindicator.CirclePageIndicator;
 import com.fss.common.demo.cooldraganddrop.CoolDragAndDropActivity;
 import com.fss.common.demo.dynamicgrid.example.DynamicGridActivity;
+import com.fss.common.demo.foldableLayout.activities.FoldableListActivity;
+import com.fss.common.demo.foldableLayout.activities.UnfoldableDetailsActivity;
 import com.fss.common.demo.foldingDrawer.FoldingActivitys;
 import com.fss.common.demo.listviewfilter.ui.ListViewFilterActivity;
 import com.fss.common.demo.sampleModules.CircularBarActivity;
@@ -106,7 +108,16 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "to CircularBar");
         enhanceList.add(map);
-
+        map = new HashMap<>();
+        map.put("name", "FoldableList");
+        map.put("detail", "try");
+        map.put("subname", "to FoldableList");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "UnfoldableList");
+        map.put("detail", "try");
+        map.put("subname", "to UnfoldableList");
+        enhanceList.add(map);
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
         landingEnhanceListView.setAdapter(enhancedListAdapter);
         landingEnhanceListView.setDismissCallback(new EnhancedListView.OnDismissCallback() {
@@ -151,6 +162,12 @@ public class LandingFragment extends Fragment {
                         break;
                     case 8:
                         BasicUtils.sendIntent(getActivity(), CircularBarActivity.class);
+                        break;
+                    case 9:
+                        BasicUtils.sendIntent(getActivity(), FoldableListActivity.class);
+                        break;
+                    case 10:
+                        BasicUtils.sendIntent(getActivity(), UnfoldableDetailsActivity.class);
                         break;
                 }
             }

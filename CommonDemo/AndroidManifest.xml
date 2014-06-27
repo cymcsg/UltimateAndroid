@@ -26,6 +26,8 @@
         <activity android:name=".foldingDrawer.FoldingDrawerLayoutActivity"></activity>
         <activity android:name=".foldingDrawer.FoldingLayoutActivity"></activity>
         <activity android:name=".foldingDrawer.FoldingPaneLayoutActivity"></activity>
+        <activity android:name=".foldableLayout.activities.FoldableListActivity"></activity>
+        <activity android:name=".foldableLayout.activities.UnfoldableDetailsActivity"></activity>
 
     </application>
 </manifest>

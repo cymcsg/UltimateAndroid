@@ -28,10 +28,7 @@ import android.graphics.SurfaceTexture;
 import android.hardware.Camera;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.ActionBarActivity;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.TextureView;
 import android.view.View;
 import android.view.animation.AccelerateInterpolator;
@@ -39,10 +36,9 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ImageView;
 import android.widget.SeekBar;
-import android.widget.Spinner;
-import com.fss.Common.foldingLayout.BaseFoldingLayout;
-import com.fss.Common.foldingLayout.FoldingLayout;
-import com.fss.Common.foldingLayout.listener.OnFoldListener;
+import com.fss.Common.uiModule.foldingLayout.BaseFoldingLayout;
+import com.fss.Common.uiModule.foldingLayout.FoldingLayout;
+import com.fss.Common.uiModule.foldingLayout.listener.OnFoldListener;
 import com.fss.common.demo.R;
 
 

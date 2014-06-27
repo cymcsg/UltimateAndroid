@@ -27,7 +27,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.view.GravityCompat;
-import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -37,10 +36,9 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Spinner;
 import com.fss.Common.commonUtils.basicUtils.HandlerUtils;
 import com.fss.Common.commonUtils.logUtils.Logs;
-import com.fss.Common.foldingLayout.FoldingDrawerLayout;
+import com.fss.Common.uiModule.foldingLayout.FoldingDrawerLayout;
 import com.fss.common.demo.R;
 
 
