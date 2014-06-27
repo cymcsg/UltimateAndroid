@@ -20,5 +20,12 @@
         <activity android:name=".listviewfilter.ui.ListViewFilterActivity"></activity>
         <activity android:name=".sampleModules.FlipViewActivity"></activity>
         <activity android:name=".sampleModules.PhotoViewActivity"></activity>
+        <activity android:name=".sampleModules.SquareProgressBarActivity"></activity>
+        <activity android:name=".sampleModules.CircularBarActivity"></activity>
+        <activity android:name=".foldingDrawer.FoldingActivitys"></activity>
+        <activity android:name=".foldingDrawer.FoldingDrawerLayoutActivity"></activity>
+        <activity android:name=".foldingDrawer.FoldingLayoutActivity"></activity>
+        <activity android:name=".foldingDrawer.FoldingPaneLayoutActivity"></activity>
+
     </application>
 </manifest>
