@@ -110,4 +110,8 @@
     </declare-styleable>
 
     <attr name="circularProgressBarStyle" format="reference" />
+
+    <declare-styleable name="FoldingMenu">
+        <attr name="foldNumber" format="integer" />
+    </declare-styleable>
 </resources>
