@@ -79,6 +79,13 @@ Update：
           增加了类似FlipBoard的效果。
           增加了手势放缩图片的控件。
 
+2014.6.27 Add [Square Progress]()
+          Add [FolderableLayout](https://github.com/alexvasilkov/FoldableLayout)
+          Add[FoldingNavigationDrawer](https://github.com/tibi1712/FoldingNavigationDrawer-Android)
+
+
+          增加了几种进度条的加载方式
+          增加了折叠的图片处理或者侧边菜单的样式。
 
 
 The CommonLibs use many opensource program and I am very grateful to the author of them.
