@@ -15,9 +15,9 @@ fuctional feature.Thanks very much for star the project.
 在未来的两周将进行Demo和文档的更新，同时还有一系列功能上的改进，感谢大家支持。
 
 
-      If I add a new feature,I will write a demo for it at a same time.Some old features do not have demo but I will try to complete them
+      If I add a new feature,I will write a demo for it at a same time.Some old features do not have demo but I will try to complete them.If you want to try the demo,you can download the Apk directly.
 
-      部分老的功能还没有Demo，但我会不断的完善。目前每加入一个新功能都会增加Demo.
+      部分老的功能还没有Demo，但我会不断的完善。目前每加入一个新功能都会增加Demo.Demo的Apk文件可以直接下载使用.
 
 
 
@@ -79,13 +79,19 @@ Update：
           增加了类似FlipBoard的效果。
           增加了手势放缩图片的控件。
 
-2014.6.27 Add [Square Progress]()
+2014.6.27 Add [Square Progress](https://github.com/mrwonderman/android-square-progressbar)
           Add [FolderableLayout](https://github.com/alexvasilkov/FoldableLayout)
           Add[FoldingNavigationDrawer](https://github.com/tibi1712/FoldingNavigationDrawer-Android)
 
 
           增加了几种进度条的加载方式
           增加了折叠的图片处理或者侧边菜单的样式。
+
+2014.6.28 Add [Calendar widget](https://github.com/square/android-times-square)
+          Add Demo.apk
+
+          增加了日历选择控件
+          增加了DemoApk
 
 
 The CommonLibs use many opensource program and I am very grateful to the author of them.
