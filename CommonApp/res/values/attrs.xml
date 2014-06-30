@@ -152,4 +152,11 @@
         <flag name="fromLeft" value="0x04"/>
         <flag name="fromRight" value="0x08"/>
     </attr>
+
+
+    <declare-styleable name="PanningView">
+        <attr name="panningDurationInMs" format="integer" />
+    </declare-styleable>
+
+
 </resources>
