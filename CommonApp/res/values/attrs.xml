@@ -99,22 +99,21 @@
 
 
     <declare-styleable name="HoloCircularProgressBar">
-        <attr name="stroke_width" format="dimension" />
-        <attr name="progress" format="float" />
-        <attr name="marker_progress" format="float" />
-        <attr name="progress_color" format="color" />
-        <attr name="progress_background_color" format="color" />
-        <attr name="thumb_visible" format="boolean" />
-        <attr name="marker_visible" format="boolean" />
-        <attr name="android:gravity" />
+        <attr name="stroke_width" format="dimension"/>
+        <attr name="progress" format="float"/>
+        <attr name="marker_progress" format="float"/>
+        <attr name="progress_color" format="color"/>
+        <attr name="progress_background_color" format="color"/>
+        <attr name="thumb_visible" format="boolean"/>
+        <attr name="marker_visible" format="boolean"/>
+        <attr name="android:gravity"/>
     </declare-styleable>
 
-    <attr name="circularProgressBarStyle" format="reference" />
+    <attr name="circularProgressBarStyle" format="reference"/>
 
     <declare-styleable name="FoldingMenu">
-        <attr name="foldNumber" format="integer" />
+        <attr name="foldNumber" format="integer"/>
     </declare-styleable>
-
 
 
     <declare-styleable name="CalendarPickerView">
@@ -127,12 +126,30 @@
     </declare-styleable>
 
     <declare-styleable name="calendar_cell">
-        <attr name="state_selectable" format="boolean" />
-        <attr name="state_current_month" format="boolean" />
-        <attr name="state_today" format="boolean" />
-        <attr name="state_range_first" format="boolean" />
-        <attr name="state_range_middle" format="boolean" />
-        <attr name="state_range_last" format="boolean" />
-        <attr name="state_highlighted" format="boolean" />
+        <attr name="state_selectable" format="boolean"/>
+        <attr name="state_current_month" format="boolean"/>
+        <attr name="state_today" format="boolean"/>
+        <attr name="state_range_first" format="boolean"/>
+        <attr name="state_range_middle" format="boolean"/>
+        <attr name="state_range_last" format="boolean"/>
+        <attr name="state_highlighted" format="boolean"/>
     </declare-styleable>
+
+
+    <declare-styleable name="DiscrollView_LayoutParams">
+        <attr name="discrollve_alpha" format="boolean"/>
+        <attr name="discrollve_scaleX" format="boolean"/>
+        <attr name="discrollve_scaleY" format="boolean"/>
+        <attr name="discrollve_threshold" format="float"/>
+        <attr name="discrollve_fromBgColor" format="color"/>
+        <attr name="discrollve_toBgColor" format="color"/>
+        <attr name="discrollve_translation"/>
+    </declare-styleable>
+
+    <attr name="discrollve_translation">
+        <flag name="fromTop" value="0x01"/>
+        <flag name="fromBottom" value="0x02"/>
+        <flag name="fromLeft" value="0x04"/>
+        <flag name="fromRight" value="0x08"/>
+    </attr>
 </resources>
