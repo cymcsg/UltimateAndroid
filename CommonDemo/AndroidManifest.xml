@@ -32,5 +32,13 @@
         <activity android:name=".sampleModules.KenBurnsViewActivity"></activity>
         <activity android:name=".discrollview.DiscrollActivity"></activity>
         <activity android:name=".sampleModules.PanningViewActivity"></activity>
+        <activity android:name=".parallaxscrollexample.ParallaxScrollActivity"></activity>
+        <activity android:name=".parallaxscrollexample.SingleParallaxExpandableListView"></activity>
+        <activity android:name=".parallaxscrollexample.SingleParallaxListView"></activity>
+        <activity android:name=".parallaxscrollexample.SingleParallaxScrollView"></activity>
+        <activity android:name=".parallaxscrollexample.MultipleParallaxExpandableListView"></activity>
+        <activity android:name=".parallaxscrollexample.MultipleParallaxListView"></activity>
+        <activity android:name=".parallaxscrollexample.MultipleParallaxScrollView"></activity>
+        <activity android:name=".sampleModules.ProgressbarWheelActivity"></activity>
     </application>
 </manifest>

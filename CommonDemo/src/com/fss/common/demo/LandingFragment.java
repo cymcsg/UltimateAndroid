@@ -22,6 +22,7 @@ import com.fss.common.demo.foldableLayout.activities.FoldableListActivity;
 import com.fss.common.demo.foldableLayout.activities.UnfoldableDetailsActivity;
 import com.fss.common.demo.foldingDrawer.FoldingActivitys;
 import com.fss.common.demo.listviewfilter.ui.ListViewFilterActivity;
+import com.fss.common.demo.parallaxscrollexample.ParallaxScrollActivity;
 import com.fss.common.demo.sampleModules.*;
 import com.fss.common.demo.stickygridheadersexample.StickGridItemListActivity;
 
@@ -142,6 +143,16 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "to Panning");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "ParScroll");
+        map.put("detail", "try");
+        map.put("subname", "to ParScroll");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "ProgressWheel");
+        map.put("detail", "try");
+        map.put("subname", "to Wheel");
+        enhanceList.add(map);
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
         landingEnhanceListView.setAdapter(enhancedListAdapter);
         landingEnhanceListView.setDismissCallback(new EnhancedListView.OnDismissCallback() {
@@ -207,6 +218,12 @@ public class LandingFragment extends Fragment {
                         break;
                     case 15:
                         BasicUtils.sendIntent(getActivity(), PanningViewActivity.class);
+                        break;
+                    case 16:
+                        BasicUtils.sendIntent(getActivity(), ParallaxScrollActivity.class);
+                        break;
+                    case 17:
+                        BasicUtils.sendIntent(getActivity(), ProgressbarWheelActivity.class);
                         break;
 
                 }
