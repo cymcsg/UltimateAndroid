@@ -21,10 +21,7 @@ import com.fss.common.demo.foldableLayout.activities.FoldableListActivity;
 import com.fss.common.demo.foldableLayout.activities.UnfoldableDetailsActivity;
 import com.fss.common.demo.foldingDrawer.FoldingActivitys;
 import com.fss.common.demo.listviewfilter.ui.ListViewFilterActivity;
-import com.fss.common.demo.sampleModules.CalendarSquareActivity;
-import com.fss.common.demo.sampleModules.CircularBarActivity;
-import com.fss.common.demo.sampleModules.FlipViewActivity;
-import com.fss.common.demo.sampleModules.PhotoViewActivity;
+import com.fss.common.demo.sampleModules.*;
 import com.fss.common.demo.stickygridheadersexample.StickGridItemListActivity;
 
 import java.util.ArrayList;
@@ -124,6 +121,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "to TimeSquare");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "FaceCrop");
+        map.put("detail", "try");
+        map.put("subname", "to FaceCrop");
+        enhanceList.add(map);
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
         landingEnhanceListView.setAdapter(enhancedListAdapter);
         landingEnhanceListView.setDismissCallback(new EnhancedListView.OnDismissCallback() {
@@ -177,6 +179,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 11:
                         BasicUtils.sendIntent(getActivity(), CalendarSquareActivity.class);
+                        break;
+                    case 12:
+                        BasicUtils.sendIntent(getActivity(), FaceCropActivity.class);
                         break;
                 }
             }

@@ -910,4 +910,12 @@ public class ImageUtils {
         return bs;
     }
 
+    public static Bitmap getBitmapFromResource(Context ctx, int resDrawable) {
+        BitmapFactory.Options bitmapOptions = new BitmapFactory.Options();
+        bitmapOptions.inPreferredConfig = Bitmap.Config.RGB_565;
+
+        return BitmapFactory.decodeResource(ctx.getResources(), resDrawable, bitmapOptions);
+
+    }
+
 }
