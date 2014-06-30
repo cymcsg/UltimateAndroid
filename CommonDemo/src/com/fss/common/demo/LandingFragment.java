@@ -126,6 +126,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "to FaceCrop");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "KenBurns");
+        map.put("detail", "try");
+        map.put("subname", "to KenBurns");
+        enhanceList.add(map);
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
         landingEnhanceListView.setAdapter(enhancedListAdapter);
         landingEnhanceListView.setDismissCallback(new EnhancedListView.OnDismissCallback() {
@@ -182,6 +187,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 12:
                         BasicUtils.sendIntent(getActivity(), FaceCropActivity.class);
+                        break;
+                    case 13:
+                        BasicUtils.sendIntent(getActivity(), KenBurnsViewActivity.class);
                         break;
                 }
             }
