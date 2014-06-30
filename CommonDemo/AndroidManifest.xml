@@ -30,5 +30,6 @@
         <activity android:name=".foldableLayout.activities.UnfoldableDetailsActivity"></activity>
         <activity android:name=".sampleModules.CalendarSquareActivity"></activity>
         <activity android:name=".sampleModules.KenBurnsViewActivity"></activity>
+        <activity android:name=".discrollview.DiscrollActivity"></activity>
     </application>
 </manifest>

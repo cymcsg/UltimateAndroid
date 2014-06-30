@@ -16,6 +16,7 @@ import com.fss.Common.commonUtils.basicUtils.BasicUtils;
 import com.fss.Common.uiModule.enhanceListView.EnhancedListView;
 import com.fss.Common.uiModule.viewpagerindicator.CirclePageIndicator;
 import com.fss.common.demo.cooldraganddrop.CoolDragAndDropActivity;
+import com.fss.common.demo.discrollview.DiscrollActivity;
 import com.fss.common.demo.dynamicgrid.example.DynamicGridActivity;
 import com.fss.common.demo.foldableLayout.activities.FoldableListActivity;
 import com.fss.common.demo.foldableLayout.activities.UnfoldableDetailsActivity;
@@ -131,6 +132,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "to KenBurns");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "Discroll");
+        map.put("detail", "try");
+        map.put("subname", "to Discroll");
+        enhanceList.add(map);
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
         landingEnhanceListView.setAdapter(enhancedListAdapter);
         landingEnhanceListView.setDismissCallback(new EnhancedListView.OnDismissCallback() {
@@ -191,6 +197,10 @@ public class LandingFragment extends Fragment {
                     case 13:
                         BasicUtils.sendIntent(getActivity(), KenBurnsViewActivity.class);
                         break;
+                    case 14:
+                        BasicUtils.sendIntent(getActivity(), DiscrollActivity.class);
+                        break;
+
                 }
             }
         });
