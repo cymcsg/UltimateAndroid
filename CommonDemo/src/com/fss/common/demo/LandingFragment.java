@@ -137,6 +137,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "to Discroll");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "Panning");
+        map.put("detail", "try");
+        map.put("subname", "to Panning");
+        enhanceList.add(map);
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
         landingEnhanceListView.setAdapter(enhancedListAdapter);
         landingEnhanceListView.setDismissCallback(new EnhancedListView.OnDismissCallback() {
@@ -199,6 +204,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 14:
                         BasicUtils.sendIntent(getActivity(), DiscrollActivity.class);
+                        break;
+                    case 15:
+                        BasicUtils.sendIntent(getActivity(), PanningViewActivity.class);
                         break;
 
                 }

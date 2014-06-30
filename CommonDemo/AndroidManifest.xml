@@ -31,5 +31,6 @@
         <activity android:name=".sampleModules.CalendarSquareActivity"></activity>
         <activity android:name=".sampleModules.KenBurnsViewActivity"></activity>
         <activity android:name=".discrollview.DiscrollActivity"></activity>
+        <activity android:name=".sampleModules.PanningViewActivity"></activity>
     </application>
 </manifest>
