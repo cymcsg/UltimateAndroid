@@ -2,6 +2,8 @@ package com.fss.common.demo;
 
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.os.Parcelable;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.PagerAdapter;
@@ -13,7 +15,11 @@ import android.widget.*;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import com.fss.Common.commonUtils.basicUtils.BasicUtils;
+import com.fss.Common.commonUtils.basicUtils.HandlerUtils;
+import com.fss.Common.ui.Typefaces;
 import com.fss.Common.uiModule.enhanceListView.EnhancedListView;
+import com.fss.Common.uiModule.titanic.Titanic;
+import com.fss.Common.uiModule.titanic.TitanicTextView;
 import com.fss.Common.uiModule.viewpagerindicator.CirclePageIndicator;
 import com.fss.common.demo.cooldraganddrop.CoolDragAndDropActivity;
 import com.fss.common.demo.discrollview.DiscrollActivity;
@@ -46,12 +52,15 @@ public class LandingFragment extends Fragment {
     ViewPager landingMallViewpager;
     CirclePageIndicator landingMallViewPagerIndicator;
     private List<View> viewpagerList = new ArrayList<View>();
-
+    Titanic titanic;
+    @InjectView(R.id.titanicTextView)
+    TitanicTextView titanicTextView;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         mainView = inflater.inflate(R.layout.landing_fragment, container, false);
         ButterKnife.inject(this, mainView);
+        initTitanicView();
         initEnhanceList();
         initViewPager();
 
@@ -63,6 +72,22 @@ public class LandingFragment extends Fragment {
         super.onDestroyView();
         ButterKnife.reset(this);
     }
+
+    private void initTitanicView() {
+        titanic = new Titanic();
+        titanic.start(titanicTextView);
+        titanicTextView.setTypeface(Typefaces.get(getActivity(), "Satisfy-Regular.ttf"));
+        //  HandlerUtils.sendMessageHandlerDelay(titanicHandler, 0, 3000);
+    }
+
+    Handler titanicHandler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            titanic.cancel();
+            landingEnhanceListView.setVisibility(View.VISIBLE);
+        }
+    };
 
     private void initEnhanceList() {
         HashMap<String, String> map = new HashMap<>();

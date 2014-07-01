@@ -12,12 +12,20 @@
                                                                     android:layout_below="@id/landingMallViewpager"
                                                                     android:id="@+id/landingMallViewPagerIndicator"
                                                                     android:layout_height="wrap_content"></com.fss.Common.uiModule.viewpagerindicator.CirclePageIndicator>
+    <com.fss.Common.uiModule.titanic.TitanicTextView
+            android:id="@+id/titanicTextView"
+            android:text="Loading" android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/threec"
+            android:textSize="70sp"/>
+
     <com.fss.Common.uiModule.enhanceListView.EnhancedListView android:layout_width="fill_parent"
                                                               android:id="@+id/landingEnhanceListView"
+
                                                               android:layout_height="wrap_content">
 
     </com.fss.Common.uiModule.enhanceListView.EnhancedListView>
-
 
 
 </LinearLayout>
