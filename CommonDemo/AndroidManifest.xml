@@ -41,5 +41,7 @@
         <activity android:name=".parallaxscrollexample.MultipleParallaxScrollView"></activity>
         <activity android:name=".sampleModules.ProgressbarWheelActivity"></activity>
         <activity android:name=".viewpagerSlidingTab.ViewpagerSlidingTabsActivity"></activity>
+        <activity android:name=".rebound.ReboundActivity"></activity>
+        <activity android:name=".rebound.ReboundActivitySimple"></activity>
     </application>
 </manifest>

@@ -23,6 +23,8 @@ import com.fss.common.demo.foldableLayout.activities.UnfoldableDetailsActivity;
 import com.fss.common.demo.foldingDrawer.FoldingActivitys;
 import com.fss.common.demo.listviewfilter.ui.ListViewFilterActivity;
 import com.fss.common.demo.parallaxscrollexample.ParallaxScrollActivity;
+import com.fss.common.demo.rebound.ReboundActivity;
+import com.fss.common.demo.rebound.ReboundActivitySimple;
 import com.fss.common.demo.sampleModules.*;
 import com.fss.common.demo.stickygridheadersexample.StickGridItemListActivity;
 import com.fss.common.demo.viewpagerSlidingTab.ViewpagerSlidingTabsActivity;
@@ -159,6 +161,16 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "to ViewTabs");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "Rebound");
+        map.put("detail", "try");
+        map.put("subname", "Rebound");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "ReboundSimple");
+        map.put("detail", "try");
+        map.put("subname", "Rebound");
+        enhanceList.add(map);
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
         landingEnhanceListView.setAdapter(enhancedListAdapter);
         landingEnhanceListView.setDismissCallback(new EnhancedListView.OnDismissCallback() {
@@ -233,6 +245,12 @@ public class LandingFragment extends Fragment {
                         break;
                     case 18:
                         BasicUtils.sendIntent(getActivity(), ViewpagerSlidingTabsActivity.class);
+                        break;
+                    case 19:
+                        BasicUtils.sendIntent(getActivity(), ReboundActivity.class);
+                        break;
+                    case 20:
+                        BasicUtils.sendIntent(getActivity(), ReboundActivitySimple.class);
                         break;
 
                 }
