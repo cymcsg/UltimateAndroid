@@ -25,6 +25,7 @@ import com.fss.common.demo.listviewfilter.ui.ListViewFilterActivity;
 import com.fss.common.demo.parallaxscrollexample.ParallaxScrollActivity;
 import com.fss.common.demo.sampleModules.*;
 import com.fss.common.demo.stickygridheadersexample.StickGridItemListActivity;
+import com.fss.common.demo.viewpagerSlidingTab.ViewpagerSlidingTabsActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -153,6 +154,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "to Wheel");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "ViewTabs");
+        map.put("detail", "try");
+        map.put("subname", "to ViewTabs");
+        enhanceList.add(map);
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
         landingEnhanceListView.setAdapter(enhancedListAdapter);
         landingEnhanceListView.setDismissCallback(new EnhancedListView.OnDismissCallback() {
@@ -224,6 +230,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 17:
                         BasicUtils.sendIntent(getActivity(), ProgressbarWheelActivity.class);
+                        break;
+                    case 18:
+                        BasicUtils.sendIntent(getActivity(), ViewpagerSlidingTabsActivity.class);
                         break;
 
                 }
