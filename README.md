@@ -73,25 +73,32 @@ Update：
 			
 		  增加了头部浮现控件和根据Letter过滤控件
 		  
-2014.6.26 Add [Flip View](https://github.com/emilsjolander/android-FlipView) like FlipBoard
+2014.6.26 Add [Flip View](https://github.com/emilsjolander/android-FlipView) like FlipBoard  
           Add [PhotoView](https://github.com/chrisbanes/PhotoView)which can help you zoom image by various touch gestures.
           
           增加了类似FlipBoard的效果。
           增加了手势放缩图片的控件。
 
-2014.6.27 Add [Square Progress](https://github.com/mrwonderman/android-square-progressbar)
-          Add [FolderableLayout](https://github.com/alexvasilkov/FoldableLayout)
+2014.6.27 Add [Square Progress](https://github.com/mrwonderman/android-square-progressbar)  
+          Add [FolderableLayout](https://github.com/alexvasilkov/FoldableLayout)  
           Add[FoldingNavigationDrawer](https://github.com/tibi1712/FoldingNavigationDrawer-Android)
 
 
           增加了几种进度条的加载方式
           增加了折叠的图片处理或者侧边菜单的样式。
 
-2014.6.28 Add [Calendar widget](https://github.com/square/android-times-square)
+2014.6.28 Add [Calendar widget](https://github.com/square/android-times-square)  
           Add Demo.apk
 
           增加了日历选择控件
           增加了DemoApk
+          
+2014.6.30   
+Add [FaceCrop](https://github.com/Todd-Davies/ProgressWheel)  
+          Add [KenBurns](https://github.com/flavioarfaria/KenBurnsView)  
+          Add [PanningView](https://github.com/flavienlaurent/PanningView)  
+          Add [ProgressWheel](https://github.com/lafosca/AndroidFaceCropper)  
+          Add [ViewpagerSlidingTabs](https://github.com/astuetz/PagerSlidingTabStrip)  
 
 
 The CommonLibs use many opensource program and I am very grateful to the author of them.
