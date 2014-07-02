@@ -43,5 +43,6 @@
         <activity android:name=".viewpagerSlidingTab.ViewpagerSlidingTabsActivity"></activity>
         <activity android:name=".rebound.ReboundActivity"></activity>
         <activity android:name=".rebound.ReboundActivitySimple"></activity>
+        <activity android:name=".sampleModules.FaceCropActivity"></activity>
     </application>
 </manifest>
