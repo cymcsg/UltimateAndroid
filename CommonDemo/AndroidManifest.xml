@@ -44,5 +44,19 @@
         <activity android:name=".rebound.ReboundActivity"></activity>
         <activity android:name=".rebound.ReboundActivitySimple"></activity>
         <activity android:name=".sampleModules.FaceCropActivity"></activity>
+        <activity android:name=".listviewanimations.ListAnimationActivity"></activity>
+        <activity android:name=".listviewanimations.ListAnimationListActivity"></activity>
+        <activity android:name=".listviewanimations.GoogleCardsActivity"></activity>
+        <activity android:name=".listviewanimations.GridViewActivity"></activity>
+        <activity android:name=".listviewanimations.itemmanipulationexamples.AnimateAdditionActivity"></activity>
+        <activity android:name=".listviewanimations.itemmanipulationexamples.DragAndDropActivity"></activity>
+        <activity android:name=".listviewanimations.appearanceexamples.AppearanceExamplesActivity"></activity>
+        <activity
+                android:name=".listviewanimations.itemmanipulationexamples.ItemManipulationsExamplesActivity"></activity>
+
+        <activity android:name=".listviewanimations.itemmanipulationexamples.ExpandableListItemActivity"></activity>
+        <activity android:name=".listviewanimations.itemmanipulationexamples.SwipeDismissActivity"></activity>
+        <activity android:name=".listviewanimations.itemmanipulationexamples.AnimateDismissActivity"></activity>
     </application>
+    <uses-permission android:name="com.android.vending.BILLING"/>
 </manifest>

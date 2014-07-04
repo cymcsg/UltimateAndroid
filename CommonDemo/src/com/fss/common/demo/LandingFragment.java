@@ -27,6 +27,7 @@ import com.fss.common.demo.dynamicgrid.example.DynamicGridActivity;
 import com.fss.common.demo.foldableLayout.activities.FoldableListActivity;
 import com.fss.common.demo.foldableLayout.activities.UnfoldableDetailsActivity;
 import com.fss.common.demo.foldingDrawer.FoldingActivitys;
+import com.fss.common.demo.listviewanimations.ListAnimationActivity;
 import com.fss.common.demo.listviewfilter.ui.ListViewFilterActivity;
 import com.fss.common.demo.parallaxscrollexample.ParallaxScrollActivity;
 import com.fss.common.demo.rebound.ReboundActivity;
@@ -196,6 +197,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "Rebound");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "ListAnim");
+        map.put("detail", "try");
+        map.put("subname", "ListAnim");
+        enhanceList.add(map);
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
         landingEnhanceListView.setAdapter(enhancedListAdapter);
         landingEnhanceListView.setDismissCallback(new EnhancedListView.OnDismissCallback() {
@@ -276,6 +282,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 20:
                         BasicUtils.sendIntent(getActivity(), ReboundActivitySimple.class);
+                        break;
+                    case 21:
+                        BasicUtils.sendIntent(getActivity(), ListAnimationActivity.class);
                         break;
 
                 }
