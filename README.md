@@ -143,6 +143,13 @@ Add [FaceCrop](https://github.com/Todd-Davies/ProgressWheel)
           Add [PanningView](https://github.com/flavienlaurent/PanningView)  
           Add [ProgressWheel](https://github.com/lafosca/AndroidFaceCropper)  
           Add [ViewpagerSlidingTabs](https://github.com/astuetz/PagerSlidingTabStrip)  
+          
+2014.7.2 Add [Rebound](https://github.com/facebook/rebound)
+         Add [Titanic](https://github.com/RomainPiel/Titanic)
+
+2014.7.3 Add [PagerSlidingTabStrip](https://github.com/astuetz/PagerSlidingTabStrip)
+
+2014.7.4 Add [ListviewAnimations](https://github.com/nhaarman/ListViewAnimations)
 
 
 The CommonLibs use many opensource program and I am very grateful to the author of them.
