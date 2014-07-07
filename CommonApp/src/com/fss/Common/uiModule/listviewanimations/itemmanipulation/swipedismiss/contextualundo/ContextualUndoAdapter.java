@@ -16,29 +16,26 @@
  */
 package com.fss.Common.uiModule.listviewanimations.itemmanipulation.swipedismiss.contextualundo;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.BaseAdapter;
-import android.widget.ListView;
-import android.widget.TextView;
 
-import com.fss.Common.nineoldandroids.animation.Animator;
-import com.fss.Common.nineoldandroids.animation.ObjectAnimator;
+import com.fss.Common.uiModule.nineoldandroids.animation.Animator;
+import com.fss.Common.uiModule.nineoldandroids.animation.ObjectAnimator;
 import com.fss.Common.uiModule.listviewanimations.BaseAdapterDecorator;
 import com.fss.Common.uiModule.listviewanimations.util.AdapterViewUtil;
 
-import com.fss.Common.nineoldandroids.animation.AnimatorListenerAdapter;
+import com.fss.Common.uiModule.nineoldandroids.animation.AnimatorListenerAdapter;
 
-import com.fss.Common.nineoldandroids.animation.ValueAnimator;
-import com.fss.Common.nineoldandroids.view.ViewHelper;
+import com.fss.Common.uiModule.nineoldandroids.animation.ValueAnimator;
+import com.fss.Common.uiModule.nineoldandroids.view.ViewHelper;
 
-import static com.fss.Common.nineoldandroids.view.ViewHelper.setAlpha;
-import static com.fss.Common.nineoldandroids.view.ViewHelper.setTranslationX;
-import static com.fss.Common.nineoldandroids.view.ViewPropertyAnimator.animate;
+import static com.fss.Common.uiModule.nineoldandroids.view.ViewHelper.setAlpha;
+import static com.fss.Common.uiModule.nineoldandroids.view.ViewHelper.setTranslationX;
+import static com.fss.Common.uiModule.nineoldandroids.view.ViewPropertyAnimator.animate;
 
 /**
  * Warning: a stable id for each item in the adapter is required. The decorated

@@ -7,9 +7,9 @@ import android.util.Log;
 import android.view.ViewTreeObserver;
 import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
-import com.fss.Common.nineoldandroids.animation.Animator;
-import com.fss.Common.nineoldandroids.animation.AnimatorListenerAdapter;
-import com.fss.Common.nineoldandroids.animation.ValueAnimator;
+import com.fss.Common.uiModule.nineoldandroids.animation.Animator;
+import com.fss.Common.uiModule.nineoldandroids.animation.AnimatorListenerAdapter;
+import com.fss.Common.uiModule.nineoldandroids.animation.ValueAnimator;
 
 import java.lang.ref.WeakReference;
 

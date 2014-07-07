@@ -20,8 +20,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
 import com.fss.Common.uiModule.listviewanimations.swinginadapters.AnimationAdapter;
-import com.fss.Common.nineoldandroids.animation.Animator;
-import com.fss.Common.nineoldandroids.animation.ObjectAnimator;
+import com.fss.Common.uiModule.nineoldandroids.animation.Animator;
+import com.fss.Common.uiModule.nineoldandroids.animation.ObjectAnimator;
 
 public class ScaleInAnimationAdapter extends AnimationAdapter {
 

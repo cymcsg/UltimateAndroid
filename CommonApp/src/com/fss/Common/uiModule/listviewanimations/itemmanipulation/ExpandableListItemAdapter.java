@@ -12,9 +12,9 @@ import android.widget.LinearLayout;
 import com.fss.Common.uiModule.listviewanimations.ArrayAdapter;
 import com.fss.Common.uiModule.listviewanimations.ListViewSetter;
 import com.fss.Common.uiModule.listviewanimations.util.AdapterViewUtil;
-import com.fss.Common.nineoldandroids.animation.Animator;
-import com.fss.Common.nineoldandroids.animation.AnimatorListenerAdapter;
-import com.fss.Common.nineoldandroids.animation.ValueAnimator;
+import com.fss.Common.uiModule.nineoldandroids.animation.Animator;
+import com.fss.Common.uiModule.nineoldandroids.animation.AnimatorListenerAdapter;
+import com.fss.Common.uiModule.nineoldandroids.animation.ValueAnimator;
 
 import java.util.ArrayList;
 import java.util.HashSet;

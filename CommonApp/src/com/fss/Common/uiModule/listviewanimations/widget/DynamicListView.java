@@ -38,12 +38,12 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 
 import com.fss.Common.uiModule.listviewanimations.itemmanipulation.swipedismiss.SwipeOnTouchListener;
-import com.fss.Common.nineoldandroids.animation.Animator;
-import com.fss.Common.nineoldandroids.animation.AnimatorListenerAdapter;
-import com.fss.Common.nineoldandroids.animation.ObjectAnimator;
-import com.fss.Common.nineoldandroids.animation.TypeEvaluator;
-import com.fss.Common.nineoldandroids.animation.ValueAnimator;
-import com.fss.Common.nineoldandroids.view.ViewHelper;
+import com.fss.Common.uiModule.nineoldandroids.animation.Animator;
+import com.fss.Common.uiModule.nineoldandroids.animation.AnimatorListenerAdapter;
+import com.fss.Common.uiModule.nineoldandroids.animation.ObjectAnimator;
+import com.fss.Common.uiModule.nineoldandroids.animation.TypeEvaluator;
+import com.fss.Common.uiModule.nineoldandroids.animation.ValueAnimator;
+import com.fss.Common.uiModule.nineoldandroids.view.ViewHelper;
 
 /**
  * The DynamicListView is an extension of {@link android.widget.ListView} that supports cell dragging

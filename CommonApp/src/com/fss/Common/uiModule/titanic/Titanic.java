@@ -3,10 +3,10 @@ package com.fss.Common.uiModule.titanic;
 
 import android.os.Build;
 import android.view.animation.LinearInterpolator;
-import com.fss.Common.nineoldandroids.animation.Animator;
-import com.fss.Common.nineoldandroids.animation.AnimatorSet;
-import com.fss.Common.nineoldandroids.animation.ObjectAnimator;
-import com.fss.Common.nineoldandroids.animation.ValueAnimator;
+import com.fss.Common.uiModule.nineoldandroids.animation.Animator;
+import com.fss.Common.uiModule.nineoldandroids.animation.AnimatorSet;
+import com.fss.Common.uiModule.nineoldandroids.animation.ObjectAnimator;
+import com.fss.Common.uiModule.nineoldandroids.animation.ValueAnimator;
 
 
 public class Titanic {

@@ -26,21 +26,20 @@ import android.view.View;
 import android.view.ViewConfiguration;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
-import android.widget.ListView;
 
 import com.fss.Common.uiModule.listviewanimations.itemmanipulation.OnDismissCallback;
 import com.fss.Common.uiModule.listviewanimations.util.AdapterViewUtil;
-import com.fss.Common.nineoldandroids.animation.Animator;
-import com.fss.Common.nineoldandroids.animation.AnimatorListenerAdapter;
-import com.fss.Common.nineoldandroids.animation.ValueAnimator;
-import com.fss.Common.nineoldandroids.view.ViewHelper;
-import com.fss.Common.nineoldandroids.view.ViewPropertyAnimator;
+import com.fss.Common.uiModule.nineoldandroids.animation.Animator;
+import com.fss.Common.uiModule.nineoldandroids.animation.AnimatorListenerAdapter;
+import com.fss.Common.uiModule.nineoldandroids.animation.ValueAnimator;
+import com.fss.Common.uiModule.nineoldandroids.view.ViewHelper;
+import com.fss.Common.uiModule.nineoldandroids.view.ViewPropertyAnimator;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import static com.fss.Common.nineoldandroids.view.ViewPropertyAnimator.animate;
+import static com.fss.Common.uiModule.nineoldandroids.view.ViewPropertyAnimator.animate;
 
 /**
  * A {@link android.view.View.OnTouchListener} that makes the list items in a

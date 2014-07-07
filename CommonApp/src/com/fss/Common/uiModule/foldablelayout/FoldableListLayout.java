@@ -13,7 +13,7 @@ import android.view.View;
 import android.view.ViewConfiguration;
 import android.widget.BaseAdapter;
 import android.widget.FrameLayout;
-import com.fss.Common.nineoldandroids.animation.ObjectAnimator;
+import com.fss.Common.uiModule.nineoldandroids.animation.ObjectAnimator;
 import com.fss.Common.uiModule.foldablelayout.shading.FoldShading;
 import com.fss.Common.uiModule.foldablelayout.shading.SimpleFoldShading;
 

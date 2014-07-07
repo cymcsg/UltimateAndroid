@@ -24,11 +24,11 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 
 import com.fss.Common.uiModule.listviewanimations.BaseAdapterDecorator;
-import com.fss.Common.nineoldandroids.animation.Animator;
-import com.fss.Common.nineoldandroids.animation.AnimatorListenerAdapter;
-import com.fss.Common.nineoldandroids.animation.AnimatorSet;
-import com.fss.Common.nineoldandroids.animation.ObjectAnimator;
-import com.fss.Common.nineoldandroids.animation.ValueAnimator;
+import com.fss.Common.uiModule.nineoldandroids.animation.Animator;
+import com.fss.Common.uiModule.nineoldandroids.animation.AnimatorListenerAdapter;
+import com.fss.Common.uiModule.nineoldandroids.animation.AnimatorSet;
+import com.fss.Common.uiModule.nineoldandroids.animation.ObjectAnimator;
+import com.fss.Common.uiModule.nineoldandroids.animation.ValueAnimator;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -44,7 +44,7 @@ import java.util.List;
  * - Call {@link com.fss.Common.uiModule.listviewanimations.itemmanipulation.AnimateAdditionAdapter#insert(int, Object)} to animate the addition of an item.
  * <p>
  * Extend this class and override {@link com.fss.Common.uiModule.listviewanimations.itemmanipulation.AnimateAdditionAdapter#getAdditionalAnimators(android.view.View,
- * android.view.ViewGroup)} to provide extra {@link com.fss.Common.nineoldandroids.animation.Animator}s.
+ * android.view.ViewGroup)} to provide extra {@link com.fss.Common.uiModule.nineoldandroids.animation.Animator}s.
  */
 @SuppressWarnings("unchecked")
 public class AnimateAdditionAdapter<T> extends BaseAdapterDecorator {

@@ -21,11 +21,11 @@ import android.widget.BaseAdapter;
 
 import com.fss.Common.uiModule.listviewanimations.BaseAdapterDecorator;
 import com.fss.Common.uiModule.listviewanimations.util.AdapterViewUtil;
-import com.fss.Common.nineoldandroids.animation.Animator;
-import com.fss.Common.nineoldandroids.animation.AnimatorListenerAdapter;
-import com.fss.Common.nineoldandroids.animation.AnimatorSet;
-import com.fss.Common.nineoldandroids.animation.ValueAnimator;
-import com.fss.Common.nineoldandroids.animation.ValueAnimator.AnimatorUpdateListener;
+import com.fss.Common.uiModule.nineoldandroids.animation.Animator;
+import com.fss.Common.uiModule.nineoldandroids.animation.AnimatorListenerAdapter;
+import com.fss.Common.uiModule.nineoldandroids.animation.AnimatorSet;
+import com.fss.Common.uiModule.nineoldandroids.animation.ValueAnimator;
+import com.fss.Common.uiModule.nineoldandroids.animation.ValueAnimator.AnimatorUpdateListener;
 
 import java.util.ArrayList;
 import java.util.Arrays;

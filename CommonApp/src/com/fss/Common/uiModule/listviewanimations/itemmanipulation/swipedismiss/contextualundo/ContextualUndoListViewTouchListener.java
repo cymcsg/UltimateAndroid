@@ -22,22 +22,20 @@ import android.graphics.Rect;
 import android.view.MotionEvent;
 import android.view.VelocityTracker;
 import android.view.View;
-import android.view.View.OnTouchListener;
 import android.view.ViewConfiguration;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
-import android.widget.BaseAdapter;
 
 import com.fss.Common.uiModule.listviewanimations.itemmanipulation.swipedismiss.DismissableManager;
 import com.fss.Common.uiModule.listviewanimations.itemmanipulation.swipedismiss.SwipeOnTouchListener;
 import com.fss.Common.uiModule.listviewanimations.util.AdapterViewUtil;
-import com.fss.Common.nineoldandroids.animation.Animator;
-import com.fss.Common.nineoldandroids.animation.AnimatorListenerAdapter;
+import com.fss.Common.uiModule.nineoldandroids.animation.Animator;
+import com.fss.Common.uiModule.nineoldandroids.animation.AnimatorListenerAdapter;
 
-import static com.fss.Common.nineoldandroids.view.ViewHelper.setAlpha;
-import static com.fss.Common.nineoldandroids.view.ViewHelper.setTranslationX;
-import static com.fss.Common.nineoldandroids.view.ViewPropertyAnimator.animate;
+import static com.fss.Common.uiModule.nineoldandroids.view.ViewHelper.setAlpha;
+import static com.fss.Common.uiModule.nineoldandroids.view.ViewHelper.setTranslationX;
+import static com.fss.Common.uiModule.nineoldandroids.view.ViewPropertyAnimator.animate;
 
 /**
  * An {@link android.view.View.OnTouchListener} for the {@link ContextualUndoAdapter}. Don't use

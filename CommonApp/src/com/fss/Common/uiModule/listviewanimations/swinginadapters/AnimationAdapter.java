@@ -24,10 +24,10 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 
 import com.fss.Common.uiModule.listviewanimations.BaseAdapterDecorator;
-import com.fss.Common.nineoldandroids.animation.Animator;
-import com.fss.Common.nineoldandroids.animation.AnimatorSet;
-import com.fss.Common.nineoldandroids.animation.ObjectAnimator;
-import com.fss.Common.nineoldandroids.view.ViewHelper;
+import com.fss.Common.uiModule.nineoldandroids.animation.Animator;
+import com.fss.Common.uiModule.nineoldandroids.animation.AnimatorSet;
+import com.fss.Common.uiModule.nineoldandroids.animation.ObjectAnimator;
+import com.fss.Common.uiModule.nineoldandroids.view.ViewHelper;
 
 /**
  * A {@link BaseAdapterDecorator} class which applies multiple {@link Animator}s at once to
