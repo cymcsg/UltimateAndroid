@@ -25,7 +25,8 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 
 import com.fss.Common.commonUtils.logUtils.Logs;
-import com.fss.Common.nineoldandroids.animation.Animator;
+import com.fss.Common.commonUtils.urlUtils.HttpsUtils;
+import com.fss.Common.uiModule.nineoldandroids.animation.Animator;
 import com.fss.Common.ui.ToastUtil;
 import com.fss.Common.uiModule.shimmer.Shimmer;
 import com.fss.Common.uiModule.shimmer.ShimmerTextView;
@@ -62,6 +63,14 @@ public class MainActivity extends ActionBarActivity {
                 .add(R.id.main_content_frame, mContent).commit();
         initViews();
         initShimmerTextView();
+        new Thread() {
+            @Override
+            public void run() {
+                super.run();
+                Logs.d("11111");
+                HttpsUtils.sendWithSSlSocketWithCrt(MainActivity.this, "ca.crt", "https://xxx.xxx");
+            }
+        }.start();
     }
 
     @Override
