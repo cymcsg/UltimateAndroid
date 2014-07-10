@@ -63,14 +63,7 @@ public class MainActivity extends ActionBarActivity {
                 .add(R.id.main_content_frame, mContent).commit();
         initViews();
         initShimmerTextView();
-        new Thread() {
-            @Override
-            public void run() {
-                super.run();
-                Logs.d("11111");
-                HttpsUtils.sendWithSSlSocketWithCrt(MainActivity.this, "ca.crt", "https://xxx.xxx");
-            }
-        }.start();
+        // testHttps();
     }
 
     @Override
@@ -233,6 +226,17 @@ public class MainActivity extends ActionBarActivity {
         mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
 
         // getSupportParentActivityIntent();
+    }
+
+    private void testHttps() {
+        new Thread() {
+            @Override
+            public void run() {
+                super.run();
+                Logs.d("11111");
+                HttpsUtils.sendWithSSlSocketWithCrt(MainActivity.this, "ca.crt", "https://xxx.xxx");
+            }
+        }.start();
     }
 
     private void initShimmerTextView() {
