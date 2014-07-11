@@ -26,7 +26,9 @@ Up to now,I have only write the demo of most parts of UI modules and View Inject
 框架的Demo目前主要只包含了UI Module部分和View Injection，看上去有些无聊，不过你仍可以查看这些有趣的UI效果.
 
 ####我将尽力在接下啦的日子中将Demo做的更有趣，同时也包括了类似ORM，异步图片和网路加载等模块。
-	
+
+###QQ交流群：341970175（请注明Android开发）	
+
 	
 Demo Manual
 -----
