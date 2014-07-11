@@ -28,7 +28,7 @@ import de.greenrobot.daogenerator.ToMany;
  *
  * @author Markus
  */
-public class GreenDaoGenerator {
+public class DbDaoGenerator {
     final static String generatePath = "xxx/src/";
     final static String getGenerateSchemaPath="com.xxx.xxx.models.gen";
 
