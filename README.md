@@ -10,7 +10,7 @@ Introduction
 ---
 简介
 ---
-#####The lib contains many feature like View Injection,ORM,Asynchronous Http and Image,User scenario testing,many UI Modules etc.And there are also many useful feature like TripleDes Utils,WebViewUtils,Md5Utils etc.The lib will be added by more feature in the future.   
+#####The lib contains many feature like View Injection,ORM,Asynchronous Http and Image,User scenario testing,many UI Modules,Https Utils etc.And there are also many useful feature like TripleDes Utils,WebViewUtils,Md5Utils etc.The lib will be added by more feature in the future.   
 	
 If I add a new feature,I will write a demo for it at a same time.Some old features do not have demo but I will try to complete them.If you want to try the demo,you can download the Apk directly. 
 	 
@@ -19,7 +19,7 @@ Up to now,I have only write the demo of most parts of UI modules and View Inject
 #####I will try to make the demo more interesting and containing other parts such as ORM,Asynchronous Http and Image in next days.
 
 
-####框架目前主要包含的功能有View Injection,ORM,异步网络请求和图片加载，自动化脚本测试,磁盘LRU等功能.同时提供了类似于TripleDes、Webview快速设置、Md5处理、String处理等常用工具类，还有多种UI控件效果。并且这些功能正在逐步增加中。
+####框架目前主要包含的功能有View Injection,ORM,异步网络请求和图片加载，自动化脚本测试,磁盘LRU等功能.同时提供了类似于TripleDes、Webview快速设置、Md5处理、String处理,Https处理等常用工具类，还有多种UI控件效果。并且这些功能正在逐步增加中。
 		
 部分老的功能还没有Demo，但我会不断的完善。目前每加入一个新功能都会增加Demo.Demo的Apk文件可以直接下载使用.  
 
@@ -149,6 +149,9 @@ Add [FaceCrop](https://github.com/Todd-Davies/ProgressWheel)
 
 2014.7.4 Add [ListviewAnimations](https://github.com/nhaarman/ListViewAnimations)
 
+2014.7.8 Add Https Utils
+
+2014.7.10 Add DaoUtils to help deal with Sqlite
 
 The CommonLibs use many opensource program and I am very grateful to the author of them.
 The opensource program which I use:
