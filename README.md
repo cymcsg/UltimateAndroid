@@ -2,6 +2,7 @@ CommonLibsForAndroid
 ==========================
 
 ###Using CommonLibs is a fast way  to help you  develop Android apps 
+
 ### 快速开发Android应用的框架  
 <br>  
 
@@ -16,7 +17,7 @@ If I add a new feature,I will write a demo for it at a same time.Some old featur
 	 
 Up to now,I have only write the demo of most parts of UI modules and View Injection.The demo is something boring,but you can also see many kinds of UI modules.
 	
-#####I will try to make the demo more interesting and containing other parts such as ORM,Asynchronous Http and Image in next days.
+#####I will try to make the demo more interesting and containing other parts such as ORM,Asynchronous Http and Image in next days.Welcome to fork.
 
 
 ####框架目前主要包含的功能有View Injection,ORM,异步网络请求和图片加载，自动化脚本测试,磁盘LRU等功能.同时提供了类似于TripleDes、Webview快速设置、Md5处理、String处理,Https处理等常用工具类，还有多种UI控件效果。并且这些功能正在逐步增加中。
