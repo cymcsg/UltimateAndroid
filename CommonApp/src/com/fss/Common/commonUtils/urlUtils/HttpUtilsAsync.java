@@ -8,10 +8,8 @@ import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.PersistentCookieStore;
 import com.loopj.android.http.RequestParams;
 import org.apache.http.cookie.Cookie;
-import org.apache.http.impl.client.BasicCookieStore;
 import org.apache.http.impl.cookie.BasicClientCookie;
 
-import java.net.CookieStore;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -69,7 +67,7 @@ public class HttpUtilsAsync {
 
     public static void getUseCookie(Context context, String url, HashMap hashMap, AsyncHttpResponseHandler responseHandler) {
         PersistentCookieStore myCookieStore = new PersistentCookieStore(context);
-        if (BasicUtils.judgeIfNull(hashMap)) {
+        if (BasicUtils.judgeNotNull(hashMap)) {
             Iterator iterator = hashMap.entrySet().iterator();
             while (iterator.hasNext()) {
                 Map.Entry entry = (Map.Entry) iterator.next();
@@ -102,7 +100,7 @@ public class HttpUtilsAsync {
     public static String getUrlFromHashMap(String originUrl, HashMap hashMap) {
         String returnUrl = originUrl;
 
-        if (BasicUtils.judgeIfNull(hashMap)) {
+        if (BasicUtils.judgeNotNull(hashMap)) {
             returnUrl = returnUrl + "?";
             Iterator iterator = hashMap.entrySet().iterator();
             while (iterator.hasNext()) {

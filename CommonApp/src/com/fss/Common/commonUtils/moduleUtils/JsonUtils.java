@@ -13,30 +13,28 @@ import java.util.*;
 
 /**
  * Use Gson to parse jsons
- * @t unfinish
  *
+ * @t unfinish
  */
 public class JsonUtils {
     public static <T> T getListFromJson(String jsonString, TypeToken typeToken) {
         Gson gson = new Gson();
         return gson.fromJson(jsonString, typeToken.getType());
     }
-    //780500778
+
 
     public static ArrayList getArrayListFromJson(String jsonString) {
-//        JsonParser parser = new JsonParser();
-//        JsonObject rootObejct = parser.parse(jsonString).getAsJsonObject();
+        JsonParser jsonParser = new JsonParser();
         Gson gson = new Gson();
-//        Logs.d(rootObejct.isJsonArray() + "   " + rootObejct.isJsonObject());
+        JsonElement jsonElement = jsonParser.parse(jsonString);
+        Logs.d(jsonElement.isJsonArray() + "   " + jsonElement.isJsonObject());
         ArrayList<HashMap<String, Object>> arrayList = new ArrayList<HashMap<String, Object>>();
-//        if (rootObejct.isJsonObject()) {
-//            arrayList.add(gson.fromJson(rootObejct, HashMap.class));
-//        } else if (rootObejct.isJsonArray()) {
-        arrayList = gson.fromJson(jsonString, new TypeToken<ArrayList<HashMap<String, Object>>>() {
-        }.getType());
-        //   }
-
-
+        if (jsonElement.isJsonObject()) {
+            arrayList.add(gson.fromJson(jsonElement, HashMap.class));
+        } else if (jsonElement.isJsonArray()) {
+            arrayList = getListFromJson(jsonString, new TypeToken<ArrayList<HashMap<String, Object>>>() {
+            });
+        }
         return arrayList;
     }
 
@@ -66,6 +64,10 @@ public class JsonUtils {
 //        }
 //        return data;
 //    }
+
+//    public <T>  T fromJson(com.google.gson.JsonElement json, java.lang.Class<T> classOfT) throws com.google.gson.JsonSyntaxException
+//
+//    public <T>  T fromJson(com.google.gson.JsonElement json, java.lang.reflect.Type typeOfT) throws com.google.gson.JsonSyntaxException
 
 
 }

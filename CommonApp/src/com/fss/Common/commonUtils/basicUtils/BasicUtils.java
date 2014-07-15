@@ -6,9 +6,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
-import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import com.fss.Common.commonUtils.logUtils.Logs;
 
 import java.text.DecimalFormat;
@@ -196,7 +193,7 @@ public class BasicUtils {
 
     public static void putSharedPreferences(Context context, String fileName, HashMap<String, String> hashMap) {
         SharedPreferences.Editor sharedDate = context.getSharedPreferences(fileName, 0).edit();
-        if (BasicUtils.judgeIfNull(hashMap)) {
+        if (BasicUtils.judgeNotNull(hashMap)) {
             Iterator iterator = hashMap.entrySet().iterator();
             while (iterator.hasNext()) {
                 Map.Entry entry = (Map.Entry) iterator.next();
@@ -209,15 +206,15 @@ public class BasicUtils {
         sharedDate.commit();
     }
 
-    public static boolean judgeIfNull(String string) {
+    public static boolean judgeNotNull(String string) {
         return string != null && !string.equals("") ? true : false;
     }
 
-    public static boolean judgeIfNull(Map map) {
+    public static boolean judgeNotNull(Map map) {
         return map != null && map.size() > 0 ? true : false;
     }
 
-    public static boolean judgeIfNull(List list) {
+    public static boolean judgeNotNull(List list) {
         return list != null && list.size() > 0 ? true : false;
     }
 }
