@@ -1,4 +1,4 @@
-package com.fss.Common.commonUtils.moduleUtils;
+package com.fss.Common.commonUtils.jsonUtils;
 
 
 import com.fss.Common.commonUtils.logUtils.Logs;
@@ -9,14 +9,14 @@ import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;
 
 
+import java.io.Reader;
+import java.io.StringReader;
 import java.util.*;
 
 /**
  * Use Gson to parse jsons
- *
- * @t unfinish
  */
-public class JsonUtils {
+public class JsonUtil {
     public static <T> T getListFromJson(String jsonString, TypeToken typeToken) {
         Gson gson = new Gson();
         return gson.fromJson(jsonString, typeToken.getType());
@@ -53,6 +53,23 @@ public class JsonUtils {
             }
         }
     }
+
+    public static void iteratorList(List inputList) {
+        Iterator it1 = inputList.iterator();
+        while (it1.hasNext()) {
+            int i = 0;
+            Iterator it = ((HashMap<String, String>) it1.next()).entrySet().iterator();
+            while (it.hasNext()) {
+                i++;
+                Map.Entry entry = (Map.Entry) it.next();
+                Object key = entry.getKey();
+                Object value = entry.getValue();
+                Logs.d("key--" + key + "  value   " + value + "\n");
+            }
+        }
+    }
+
+
 //    public static <T> T fromJSON(final TypeReference<T> type,
 //                                 final String jsonPacket) {
 //        T data = null;

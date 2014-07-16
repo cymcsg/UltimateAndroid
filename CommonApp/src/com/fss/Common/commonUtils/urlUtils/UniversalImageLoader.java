@@ -3,6 +3,7 @@ package com.fss.Common.commonUtils.urlUtils;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.Handler;
+import com.fss.Common.R;
 import com.nostra13.universalimageloader.cache.disc.impl.UnlimitedDiscCache;
 import com.nostra13.universalimageloader.cache.disc.naming.HashCodeFileNameGenerator;
 import com.nostra13.universalimageloader.cache.memory.impl.LruMemoryCache;
@@ -24,6 +25,7 @@ import java.io.File;
 public class UniversalImageLoader {
     /**
      * The method is to get the Default UniversalImageLoader config
+     *
      * @param context
      * @return ImageLoaderConfiguration
      */
@@ -45,7 +47,7 @@ public class UniversalImageLoader {
                 .discCacheFileNameGenerator(new HashCodeFileNameGenerator()) // default
                 .imageDownloader(new BaseImageDownloader(context)) // default
                 .imageDecoder(new BaseImageDecoder(false)) // default
-             //   .defaultDisplayImageOptions(DisplayImageOptions.createSimple()) // default
+                        //   .defaultDisplayImageOptions(DisplayImageOptions.createSimple()) // default
                 .defaultDisplayImageOptions(getDefaultImageOptions())
                 .writeDebugLogs()
                 .build();
@@ -56,6 +58,7 @@ public class UniversalImageLoader {
         DisplayImageOptions options = new DisplayImageOptions.Builder()
                 .resetViewBeforeLoading(false)  // default
                         //  .delayBeforeLoading(1000)
+                .showImageOnLoading(R.drawable.titanic_wave_black)
                 .considerExifParams(false) // default
                 .imageScaleType(ImageScaleType.IN_SAMPLE_POWER_OF_2) // default
                 .bitmapConfig(Bitmap.Config.ARGB_8888) // default

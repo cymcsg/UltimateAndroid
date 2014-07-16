@@ -10,7 +10,7 @@ import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
  */
 public class CommonApplication extends Application {
 
-    public static CommonApplication mDemoApp;
+
 
     @Override
     public void onCreate() {
@@ -28,8 +28,4 @@ public class CommonApplication extends Application {
         // ActiveAndroid.dispose();
     }
 
-
-    public static CommonApplication getInstance() {
-        return mDemoApp;
-    }
 }
