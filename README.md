@@ -154,6 +154,12 @@ Add [FaceCrop](https://github.com/Todd-Davies/ProgressWheel)
 
 2014.7.10 Add DaoUtils to help deal with Sqlite
 
+2014.7.14 Add Swipe Back Demo
+
+2014.7.16 Add JsonMetaReader
+
+2014.7.17 Add Pull to Splash 
+
 The CommonLibs use many opensource program and I am very grateful to the author of them.
 The opensource program which I use:
 
