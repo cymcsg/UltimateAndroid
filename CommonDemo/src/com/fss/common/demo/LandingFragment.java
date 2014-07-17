@@ -15,7 +15,6 @@ import android.widget.*;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import com.fss.Common.commonUtils.basicUtils.BasicUtils;
-import com.fss.Common.commonUtils.basicUtils.HandlerUtils;
 import com.fss.Common.ui.Typefaces;
 import com.fss.Common.uiModule.enhanceListView.EnhancedListView;
 import com.fss.Common.uiModule.titanic.Titanic;
@@ -202,6 +201,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "ListAnim");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "PullSplash");
+        map.put("detail", "try");
+        map.put("subname", "PullSplash");
+        enhanceList.add(map);
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
         landingEnhanceListView.setAdapter(enhancedListAdapter);
         landingEnhanceListView.setDismissCallback(new EnhancedListView.OnDismissCallback() {
@@ -285,6 +289,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 21:
                         BasicUtils.sendIntent(getActivity(), ListAnimationActivity.class);
+                        break;
+                    case 22:
+                        BasicUtils.sendIntent(getActivity(), PullSplashActivity.class);
                         break;
 
                 }

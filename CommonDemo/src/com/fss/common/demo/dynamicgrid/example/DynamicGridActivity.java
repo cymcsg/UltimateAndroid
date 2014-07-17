@@ -31,24 +31,26 @@ public class DynamicGridActivity extends ActionBarActivity {
         gridView.setAdapter(new CheeseDynamicAdapter(this,
                 new ArrayList<String>(Arrays.asList(Cheeses.sCheeseStrings)),
                 3));
+        gridView.setVerticalScrollBarEnabled(false);
+        gridView.setEnabled(false);
 //        add callback to stop edit mode if needed
-//        gridView.setOnDropListener(new DynamicGridView.OnDropListener()
-//        {
-//            @Override
-//            public void onActionDrop()
-//            {
-//                gridView.stopEditMode();
-//            }
-//        });
-        gridView.setOnTouchListener(new View.OnTouchListener() {
+        gridView.setOnDropListener(new DynamicGridView.OnDropListener()
+        {
             @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                if (gridView.isEditMode()) {
-                    gridView.stopEditMode();
-                }
-                return false;
+            public void onActionDrop()
+            {
+                gridView.stopEditMode();
             }
         });
+//        gridView.setOnTouchListener(new View.OnTouchListener() {
+//            @Override
+//            public boolean onTouch(View v, MotionEvent event) {
+//                if (gridView.isEditMode()) {
+//                    gridView.stopEditMode();
+//                }
+//                return false;
+//            }
+//        });
         gridView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
@@ -60,7 +62,7 @@ public class DynamicGridActivity extends ActionBarActivity {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(DynamicGridActivity.this, parent.getAdapter().getItem(position).toString()+"  "+gridView.isEditMode(),
+                Toast.makeText(DynamicGridActivity.this, parent.getAdapter().getItem(position).toString() + "  " + gridView.isEditMode(),
                         Toast.LENGTH_SHORT).show();
 
             }
@@ -76,6 +78,7 @@ public class DynamicGridActivity extends ActionBarActivity {
             super.onBackPressed();
         }
     }
+
     @Override
     public Intent getSupportParentActivityIntent() {
         this.finish();
