@@ -3,13 +3,18 @@ package com.fss.common.demo.dynamicgrid.example;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v4.app.TaskStackBuilder;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ScrollView;
+import android.widget.TextView;
 import android.widget.Toast;
+import com.fss.Common.commonUtils.basicUtils.HandlerUtils;
 import com.fss.Common.uiModule.dynamicgrid.DynamicGridView;
 import com.fss.common.demo.R;
 
@@ -21,6 +26,7 @@ public class DynamicGridActivity extends ActionBarActivity {
 
     private DynamicGridView gridView;
 
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,17 +34,17 @@ public class DynamicGridActivity extends ActionBarActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         gridView = (DynamicGridView) findViewById(R.id.dynamic_grid_view);
+
         gridView.setAdapter(new CheeseDynamicAdapter(this,
                 new ArrayList<String>(Arrays.asList(Cheeses.sCheeseStrings)),
                 3));
         gridView.setVerticalScrollBarEnabled(false);
-        gridView.setEnabled(false);
+
+        //      gridView.setEnabled(false);
 //        add callback to stop edit mode if needed
-        gridView.setOnDropListener(new DynamicGridView.OnDropListener()
-        {
+        gridView.setOnDropListener(new DynamicGridView.OnDropListener() {
             @Override
-            public void onActionDrop()
-            {
+            public void onActionDrop() {
                 gridView.stopEditMode();
             }
         });
@@ -69,6 +75,7 @@ public class DynamicGridActivity extends ActionBarActivity {
         });
 
     }
+
 
     @Override
     public void onBackPressed() {

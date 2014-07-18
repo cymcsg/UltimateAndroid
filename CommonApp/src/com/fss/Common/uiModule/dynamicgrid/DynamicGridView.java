@@ -14,6 +14,7 @@ import android.util.DisplayMetrics;
 import android.util.Pair;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.AbsListView;
@@ -949,7 +950,7 @@ public class DynamicGridView extends GridView {
         public void OnPostSelectedItemBitmapCreation(View selectedView, int position, long itemId);
     }
 
-    private boolean haveScrollbar = true;
+    private boolean haveScrollbar = false;
 
     public boolean isHaveScrollbar() {
         return haveScrollbar;
@@ -962,8 +963,16 @@ public class DynamicGridView extends GridView {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         if (haveScrollbar == false) {
-            int expandSpec = View.MeasureSpec.makeMeasureSpec(Integer.MAX_VALUE >> 2, View.MeasureSpec.AT_MOST);
+            //   int expandSpec = View.MeasureSpec.makeMeasureSpec(Integer.MAX_VALUE >> 2, View.MeasureSpec.AT_MOST);
+//            int expandSpec = MeasureSpec.makeMeasureSpec(MEASURED_SIZE_MASK,
+//                    MeasureSpec.AT_MOST);
+//            super.onMeasure(widthMeasureSpec, expandSpec);
+            int expandSpec = MeasureSpec.makeMeasureSpec(MEASURED_SIZE_MASK,
+                    MeasureSpec.AT_MOST);
             super.onMeasure(widthMeasureSpec, expandSpec);
+
+            ViewGroup.LayoutParams params = getLayoutParams();
+            params.height = getMeasuredHeight();
         } else {
             super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         }
