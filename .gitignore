@@ -29,3 +29,4 @@ out/
 .settings/org.eclipse.jdt.apt.core.prefs
 .settings/org.eclipse.jdt.core.prefs
 .settings/org.eclipse.jdt.launching.prefs
+.properties
