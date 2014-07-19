@@ -58,6 +58,8 @@
         <activity android:name=".listviewanimations.itemmanipulationexamples.SwipeDismissActivity"></activity>
         <activity android:name=".listviewanimations.itemmanipulationexamples.AnimateDismissActivity"></activity>
         <activity android:name=".sampleModules.PullSplashActivity"></activity>
+
+        <activity android:name=".utils.jsoup.UtilsDemoActivity"></activity>
     </application>
     <uses-permission android:name="com.android.vending.BILLING"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>

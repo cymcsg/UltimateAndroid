@@ -33,6 +33,7 @@ import com.fss.common.demo.rebound.ReboundActivity;
 import com.fss.common.demo.rebound.ReboundActivitySimple;
 import com.fss.common.demo.sampleModules.*;
 import com.fss.common.demo.stickygridheadersexample.StickGridItemListActivity;
+import com.fss.common.demo.utils.jsoup.UtilsDemoActivity;
 import com.fss.common.demo.viewpagerSlidingTab.ViewpagerSlidingTabsActivity;
 
 import java.util.ArrayList;
@@ -206,6 +207,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "PullSplash");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "Jsoup");
+        map.put("detail", "try");
+        map.put("subname", "Jsoup");
+        enhanceList.add(map);
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
         landingEnhanceListView.setAdapter(enhancedListAdapter);
         landingEnhanceListView.setDismissCallback(new EnhancedListView.OnDismissCallback() {
@@ -292,6 +298,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 22:
                         BasicUtils.sendIntent(getActivity(), PullSplashActivity.class);
+                        break;
+                    case 23:
+                        BasicUtils.sendIntent(getActivity(), UtilsDemoActivity.class);
                         break;
 
                 }

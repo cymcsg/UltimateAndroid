@@ -30,6 +30,8 @@ import com.fss.Common.uiModule.nineoldandroids.animation.Animator;
 import com.fss.Common.ui.ToastUtil;
 import com.fss.Common.uiModule.shimmer.Shimmer;
 import com.fss.Common.uiModule.shimmer.ShimmerTextView;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -63,7 +65,9 @@ public class MainActivity extends ActionBarActivity {
                 .add(R.id.main_content_frame, mContent).commit();
         initViews();
         initShimmerTextView();
-        // testHttps();
+//        UtilsDemo.TestJsoup();
+
+
     }
 
     @Override
