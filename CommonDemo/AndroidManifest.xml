@@ -60,6 +60,17 @@
         <activity android:name=".sampleModules.PullSplashActivity"></activity>
 
         <activity android:name=".utils.jsoup.UtilsDemoActivity"></activity>
+        <provider
+                android:name="android.support.v4.content.FileProvider"
+                android:authorities="com.fss.Common.demo.fileprovider"
+                android:grantUriPermissions="true"
+                android:exported="false">
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@xml/filepaths" />
+        </provider>
+
+
     </application>
     <uses-permission android:name="com.android.vending.BILLING"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
