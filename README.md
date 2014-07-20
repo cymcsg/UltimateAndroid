@@ -162,6 +162,9 @@ Add [FaceCrop](https://github.com/Todd-Davies/ProgressWheel)
 
 2014.7.18 Add jsoup demo
           Update demo.apk
+          
+2014.7.20 Add some utils
+          Add some Ui Views[Trinea](https://github.com/Trinea/android-common)
 
 The CommonLibs use many opensource program and I am very grateful to the author of them.
 The opensource program which I use:
