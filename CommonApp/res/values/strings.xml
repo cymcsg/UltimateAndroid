@@ -9,4 +9,13 @@
     <string name="day_name_format">EEE</string>
     <string name="invalid_date">Date must be between %1$s and %2$s.</string>
     <string name="month_name_format">LLLL yyyy</string>
+
+    <string name="drop_down_list_header_default_text">Click to refresh&#8230;</string>
+    <string name="drop_down_list_header_pull_text">Drop Down to refresh&#8230;</string>
+    <string name="drop_down_list_header_release_text">Release to refresh&#8230;</string>
+    <string name="drop_down_list_header_loading_text">Loading&#8230;</string>
+    <string name="drop_down_list_footer_default_text">More</string>
+    <string name="drop_down_list_footer_loading_text">Loading&#8230;</string>
+    <string name="drop_down_list_footer_no_more_text">No More</string>
+
 </resources>

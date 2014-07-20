@@ -11,4 +11,13 @@
     <dimen name="calendar_month_title_bottommargin">4dp</dimen>
     <dimen name="calendar_text_medium">18sp</dimen>
     <dimen name="calendar_text_small">14sp</dimen>
+
+    <dimen name="drop_down_list_header_padding_top">12dp</dimen>
+    <dimen name="drop_down_list_header_padding_bottom">15dp</dimen>
+    <dimen name="drop_down_list_header_release_min_distance">20dp</dimen>
+    <dimen name="drop_down_list_header_progress_bar_height">36dp</dimen>
+    <dimen name="drop_down_list_footer_progress_bar_height">36dp</dimen>
+    <dimen name="drop_down_list_footer_button_margin_left">8dp</dimen>
+    <dimen name="drop_down_list_footer_button_height">48dp</dimen>
+
 </resources>

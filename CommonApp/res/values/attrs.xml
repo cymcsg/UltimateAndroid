@@ -199,4 +199,11 @@
         <attr name="pstsShouldExpand" format="boolean"/>
         <attr name="pstsTextAllCaps" format="boolean"/>
     </declare-styleable>
+
+
+    <declare-styleable name="drop_down_list_attr">
+        <attr name="isDropDownStyle" format="boolean" />
+        <attr name="isOnBottomStyle" format="boolean" />
+        <attr name="isAutoLoadOnBottom" format="boolean" />
+    </declare-styleable>
 </resources>
