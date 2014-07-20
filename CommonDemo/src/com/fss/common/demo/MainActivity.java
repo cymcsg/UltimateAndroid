@@ -65,6 +65,8 @@ public class MainActivity extends ActionBarActivity {
                 .add(R.id.main_content_frame, mContent).commit();
         initViews();
         initShimmerTextView();
+
+
 //        UtilsDemo.TestJsoup();
 
 

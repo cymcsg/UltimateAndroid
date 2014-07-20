@@ -35,6 +35,7 @@ public class SmoothProgressBarActivity extends ActionBarActivity {
 //        tileView.addDetailLevel(1f, "big-world-map50.gif", "big-world-map.gif");
 //        tileView.addDetailLevel(0.1f, "big-world-map5.gif", "big-world-map.gif");
 //        setContentView(tileView);
+        setTheme(R.style.LandingTheme);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         setContentView(R.layout.smooth_progress_bar_activity);

@@ -9,6 +9,17 @@
         <item name="android:actionBarStyle" tools:ignore="NewApi">@style/ActionbarStyle</item>
         <item name="actionBarStyle">@style/ActionbarStyle</item>
     </style>
+    <style name="LandingTheme" parent="Theme.AppCompat.Light">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+
+        <item name="android:icon">@android:color/transparent</item>
+        <item name="android:actionBarStyle" tools:ignore="NewApi">@style/LandingActionbarStyle</item>
+        <item name="actionBarStyle">@style/LandingActionbarStyle</item>
+        <item name="android:windowActionBarOverlay" tools:ignore="NewApi">true</item>
+        <!-- Support library compatibility -->
+        <item name="windowActionBarOverlay">true</item>
+    </style>
     <style name="CustomTabPageIndicator" parent="Widget.TabPageIndicator">
         <item name="android:background">@drawable/vpi__tab_indicator</item>
         <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
@@ -40,6 +51,12 @@
         <item name="android:textColor">@color/white</item>
 
         <!-- The textColor property is backward compatible with the Support Library -->
+    </style>
+    <style name="LandingActionbarStyle" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="background">@color/Red50percent</item>
+        <item name="android:background">@color/Red50percent</item>
+        <item name="titleTextStyle">@style/MyActionBarTitleText</item>
+        <item name="android:titleTextStyle" tools:ignore="NewApi">@style/MyActionBarTitleText</item>
     </style>
     <style name="FullScreenDialog" parent="AppTheme">
         <item name="android:windowNoTitle">true</item>

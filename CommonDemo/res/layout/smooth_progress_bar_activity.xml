@@ -2,7 +2,7 @@
 <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent" android:orientation="vertical"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent" android:paddingTop="?android:attr/actionBarSize">
     <com.fss.Common.uiModule.smoothprogressbar.ContentLoadingSmoothProgressBar
             android:layout_marginTop="22dp"
             android:id="@+id/smoothProgressBar" android:visibility="gone"

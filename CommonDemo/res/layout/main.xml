@@ -3,13 +3,14 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/drawer_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent" >
     <!-- The main content view -->
     <FrameLayout
             android:id="@+id/main_content_frame"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
-    <RelativeLayout android:layout_width="fill_parent" android:id="@+id/favShimmerReaLayout" android:layout_height="fill_parent">
+    <RelativeLayout android:layout_width="fill_parent" android:id="@+id/favShimmerReaLayout"
+                    android:layout_height="fill_parent">
         <com.fss.Common.uiModule.shimmer.ShimmerTextView
                 android:id="@+id/favShimmerTextView"
                 android:text="Loading"
