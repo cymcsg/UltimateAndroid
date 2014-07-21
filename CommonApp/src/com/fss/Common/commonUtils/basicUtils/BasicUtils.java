@@ -210,6 +210,10 @@ public class BasicUtils {
         return string != null && !string.equals("") ? true : false;
     }
 
+    public static boolean judgeNotNull(byte[] bytes) {
+        return bytes != null && bytes.length >= 1;
+    }
+
     public static boolean judgeNotNull(Map map) {
         return map != null && map.size() > 0 ? true : false;
     }

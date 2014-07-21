@@ -38,6 +38,18 @@ public class JsonUtil {
         return arrayList;
     }
 
+    public static Object getObjectListFromJson(String jsonString) {
+        Gson gson = new Gson();
+        Object object = gson.fromJson(jsonString, new TypeToken<List<Object>>() {
+        }.getType());
+        return object;
+    }
+
+    public static Object getObjectFromJson(String jsonString) {
+        Gson gson = new Gson();
+        Object object = gson.fromJson(jsonString, Object.class);
+        return object;
+    }
 
     public static void iteratorArrayList(ArrayList arrayList) {
         Iterator it1 = arrayList.iterator();
