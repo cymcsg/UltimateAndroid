@@ -28,6 +28,7 @@ import com.fss.Common.commonUtils.logUtils.Logs;
 import com.fss.Common.commonUtils.urlUtils.HttpsUtils;
 import com.fss.Common.uiModule.nineoldandroids.animation.Animator;
 import com.fss.Common.ui.ToastUtil;
+import com.fss.Common.uiModule.passcodelock.AppLockManager;
 import com.fss.Common.uiModule.shimmer.Shimmer;
 import com.fss.Common.uiModule.shimmer.ShimmerTextView;
 import org.jsoup.Jsoup;

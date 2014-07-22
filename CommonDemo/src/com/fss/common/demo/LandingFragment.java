@@ -18,6 +18,7 @@ import com.fss.Common.commonUtils.basicUtils.BasicUtils;
 import com.fss.Common.commonUtils.moduleUtils.CryptoUtils;
 import com.fss.Common.ui.Typefaces;
 import com.fss.Common.uiModule.enhanceListView.EnhancedListView;
+import com.fss.Common.uiModule.passcodelock.PasscodePreferencesActivity;
 import com.fss.Common.uiModule.titanic.Titanic;
 import com.fss.Common.uiModule.titanic.TitanicTextView;
 import com.fss.Common.uiModule.viewpagerindicator.CirclePageIndicator;
@@ -218,6 +219,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "ViewServer");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "PassCode");
+        map.put("detail", "try");
+        map.put("subname", "PassCode");
+        enhanceList.add(map);
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
         landingEnhanceListView.setAdapter(enhancedListAdapter);
         landingEnhanceListView.setDismissCallback(new EnhancedListView.OnDismissCallback() {
@@ -310,6 +316,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 24:
                         BasicUtils.sendIntent(getActivity(), ViewServerActivity.class);
+                        break;
+                    case 25:
+                        BasicUtils.sendIntent(getActivity(), PasscodePreferencesActivity.class);
                         break;
 
                 }

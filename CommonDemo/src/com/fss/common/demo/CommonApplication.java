@@ -2,6 +2,7 @@ package com.fss.common.demo;
 
 import android.app.Application;
 import com.fss.Common.commonUtils.urlUtils.UniversalImageLoader;
+import com.fss.Common.uiModule.passcodelock.AppLockManager;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 
@@ -15,6 +16,7 @@ public class CommonApplication extends Application {
         ImageLoaderConfiguration config = UniversalImageLoader.getDefaultImageLoaderConfiguration(getApplicationContext());
         ImageLoader.getInstance().init(config);
         //  ActiveAndroid.initialize(this);
+        AppLockManager.getInstance().enableDefaultAppLockIfAvailable(this);
 
     }
 

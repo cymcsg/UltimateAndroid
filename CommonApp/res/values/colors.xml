@@ -357,4 +357,8 @@
     <color name="calendar_text_unselectable">#7f778088</color>
 
     <color name="pager_sliding_tab_background_tab_pressed">#6633B5E5</color>
+
+    <color name="passlock_light_gray">#E5E5E5</color>
+    <color name="passlock_gray">#CCC</color>
+    <color name="passlock_list_row_selected">#78c8e6</color>
 </resources>

@@ -73,6 +73,23 @@
         </provider>
 
 
+        <activity
+                android:name="com.fss.Common.uiModule.passcodelock.PasscodeUnlockActivity"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+                android:name="com.fss.Common.uiModule.passcodelock.PasscodePreferencesActivity"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+                android:name="com.fss.Common.uiModule.passcodelock.PasscodeManagePasswordActivity"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="stateHidden" >
+        </activity>
+
     </application>
     <uses-permission android:name="com.android.vending.BILLING"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
