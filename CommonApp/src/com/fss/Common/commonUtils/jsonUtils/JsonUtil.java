@@ -23,7 +23,7 @@ public class JsonUtil {
     }
 
 
-    public static ArrayList getArrayListFromJson(String jsonString) {
+    public static ArrayList getArrayListMapFromJson(String jsonString) {
         JsonParser jsonParser = new JsonParser();
         Gson gson = new Gson();
         JsonElement jsonElement = jsonParser.parse(jsonString);
@@ -33,6 +33,21 @@ public class JsonUtil {
             arrayList.add(gson.fromJson(jsonElement, HashMap.class));
         } else if (jsonElement.isJsonArray()) {
             arrayList = getListFromJson(jsonString, new TypeToken<ArrayList<HashMap<String, Object>>>() {
+            });
+        }
+        return arrayList;
+    }
+
+    public static ArrayList getArrayListFromJson(String jsonString) {
+        JsonParser jsonParser = new JsonParser();
+        Gson gson = new Gson();
+        JsonElement jsonElement = jsonParser.parse(jsonString);
+        Logs.d(jsonElement.isJsonArray() + "   " + jsonElement.isJsonObject());
+        ArrayList arrayList = new ArrayList();
+        if (jsonElement.isJsonObject()) {
+            arrayList.add(gson.fromJson(jsonElement, HashMap.class));
+        } else if (jsonElement.isJsonArray()) {
+            arrayList = getListFromJson(jsonString, new TypeToken<ArrayList>() {
             });
         }
         return arrayList;
