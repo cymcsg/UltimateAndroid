@@ -60,6 +60,8 @@
         <activity android:name=".sampleModules.PullSplashActivity"></activity>
 
         <activity android:name=".utils.jsoup.UtilsDemoActivity"></activity>
+
+        <activity android:name=".sampleModules.ViewServerActivity"></activity>
         <provider
                 android:name="android.support.v4.content.FileProvider"
                 android:authorities="com.fss.Common.demo.fileprovider"

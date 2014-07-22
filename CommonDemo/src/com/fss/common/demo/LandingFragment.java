@@ -212,6 +212,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "Jsoup");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "ViewServer");
+        map.put("detail", "try");
+        map.put("subname", "ViewServer");
+        enhanceList.add(map);
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
         landingEnhanceListView.setAdapter(enhancedListAdapter);
         landingEnhanceListView.setDismissCallback(new EnhancedListView.OnDismissCallback() {
@@ -301,6 +306,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 23:
                         BasicUtils.sendIntent(getActivity(), UtilsDemoActivity.class);
+                        break;
+                    case 24:
+                        BasicUtils.sendIntent(getActivity(), ViewServerActivity.class);
                         break;
 
                 }
