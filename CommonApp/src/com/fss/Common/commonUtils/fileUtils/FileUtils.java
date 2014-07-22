@@ -15,7 +15,6 @@ import java.util.List;
  * User: cym
  * Date: 13-10-23
  * Time: 上午11:01
- *
  */
 public class FileUtils {
     public static String readFilesToString(String fileName) throws IOException {
@@ -36,10 +35,22 @@ public class FileUtils {
     public static String getCurrentDataPath(Context context) {
         String currentDataPath = "";
         if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
-            currentDataPath = Environment.getExternalStorageDirectory().getAbsolutePath()+"/qingdaobus";
+            currentDataPath = Environment.getExternalStorageDirectory().getAbsolutePath() + "/testDefault";
 
         } else {
-            currentDataPath= context.getFilesDir().getAbsolutePath();
+            currentDataPath = context.getFilesDir().getAbsolutePath();
+        }
+        return currentDataPath;
+    }
+
+    public static String getCurrentDataPath(Context context, String folderName) throws IOException {
+        String currentDataPath = "";
+        if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
+
+            currentDataPath = Environment.getExternalStorageDirectory().getAbsolutePath() + "/" + folderName;
+            createDir(currentDataPath);
+        } else {
+            currentDataPath = context.getFilesDir().getAbsolutePath();
         }
         return currentDataPath;
     }
@@ -91,6 +102,7 @@ public class FileUtils {
      */
     public static void createDir(String fileName) throws IOException {
         File dir = new File(fileName);
+        Logs.d(fileName + "    " + dir.exists());
         if (!dir.exists())
             dir.mkdir();
     }/** */
@@ -430,7 +442,7 @@ public class FileUtils {
      *
      * @param filePath
      * @param content
-     * @param append is append, if true, write to the end of file, else clear content of file and write into it
+     * @param append   is append, if true, write to the end of file, else clear content of file and write into it
      * @return return false if content is empty, true otherwise
      * @throws RuntimeException if an error occurs while operator FileWriter
      */
@@ -464,7 +476,7 @@ public class FileUtils {
      *
      * @param filePath
      * @param contentList
-     * @param append is append, if true, write to the end of file, else clear content of file and write into it
+     * @param append      is append, if true, write to the end of file, else clear content of file and write into it
      * @return return false if contentList is empty, true otherwise
      * @throws RuntimeException if an error occurs while operator FileWriter
      */
@@ -537,8 +549,8 @@ public class FileUtils {
      * write file
      *
      * @param filePath the file to be opened for writing.
-     * @param stream the input stream
-     * @param append if <code>true</code>, then bytes will be written to the end of the file rather than the beginning
+     * @param stream   the input stream
+     * @param append   if <code>true</code>, then bytes will be written to the end of the file rather than the beginning
      * @return return true
      * @throws RuntimeException if an error occurs while operator FileOutputStream
      */
@@ -561,7 +573,7 @@ public class FileUtils {
     /**
      * write file
      *
-     * @param file the file to be opened for writing.
+     * @param file   the file to be opened for writing.
      * @param stream the input stream
      * @param append if <code>true</code>, then bytes will be written to the end of the file rather than the beginning
      * @return return true
@@ -653,7 +665,7 @@ public class FileUtils {
 
     /**
      * get file name from path, not include suffix
-     *
+     * <p/>
      * <pre>
      *      getFileNameWithoutExtension(null)               =   null
      *      getFileNameWithoutExtension("")                 =   ""
@@ -691,7 +703,7 @@ public class FileUtils {
 
     /**
      * get file name from path, include suffix
-     *
+     * <p/>
      * <pre>
      *      getFileName(null)               =   null
      *      getFileName("")                 =   ""
@@ -721,7 +733,7 @@ public class FileUtils {
 
     /**
      * get folder name from path
-     *
+     * <p/>
      * <pre>
      *      getFolderName(null)               =   null
      *      getFolderName("")                 =   ""
@@ -753,7 +765,7 @@ public class FileUtils {
 
     /**
      * get suffix of file from path
-     *
+     * <p/>
      * <pre>
      *      getFileExtension(null)               =   ""
      *      getFileExtension("")                 =   ""
@@ -798,12 +810,12 @@ public class FileUtils {
      *
      * @param filePath
      * @return true if the necessary directories have been created or the target directory already exists, false one of
-     *         the directories can not be created.
-     *         <ul>
-     *         <li>if {@link FileUtils#getFolderName(String)} return null, return false</li>
-     *         <li>if target directory already exists, return true</li>
-     *         <li>return {@link java.io.File#}</li>
-     *         </ul>
+     * the directories can not be created.
+     * <ul>
+     * <li>if {@link FileUtils#getFolderName(String)} return null, return false</li>
+     * <li>if target directory already exists, return true</li>
+     * <li>return {@link java.io.File#}</li>
+     * </ul>
      */
     public static boolean makeDirs(String filePath) {
         String folderName = getFolderName(filePath);

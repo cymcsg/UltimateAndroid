@@ -15,6 +15,7 @@ import android.widget.*;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import com.fss.Common.commonUtils.basicUtils.BasicUtils;
+import com.fss.Common.commonUtils.moduleUtils.CryptoUtils;
 import com.fss.Common.ui.Typefaces;
 import com.fss.Common.uiModule.enhanceListView.EnhancedListView;
 import com.fss.Common.uiModule.titanic.Titanic;
@@ -64,7 +65,7 @@ public class LandingFragment extends Fragment {
         initTitanicView();
         initEnhanceList();
         initViewPager();
-
+        CryptoUtils.testCrypto(getActivity());
         return mainView;
     }
 
