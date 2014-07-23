@@ -22,6 +22,7 @@ import com.fss.Common.uiModule.passcodelock.PasscodePreferencesActivity;
 import com.fss.Common.uiModule.titanic.Titanic;
 import com.fss.Common.uiModule.titanic.TitanicTextView;
 import com.fss.Common.uiModule.viewpagerindicator.CirclePageIndicator;
+import com.fss.common.demo.activityanimation.ActivityAnimationsActivity;
 import com.fss.common.demo.cooldraganddrop.CoolDragAndDropActivity;
 import com.fss.common.demo.discrollview.DiscrollActivity;
 import com.fss.common.demo.dynamicgrid.example.DynamicGridActivity;
@@ -224,6 +225,16 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "PassCode");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "GestureTouch");
+        map.put("detail", "try");
+        map.put("subname", "GestureTouch");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "act_anim");
+        map.put("detail", "try");
+        map.put("subname", "act_anim");
+        enhanceList.add(map);
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
         landingEnhanceListView.setAdapter(enhancedListAdapter);
         landingEnhanceListView.setDismissCallback(new EnhancedListView.OnDismissCallback() {
@@ -319,6 +330,12 @@ public class LandingFragment extends Fragment {
                         break;
                     case 25:
                         BasicUtils.sendIntent(getActivity(), PasscodePreferencesActivity.class);
+                        break;
+                    case 26:
+                        BasicUtils.sendIntent(getActivity(), GestureTouchActivity.class);
+                        break;
+                    case 27:
+                        BasicUtils.sendIntent(getActivity(), ActivityAnimationsActivity.class);
                         break;
 
                 }

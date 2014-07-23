@@ -69,28 +69,42 @@
                 android:exported="false">
             <meta-data
                     android:name="android.support.FILE_PROVIDER_PATHS"
-                    android:resource="@xml/filepaths" />
+                    android:resource="@xml/filepaths"/>
         </provider>
 
 
         <activity
                 android:name="com.fss.Common.uiModule.passcodelock.PasscodeUnlockActivity"
                 android:screenOrientation="portrait"
-                android:windowSoftInputMode="stateHidden" >
+                android:windowSoftInputMode="stateHidden">
         </activity>
         <activity
                 android:name="com.fss.Common.uiModule.passcodelock.PasscodePreferencesActivity"
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:screenOrientation="portrait"
-                android:windowSoftInputMode="stateHidden" >
+                android:windowSoftInputMode="stateHidden">
         </activity>
         <activity
                 android:name="com.fss.Common.uiModule.passcodelock.PasscodeManagePasswordActivity"
                 android:screenOrientation="portrait"
-                android:windowSoftInputMode="stateHidden" >
+                android:windowSoftInputMode="stateHidden">
         </activity>
-
+        <activity android:name=".sampleModules.GestureTouchActivity"></activity>
+        <activity android:name=".activityanimation.ActivityAnimationsActivity"   android:theme="@style/AppTheme.Transparent"></activity>
+        <activity android:name=".activityanimation.SecondActivity"   android:theme="@style/AppTheme.Transparent"></activity>
+        <activity android:name=".activityanimation.ThirdActivity"   android:theme="@style/AppTheme.Transparent"></activity>
+        <activity android:name=".activityanimation.DoorActivity"   android:theme="@style/AppTheme.Transparent"></activity>
     </application>
+
+    <!--<uses-configuration android:reqTouchScreen="finger"/>-->
+
+    <!--<uses-feature-->
+    <!--android:name="android.hardware.touchscreen"-->
+    <!--android:required="true"/>-->
+    <!--<uses-feature-->
+    <!--android:name="android.hardware.touchscreen.multitouch"-->
+    <!--android:required="true"/>-->
+
     <uses-permission android:name="com.android.vending.BILLING"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
