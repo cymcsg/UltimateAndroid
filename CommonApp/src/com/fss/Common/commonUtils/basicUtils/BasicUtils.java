@@ -221,4 +221,8 @@ public class BasicUtils {
     public static boolean judgeNotNull(List list) {
         return list != null && list.size() > 0 ? true : false;
     }
+
+    public static boolean judgeNotNull(Object object) {
+        return object != null ? true : false;
+    }
 }

@@ -260,6 +260,7 @@
     <color name="Orchid">#DA70D6</color>
     <color name="Thistle">#D8BFD8</color>
     <color name="LightGrey">#D3D3D3</color>
+    <color name="grey">#b3b3b3</color>
     <color name="Tan">#D2B48C</color>
     <color name="Chocolate">#D2691E</color>
     <color name="Peru">#CD853F</color>
@@ -361,4 +362,5 @@
     <color name="passlock_light_gray">#E5E5E5</color>
     <color name="passlock_gray">#CCC</color>
     <color name="passlock_list_row_selected">#78c8e6</color>
+    <color name="white_translucent">#50FFFFFF</color>
 </resources>

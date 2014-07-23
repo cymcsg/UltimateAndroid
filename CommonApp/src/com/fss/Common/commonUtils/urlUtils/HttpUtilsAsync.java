@@ -19,24 +19,23 @@ import java.util.Map;
  */
 public class HttpUtilsAsync {
     private static final String BASE_URL = "http://api.fss.com/1/";
-    private static final int TIME_OUT = 15;
+    private static final int TIME_OUT = 25000;
     private static AsyncHttpClient client = new AsyncHttpClient();
 
 
     public static void get(String url, RequestParams params, AsyncHttpResponseHandler responseHandler) {
+        client.setTimeout(TIME_OUT);
         client.get(getAbsoluteUrl(url), params, responseHandler);
     }
 
     public static void post(String url, RequestParams params, AsyncHttpResponseHandler responseHandler) {
+        client.setTimeout(TIME_OUT);
         client.post(getAbsoluteUrl(url), params, responseHandler);
     }
 
     public static void get(String url, AsyncHttpResponseHandler responseHandler) {
-        //client.setTimeout();
-
+        client.setTimeout(TIME_OUT);
         client.get(getAbsoluteUrl(url), responseHandler);
-
-
     }
 
     public static void getWithCookie(Context context, String url, AsyncHttpResponseHandler responseHandler) {

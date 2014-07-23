@@ -68,5 +68,8 @@
         <item name="android:backgroundDimEnabled">false</item>
     </style>
 
-
+    <style name="AppTheme.Transparent" parent="@style/AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
 </resources>
