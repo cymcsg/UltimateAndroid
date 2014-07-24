@@ -363,4 +363,7 @@
     <color name="passlock_gray">#CCC</color>
     <color name="passlock_list_row_selected">#78c8e6</color>
     <color name="white_translucent">#50FFFFFF</color>
+
+    <color name="card_bg">#EBEBEB</color>
+    <color name="card_outline">#D0D0CE</color>
 </resources>

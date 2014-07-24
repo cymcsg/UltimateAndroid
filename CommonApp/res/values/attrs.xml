@@ -213,4 +213,9 @@
         <attr name="headerHeight" format="dimension" />
         <attr name="headerVisibleHeight" format="dimension" />
     </declare-styleable>
+
+    <declare-styleable name="CardContainer">
+        <attr name="android:gravity"/>
+        <attr name="orientation"></attr>
+    </declare-styleable>
 </resources>
