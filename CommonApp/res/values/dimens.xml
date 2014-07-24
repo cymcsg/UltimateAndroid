@@ -20,4 +20,11 @@
     <dimen name="drop_down_list_footer_button_margin_left">8dp</dimen>
     <dimen name="drop_down_list_footer_button_height">48dp</dimen>
 
+    <dimen name="showcase_radius">94dp</dimen>
+    <dimen name="showcase_radius_inner">96dp</dimen>
+    <dimen name="showcase_radius_outer">128dp</dimen>
+    <dimen name="showcase_button_margin">12dp</dimen>
+    <dimen name="showcase_text_padding">24dp</dimen>
+    <dimen name="showcase_action_bar_offset">66dp</dimen>
+
 </resources>
