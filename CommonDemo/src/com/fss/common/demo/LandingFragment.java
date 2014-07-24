@@ -29,6 +29,7 @@ import com.fss.common.demo.dynamicgrid.example.DynamicGridActivity;
 import com.fss.common.demo.foldableLayout.activities.FoldableListActivity;
 import com.fss.common.demo.foldableLayout.activities.UnfoldableDetailsActivity;
 import com.fss.common.demo.foldingDrawer.FoldingActivitys;
+import com.fss.common.demo.listbuddies.ListBuddiesActivity;
 import com.fss.common.demo.listviewanimations.ListAnimationActivity;
 import com.fss.common.demo.listviewfilter.ui.ListViewFilterActivity;
 import com.fss.common.demo.parallaxscrollexample.ParallaxScrollActivity;
@@ -36,6 +37,7 @@ import com.fss.common.demo.pullscrollview.PullScrollViewActivity;
 import com.fss.common.demo.rebound.ReboundActivity;
 import com.fss.common.demo.rebound.ReboundActivitySimple;
 import com.fss.common.demo.sampleModules.*;
+import com.fss.common.demo.showcaseview.ShowCaseSampleActivity;
 import com.fss.common.demo.stickygridheadersexample.StickGridItemListActivity;
 import com.fss.common.demo.utils.jsoup.UtilsDemoActivity;
 import com.fss.common.demo.viewpagerSlidingTab.ViewpagerSlidingTabsActivity;
@@ -246,6 +248,21 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "card swiped");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "ShowCase");
+        map.put("detail", "try");
+        map.put("subname", "ShowCase");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "ListBuddies");
+        map.put("detail", "try");
+        map.put("subname", "ListBuddies");
+        enhanceList.add(map);
+//        map = new HashMap<>();
+//        map.put("name", "ResideMenu");
+//        map.put("detail", "try");
+//        map.put("subname", "ResideMenu");
+//     enhanceList.add(map);
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
         landingEnhanceListView.setAdapter(enhancedListAdapter);
         landingEnhanceListView.setDismissCallback(new EnhancedListView.OnDismissCallback() {
@@ -354,6 +371,15 @@ public class LandingFragment extends Fragment {
                     case 29:
                         BasicUtils.sendIntent(getActivity(), CardsSwipedActivity.class);
                         break;
+                    case 30:
+                        BasicUtils.sendIntent(getActivity(), ShowCaseSampleActivity.class);
+                        break;
+                    case 31:
+                        BasicUtils.sendIntent(getActivity(), ListBuddiesActivity.class);
+                        break;
+//                    case 32:
+//                        BasicUtils.sendIntent(getActivity(), ResideMenuActivity.class);
+//                        break;
 
                 }
             }

@@ -107,7 +107,7 @@
         <activity android:name=".showcaseview.SingleShotActivity"></activity>
         <activity android:name=".showcaseview.MemoryManagementTesting"></activity>
         <activity android:name=".listbuddies.ListBuddiesActivity"></activity>
-        <activity android:name=".resideMenuDemo.ResideMenuActivity"></activity>
+        <activity android:name=".ResideMenuDemo.ResideMenuActivity"></activity>
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->
