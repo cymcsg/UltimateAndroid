@@ -100,6 +100,7 @@
         <activity android:name=".pullscrollview.PulldownViewActivity"></activity>
         <activity android:name=".pullscrollview.PullScrollViewActivity"></activity>
         <activity android:name=".pullscrollview.StretchViewActivity"></activity>
+        <activity android:name=".sampleModules.CardsSwipedActivity"></activity>
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->

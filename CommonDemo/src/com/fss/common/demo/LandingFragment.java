@@ -241,6 +241,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "pull");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "card swiped");
+        map.put("detail", "try");
+        map.put("subname", "card swiped");
+        enhanceList.add(map);
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
         landingEnhanceListView.setAdapter(enhancedListAdapter);
         landingEnhanceListView.setDismissCallback(new EnhancedListView.OnDismissCallback() {
@@ -345,6 +350,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 28:
                         BasicUtils.sendIntent(getActivity(), PullScrollViewActivity.class);
+                        break;
+                    case 29:
+                        BasicUtils.sendIntent(getActivity(), CardsSwipedActivity.class);
                         break;
 
                 }
