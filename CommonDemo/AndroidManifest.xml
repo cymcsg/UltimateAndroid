@@ -101,6 +101,13 @@
         <activity android:name=".pullscrollview.PullScrollViewActivity"></activity>
         <activity android:name=".pullscrollview.StretchViewActivity"></activity>
         <activity android:name=".sampleModules.CardsSwipedActivity"></activity>
+        <activity android:name=".showcaseview.ShowCaseSampleActivity"></activity>
+        <activity android:name=".showcaseview.animations.AnimationSampleActivity"></activity>
+        <activity android:name=".showcaseview.legacy.MultipleShowcaseSampleActivity"></activity>
+        <activity android:name=".showcaseview.SingleShotActivity"></activity>
+        <activity android:name=".showcaseview.MemoryManagementTesting"></activity>
+        <activity android:name=".listbuddies.ListBuddiesActivity"></activity>
+        <activity android:name=".resideMenuDemo.ResideMenuActivity"></activity>
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->

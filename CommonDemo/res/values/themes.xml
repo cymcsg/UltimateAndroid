@@ -75,4 +75,67 @@
 
 
 
+    <style name="CustomShowcaseTheme" parent="ShowcaseView.Light">
+        <item name="sv_backgroundColor">#3300A621</item>
+        <item name="sv_showcaseColor">#00801A</item>
+        <item name="sv_buttonText">Hide</item>
+        <item name="sv_tintButtonColor">false</item>
+        <item name="sv_titleTextAppearance">@style/CustomTitle</item>
+    </style>
+
+    <style name="CustomShowcaseTheme2" parent="ShowcaseView.Light">
+        <item name="sv_backgroundColor">#663d4353</item>
+        <item name="sv_showcaseColor">#25467A</item>
+        <item name="sv_buttonText">Close</item>
+        <item name="sv_titleTextAppearance">@style/CustomTitle2</item>
+    </style>
+
+    <style name="CustomShowcaseTheme3" parent="ShowcaseView">
+        <item name="sv_backgroundColor">#330066FF</item>
+        <item name="sv_showcaseColor">#00801A</item>
+        <item name="sv_buttonText">Close</item>
+        <item name="sv_titleTextAppearance">@style/CustomTitle</item>
+    </style>
+
+
+
+    <style name="CustomTitle" parent="TextAppearance.ShowcaseView.Title">
+        <item name="android:textColor">#00801A</item>
+    </style>
+
+    <style name="CustomTitle2" parent="TextAppearance.ShowcaseView.Title">
+        <item name="android:textColor">#25467A</item>
+    </style>
+
+    <style name="ListItemBigtext">
+        <item name="android:textColor">#25467A</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="ListItemSubtext">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+
+    <style name="SpinnerAppTheme" parent="android:Widget.Spinner">
+        <!--<item name="android:background">@drawable/apptheme_spinner_background_holo_dark</item>-->
+        <!--<item name="android:dropDownSelector">@drawable/apptheme_list_selector_holo_dark</item>-->
+    </style>
+
+    <style name="SpinnerDropDownItemAppTheme" parent="android:Widget.DropDownItem.Spinner">
+        <!--<item name="android:checkMark">@drawable/apptheme_btn_radio_holo_dark</item>-->
+    </style>
+
+    <style name="TranslucentActionBar" parent="@style/Widget.AppCompat.Base.ActionBar">
+        <item name="android:background">@null</item>
+        <item name="android:icon">@drawable/ic_launcher</item>
+        <item name="titleTextStyle">@style/titleStyle</item>
+    </style>
+
+    <style name="titleStyle" parent="@style/TextAppearance.AppCompat.Widget.Base.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
 </resources>
