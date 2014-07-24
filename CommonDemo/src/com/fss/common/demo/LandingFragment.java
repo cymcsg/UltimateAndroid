@@ -32,6 +32,7 @@ import com.fss.common.demo.foldingDrawer.FoldingActivitys;
 import com.fss.common.demo.listviewanimations.ListAnimationActivity;
 import com.fss.common.demo.listviewfilter.ui.ListViewFilterActivity;
 import com.fss.common.demo.parallaxscrollexample.ParallaxScrollActivity;
+import com.fss.common.demo.pullscrollview.PullScrollViewActivity;
 import com.fss.common.demo.rebound.ReboundActivity;
 import com.fss.common.demo.rebound.ReboundActivitySimple;
 import com.fss.common.demo.sampleModules.*;
@@ -235,6 +236,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "act_anim");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "pullscrollview");
+        map.put("detail", "try");
+        map.put("subname", "pull");
+        enhanceList.add(map);
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
         landingEnhanceListView.setAdapter(enhancedListAdapter);
         landingEnhanceListView.setDismissCallback(new EnhancedListView.OnDismissCallback() {
@@ -336,6 +342,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 27:
                         BasicUtils.sendIntent(getActivity(), ActivityAnimationsActivity.class);
+                        break;
+                    case 28:
+                        BasicUtils.sendIntent(getActivity(), PullScrollViewActivity.class);
                         break;
 
                 }

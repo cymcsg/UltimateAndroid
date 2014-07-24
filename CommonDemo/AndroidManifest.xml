@@ -90,10 +90,16 @@
                 android:windowSoftInputMode="stateHidden">
         </activity>
         <activity android:name=".sampleModules.GestureTouchActivity"></activity>
-        <activity android:name=".activityanimation.ActivityAnimationsActivity"   android:theme="@style/AppTheme.Transparent"></activity>
-        <activity android:name=".activityanimation.SecondActivity"   android:theme="@style/AppTheme.Transparent"></activity>
-        <activity android:name=".activityanimation.ThirdActivity"   android:theme="@style/AppTheme.Transparent"></activity>
-        <activity android:name=".activityanimation.DoorActivity"   android:theme="@style/AppTheme.Transparent"></activity>
+        <activity android:name=".activityanimation.ActivityAnimationsActivity"
+                  android:theme="@style/AppTheme.Transparent"></activity>
+        <activity android:name=".activityanimation.SecondActivity"
+                  android:theme="@style/AppTheme.Transparent"></activity>
+        <activity android:name=".activityanimation.ThirdActivity"
+                  android:theme="@style/AppTheme.Transparent"></activity>
+        <activity android:name=".activityanimation.DoorActivity" android:theme="@style/AppTheme.Transparent"></activity>
+        <activity android:name=".pullscrollview.PulldownViewActivity"></activity>
+        <activity android:name=".pullscrollview.PullScrollViewActivity"></activity>
+        <activity android:name=".pullscrollview.StretchViewActivity"></activity>
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->

@@ -1,5 +1,6 @@
 package com.fss.common.demo;
 
+import android.content.Context;
 import android.content.Intent;
 
 import android.content.res.Configuration;
@@ -26,6 +27,7 @@ import butterknife.InjectView;
 
 import com.fss.Common.commonUtils.logUtils.Logs;
 import com.fss.Common.commonUtils.urlUtils.HttpsUtils;
+import com.fss.Common.uiModule.customFonts.CalligraphyContextWrapper;
 import com.fss.Common.uiModule.nineoldandroids.animation.Animator;
 import com.fss.Common.ui.ToastUtil;
 import com.fss.Common.uiModule.passcodelock.AppLockManager;
@@ -85,7 +87,10 @@ public class MainActivity extends ActionBarActivity {
         super.onConfigurationChanged(newConfig);
         mDrawerToggle.onConfigurationChanged(newConfig);
     }
-
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(new CalligraphyContextWrapper(newBase));
+    }
 
     @Override
     public Intent getSupportParentActivityIntent() {
