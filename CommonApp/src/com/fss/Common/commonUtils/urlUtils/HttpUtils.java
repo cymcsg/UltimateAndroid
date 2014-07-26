@@ -9,6 +9,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import android.content.Context;
 import com.fss.Common.commonUtils.logUtils.Logs;
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;
@@ -480,6 +481,19 @@ public class HttpUtils {
             return serverResponseCode;
 
         } // End else block
+    }
+
+
+    public static void enableHttpResponseCache(String cachePath) {
+        try {
+            long httpCacheSize = 10 * 1024 * 1024; // 10 MiB
+            File httpCacheDir = new File(cachePath, "http");
+            Class.forName("android.net.http.HttpResponseCache")
+                    .getMethod("install", File.class, long.class)
+                    .invoke(null, httpCacheDir, httpCacheSize);
+        } catch (Exception httpResponseCacheNotAvailable) {
+            Log.d(TAG, "HTTP response cache is unavailable.");
+        }
     }
 
 }
