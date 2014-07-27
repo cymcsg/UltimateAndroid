@@ -165,6 +165,14 @@ Add [FaceCrop](https://github.com/Todd-Davies/ProgressWheel)
           
 2014.7.20 Add some utils
           Add some Ui Views[Trinea](https://github.com/Trinea/android-common)
+          
+2014.7.22 Add gesture detector
+
+2014.7.23 Add swiped card
+
+2014.7.25 update PackageUtils
+
+2014.7.26 enableHttpResponseCache
 
 The CommonLibs use many opensource program and I am very grateful to the author of them.
 The opensource program which I use:
