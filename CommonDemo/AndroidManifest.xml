@@ -110,6 +110,8 @@
         <activity android:name=".showcaseview.MemoryManagementTesting"></activity>
         <activity android:name=".listbuddies.ListBuddiesActivity"></activity>
         <activity android:name=".ResideMenuDemo.ResideMenuActivity"></activity>
+
+        <activity android:name=".sampleModules.AutofitTextViewActivity"></activity>
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->

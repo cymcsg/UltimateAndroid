@@ -264,6 +264,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "act");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "AutoFit");
+        map.put("detail", "try");
+        map.put("subname", "AutoFit");
+        enhanceList.add(map);
 //        map = new HashMap<>();
 //        map.put("name", "ResideMenu");
 //        map.put("detail", "try");
@@ -388,6 +393,9 @@ public class LandingFragment extends Fragment {
 //                        break;
                     case 32:
                         BasicUtils.sendIntent(getActivity(), ActivityTransitionActivity.class);
+                        break;
+                    case 33:
+                        BasicUtils.sendIntent(getActivity(), AutofitTextViewActivity.class);
                         break;
 
                 }
