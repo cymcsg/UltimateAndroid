@@ -23,6 +23,7 @@ import com.fss.Common.uiModule.titanic.Titanic;
 import com.fss.Common.uiModule.titanic.TitanicTextView;
 import com.fss.Common.uiModule.viewpagerindicator.CirclePageIndicator;
 import com.fss.common.demo.activityanimation.ActivityAnimationsActivity;
+import com.fss.common.demo.activitytransition.ActivityTransitionActivity;
 import com.fss.common.demo.cooldraganddrop.CoolDragAndDropActivity;
 import com.fss.common.demo.discrollview.DiscrollActivity;
 import com.fss.common.demo.dynamicgrid.example.DynamicGridActivity;
@@ -258,6 +259,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "ListBuddies");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "ActivityTransition");
+        map.put("detail", "try");
+        map.put("subname", "act");
+        enhanceList.add(map);
 //        map = new HashMap<>();
 //        map.put("name", "ResideMenu");
 //        map.put("detail", "try");
@@ -380,6 +386,9 @@ public class LandingFragment extends Fragment {
 //                    case 32:
 //                        BasicUtils.sendIntent(getActivity(), ResideMenuActivity.class);
 //                        break;
+                    case 32:
+                        BasicUtils.sendIntent(getActivity(), ActivityTransitionActivity.class);
+                        break;
 
                 }
             }

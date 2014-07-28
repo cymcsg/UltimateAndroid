@@ -62,6 +62,8 @@
         <activity android:name=".utils.jsoup.UtilsDemoActivity"></activity>
 
         <activity android:name=".sampleModules.ViewServerActivity"></activity>
+        <activity android:name=".activitytransition.ActivityTransitionActivity"></activity>
+        <activity android:name=".activitytransition.ActivityTransitiorSecond"></activity>
         <provider
                 android:name="android.support.v4.content.FileProvider"
                 android:authorities="com.fss.Common.demo.fileprovider"
