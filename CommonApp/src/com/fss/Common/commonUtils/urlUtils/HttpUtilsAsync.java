@@ -20,25 +20,29 @@ import java.util.Map;
 public class HttpUtilsAsync {
     private static final String BASE_URL = "http://api.fss.com/1/";
     private static final int TIME_OUT = 25000;
-    private static AsyncHttpClient client = new AsyncHttpClient();
+    private AsyncHttpClient client = new AsyncHttpClient();
 
 
     public static void get(String url, RequestParams params, AsyncHttpResponseHandler responseHandler) {
+        AsyncHttpClient client = new AsyncHttpClient();
         client.setTimeout(TIME_OUT);
         client.get(getAbsoluteUrl(url), params, responseHandler);
     }
 
     public static void post(String url, RequestParams params, AsyncHttpResponseHandler responseHandler) {
+        AsyncHttpClient client = new AsyncHttpClient();
         client.setTimeout(TIME_OUT);
         client.post(getAbsoluteUrl(url), params, responseHandler);
     }
 
     public static void get(String url, AsyncHttpResponseHandler responseHandler) {
+        AsyncHttpClient client = new AsyncHttpClient();
         client.setTimeout(TIME_OUT);
         client.get(getAbsoluteUrl(url), responseHandler);
     }
 
     public static void getWithCookie(Context context, String url, AsyncHttpResponseHandler responseHandler) {
+        AsyncHttpClient client = new AsyncHttpClient();
         PersistentCookieStore myCookieStore = new PersistentCookieStore(context);
         //  myCookieStore.clear();
         client.setCookieStore(myCookieStore);
@@ -76,11 +80,13 @@ public class HttpUtilsAsync {
                 myCookieStore.addCookie(cookie);
             }
         }
+        AsyncHttpClient client = new AsyncHttpClient();
         client.setCookieStore(myCookieStore);
         client.get(getAbsoluteUrl(url), responseHandler);
     }
 
     public static void getWithCookie(Context context, String url, RequestParams params, AsyncHttpResponseHandler responseHandler) {
+        AsyncHttpClient client = new AsyncHttpClient();
         PersistentCookieStore myCookieStore = new PersistentCookieStore(context);
         client.setCookieStore(myCookieStore);
         client.get(getAbsoluteUrl(url), params, responseHandler);
@@ -88,6 +94,7 @@ public class HttpUtilsAsync {
     }
 
     public static void post(String url, AsyncHttpResponseHandler responseHandler) {
+        AsyncHttpClient client = new AsyncHttpClient();
         client.post(getAbsoluteUrl(url), responseHandler);
     }
 
