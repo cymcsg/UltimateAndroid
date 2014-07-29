@@ -22,6 +22,11 @@ public class JsonUtil {
         return gson.fromJson(jsonString, typeToken.getType());
     }
 
+    public static <T> T getTFromJson(String jsonString, Class<T> t) {
+        Gson gson = new Gson();
+        return gson.fromJson(jsonString, t);
+    }
+
 
     public static ArrayList getArrayListMapFromJson(String jsonString) {
         JsonParser jsonParser = new JsonParser();
