@@ -18,12 +18,12 @@
     <string name="drop_down_list_footer_loading_text">Loading&#8230;</string>
     <string name="drop_down_list_footer_no_more_text">No More</string>
 
-    <string name="pull_to_refresh_pull_label">Pull to refresh...</string>
-    <string name="pull_to_refresh_release_label">Release to refresh...</string>
-    <string name="pull_to_refresh_refreshing_label">Refresh...</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pull_to_refresh_refreshing_label">刷新</string>
 
-    <string name="pull_to_refresh_footer_release_label">Release to loading...</string>
-    <string name="pull_to_refresh_footer_pull_label">Pull to loading...</string>
-    <string name="pull_to_refresh_footer_refreshing_label">Loading...</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中</string>
 
 </resources>
