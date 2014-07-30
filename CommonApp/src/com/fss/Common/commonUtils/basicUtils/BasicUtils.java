@@ -6,13 +6,11 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.os.Parcelable;
 import com.fss.Common.commonUtils.logUtils.Logs;
 
 import java.text.DecimalFormat;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * User: cym
@@ -162,6 +160,20 @@ public class BasicUtils {
         Intent intent = new Intent();
         intent.setClass(context, classes);
         intent.putExtra(key, value);
+        context.startActivity(intent);
+    }
+
+    public static void sendIntent(Context context, Class classes, String key, Parcelable value) {
+        Intent intent = new Intent();
+        intent.setClass(context, classes);
+        intent.putExtra(key, value);
+        context.startActivity(intent);
+    }
+
+    public static void sendIntent(Context context, Class classes, String key, ArrayList<? extends Parcelable> value) {
+        Intent intent = new Intent();
+        intent.setClass(context, classes);
+        intent.putParcelableArrayListExtra(key, value);
         context.startActivity(intent);
     }
 
