@@ -10,8 +10,6 @@ import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
  */
 public class CommonApplication extends Application {
 
-
-
     @Override
     public void onCreate() {
         super.onCreate();

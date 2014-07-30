@@ -30,8 +30,12 @@ public class UniversalImageLoader {
      * @return ImageLoaderConfiguration
      */
     public static ImageLoaderConfiguration getDefaultImageLoaderConfiguration(Context context) {
+        return getDefaultImageLoaderConfiguration(context, false);
+    }
+
+    public static ImageLoaderConfiguration getDefaultImageLoaderConfiguration(Context context, boolean isWriteLog) {
         File cacheDir = StorageUtils.getCacheDirectory(context);
-        ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(context)
+        ImageLoaderConfiguration.Builder builder = new ImageLoaderConfiguration.Builder(context)
 //                .memoryCacheExtraOptions(480, 800) // default = device screen dimensions
 //                .discCacheExtraOptions(480, 800, Bitmap.CompressFormat.JPEG, 75, null)
                 .threadPoolSize(3) // default
@@ -48,9 +52,12 @@ public class UniversalImageLoader {
                 .imageDownloader(new BaseImageDownloader(context)) // default
                 .imageDecoder(new BaseImageDecoder(false)) // default
                         //   .defaultDisplayImageOptions(DisplayImageOptions.createSimple()) // default
-                .defaultDisplayImageOptions(getDefaultImageOptions())
-                .writeDebugLogs()
-                .build();
+                .defaultDisplayImageOptions(getDefaultImageOptions());
+
+        if (isWriteLog) {
+            builder.writeDebugLogs();
+        }
+        ImageLoaderConfiguration config = builder.build();
         return config;
     }
 
