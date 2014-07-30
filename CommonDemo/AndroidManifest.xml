@@ -112,6 +112,7 @@
         <activity android:name=".ResideMenuDemo.ResideMenuActivity"></activity>
 
         <activity android:name=".sampleModules.AutofitTextViewActivity"></activity>
+        <activity android:name=".sampleModules.DraggableGridViewPagerTestActivity"></activity>
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->
