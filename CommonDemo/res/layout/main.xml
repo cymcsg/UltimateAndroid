@@ -11,7 +11,7 @@
             android:layout_height="match_parent"/>
     <RelativeLayout android:layout_width="fill_parent" android:id="@+id/favShimmerReaLayout"
                     android:layout_height="fill_parent">
-        <com.fss.commons.uiModule.shimmer.ShimmerTextView
+        <com.fss.common.uiModule.shimmer.ShimmerTextView
                 android:id="@+id/favShimmerTextView"
                 android:text="Loading"
                 android:layout_width="wrap_content"

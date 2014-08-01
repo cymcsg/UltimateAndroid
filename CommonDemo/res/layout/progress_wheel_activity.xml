@@ -31,7 +31,7 @@
 		    <ProgressBar android:layout_width="150dp"
 		    android:layout_height="150dp"/>
 		    
-		    <com.fss.commons.ui.ProgressWheel
+		    <com.fss.common.ui.ProgressWheel
 		        android:id="@+id/progressBarTwo"
 		        android:layout_width="150dp"
 		        android:layout_height="150dp"
@@ -50,7 +50,7 @@
     	android:layout_height="wrap_content"
     	android:orientation="horizontal">
 		    
-		    <com.fss.commons.ui.ProgressWheel
+		    <com.fss.common.ui.ProgressWheel
 		        android:id="@+id/progressBarThree"
 		        android:layout_width="150dp"
 		        android:layout_height="150dp"
@@ -65,7 +65,7 @@
 		        ProgressWheel:rimWidth="25dp" 
 		        ProgressWheel:spinSpeed="-1dp" />
 		    
-		    <com.fss.commons.ui.ProgressWheel
+		    <com.fss.common.ui.ProgressWheel
 		        android:id="@+id/progressBarFour"
 		        android:layout_width="50dp"
 		        android:layout_height="50dp"

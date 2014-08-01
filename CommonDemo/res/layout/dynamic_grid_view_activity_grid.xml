@@ -6,7 +6,7 @@
               android:layout_height="match_parent">
 
     <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="231231"/>
-    <com.fss.commons.uiModule.dynamicgrid.DynamicGridView
+    <com.fss.common.uiModule.dynamicgrid.DynamicGridView
             android:id="@+id/dynamic_grid_view"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
