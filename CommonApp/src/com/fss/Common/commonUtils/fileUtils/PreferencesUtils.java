@@ -288,4 +288,15 @@ public class PreferencesUtils {
         SharedPreferences settings = context.getSharedPreferences(preferenceName, Context.MODE_PRIVATE);
         return settings.getBoolean(key, defaultValue);
     }
+
+    public static void clearSharePreference(Context context) {
+        clearSharePreference(context, PREFERENCE_NAME);
+    }
+
+    public static void clearSharePreference(Context context, String preferenceName) {
+        SharedPreferences settings = context.getSharedPreferences(preferenceName, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = settings.edit();
+        editor.clear();
+        editor.commit();
+    }
 }
