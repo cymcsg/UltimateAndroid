@@ -6,7 +6,7 @@
     tools:context=".MainActivity$PlaceholderFragment"
     android:layout_weight="2">
 
-    <com.fss.common.uiModule.listbuddies.views.ObservableListView
+    <com.fss.commons.uiModule.listbuddies.views.ObservableListView
         android:id="@+id/list_left"
         android:layout_width="0dp"
         android:layout_weight="1"
@@ -19,7 +19,7 @@
         android:layout_height="match_parent"
         android:layout="@layout/listbuddies_gap"/>
 
-    <com.fss.common.uiModule.listbuddies.views.ObservableListView
+    <com.fss.commons.uiModule.listbuddies.views.ObservableListView
         android:id="@+id/list_right"
         android:layout_width="0dp"
         android:layout_weight="1"

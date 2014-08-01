@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<com.fss.common.uiModule.timessquare.MonthView
+<com.fss.commons.uiModule.timessquare.MonthView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -15,12 +15,12 @@
       android:gravity="center_horizontal"
       style="@style/CalendarTitle"
       />
-  <com.fss.common.uiModule.timessquare.CalendarGridView
+  <com.fss.commons.uiModule.timessquare.CalendarGridView
       android:id="@+id/calendar_grid"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       >
-    <com.fss.common.uiModule.timessquare.CalendarRowView
+    <com.fss.commons.uiModule.timessquare.CalendarRowView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingBottom="@dimen/calendar_day_headers_paddingbottom"
@@ -60,12 +60,12 @@
           android:layout_height="wrap_content"
           style="@style/CalendarCell.DayHeader"
           />
-    </com.fss.common.uiModule.timessquare.CalendarRowView>
+    </com.fss.commons.uiModule.timessquare.CalendarRowView>
     <include layout="@layout/calendar_week"/>
     <include layout="@layout/calendar_week"/>
     <include layout="@layout/calendar_week"/>
     <include layout="@layout/calendar_week"/>
     <include layout="@layout/calendar_week"/>
     <include layout="@layout/calendar_week"/>
-  </com.fss.common.uiModule.timessquare.CalendarGridView>
-</com.fss.common.uiModule.timessquare.MonthView>
+  </com.fss.commons.uiModule.timessquare.CalendarGridView>
+</com.fss.commons.uiModule.timessquare.MonthView>
