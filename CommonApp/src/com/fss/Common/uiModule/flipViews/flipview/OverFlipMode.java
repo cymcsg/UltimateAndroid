@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.flipViews.flipview;
+package com.fss.common.uiModule.flipViews.flipview;
 
 public enum OverFlipMode {
 	GLOW, RUBBER_BAND

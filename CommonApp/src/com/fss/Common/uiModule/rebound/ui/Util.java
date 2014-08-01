@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.rebound.ui;
+package com.fss.common.uiModule.rebound.ui;
 
 import android.content.res.Resources;
 import android.util.TypedValue;

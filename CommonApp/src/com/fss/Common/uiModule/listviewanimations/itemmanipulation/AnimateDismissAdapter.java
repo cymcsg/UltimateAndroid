@@ -13,19 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fss.Common.uiModule.listviewanimations.itemmanipulation;
+package com.fss.common.uiModule.listviewanimations.itemmanipulation;
 
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
-import com.fss.Common.uiModule.listviewanimations.BaseAdapterDecorator;
-import com.fss.Common.uiModule.listviewanimations.util.AdapterViewUtil;
-import com.fss.Common.uiModule.nineoldandroids.animation.Animator;
-import com.fss.Common.uiModule.nineoldandroids.animation.AnimatorListenerAdapter;
-import com.fss.Common.uiModule.nineoldandroids.animation.AnimatorSet;
-import com.fss.Common.uiModule.nineoldandroids.animation.ValueAnimator;
-import com.fss.Common.uiModule.nineoldandroids.animation.ValueAnimator.AnimatorUpdateListener;
+import com.fss.common.uiModule.listviewanimations.BaseAdapterDecorator;
+import com.fss.common.uiModule.listviewanimations.util.AdapterViewUtil;
+import com.fss.common.uiModule.nineoldandroids.animation.Animator;
+import com.fss.common.uiModule.nineoldandroids.animation.AnimatorListenerAdapter;
+import com.fss.common.uiModule.nineoldandroids.animation.AnimatorSet;
+import com.fss.common.uiModule.nineoldandroids.animation.ValueAnimator;
+import com.fss.common.uiModule.nineoldandroids.animation.ValueAnimator.AnimatorUpdateListener;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package com.fss.Common.uiModule.listviewanimations.itemmanipulation.swipedismiss.contextualundo;
+package com.fss.common.uiModule.listviewanimations.itemmanipulation.swipedismiss.contextualundo;
 
 import android.graphics.Rect;
 import android.view.MotionEvent;
@@ -27,15 +27,15 @@ import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
 
-import com.fss.Common.uiModule.listviewanimations.itemmanipulation.swipedismiss.DismissableManager;
-import com.fss.Common.uiModule.listviewanimations.itemmanipulation.swipedismiss.SwipeOnTouchListener;
-import com.fss.Common.uiModule.listviewanimations.util.AdapterViewUtil;
-import com.fss.Common.uiModule.nineoldandroids.animation.Animator;
-import com.fss.Common.uiModule.nineoldandroids.animation.AnimatorListenerAdapter;
+import com.fss.common.uiModule.listviewanimations.itemmanipulation.swipedismiss.DismissableManager;
+import com.fss.common.uiModule.listviewanimations.itemmanipulation.swipedismiss.SwipeOnTouchListener;
+import com.fss.common.uiModule.listviewanimations.util.AdapterViewUtil;
+import com.fss.common.uiModule.nineoldandroids.animation.Animator;
+import com.fss.common.uiModule.nineoldandroids.animation.AnimatorListenerAdapter;
 
-import static com.fss.Common.uiModule.nineoldandroids.view.ViewHelper.setAlpha;
-import static com.fss.Common.uiModule.nineoldandroids.view.ViewHelper.setTranslationX;
-import static com.fss.Common.uiModule.nineoldandroids.view.ViewPropertyAnimator.animate;
+import static com.fss.common.uiModule.nineoldandroids.view.ViewHelper.setAlpha;
+import static com.fss.common.uiModule.nineoldandroids.view.ViewHelper.setTranslationX;
+import static com.fss.common.uiModule.nineoldandroids.view.ViewPropertyAnimator.animate;
 
 /**
  * An {@link android.view.View.OnTouchListener} for the {@link ContextualUndoAdapter}. Don't use
@@ -92,7 +92,7 @@ public class ContextualUndoListViewTouchListener implements SwipeOnTouchListener
     }
 
     /**
-     * Set the {@link com.fss.Common.uiModule.listviewanimations.itemmanipulation.swipedismiss.DismissableManager} to specify which views can or cannot be swiped.
+     * Set the {@link com.fss.common.uiModule.listviewanimations.itemmanipulation.swipedismiss.DismissableManager} to specify which views can or cannot be swiped.
      * @param dismissableManager null for no restrictions.
      */
     @SuppressWarnings("UnusedDeclaration")

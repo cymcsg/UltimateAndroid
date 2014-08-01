@@ -1,7 +1,7 @@
-package com.fss.Common;
+package com.fss.common;
 
 import android.app.Application;
-import com.fss.Common.commonUtils.urlUtils.UniversalImageLoader;
+import com.fss.common.commonUtils.urlUtils.UniversalImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 

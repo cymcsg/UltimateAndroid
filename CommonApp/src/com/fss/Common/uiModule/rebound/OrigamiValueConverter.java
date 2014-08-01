@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.rebound;
+package com.fss.common.uiModule.rebound;
 
 /**
  * Helper math util to convert tension & friction values from the Origami design tool to values that

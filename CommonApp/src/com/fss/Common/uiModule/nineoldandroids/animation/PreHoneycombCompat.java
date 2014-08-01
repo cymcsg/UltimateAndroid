@@ -1,10 +1,10 @@
-package com.fss.Common.uiModule.nineoldandroids.animation;
+package com.fss.common.uiModule.nineoldandroids.animation;
 
 import android.view.View;
-import com.fss.Common.uiModule.nineoldandroids.util.FloatProperty;
-import com.fss.Common.uiModule.nineoldandroids.util.IntProperty;
-import com.fss.Common.uiModule.nineoldandroids.util.Property;
-import com.fss.Common.uiModule.nineoldandroids.view.animation.AnimatorProxy;
+import com.fss.common.uiModule.nineoldandroids.util.FloatProperty;
+import com.fss.common.uiModule.nineoldandroids.util.IntProperty;
+import com.fss.common.uiModule.nineoldandroids.util.Property;
+import com.fss.common.uiModule.nineoldandroids.view.animation.AnimatorProxy;
 
 final class PreHoneycombCompat {
     static Property<View, Float> ALPHA = new FloatProperty<View>("alpha") {

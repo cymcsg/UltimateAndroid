@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.discrollview;
+package com.fss.common.uiModule.discrollview;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -6,7 +6,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-import com.fss.Common.R;
+import com.fss.common.R;
 
 /**
  *

@@ -1,4 +1,4 @@
-package com.fss.Common.commonUtils.logUtils;
+package com.fss.common.commonUtils.logUtils;
 
 
 
@@ -39,7 +39,7 @@ public class LogWriter {
     /**
      * 获取LogWriter的唯一实例。
      * @return
-     * @throws com.fss.Common.commonUtils.logUtils.LogException
+     * @throws com.fss.common.commonUtils.logUtils.LogException
      */
     public synchronized static LogWriter getLogWriter()throws LogException{
         if (logWriter == null){
@@ -74,7 +74,7 @@ public class LogWriter {
 
     /**
      * 初始化LogWriter
-     * @throws com.fss.Common.commonUtils.logUtils.LogException
+     * @throws com.fss.common.commonUtils.logUtils.LogException
      */
     private void init() throws LogException{
         //如果用户没有在参数中指定日志文件名，则从配置文件中获取。

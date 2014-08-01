@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.foldablelayout;
+package com.fss.common.uiModule.foldablelayout;
 
 import android.content.Context;
 import android.graphics.Rect;

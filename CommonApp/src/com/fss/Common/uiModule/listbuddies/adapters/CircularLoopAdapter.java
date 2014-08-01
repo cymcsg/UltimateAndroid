@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.listbuddies.adapters;
+package com.fss.common.uiModule.listbuddies.adapters;
 
 import android.widget.BaseAdapter;
 

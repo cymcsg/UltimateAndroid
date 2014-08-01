@@ -1,6 +1,5 @@
-package com.fss.Common.commonUtils.networkUtils;
+package com.fss.common.commonUtils.networkUtils;
 
-import android.app.Activity;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;

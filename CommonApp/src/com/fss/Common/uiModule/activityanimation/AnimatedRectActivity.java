@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.activityanimation;
+package com.fss.common.uiModule.activityanimation;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;

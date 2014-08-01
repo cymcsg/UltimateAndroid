@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fss.Common.uiModule.nineoldandroids.util;
+package com.fss.common.uiModule.nineoldandroids.util;
 
 /**
- * Thrown when code requests a {@link com.fss.Common.uiModule.nineoldandroids.util.Property} on a class that does
+ * Thrown when code requests a {@link com.fss.common.uiModule.nineoldandroids.util.Property} on a class that does
  * not expose the appropriate method or field.
  *
- * @see com.fss.Common.uiModule.nineoldandroids.util.Property#of(Class, Class, String)
+ * @see com.fss.common.uiModule.nineoldandroids.util.Property#of(Class, Class, String)
  */
 public class NoSuchPropertyException extends RuntimeException {
 

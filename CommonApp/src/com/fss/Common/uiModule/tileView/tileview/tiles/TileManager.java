@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.tileView.tileview.tiles;
+package com.fss.common.uiModule.tileView.tileview.tiles;
 
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -8,14 +8,14 @@ import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.widget.ImageView;
 
-import com.fss.Common.uiModule.tileView.layouts.FixedLayout;
-import com.fss.Common.uiModule.tileView.layouts.ScalingLayout;
-import com.fss.Common.uiModule.tileView.os.AsyncTask;
-import com.fss.Common.uiModule.tileView.tileview.detail.DetailLevel;
-import com.fss.Common.uiModule.tileView.tileview.detail.DetailLevelEventListener;
-import com.fss.Common.uiModule.tileView.tileview.detail.DetailManager;
-import com.fss.Common.uiModule.tileView.tileview.graphics.BitmapDecoder;
-import com.fss.Common.uiModule.tileView.tileview.graphics.BitmapDecoderAssets;
+import com.fss.common.uiModule.tileView.layouts.FixedLayout;
+import com.fss.common.uiModule.tileView.layouts.ScalingLayout;
+import com.fss.common.uiModule.tileView.os.AsyncTask;
+import com.fss.common.uiModule.tileView.tileview.detail.DetailLevel;
+import com.fss.common.uiModule.tileView.tileview.detail.DetailLevelEventListener;
+import com.fss.common.uiModule.tileView.tileview.detail.DetailManager;
+import com.fss.common.uiModule.tileView.tileview.graphics.BitmapDecoder;
+import com.fss.common.uiModule.tileView.tileview.graphics.BitmapDecoderAssets;
 
 public class TileManager extends ScalingLayout implements DetailLevelEventListener {
 

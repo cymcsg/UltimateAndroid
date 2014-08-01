@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.shimmer;
+package com.fss.common.uiModule.shimmer;
 
 import android.content.res.TypedArray;
 import android.graphics.LinearGradient;
@@ -7,7 +7,7 @@ import android.graphics.Paint;
 import android.graphics.Shader;
 import android.util.AttributeSet;
 import android.view.View;
-import com.fss.Common.R;
+import com.fss.common.R;
 
 /**
  * Shimmer

@@ -1,5 +1,5 @@
 // Copyright 2012 Square, Inc.
-package com.fss.Common.uiModule.timessquare;
+package com.fss.common.uiModule.timessquare;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -11,9 +11,9 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
-import com.fss.Common.R;
-import com.fss.Common.commonUtils.logUtils.Logs;
-import com.fss.Common.uiModule.timessquare.MonthCellDescriptor.RangeState;
+import com.fss.common.R;
+import com.fss.common.commonUtils.logUtils.Logs;
+import com.fss.common.uiModule.timessquare.MonthCellDescriptor.RangeState;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -39,7 +39,7 @@ import static java.util.Calendar.YEAR;
 /**
  * Android component to allow picking a date from a calendar view (a list of months).  Must be
  * initialized after inflation with {@link #init(java.util.Date, java.util.Date)} and can be customized with any of the
- * {@link com.fss.Common.uiModule.timessquare.CalendarPickerView.FluentInitializer} methods returned.  The currently selected date can be retrieved with
+ * {@link com.fss.common.uiModule.timessquare.CalendarPickerView.FluentInitializer} methods returned.  The currently selected date can be retrieved with
  * {@link #getSelectedDate()}.
  */
 public class CalendarPickerView extends ListView {
@@ -141,9 +141,9 @@ public class CalendarPickerView extends ListView {
      * {@code maxDate} as 11/16/2013 4:30am, 11/16/2012 will be the first selectable date and
      * 11/15/2013 will be the last selectable date ({@code maxDate} is exclusive).
      * <p/>
-     * This will implicitly set the {@link com.fss.Common.uiModule.timessquare.CalendarPickerView.SelectionMode} to {@link com.fss.Common.uiModule.timessquare.CalendarPickerView.SelectionMode#SINGLE}.  If you
-     * want a different selection mode, use {@link com.fss.Common.uiModule.timessquare.CalendarPickerView.FluentInitializer#inMode(com.fss.Common.uiModule.timessquare.CalendarPickerView.SelectionMode)} on the
-     * {@link com.fss.Common.uiModule.timessquare.CalendarPickerView.FluentInitializer} this method returns.
+     * This will implicitly set the {@link com.fss.common.uiModule.timessquare.CalendarPickerView.SelectionMode} to {@link com.fss.common.uiModule.timessquare.CalendarPickerView.SelectionMode#SINGLE}.  If you
+     * want a different selection mode, use {@link com.fss.common.uiModule.timessquare.CalendarPickerView.FluentInitializer#inMode(com.fss.common.uiModule.timessquare.CalendarPickerView.SelectionMode)} on the
+     * {@link com.fss.common.uiModule.timessquare.CalendarPickerView.FluentInitializer} this method returns.
      * <p/>
      * The calendar will be constructed using the given locale. This means that all names
      * (months, days) will be in the language of the locale and the weeks start with the day
@@ -231,9 +231,9 @@ public class CalendarPickerView extends ListView {
      * {@code maxDate} as 11/16/2013 4:30am, 11/16/2012 will be the first selectable date and
      * 11/15/2013 will be the last selectable date ({@code maxDate} is exclusive).
      * <p/>
-     * This will implicitly set the {@link com.fss.Common.uiModule.timessquare.CalendarPickerView.SelectionMode} to {@link com.fss.Common.uiModule.timessquare.CalendarPickerView.SelectionMode#SINGLE}.  If you
-     * want a different selection mode, use {@link com.fss.Common.uiModule.timessquare.CalendarPickerView.FluentInitializer#inMode(com.fss.Common.uiModule.timessquare.CalendarPickerView.SelectionMode)} on the
-     * {@link com.fss.Common.uiModule.timessquare.CalendarPickerView.FluentInitializer} this method returns.
+     * This will implicitly set the {@link com.fss.common.uiModule.timessquare.CalendarPickerView.SelectionMode} to {@link com.fss.common.uiModule.timessquare.CalendarPickerView.SelectionMode#SINGLE}.  If you
+     * want a different selection mode, use {@link com.fss.common.uiModule.timessquare.CalendarPickerView.FluentInitializer#inMode(com.fss.common.uiModule.timessquare.CalendarPickerView.SelectionMode)} on the
+     * {@link com.fss.common.uiModule.timessquare.CalendarPickerView.FluentInitializer} this method returns.
      * <p/>
      * The calendar will be constructed using the default locale as returned by
      * {@link java.util.Locale#getDefault()}. If you wish the calendar to be constructed using a
@@ -248,7 +248,7 @@ public class CalendarPickerView extends ListView {
 
     public class FluentInitializer {
         /**
-         * Override the {@link com.fss.Common.uiModule.timessquare.CalendarPickerView.SelectionMode} from the default ({@link com.fss.Common.uiModule.timessquare.CalendarPickerView.SelectionMode#SINGLE}).
+         * Override the {@link com.fss.common.uiModule.timessquare.CalendarPickerView.SelectionMode} from the default ({@link com.fss.common.uiModule.timessquare.CalendarPickerView.SelectionMode#SINGLE}).
          */
         public FluentInitializer inMode(SelectionMode mode) {
             selectionMode = mode;
@@ -266,7 +266,7 @@ public class CalendarPickerView extends ListView {
 
         /**
          * Set multiple selected dates.  This will throw an {@link IllegalArgumentException} if you
-         * pass in multiple dates and haven't already called {@link #inMode(com.fss.Common.uiModule.timessquare.CalendarPickerView.SelectionMode)}.
+         * pass in multiple dates and haven't already called {@link #inMode(com.fss.common.uiModule.timessquare.CalendarPickerView.SelectionMode)}.
          */
         public FluentInitializer withSelectedDates(Collection<Date> selectedDates) {
             if (selectionMode == SelectionMode.SINGLE && selectedDates.size() > 1) {
@@ -445,9 +445,9 @@ public class CalendarPickerView extends ListView {
     }
 
     /**
-     * Select a new date.  Respects the {@link com.fss.Common.uiModule.timessquare.CalendarPickerView.SelectionMode} this CalendarPickerView is configured
-     * with: if you are in {@link com.fss.Common.uiModule.timessquare.CalendarPickerView.SelectionMode#SINGLE}, the previously selected date will be
-     * un-selected.  In {@link com.fss.Common.uiModule.timessquare.CalendarPickerView.SelectionMode#MULTIPLE}, the new date will be added to the list of
+     * Select a new date.  Respects the {@link com.fss.common.uiModule.timessquare.CalendarPickerView.SelectionMode} this CalendarPickerView is configured
+     * with: if you are in {@link com.fss.common.uiModule.timessquare.CalendarPickerView.SelectionMode#SINGLE}, the previously selected date will be
+     * un-selected.  In {@link com.fss.common.uiModule.timessquare.CalendarPickerView.SelectionMode#MULTIPLE}, the new date will be added to the list of
      * selected dates.
      * <p/>
      * If the selection was made (selectable date, in range), the view will scroll to the newly
@@ -460,9 +460,9 @@ public class CalendarPickerView extends ListView {
     }
 
     /**
-     * Select a new date.  Respects the {@link com.fss.Common.uiModule.timessquare.CalendarPickerView.SelectionMode} this CalendarPickerView is configured
-     * with: if you are in {@link com.fss.Common.uiModule.timessquare.CalendarPickerView.SelectionMode#SINGLE}, the previously selected date will be
-     * un-selected.  In {@link com.fss.Common.uiModule.timessquare.CalendarPickerView.SelectionMode#MULTIPLE}, the new date will be added to the list of
+     * Select a new date.  Respects the {@link com.fss.common.uiModule.timessquare.CalendarPickerView.SelectionMode} this CalendarPickerView is configured
+     * with: if you are in {@link com.fss.common.uiModule.timessquare.CalendarPickerView.SelectionMode#SINGLE}, the previously selected date will be
+     * un-selected.  In {@link com.fss.common.uiModule.timessquare.CalendarPickerView.SelectionMode#MULTIPLE}, the new date will be added to the list of
      * selected dates.
      * <p/>
      * If the selection was made (selectable date, in range), the view will scroll to the newly
@@ -825,7 +825,7 @@ public class CalendarPickerView extends ListView {
      * when the user initiates the date selection.  If you call {@link #selectDate(java.util.Date)} this
      * listener will not be notified.
      *
-     * @see #setOnDateSelectedListener(com.fss.Common.uiModule.timessquare.CalendarPickerView.OnDateSelectedListener)
+     * @see #setOnDateSelectedListener(com.fss.common.uiModule.timessquare.CalendarPickerView.OnDateSelectedListener)
      */
     public interface OnDateSelectedListener {
         void onDateSelected(Date date);
@@ -838,7 +838,7 @@ public class CalendarPickerView extends ListView {
      * called when the user initiates the date selection. If you call {@link #selectDate(java.util.Date)} this
      * listener will not be notified.
      *
-     * @see #setOnInvalidDateSelectedListener(com.fss.Common.uiModule.timessquare.CalendarPickerView.OnInvalidDateSelectedListener)
+     * @see #setOnInvalidDateSelectedListener(com.fss.common.uiModule.timessquare.CalendarPickerView.OnInvalidDateSelectedListener)
      */
     public interface OnInvalidDateSelectedListener {
         void onInvalidDateSelected(Date date);
@@ -848,7 +848,7 @@ public class CalendarPickerView extends ListView {
      * Interface used for determining the selectability of a date cell when it is configured for
      * display on the calendar.
      *
-     * @see #setDateSelectableFilter(com.fss.Common.uiModule.timessquare.CalendarPickerView.DateSelectableFilter)
+     * @see #setDateSelectableFilter(com.fss.common.uiModule.timessquare.CalendarPickerView.DateSelectableFilter)
      */
     public interface DateSelectableFilter {
         boolean isDateSelectable(Date date);

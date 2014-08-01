@@ -1,9 +1,8 @@
-package com.fss.Common.commonUtils.urlUtils;
+package com.fss.common.commonUtils.urlUtils;
 
 
 import android.content.Context;
-import android.util.Log;
-import com.fss.Common.commonUtils.logUtils.Logs;
+import com.fss.common.commonUtils.logUtils.Logs;
 
 import javax.net.ssl.HttpsURLConnection;
 import javax.net.ssl.SSLContext;

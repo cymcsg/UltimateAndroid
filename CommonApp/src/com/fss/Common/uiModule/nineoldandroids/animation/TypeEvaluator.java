@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.fss.Common.uiModule.nineoldandroids.animation;
+package com.fss.common.uiModule.nineoldandroids.animation;
 
 /**
- * Interface for use with the {@link com.fss.Common.uiModule.nineoldandroids.animation.ValueAnimator#setEvaluator(com.fss.Common.uiModule.nineoldandroids.animation.TypeEvaluator)} function. Evaluators
+ * Interface for use with the {@link com.fss.common.uiModule.nineoldandroids.animation.ValueAnimator#setEvaluator(com.fss.common.uiModule.nineoldandroids.animation.TypeEvaluator)} function. Evaluators
  * allow developers to create animations on arbitrary property types, by allowing them to supply
  * custom evaulators for types that are not automatically understood and used by the animation
  * system.
  *
- * @see com.fss.Common.uiModule.nineoldandroids.animation.ValueAnimator#setEvaluator(com.fss.Common.uiModule.nineoldandroids.animation.TypeEvaluator)
+ * @see com.fss.common.uiModule.nineoldandroids.animation.ValueAnimator#setEvaluator(com.fss.common.uiModule.nineoldandroids.animation.TypeEvaluator)
  */
 public interface TypeEvaluator<T> {
 

@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fss.Common.uiModule.viewpagerindicator;
+package com.fss.common.uiModule.viewpagerindicator;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -31,7 +31,7 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewConfiguration;
-import com.fss.Common.R;
+import com.fss.common.R;
 
 
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.cooldraganddrop;
+package com.fss.common.uiModule.cooldraganddrop;
 
 import android.content.Context;
 import android.graphics.Bitmap;

@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.discrollview;
+package com.fss.common.uiModule.discrollview;
 
 /**
  * Represents a View able to be discrollved.

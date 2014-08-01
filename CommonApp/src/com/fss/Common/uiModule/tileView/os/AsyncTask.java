@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.tileView.os;
+package com.fss.common.uiModule.tileView.os;
 
 
 /*
@@ -235,7 +235,7 @@ public abstract class AsyncTask<Params, Progress, Result> {
          */
         RUNNING,
         /**
-         * Indicates that {@link com.fss.Common.uiModule.tileView.os.AsyncTask#onPostExecute} has finished.
+         * Indicates that {@link com.fss.common.uiModule.tileView.os.AsyncTask#onPostExecute} has finished.
          */
         FINISHED,
     }
@@ -503,7 +503,7 @@ public abstract class AsyncTask<Params, Progress, Result> {
      * @return This instance of AsyncTask.
      *
      * @throws IllegalStateException If {@link #getStatus()} returns either
-     *         {@link com.fss.Common.uiModule.tileView.os.AsyncTask.Status#RUNNING} or {@link com.fss.Common.uiModule.tileView.os.AsyncTask.Status#FINISHED}.
+     *         {@link com.fss.common.uiModule.tileView.os.AsyncTask.Status#RUNNING} or {@link com.fss.common.uiModule.tileView.os.AsyncTask.Status#FINISHED}.
      */
     public final AsyncTask<Params, Progress, Result> execute(Params... params) {
         return executeOnExecutor(sDefaultExecutor, params);
@@ -538,7 +538,7 @@ public abstract class AsyncTask<Params, Progress, Result> {
      * @return This instance of AsyncTask.
      *
      * @throws IllegalStateException If {@link #getStatus()} returns either
-     *         {@link com.fss.Common.uiModule.tileView.os.AsyncTask.Status#RUNNING} or {@link com.fss.Common.uiModule.tileView.os.AsyncTask.Status#FINISHED}.
+     *         {@link com.fss.common.uiModule.tileView.os.AsyncTask.Status#RUNNING} or {@link com.fss.common.uiModule.tileView.os.AsyncTask.Status#FINISHED}.
      */
     public final AsyncTask<Params, Progress, Result> executeOnExecutor(Executor exec,
             Params... params) {

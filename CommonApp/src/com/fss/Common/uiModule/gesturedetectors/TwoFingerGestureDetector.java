@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.gesturedetectors;
+package com.fss.common.uiModule.gesturedetectors;
 
 import android.content.Context;
 import android.util.DisplayMetrics;

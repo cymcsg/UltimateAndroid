@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fss.Common.uiModule.nineoldandroids.animation;
+package com.fss.common.uiModule.nineoldandroids.animation;
 
 import android.content.Context;
 import android.content.res.Resources.NotFoundException;
@@ -83,7 +83,7 @@ public class AnimatorInflater {
     //private static final int VALUE_TYPE_CUSTOM      = 5;
 
     /**
-     * Loads an {@link com.fss.Common.uiModule.nineoldandroids.animation.Animator} object from a resource
+     * Loads an {@link com.fss.common.uiModule.nineoldandroids.animation.Animator} object from a resource
      *
      * @param context Application context used to access resources
      * @param id The resource id of the animation to load
@@ -121,7 +121,7 @@ public class AnimatorInflater {
     }
 
     private static Animator createAnimatorFromXml(Context c, XmlPullParser parser,
-            AttributeSet attrs, com.fss.Common.uiModule.nineoldandroids.animation.AnimatorSet parent, int sequenceOrdering)
+            AttributeSet attrs, com.fss.common.uiModule.nineoldandroids.animation.AnimatorSet parent, int sequenceOrdering)
             throws XmlPullParserException, IOException {
 
         Animator anim = null;
@@ -145,7 +145,7 @@ public class AnimatorInflater {
             } else if (name.equals("animator")) {
                 anim = loadAnimator(c, attrs, null);
             } else if (name.equals("set")) {
-                anim = new com.fss.Common.uiModule.nineoldandroids.animation.AnimatorSet();
+                anim = new com.fss.common.uiModule.nineoldandroids.animation.AnimatorSet();
                 TypedArray a = c.obtainStyledAttributes(attrs,
                         /*com.android.internal.R.styleable.*/AnimatorSet);
 
@@ -153,7 +153,7 @@ public class AnimatorInflater {
                 a.getValue(/*com.android.internal.R.styleable.*/AnimatorSet_ordering, orderingValue);
                 int ordering = orderingValue.type == TypedValue.TYPE_INT_DEC ? orderingValue.data : TOGETHER;
 
-                createAnimatorFromXml(c, parser, attrs, (com.fss.Common.uiModule.nineoldandroids.animation.AnimatorSet) anim,  ordering);
+                createAnimatorFromXml(c, parser, attrs, (com.fss.common.uiModule.nineoldandroids.animation.AnimatorSet) anim,  ordering);
                 a.recycle();
             } else {
                 throw new RuntimeException("Unknown animator name: " + parser.getName());

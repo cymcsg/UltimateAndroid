@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.fss.Common.uiModule.nineoldandroids.animation;
+package com.fss.common.uiModule.nineoldandroids.animation;
 
 import android.util.Log;
-import com.fss.Common.uiModule.nineoldandroids.util.FloatProperty;
-import com.fss.Common.uiModule.nineoldandroids.util.IntProperty;
-import com.fss.Common.uiModule.nineoldandroids.util.Property;
+import com.fss.common.uiModule.nineoldandroids.util.FloatProperty;
+import com.fss.common.uiModule.nineoldandroids.util.IntProperty;
+import com.fss.common.uiModule.nineoldandroids.util.Property;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -236,7 +236,7 @@ public class PropertyValuesHolder implements Cloneable {
      * on the object. Also, if any value is null, the value will be filled in when the animation
      * starts in the same way. This mechanism of automatically getting null values only works
      * if the PropertyValuesHolder object is used in conjunction
-     * {@link com.fss.Common.uiModule.nineoldandroids.animation.ObjectAnimator}, and with a getter function
+     * {@link com.fss.common.uiModule.nineoldandroids.animation.ObjectAnimator}, and with a getter function
      * derived automatically from <code>propertyName</code>, since otherwise PropertyValuesHolder has
      * no way of determining what the value should be.
      * @param propertyName The name of the property associated with this set of values. This
@@ -271,7 +271,7 @@ public class PropertyValuesHolder implements Cloneable {
      * Also, if any value is null, the value will be filled in when the animation
      * starts in the same way. This mechanism of automatically getting null values only works
      * if the PropertyValuesHolder object is used in conjunction with
-     * {@link com.fss.Common.uiModule.nineoldandroids.animation.ObjectAnimator}, since otherwise PropertyValuesHolder has
+     * {@link com.fss.common.uiModule.nineoldandroids.animation.ObjectAnimator}, since otherwise PropertyValuesHolder has
      * no way of determining what the value should be.
      * @param property The property associated with this set of values. Should not be null.
      * @param values The set of values to animate between.
@@ -298,7 +298,7 @@ public class PropertyValuesHolder implements Cloneable {
      * on the object. Also, if any value is null, the value will be filled in when the animation
      * starts in the same way. This mechanism of automatically getting null values only works
      * if the PropertyValuesHolder object is used in conjunction
-     * {@link com.fss.Common.uiModule.nineoldandroids.animation.ObjectAnimator}, and with a getter function
+     * {@link com.fss.common.uiModule.nineoldandroids.animation.ObjectAnimator}, and with a getter function
      * derived automatically from <code>propertyName</code>, since otherwise PropertyValuesHolder has
      * no way of determining what the value should be.
      *
@@ -316,7 +316,7 @@ public class PropertyValuesHolder implements Cloneable {
      * on the object. Also, if any value is null, the value will be filled in when the animation
      * starts in the same way. This mechanism of automatically getting null values only works
      * if the PropertyValuesHolder object is used in conjunction
-     * {@link com.fss.Common.uiModule.nineoldandroids.animation.ObjectAnimator}, and with a getter function
+     * {@link com.fss.common.uiModule.nineoldandroids.animation.ObjectAnimator}, and with a getter function
      * derived automatically from <code>propertyName</code>, since otherwise PropertyValuesHolder has
      * no way of determining what the value should be.
      *
@@ -349,7 +349,7 @@ public class PropertyValuesHolder implements Cloneable {
      * on the object. Also, if any value is null, the value will be filled in when the animation
      * starts in the same way. This mechanism of automatically getting null values only works
      * if the PropertyValuesHolder object is used in conjunction
-     * {@link com.fss.Common.uiModule.nineoldandroids.animation.ObjectAnimator}, and with a getter function
+     * {@link com.fss.common.uiModule.nineoldandroids.animation.ObjectAnimator}, and with a getter function
      * derived automatically from <code>propertyName</code>, since otherwise PropertyValuesHolder has
      * no way of determining what the value should be.
      *

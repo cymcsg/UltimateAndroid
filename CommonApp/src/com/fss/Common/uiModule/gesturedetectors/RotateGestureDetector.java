@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.gesturedetectors;
+package com.fss.common.uiModule.gesturedetectors;
 
 import android.content.Context;
 import android.view.MotionEvent;
@@ -30,7 +30,7 @@ public class RotateGestureDetector extends TwoFingerGestureDetector {
 	 * to perform callbacks to any implementing class which is registered to a
 	 * RotateGestureDetector via the constructor.
 	 * 
-	 * @see com.fss.Common.uiModule.gesturedetectors.RotateGestureDetector.SimpleOnRotateGestureListener
+	 * @see com.fss.common.uiModule.gesturedetectors.RotateGestureDetector.SimpleOnRotateGestureListener
 	 */
 	public interface OnRotateGestureListener {
 		public boolean onRotate(RotateGestureDetector detector);

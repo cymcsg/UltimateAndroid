@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.tileView.tileview.markers;
+package com.fss.common.uiModule.tileView.tileview.markers;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -10,9 +10,9 @@ import android.graphics.Point;
 import android.graphics.Rect;
 import android.view.View;
 
-import com.fss.Common.uiModule.tileView.layouts.TranslationLayout;
-import com.fss.Common.uiModule.tileView.tileview.detail.DetailLevelEventListener;
-import com.fss.Common.uiModule.tileView.tileview.detail.DetailManager;
+import com.fss.common.uiModule.tileView.layouts.TranslationLayout;
+import com.fss.common.uiModule.tileView.tileview.detail.DetailLevelEventListener;
+import com.fss.common.uiModule.tileView.tileview.detail.DetailManager;
 
 /*
  * TODO: need to consolidate positioning logic - works as is, but does too many unnecessary and possibly messy calculations

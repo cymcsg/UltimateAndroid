@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fss.Common.uiModule.enhanceListView;
+package com.fss.common.uiModule.enhanceListView;
 
 import android.content.Context;
 import android.graphics.Rect;
@@ -34,12 +34,12 @@ import android.widget.ListView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
-import com.fss.Common.R;
-import com.fss.Common.uiModule.nineoldandroids.animation.Animator;
-import com.fss.Common.uiModule.nineoldandroids.animation.AnimatorListenerAdapter;
-import com.fss.Common.uiModule.nineoldandroids.animation.ValueAnimator;
-import com.fss.Common.uiModule.nineoldandroids.view.ViewHelper;
-import com.fss.Common.uiModule.nineoldandroids.view.ViewPropertyAnimator;
+import com.fss.common.R;
+import com.fss.common.uiModule.nineoldandroids.animation.Animator;
+import com.fss.common.uiModule.nineoldandroids.animation.AnimatorListenerAdapter;
+import com.fss.common.uiModule.nineoldandroids.animation.ValueAnimator;
+import com.fss.common.uiModule.nineoldandroids.view.ViewHelper;
+import com.fss.common.uiModule.nineoldandroids.view.ViewPropertyAnimator;
 
 
 import java.util.ArrayList;
@@ -59,7 +59,7 @@ public class EnhancedListView extends ListView {
 
     /**
      * Defines the style in which <i>undos</i> should be displayed and handled in the list.
-     * Pass this to {@link #setUndoStyle(com.fss.Common.uiModule.enhanceListView.EnhancedListView.UndoStyle)}
+     * Pass this to {@link #setUndoStyle(com.fss.common.uiModule.enhanceListView.EnhancedListView.UndoStyle)}
      * to change the default behavior from {@link #SINGLE_POPUP}.
      */
     public enum UndoStyle {
@@ -93,7 +93,7 @@ public class EnhancedListView extends ListView {
 
     /**
      * Defines the direction in which list items can be swiped out to delete them.
-     * Use {@link #setSwipeDirection(com.fss.Common.uiModule.enhanceListView.EnhancedListView.SwipeDirection)}
+     * Use {@link #setSwipeDirection(com.fss.common.uiModule.enhanceListView.EnhancedListView.SwipeDirection)}
      * to change the default behavior.
      * <p>
      * <b>Note:</b> This method requires the <i>Swipe to Dismiss</i> feature enabled. Use
@@ -126,7 +126,7 @@ public class EnhancedListView extends ListView {
     }
 
     /**
-     * The callback interface used by {@link #setShouldSwipeCallback(com.fss.Common.uiModule.enhanceListView.EnhancedListView.OnShouldSwipeCallback)}
+     * The callback interface used by {@link #setShouldSwipeCallback(com.fss.common.uiModule.enhanceListView.EnhancedListView.OnShouldSwipeCallback)}
      * to inform its client that a list item is going to be swiped and check whether is
      * should or not. Implement this to prevent some items from be swiped.
      */
@@ -138,7 +138,7 @@ public class EnhancedListView extends ListView {
          * If the user should get the possibility to swipe the item, return true.
          * Otherwise, return false to disable swiping for this item.
          *
-         * @param listView The {@link com.fss.Common.uiModule.enhanceListView.EnhancedListView} the item is wiping from.
+         * @param listView The {@link com.fss.common.uiModule.enhanceListView.EnhancedListView} the item is wiping from.
          * @param position The position of the item to swipe in your adapter.
          * @return Whether the item should be swiped or not.
          */
@@ -147,7 +147,7 @@ public class EnhancedListView extends ListView {
     }
 
     /**
-     * The callback interface used by {@link #setDismissCallback(com.fss.Common.uiModule.enhanceListView.EnhancedListView.OnDismissCallback)}
+     * The callback interface used by {@link #setDismissCallback(com.fss.common.uiModule.enhanceListView.EnhancedListView.OnDismissCallback)}
      * to inform its client about a successful dismissal of one or more list item positions.
      * Implement this to remove items from your adapter, that has been swiped from the list.
      */
@@ -160,19 +160,19 @@ public class EnhancedListView extends ListView {
          * Don't return from this method, before your item has been deleted from the adapter, meaning
          * if you delete the item in another thread, you have to make sure, you don't return from
          * this method, before the item has been deleted. Since the way how you delete your item
-         * depends on your data and adapter, the {@link com.fss.Common.uiModule.enhanceListView.EnhancedListView}
+         * depends on your data and adapter, the {@link com.fss.common.uiModule.enhanceListView.EnhancedListView}
          * cannot handle that synchronizing for you. If you return from this method before you removed
          * the view from the adapter, you will most likely get errors like exceptions and flashing
          * items in the list.
          * <p>
          * If the user should get the possibility to undo this deletion, return an implementation
-         * of {@link com.fss.Common.uiModule.enhanceListView.EnhancedListView.Undoable} from this method.
+         * of {@link com.fss.common.uiModule.enhanceListView.EnhancedListView.Undoable} from this method.
          * If you return {@code null} no undo will be possible. You are free to return an {@code Undoable}
          * for some items, and {@code null} for others, though it might be a horrible user experience.
          *
-         * @param listView The {@link com.fss.Common.uiModule.enhanceListView.EnhancedListView} the item has been deleted from.
+         * @param listView The {@link com.fss.common.uiModule.enhanceListView.EnhancedListView} the item has been deleted from.
          * @param position The position of the item to delete from your adapter.
-         * @return An {@link com.fss.Common.uiModule.enhanceListView.EnhancedListView.Undoable}, if you want
+         * @return An {@link com.fss.common.uiModule.enhanceListView.EnhancedListView.Undoable}, if you want
          * to give the user the possibility to undo the deletion.
          */
         Undoable onDismiss(EnhancedListView listView, int position);
@@ -181,8 +181,8 @@ public class EnhancedListView extends ListView {
 
     /**
      * Extend this abstract class and return it from
-     * {@link com.fss.Common.uiModule.enhanceListView.EnhancedListView.OnDismissCallback#onDismiss(com.fss.Common.uiModule.enhanceListView.EnhancedListView, int)}
-     * to let the user undo the deletion you've done with your {@link com.fss.Common.uiModule.enhanceListView.EnhancedListView.OnDismissCallback}.
+     * {@link com.fss.common.uiModule.enhanceListView.EnhancedListView.OnDismissCallback#onDismiss(com.fss.common.uiModule.enhanceListView.EnhancedListView, int)}
+     * to let the user undo the deletion you've done with your {@link com.fss.common.uiModule.enhanceListView.EnhancedListView.OnDismissCallback}.
      * You have at least to implement the {@link #undo()} method, and can override {@link #discard()}
      * and {@link #getTitle()} to offer more functionality. See the README file for example implementations.
      */
@@ -190,7 +190,7 @@ public class EnhancedListView extends ListView {
 
         /**
          * This method must undo the deletion you've done in
-         * {@link com.fss.Common.uiModule.enhanceListView.EnhancedListView.OnDismissCallback#onDismiss(com.fss.Common.uiModule.enhanceListView.EnhancedListView, int)} and reinsert
+         * {@link com.fss.common.uiModule.enhanceListView.EnhancedListView.OnDismissCallback#onDismiss(com.fss.common.uiModule.enhanceListView.EnhancedListView, int)} and reinsert
          * the element into the adapter.
          * <p>
          * In the most implementations, you will only remove the list item from your adapter
@@ -215,7 +215,7 @@ public class EnhancedListView extends ListView {
         /**
          * Discard the undo, meaning the user has no longer the possibility to undo the deletion.
          * Implement this, to finally delete your stuff from permanent storages like databases
-         * (whereas in {@link com.fss.Common.uiModule.enhanceListView.EnhancedListView.OnDismissCallback#onKeyDown(int, android.view.KeyEvent)}
+         * (whereas in {@link com.fss.common.uiModule.enhanceListView.EnhancedListView.OnDismissCallback#onKeyDown(int, android.view.KeyEvent)}
          * you should only remove it from the list adapter).
          */
         public void discard() {
@@ -411,16 +411,16 @@ public class EnhancedListView extends ListView {
     /**
      * Enables the <i>Swipe to Dismiss</i> feature for this list. This allows users to swipe out
      * an list item element to delete it from the list. Every time the user swipes out an element
-     * {@link com.fss.Common.uiModule.enhanceListView.EnhancedListView.OnDismissCallback#onDismiss(com.fss.Common.uiModule.enhanceListView.EnhancedListView, int)}
-     * of the given {@link com.fss.Common.uiModule.enhanceListView.EnhancedListView} will be called. To enable
-     * <i>undo</i> of the deletion, return an {@link com.fss.Common.uiModule.enhanceListView.EnhancedListView.Undoable}
-     * from {@link com.fss.Common.uiModule.enhanceListView.EnhancedListView.OnDismissCallback#onDismiss(com.fss.Common.uiModule.enhanceListView.EnhancedListView, int)}.
+     * {@link com.fss.common.uiModule.enhanceListView.EnhancedListView.OnDismissCallback#onDismiss(com.fss.common.uiModule.enhanceListView.EnhancedListView, int)}
+     * of the given {@link com.fss.common.uiModule.enhanceListView.EnhancedListView} will be called. To enable
+     * <i>undo</i> of the deletion, return an {@link com.fss.common.uiModule.enhanceListView.EnhancedListView.Undoable}
+     * from {@link com.fss.common.uiModule.enhanceListView.EnhancedListView.OnDismissCallback#onDismiss(com.fss.common.uiModule.enhanceListView.EnhancedListView, int)}.
      * Return {@code null}, if you don't want the <i>undo</i> feature enabled. Read the README file
      * or the demo project for more detailed samples.
      *
-     * @return The {@link com.fss.Common.uiModule.enhanceListView.EnhancedListView}
-     * @throws IllegalStateException when you haven't passed an {@link com.fss.Common.uiModule.enhanceListView.EnhancedListView.OnDismissCallback}
-     *                                         to {@link #setDismissCallback(com.fss.Common.uiModule.enhanceListView.EnhancedListView.OnDismissCallback)} before calling this
+     * @return The {@link com.fss.common.uiModule.enhanceListView.EnhancedListView}
+     * @throws IllegalStateException when you haven't passed an {@link com.fss.common.uiModule.enhanceListView.EnhancedListView.OnDismissCallback}
+     *                                         to {@link #setDismissCallback(com.fss.common.uiModule.enhanceListView.EnhancedListView.OnDismissCallback)} before calling this
      *                                         method.
      */
     public EnhancedListView enableSwipeToDismiss() {
@@ -437,7 +437,7 @@ public class EnhancedListView extends ListView {
     /**
      * Disables the <i>Swipe to Dismiss</i> feature for this list.
      *
-     * @return This {@link com.fss.Common.uiModule.enhanceListView.EnhancedListView}
+     * @return This {@link com.fss.common.uiModule.enhanceListView.EnhancedListView}
      */
     public EnhancedListView disableSwipeToDismiss() {
         mSwipeEnabled = false;
@@ -451,7 +451,7 @@ public class EnhancedListView extends ListView {
      * {@link #enableSwipeToDismiss()} otherwise you will get an {@link IllegalStateException}.
      *
      * @param dismissCallback The callback used to handle dismisses of list items.
-     * @return This {@link com.fss.Common.uiModule.enhanceListView.EnhancedListView}
+     * @return This {@link com.fss.common.uiModule.enhanceListView.EnhancedListView}
      */
     public EnhancedListView setDismissCallback(OnDismissCallback dismissCallback) {
         mDismissCallback = dismissCallback;
@@ -462,7 +462,7 @@ public class EnhancedListView extends ListView {
      * Sets the callback to be called when the user is swiping an item from the list.
      *
      * @param shouldSwipeCallback The callback used to handle swipes of list items.
-     * @return This {@link com.fss.Common.uiModule.enhanceListView.EnhancedListView}
+     * @return This {@link com.fss.common.uiModule.enhanceListView.EnhancedListView}
      */
     public EnhancedListView setShouldSwipeCallback(OnShouldSwipeCallback shouldSwipeCallback) {
         mShouldSwipeCallback = shouldSwipeCallback;
@@ -470,12 +470,12 @@ public class EnhancedListView extends ListView {
     }
 
     /**
-     * Sets the undo style of this list. See the javadoc of {@link com.fss.Common.uiModule.enhanceListView.EnhancedListView.UndoStyle}
+     * Sets the undo style of this list. See the javadoc of {@link com.fss.common.uiModule.enhanceListView.EnhancedListView.UndoStyle}
      * for a detailed explanation of the different styles. The default style (if you never call this
-     * method) is {@link com.fss.Common.uiModule.enhanceListView.EnhancedListView.UndoStyle#SINGLE_POPUP}.
+     * method) is {@link com.fss.common.uiModule.enhanceListView.EnhancedListView.UndoStyle#SINGLE_POPUP}.
      *
      * @param undoStyle The style of this listview.
-     * @return This {@link com.fss.Common.uiModule.enhanceListView.EnhancedListView}
+     * @return This {@link com.fss.common.uiModule.enhanceListView.EnhancedListView}
      */
     public EnhancedListView setUndoStyle(UndoStyle undoStyle) {
         mUndoStyle = undoStyle;
@@ -489,7 +489,7 @@ public class EnhancedListView extends ListView {
      * {@code false}.
      *
      * @param hideDelay The delay in milliseconds.
-     * @return This {@link com.fss.Common.uiModule.enhanceListView.EnhancedListView}
+     * @return This {@link com.fss.common.uiModule.enhanceListView.EnhancedListView}
      */
     public EnhancedListView setUndoHideDelay(int hideDelay) {
         mUndoHideDelay = hideDelay;
@@ -501,7 +501,7 @@ public class EnhancedListView extends ListView {
      * the undo popup. By default this is set to {@code true}.
      *
      * @param touchBeforeDismiss Whether the screen needs to be touched before the countdown starts.
-     * @return This {@link com.fss.Common.uiModule.enhanceListView.EnhancedListView}
+     * @return This {@link com.fss.common.uiModule.enhanceListView.EnhancedListView}
      * @see #setUndoHideDelay(int)
      */
     public EnhancedListView setRequireTouchBeforeDismiss(boolean touchBeforeDismiss) {
@@ -511,14 +511,14 @@ public class EnhancedListView extends ListView {
 
     /**
      * Sets the directions in which a list item can be swiped to delete.
-     * By default this is set to {@link com.fss.Common.uiModule.enhanceListView.EnhancedListView.SwipeDirection#BOTH} so that an item
+     * By default this is set to {@link com.fss.common.uiModule.enhanceListView.EnhancedListView.SwipeDirection#BOTH} so that an item
      * can be swiped into both directions.
      * <p>
      * <b>Note:</b> This method requires the <i>Swipe to Dismiss</i> feature enabled. Use
      * {@link #enableSwipeToDismiss()} to enable the feature.
      *
      * @param direction The direction to which the swipe should be limited.
-     * @return This {@link com.fss.Common.uiModule.enhanceListView.EnhancedListView}
+     * @return This {@link com.fss.common.uiModule.enhanceListView.EnhancedListView}
      */
     public EnhancedListView setSwipeDirection(SwipeDirection direction) {
         mSwipeDirection = direction;
@@ -537,7 +537,7 @@ public class EnhancedListView extends ListView {
      * {@link #enableSwipeToDismiss()} to enable the feature.
      *
      * @param swipingLayoutId The id (from R.id) of the view, that should be swiped.
-     * @return This {@link com.fss.Common.uiModule.enhanceListView.EnhancedListView}
+     * @return This {@link com.fss.common.uiModule.enhanceListView.EnhancedListView}
      */
     public EnhancedListView setSwipingLayout(int swipingLayoutId) {
         mSwipingLayout = swipingLayoutId;
@@ -547,7 +547,7 @@ public class EnhancedListView extends ListView {
     /**
      * Discard all stored undos and hide the undo popup dialog.
      * This method must be called in {@link android.app.Activity#onStop()}. Otherwise
-     * {@link com.fss.Common.uiModule.enhanceListView.EnhancedListView.Undoable#discard()} might not be called for several items, what might
+     * {@link com.fss.common.uiModule.enhanceListView.EnhancedListView.Undoable#discard()} might not be called for several items, what might
      * break your data consistency.
      */
     public void discardUndo() {
@@ -572,8 +572,8 @@ public class EnhancedListView extends ListView {
      *
      * @param position The position of the item in the list.
      * @throws IndexOutOfBoundsException when trying to delete an item outside of the list range.
-     * @throws IllegalStateException     when this method is called before an {@link com.fss.Common.uiModule.enhanceListView.EnhancedListView.OnDismissCallback}
-     *                                             is set via {@link #setDismissCallback(com.fss.Common.uiModule.enhanceListView.EnhancedListView.OnDismissCallback)}.
+     * @throws IllegalStateException     when this method is called before an {@link com.fss.common.uiModule.enhanceListView.EnhancedListView.OnDismissCallback}
+     *                                             is set via {@link #setDismissCallback(com.fss.common.uiModule.enhanceListView.EnhancedListView.OnDismissCallback)}.
      */
     public void delete(int position) {
         if (mDismissCallback == null) {
@@ -926,7 +926,7 @@ public class EnhancedListView extends ListView {
     /**
      * Checks whether the delta of a swipe indicates, that the swipe is in the
      * correct direction, regarding the direction set via
-     * {@link #setSwipeDirection(com.fss.Common.uiModule.enhanceListView.EnhancedListView.SwipeDirection)}
+     * {@link #setSwipeDirection(com.fss.common.uiModule.enhanceListView.EnhancedListView.SwipeDirection)}
      *
      * @param deltaX The delta of x coordinate of the swipe.
      * @return Whether the delta of a swipe is in the right direction.

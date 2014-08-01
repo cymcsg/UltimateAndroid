@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.fss.Common.uiModule.foldingLayout;
+package com.fss.common.uiModule.foldingLayout;
 
 import android.content.Context;
 import android.support.v4.view.GravityCompat;

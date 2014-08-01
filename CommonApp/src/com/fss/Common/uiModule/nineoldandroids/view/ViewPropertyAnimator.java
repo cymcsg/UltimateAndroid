@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.fss.Common.uiModule.nineoldandroids.view;
+package com.fss.common.uiModule.nineoldandroids.view;
 
 import android.os.Build;
 import android.view.View;
 import android.view.animation.Interpolator;
-import com.fss.Common.uiModule.nineoldandroids.animation.Animator;
+import com.fss.common.uiModule.nineoldandroids.animation.Animator;
 
 import java.util.WeakHashMap;
 

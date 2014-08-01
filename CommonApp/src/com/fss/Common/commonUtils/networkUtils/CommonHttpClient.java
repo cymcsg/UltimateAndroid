@@ -1,9 +1,9 @@
-package com.fss.Common.commonUtils.networkUtils;
+package com.fss.common.commonUtils.networkUtils;
 
 import java.io.IOException;
 
 
-import com.fss.Common.commonUtils.logUtils.Logs;
+import com.fss.common.commonUtils.logUtils.Logs;
 import org.apache.http.HttpHost;
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpVersion;

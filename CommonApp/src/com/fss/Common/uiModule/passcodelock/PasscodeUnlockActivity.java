@@ -1,9 +1,9 @@
-package com.fss.Common.uiModule.passcodelock;
+package com.fss.common.uiModule.passcodelock;
 
 import android.content.Intent;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import com.fss.Common.R;
+import com.fss.common.R;
 
 
 public class PasscodeUnlockActivity extends AbstractPasscodeKeyboardActivity {

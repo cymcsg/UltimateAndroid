@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.tileView.tileview.samples;
+package com.fss.common.uiModule.tileView.tileview.samples;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -6,11 +6,11 @@ import android.graphics.Canvas;
 import android.graphics.Rect;
 import android.view.View;
 
-import com.fss.Common.uiModule.tileView.tileview.detail.DetailLevel;
-import com.fss.Common.uiModule.tileView.tileview.detail.DetailLevelEventListener;
-import com.fss.Common.uiModule.tileView.tileview.detail.DetailManager;
-import com.fss.Common.uiModule.tileView.tileview.graphics.BitmapDecoder;
-import com.fss.Common.uiModule.tileView.tileview.graphics.BitmapDecoderAssets;
+import com.fss.common.uiModule.tileView.tileview.detail.DetailLevel;
+import com.fss.common.uiModule.tileView.tileview.detail.DetailLevelEventListener;
+import com.fss.common.uiModule.tileView.tileview.detail.DetailManager;
+import com.fss.common.uiModule.tileView.tileview.graphics.BitmapDecoder;
+import com.fss.common.uiModule.tileView.tileview.graphics.BitmapDecoderAssets;
 
 public class SampleManager extends View implements DetailLevelEventListener {
 

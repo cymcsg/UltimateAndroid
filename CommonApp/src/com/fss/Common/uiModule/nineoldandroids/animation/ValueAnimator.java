@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.fss.Common.uiModule.nineoldandroids.animation;
+package com.fss.common.uiModule.nineoldandroids.animation;
 
 import android.os.Handler;
 import android.os.Looper;
@@ -38,7 +38,7 @@ import java.util.HashMap;
  * <p>By default, ValueAnimator uses non-linear time interpolation, via the
  * {@link android.view.animation.AccelerateDecelerateInterpolator} class, which accelerates into and decelerates
  * out of an animation. This behavior can be changed by calling
- * {@link com.fss.Common.uiModule.nineoldandroids.animation.ValueAnimator#setInterpolator(TimeInterpolator)}.</p>
+ * {@link com.fss.common.uiModule.nineoldandroids.animation.ValueAnimator#setInterpolator(TimeInterpolator)}.</p>
  */
 public class ValueAnimator extends Animator {
 
@@ -732,7 +732,7 @@ public class ValueAnimator extends Animator {
      * The most recent value calculated by this <code>ValueAnimator</code> when there is just one
      * property being animated. This value is only sensible while the animation is running. The main
      * purpose for this read-only property is to retrieve the value from the <code>ValueAnimator</code>
-     * during a call to {@link AnimatorUpdateListener#onAnimationUpdate(com.fss.Common.uiModule.nineoldandroids.animation.ValueAnimator)}, which
+     * during a call to {@link AnimatorUpdateListener#onAnimationUpdate(com.fss.common.uiModule.nineoldandroids.animation.ValueAnimator)}, which
      * is called during each animation frame, immediately after the value is calculated.
      *
      * @return animatedValue The value most recently calculated by this <code>ValueAnimator</code> for
@@ -752,7 +752,7 @@ public class ValueAnimator extends Animator {
      * The most recent value calculated by this <code>ValueAnimator</code> for <code>propertyName</code>.
      * The main purpose for this read-only property is to retrieve the value from the
      * <code>ValueAnimator</code> during a call to
-     * {@link AnimatorUpdateListener#onAnimationUpdate(com.fss.Common.uiModule.nineoldandroids.animation.ValueAnimator)}, which
+     * {@link AnimatorUpdateListener#onAnimationUpdate(com.fss.common.uiModule.nineoldandroids.animation.ValueAnimator)}, which
      * is called during each animation frame, immediately after the value is calculated.
      *
      * @return animatedValue The value most recently calculated for the named property
@@ -884,7 +884,7 @@ public class ValueAnimator extends Animator {
      * of <code>startValue</code> and <code>endValue</code> in the constructor. But if these values
      * are not one of these primitive types, or if different evaluation is desired (such as is
      * necessary with int values that represent colors), a custom evaluator needs to be assigned.
-     * For example, when running an animation on color values, the {@link com.fss.Common.uiModule.nineoldandroids.animation.ArgbEvaluator}
+     * For example, when running an animation on color values, the {@link com.fss.common.uiModule.nineoldandroids.animation.ArgbEvaluator}
      * should be used to get correct RGB color interpolation.
      *
      * <p>If this ValueAnimator has only one set of values being animated between, this evaluator

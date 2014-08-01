@@ -15,7 +15,7 @@ limitations under the License.
 
  */
 
-package com.fss.Common.uiModule.flipViews.flip;
+package com.fss.common.uiModule.flipViews.flip;
 
 import android.content.Context;
 import android.content.res.Configuration;
@@ -36,8 +36,8 @@ import android.widget.Adapter;
 import android.widget.AdapterView;
 
 
-import com.fss.Common.R;
-import com.fss.Common.uiModule.flipViews.utils.AphidLog;
+import com.fss.common.R;
+import com.fss.common.uiModule.flipViews.utils.AphidLog;
 import junit.framework.Assert;
 
 import java.util.LinkedList;

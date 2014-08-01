@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.tileView.layouts;
+package com.fss.common.uiModule.tileView.layouts;
 
 import java.lang.ref.WeakReference;
 import java.util.HashSet;
@@ -12,10 +12,10 @@ import android.view.MotionEvent;
 import android.view.VelocityTracker;
 import android.view.View;
 import android.view.ViewGroup;
-import com.fss.Common.uiModule.tileView.animation.Tween;
-import com.fss.Common.uiModule.tileView.animation.TweenListener;
-import com.fss.Common.uiModule.tileView.animation.easing.Strong;
-import com.fss.Common.uiModule.tileView.widgets.Scroller;
+import com.fss.common.uiModule.tileView.animation.Tween;
+import com.fss.common.uiModule.tileView.animation.TweenListener;
+import com.fss.common.uiModule.tileView.animation.easing.Strong;
+import com.fss.common.uiModule.tileView.widgets.Scroller;
 
 
 /**

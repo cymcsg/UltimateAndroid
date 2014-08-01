@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.listbuddies.views;
+package com.fss.common.uiModule.listbuddies.views;
 
 import android.content.Context;
 import android.util.AttributeSet;

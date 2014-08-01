@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.fss.Common.uiModule.nineoldandroids.animation;
+package com.fss.common.uiModule.nineoldandroids.animation;
 
 import android.view.animation.Interpolator;
 
 /**
  * This class holds a time/value pair for an animation. The Keyframe class is used
- * by {@link com.fss.Common.uiModule.nineoldandroids.animation.ValueAnimator} to define the values that the animation target will have over the course
+ * by {@link com.fss.common.uiModule.nineoldandroids.animation.ValueAnimator} to define the values that the animation target will have over the course
  * of the animation. As the time proceeds from one keyframe to the other, the value of the
  * target object will animate between the value at the previous keyframe and the value at the
  * next keyframe. Each keyframe also holds an optional {@link TimeInterpolator}
@@ -32,7 +32,7 @@ import android.view.animation.Interpolator;
  * <code>int</code> values). Other types will fall into a more general Keyframe class that
  * treats its values as Objects. Unless your animation requires dealing with a custom type
  * or a data structure that needs to be animated directly (and evaluated using an implementation
- * of {@link com.fss.Common.uiModule.nineoldandroids.animation.TypeEvaluator}), you should stick to using float and int as animations using those
+ * of {@link com.fss.common.uiModule.nineoldandroids.animation.TypeEvaluator}), you should stick to using float and int as animations using those
  * types have lower runtime overhead than other types.</p>
  */
 public abstract class Keyframe implements Cloneable {
@@ -79,7 +79,7 @@ public abstract class Keyframe implements Cloneable {
     /**
      * Constructs a Keyframe object with the given time. The value at this time will be derived
      * from the target object when the animation first starts (note that this implies that keyframes
-     * with no initial value must be used as part of an {@link com.fss.Common.uiModule.nineoldandroids.animation.ObjectAnimator}).
+     * with no initial value must be used as part of an {@link com.fss.common.uiModule.nineoldandroids.animation.ObjectAnimator}).
      * The time defines the
      * time, as a proportion of an overall animation's duration, at which the value will hold true
      * for the animation. The value for the animation between keyframes will be calculated as
@@ -111,7 +111,7 @@ public abstract class Keyframe implements Cloneable {
     /**
      * Constructs a Keyframe object with the given time. The value at this time will be derived
      * from the target object when the animation first starts (note that this implies that keyframes
-     * with no initial value must be used as part of an {@link com.fss.Common.uiModule.nineoldandroids.animation.ObjectAnimator}).
+     * with no initial value must be used as part of an {@link com.fss.common.uiModule.nineoldandroids.animation.ObjectAnimator}).
      * The time defines the
      * time, as a proportion of an overall animation's duration, at which the value will hold true
      * for the animation. The value for the animation between keyframes will be calculated as
@@ -143,7 +143,7 @@ public abstract class Keyframe implements Cloneable {
     /**
      * Constructs a Keyframe object with the given time. The value at this time will be derived
      * from the target object when the animation first starts (note that this implies that keyframes
-     * with no initial value must be used as part of an {@link com.fss.Common.uiModule.nineoldandroids.animation.ObjectAnimator}).
+     * with no initial value must be used as part of an {@link com.fss.common.uiModule.nineoldandroids.animation.ObjectAnimator}).
      * The time defines the
      * time, as a proportion of an overall animation's duration, at which the value will hold true
      * for the animation. The value for the animation between keyframes will be calculated as
@@ -158,7 +158,7 @@ public abstract class Keyframe implements Cloneable {
 
     /**
      * Indicates whether this keyframe has a valid value. This method is called internally when
-     * an {@link com.fss.Common.uiModule.nineoldandroids.animation.ObjectAnimator} first starts; keyframes without values are assigned values at
+     * an {@link com.fss.common.uiModule.nineoldandroids.animation.ObjectAnimator} first starts; keyframes without values are assigned values at
      * that time by deriving the value for the property from the target object.
      *
      * @return boolean Whether this object has a value assigned.
@@ -223,7 +223,7 @@ public abstract class Keyframe implements Cloneable {
 
     /**
      * Gets the type of keyframe. This information is used by ValueAnimator to determine the type of
-     * {@link com.fss.Common.uiModule.nineoldandroids.animation.TypeEvaluator} to use when calculating values between keyframes. The type is based
+     * {@link com.fss.common.uiModule.nineoldandroids.animation.TypeEvaluator} to use when calculating values between keyframes. The type is based
      * on the type of Keyframe created.
      *
      * @return The type of the value stored in the Keyframe.

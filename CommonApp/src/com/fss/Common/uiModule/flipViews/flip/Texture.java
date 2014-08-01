@@ -1,10 +1,10 @@
-package com.fss.Common.uiModule.flipViews.flip;
+package com.fss.common.uiModule.flipViews.flip;
 
 import android.graphics.Bitmap;
 import android.opengl.GLUtils;
 
 
-import com.fss.Common.uiModule.flipViews.utils.AphidLog;
+import com.fss.common.uiModule.flipViews.utils.AphidLog;
 import junit.framework.Assert;
 
 import javax.microedition.khronos.opengles.GL10;

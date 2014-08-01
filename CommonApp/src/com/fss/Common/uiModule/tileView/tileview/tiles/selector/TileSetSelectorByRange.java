@@ -1,10 +1,10 @@
-package com.fss.Common.uiModule.tileView.tileview.tiles.selector;
+package com.fss.common.uiModule.tileView.tileview.tiles.selector;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.fss.Common.uiModule.tileView.tileview.detail.DetailLevel;
-import com.fss.Common.uiModule.tileView.tileview.detail.DetailLevelSet;
+import com.fss.common.uiModule.tileView.tileview.detail.DetailLevel;
+import com.fss.common.uiModule.tileView.tileview.detail.DetailLevelSet;
 
 public class TileSetSelectorByRange implements TileSetSelector {
 

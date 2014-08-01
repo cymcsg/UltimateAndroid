@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fss.Common.uiModule.listviewanimations.swinginadapters;
+package com.fss.common.uiModule.listviewanimations.swinginadapters;
 
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
-import com.fss.Common.uiModule.nineoldandroids.animation.Animator;
+import com.fss.common.uiModule.nineoldandroids.animation.Animator;
 
 /**
  * An implementation of AnimationAdapter which applies a single Animator to

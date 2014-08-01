@@ -13,13 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fss.Common.uiModule.listviewanimations.itemmanipulation;
+package com.fss.common.uiModule.listviewanimations.itemmanipulation;
 
 import android.widget.AbsListView;
-import android.widget.ListView;
 
 /**
- * The callback interface used by {@link com.fss.Common.uiModule.listviewanimations.itemmanipulation.swipedismiss.SwipeDismissListViewTouchListener} to
+ * The callback interface used by {@link com.fss.common.uiModule.listviewanimations.itemmanipulation.swipedismiss.SwipeDismissListViewTouchListener} to
  * inform its client about a successful dismissal of one or more list item
  * positions.
  */

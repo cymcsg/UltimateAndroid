@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.panningview;
+package com.fss.common.uiModule.panningview;
 
 import android.content.res.Configuration;
 import android.graphics.Matrix;
@@ -7,9 +7,9 @@ import android.util.Log;
 import android.view.ViewTreeObserver;
 import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
-import com.fss.Common.uiModule.nineoldandroids.animation.Animator;
-import com.fss.Common.uiModule.nineoldandroids.animation.AnimatorListenerAdapter;
-import com.fss.Common.uiModule.nineoldandroids.animation.ValueAnimator;
+import com.fss.common.uiModule.nineoldandroids.animation.Animator;
+import com.fss.common.uiModule.nineoldandroids.animation.AnimatorListenerAdapter;
+import com.fss.common.uiModule.nineoldandroids.animation.ValueAnimator;
 
 import java.lang.ref.WeakReference;
 
@@ -138,7 +138,7 @@ public class PanningViewAttacher implements ViewTreeObserver.OnGlobalLayoutListe
 	 * Clean-up the resources attached to this object. This needs to be called
 	 * when the ImageView is no longer used. A good example is from
 	 * {@link android.view.View#onDetachedFromWindow()} or from {@link android.app.Activity#onDestroy()}.
-	 * This is automatically called if you are using {@link com.fss.Common.uiModule.panningview.PanningView}.
+	 * This is automatically called if you are using {@link com.fss.common.uiModule.panningview.PanningView}.
 	 */
 	public final void cleanup() {
 		if (null != mImageView) {

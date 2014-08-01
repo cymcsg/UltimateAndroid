@@ -1,8 +1,8 @@
-package com.fss.Common.uiModule.square_progressbar;
+package com.fss.common.uiModule.square_progressbar;
 
-import com.fss.Common.R;
-import com.fss.Common.uiModule.square_progressbar.utils.CalculationUtil;
-import com.fss.Common.uiModule.square_progressbar.utils.PercentStyle;
+import com.fss.common.R;
+import com.fss.common.uiModule.square_progressbar.utils.CalculationUtil;
+import com.fss.common.uiModule.square_progressbar.utils.PercentStyle;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.ColorMatrix;
@@ -14,8 +14,8 @@ import android.widget.ImageView.ScaleType;
 import android.widget.RelativeLayout;
 
 /**
- * The basic {@link com.fss.Common.uiModule.square_progressbar.SquareProgressBar}. THis class includes all the methods you
- * need to modify your {@link com.fss.Common.uiModule.square_progressbar.SquareProgressBar}.
+ * The basic {@link com.fss.common.uiModule.square_progressbar.SquareProgressBar}. THis class includes all the methods you
+ * need to modify your {@link com.fss.common.uiModule.square_progressbar.SquareProgressBar}.
  * 
  * @author ysigner
  * @since 1.0.0
@@ -82,7 +82,7 @@ public class SquareProgressBar extends RelativeLayout {
 	}
 
 	/**
-	 * Sets the image of the {@link com.fss.Common.uiModule.square_progressbar.SquareProgressBar}. Must be a valid
+	 * Sets the image of the {@link com.fss.common.uiModule.square_progressbar.SquareProgressBar}. Must be a valid
 	 * ressourceId.
 	 * 
 	 * @param image
@@ -108,7 +108,7 @@ public class SquareProgressBar extends RelativeLayout {
 	}
 
 	/**
-	 * Sets the progress of the {@link com.fss.Common.uiModule.square_progressbar.SquareProgressBar}. If opacity is
+	 * Sets the progress of the {@link com.fss.common.uiModule.square_progressbar.SquareProgressBar}. If opacity is
 	 * selected then here it sets it. See {@link #setOpacity(boolean)} for more
 	 * information.
 	 * 
@@ -130,7 +130,7 @@ public class SquareProgressBar extends RelativeLayout {
 	}
 
 	/**
-	 * Sets the colour of the {@link com.fss.Common.uiModule.square_progressbar.SquareProgressBar} to a predefined android
+	 * Sets the colour of the {@link com.fss.common.uiModule.square_progressbar.SquareProgressBar} to a predefined android
 	 * holo color. <br/>
 	 * <b>Examples:</b>
 	 * <ul>
@@ -154,11 +154,11 @@ public class SquareProgressBar extends RelativeLayout {
 	}
 
 	/**
-	 * Sets the colour of the {@link com.fss.Common.uiModule.square_progressbar.SquareProgressBar}. YOu can give it a
+	 * Sets the colour of the {@link com.fss.common.uiModule.square_progressbar.SquareProgressBar}. YOu can give it a
 	 * hex-color string like <i>#C9C9C9</i>.
 	 * 
 	 * @param colorString
-	 *            the colour of the {@link com.fss.Common.uiModule.square_progressbar.SquareProgressBar}
+	 *            the colour of the {@link com.fss.common.uiModule.square_progressbar.SquareProgressBar}
 	 * @since 1.1.0
 	 */
 	public void setColor(String colorString) {
@@ -166,7 +166,7 @@ public class SquareProgressBar extends RelativeLayout {
 	}
 
 	/**
-	 * This sets the colour of the {@link com.fss.Common.uiModule.square_progressbar.SquareProgressBar} with a RGB colour.
+	 * This sets the colour of the {@link com.fss.common.uiModule.square_progressbar.SquareProgressBar} with a RGB colour.
 	 * 
 	 * @param r
 	 *            red
@@ -181,7 +181,7 @@ public class SquareProgressBar extends RelativeLayout {
 	}
 
 	/**
-	 * This sets the colour of the {@link com.fss.Common.uiModule.square_progressbar.SquareProgressBar} with a RGB colour.
+	 * This sets the colour of the {@link com.fss.common.uiModule.square_progressbar.SquareProgressBar} with a RGB colour.
 	 * Works when used with
 	 * <code>android.graphics.Color.rgb(int, int, int)</code>
 	 * 
@@ -198,7 +198,7 @@ public class SquareProgressBar extends RelativeLayout {
 	}
 
 	/**
-	 * This sets the width of the {@link com.fss.Common.uiModule.square_progressbar.SquareProgressBar}.
+	 * This sets the width of the {@link com.fss.common.uiModule.square_progressbar.SquareProgressBar}.
 	 * 
 	 * @param width
 	 *            in Dp

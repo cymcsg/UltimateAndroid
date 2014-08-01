@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-package com.fss.Common.uiModule.photoview.log;
+package com.fss.common.uiModule.photoview.log;
 
 /**
  * interface for a logger class to replace the static calls to {@link android.util.Log}

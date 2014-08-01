@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fss.Common.uiModule.listviewanimations.itemmanipulation.swipedismiss.contextualundo;
+package com.fss.common.uiModule.listviewanimations.itemmanipulation.swipedismiss.contextualundo;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -23,19 +23,19 @@ import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.BaseAdapter;
 
-import com.fss.Common.uiModule.nineoldandroids.animation.Animator;
-import com.fss.Common.uiModule.nineoldandroids.animation.ObjectAnimator;
-import com.fss.Common.uiModule.listviewanimations.BaseAdapterDecorator;
-import com.fss.Common.uiModule.listviewanimations.util.AdapterViewUtil;
+import com.fss.common.uiModule.nineoldandroids.animation.Animator;
+import com.fss.common.uiModule.nineoldandroids.animation.ObjectAnimator;
+import com.fss.common.uiModule.listviewanimations.BaseAdapterDecorator;
+import com.fss.common.uiModule.listviewanimations.util.AdapterViewUtil;
 
-import com.fss.Common.uiModule.nineoldandroids.animation.AnimatorListenerAdapter;
+import com.fss.common.uiModule.nineoldandroids.animation.AnimatorListenerAdapter;
 
-import com.fss.Common.uiModule.nineoldandroids.animation.ValueAnimator;
-import com.fss.Common.uiModule.nineoldandroids.view.ViewHelper;
+import com.fss.common.uiModule.nineoldandroids.animation.ValueAnimator;
+import com.fss.common.uiModule.nineoldandroids.view.ViewHelper;
 
-import static com.fss.Common.uiModule.nineoldandroids.view.ViewHelper.setAlpha;
-import static com.fss.Common.uiModule.nineoldandroids.view.ViewHelper.setTranslationX;
-import static com.fss.Common.uiModule.nineoldandroids.view.ViewPropertyAnimator.animate;
+import static com.fss.common.uiModule.nineoldandroids.view.ViewHelper.setAlpha;
+import static com.fss.common.uiModule.nineoldandroids.view.ViewHelper.setTranslationX;
+import static com.fss.common.uiModule.nineoldandroids.view.ViewPropertyAnimator.animate;
 
 /**
  * Warning: a stable id for each item in the adapter is required. The decorated
@@ -43,7 +43,7 @@ import static com.fss.Common.uiModule.nineoldandroids.view.ViewPropertyAnimator.
  * undoLayout should have the same height as the content row.
  * <p>
  * Usage: <br>
- * * Create a new instance of this class providing the {@link android.widget.BaseAdapter} to wrap, the undo layout, the undo button id and a {@link com.fss.Common.uiModule.listviewanimations.itemmanipulation.swipedismiss.contextualundo.ContextualUndoAdapter.DeleteItemCallback}, optionally a delay time millis,
+ * * Create a new instance of this class providing the {@link android.widget.BaseAdapter} to wrap, the undo layout, the undo button id and a {@link com.fss.common.uiModule.listviewanimations.itemmanipulation.swipedismiss.contextualundo.ContextualUndoAdapter.DeleteItemCallback}, optionally a delay time millis,
  * a count down TextView res id,
  * , a delay in milliseconds before deleting the item.<br>
  * * Set your {@link android.widget.ListView} to this ContextualUndoAdapter, and set this ContextualUndoAdapter to your ListView.<br>
@@ -79,7 +79,7 @@ public class ContextualUndoAdapter extends BaseAdapterDecorator implements Conte
      * @param baseAdapter  The {@link android.widget.BaseAdapter} to wrap
      * @param undoLayoutId The layout resource id to show as undo
      * @param undoActionId The id of the component which undoes the dismissal
-     * @param deleteItemCallback The {@link com.fss.Common.uiModule.listviewanimations.itemmanipulation.swipedismiss.contextualundo.ContextualUndoAdapter.DeleteItemCallback} which is called when an item should be deleted from your collection.
+     * @param deleteItemCallback The {@link com.fss.common.uiModule.listviewanimations.itemmanipulation.swipedismiss.contextualundo.ContextualUndoAdapter.DeleteItemCallback} which is called when an item should be deleted from your collection.
      */
     public ContextualUndoAdapter(final BaseAdapter baseAdapter, final int undoLayoutId, final int undoActionId, final DeleteItemCallback deleteItemCallback) {
         this(baseAdapter, undoLayoutId, undoActionId, -1, -1, deleteItemCallback, null);
@@ -93,7 +93,7 @@ public class ContextualUndoAdapter extends BaseAdapterDecorator implements Conte
      * @param undoLayoutResId The layout resource id to show as undo
      * @param undoActionResId The id of the component which undoes the dismissal
      * @param autoDeleteTimeMillis The time in milliseconds that the adapter will wait for he user to hit undo before automatically deleting the item
-     * @param deleteItemCallback The {@link com.fss.Common.uiModule.listviewanimations.itemmanipulation.swipedismiss.contextualundo.ContextualUndoAdapter.DeleteItemCallback} which is called when an item should be deleted from your collection.
+     * @param deleteItemCallback The {@link com.fss.common.uiModule.listviewanimations.itemmanipulation.swipedismiss.contextualundo.ContextualUndoAdapter.DeleteItemCallback} which is called when an item should be deleted from your collection.
      */
     public ContextualUndoAdapter(final BaseAdapter baseAdapter, final int undoLayoutResId, final int undoActionResId, final int autoDeleteTimeMillis, final DeleteItemCallback deleteItemCallback) {
         this(baseAdapter, undoLayoutResId, undoActionResId, autoDeleteTimeMillis, -1, deleteItemCallback, null);
@@ -108,8 +108,8 @@ public class ContextualUndoAdapter extends BaseAdapterDecorator implements Conte
      * @param undoActionResId The resource id of the component which undoes the dismissal
      * @param autoDeleteTime The time in milliseconds that adapter will wait for user to hit undo before automatically deleting item
      * @param countDownTextViewResId The resource id of the {@link android.widget.TextView} in the undoLayoutResId that will show the time left
-     * @param deleteItemCallback The {@link com.fss.Common.uiModule.listviewanimations.itemmanipulation.swipedismiss.contextualundo.ContextualUndoAdapter.DeleteItemCallback} which is called when an item should be deleted from your collection.
-     * @param countDownFormatter The {@link com.fss.Common.uiModule.listviewanimations.itemmanipulation.swipedismiss.contextualundo.ContextualUndoAdapter.CountDownFormatter} which provides text to be shown in the {@link android.widget.TextView} as specified by countDownTextViewResId
+     * @param deleteItemCallback The {@link com.fss.common.uiModule.listviewanimations.itemmanipulation.swipedismiss.contextualundo.ContextualUndoAdapter.DeleteItemCallback} which is called when an item should be deleted from your collection.
+     * @param countDownFormatter The {@link com.fss.common.uiModule.listviewanimations.itemmanipulation.swipedismiss.contextualundo.ContextualUndoAdapter.CountDownFormatter} which provides text to be shown in the {@link android.widget.TextView} as specified by countDownTextViewResId
      */
     public ContextualUndoAdapter(final BaseAdapter baseAdapter, final int undoLayoutResId, final int undoActionResId, final int autoDeleteTime, final int countDownTextViewResId,
                                  final DeleteItemCallback deleteItemCallback, final CountDownFormatter countDownFormatter) {
@@ -373,7 +373,7 @@ public class ContextualUndoAdapter extends BaseAdapterDecorator implements Conte
     }
 
     /**
-     * Cancels the count down, and removes any item that was swiped away, without animating. Will cause {@link com.fss.Common.uiModule.listviewanimations.itemmanipulation.swipedismiss.contextualundo.ContextualUndoAdapter.DeleteItemCallback#deleteItem(int)} to be called.
+     * Cancels the count down, and removes any item that was swiped away, without animating. Will cause {@link com.fss.common.uiModule.listviewanimations.itemmanipulation.swipedismiss.contextualundo.ContextualUndoAdapter.DeleteItemCallback#deleteItem(int)} to be called.
      */
     public void removePendingItem() {
         if (mCurrentRemovedView != null || mCurrentRemovedId >= 0) {
@@ -383,14 +383,14 @@ public class ContextualUndoAdapter extends BaseAdapterDecorator implements Conte
     }
 
     /**
-     * Removes any item that was swiped away, animating the removal (collapsing the item). {@link com.fss.Common.uiModule.listviewanimations.itemmanipulation.swipedismiss.contextualundo.ContextualUndoAdapter.DeleteItemCallback#deleteItem(int)} to be called.
+     * Removes any item that was swiped away, animating the removal (collapsing the item). {@link com.fss.common.uiModule.listviewanimations.itemmanipulation.swipedismiss.contextualundo.ContextualUndoAdapter.DeleteItemCallback#deleteItem(int)} to be called.
      */
     public void animateRemovePendingItem() {
         removePreviousContextualUndoIfPresent();
     }
 
     /**
-     * Cancel the count down. This will not cause the {@link com.fss.Common.uiModule.listviewanimations.itemmanipulation.swipedismiss.contextualundo.ContextualUndoAdapter.DeleteItemCallback#deleteItem(int)} to be called. Use {@link #removePendingItem()} for that instead.
+     * Cancel the count down. This will not cause the {@link com.fss.common.uiModule.listviewanimations.itemmanipulation.swipedismiss.contextualundo.ContextualUndoAdapter.DeleteItemCallback#deleteItem(int)} to be called. Use {@link #removePendingItem()} for that instead.
      */
     public void cancelCountDown() {
         mHandler.removeCallbacks(mCountDownRunnable);

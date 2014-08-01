@@ -15,7 +15,7 @@
  * @license: Apache License 2.0
  */
 
-package com.fss.Common.uiModule.cardsSwiped.model;
+package com.fss.common.uiModule.cardsSwiped.model;
 
 public class Likes {
 	 public enum Like {

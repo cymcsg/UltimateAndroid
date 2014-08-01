@@ -15,15 +15,15 @@ limitations under the License.
 
  */
 
-package com.fss.Common.uiModule.flipViews.flip;
+package com.fss.common.uiModule.flipViews.flip;
 
 import android.view.MotionEvent;
 import android.view.View;
 
 
-import com.fss.Common.uiModule.flipViews.utils.AphidLog;
-import com.fss.Common.uiModule.flipViews.utils.TextureUtils;
-import com.fss.Common.uiModule.flipViews.utils.UI;
+import com.fss.common.uiModule.flipViews.utils.AphidLog;
+import com.fss.common.uiModule.flipViews.utils.TextureUtils;
+import com.fss.common.uiModule.flipViews.utils.UI;
 import junit.framework.Assert;
 
 import javax.microedition.khronos.opengles.GL10;

@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fss.Common.uiModule.listviewanimations;
+package com.fss.common.uiModule.listviewanimations;
 
 import android.widget.BaseAdapter;
-import com.fss.Common.uiModule.listviewanimations.itemmanipulation.AnimateAdditionAdapter;
-import com.fss.Common.uiModule.listviewanimations.widget.DynamicListView;
+import com.fss.common.uiModule.listviewanimations.itemmanipulation.AnimateAdditionAdapter;
+import com.fss.common.uiModule.listviewanimations.widget.DynamicListView;
 
 
 import java.util.ArrayList;
@@ -44,14 +44,14 @@ public abstract class ArrayAdapter<T> extends BaseAdapter implements List<T>, Dy
     }
 
     /**
-     * Creates a new {@link com.fss.Common.uiModule.listviewanimations.ArrayAdapter} using given {@code List} , or an empty {@code List}  if objects == null.
+     * Creates a new {@link com.fss.common.uiModule.listviewanimations.ArrayAdapter} using given {@code List} , or an empty {@code List}  if objects == null.
      */
     public ArrayAdapter(final List<T> objects) {
         this(objects, false);
     }
 
     /**
-     * Creates a new {@link com.fss.Common.uiModule.listviewanimations.ArrayAdapter}, using (a copy of) given {@code List} , or an empty {@code List}  if objects = null.
+     * Creates a new {@link com.fss.common.uiModule.listviewanimations.ArrayAdapter}, using (a copy of) given {@code List} , or an empty {@code List}  if objects = null.
      * @param copyList {@code true} to create a copy of the {@code List} , {@code false} to reuse the reference.
      */
     public ArrayAdapter(final List<T> objects, final boolean copyList) {

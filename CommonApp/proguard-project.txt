@@ -18,7 +18,7 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
--keepclassmembers class com.fss.Common.*.* {
+-keepclassmembers class common.*.* {
    public *;
 }
 -keepclassmembers class * extends de.greenrobot.dao.AbstractDao {

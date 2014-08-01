@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.fss.Common.ui;
+package com.fss.common.ui;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -38,7 +38,7 @@ import android.widget.HorizontalScrollView;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.fss.Common.R;
+import com.fss.common.R;
 
 import java.util.Locale;
 

@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package com.fss.Common.uiModule.nineoldandroids.animation;
+package com.fss.common.uiModule.nineoldandroids.animation;
 
 import android.util.Log;
 import android.view.View;
-import com.fss.Common.uiModule.nineoldandroids.util.Property;
-import com.fss.Common.uiModule.nineoldandroids.view.animation.AnimatorProxy;
+import com.fss.common.uiModule.nineoldandroids.util.Property;
+import com.fss.common.uiModule.nineoldandroids.view.animation.AnimatorProxy;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * This subclass of {@link com.fss.Common.uiModule.nineoldandroids.animation.ValueAnimator} provides support for animating properties on target objects.
+ * This subclass of {@link com.fss.common.uiModule.nineoldandroids.animation.ValueAnimator} provides support for animating properties on target objects.
  * The constructors of this class take parameters to define the target object that will be animated
  * as well as the name of the property that will be animated. Appropriate set/get functions
  * are then determined internally and the animation will call these functions as necessary to

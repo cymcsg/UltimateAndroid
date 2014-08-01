@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.shimmer;
+package com.fss.common.uiModule.shimmer;
 
 import android.content.Context;
 import android.content.res.ColorStateList;

@@ -1,4 +1,4 @@
-package com.fss.Common.commonUtils.urlUtils;
+package com.fss.common.commonUtils.urlUtils;
 
 import java.io.*;
 import java.net.HttpURLConnection;
@@ -15,7 +15,7 @@ import android.graphics.PorterDuff.Mode;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
-import com.fss.Common.commonUtils.logUtils.Logs;
+import com.fss.common.commonUtils.logUtils.Logs;
 
 
 public class ImageUtils {

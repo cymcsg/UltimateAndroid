@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.smoothprogressbar;
+package com.fss.common.uiModule.smoothprogressbar;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -12,7 +12,7 @@ import android.view.animation.DecelerateInterpolator;
 import android.view.animation.Interpolator;
 import android.view.animation.LinearInterpolator;
 import android.widget.ProgressBar;
-import com.fss.Common.R;
+import com.fss.common.R;
 
 
 /**

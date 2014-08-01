@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.listviewanimations.itemmanipulation;
+package com.fss.common.uiModule.listviewanimations.itemmanipulation;
 
 // TODO integrate in ExpandableListItemAdapter
 public interface ExpandCollapseListener {

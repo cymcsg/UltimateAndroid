@@ -1,11 +1,11 @@
 // Copyright 2013 Square, Inc.
 
-package com.fss.Common.uiModule.timessquare;
+package com.fss.common.uiModule.timessquare;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.TextView;
-import com.fss.Common.R;
+import com.fss.common.R;
 
 
 public class CalendarCellView extends TextView {

@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.slideExpand;
+package com.fss.common.uiModule.slideExpand;
 
 import java.util.BitSet;
 
@@ -14,8 +14,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-import com.fss.Common.R;
-import com.fss.Common.commonUtils.logUtils.Logs;
+import com.fss.common.R;
+import com.fss.common.commonUtils.logUtils.Logs;
 
 /**
  * Wraps a ListAdapter to give it expandable list view functionality.

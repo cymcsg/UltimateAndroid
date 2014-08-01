@@ -1,4 +1,4 @@
-package com.fss.Common.commonUtils.urlUtils;
+package com.fss.common.commonUtils.urlUtils;
 
 /**
  * <p>Encodes and decodes to and from Base64 notation.</p>
@@ -644,8 +644,8 @@ public class Base64
      * @param serializableObject The object to encode
      * @param options Specified options
      * @return The Base64-encoded object
-     * @see com.fss.Common.commonUtils.urlUtils.Base64#GZIP
-     * @see com.fss.Common.commonUtils.urlUtils.Base64#DO_BREAK_LINES
+     * @see com.fss.common.commonUtils.urlUtils.Base64#GZIP
+     * @see com.fss.common.commonUtils.urlUtils.Base64#DO_BREAK_LINES
      * @throws java.io.IOException if there is an error
      * @since 2.0
      */
@@ -750,8 +750,8 @@ public class Base64
      * @param source The data to convert
      * @param options Specified options
      * @return The Base64-encoded data as a String
-     * @see com.fss.Common.commonUtils.urlUtils.Base64#GZIP
-     * @see com.fss.Common.commonUtils.urlUtils.Base64#DO_BREAK_LINES
+     * @see com.fss.common.commonUtils.urlUtils.Base64#GZIP
+     * @see com.fss.common.commonUtils.urlUtils.Base64#DO_BREAK_LINES
      * @throws java.io.IOException if there is an error
      * @throws NullPointerException if source array is null
      * @since 2.0
@@ -820,8 +820,8 @@ public class Base64
      * @param len Length of data to convert
      * @param options Specified options
      * @return The Base64-encoded data as a String
-     * @see com.fss.Common.commonUtils.urlUtils.Base64#GZIP
-     * @see com.fss.Common.commonUtils.urlUtils.Base64#DO_BREAK_LINES
+     * @see com.fss.common.commonUtils.urlUtils.Base64#GZIP
+     * @see com.fss.common.commonUtils.urlUtils.Base64#DO_BREAK_LINES
      * @throws java.io.IOException if there is an error
      * @throws NullPointerException if source array is null
      * @throws IllegalArgumentException if source array, offset, or getStringUnicodeLength are invalid
@@ -876,8 +876,8 @@ public class Base64
      * @param len Length of data to convert
      * @param options Specified options
      * @return The Base64-encoded data as a String
-     * @see com.fss.Common.commonUtils.urlUtils.Base64#GZIP
-     * @see com.fss.Common.commonUtils.urlUtils.Base64#DO_BREAK_LINES
+     * @see com.fss.common.commonUtils.urlUtils.Base64#GZIP
+     * @see com.fss.common.commonUtils.urlUtils.Base64#DO_BREAK_LINES
      * @throws java.io.IOException if there is an error
      * @throws NullPointerException if source array is null
      * @throws IllegalArgumentException if source array, offset, or getStringUnicodeLength are invalid
@@ -1631,11 +1631,11 @@ public class Base64
     
     
     /**
-     * A {@link com.fss.Common.commonUtils.urlUtils.Base64.InputStream} will read data from another
+     * A {@link com.fss.common.commonUtils.urlUtils.Base64.InputStream} will read data from another
      * <tt>java.io.InputStream</tt>, given in the constructor,
      * and encode/decode to/from Base64 notation on the fly.
      *
-     * @see com.fss.Common.commonUtils.urlUtils.Base64
+     * @see com.fss.common.commonUtils.urlUtils.Base64
      * @since 1.3
      */
     public static class InputStream extends java.io.FilterInputStream {
@@ -1652,7 +1652,7 @@ public class Base64
         
         
         /**
-         * Constructs a {@link com.fss.Common.commonUtils.urlUtils.Base64.InputStream} in DECODE mode.
+         * Constructs a {@link com.fss.common.commonUtils.urlUtils.Base64.InputStream} in DECODE mode.
          *
          * @param in the <tt>java.io.InputStream</tt> from which to read data.
          * @since 1.3
@@ -1663,7 +1663,7 @@ public class Base64
         
         
         /**
-         * Constructs a {@link com.fss.Common.commonUtils.urlUtils.Base64.InputStream} in
+         * Constructs a {@link com.fss.common.commonUtils.urlUtils.Base64.InputStream} in
          * either ENCODE or DECODE mode.
          * <p>
          * Valid options:<pre>
@@ -1677,9 +1677,9 @@ public class Base64
          *
          * @param in the <tt>java.io.InputStream</tt> from which to read data.
          * @param options Specified options
-         * @see com.fss.Common.commonUtils.urlUtils.Base64#ENCODE
-         * @see com.fss.Common.commonUtils.urlUtils.Base64#DECODE
-         * @see com.fss.Common.commonUtils.urlUtils.Base64#DO_BREAK_LINES
+         * @see com.fss.common.commonUtils.urlUtils.Base64#ENCODE
+         * @see com.fss.common.commonUtils.urlUtils.Base64#DECODE
+         * @see com.fss.common.commonUtils.urlUtils.Base64#DO_BREAK_LINES
          * @since 2.0
          */
         public InputStream( java.io.InputStream in, int options ) {
@@ -1844,11 +1844,11 @@ public class Base64
     
     
     /**
-     * A {@link com.fss.Common.commonUtils.urlUtils.Base64.OutputStream} will write data to another
+     * A {@link com.fss.common.commonUtils.urlUtils.Base64.OutputStream} will write data to another
      * <tt>java.io.OutputStream</tt>, given in the constructor,
      * and encode/decode to/from Base64 notation on the fly.
      *
-     * @see com.fss.Common.commonUtils.urlUtils.Base64
+     * @see com.fss.common.commonUtils.urlUtils.Base64
      * @since 1.3
      */
     public static class OutputStream extends java.io.FilterOutputStream {
@@ -1865,7 +1865,7 @@ public class Base64
         private byte[]  decodabet;  // Local copies to avoid extra method calls
         
         /**
-         * Constructs a {@link com.fss.Common.commonUtils.urlUtils.Base64.OutputStream} in ENCODE mode.
+         * Constructs a {@link com.fss.common.commonUtils.urlUtils.Base64.OutputStream} in ENCODE mode.
          *
          * @param out the <tt>java.io.OutputStream</tt> to which data will be written.
          * @since 1.3
@@ -1876,7 +1876,7 @@ public class Base64
         
         
         /**
-         * Constructs a {@link com.fss.Common.commonUtils.urlUtils.Base64.OutputStream} in
+         * Constructs a {@link com.fss.common.commonUtils.urlUtils.Base64.OutputStream} in
          * either ENCODE or DECODE mode.
          * <p>
          * Valid options:<pre>
@@ -1889,9 +1889,9 @@ public class Base64
          *
          * @param out the <tt>java.io.OutputStream</tt> to which data will be written.
          * @param options Specified options.
-         * @see com.fss.Common.commonUtils.urlUtils.Base64#ENCODE
-         * @see com.fss.Common.commonUtils.urlUtils.Base64#DECODE
-         * @see com.fss.Common.commonUtils.urlUtils.Base64#DO_BREAK_LINES
+         * @see com.fss.common.commonUtils.urlUtils.Base64#ENCODE
+         * @see com.fss.common.commonUtils.urlUtils.Base64#DECODE
+         * @see com.fss.common.commonUtils.urlUtils.Base64#DO_BREAK_LINES
          * @since 1.3
          */
         public OutputStream( java.io.OutputStream out, int options ) {

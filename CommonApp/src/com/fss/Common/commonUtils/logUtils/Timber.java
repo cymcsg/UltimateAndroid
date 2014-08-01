@@ -1,4 +1,4 @@
-package com.fss.Common.commonUtils.logUtils;
+package com.fss.common.commonUtils.logUtils;
 
 import android.util.Log;
 import android.util.SparseBooleanArray;
@@ -96,7 +96,7 @@ public final class Timber {
   static final List<Tree> FOREST = new CopyOnWriteArrayList<Tree>();
   static final SparseBooleanArray TAGGED_TREES = new SparseBooleanArray();
 
-  /** A {@link com.fss.Common.commonUtils.logUtils.Timber.Tree} that delegates to all planted trees in the {@link #FOREST forest}. */
+  /** A {@link com.fss.common.commonUtils.logUtils.Timber.Tree} that delegates to all planted trees in the {@link #FOREST forest}. */
   private static final Tree TREE_OF_SOULS = new Tree() {
     @Override public void v(String message, Object... args) {
       for (Tree tree : FOREST) {
@@ -201,7 +201,7 @@ public final class Timber {
     void tag(String tag);
   }
 
-  /** A {@link com.fss.Common.commonUtils.logUtils.Timber.Tree} for debug builds. Automatically infers the tag from the calling class. */
+  /** A {@link com.fss.common.commonUtils.logUtils.Timber.Tree} for debug builds. Automatically infers the tag from the calling class. */
   public static class DebugTree implements TaggedTree {
     private static final Pattern ANONYMOUS_CLASS = Pattern.compile("\\$\\d+$");
     private static final ThreadLocal<String> NEXT_TAG = new ThreadLocal<String>();
@@ -302,7 +302,7 @@ public final class Timber {
     }
   }
 
-  /** A {@link com.fss.Common.commonUtils.logUtils.Timber.Tree} which does nothing. Useful for extending. */
+  /** A {@link com.fss.common.commonUtils.logUtils.Timber.Tree} which does nothing. Useful for extending. */
   public static class HollowTree implements Tree {
     @Override public void v(String message, Object... args) {
     }

@@ -1,4 +1,4 @@
-package com.fss.Common.commonUtils.jsonUtils;
+package com.fss.common.commonUtils.jsonUtils;
 
 import java.io.IOException;
 import java.io.StringReader;

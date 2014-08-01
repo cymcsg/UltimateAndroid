@@ -14,15 +14,14 @@
  * limitations under the License.
  */
 
-package com.fss.Common.uiModule.facecropper;
+package com.fss.common.uiModule.facecropper;
 
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.PointF;
 import android.media.FaceDetector;
-import android.util.Log;
-import com.fss.Common.commonUtils.logUtils.Logs;
+import com.fss.common.commonUtils.logUtils.Logs;
 
 /**
  * An utility that crops faces from bitmaps.

@@ -1,7 +1,7 @@
-package com.fss.Common.uiModule.flipViews.flipview;
+package com.fss.common.uiModule.flipViews.flipview;
 
-import com.fss.Common.R;
-import com.fss.Common.uiModule.flipViews.flipview.Recycler.Scrap;
+import com.fss.common.R;
+import com.fss.common.uiModule.flipViews.flipview.Recycler.Scrap;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.TimeInterpolator;

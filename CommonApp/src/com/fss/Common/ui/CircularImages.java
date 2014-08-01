@@ -1,4 +1,4 @@
-package com.fss.Common.ui;
+package com.fss.common.ui;
 
 /**
  * Created by cym on 14-3-28.

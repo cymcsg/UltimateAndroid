@@ -14,7 +14,7 @@
  limitations under the License.
  */
 
-package com.fss.Common.uiModule.stickygridheaders;
+package com.fss.common.uiModule.stickygridheaders;
 
 import android.view.View;
 import android.view.ViewGroup;

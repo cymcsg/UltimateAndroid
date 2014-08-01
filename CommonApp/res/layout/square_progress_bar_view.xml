@@ -12,7 +12,7 @@
             android:padding="10dp"
             android:src="@drawable/ic_launcher"/>
 
-    <com.fss.Common.uiModule.square_progressbar.SquareProgressView
+    <com.fss.common.uiModule.square_progressbar.SquareProgressView
             android:id="@+id/squareProgressBar1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

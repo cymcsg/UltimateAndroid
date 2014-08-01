@@ -1,4 +1,4 @@
-package com.fss.Common.commonUtils.urlUtils;
+package com.fss.common.commonUtils.urlUtils;
 
 import android.os.Build;
 import android.util.Base64;
@@ -33,7 +33,7 @@ public class TripleDES {
         if (judgeVerionOfSdk() > 7) {
             result= Base64.encodeToString(context, type);
         } else {
-            result= com.fss.Common.commonUtils.urlUtils.Base64.encodeBytes(context);
+            result= com.fss.common.commonUtils.urlUtils.Base64.encodeBytes(context);
         }
         return result;
     }
@@ -42,7 +42,7 @@ public class TripleDES {
         if (judgeVerionOfSdk() > 17) {
             result= Base64.encode(context, type);
         } else {
-            result= com.fss.Common.commonUtils.urlUtils.Base64.encodeBytesToBytes(context);
+            result= com.fss.common.commonUtils.urlUtils.Base64.encodeBytesToBytes(context);
         }
         return result;
     }
@@ -51,7 +51,7 @@ public class TripleDES {
         if (judgeVerionOfSdk() > 17) {
             result= Base64.decode(context, type);
         } else {
-            result= com.fss.Common.commonUtils.urlUtils.Base64.decode(context);
+            result= com.fss.common.commonUtils.urlUtils.Base64.decode(context);
         }
         return result;
     }
@@ -60,7 +60,7 @@ public class TripleDES {
         if (judgeVerionOfSdk() > 17) {
             result= Base64.decode(context, type);
         } else {
-            result= com.fss.Common.commonUtils.urlUtils.Base64.decode(context);
+            result= com.fss.common.commonUtils.urlUtils.Base64.decode(context);
         }
         return result;
     }

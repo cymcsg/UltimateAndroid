@@ -1,10 +1,10 @@
-package com.fss.Common.uiModule.tileView.tileview.markers;
+package com.fss.common.uiModule.tileView.tileview.markers;
 
 import android.content.Context;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.fss.Common.uiModule.tileView.tileview.detail.DetailManager;
+import com.fss.common.uiModule.tileView.tileview.detail.DetailManager;
 
 public class CalloutManager extends MarkerManager {
 

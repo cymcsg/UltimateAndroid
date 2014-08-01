@@ -1,4 +1,4 @@
-package com.fss.Common.commonUtils.uiUtils;
+package com.fss.common.commonUtils.uiUtils;
 
 import android.app.Activity;
 import android.content.Context;

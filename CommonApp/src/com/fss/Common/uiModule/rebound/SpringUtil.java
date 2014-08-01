@@ -8,7 +8,7 @@
  *
  */
 
-package com.fss.Common.uiModule.rebound;
+package com.fss.common.uiModule.rebound;
 
 public class SpringUtil {
 

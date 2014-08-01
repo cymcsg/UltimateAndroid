@@ -1,11 +1,10 @@
-package com.fss.Common.ui;
+package com.fss.common.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.TaskStackBuilder;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
-import com.fss.Common.commonUtils.logUtils.Logs;
 
 /**
  * Created by cym on 14-6-26.

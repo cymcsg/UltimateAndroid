@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.showcaseview;
+package com.fss.common.uiModule.showcaseview;
 
 import android.app.Activity;
 import android.content.Context;
@@ -17,8 +17,8 @@ import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.widget.Button;
 import android.widget.RelativeLayout;
-import com.fss.Common.R;
-import com.fss.Common.uiModule.showcaseview.targets.Target;
+import com.fss.common.R;
+import com.fss.common.uiModule.showcaseview.targets.Target;
 
 
 /**
@@ -359,7 +359,7 @@ public class ShowcaseView extends RelativeLayout
     }
 
     /**
-     * Builder class which allows easier creation of {@link com.fss.Common.uiModule.showcaseview.ShowcaseView}s.
+     * Builder class which allows easier creation of {@link com.fss.common.uiModule.showcaseview.ShowcaseView}s.
      * It is recommended that you use this Builder class.
      */
     public static class Builder {
@@ -378,7 +378,7 @@ public class ShowcaseView extends RelativeLayout
         }
 
         /**
-         * Create the {@link com.fss.Common.uiModule.showcaseview.ShowcaseView} and show it.
+         * Create the {@link com.fss.common.uiModule.showcaseview.ShowcaseView} and show it.
          *
          * @return the created ShowcaseView
          */
@@ -420,7 +420,7 @@ public class ShowcaseView extends RelativeLayout
         /**
          * Set the target of the showcase.
          *
-         * @param target a {@link com.fss.Common.uiModule.showcaseview.targets.Target} representing
+         * @param target a {@link com.fss.common.uiModule.showcaseview.targets.Target} representing
          *               the item to showcase (e.g., a button, or action item).
          */
         public Builder setTarget(Target target) {
@@ -496,7 +496,7 @@ public class ShowcaseView extends RelativeLayout
     }
 
     /**
-     * @see com.fss.Common.uiModule.showcaseview.ShowcaseView.Builder#setSingleShot(long)
+     * @see com.fss.common.uiModule.showcaseview.ShowcaseView.Builder#setSingleShot(long)
      */
     private void setSingleShot(long shotId) {
         shotStateStore.setSingleShot(shotId);
@@ -521,21 +521,21 @@ public class ShowcaseView extends RelativeLayout
     }
 
     /**
-     * @see com.fss.Common.uiModule.showcaseview.ShowcaseView.Builder#hideOnTouchOutside()
+     * @see com.fss.common.uiModule.showcaseview.ShowcaseView.Builder#hideOnTouchOutside()
      */
     public void setHideOnTouchOutside(boolean hideOnTouch) {
         this.hideOnTouch = hideOnTouch;
     }
 
     /**
-     * @see com.fss.Common.uiModule.showcaseview.ShowcaseView.Builder#doNotBlockTouches()
+     * @see com.fss.common.uiModule.showcaseview.ShowcaseView.Builder#doNotBlockTouches()
      */
     public void setBlocksTouches(boolean blockTouches) {
         this.blockTouches = blockTouches;
     }
 
     /**
-     * @see com.fss.Common.uiModule.showcaseview.ShowcaseView.Builder#setStyle(int)
+     * @see com.fss.common.uiModule.showcaseview.ShowcaseView.Builder#setStyle(int)
      */
     public void setStyle(int theme) {
         TypedArray array = getContext().obtainStyledAttributes(theme, R.styleable.ShowcaseView);

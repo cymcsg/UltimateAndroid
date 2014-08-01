@@ -1,8 +1,8 @@
-package com.fss.Common.commonUtils.basicUtils;
+package com.fss.common.commonUtils.basicUtils;
 
 
 
-import com.fss.Common.commonUtils.logUtils.Logs;
+import com.fss.common.commonUtils.logUtils.Logs;
 
 import java.io.BufferedReader;
 import java.io.IOException;

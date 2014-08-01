@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.passcodelock;
+package com.fss.common.uiModule.passcodelock;
 
 import java.util.Arrays;
 import java.util.Date;

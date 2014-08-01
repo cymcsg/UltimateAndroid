@@ -14,7 +14,7 @@
  limitations under the License.
  */
 
-package com.fss.Common.uiModule.stickygridheaders;
+package com.fss.common.uiModule.stickygridheaders;
 
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,7 +26,7 @@ import android.widget.ListAdapter;
  * method for generating the header data set.
  * 
  * The is a second interface
- * {@link com.fss.Common.uiModule.stickygridheaders.StickyGridHeadersBaseAdapter}.
+ * {@link com.fss.common.uiModule.stickygridheaders.StickyGridHeadersBaseAdapter}.
  * 
  * @author Tonic Artos
  */

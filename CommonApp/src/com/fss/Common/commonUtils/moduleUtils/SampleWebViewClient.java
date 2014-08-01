@@ -1,8 +1,8 @@
-package com.fss.Common.commonUtils.moduleUtils;
+package com.fss.common.commonUtils.moduleUtils;
 
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import com.fss.Common.commonUtils.logUtils.Logs;
+import com.fss.common.commonUtils.logUtils.Logs;
 
 /**
  * A webview which can open itself and add some error info instead of the url

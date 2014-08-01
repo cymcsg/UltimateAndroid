@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.fss.Common.DiskLruCache;
+package com.fss.common.DiskLruCache;
 
 import java.io.BufferedWriter;
 import java.io.Closeable;
@@ -71,8 +71,8 @@ import java.util.regex.Pattern;
  * to supply data for every value; values default to their previous
  * value.
  * </ul>
- * Every {@link #edit} call must be matched by a call to {@link com.fss.Common.commonUtils.urlUtils.DiskLruCache.Editor#commit}
- * or {@link com.fss.Common.commonUtils.urlUtils.DiskLruCache.Editor#abort}. Committing is atomic: a read observes the full set
+ * Every {@link #edit} call must be matched by a call to {@link com.fss.common.commonUtils.urlUtils.DiskLruCache.Editor#commit}
+ * or {@link com.fss.common.commonUtils.urlUtils.DiskLruCache.Editor#abort}. Committing is atomic: a read observes the full set
  * of values as they were before or after the commit, but never a mix of values.
  *
  * <p>Clients call {@link #get} to read a snapshot of an entry. The read will

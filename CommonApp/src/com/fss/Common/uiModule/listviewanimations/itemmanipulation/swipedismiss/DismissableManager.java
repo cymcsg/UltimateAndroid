@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.listviewanimations.itemmanipulation.swipedismiss;
+package com.fss.common.uiModule.listviewanimations.itemmanipulation.swipedismiss;
 
 /**
  * An interface to specify whether certain items can or cannot be dismissed.

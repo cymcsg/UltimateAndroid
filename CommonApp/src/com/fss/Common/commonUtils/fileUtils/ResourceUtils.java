@@ -2,10 +2,10 @@
  * Copyright (c) 2014. Marshal Chen.
  */
 
-package com.fss.Common.commonUtils.fileUtils;
+package com.fss.common.commonUtils.fileUtils;
 
 import android.content.Context;
-import com.fss.Common.commonUtils.basicUtils.BasicUtils;
+import com.fss.common.commonUtils.basicUtils.BasicUtils;
 
 import java.io.BufferedReader;
 import java.io.IOException;

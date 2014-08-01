@@ -8,7 +8,7 @@
  *
  */
 
-package com.fss.Common.uiModule.rebound;
+package com.fss.common.uiModule.rebound;
 
 import android.annotation.TargetApi;
 import android.os.Build;

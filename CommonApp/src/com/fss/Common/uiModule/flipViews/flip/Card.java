@@ -15,11 +15,11 @@ limitations under the License.
 
  */
 
-package com.fss.Common.uiModule.flipViews.flip;
+package com.fss.common.uiModule.flipViews.flip;
 
 
 
-import com.fss.Common.uiModule.flipViews.utils.AphidLog;
+import com.fss.common.uiModule.flipViews.utils.AphidLog;
 
 import java.nio.FloatBuffer;
 import java.nio.ShortBuffer;
@@ -28,11 +28,11 @@ import javax.microedition.khronos.opengles.GL10;
 
 import static android.util.FloatMath.cos;
 import static android.util.FloatMath.sin;
-import static com.fss.Common.uiModule.flipViews.flip.FlipRenderer.checkError;
-import static com.fss.Common.uiModule.flipViews.utils.TextureUtils.d2r;
-import static com.fss.Common.uiModule.flipViews.utils.TextureUtils.isValidTexture;
-import static com.fss.Common.uiModule.flipViews.utils.TextureUtils.toFloatBuffer;
-import static com.fss.Common.uiModule.flipViews.utils.TextureUtils.toShortBuffer;
+import static com.fss.common.uiModule.flipViews.flip.FlipRenderer.checkError;
+import static com.fss.common.uiModule.flipViews.utils.TextureUtils.d2r;
+import static com.fss.common.uiModule.flipViews.utils.TextureUtils.isValidTexture;
+import static com.fss.common.uiModule.flipViews.utils.TextureUtils.toFloatBuffer;
+import static com.fss.common.uiModule.flipViews.utils.TextureUtils.toShortBuffer;
 import static javax.microedition.khronos.opengles.GL10.GL_BACK;
 import static javax.microedition.khronos.opengles.GL10.GL_BLEND;
 import static javax.microedition.khronos.opengles.GL10.GL_CCW;

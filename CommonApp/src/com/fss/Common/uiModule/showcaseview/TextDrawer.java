@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.showcaseview;
+package com.fss.common.uiModule.showcaseview;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -10,7 +10,7 @@ import android.text.SpannableString;
 import android.text.TextPaint;
 import android.text.TextUtils;
 import android.text.style.TextAppearanceSpan;
-import com.fss.Common.R;
+import com.fss.common.R;
 
 /**
  * Draws the text as required by the ShowcaseView

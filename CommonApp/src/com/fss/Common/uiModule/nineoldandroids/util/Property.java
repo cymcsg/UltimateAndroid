@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fss.Common.uiModule.nineoldandroids.util;
+package com.fss.common.uiModule.nineoldandroids.util;
 
 
 /**
@@ -49,7 +49,7 @@ public abstract class Property<T, V> {
      * a property is allowed, but will have no effect.</p>
      *
      * <p>If neither the methods nor the field are found on the class a
-     * {@link com.fss.Common.uiModule.nineoldandroids.util.NoSuchPropertyException} exception will be thrown.</p>
+     * {@link com.fss.common.uiModule.nineoldandroids.util.NoSuchPropertyException} exception will be thrown.</p>
      */
     public static <T, V> Property<T, V> of(Class<T> hostType, Class<V> valueType, String name) {
         return new ReflectiveProperty<T, V>(hostType, valueType, name);
@@ -66,7 +66,7 @@ public abstract class Property<T, V> {
     /**
      * Returns true if the {@link #set(Object, Object)} method does not set the value on the target
      * object (in which case the {@link #set(Object, Object) set()} method should throw a {@link
-     * com.fss.Common.uiModule.nineoldandroids.util.NoSuchPropertyException} exception). This may happen if the Property wraps functionality that
+     * com.fss.common.uiModule.nineoldandroids.util.NoSuchPropertyException} exception). This may happen if the Property wraps functionality that
      * allows querying the underlying value but not setting it. For example, the {@link #of(Class,
      * Class, String)} factory method may return a Property with name "foo" for an object that has
      * only a <code>getFoo()</code> or <code>isFoo()</code> method, but no matching

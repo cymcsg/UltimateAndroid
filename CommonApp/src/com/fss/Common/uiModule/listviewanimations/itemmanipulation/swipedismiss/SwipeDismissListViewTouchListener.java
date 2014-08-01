@@ -16,7 +16,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fss.Common.uiModule.listviewanimations.itemmanipulation.swipedismiss;
+package com.fss.common.uiModule.listviewanimations.itemmanipulation.swipedismiss;
 
 import android.annotation.SuppressLint;
 import android.graphics.Rect;
@@ -27,19 +27,19 @@ import android.view.ViewConfiguration;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
 
-import com.fss.Common.uiModule.listviewanimations.itemmanipulation.OnDismissCallback;
-import com.fss.Common.uiModule.listviewanimations.util.AdapterViewUtil;
-import com.fss.Common.uiModule.nineoldandroids.animation.Animator;
-import com.fss.Common.uiModule.nineoldandroids.animation.AnimatorListenerAdapter;
-import com.fss.Common.uiModule.nineoldandroids.animation.ValueAnimator;
-import com.fss.Common.uiModule.nineoldandroids.view.ViewHelper;
-import com.fss.Common.uiModule.nineoldandroids.view.ViewPropertyAnimator;
+import com.fss.common.uiModule.listviewanimations.itemmanipulation.OnDismissCallback;
+import com.fss.common.uiModule.listviewanimations.util.AdapterViewUtil;
+import com.fss.common.uiModule.nineoldandroids.animation.Animator;
+import com.fss.common.uiModule.nineoldandroids.animation.AnimatorListenerAdapter;
+import com.fss.common.uiModule.nineoldandroids.animation.ValueAnimator;
+import com.fss.common.uiModule.nineoldandroids.view.ViewHelper;
+import com.fss.common.uiModule.nineoldandroids.view.ViewPropertyAnimator;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import static com.fss.Common.uiModule.nineoldandroids.view.ViewPropertyAnimator.animate;
+import static com.fss.common.uiModule.nineoldandroids.view.ViewPropertyAnimator.animate;
 
 /**
  * A {@link android.view.View.OnTouchListener} that makes the list items in a
@@ -48,7 +48,7 @@ import static com.fss.Common.uiModule.nineoldandroids.view.ViewPropertyAnimator.
  * charge of drawing the pressed state (the list selector), handling list item
  * clicks, etc.
  *
- * For performance reasons, do not use this class directly, but use the {@link com.fss.Common.uiModule.listviewanimations.itemmanipulation.swipedismiss.SwipeDismissAdapter}.
+ * For performance reasons, do not use this class directly, but use the {@link com.fss.common.uiModule.listviewanimations.itemmanipulation.swipedismiss.SwipeDismissAdapter}.
  */
 @SuppressLint("Recycle")
 public class SwipeDismissListViewTouchListener implements SwipeOnTouchListener {
@@ -116,7 +116,7 @@ public class SwipeDismissListViewTouchListener implements SwipeOnTouchListener {
     }
 
     /**
-     * Set the {@link com.fss.Common.uiModule.listviewanimations.itemmanipulation.swipedismiss.DismissableManager} to specify which views can or cannot be swiped.
+     * Set the {@link com.fss.common.uiModule.listviewanimations.itemmanipulation.swipedismiss.DismissableManager} to specify which views can or cannot be swiped.
      * @param dismissableManager null for no restrictions.
      */
     @SuppressWarnings("UnusedDeclaration")

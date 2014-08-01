@@ -13,9 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-package com.fss.Common.uiModule.photoview.log;
-
-import android.util.Log;
+package com.fss.common.uiModule.photoview.log;
 
 /**
  * class that holds the {@link Logger} for this library, defaults to {@link LoggerDefault} to send logs to android {@link android.util.Log}

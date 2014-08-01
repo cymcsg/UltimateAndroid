@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.tileView.animation;
+package com.fss.common.uiModule.tileView.animation;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,8 +8,8 @@ import java.util.Map;
 
 import android.os.Handler;
 import android.os.Message;
-import com.fss.Common.uiModule.tileView.animation.easing.EasingEquation;
-import com.fss.Common.uiModule.tileView.animation.easing.Linear;
+import com.fss.common.uiModule.tileView.animation.easing.EasingEquation;
+import com.fss.common.uiModule.tileView.animation.easing.Linear;
 
 public class Animator {
 

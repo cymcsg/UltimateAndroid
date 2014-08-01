@@ -1,8 +1,8 @@
-package com.fss.Common.uiModule.slideExpand;
+package com.fss.common.uiModule.slideExpand;
 
 import android.view.View;
 import android.widget.ListAdapter;
-import com.fss.Common.R;
+import com.fss.common.R;
 
 /**
  * ListAdapter that adds sliding functionality to a list.

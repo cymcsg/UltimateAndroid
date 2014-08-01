@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.cooldraganddrop;
+package com.fss.common.uiModule.cooldraganddrop;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -15,8 +15,8 @@ import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
-import com.fss.Common.R;
-import com.fss.Common.commonUtils.logUtils.Logs;
+import com.fss.common.R;
+import com.fss.common.commonUtils.logUtils.Logs;
 
 import java.util.LinkedList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.foldingLayout;
+package com.fss.common.uiModule.foldingLayout;
 
 import android.os.Build;
 

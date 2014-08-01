@@ -1,5 +1,5 @@
 
-package com.fss.Common.uiModule.swipeback;
+package com.fss.common.uiModule.swipeback;
 
 import android.app.Activity;
 import android.content.Context;
@@ -13,7 +13,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
-import com.fss.Common.R;
+import com.fss.common.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -186,9 +186,9 @@ public class SwipeBackLayout extends FrameLayout {
     /**
      * Enable edge tracking for the selected edges of the parent view. The
      * callback's
-     * {@link com.fss.Common.uiModule.swipeback.ViewDragHelper.Callback#onEdgeTouched(int, int)}
+     * {@link com.fss.common.uiModule.swipeback.ViewDragHelper.Callback#onEdgeTouched(int, int)}
      * and
-     * {@link com.fss.Common.uiModule.swipeback.ViewDragHelper.Callback#onEdgeDragStarted(int, int)}
+     * {@link com.fss.common.uiModule.swipeback.ViewDragHelper.Callback#onEdgeDragStarted(int, int)}
      * methods will only be invoked for edges for which edge tracking has been
      * enabled.
      * 

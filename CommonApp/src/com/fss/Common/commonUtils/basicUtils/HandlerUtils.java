@@ -1,22 +1,10 @@
-package com.fss.Common.commonUtils.basicUtils;
+package com.fss.common.commonUtils.basicUtils;
 
-import android.app.AlertDialog;
-import android.content.Context;
-import android.content.Intent;
-import android.content.SharedPreferences;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.view.View;
-import com.fss.Common.commonUtils.logUtils.Logs;
-
-import java.text.DecimalFormat;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
+import com.fss.common.commonUtils.logUtils.Logs;
 
 /**
  *

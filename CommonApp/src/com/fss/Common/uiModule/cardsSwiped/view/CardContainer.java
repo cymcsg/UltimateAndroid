@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.cardsSwiped.view;
+package com.fss.common.uiModule.cardsSwiped.view;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -23,8 +23,8 @@ import android.view.animation.AccelerateInterpolator;
 import android.view.animation.LinearInterpolator;
 import android.widget.AdapterView;
 import android.widget.ListAdapter;
-import com.fss.Common.R;
-import com.fss.Common.uiModule.cardsSwiped.model.*;
+import com.fss.common.R;
+import com.fss.common.uiModule.cardsSwiped.model.*;
 
 
 import java.util.Random;

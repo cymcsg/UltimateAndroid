@@ -15,7 +15,7 @@
  */
 
 // modified by @author Bhavya Mehta
-package com.fss.Common.uiModule.listviewfilter;
+package com.fss.common.uiModule.listviewfilter;
 
 import android.view.View;
 

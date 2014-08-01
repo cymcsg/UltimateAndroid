@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.viewpagerindicator;
+package com.fss.common.uiModule.viewpagerindicator;
 
 import android.content.Context;
 import android.content.res.TypedArray;

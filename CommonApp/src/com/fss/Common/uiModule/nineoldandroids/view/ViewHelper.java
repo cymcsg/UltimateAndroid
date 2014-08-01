@@ -1,9 +1,9 @@
-package com.fss.Common.uiModule.nineoldandroids.view;
+package com.fss.common.uiModule.nineoldandroids.view;
 
 import android.view.View;
 
-import static com.fss.Common.uiModule.nineoldandroids.view.animation.AnimatorProxy.NEEDS_PROXY;
-import static com.fss.Common.uiModule.nineoldandroids.view.animation.AnimatorProxy.wrap;
+import static com.fss.common.uiModule.nineoldandroids.view.animation.AnimatorProxy.NEEDS_PROXY;
+import static com.fss.common.uiModule.nineoldandroids.view.animation.AnimatorProxy.wrap;
 
 public final class ViewHelper {
     private ViewHelper() {}

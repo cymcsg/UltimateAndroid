@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.fss.Common.uiModule.nineoldandroids.animation;
+package com.fss.common.uiModule.nineoldandroids.animation;
 
 import android.view.animation.Interpolator;
-import com.fss.Common.uiModule.nineoldandroids.animation.Keyframe.FloatKeyframe;
+import com.fss.common.uiModule.nineoldandroids.animation.Keyframe.FloatKeyframe;
 
 import java.util.ArrayList;
 
@@ -31,7 +31,7 @@ import java.util.ArrayList;
  * TypeEvaluator set for the animation, so that values can be calculated without autoboxing to the
  * Object equivalents of these primitive types.</p>
  */
-class FloatKeyframeSet extends com.fss.Common.uiModule.nineoldandroids.animation.KeyframeSet {
+class FloatKeyframeSet extends com.fss.common.uiModule.nineoldandroids.animation.KeyframeSet {
     private float firstValue;
     private float lastValue;
     private float deltaValue;

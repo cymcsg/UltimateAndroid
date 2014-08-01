@@ -1,11 +1,11 @@
-package com.fss.Common.uiModule.listviewanimations.swinginadapters.prepared;
+package com.fss.common.uiModule.listviewanimations.swinginadapters.prepared;
 
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
-import com.fss.Common.uiModule.listviewanimations.swinginadapters.AnimationAdapter;
-import com.fss.Common.uiModule.nineoldandroids.animation.Animator;
+import com.fss.common.uiModule.listviewanimations.swinginadapters.AnimationAdapter;
+import com.fss.common.uiModule.nineoldandroids.animation.Animator;
 
 public class AlphaInAnimationAdapter extends AnimationAdapter {
 

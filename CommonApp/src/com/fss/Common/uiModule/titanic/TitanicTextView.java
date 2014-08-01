@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.titanic;
+package com.fss.common.uiModule.titanic;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -10,7 +10,7 @@ import android.graphics.Shader;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.widget.TextView;
-import com.fss.Common.R;
+import com.fss.common.R;
 
 
 public class TitanicTextView extends TextView {

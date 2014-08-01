@@ -1,8 +1,8 @@
-package com.fss.Common.uiModule.nineoldandroids.view;
+package com.fss.common.uiModule.nineoldandroids.view;
 
 import android.view.View;
 import android.view.animation.Interpolator;
-import com.fss.Common.uiModule.nineoldandroids.animation.Animator.AnimatorListener;
+import com.fss.common.uiModule.nineoldandroids.animation.Animator.AnimatorListener;
 
 import java.lang.ref.WeakReference;
 

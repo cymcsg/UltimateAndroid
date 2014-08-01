@@ -1,4 +1,4 @@
-package com.fss.Common.commonUtils.basicUtils;
+package com.fss.common.commonUtils.basicUtils;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -7,7 +7,7 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Parcelable;
-import com.fss.Common.commonUtils.logUtils.Logs;
+import com.fss.common.commonUtils.logUtils.Logs;
 
 import java.text.DecimalFormat;
 import java.util.*;

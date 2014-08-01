@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.listviewanimations.itemmanipulation;
+package com.fss.common.uiModule.listviewanimations.itemmanipulation;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,12 +9,12 @@ import android.widget.AbsListView;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
-import com.fss.Common.uiModule.listviewanimations.ArrayAdapter;
-import com.fss.Common.uiModule.listviewanimations.ListViewSetter;
-import com.fss.Common.uiModule.listviewanimations.util.AdapterViewUtil;
-import com.fss.Common.uiModule.nineoldandroids.animation.Animator;
-import com.fss.Common.uiModule.nineoldandroids.animation.AnimatorListenerAdapter;
-import com.fss.Common.uiModule.nineoldandroids.animation.ValueAnimator;
+import com.fss.common.uiModule.listviewanimations.ArrayAdapter;
+import com.fss.common.uiModule.listviewanimations.ListViewSetter;
+import com.fss.common.uiModule.listviewanimations.util.AdapterViewUtil;
+import com.fss.common.uiModule.nineoldandroids.animation.Animator;
+import com.fss.common.uiModule.nineoldandroids.animation.AnimatorListenerAdapter;
+import com.fss.common.uiModule.nineoldandroids.animation.ValueAnimator;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -51,7 +51,7 @@ public abstract class ExpandableListItemAdapter<T> extends ArrayAdapter<T> imple
     }
 
     /**
-     * Creates a new {@link com.fss.Common.uiModule.listviewanimations.itemmanipulation.ExpandableListItemAdapter} with the specified list,
+     * Creates a new {@link com.fss.common.uiModule.listviewanimations.itemmanipulation.ExpandableListItemAdapter} with the specified list,
      * or an empty list if items == null.
      */
     public ExpandableListItemAdapter(final Context context, final List<T> items) {
@@ -121,7 +121,7 @@ public abstract class ExpandableListItemAdapter<T> extends ArrayAdapter<T> imple
     }
 
     /**
-     * Set the {@link com.fss.Common.uiModule.listviewanimations.itemmanipulation.ExpandCollapseListener} that should be notified of expand / collapse events.
+     * Set the {@link com.fss.common.uiModule.listviewanimations.itemmanipulation.ExpandCollapseListener} that should be notified of expand / collapse events.
      */
     public void setExpandCollapseListener(final ExpandCollapseListener expandCollapseListener) {
         mExpandCollapseListener = expandCollapseListener;

@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.parallaxscroll;
+package com.fss.common.uiModule.parallaxscroll;
 
 import java.util.ArrayList;
 
@@ -8,7 +8,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ScrollView;
-import com.fss.Common.R;
+import com.fss.common.R;
 
 
 public class ParallaxScrollView extends ScrollView {

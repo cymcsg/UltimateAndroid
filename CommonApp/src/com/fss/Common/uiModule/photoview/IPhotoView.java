@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-package com.fss.Common.uiModule.photoview;
+package com.fss.common.uiModule.photoview;
 
 import android.graphics.Bitmap;
 import android.graphics.Matrix;

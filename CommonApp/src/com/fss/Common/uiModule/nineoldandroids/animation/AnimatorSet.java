@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.fss.Common.uiModule.nineoldandroids.animation;
+package com.fss.common.uiModule.nineoldandroids.animation;
 
 import android.view.animation.Interpolator;
 
@@ -28,10 +28,10 @@ import java.util.List;
  * can be set up to play together, in sequence, or after a specified delay.
  *
  * <p>There are two different approaches to adding animations to a <code>AnimatorSet</code>:
- * either the {@link com.fss.Common.uiModule.nineoldandroids.animation.AnimatorSet#playTogether(Animator[]) playTogether()} or
- * {@link com.fss.Common.uiModule.nineoldandroids.animation.AnimatorSet#playSequentially(Animator[]) playSequentially()} methods can be called to add
- * a set of animations all at once, or the {@link com.fss.Common.uiModule.nineoldandroids.animation.AnimatorSet#play(Animator)} can be
- * used in conjunction with methods in the {@link com.fss.Common.uiModule.nineoldandroids.animation.AnimatorSet.Builder Builder}
+ * either the {@link com.fss.common.uiModule.nineoldandroids.animation.AnimatorSet#playTogether(Animator[]) playTogether()} or
+ * {@link com.fss.common.uiModule.nineoldandroids.animation.AnimatorSet#playSequentially(Animator[]) playSequentially()} methods can be called to add
+ * a set of animations all at once, or the {@link com.fss.common.uiModule.nineoldandroids.animation.AnimatorSet#play(Animator)} can be
+ * used in conjunction with methods in the {@link com.fss.common.uiModule.nineoldandroids.animation.AnimatorSet.Builder Builder}
  * class to add animations
  * one by one.</p>
  *
@@ -961,14 +961,14 @@ public final class AnimatorSet extends Animator {
      * The <code>Builder</code> object is a utility class to facilitate adding animations to a
      * <code>AnimatorSet</code> along with the relationships between the various animations. The
      * intention of the <code>Builder</code> methods, along with the {@link
-     * com.fss.Common.uiModule.nineoldandroids.animation.AnimatorSet#play(Animator) play()} method of <code>AnimatorSet</code> is to make it possible
+     * com.fss.common.uiModule.nineoldandroids.animation.AnimatorSet#play(Animator) play()} method of <code>AnimatorSet</code> is to make it possible
      * to express the dependency relationships of animations in a natural way. Developers can also
-     * use the {@link com.fss.Common.uiModule.nineoldandroids.animation.AnimatorSet#playTogether(Animator[]) playTogether()} and {@link
-     * com.fss.Common.uiModule.nineoldandroids.animation.AnimatorSet#playSequentially(Animator[]) playSequentially()} methods if these suit the need,
+     * use the {@link com.fss.common.uiModule.nineoldandroids.animation.AnimatorSet#playTogether(Animator[]) playTogether()} and {@link
+     * com.fss.common.uiModule.nineoldandroids.animation.AnimatorSet#playSequentially(Animator[]) playSequentially()} methods if these suit the need,
      * but it might be easier in some situations to express the AnimatorSet of animations in pairs.
      * <p/>
      * <p>The <code>Builder</code> object cannot be constructed directly, but is rather constructed
-     * internally via a call to {@link com.fss.Common.uiModule.nineoldandroids.animation.AnimatorSet#play(Animator)}.</p>
+     * internally via a call to {@link com.fss.common.uiModule.nineoldandroids.animation.AnimatorSet#play(Animator)}.</p>
      * <p/>
      * <p>For example, this sets up a AnimatorSet to play anim1 and anim2 at the same time, anim3 to
      * play when anim2 finishes, and anim4 to play when anim3 finishes:</p>
@@ -986,7 +986,7 @@ public final class AnimatorSet extends Animator {
      * <p/>
      * <p>It is possible to make several calls into the same <code>Builder</code> object to express
      * multiple relationships. However, note that it is only the animation passed into the initial
-     * {@link com.fss.Common.uiModule.nineoldandroids.animation.AnimatorSet#play(Animator)} method that is the dependency in any of the successive
+     * {@link com.fss.common.uiModule.nineoldandroids.animation.AnimatorSet#play(Animator)} method that is the dependency in any of the successive
      * calls to the <code>Builder</code> object. For example, the following code starts both anim2
      * and anim3 when anim1 ends; there is no direct dependency relationship between anim2 and
      * anim3:
@@ -1035,10 +1035,10 @@ public final class AnimatorSet extends Animator {
 
         /**
          * Sets up the given animation to play at the same time as the animation supplied in the
-         * {@link com.fss.Common.uiModule.nineoldandroids.animation.AnimatorSet#play(Animator)} call that created this <code>Builder</code> object.
+         * {@link com.fss.common.uiModule.nineoldandroids.animation.AnimatorSet#play(Animator)} call that created this <code>Builder</code> object.
          *
          * @param anim The animation that will play when the animation supplied to the
-         * {@link com.fss.Common.uiModule.nineoldandroids.animation.AnimatorSet#play(Animator)} method starts.
+         * {@link com.fss.common.uiModule.nineoldandroids.animation.AnimatorSet#play(Animator)} method starts.
          */
         public Builder with(Animator anim) {
             Node node = mNodeMap.get(anim);
@@ -1054,11 +1054,11 @@ public final class AnimatorSet extends Animator {
 
         /**
          * Sets up the given animation to play when the animation supplied in the
-         * {@link com.fss.Common.uiModule.nineoldandroids.animation.AnimatorSet#play(Animator)} call that created this <code>Builder</code> object
+         * {@link com.fss.common.uiModule.nineoldandroids.animation.AnimatorSet#play(Animator)} call that created this <code>Builder</code> object
          * ends.
          *
          * @param anim The animation that will play when the animation supplied to the
-         * {@link com.fss.Common.uiModule.nineoldandroids.animation.AnimatorSet#play(Animator)} method ends.
+         * {@link com.fss.common.uiModule.nineoldandroids.animation.AnimatorSet#play(Animator)} method ends.
          */
         public Builder before(Animator anim) {
             Node node = mNodeMap.get(anim);
@@ -1074,11 +1074,11 @@ public final class AnimatorSet extends Animator {
 
         /**
          * Sets up the given animation to play when the animation supplied in the
-         * {@link com.fss.Common.uiModule.nineoldandroids.animation.AnimatorSet#play(Animator)} call that created this <code>Builder</code> object
+         * {@link com.fss.common.uiModule.nineoldandroids.animation.AnimatorSet#play(Animator)} call that created this <code>Builder</code> object
          * to start when the animation supplied in this method call ends.
          *
          * @param anim The animation whose end will cause the animation supplied to the
-         * {@link com.fss.Common.uiModule.nineoldandroids.animation.AnimatorSet#play(Animator)} method to play.
+         * {@link com.fss.common.uiModule.nineoldandroids.animation.AnimatorSet#play(Animator)} method to play.
          */
         public Builder after(Animator anim) {
             Node node = mNodeMap.get(anim);
@@ -1094,7 +1094,7 @@ public final class AnimatorSet extends Animator {
 
         /**
          * Sets up the animation supplied in the
-         * {@link com.fss.Common.uiModule.nineoldandroids.animation.AnimatorSet#play(Animator)} call that created this <code>Builder</code> object
+         * {@link com.fss.common.uiModule.nineoldandroids.animation.AnimatorSet#play(Animator)} call that created this <code>Builder</code> object
          * to play when the given amount of time elapses.
          *
          * @param delay The number of milliseconds that should elapse before the

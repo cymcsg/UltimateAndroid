@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.tileView.tileview.paths;
+package com.fss.common.uiModule.tileView.tileview.paths;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,8 +10,8 @@ import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.Point;
 
-import com.fss.Common.uiModule.tileView.layouts.StaticLayout;
-import com.fss.Common.uiModule.tileView.tileview.detail.DetailManager;
+import com.fss.common.uiModule.tileView.layouts.StaticLayout;
+import com.fss.common.uiModule.tileView.tileview.detail.DetailManager;
 
 public class PathManager extends StaticLayout {
 

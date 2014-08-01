@@ -2,7 +2,7 @@
  * Copyright (c) 2014. Marshal Chen.
  */
 
-package com.fss.Common.commonUtils.basicUtils;
+package com.fss.common.commonUtils.basicUtils;
 
 
 public class ObjectUtils {

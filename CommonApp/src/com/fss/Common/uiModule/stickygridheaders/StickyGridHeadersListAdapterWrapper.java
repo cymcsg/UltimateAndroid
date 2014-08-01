@@ -1,5 +1,5 @@
 
-package com.fss.Common.uiModule.stickygridheaders;
+package com.fss.common.uiModule.stickygridheaders;
 
 import android.database.DataSetObserver;
 import android.view.View;

@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.flipViews.flipview;
+package com.fss.common.uiModule.flipViews.flipview;
 
 import android.annotation.TargetApi;
 import android.os.Build;

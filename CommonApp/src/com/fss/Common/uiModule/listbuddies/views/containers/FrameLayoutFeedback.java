@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.listbuddies.views.containers;
+package com.fss.common.uiModule.listbuddies.views.containers;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -9,7 +9,7 @@ import android.graphics.drawable.StateListDrawable;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.FrameLayout;
-import com.fss.Common.R;
+import com.fss.common.R;
 
 
 /**

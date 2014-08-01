@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-package com.fss.Common.uiModule.photoview.scrollerproxy;
+package com.fss.common.uiModule.photoview.scrollerproxy;
 
 import android.annotation.TargetApi;
 import android.content.Context;

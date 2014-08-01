@@ -1,5 +1,5 @@
 // Copyright 2012 Square, Inc.
-package com.fss.Common.uiModule.timessquare;
+package com.fss.common.uiModule.timessquare;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -7,8 +7,8 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.fss.Common.R;
-import com.fss.Common.commonUtils.logUtils.Logs;
+import com.fss.common.R;
+import com.fss.common.commonUtils.logUtils.Logs;
 
 import java.text.DateFormat;
 import java.util.Calendar;

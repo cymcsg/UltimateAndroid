@@ -1,6 +1,6 @@
 // Copyright 2012 Square, Inc.
 
-package com.fss.Common.uiModule.timessquare;
+package com.fss.common.uiModule.timessquare;
 
 import java.util.Date;
 

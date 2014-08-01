@@ -1,11 +1,11 @@
-package com.fss.Common.uiModule.ResideMenu;
+package com.fss.common.uiModule.ResideMenu;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.fss.Common.R;
+import com.fss.common.R;
 
 
 /**

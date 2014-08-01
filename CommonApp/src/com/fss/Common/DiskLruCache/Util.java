@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.fss.Common.DiskLruCache;
+package com.fss.common.DiskLruCache;
 
 import java.io.Closeable;
 import java.io.File;

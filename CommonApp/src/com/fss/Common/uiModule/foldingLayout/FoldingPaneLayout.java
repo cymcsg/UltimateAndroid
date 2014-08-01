@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.fss.Common.uiModule.foldingLayout;
+package com.fss.common.uiModule.foldingLayout;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -23,7 +23,7 @@ import android.support.v4.widget.SlidingPaneLayout;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
-import com.fss.Common.R;
+import com.fss.common.R;
 
 
 /**

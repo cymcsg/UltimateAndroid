@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.foldablelayout.shading;
+package com.fss.common.uiModule.foldablelayout.shading;
 
 import android.content.Context;
 import android.graphics.*;

@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.tileView.tileview.tiles;
+package com.fss.common.uiModule.tileView.tileview.tiles;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -15,7 +15,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Bitmap.CompressFormat;
 import android.support.v4.util.LruCache;
-import com.fss.Common.DiskLruCache.DiskLruCache;
+import com.fss.common.DiskLruCache.DiskLruCache;
 
 
 public class TileCache {

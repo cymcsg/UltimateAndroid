@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.photoview.gestures;
+package com.fss.common.uiModule.photoview.gestures;
 
 /*******************************************************************************
  * Copyright 2011, 2012 Chris Banes.

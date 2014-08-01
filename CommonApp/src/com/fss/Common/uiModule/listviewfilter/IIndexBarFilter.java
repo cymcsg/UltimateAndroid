@@ -1,5 +1,5 @@
 // @author Bhavya Mehta
-package com.fss.Common.uiModule.listviewfilter;
+package com.fss.common.uiModule.listviewfilter;
 
 // Gives index bar view touched Y axis value, position of section and preview text value to list view 
 public interface IIndexBarFilter {

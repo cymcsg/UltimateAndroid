@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.parallaxscroll;
+package com.fss.common.uiModule.parallaxscroll;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -8,7 +8,7 @@ import android.view.animation.TranslateAnimation;
 import android.widget.AbsListView;
 import android.widget.AbsListView.OnScrollListener;
 import android.widget.ListView;
-import com.fss.Common.R;
+import com.fss.common.R;
 
 
 public class ParallaxListViewHelper implements OnScrollListener {

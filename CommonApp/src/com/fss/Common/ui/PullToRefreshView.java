@@ -1,4 +1,4 @@
-package com.fss.Common.ui;
+package com.fss.common.ui;
 
 
 import android.content.Context;
@@ -8,9 +8,9 @@ import android.view.*;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.RotateAnimation;
 import android.widget.*;
-import com.fss.Common.R;
-import com.fss.Common.commonUtils.logUtils.Logs;
-import com.fss.Common.commonUtils.uiUtils.BasicUiUtils;
+import com.fss.common.R;
+import com.fss.common.commonUtils.logUtils.Logs;
+import com.fss.common.commonUtils.uiUtils.BasicUiUtils;
 
 
 public class PullToRefreshView extends LinearLayout {

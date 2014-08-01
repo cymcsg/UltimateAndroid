@@ -1,12 +1,10 @@
-package com.fss.Common.uiModule.tileView.tileview.graphics;
+package com.fss.common.uiModule.tileView.tileview.graphics;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-
-import com.fss.Common.uiModule.tileView.tileview.graphics.BitmapDecoder;
 
 import android.content.Context;
 import android.graphics.Bitmap;

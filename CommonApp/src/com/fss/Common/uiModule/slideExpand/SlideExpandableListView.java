@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.slideExpand;
+package com.fss.common.uiModule.slideExpand;
 
 import android.os.Parcelable;
 import android.util.AttributeSet;

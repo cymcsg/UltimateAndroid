@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.modifysys;
+package com.fss.common.uiModule.modifysys;
 
 import android.content.Context;
 import android.text.method.SingleLineTransformationMethod;

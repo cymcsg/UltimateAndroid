@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.tileView.tileview.hotspots;
+package com.fss.common.uiModule.tileView.tileview.hotspots;
 
 import android.graphics.Rect;
 import android.graphics.Region;

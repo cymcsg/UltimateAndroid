@@ -1,5 +1,5 @@
 // Copyright 2012 Square, Inc.
-package com.fss.Common.uiModule.timessquare;
+package com.fss.common.uiModule.timessquare;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -8,8 +8,8 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
-import com.fss.Common.R;
-import com.fss.Common.commonUtils.logUtils.Logs;
+import com.fss.common.R;
+import com.fss.common.commonUtils.logUtils.Logs;
 
 import static android.view.View.MeasureSpec.AT_MOST;
 import static android.view.View.MeasureSpec.EXACTLY;

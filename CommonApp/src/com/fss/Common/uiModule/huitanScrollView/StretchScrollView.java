@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.huitanScrollView;
+package com.fss.common.uiModule.huitanScrollView;
 
 import android.content.Context;
 import android.os.Handler;

@@ -1,8 +1,8 @@
-package com.fss.Common.uiModule.flipViews.utils;
+package com.fss.common.uiModule.flipViews.utils;
 
 
 
-import com.fss.Common.uiModule.flipViews.flip.Texture;
+import com.fss.common.uiModule.flipViews.flip.Texture;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;

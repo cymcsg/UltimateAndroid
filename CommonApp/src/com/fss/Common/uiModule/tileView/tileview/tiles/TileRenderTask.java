@@ -1,9 +1,9 @@
-package com.fss.Common.uiModule.tileView.tileview.tiles;
+package com.fss.common.uiModule.tileView.tileview.tiles;
 
 import java.lang.ref.WeakReference;
 import java.util.LinkedList;
 
-import com.fss.Common.uiModule.tileView.os.AsyncTask;
+import com.fss.common.uiModule.tileView.os.AsyncTask;
 
 
 class TileRenderTask extends AsyncTask<Void, Tile, Void> {

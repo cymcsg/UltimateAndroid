@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.fss.Common.ui;
+package com.fss.common.ui;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -16,7 +16,7 @@ import android.os.Parcelable;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.View;
-import com.fss.Common.R;
+import com.fss.common.R;
 
 /**
  * The Class HoloCircularProgressBar.

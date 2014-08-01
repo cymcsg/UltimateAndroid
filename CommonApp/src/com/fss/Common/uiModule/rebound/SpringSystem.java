@@ -1,10 +1,10 @@
-package com.fss.Common.uiModule.rebound;
+package com.fss.common.uiModule.rebound;
 
 
 
 /**
  * This is a wrapper for BaseSpringSystem that provides the convenience of automatically providing
- * the AndroidSpringLooper dependency in {@link com.fss.Common.uiModule.rebound.SpringSystem#create}.
+ * the AndroidSpringLooper dependency in {@link com.fss.common.uiModule.rebound.SpringSystem#create}.
  */
 public class SpringSystem extends BaseSpringSystem {
 

@@ -15,12 +15,12 @@ limitations under the License.
 
  */
 
-package com.fss.Common.uiModule.flipViews.flip;
+package com.fss.common.uiModule.flipViews.flip;
 
 import android.graphics.Bitmap;
 import android.view.View;
-import com.fss.Common.uiModule.flipViews.utils.TextureUtils;
-import com.fss.Common.uiModule.flipViews.utils.UI;
+import com.fss.common.uiModule.flipViews.utils.TextureUtils;
+import com.fss.common.uiModule.flipViews.utils.UI;
 
 
 import java.lang.ref.WeakReference;

@@ -1,8 +1,8 @@
-package com.fss.Common.commonUtils.urlUtils;
+package com.fss.common.commonUtils.urlUtils;
 
 import android.content.Context;
-import com.fss.Common.commonUtils.basicUtils.BasicUtils;
-import com.fss.Common.commonUtils.logUtils.Logs;
+import com.fss.common.commonUtils.basicUtils.BasicUtils;
+import com.fss.common.commonUtils.logUtils.Logs;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.PersistentCookieStore;

@@ -1,10 +1,10 @@
-package com.fss.Common.commonUtils.fileUtils;
+package com.fss.common.commonUtils.fileUtils;
 
 import android.content.Context;
 import android.os.Environment;
-import com.fss.Common.commonUtils.basicUtils.BasicUtils;
-import com.fss.Common.commonUtils.basicUtils.StringUtils;
-import com.fss.Common.commonUtils.logUtils.Logs;
+import com.fss.common.commonUtils.basicUtils.BasicUtils;
+import com.fss.common.commonUtils.basicUtils.StringUtils;
+import com.fss.common.commonUtils.logUtils.Logs;
 
 import java.io.*;
 import java.util.ArrayList;

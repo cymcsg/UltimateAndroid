@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.passcodelock;
+package com.fss.common.uiModule.passcodelock;
 
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -8,7 +8,7 @@ import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceActivity;
 import android.view.MenuItem;
 import android.widget.Toast;
-import com.fss.Common.R;
+import com.fss.common.R;
 
 public class PasscodePreferencesActivity extends PreferenceActivity {
     

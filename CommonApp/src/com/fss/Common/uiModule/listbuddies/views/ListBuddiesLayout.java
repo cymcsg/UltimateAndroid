@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.listbuddies.views;
+package com.fss.common.uiModule.listbuddies.views;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -17,11 +17,11 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 
 
-import com.fss.Common.R;
-import com.fss.Common.commonUtils.logUtils.Logs;
-import com.fss.Common.uiModule.listbuddies.adapters.CircularLoopAdapter;
-import com.fss.Common.uiModule.listbuddies.helpers.ListBuddiesAutoScrollHelper;
-import com.fss.Common.uiModule.listbuddies.provider.ScrollConfigOptions;
+import com.fss.common.R;
+import com.fss.common.commonUtils.logUtils.Logs;
+import com.fss.common.uiModule.listbuddies.adapters.CircularLoopAdapter;
+import com.fss.common.uiModule.listbuddies.helpers.ListBuddiesAutoScrollHelper;
+import com.fss.common.uiModule.listbuddies.provider.ScrollConfigOptions;
 
 /**
  * LinerLayout that contains 2 ListViews. This ListViews auto-scroll while the user is not interacting with them.

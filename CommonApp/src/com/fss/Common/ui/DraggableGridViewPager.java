@@ -1,4 +1,4 @@
-package com.fss.Common.ui;
+package com.fss.common.ui;
 
 /*
  The MIT License (MIT)
@@ -211,16 +211,16 @@ public class DraggableGridViewPager extends ViewGroup {
 		 * 
 		 * @param state
 		 *            The new scroll state.
-		 * @see com.fss.Common.ui.DraggableGridViewPager#SCROLL_STATE_IDLE
-		 * @see com.fss.Common.ui.DraggableGridViewPager#SCROLL_STATE_DRAGGING
-		 * @see com.fss.Common.ui.DraggableGridViewPager#SCROLL_STATE_SETTLING
+		 * @see com.fss.common.ui.DraggableGridViewPager#SCROLL_STATE_IDLE
+		 * @see com.fss.common.ui.DraggableGridViewPager#SCROLL_STATE_DRAGGING
+		 * @see com.fss.common.ui.DraggableGridViewPager#SCROLL_STATE_SETTLING
 		 */
 		public void onPageScrollStateChanged(int state);
 	}
 
 	/**
-	 * Simple implementation of the {@link com.fss.Common.ui.DraggableGridViewPager.OnPageChangeListener} interface with stub implementations of each method.
-	 * Extend this if you do not intend to override every method of {@link com.fss.Common.ui.DraggableGridViewPager.OnPageChangeListener}.
+	 * Simple implementation of the {@link com.fss.common.ui.DraggableGridViewPager.OnPageChangeListener} interface with stub implementations of each method.
+	 * Extend this if you do not intend to override every method of {@link com.fss.common.ui.DraggableGridViewPager.OnPageChangeListener}.
 	 */
 	public static class SimpleOnPageChangeListener implements OnPageChangeListener {
 		@Override

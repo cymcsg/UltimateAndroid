@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.slideExpand;
+package com.fss.common.uiModule.slideExpand;
 
 import android.database.DataSetObserver;
 import android.view.View;

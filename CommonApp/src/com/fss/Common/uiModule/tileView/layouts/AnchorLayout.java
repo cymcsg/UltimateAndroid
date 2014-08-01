@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.tileView.layouts;
+package com.fss.common.uiModule.tileView.layouts;
 
 import android.content.Context;
 import android.view.View;

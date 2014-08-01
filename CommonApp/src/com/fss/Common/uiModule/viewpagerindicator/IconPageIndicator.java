@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fss.Common.uiModule.viewpagerindicator;
+package com.fss.common.uiModule.viewpagerindicator;
 
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
@@ -25,7 +25,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
-import com.fss.Common.R;
+import com.fss.common.R;
 
 
 import static android.view.ViewGroup.LayoutParams.FILL_PARENT;

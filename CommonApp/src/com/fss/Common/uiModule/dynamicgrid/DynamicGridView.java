@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.dynamicgrid;
+package com.fss.common.uiModule.dynamicgrid;
 
 import android.animation.*;
 import android.annotation.TargetApi;
@@ -21,8 +21,7 @@ import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ListAdapter;
-import com.fss.Common.R;
-import com.fss.Common.commonUtils.logUtils.Logs;
+import com.fss.common.R;
 
 import java.util.ArrayList;
 import java.util.Collections;

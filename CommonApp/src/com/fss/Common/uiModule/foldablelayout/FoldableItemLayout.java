@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.foldablelayout;
+package com.fss.common.uiModule.foldablelayout;
 
 import android.content.Context;
 import android.graphics.*;
@@ -7,7 +7,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
-import com.fss.Common.uiModule.foldablelayout.shading.FoldShading;
+import com.fss.common.uiModule.foldablelayout.shading.FoldShading;
 
 
 /**

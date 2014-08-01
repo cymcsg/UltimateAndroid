@@ -1,4 +1,4 @@
-package com.fss.Common.commonUtils.logUtils;
+package com.fss.common.commonUtils.logUtils;
 
 import android.util.Log;
 /**

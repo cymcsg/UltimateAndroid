@@ -2,7 +2,7 @@
  * Copyright (c) 2014. Marshal Chen.
  */
 
-package com.fss.Common.commonUtils.fileUtils;
+package com.fss.common.commonUtils.fileUtils;
 
 import android.app.ActivityManager;
 import android.app.ActivityManager.RunningTaskInfo;
@@ -16,7 +16,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.provider.Settings;
 import android.util.Log;
-import com.fss.Common.commonUtils.basicUtils.BasicUtils;
+import com.fss.common.commonUtils.basicUtils.BasicUtils;
 
 
 import java.io.File;

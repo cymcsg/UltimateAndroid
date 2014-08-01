@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.showcaseview;
+package com.fss.common.uiModule.showcaseview;
 
 import android.content.res.Resources;
 import android.graphics.Bitmap;
@@ -7,7 +7,7 @@ import android.graphics.Paint;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.drawable.Drawable;
-import com.fss.Common.R;
+import com.fss.common.R;
 
 /**
  * Created by curraa01 on 13/10/2013.

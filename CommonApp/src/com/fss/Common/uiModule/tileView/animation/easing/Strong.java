@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.tileView.animation.easing;
+package com.fss.common.uiModule.tileView.animation.easing;
 
 public abstract class Strong extends EasingEquation {
 	public static final Strong EaseNone = new Strong(){

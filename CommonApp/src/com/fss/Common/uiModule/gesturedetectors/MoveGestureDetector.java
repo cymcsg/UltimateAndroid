@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.gesturedetectors;
+package com.fss.common.uiModule.gesturedetectors;
 
 import android.content.Context;
 import android.graphics.PointF;
@@ -31,7 +31,7 @@ public class MoveGestureDetector extends BaseGestureDetector {
 	 * to perform callbacks to any implementing class which is registered to a
 	 * MoveGestureDetector via the constructor.
 	 * 
-	 * @see com.fss.Common.uiModule.gesturedetectors.MoveGestureDetector.SimpleOnMoveGestureListener
+	 * @see com.fss.common.uiModule.gesturedetectors.MoveGestureDetector.SimpleOnMoveGestureListener
 	 */
 	public interface OnMoveGestureListener {
 		public boolean onMove(MoveGestureDetector detector);

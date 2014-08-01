@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.discrollview;
+package com.fss.common.uiModule.discrollview;
 
 import android.animation.ArgbEvaluator;
 import android.annotation.TargetApi;

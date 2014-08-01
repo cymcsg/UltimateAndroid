@@ -1,4 +1,4 @@
-package com.fss.Common.ui;
+package com.fss.common.ui;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

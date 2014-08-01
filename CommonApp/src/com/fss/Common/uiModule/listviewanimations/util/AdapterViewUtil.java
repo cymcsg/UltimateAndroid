@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.fss.Common.uiModule.listviewanimations.util;
+package com.fss.common.uiModule.listviewanimations.util;
 
 import android.view.View;
 import android.widget.AdapterView;

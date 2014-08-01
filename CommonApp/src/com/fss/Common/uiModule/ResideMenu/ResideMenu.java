@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.ResideMenu;
+package com.fss.common.uiModule.ResideMenu;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,11 +11,11 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
-import com.fss.Common.R;
-import com.fss.Common.uiModule.nineoldandroids.animation.Animator;
-import com.fss.Common.uiModule.nineoldandroids.animation.AnimatorSet;
-import com.fss.Common.uiModule.nineoldandroids.animation.ObjectAnimator;
-import com.fss.Common.uiModule.nineoldandroids.view.ViewHelper;
+import com.fss.common.R;
+import com.fss.common.uiModule.nineoldandroids.animation.Animator;
+import com.fss.common.uiModule.nineoldandroids.animation.AnimatorSet;
+import com.fss.common.uiModule.nineoldandroids.animation.ObjectAnimator;
+import com.fss.common.uiModule.nineoldandroids.view.ViewHelper;
 
 
 import java.util.ArrayList;

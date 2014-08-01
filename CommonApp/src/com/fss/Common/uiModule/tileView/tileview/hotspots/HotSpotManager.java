@@ -1,9 +1,9 @@
-package com.fss.Common.uiModule.tileView.tileview.hotspots;
+package com.fss.common.uiModule.tileView.tileview.hotspots;
 
 import java.util.ArrayList;
 
-import com.fss.Common.uiModule.tileView.tileview.detail.DetailLevelEventListener;
-import com.fss.Common.uiModule.tileView.tileview.detail.DetailManager;
+import com.fss.common.uiModule.tileView.tileview.detail.DetailLevelEventListener;
+import com.fss.common.uiModule.tileView.tileview.detail.DetailManager;
 
 import android.graphics.Point;
 

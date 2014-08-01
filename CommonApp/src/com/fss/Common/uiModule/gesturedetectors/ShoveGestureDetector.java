@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.gesturedetectors;
+package com.fss.common.uiModule.gesturedetectors;
 
 import android.content.Context;
 import android.view.MotionEvent;
@@ -31,7 +31,7 @@ public class ShoveGestureDetector extends TwoFingerGestureDetector {
 	 * to perform callbacks to any implementing class which is registered to a
 	 * ShoveGestureDetector via the constructor.
 	 * 
-	 * @see com.fss.Common.uiModule.gesturedetectors.ShoveGestureDetector.SimpleOnShoveGestureListener
+	 * @see com.fss.common.uiModule.gesturedetectors.ShoveGestureDetector.SimpleOnShoveGestureListener
 	 */
 	public interface OnShoveGestureListener {
 		public boolean onShove(ShoveGestureDetector detector);

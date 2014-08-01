@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.showcaseview.targets;
+package com.fss.common.uiModule.showcaseview.targets;
 
 import android.view.View;
 import android.view.ViewParent;

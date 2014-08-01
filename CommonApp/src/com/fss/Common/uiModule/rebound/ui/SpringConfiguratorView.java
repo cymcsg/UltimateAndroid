@@ -8,7 +8,7 @@
  *
  */
 
-package com.fss.Common.uiModule.rebound.ui;
+package com.fss.common.uiModule.rebound.ui;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -30,20 +30,20 @@ import android.widget.Spinner;
 import android.widget.TableLayout;
 import android.widget.TextView;
 
-import com.fss.Common.commonUtils.logUtils.Logs;
-import com.fss.Common.uiModule.rebound.OrigamiValueConverter;
-import com.fss.Common.uiModule.rebound.Spring;
-import com.fss.Common.uiModule.rebound.SpringConfig;
-import com.fss.Common.uiModule.rebound.SpringConfigRegistry;
-import com.fss.Common.uiModule.rebound.SpringListener;
-import com.fss.Common.uiModule.rebound.SpringSystem;
+import com.fss.common.commonUtils.logUtils.Logs;
+import com.fss.common.uiModule.rebound.OrigamiValueConverter;
+import com.fss.common.uiModule.rebound.Spring;
+import com.fss.common.uiModule.rebound.SpringConfig;
+import com.fss.common.uiModule.rebound.SpringConfigRegistry;
+import com.fss.common.uiModule.rebound.SpringListener;
+import com.fss.common.uiModule.rebound.SpringSystem;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import static com.fss.Common.uiModule.rebound.ui.Util.*;
+import static com.fss.common.uiModule.rebound.ui.Util.*;
 
 /**
  * The SpringConfiguratorView provides a reusable view for live-editing all registered springs

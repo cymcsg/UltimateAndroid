@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.fss.Common.uiModule.foldingLayout.listener;
+package com.fss.common.uiModule.foldingLayout.listener;
 
 /**
  * This interface listens for when the folding layout begins folding (enters

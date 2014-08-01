@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.tileView.tileview;
+package com.fss.common.uiModule.tileView.tileview;
 
 import java.util.HashSet;
 import java.util.List;
@@ -12,30 +12,29 @@ import android.graphics.RectF;
 import android.graphics.Region;
 import android.view.View;
 
-import com.fss.Common.uiModule.tileView.layouts.ZoomPanLayout;
-import com.fss.Common.uiModule.tileView.layouts.AnchorLayout;
-import com.fss.Common.uiModule.tileView.layouts.TranslationLayout;
+import com.fss.common.uiModule.tileView.layouts.ZoomPanLayout;
+import com.fss.common.uiModule.tileView.layouts.AnchorLayout;
 
-import com.fss.Common.uiModule.tileView.tileview.detail.DetailLevelEventListener;
-import com.fss.Common.uiModule.tileView.tileview.detail.DetailLevelPatternParser;
-import com.fss.Common.uiModule.tileView.tileview.detail.DetailManager;
-import com.fss.Common.uiModule.tileView.tileview.geom.PositionManager;
-import com.fss.Common.uiModule.tileView.tileview.graphics.BitmapDecoder;
-import com.fss.Common.uiModule.tileView.tileview.graphics.BitmapDecoderHttp;
-import com.fss.Common.uiModule.tileView.tileview.hotspots.HotSpot;
-import com.fss.Common.uiModule.tileView.tileview.hotspots.HotSpotEventListener;
-import com.fss.Common.uiModule.tileView.tileview.hotspots.HotSpotManager;
-import com.fss.Common.uiModule.tileView.tileview.markers.CalloutManager;
-import com.fss.Common.uiModule.tileView.tileview.markers.MarkerEventListener;
-import com.fss.Common.uiModule.tileView.tileview.markers.MarkerManager;
-import com.fss.Common.uiModule.tileView.tileview.paths.DrawablePath;
-import com.fss.Common.uiModule.tileView.tileview.paths.PathHelper;
-import com.fss.Common.uiModule.tileView.tileview.paths.PathManager;
-import com.fss.Common.uiModule.tileView.tileview.samples.SampleManager;
-import com.fss.Common.uiModule.tileView.tileview.tiles.TileManager;
-import com.fss.Common.uiModule.tileView.tileview.tiles.TileRenderListener;
-import com.fss.Common.uiModule.tileView.tileview.tiles.selector.TileSetSelector;
-import com.fss.Common.uiModule.tileView.tileview.tiles.selector.TileSetSelectorMinimalUpScale;
+import com.fss.common.uiModule.tileView.tileview.detail.DetailLevelEventListener;
+import com.fss.common.uiModule.tileView.tileview.detail.DetailLevelPatternParser;
+import com.fss.common.uiModule.tileView.tileview.detail.DetailManager;
+import com.fss.common.uiModule.tileView.tileview.geom.PositionManager;
+import com.fss.common.uiModule.tileView.tileview.graphics.BitmapDecoder;
+import com.fss.common.uiModule.tileView.tileview.graphics.BitmapDecoderHttp;
+import com.fss.common.uiModule.tileView.tileview.hotspots.HotSpot;
+import com.fss.common.uiModule.tileView.tileview.hotspots.HotSpotEventListener;
+import com.fss.common.uiModule.tileView.tileview.hotspots.HotSpotManager;
+import com.fss.common.uiModule.tileView.tileview.markers.CalloutManager;
+import com.fss.common.uiModule.tileView.tileview.markers.MarkerEventListener;
+import com.fss.common.uiModule.tileView.tileview.markers.MarkerManager;
+import com.fss.common.uiModule.tileView.tileview.paths.DrawablePath;
+import com.fss.common.uiModule.tileView.tileview.paths.PathHelper;
+import com.fss.common.uiModule.tileView.tileview.paths.PathManager;
+import com.fss.common.uiModule.tileView.tileview.samples.SampleManager;
+import com.fss.common.uiModule.tileView.tileview.tiles.TileManager;
+import com.fss.common.uiModule.tileView.tileview.tiles.TileRenderListener;
+import com.fss.common.uiModule.tileView.tileview.tiles.selector.TileSetSelector;
+import com.fss.common.uiModule.tileView.tileview.tiles.selector.TileSetSelectorMinimalUpScale;
 
 /**
  * The TileView widget is a subclass of ViewGroup that provides a mechanism to asynchronously display tile-based images,

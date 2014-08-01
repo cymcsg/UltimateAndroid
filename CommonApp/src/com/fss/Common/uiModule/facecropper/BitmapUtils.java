@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.fss.Common.uiModule.facecropper;
+package com.fss.common.uiModule.facecropper;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;

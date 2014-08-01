@@ -1,11 +1,10 @@
-package com.fss.Common.uiModule.slideExpand;
+package com.fss.common.uiModule.slideExpand;
 
 import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.Transformation;
 import android.widget.LinearLayout;
-import com.fss.Common.commonUtils.logUtils.Logs;
 
 /**
  * Animation that either expands or collapses a view by sliding it down to make it visible.

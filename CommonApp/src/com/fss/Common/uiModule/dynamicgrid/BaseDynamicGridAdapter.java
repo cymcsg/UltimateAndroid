@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.dynamicgrid;
+package com.fss.common.uiModule.dynamicgrid;
 
 import android.content.Context;
 

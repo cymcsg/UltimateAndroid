@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.swipeback;
+package com.fss.common.uiModule.swipeback;
 
 
 /**

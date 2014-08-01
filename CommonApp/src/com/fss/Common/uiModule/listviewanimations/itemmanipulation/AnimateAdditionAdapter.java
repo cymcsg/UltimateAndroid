@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.fss.Common.uiModule.listviewanimations.itemmanipulation;
+package com.fss.common.uiModule.listviewanimations.itemmanipulation;
 
 import android.util.Pair;
 import android.view.View;
@@ -23,28 +23,28 @@ import android.widget.AbsListView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 
-import com.fss.Common.uiModule.listviewanimations.BaseAdapterDecorator;
-import com.fss.Common.uiModule.nineoldandroids.animation.Animator;
-import com.fss.Common.uiModule.nineoldandroids.animation.AnimatorListenerAdapter;
-import com.fss.Common.uiModule.nineoldandroids.animation.AnimatorSet;
-import com.fss.Common.uiModule.nineoldandroids.animation.ObjectAnimator;
-import com.fss.Common.uiModule.nineoldandroids.animation.ValueAnimator;
+import com.fss.common.uiModule.listviewanimations.BaseAdapterDecorator;
+import com.fss.common.uiModule.nineoldandroids.animation.Animator;
+import com.fss.common.uiModule.nineoldandroids.animation.AnimatorListenerAdapter;
+import com.fss.common.uiModule.nineoldandroids.animation.AnimatorSet;
+import com.fss.common.uiModule.nineoldandroids.animation.ObjectAnimator;
+import com.fss.common.uiModule.nineoldandroids.animation.ValueAnimator;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 /**
- * An EXPERIMENTAL adapter for inserting rows into the {@link android.widget.ListView} with an animation. The root {@link android.widget.BaseAdapter} should implement {@link com.fss.Common.uiModule.listviewanimations.itemmanipulation.AnimateAdditionAdapter.Insertable},
+ * An EXPERIMENTAL adapter for inserting rows into the {@link android.widget.ListView} with an animation. The root {@link android.widget.BaseAdapter} should implement {@link com.fss.common.uiModule.listviewanimations.itemmanipulation.AnimateAdditionAdapter.Insertable},
  * otherwise an {@link IllegalArgumentException} is thrown. This class only works with an instance of {@code ListView}!
  * <p>
  * Usage:<br>
  * - Wrap a new instance of this class around a {@link android.widget.BaseAdapter}. <br>
  * - Set a {@code ListView} to this class using {@link #setListView(android.widget.ListView)}.<br>
- * - Call {@link com.fss.Common.uiModule.listviewanimations.itemmanipulation.AnimateAdditionAdapter#insert(int, Object)} to animate the addition of an item.
+ * - Call {@link com.fss.common.uiModule.listviewanimations.itemmanipulation.AnimateAdditionAdapter#insert(int, Object)} to animate the addition of an item.
  * <p>
- * Extend this class and override {@link com.fss.Common.uiModule.listviewanimations.itemmanipulation.AnimateAdditionAdapter#getAdditionalAnimators(android.view.View,
- * android.view.ViewGroup)} to provide extra {@link com.fss.Common.uiModule.nineoldandroids.animation.Animator}s.
+ * Extend this class and override {@link com.fss.common.uiModule.listviewanimations.itemmanipulation.AnimateAdditionAdapter#getAdditionalAnimators(android.view.View,
+ * android.view.ViewGroup)} to provide extra {@link com.fss.common.uiModule.nineoldandroids.animation.Animator}s.
  */
 @SuppressWarnings("unchecked")
 public class AnimateAdditionAdapter<T> extends BaseAdapterDecorator {
@@ -62,10 +62,10 @@ public class AnimateAdditionAdapter<T> extends BaseAdapterDecorator {
     private long mScrolldownAnimationDurationMs = DEFAULT_SCROLLDOWN_ANIMATION_MS;
 
     /**
-     * Create a new {@link com.fss.Common.uiModule.listviewanimations.itemmanipulation.AnimateAdditionAdapter} with given {@link android.widget.BaseAdapter}.
+     * Create a new {@link com.fss.common.uiModule.listviewanimations.itemmanipulation.AnimateAdditionAdapter} with given {@link android.widget.BaseAdapter}.
      *
-     * @param baseAdapter should implement {@link com.fss.Common.uiModule.listviewanimations.itemmanipulation.AnimateAdditionAdapter.Insertable},
-     *                    or be a {@link com.fss.Common.uiModule.listviewanimations.BaseAdapterDecorator} whose BaseAdapter implements the interface.
+     * @param baseAdapter should implement {@link com.fss.common.uiModule.listviewanimations.itemmanipulation.AnimateAdditionAdapter.Insertable},
+     *                    or be a {@link com.fss.common.uiModule.listviewanimations.BaseAdapterDecorator} whose BaseAdapter implements the interface.
      */
     public AnimateAdditionAdapter(final BaseAdapter baseAdapter) {
         super(baseAdapter);
@@ -133,7 +133,7 @@ public class AnimateAdditionAdapter<T> extends BaseAdapterDecorator {
 
     /**
      * Insert an item at given index. Will show an entrance animation for the new item if the newly added item is visible.
-     * Will also call {@link com.fss.Common.uiModule.listviewanimations.itemmanipulation.AnimateAdditionAdapter.Insertable#add(int, Object)} of the root {@link android.widget.BaseAdapter}.
+     * Will also call {@link com.fss.common.uiModule.listviewanimations.itemmanipulation.AnimateAdditionAdapter.Insertable#add(int, Object)} of the root {@link android.widget.BaseAdapter}.
      *
      * @param index the index the new item should be inserted at
      * @param item  the item to insert
@@ -144,7 +144,7 @@ public class AnimateAdditionAdapter<T> extends BaseAdapterDecorator {
 
     /**
      * Insert items at given indexes. Will show an entrance animation for the new items if the newly added item is visible.
-     * Will also call {@link com.fss.Common.uiModule.listviewanimations.itemmanipulation.AnimateAdditionAdapter.Insertable#add(int, Object)} of the root {@link android.widget.BaseAdapter}.
+     * Will also call {@link com.fss.common.uiModule.listviewanimations.itemmanipulation.AnimateAdditionAdapter.Insertable#add(int, Object)} of the root {@link android.widget.BaseAdapter}.
      *
      * @param indexItemPairs the index-item pairs to insert. The first argument of the {@code Pair} is the index, the second argument is the item.
      */
@@ -154,7 +154,7 @@ public class AnimateAdditionAdapter<T> extends BaseAdapterDecorator {
 
     /**
      * Insert items at given indexes. Will show an entrance animation for the new items if the newly added item is visible.
-     * Will also call {@link com.fss.Common.uiModule.listviewanimations.itemmanipulation.AnimateAdditionAdapter.Insertable#add(int, Object)} of the root {@link android.widget.BaseAdapter}.
+     * Will also call {@link com.fss.common.uiModule.listviewanimations.itemmanipulation.AnimateAdditionAdapter.Insertable#add(int, Object)} of the root {@link android.widget.BaseAdapter}.
      *
      * @param indexItemPairs the index-item pairs to insert. The first argument of the {@code Pair} is the index, the second argument is the item.
      */

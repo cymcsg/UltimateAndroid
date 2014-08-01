@@ -1,4 +1,4 @@
-package com.fss.Common.commonUtils.moduleUtils;
+package com.fss.common.commonUtils.moduleUtils;
 
 import android.content.Context;
 import com.facebook.crypto.Crypto;
@@ -8,8 +8,8 @@ import com.facebook.crypto.keychain.KeyChain;
 import com.facebook.crypto.keychain.SharedPrefsBackedKeyChain;
 import com.facebook.crypto.mac.NativeMac;
 import com.facebook.crypto.util.SystemNativeCryptoLibrary;
-import com.fss.Common.commonUtils.fileUtils.FileUtils;
-import com.fss.Common.commonUtils.logUtils.Logs;
+import com.fss.common.commonUtils.fileUtils.FileUtils;
+import com.fss.common.commonUtils.logUtils.Logs;
 
 import java.io.*;
 import java.util.Arrays;

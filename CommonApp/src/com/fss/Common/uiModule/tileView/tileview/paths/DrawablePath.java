@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.tileView.tileview.paths;
+package com.fss.common.uiModule.tileView.tileview.paths;
 
 import android.annotation.SuppressLint;
 import android.graphics.Canvas;

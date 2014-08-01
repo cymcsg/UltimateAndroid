@@ -1,11 +1,11 @@
 
-package com.fss.Common.uiModule.swipeback;
+package com.fss.common.uiModule.swipeback;
 
 import android.app.Activity;
 import android.graphics.drawable.ColorDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
-import com.fss.Common.R;
+import com.fss.common.R;
 
 import java.lang.reflect.Method;
 

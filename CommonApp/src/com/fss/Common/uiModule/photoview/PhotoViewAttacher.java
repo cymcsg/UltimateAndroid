@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-package com.fss.Common.uiModule.photoview;
+package com.fss.common.uiModule.photoview;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -36,10 +36,10 @@ import android.widget.ImageView.ScaleType;
 
 import java.lang.ref.WeakReference;
 
-import com.fss.Common.uiModule.photoview.gestures.OnGestureListener;
-import com.fss.Common.uiModule.photoview.gestures.VersionedGestureDetector;
-import com.fss.Common.uiModule.photoview.log.LogManager;
-import com.fss.Common.uiModule.photoview.scrollerproxy.ScrollerProxy;
+import com.fss.common.uiModule.photoview.gestures.OnGestureListener;
+import com.fss.common.uiModule.photoview.gestures.VersionedGestureDetector;
+import com.fss.common.uiModule.photoview.log.LogManager;
+import com.fss.common.uiModule.photoview.scrollerproxy.ScrollerProxy;
 
 import static android.view.MotionEvent.ACTION_CANCEL;
 import static android.view.MotionEvent.ACTION_DOWN;
@@ -124,7 +124,7 @@ public class PhotoViewAttacher implements IPhotoView, View.OnTouchListener,
 
     // Gesture Detectors
     private GestureDetector mGestureDetector;
-    private com.fss.Common.uiModule.photoview.gestures.GestureDetector mScaleDragDetector;
+    private com.fss.common.uiModule.photoview.gestures.GestureDetector mScaleDragDetector;
 
     // These are set so we don't keep allocating them on the heap
     private final Matrix mBaseMatrix = new Matrix();
@@ -201,7 +201,7 @@ public class PhotoViewAttacher implements IPhotoView, View.OnTouchListener,
      * Clean-up the resources attached to this object. This needs to be called when the ImageView is
      * no longer used. A good example is from {@link android.view.View#onDetachedFromWindow()} or
      * from {@link android.app.Activity#onDestroy()}. This is automatically called if you are using
-     * {@link com.fss.Common.uiModule.photoview.PhotoView}.
+     * {@link com.fss.common.uiModule.photoview.PhotoView}.
      */
     @SuppressWarnings("deprecation")
     public void cleanup() {

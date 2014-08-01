@@ -1,4 +1,4 @@
-package com.fss.Common.commonUtils.moduleUtils;
+package com.fss.common.commonUtils.moduleUtils;
 
 import android.content.Context;
 import android.webkit.WebSettings;

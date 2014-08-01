@@ -1,6 +1,6 @@
-package com.fss.Common.commonUtils.fileUtils;
+package com.fss.common.commonUtils.fileUtils;
 
-import com.fss.Common.commonUtils.logUtils.Logs;
+import com.fss.common.commonUtils.logUtils.Logs;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

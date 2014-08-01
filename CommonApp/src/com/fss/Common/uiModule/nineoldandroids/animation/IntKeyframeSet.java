@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.fss.Common.uiModule.nineoldandroids.animation;
+package com.fss.common.uiModule.nineoldandroids.animation;
 
 import android.view.animation.Interpolator;
-import com.fss.Common.uiModule.nineoldandroids.animation.Keyframe.IntKeyframe;
+import com.fss.common.uiModule.nineoldandroids.animation.Keyframe.IntKeyframe;
 
 import java.util.ArrayList;
 

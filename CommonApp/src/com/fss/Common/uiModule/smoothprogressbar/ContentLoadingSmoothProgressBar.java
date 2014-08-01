@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.smoothprogressbar;
+package com.fss.common.uiModule.smoothprogressbar;
 
 import android.content.Context;
 import android.util.AttributeSet;

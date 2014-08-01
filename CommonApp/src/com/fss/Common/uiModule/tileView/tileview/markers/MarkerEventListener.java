@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.tileView.tileview.markers;
+package com.fss.common.uiModule.tileView.tileview.markers;
 
 import android.view.View;
 

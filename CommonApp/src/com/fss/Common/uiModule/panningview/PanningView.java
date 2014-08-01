@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.panningview;
+package com.fss.common.uiModule.panningview;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -6,7 +6,7 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.util.AttributeSet;
 import android.widget.ImageView;
-import com.fss.Common.R;
+import com.fss.common.R;
 
 public class PanningView extends ImageView {
 

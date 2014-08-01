@@ -1,7 +1,7 @@
-package com.fss.Common.uiModule.tileView.animation;
+package com.fss.common.uiModule.tileView.animation;
 
-import com.fss.Common.uiModule.tileView.animation.easing.EasingEquation;
-import com.fss.Common.uiModule.tileView.animation.easing.Linear;
+import com.fss.common.uiModule.tileView.animation.easing.EasingEquation;
+import com.fss.common.uiModule.tileView.animation.easing.Linear;
 
 import java.util.ArrayList;
 

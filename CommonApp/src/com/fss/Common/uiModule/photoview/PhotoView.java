@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-package com.fss.Common.uiModule.photoview;
+package com.fss.common.uiModule.photoview;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -25,9 +25,9 @@ import android.util.AttributeSet;
 import android.view.GestureDetector;
 import android.widget.ImageView;
 
-import com.fss.Common.uiModule.photoview.PhotoViewAttacher.OnMatrixChangedListener;
-import com.fss.Common.uiModule.photoview.PhotoViewAttacher.OnPhotoTapListener;
-import com.fss.Common.uiModule.photoview.PhotoViewAttacher.OnViewTapListener;
+import com.fss.common.uiModule.photoview.PhotoViewAttacher.OnMatrixChangedListener;
+import com.fss.common.uiModule.photoview.PhotoViewAttacher.OnPhotoTapListener;
+import com.fss.common.uiModule.photoview.PhotoViewAttacher.OnViewTapListener;
 
 public class PhotoView extends ImageView implements IPhotoView {
 

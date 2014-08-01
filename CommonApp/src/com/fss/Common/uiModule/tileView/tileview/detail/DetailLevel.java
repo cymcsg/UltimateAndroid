@@ -1,9 +1,9 @@
-package com.fss.Common.uiModule.tileView.tileview.detail;
+package com.fss.common.uiModule.tileView.tileview.detail;
 
 
 
 import android.graphics.Rect;
-import com.fss.Common.uiModule.tileView.tileview.tiles.Tile;
+import com.fss.common.uiModule.tileView.tileview.tiles.Tile;
 
 import java.util.LinkedList;
 

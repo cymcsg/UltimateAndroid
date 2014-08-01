@@ -1,9 +1,9 @@
-package com.fss.Common.uiModule.showcaseview;
+package com.fss.common.uiModule.showcaseview;
 
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
-import com.fss.Common.R;
+import com.fss.common.R;
 
 /**
  * Created by curraa01 on 13/10/2013.

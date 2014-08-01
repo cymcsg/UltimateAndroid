@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fss.Common.uiModule.kenburnsview;
+package com.fss.common.uiModule.kenburnsview;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -44,7 +44,7 @@ public class KenBurnsView extends ImageView {
      *  rects. The default {@link TransitionGenerator} is {@link RandomTransitionGenerator}. */
     private TransitionGenerator mTransGen = new RandomTransitionGenerator();
 
-    /** A {@link com.fss.Common.uiModule.kenburnsview.KenBurnsView.TransitionListener} to be notified when
+    /** A {@link com.fss.common.uiModule.kenburnsview.KenBurnsView.TransitionListener} to be notified when
      *  a transition starts or ends. */
     private TransitionListener mTransitionListener;
 

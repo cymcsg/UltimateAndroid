@@ -2,7 +2,7 @@
  * Copyright (c) 2014. Marshal Chen.
  */
 
-package com.fss.Common.commonUtils.basicUtils;
+package com.fss.common.commonUtils.basicUtils;
 
 /**
  * Array Utils
@@ -114,21 +114,21 @@ public class ArrayUtils {
     }
 
     /**
-     * @see {@link com.fss.Common.commonUtils.basicUtils.ArrayUtils#getLast(Object[], Object, Object, boolean)} defaultValue is null
+     * @see {@link com.fss.common.commonUtils.basicUtils.ArrayUtils#getLast(Object[], Object, Object, boolean)} defaultValue is null
      */
     public static <V> V getLast(V[] sourceArray, V value, boolean isCircle) {
         return getLast(sourceArray, value, null, isCircle);
     }
 
     /**
-     * @see {@link com.fss.Common.commonUtils.basicUtils.ArrayUtils#getNext(Object[], Object, Object, boolean)} defaultValue is null
+     * @see {@link com.fss.common.commonUtils.basicUtils.ArrayUtils#getNext(Object[], Object, Object, boolean)} defaultValue is null
      */
     public static <V> V getNext(V[] sourceArray, V value, boolean isCircle) {
         return getNext(sourceArray, value, null, isCircle);
     }
 
     /**
-     * @see {@link com.fss.Common.commonUtils.basicUtils.ArrayUtils#getLast(Object[], Object, Object, boolean)} Object is Long
+     * @see {@link com.fss.common.commonUtils.basicUtils.ArrayUtils#getLast(Object[], Object, Object, boolean)} Object is Long
      */
     public static long getLast(long[] sourceArray, long value, long defaultValue, boolean isCircle) {
         if (sourceArray.length == 0) {
@@ -141,7 +141,7 @@ public class ArrayUtils {
     }
 
     /**
-     * @see {@link com.fss.Common.commonUtils.basicUtils.ArrayUtils#getNext(Object[], Object, Object, boolean)} Object is Long
+     * @see {@link com.fss.common.commonUtils.basicUtils.ArrayUtils#getNext(Object[], Object, Object, boolean)} Object is Long
      */
     public static long getNext(long[] sourceArray, long value, long defaultValue, boolean isCircle) {
         if (sourceArray.length == 0) {
@@ -153,7 +153,7 @@ public class ArrayUtils {
     }
 
     /**
-     * @see {@link com.fss.Common.commonUtils.basicUtils.ArrayUtils#getLast(Object[], Object, Object, boolean)} Object is Integer
+     * @see {@link com.fss.common.commonUtils.basicUtils.ArrayUtils#getLast(Object[], Object, Object, boolean)} Object is Integer
      */
     public static int getLast(int[] sourceArray, int value, int defaultValue, boolean isCircle) {
         if (sourceArray.length == 0) {
@@ -166,7 +166,7 @@ public class ArrayUtils {
     }
 
     /**
-     * @see {@link com.fss.Common.commonUtils.basicUtils.ArrayUtils#getNext(Object[], Object, Object, boolean)} Object is Integer
+     * @see {@link com.fss.common.commonUtils.basicUtils.ArrayUtils#getNext(Object[], Object, Object, boolean)} Object is Integer
      */
     public static int getNext(int[] sourceArray, int value, int defaultValue, boolean isCircle) {
         if (sourceArray.length == 0) {

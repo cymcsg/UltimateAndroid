@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.smoothprogressbar;
+package com.fss.common.uiModule.smoothprogressbar;
 
 import android.graphics.Canvas;
 import android.graphics.Paint;

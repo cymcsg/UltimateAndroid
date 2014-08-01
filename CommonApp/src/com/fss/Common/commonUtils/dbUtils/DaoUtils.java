@@ -1,4 +1,4 @@
-package com.fss.Common.commonUtils.dbUtils;
+package com.fss.common.commonUtils.dbUtils;
 
 import de.greenrobot.dao.AbstractDao;
 import de.greenrobot.dao.Property;

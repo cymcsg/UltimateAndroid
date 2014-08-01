@@ -1,8 +1,8 @@
-package com.fss.Common.commonUtils.networkUtils;
+package com.fss.common.commonUtils.networkUtils;
 
 import android.graphics.Bitmap;
 import android.net.Uri;
-import com.fss.Common.commonUtils.urlUtils.MD5Utils;
+import com.fss.common.commonUtils.urlUtils.MD5Utils;
 
 import java.io.*;
 import java.net.HttpURLConnection;

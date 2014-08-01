@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.customFonts;
+package com.fss.common.uiModule.customFonts;
 
 import android.text.TextUtils;
 

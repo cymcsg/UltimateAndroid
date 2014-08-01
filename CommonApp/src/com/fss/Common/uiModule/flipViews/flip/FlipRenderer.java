@@ -1,10 +1,10 @@
-package com.fss.Common.uiModule.flipViews.flip;
+package com.fss.common.uiModule.flipViews.flip;
 
 import android.opengl.GLSurfaceView;
 import android.opengl.GLU;
 import android.view.View;
-import com.fss.Common.uiModule.flipViews.utils.AphidLog;
-import com.fss.Common.uiModule.flipViews.utils.TextureUtils;
+import com.fss.common.uiModule.flipViews.utils.AphidLog;
+import com.fss.common.uiModule.flipViews.utils.TextureUtils;
 
 
 import java.util.LinkedList;

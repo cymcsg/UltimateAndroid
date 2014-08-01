@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.ResideMenu;
+package com.fss.common.uiModule.ResideMenu;
 
 
 

@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.tileView.tileview.graphics;
+package com.fss.common.uiModule.tileView.tileview.graphics;
 
 import android.content.Context;
 import android.graphics.Bitmap;

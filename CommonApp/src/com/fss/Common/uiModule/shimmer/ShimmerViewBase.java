@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.shimmer;
+package com.fss.common.uiModule.shimmer;
 
 /**
  * Shimmer

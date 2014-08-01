@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.activityanimation;
+package com.fss.common.uiModule.activityanimation;
 
 import android.content.Context;
 import android.graphics.Bitmap;

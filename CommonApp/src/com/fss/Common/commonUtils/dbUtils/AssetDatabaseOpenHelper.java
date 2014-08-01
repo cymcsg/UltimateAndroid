@@ -2,11 +2,11 @@
  * Copyright (c) 2014. Marshal Chen.
  */
 
-package com.fss.Common.commonUtils.dbUtils;
+package com.fss.common.commonUtils.dbUtils;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
-import com.fss.Common.commonUtils.fileUtils.FileUtils;
+import com.fss.common.commonUtils.fileUtils.FileUtils;
 
 import java.io.File;
 import java.io.IOException;

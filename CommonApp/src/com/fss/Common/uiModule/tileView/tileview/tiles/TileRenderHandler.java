@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.tileView.tileview.tiles;
+package com.fss.common.uiModule.tileView.tileview.tiles;
 
 import java.lang.ref.WeakReference;
 

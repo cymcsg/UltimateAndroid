@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fss.Common.uiModule.listviewanimations.swinginadapters;
+package com.fss.common.uiModule.listviewanimations.swinginadapters;
 
 import android.annotation.SuppressLint;
 import android.os.Build;
@@ -23,11 +23,11 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 
-import com.fss.Common.uiModule.listviewanimations.BaseAdapterDecorator;
-import com.fss.Common.uiModule.nineoldandroids.animation.Animator;
-import com.fss.Common.uiModule.nineoldandroids.animation.AnimatorSet;
-import com.fss.Common.uiModule.nineoldandroids.animation.ObjectAnimator;
-import com.fss.Common.uiModule.nineoldandroids.view.ViewHelper;
+import com.fss.common.uiModule.listviewanimations.BaseAdapterDecorator;
+import com.fss.common.uiModule.nineoldandroids.animation.Animator;
+import com.fss.common.uiModule.nineoldandroids.animation.AnimatorSet;
+import com.fss.common.uiModule.nineoldandroids.animation.ObjectAnimator;
+import com.fss.common.uiModule.nineoldandroids.view.ViewHelper;
 
 /**
  * A {@link BaseAdapterDecorator} class which applies multiple {@link Animator}s at once to

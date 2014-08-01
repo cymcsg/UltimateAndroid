@@ -17,12 +17,12 @@
  * Author: David Berlioz
  */
 
-package com.fss.Common.uiModule.listviewanimations.itemmanipulation.swipedismiss;
+package com.fss.common.uiModule.listviewanimations.itemmanipulation.swipedismiss;
 
 import android.widget.AbsListView;
 
 /**
- * An {@link android.widget.AbsListView.OnScrollListener} that is used in conjunction with {@link com.fss.Common.uiModule.listviewanimations.itemmanipulation.swipedismiss.SwipeDismissAdapter}. Override this class to
+ * An {@link android.widget.AbsListView.OnScrollListener} that is used in conjunction with {@link com.fss.common.uiModule.listviewanimations.itemmanipulation.swipedismiss.SwipeDismissAdapter}. Override this class to
  * provide a custom implementation of the OnScrollListener. Do not forget to call super on the overridden methods!
  */
 public class SwipeOnScrollListener implements AbsListView.OnScrollListener {

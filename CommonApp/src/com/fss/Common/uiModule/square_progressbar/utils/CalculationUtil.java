@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.square_progressbar.utils;
+package com.fss.common.uiModule.square_progressbar.utils;
 
 import android.content.Context;
 import android.util.TypedValue;

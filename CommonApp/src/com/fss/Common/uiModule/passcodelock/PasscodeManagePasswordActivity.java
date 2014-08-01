@@ -1,8 +1,8 @@
-package com.fss.Common.uiModule.passcodelock;
+package com.fss.common.uiModule.passcodelock;
 
 import android.os.Bundle;
 import android.widget.TextView;
-import com.fss.Common.R;
+import com.fss.common.R;
 
 
 public class PasscodeManagePasswordActivity extends AbstractPasscodeKeyboardActivity {

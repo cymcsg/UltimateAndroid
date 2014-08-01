@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.tileView.tileview.geom;
+package com.fss.common.uiModule.tileView.tileview.geom;
 
 import java.util.ArrayList;
 import java.util.List;

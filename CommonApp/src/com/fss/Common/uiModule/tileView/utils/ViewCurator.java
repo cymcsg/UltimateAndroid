@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.tileView.utils;
+package com.fss.common.uiModule.tileView.utils;
 
 import android.view.View;
 import android.view.ViewGroup;

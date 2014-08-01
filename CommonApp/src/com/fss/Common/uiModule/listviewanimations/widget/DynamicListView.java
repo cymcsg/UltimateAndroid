@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.fss.Common.uiModule.listviewanimations.widget;
+package com.fss.common.uiModule.listviewanimations.widget;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -37,13 +37,13 @@ import android.widget.HeaderViewListAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
-import com.fss.Common.uiModule.listviewanimations.itemmanipulation.swipedismiss.SwipeOnTouchListener;
-import com.fss.Common.uiModule.nineoldandroids.animation.Animator;
-import com.fss.Common.uiModule.nineoldandroids.animation.AnimatorListenerAdapter;
-import com.fss.Common.uiModule.nineoldandroids.animation.ObjectAnimator;
-import com.fss.Common.uiModule.nineoldandroids.animation.TypeEvaluator;
-import com.fss.Common.uiModule.nineoldandroids.animation.ValueAnimator;
-import com.fss.Common.uiModule.nineoldandroids.view.ViewHelper;
+import com.fss.common.uiModule.listviewanimations.itemmanipulation.swipedismiss.SwipeOnTouchListener;
+import com.fss.common.uiModule.nineoldandroids.animation.Animator;
+import com.fss.common.uiModule.nineoldandroids.animation.AnimatorListenerAdapter;
+import com.fss.common.uiModule.nineoldandroids.animation.ObjectAnimator;
+import com.fss.common.uiModule.nineoldandroids.animation.TypeEvaluator;
+import com.fss.common.uiModule.nineoldandroids.animation.ValueAnimator;
+import com.fss.common.uiModule.nineoldandroids.view.ViewHelper;
 
 /**
  * The DynamicListView is an extension of {@link android.widget.ListView} that supports cell dragging
@@ -79,7 +79,7 @@ public class DynamicListView extends ListView {
     }
 
     /**
-     * Implement this interface to be notified of ordering changes. Call {@link #setOnItemMovedListener(com.fss.Common.uiModule.listviewanimations.widget.DynamicListView.OnItemMovedListener)}.
+     * Implement this interface to be notified of ordering changes. Call {@link #setOnItemMovedListener(com.fss.common.uiModule.listviewanimations.widget.DynamicListView.OnItemMovedListener)}.
      */
     public interface OnItemMovedListener {
         /**
@@ -770,14 +770,14 @@ public class DynamicListView extends ListView {
     };
 
     /**
-     * Set the {@link com.fss.Common.uiModule.listviewanimations.widget.DynamicListView.OnItemMovedListener} to be notified when an item is dropped.
+     * Set the {@link com.fss.common.uiModule.listviewanimations.widget.DynamicListView.OnItemMovedListener} to be notified when an item is dropped.
      */
     public void setOnItemMovedListener(OnItemMovedListener onItemMovedListener) {
         this.mOnItemMovedListener = onItemMovedListener;
     }
 
     /**
-     * Interface, usually implemented by a {@link com.fss.Common.uiModule.listviewanimations.BaseAdapterDecorator},
+     * Interface, usually implemented by a {@link com.fss.common.uiModule.listviewanimations.BaseAdapterDecorator},
      * that indicates that it can swap the visual position of two list items.
      *
      * @author Anton Spaans on 9/11/13.

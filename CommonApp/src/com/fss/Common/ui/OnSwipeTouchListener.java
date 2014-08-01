@@ -1,4 +1,4 @@
-package com.fss.Common.ui;
+package com.fss.common.ui;
 
 import android.view.GestureDetector;
 import android.view.MotionEvent;

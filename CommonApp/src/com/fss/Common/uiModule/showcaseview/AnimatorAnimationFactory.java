@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.showcaseview;
+package com.fss.common.uiModule.showcaseview;
 
 import android.animation.Animator;
 import android.animation.AnimatorSet;

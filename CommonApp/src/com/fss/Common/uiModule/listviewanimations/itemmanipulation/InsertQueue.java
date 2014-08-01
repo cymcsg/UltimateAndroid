@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.listviewanimations.itemmanipulation;
+package com.fss.common.uiModule.listviewanimations.itemmanipulation;
 
 import android.util.Pair;
 
@@ -13,7 +13,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * A class to insert items only when there are no active items.
- * A pending index-item pair can have two states: active and pending. When inserting new items, the {@link com.fss.Common.uiModule.listviewanimations.itemmanipulation.AnimateAdditionAdapter.Insertable#add
+ * A pending index-item pair can have two states: active and pending. When inserting new items, the {@link com.fss.common.uiModule.listviewanimations.itemmanipulation.AnimateAdditionAdapter.Insertable#add
  * (int, Object)} method will be called directly if there are no active index-item pairs.
  * Otherwise, pairs will be queued until the active list is empty.
  */
@@ -29,7 +29,7 @@ public class InsertQueue<T> {
     }
 
     /**
-     * Insert an item into the queue at given index. Will directly call {@link com.fss.Common.uiModule.listviewanimations.itemmanipulation.AnimateAdditionAdapter.Insertable#add(int,
+     * Insert an item into the queue at given index. Will directly call {@link com.fss.common.uiModule.listviewanimations.itemmanipulation.AnimateAdditionAdapter.Insertable#add(int,
      * Object)} if there are no active index-item pairs. Otherwise, the pair will be queued.
      * @param index the index at which the item should be inserted.
      * @param item the item to insert.

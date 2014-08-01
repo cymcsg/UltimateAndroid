@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.tileView.animation;
+package com.fss.common.uiModule.tileView.animation;
 
 import java.util.HashMap;
 

@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.passcodelock;
+package com.fss.common.uiModule.passcodelock;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -15,7 +15,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.fss.Common.R;
+import com.fss.common.R;
 
 
 public abstract class AbstractPasscodeKeyboardActivity extends Activity {

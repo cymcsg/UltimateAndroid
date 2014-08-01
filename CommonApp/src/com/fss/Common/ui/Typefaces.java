@@ -1,9 +1,8 @@
-package com.fss.Common.ui;
+package com.fss.common.ui;
 
 import android.content.Context;
 import android.graphics.Typeface;
-import android.util.Log;
-import com.fss.Common.commonUtils.logUtils.Logs;
+import com.fss.common.commonUtils.logUtils.Logs;
 
 import java.util.Hashtable;
 

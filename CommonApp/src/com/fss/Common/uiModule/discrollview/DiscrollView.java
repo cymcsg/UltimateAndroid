@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.discrollview;
+package com.fss.common.uiModule.discrollview;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -11,8 +11,8 @@ import android.widget.ScrollView;
  * the discrollvable starts to be discrollved when its center reaches the center of the DiscrollView;
  * else, the discrollvables starts to be discrollved when its top reaches the bottom of the DiscrollView
  *
- * @see com.fss.Common.uiModule.discrollview.Discrollvable
- * @see com.fss.Common.uiModule.discrollview.DiscrollViewContent
+ * @see com.fss.common.uiModule.discrollview.Discrollvable
+ * @see com.fss.common.uiModule.discrollview.DiscrollViewContent
  *
  */
 public class DiscrollView extends ScrollView {

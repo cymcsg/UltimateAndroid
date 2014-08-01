@@ -1,11 +1,11 @@
-package com.fss.Common.uiModule.shimmer;
+package com.fss.common.uiModule.shimmer;
 
 
 import android.os.Build;
 import android.view.View;
-import com.fss.Common.uiModule.nineoldandroids.animation.Animator;
-import com.fss.Common.uiModule.nineoldandroids.animation.ObjectAnimator;
-import com.fss.Common.uiModule.nineoldandroids.animation.ValueAnimator;
+import com.fss.common.uiModule.nineoldandroids.animation.Animator;
+import com.fss.common.uiModule.nineoldandroids.animation.ObjectAnimator;
+import com.fss.common.uiModule.nineoldandroids.animation.ValueAnimator;
 
 /**
  * Shimmer

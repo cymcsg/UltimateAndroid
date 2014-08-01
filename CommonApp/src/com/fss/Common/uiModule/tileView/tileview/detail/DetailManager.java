@@ -1,9 +1,9 @@
-package com.fss.Common.uiModule.tileView.tileview.detail;
+package com.fss.common.uiModule.tileView.tileview.detail;
 
 import java.util.HashSet;
 
-import com.fss.Common.uiModule.tileView.tileview.tiles.selector.TileSetSelector;
-import com.fss.Common.uiModule.tileView.tileview.tiles.selector.TileSetSelectorMinimalUpScale;
+import com.fss.common.uiModule.tileView.tileview.tiles.selector.TileSetSelector;
+import com.fss.common.uiModule.tileView.tileview.tiles.selector.TileSetSelectorMinimalUpScale;
 
 import android.graphics.Rect;
 

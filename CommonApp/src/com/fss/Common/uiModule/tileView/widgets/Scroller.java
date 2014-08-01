@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.tileView.widgets;
+package com.fss.common.uiModule.tileView.widgets;
 
 import android.content.Context;
 import android.hardware.SensorManager;

@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.cardsSwiped.view;
+package com.fss.common.uiModule.cardsSwiped.view;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -6,8 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.fss.Common.R;
-import com.fss.Common.uiModule.cardsSwiped.model.CardModel;
+import com.fss.common.R;
+import com.fss.common.uiModule.cardsSwiped.model.CardModel;
 
 
 public final class SimpleCardStackAdapter extends CardStackAdapter {

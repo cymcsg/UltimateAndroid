@@ -14,12 +14,12 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
  */
-package com.fss.Common.uiModule.flipViews.flip;
+package com.fss.common.uiModule.flipViews.flip;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.view.View;
-import com.fss.Common.uiModule.flipViews.utils.AphidLog;
+import com.fss.common.uiModule.flipViews.utils.AphidLog;
 
 
 public class GrabIt {

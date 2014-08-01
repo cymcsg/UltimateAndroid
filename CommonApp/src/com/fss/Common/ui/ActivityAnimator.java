@@ -1,8 +1,8 @@
-package com.fss.Common.ui;
+package com.fss.common.ui;
 
 
 import android.app.Activity;
-import com.fss.Common.R;
+import com.fss.common.R;
 
 
 public class ActivityAnimator

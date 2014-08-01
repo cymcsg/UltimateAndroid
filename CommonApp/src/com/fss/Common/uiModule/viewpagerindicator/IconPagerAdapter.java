@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.viewpagerindicator;
+package com.fss.common.uiModule.viewpagerindicator;
 
 public interface IconPagerAdapter {
     /**

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.fss.Common.uiModule.modifysys;
+package com.fss.common.uiModule.modifysys;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -24,7 +24,6 @@ import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
-import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v4.view.PagerAdapter;
@@ -38,8 +37,8 @@ import android.view.Gravity;
 import android.view.ViewGroup;
 import android.view.ViewParent;
 import android.widget.TextView;
-import com.fss.Common.R;
-import com.fss.Common.commonUtils.logUtils.Logs;
+import com.fss.common.R;
+import com.fss.common.commonUtils.logUtils.Logs;
 
 
 import java.lang.ref.WeakReference;

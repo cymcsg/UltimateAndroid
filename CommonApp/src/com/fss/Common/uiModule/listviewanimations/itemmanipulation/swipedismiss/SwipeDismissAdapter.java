@@ -13,21 +13,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fss.Common.uiModule.listviewanimations.itemmanipulation.swipedismiss;
+package com.fss.common.uiModule.listviewanimations.itemmanipulation.swipedismiss;
 
 import android.widget.AbsListView;
 import android.widget.BaseAdapter;
 
-import com.fss.Common.uiModule.listviewanimations.ArrayAdapter;
-import com.fss.Common.uiModule.listviewanimations.BaseAdapterDecorator;
-import com.fss.Common.uiModule.listviewanimations.itemmanipulation.OnDismissCallback;
+import com.fss.common.uiModule.listviewanimations.ArrayAdapter;
+import com.fss.common.uiModule.listviewanimations.BaseAdapterDecorator;
+import com.fss.common.uiModule.listviewanimations.itemmanipulation.OnDismissCallback;
 
 /**
  * Adds an option to swipe items in an AbsListView away.
  * Do not call {@link android.widget.AbsListView#setOnTouchListener(android.view.View.OnTouchListener)} or
  * {@link android.widget.AbsListView#setOnScrollListener(android.widget.AbsListView.OnScrollListener)} on your AbsListView! To use an {@link android.widget.AbsListView.OnScrollListener},
  * extends {@link SwipeOnScrollListener} and
- * pass it in the constructor {@link #SwipeDismissAdapter(android.widget.BaseAdapter, com.fss.Common.uiModule.listviewanimations.itemmanipulation.OnDismissCallback, SwipeOnScrollListener)}.
+ * pass it in the constructor {@link #SwipeDismissAdapter(android.widget.BaseAdapter, com.fss.common.uiModule.listviewanimations.itemmanipulation.OnDismissCallback, SwipeOnScrollListener)}.
  */
 public class SwipeDismissAdapter extends BaseAdapterDecorator {
 

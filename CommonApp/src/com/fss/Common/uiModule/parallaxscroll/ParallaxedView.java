@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.parallaxscroll;
+package com.fss.common.uiModule.parallaxscroll;
 
 import java.lang.ref.WeakReference;
 

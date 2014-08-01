@@ -2,7 +2,7 @@
  * Copyright (c) 2014. Marshal Chen.
  */
 
-package com.fss.Common.commonUtils.fileUtils;
+package com.fss.common.commonUtils.fileUtils;
 
 import java.io.*;
 

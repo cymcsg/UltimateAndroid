@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.listviewanimations;
+package com.fss.common.uiModule.listviewanimations;
 
 import android.widget.AbsListView;
 

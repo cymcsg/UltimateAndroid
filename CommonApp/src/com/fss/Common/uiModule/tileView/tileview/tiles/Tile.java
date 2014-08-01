@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.tileView.tileview.tiles;
+package com.fss.common.uiModule.tileView.tileview.tiles;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 import android.view.ViewParent;
 import android.widget.ImageView;
 
-import com.fss.Common.uiModule.tileView.tileview.graphics.BitmapDecoder;
+import com.fss.common.uiModule.tileView.tileview.graphics.BitmapDecoder;
 
 public class Tile {
 

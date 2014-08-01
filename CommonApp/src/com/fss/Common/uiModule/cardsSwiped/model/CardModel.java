@@ -15,9 +15,8 @@
  * @license: Apache License 2.0
  */
 
-package com.fss.Common.uiModule.cardsSwiped.model;
+package com.fss.common.uiModule.cardsSwiped.model;
 
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;

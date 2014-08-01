@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.tileView.tileview.detail;
+package com.fss.common.uiModule.tileView.tileview.detail;
 
 public interface DetailLevelEventListener {
 	public void onDetailLevelChanged();

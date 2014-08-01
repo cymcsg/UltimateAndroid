@@ -1,4 +1,4 @@
-package com.fss.Common.commonUtils.basicUtils;
+package com.fss.common.commonUtils.basicUtils;
 
 import java.io.File;
 import java.io.FileOutputStream;

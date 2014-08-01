@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
  */
 
-package com.fss.Common.uiModule.flipViews.utils;
+package com.fss.common.uiModule.flipViews.utils;
 
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;

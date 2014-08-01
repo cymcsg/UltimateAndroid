@@ -1,4 +1,4 @@
-package com.fss.Common.uiModule.listbuddies.provider;
+package com.fss.common.uiModule.listbuddies.provider;
 
 /**
  * Created by jpardogo on 23/02/2014.

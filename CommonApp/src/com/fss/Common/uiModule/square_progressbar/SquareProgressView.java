@@ -1,9 +1,9 @@
-package com.fss.Common.uiModule.square_progressbar;
+package com.fss.common.uiModule.square_progressbar;
 
 import java.text.DecimalFormat;
 
-import com.fss.Common.uiModule.square_progressbar.utils.CalculationUtil;
-import com.fss.Common.uiModule.square_progressbar.utils.PercentStyle;
+import com.fss.common.uiModule.square_progressbar.utils.CalculationUtil;
+import com.fss.common.uiModule.square_progressbar.utils.PercentStyle;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;

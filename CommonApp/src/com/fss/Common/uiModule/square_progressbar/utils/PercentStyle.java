@@ -1,7 +1,6 @@
-package com.fss.Common.uiModule.square_progressbar.utils;
+package com.fss.common.uiModule.square_progressbar.utils;
 
 import android.graphics.Color;
-import android.graphics.Paint;
 import android.graphics.Paint.Align;
 
 public class PercentStyle {

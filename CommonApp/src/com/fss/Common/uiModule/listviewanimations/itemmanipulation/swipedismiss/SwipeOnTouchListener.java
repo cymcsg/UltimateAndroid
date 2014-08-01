@@ -2,7 +2,7 @@
  * Copyright (c) 2013 K–NFB Reading Technology, Inc.
  */
 
-package com.fss.Common.uiModule.listviewanimations.itemmanipulation.swipedismiss;
+package com.fss.common.uiModule.listviewanimations.itemmanipulation.swipedismiss;
 
 import android.view.View;
 

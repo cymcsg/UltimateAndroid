@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fss.Common.uiModule.listviewanimations;
+package com.fss.common.uiModule.listviewanimations;
 
 import android.database.DataSetObserver;
 import android.view.View;
@@ -22,8 +22,8 @@ import android.widget.AbsListView;
 import android.widget.BaseAdapter;
 import android.widget.SectionIndexer;
 
-import com.fss.Common.uiModule.listviewanimations.widget.DynamicListView;
-import com.fss.Common.uiModule.listviewanimations.widget.DynamicListView.Swappable;
+import com.fss.common.uiModule.listviewanimations.widget.DynamicListView;
+import com.fss.common.uiModule.listviewanimations.widget.DynamicListView.Swappable;
 
 /**
  * A decorator class that enables decoration of an instance of the BaseAdapter
