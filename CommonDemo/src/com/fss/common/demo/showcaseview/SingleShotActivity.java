@@ -2,9 +2,9 @@ package com.fss.common.demo.showcaseview;
 
 import android.app.Activity;
 import android.os.Bundle;
-import com.fss.Common.uiModule.showcaseview.ShowcaseView;
-import com.fss.Common.uiModule.showcaseview.targets.Target;
-import com.fss.Common.uiModule.showcaseview.targets.ViewTarget;
+import com.fss.common.uiModule.showcaseview.ShowcaseView;
+import com.fss.common.uiModule.showcaseview.targets.Target;
+import com.fss.common.uiModule.showcaseview.targets.ViewTarget;
 import com.fss.common.demo.R;
 
 

@@ -1,6 +1,6 @@
 package com.fss.common.demo.activityanimation;
 
-import com.fss.Common.uiModule.activityanimation.AnimatedRectActivity;
+import com.fss.common.uiModule.activityanimation.AnimatedRectActivity;
 import com.fss.common.demo.R;
 
 public class ThirdActivity extends AnimatedRectActivity {

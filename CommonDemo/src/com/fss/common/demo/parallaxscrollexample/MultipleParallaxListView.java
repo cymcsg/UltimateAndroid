@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import com.fss.Common.uiModule.parallaxscroll.ParallaxListView;
+import com.fss.common.uiModule.parallaxscroll.ParallaxListView;
 import com.fss.common.demo.R;
 
 

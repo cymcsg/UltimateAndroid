@@ -14,8 +14,8 @@ import android.widget.AdapterView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.fss.Common.commonUtils.basicUtils.HandlerUtils;
-import com.fss.Common.uiModule.dynamicgrid.DynamicGridView;
+import com.fss.common.commonUtils.basicUtils.HandlerUtils;
+import com.fss.common.uiModule.dynamicgrid.DynamicGridView;
 import com.fss.common.demo.R;
 
 

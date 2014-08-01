@@ -7,8 +7,8 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Toast;
-import com.fss.Common.uiModule.ResideMenu.ResideMenu;
-import com.fss.Common.uiModule.ResideMenu.ResideMenuItem;
+import com.fss.common.uiModule.ResideMenu.ResideMenu;
+import com.fss.common.uiModule.ResideMenu.ResideMenuItem;
 import com.fss.common.demo.R;
 
 

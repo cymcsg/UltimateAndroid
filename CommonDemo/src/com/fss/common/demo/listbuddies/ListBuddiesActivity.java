@@ -7,8 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import com.fss.Common.uiModule.listbuddies.adapters.CircularLoopAdapter;
-import com.fss.Common.uiModule.listbuddies.views.ListBuddiesLayout;
+import com.fss.common.uiModule.listbuddies.adapters.CircularLoopAdapter;
+import com.fss.common.uiModule.listbuddies.views.ListBuddiesLayout;
 import com.fss.common.demo.R;
 import com.nostra13.universalimageloader.core.ImageLoader;
 

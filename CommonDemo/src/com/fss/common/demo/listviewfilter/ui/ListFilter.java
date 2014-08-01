@@ -9,7 +9,7 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
-import com.fss.Common.uiModule.listviewfilter.IIndexBarFilter;
+import com.fss.common.uiModule.listviewfilter.IIndexBarFilter;
 import com.fss.common.demo.R;
 
 

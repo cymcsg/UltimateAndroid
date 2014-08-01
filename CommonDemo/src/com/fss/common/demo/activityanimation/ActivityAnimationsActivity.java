@@ -7,8 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.RadioButton;
-import com.fss.Common.uiModule.activityanimation.AnimatedDoorLayout;
-import com.fss.Common.uiModule.activityanimation.AnimatedRectLayout;
+import com.fss.common.uiModule.activityanimation.AnimatedDoorLayout;
+import com.fss.common.uiModule.activityanimation.AnimatedRectLayout;
 import com.fss.common.demo.R;
 
 

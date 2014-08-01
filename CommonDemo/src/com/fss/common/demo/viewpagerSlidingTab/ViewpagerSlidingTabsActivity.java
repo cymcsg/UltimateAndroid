@@ -35,7 +35,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 
-import com.fss.Common.ui.PagerSlidingTabStrip;
+import com.fss.common.ui.PagerSlidingTabStrip;
 import com.fss.common.demo.R;
 
 public class ViewpagerSlidingTabsActivity extends FragmentActivity {

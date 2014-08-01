@@ -6,7 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
-import com.fss.Common.uiModule.ResideMenu.ResideMenu;
+import com.fss.common.uiModule.ResideMenu.ResideMenu;
 import com.fss.common.demo.R;
 
 

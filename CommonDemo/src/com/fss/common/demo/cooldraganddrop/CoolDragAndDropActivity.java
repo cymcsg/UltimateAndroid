@@ -12,9 +12,9 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ScrollView;
-import com.fss.Common.uiModule.cooldraganddrop.CoolDragAndDropGridView;
-import com.fss.Common.uiModule.cooldraganddrop.SimpleScrollingStrategy;
-import com.fss.Common.uiModule.cooldraganddrop.SpanVariableGridView;
+import com.fss.common.uiModule.cooldraganddrop.CoolDragAndDropGridView;
+import com.fss.common.uiModule.cooldraganddrop.SimpleScrollingStrategy;
+import com.fss.common.uiModule.cooldraganddrop.SpanVariableGridView;
 import com.fss.common.demo.R;
 
 public class CoolDragAndDropActivity extends ActionBarActivity implements CoolDragAndDropGridView.DragAndDropListener, SpanVariableGridView.OnItemClickListener,

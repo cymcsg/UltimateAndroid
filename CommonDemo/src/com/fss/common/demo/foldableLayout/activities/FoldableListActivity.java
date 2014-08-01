@@ -2,7 +2,7 @@ package com.fss.common.demo.foldableLayout.activities;
 
 import android.os.Bundle;
 
-import com.fss.Common.uiModule.foldablelayout.FoldableListLayout;
+import com.fss.common.uiModule.foldablelayout.FoldableListLayout;
 import com.fss.common.demo.R;
 import com.fss.common.demo.foldableLayout.items.PaintingsAdapter;
 

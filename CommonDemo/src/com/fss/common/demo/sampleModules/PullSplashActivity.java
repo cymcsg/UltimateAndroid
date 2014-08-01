@@ -1,7 +1,7 @@
 package com.fss.common.demo.sampleModules;
 
 import android.os.Bundle;
-import com.fss.Common.ui.HomeasUpActionbarActivity;
+import com.fss.common.ui.HomeasUpActionbarActivity;
 import com.fss.common.demo.R;
 
 /**

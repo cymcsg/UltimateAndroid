@@ -4,10 +4,10 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-import com.fss.Common.uiModule.showcaseview.ApiUtils;
-import com.fss.Common.uiModule.showcaseview.ShowcaseView;
-import com.fss.Common.uiModule.showcaseview.targets.Target;
-import com.fss.Common.uiModule.showcaseview.targets.ViewTarget;
+import com.fss.common.uiModule.showcaseview.ApiUtils;
+import com.fss.common.uiModule.showcaseview.ShowcaseView;
+import com.fss.common.uiModule.showcaseview.targets.Target;
+import com.fss.common.uiModule.showcaseview.targets.ViewTarget;
 import com.fss.common.demo.R;
 
 

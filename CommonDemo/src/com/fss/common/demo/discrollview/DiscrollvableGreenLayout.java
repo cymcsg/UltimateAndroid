@@ -6,7 +6,7 @@ import android.graphics.Color;
 import android.util.AttributeSet;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.fss.Common.uiModule.discrollview.Discrollvable;
+import com.fss.common.uiModule.discrollview.Discrollvable;
 import com.fss.common.demo.R;
 
 

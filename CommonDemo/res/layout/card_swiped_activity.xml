@@ -5,7 +5,7 @@
               android:layout_height="fill_parent"
               android:orientation="vertical">
 
-    <com.fss.Common.uiModule.cardsSwiped.view.CardContainer
+    <com.fss.common.uiModule.cardsSwiped.view.CardContainer
         android:id="@+id/layoutview"
         android:layout_width="fill_parent"
         android:layout_height="0dp"

@@ -4,8 +4,8 @@ import android.os.Bundle;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
-import com.fss.Common.ui.HomeasUpActionbarActivity;
-import com.fss.Common.uiModule.panningview.PanningView;
+import com.fss.common.ui.HomeasUpActionbarActivity;
+import com.fss.common.uiModule.panningview.PanningView;
 import com.fss.common.demo.R;
 
 public class PanningViewActivity extends HomeasUpActionbarActivity {

@@ -7,10 +7,10 @@ import android.os.Message;
 import android.widget.ImageView;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
-import com.fss.Common.commonUtils.basicUtils.HandlerUtils;
-import com.fss.Common.ui.HomeasUpActionbarActivity;
-import com.fss.Common.uiModule.photoview.PhotoView;
-import com.fss.Common.uiModule.photoview.PhotoViewAttacher;
+import com.fss.common.commonUtils.basicUtils.HandlerUtils;
+import com.fss.common.ui.HomeasUpActionbarActivity;
+import com.fss.common.uiModule.photoview.PhotoView;
+import com.fss.common.uiModule.photoview.PhotoViewAttacher;
 import com.fss.common.demo.R;
 
 /**

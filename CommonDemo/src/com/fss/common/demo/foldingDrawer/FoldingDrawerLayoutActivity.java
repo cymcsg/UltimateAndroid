@@ -36,9 +36,9 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import com.fss.Common.commonUtils.basicUtils.HandlerUtils;
-import com.fss.Common.commonUtils.logUtils.Logs;
-import com.fss.Common.uiModule.foldingLayout.FoldingDrawerLayout;
+import com.fss.common.commonUtils.basicUtils.HandlerUtils;
+import com.fss.common.commonUtils.logUtils.Logs;
+import com.fss.common.uiModule.foldingLayout.FoldingDrawerLayout;
 import com.fss.common.demo.R;
 
 

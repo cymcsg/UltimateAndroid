@@ -25,14 +25,14 @@ import android.widget.Toast;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
-import com.fss.Common.commonUtils.logUtils.Logs;
-import com.fss.Common.commonUtils.urlUtils.HttpsUtils;
-import com.fss.Common.uiModule.customFonts.CalligraphyContextWrapper;
-import com.fss.Common.uiModule.nineoldandroids.animation.Animator;
-import com.fss.Common.ui.ToastUtil;
-import com.fss.Common.uiModule.passcodelock.AppLockManager;
-import com.fss.Common.uiModule.shimmer.Shimmer;
-import com.fss.Common.uiModule.shimmer.ShimmerTextView;
+import com.fss.common.commonUtils.logUtils.Logs;
+import com.fss.common.commonUtils.urlUtils.HttpsUtils;
+import com.fss.common.uiModule.customFonts.CalligraphyContextWrapper;
+import com.fss.common.uiModule.nineoldandroids.animation.Animator;
+import com.fss.common.ui.ToastUtil;
+import com.fss.common.uiModule.passcodelock.AppLockManager;
+import com.fss.common.uiModule.shimmer.Shimmer;
+import com.fss.common.uiModule.shimmer.ShimmerTextView;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 

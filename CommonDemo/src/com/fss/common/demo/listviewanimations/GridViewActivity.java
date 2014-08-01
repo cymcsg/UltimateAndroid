@@ -16,8 +16,8 @@ import android.view.ViewGroup;
 import android.widget.GridView;
 import android.widget.ImageView;
 
-import com.fss.Common.uiModule.listviewanimations.ArrayAdapter;
-import com.fss.Common.uiModule.listviewanimations.swinginadapters.prepared.SwingBottomInAnimationAdapter;
+import com.fss.common.uiModule.listviewanimations.ArrayAdapter;
+import com.fss.common.uiModule.listviewanimations.swinginadapters.prepared.SwingBottomInAnimationAdapter;
 import com.fss.common.demo.R;
 
 public class GridViewActivity extends ActionBarActivity {

@@ -11,7 +11,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import com.fss.Common.uiModule.parallaxscroll.ParallaxExpandableListView;
+import com.fss.common.uiModule.parallaxscroll.ParallaxExpandableListView;
 import com.fss.common.demo.R;
 
 public class SingleParallaxExpandableListView extends Activity {

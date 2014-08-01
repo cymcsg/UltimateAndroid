@@ -6,12 +6,12 @@ import android.os.Handler;
 import android.os.Message;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
-import com.fss.Common.commonUtils.basicUtils.HandlerUtils;
-import com.fss.Common.uiModule.nineoldandroids.animation.Animator;
-import com.fss.Common.uiModule.nineoldandroids.animation.ObjectAnimator;
-import com.fss.Common.uiModule.nineoldandroids.animation.ValueAnimator;
-import com.fss.Common.ui.HoloCircularProgressBar;
-import com.fss.Common.ui.HomeasUpActionbarActivity;
+import com.fss.common.commonUtils.basicUtils.HandlerUtils;
+import com.fss.common.uiModule.nineoldandroids.animation.Animator;
+import com.fss.common.uiModule.nineoldandroids.animation.ObjectAnimator;
+import com.fss.common.uiModule.nineoldandroids.animation.ValueAnimator;
+import com.fss.common.ui.HoloCircularProgressBar;
+import com.fss.common.ui.HomeasUpActionbarActivity;
 import com.fss.common.demo.R;
 
 /**

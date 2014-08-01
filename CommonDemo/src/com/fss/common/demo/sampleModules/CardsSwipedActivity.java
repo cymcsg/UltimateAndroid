@@ -23,9 +23,9 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Window;
-import com.fss.Common.uiModule.cardsSwiped.model.CardModel;
-import com.fss.Common.uiModule.cardsSwiped.view.CardContainer;
-import com.fss.Common.uiModule.cardsSwiped.view.SimpleCardStackAdapter;
+import com.fss.common.uiModule.cardsSwiped.model.CardModel;
+import com.fss.common.uiModule.cardsSwiped.view.CardContainer;
+import com.fss.common.uiModule.cardsSwiped.view.SimpleCardStackAdapter;
 import com.fss.common.demo.R;
 
 

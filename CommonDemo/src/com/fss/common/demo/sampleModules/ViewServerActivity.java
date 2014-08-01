@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-import com.fss.Common.commonUtils.moduleUtils.ViewServer;
+import com.fss.common.commonUtils.moduleUtils.ViewServer;
 import com.fss.common.demo.R;
 
 public class ViewServerActivity extends Activity {

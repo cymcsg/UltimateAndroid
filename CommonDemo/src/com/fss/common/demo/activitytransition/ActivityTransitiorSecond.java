@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
-import com.fss.Common.ui.ActivityAnimator;
+import com.fss.common.ui.ActivityAnimator;
 import com.fss.common.demo.R;
 
 public class ActivityTransitiorSecond extends Activity

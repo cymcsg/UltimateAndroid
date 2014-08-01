@@ -6,10 +6,10 @@ import android.os.Bundle;
 import android.widget.ViewSwitcher;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
-import com.fss.Common.ui.HomeasUpActionbarActivity;
-import com.fss.Common.uiModule.kenburnsview.KenBurnsView;
-import com.fss.Common.uiModule.kenburnsview.RandomTransitionGenerator;
-import com.fss.Common.uiModule.kenburnsview.Transition;
+import com.fss.common.ui.HomeasUpActionbarActivity;
+import com.fss.common.uiModule.kenburnsview.KenBurnsView;
+import com.fss.common.uiModule.kenburnsview.RandomTransitionGenerator;
+import com.fss.common.uiModule.kenburnsview.Transition;
 import com.fss.common.demo.R;
 
 public class KenBurnsViewActivity extends HomeasUpActionbarActivity {

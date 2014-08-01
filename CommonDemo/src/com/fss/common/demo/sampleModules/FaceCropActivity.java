@@ -5,8 +5,8 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
-import com.fss.Common.ui.HomeasUpActionbarActivity;
-import com.fss.Common.uiModule.facecropper.FaceCropper;
+import com.fss.common.ui.HomeasUpActionbarActivity;
+import com.fss.common.uiModule.facecropper.FaceCropper;
 import com.fss.common.demo.R;
 
 public class FaceCropActivity extends HomeasUpActionbarActivity {

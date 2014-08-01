@@ -25,7 +25,7 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.fss.Common.uiModule.listviewanimations.ArrayAdapter;
+import com.fss.common.uiModule.listviewanimations.ArrayAdapter;
 import com.fss.common.demo.R;
 
 public class ListAnimationListActivity extends BaseActivity {

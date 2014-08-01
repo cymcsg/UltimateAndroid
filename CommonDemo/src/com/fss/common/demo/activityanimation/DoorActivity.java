@@ -1,7 +1,7 @@
 package com.fss.common.demo.activityanimation;
 
 import android.os.Bundle;
-import com.fss.Common.uiModule.activityanimation.AnimatedDoorActivity;
+import com.fss.common.uiModule.activityanimation.AnimatedDoorActivity;
 import com.fss.common.demo.R;
 
 

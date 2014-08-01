@@ -28,13 +28,13 @@ import android.widget.TextView;
 import com.fss.common.demo.R;
 import com.fss.common.demo.listviewanimations.ListAnimationListActivity;
 
-import com.fss.Common.uiModule.listviewanimations.ArrayAdapter;
-import com.fss.Common.uiModule.listviewanimations.swinginadapters.AnimationAdapter;
-import com.fss.Common.uiModule.listviewanimations.swinginadapters.prepared.AlphaInAnimationAdapter;
-import com.fss.Common.uiModule.listviewanimations.swinginadapters.prepared.ScaleInAnimationAdapter;
-import com.fss.Common.uiModule.listviewanimations.swinginadapters.prepared.SwingBottomInAnimationAdapter;
-import com.fss.Common.uiModule.listviewanimations.swinginadapters.prepared.SwingLeftInAnimationAdapter;
-import com.fss.Common.uiModule.listviewanimations.swinginadapters.prepared.SwingRightInAnimationAdapter;
+import com.fss.common.uiModule.listviewanimations.ArrayAdapter;
+import com.fss.common.uiModule.listviewanimations.swinginadapters.AnimationAdapter;
+import com.fss.common.uiModule.listviewanimations.swinginadapters.prepared.AlphaInAnimationAdapter;
+import com.fss.common.uiModule.listviewanimations.swinginadapters.prepared.ScaleInAnimationAdapter;
+import com.fss.common.uiModule.listviewanimations.swinginadapters.prepared.SwingBottomInAnimationAdapter;
+import com.fss.common.uiModule.listviewanimations.swinginadapters.prepared.SwingLeftInAnimationAdapter;
+import com.fss.common.uiModule.listviewanimations.swinginadapters.prepared.SwingRightInAnimationAdapter;
 
 import java.util.ArrayList;
 

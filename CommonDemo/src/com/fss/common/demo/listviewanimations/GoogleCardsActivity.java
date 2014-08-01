@@ -30,11 +30,11 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.fss.Common.uiModule.listviewanimations.itemmanipulation.OnDismissCallback;
-import com.fss.Common.uiModule.listviewanimations.ArrayAdapter;
+import com.fss.common.uiModule.listviewanimations.itemmanipulation.OnDismissCallback;
+import com.fss.common.uiModule.listviewanimations.ArrayAdapter;
 
-import com.fss.Common.uiModule.listviewanimations.itemmanipulation.swipedismiss.SwipeDismissAdapter;
-import com.fss.Common.uiModule.listviewanimations.swinginadapters.prepared.SwingBottomInAnimationAdapter;
+import com.fss.common.uiModule.listviewanimations.itemmanipulation.swipedismiss.SwipeDismissAdapter;
+import com.fss.common.uiModule.listviewanimations.swinginadapters.prepared.SwingBottomInAnimationAdapter;
 import com.fss.common.demo.R;
 
 public class GoogleCardsActivity extends BaseActivity implements OnDismissCallback {

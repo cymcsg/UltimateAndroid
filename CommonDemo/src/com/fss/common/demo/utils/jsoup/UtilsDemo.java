@@ -2,7 +2,7 @@
 
 package com.fss.common.demo.utils.jsoup;
 
-import com.fss.Common.commonUtils.logUtils.Logs;
+import com.fss.common.commonUtils.logUtils.Logs;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;

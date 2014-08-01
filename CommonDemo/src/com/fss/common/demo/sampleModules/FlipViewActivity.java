@@ -13,10 +13,10 @@ import android.widget.Button;
 import android.widget.TextView;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
-import com.fss.Common.commonUtils.basicUtils.HandlerUtils;
-import com.fss.Common.uiModule.flipViews.flipview.FlipView;
-import com.fss.Common.uiModule.flipViews.flipview.OverFlipMode;
-import com.fss.Common.uiModule.smoothprogressbar.SmoothProgressBar;
+import com.fss.common.commonUtils.basicUtils.HandlerUtils;
+import com.fss.common.uiModule.flipViews.flipview.FlipView;
+import com.fss.common.uiModule.flipViews.flipview.OverFlipMode;
+import com.fss.common.uiModule.smoothprogressbar.SmoothProgressBar;
 import com.fss.common.demo.R;
 
 import java.util.ArrayList;

@@ -31,8 +31,8 @@ import android.widget.Toast;
 import com.fss.common.demo.R;
 import com.fss.common.demo.listviewanimations.ListAnimationListActivity;
 
-import com.fss.Common.uiModule.listviewanimations.itemmanipulation.ExpandableListItemAdapter;
-import com.fss.Common.uiModule.listviewanimations.swinginadapters.prepared.AlphaInAnimationAdapter;
+import com.fss.common.uiModule.listviewanimations.itemmanipulation.ExpandableListItemAdapter;
+import com.fss.common.uiModule.listviewanimations.swinginadapters.prepared.AlphaInAnimationAdapter;
 
 import java.util.List;
 

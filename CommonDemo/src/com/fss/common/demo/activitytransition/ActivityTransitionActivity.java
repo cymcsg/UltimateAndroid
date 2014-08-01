@@ -10,7 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
-import com.fss.Common.ui.ActivityAnimator;
+import com.fss.common.ui.ActivityAnimator;
 import com.fss.common.demo.R;
 
 public class ActivityTransitionActivity extends Activity implements OnItemClickListener

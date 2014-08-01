@@ -26,12 +26,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-import com.fss.Common.uiModule.listviewanimations.ArrayAdapter;
-import com.fss.Common.uiModule.listviewanimations.itemmanipulation.OnDismissCallback;
-import com.fss.Common.uiModule.listviewanimations.itemmanipulation.swipedismiss.SwipeDismissAdapter;
-import com.fss.Common.uiModule.listviewanimations.itemmanipulation.swipedismiss.contextualundo.ContextualUndoAdapter;
-import com.fss.Common.uiModule.listviewanimations.itemmanipulation.swipedismiss.contextualundo.ContextualUndoAdapter.CountDownFormatter;
-import com.fss.Common.uiModule.listviewanimations.itemmanipulation.swipedismiss.contextualundo.ContextualUndoAdapter.DeleteItemCallback;
+import com.fss.common.uiModule.listviewanimations.ArrayAdapter;
+import com.fss.common.uiModule.listviewanimations.itemmanipulation.OnDismissCallback;
+import com.fss.common.uiModule.listviewanimations.itemmanipulation.swipedismiss.SwipeDismissAdapter;
+import com.fss.common.uiModule.listviewanimations.itemmanipulation.swipedismiss.contextualundo.ContextualUndoAdapter;
+import com.fss.common.uiModule.listviewanimations.itemmanipulation.swipedismiss.contextualundo.ContextualUndoAdapter.CountDownFormatter;
+import com.fss.common.uiModule.listviewanimations.itemmanipulation.swipedismiss.contextualundo.ContextualUndoAdapter.DeleteItemCallback;
 import com.fss.common.demo.R;
 import com.fss.common.demo.listviewanimations.ListAnimationListActivity;
 

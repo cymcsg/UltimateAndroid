@@ -31,9 +31,9 @@ import android.widget.ListView;
 import com.fss.common.demo.R;
 import com.fss.common.demo.listviewanimations.BaseActivity;
 import com.fss.common.demo.listviewanimations.ListAnimationListActivity;
-import com.fss.Common.uiModule.listviewanimations.ArrayAdapter;
-import com.fss.Common.uiModule.listviewanimations.itemmanipulation.AnimateDismissAdapter;
-import com.fss.Common.uiModule.listviewanimations.itemmanipulation.OnDismissCallback;
+import com.fss.common.uiModule.listviewanimations.ArrayAdapter;
+import com.fss.common.uiModule.listviewanimations.itemmanipulation.AnimateDismissAdapter;
+import com.fss.common.uiModule.listviewanimations.itemmanipulation.OnDismissCallback;
 
 import java.util.ArrayList;
 import java.util.List;

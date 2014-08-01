@@ -14,7 +14,7 @@ import android.widget.BaseAdapter;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.TextView;
-import com.fss.Common.uiModule.listviewfilter.IPinnedHeader;
+import com.fss.common.uiModule.listviewfilter.IPinnedHeader;
 import com.fss.common.demo.R;
 import com.fss.common.demo.listviewfilter.ui.ListViewFilterActivity;
 import com.fss.common.demo.listviewfilter.ui.PinnedHeaderListView;

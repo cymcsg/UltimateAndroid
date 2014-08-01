@@ -37,8 +37,8 @@ import android.widget.GridView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.fss.Common.uiModule.stickygridheaders.StickyGridHeadersGridView;
-import com.fss.Common.uiModule.stickygridheaders.StickyGridHeadersSimpleArrayAdapter;
+import com.fss.common.uiModule.stickygridheaders.StickyGridHeadersGridView;
+import com.fss.common.uiModule.stickygridheaders.StickyGridHeadersSimpleArrayAdapter;
 import com.fss.common.demo.R;
 
 /**

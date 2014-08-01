@@ -25,8 +25,8 @@ import android.view.View;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-import com.fss.Common.uiModule.listviewfilter.IIndexBarFilter;
-import com.fss.Common.uiModule.listviewfilter.IPinnedHeader;
+import com.fss.common.uiModule.listviewfilter.IIndexBarFilter;
+import com.fss.common.uiModule.listviewfilter.IPinnedHeader;
 import com.fss.common.demo.listviewfilter.PinnedHeaderAdapter;
 
 

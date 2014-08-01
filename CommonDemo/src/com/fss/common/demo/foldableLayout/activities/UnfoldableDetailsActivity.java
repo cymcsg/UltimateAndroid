@@ -9,9 +9,9 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.fss.Common.commonUtils.logUtils.Logs;
-import com.fss.Common.uiModule.foldablelayout.UnfoldableView;
-import com.fss.Common.uiModule.foldablelayout.shading.GlanceFoldShading;
+import com.fss.common.commonUtils.logUtils.Logs;
+import com.fss.common.uiModule.foldablelayout.UnfoldableView;
+import com.fss.common.uiModule.foldablelayout.shading.GlanceFoldShading;
 import com.fss.common.demo.R;
 import com.fss.common.demo.foldableLayout.items.Painting;
 import com.fss.common.demo.foldableLayout.items.PaintingsAdapter;

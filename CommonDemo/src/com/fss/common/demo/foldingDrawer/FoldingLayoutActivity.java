@@ -36,9 +36,9 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ImageView;
 import android.widget.SeekBar;
-import com.fss.Common.uiModule.foldingLayout.BaseFoldingLayout;
-import com.fss.Common.uiModule.foldingLayout.FoldingLayout;
-import com.fss.Common.uiModule.foldingLayout.listener.OnFoldListener;
+import com.fss.common.uiModule.foldingLayout.BaseFoldingLayout;
+import com.fss.common.uiModule.foldingLayout.FoldingLayout;
+import com.fss.common.uiModule.foldingLayout.listener.OnFoldListener;
 import com.fss.common.demo.R;
 
 

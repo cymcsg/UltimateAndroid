@@ -10,7 +10,7 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.fss.Common.uiModule.huitanScrollView.PullScrollView;
+import com.fss.common.uiModule.huitanScrollView.PullScrollView;
 import com.fss.common.demo.R;
 
 

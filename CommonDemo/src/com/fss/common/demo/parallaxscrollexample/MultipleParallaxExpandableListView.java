@@ -9,7 +9,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import com.fss.Common.uiModule.parallaxscroll.ParallaxExpandableListView;
+import com.fss.common.uiModule.parallaxscroll.ParallaxExpandableListView;
 import com.fss.common.demo.R;
 
 public class MultipleParallaxExpandableListView extends Activity {

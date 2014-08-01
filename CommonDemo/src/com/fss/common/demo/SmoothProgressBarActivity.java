@@ -10,10 +10,10 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
-import com.fss.Common.commonUtils.basicUtils.BasicUtils;
-import com.fss.Common.commonUtils.basicUtils.HandlerUtils;
-import com.fss.Common.uiModule.smoothprogressbar.SmoothProgressBar;
-import com.fss.Common.uiModule.tileView.tileview.TileView;
+import com.fss.common.commonUtils.basicUtils.BasicUtils;
+import com.fss.common.commonUtils.basicUtils.HandlerUtils;
+import com.fss.common.uiModule.smoothprogressbar.SmoothProgressBar;
+import com.fss.common.uiModule.tileView.tileview.TileView;
 
 public class SmoothProgressBarActivity extends ActionBarActivity {
 

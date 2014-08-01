@@ -14,7 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.TextView;
-import com.fss.Common.ui.PagerSlidingTabStrip;
+import com.fss.common.ui.PagerSlidingTabStrip;
 import com.fss.common.demo.R;
 
 

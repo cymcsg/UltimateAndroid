@@ -66,7 +66,7 @@
         <activity android:name=".activitytransition.ActivityTransitiorSecond"></activity>
         <provider
                 android:name="android.support.v4.content.FileProvider"
-                android:authorities="com.fss.Common.demo.fileprovider"
+                android:authorities="com.fss.common.demo.fileprovider"
                 android:grantUriPermissions="true"
                 android:exported="false">
             <meta-data
@@ -76,18 +76,18 @@
 
 
         <activity
-                android:name="com.fss.Common.uiModule.passcodelock.PasscodeUnlockActivity"
+                android:name="com.fss.common.uiModule.passcodelock.PasscodeUnlockActivity"
                 android:screenOrientation="portrait"
                 android:windowSoftInputMode="stateHidden">
         </activity>
         <activity
-                android:name="com.fss.Common.uiModule.passcodelock.PasscodePreferencesActivity"
+                android:name="com.fss.common.uiModule.passcodelock.PasscodePreferencesActivity"
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:screenOrientation="portrait"
                 android:windowSoftInputMode="stateHidden">
         </activity>
         <activity
-                android:name="com.fss.Common.uiModule.passcodelock.PasscodeManagePasswordActivity"
+                android:name="com.fss.common.uiModule.passcodelock.PasscodeManagePasswordActivity"
                 android:screenOrientation="portrait"
                 android:windowSoftInputMode="stateHidden">
         </activity>

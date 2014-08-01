@@ -17,8 +17,8 @@ import android.view.View;
 import android.widget.ImageView;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
-import com.fss.Common.commonUtils.logUtils.Logs;
-import com.fss.Common.uiModule.rebound.*;
+import com.fss.common.commonUtils.logUtils.Logs;
+import com.fss.common.uiModule.rebound.*;
 import com.fss.common.demo.R;
 
 public class ReboundActivitySimple extends Activity {

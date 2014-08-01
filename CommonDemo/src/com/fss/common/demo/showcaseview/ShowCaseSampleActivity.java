@@ -15,10 +15,10 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import com.fss.Common.uiModule.showcaseview.ApiUtils;
-import com.fss.Common.uiModule.showcaseview.OnShowcaseEventListener;
-import com.fss.Common.uiModule.showcaseview.ShowcaseView;
-import com.fss.Common.uiModule.showcaseview.targets.ViewTarget;
+import com.fss.common.uiModule.showcaseview.ApiUtils;
+import com.fss.common.uiModule.showcaseview.OnShowcaseEventListener;
+import com.fss.common.uiModule.showcaseview.ShowcaseView;
+import com.fss.common.uiModule.showcaseview.targets.ViewTarget;
 import com.fss.common.demo.R;
 import com.fss.common.demo.showcaseview.animations.AnimationSampleActivity;
 

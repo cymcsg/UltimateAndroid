@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
-import com.fss.Common.commonUtils.logUtils.Logs;
+import com.fss.common.commonUtils.logUtils.Logs;
 import com.fss.common.demo.R;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;

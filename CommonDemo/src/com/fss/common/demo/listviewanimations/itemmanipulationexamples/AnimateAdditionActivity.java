@@ -26,8 +26,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-import com.fss.Common.uiModule.listviewanimations.ArrayAdapter;
-import com.fss.Common.uiModule.listviewanimations.itemmanipulation.AnimateAdditionAdapter;
+import com.fss.common.uiModule.listviewanimations.ArrayAdapter;
+import com.fss.common.uiModule.listviewanimations.itemmanipulation.AnimateAdditionAdapter;
 import com.fss.common.demo.R;
 import com.fss.common.demo.listviewanimations.ListAnimationListActivity;
 

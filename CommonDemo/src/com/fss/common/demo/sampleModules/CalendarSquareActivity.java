@@ -10,8 +10,8 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Toast;
-import com.fss.Common.commonUtils.logUtils.Logs;
-import com.fss.Common.uiModule.timessquare.CalendarPickerView;
+import com.fss.common.commonUtils.logUtils.Logs;
+import com.fss.common.uiModule.timessquare.CalendarPickerView;
 import com.fss.common.demo.R;
 
 import java.util.ArrayList;

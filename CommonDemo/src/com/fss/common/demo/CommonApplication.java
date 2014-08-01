@@ -1,9 +1,9 @@
 package com.fss.common.demo;
 
 import android.app.Application;
-import com.fss.Common.commonUtils.urlUtils.UniversalImageLoader;
-import com.fss.Common.uiModule.customFonts.CalligraphyConfig;
-import com.fss.Common.uiModule.passcodelock.AppLockManager;
+import com.fss.common.commonUtils.urlUtils.UniversalImageLoader;
+import com.fss.common.uiModule.customFonts.CalligraphyConfig;
+import com.fss.common.uiModule.passcodelock.AppLockManager;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 

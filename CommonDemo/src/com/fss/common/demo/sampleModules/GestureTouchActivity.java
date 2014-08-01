@@ -11,9 +11,9 @@ import android.view.ScaleGestureDetector;
 import android.view.View;
 import android.view.View.OnTouchListener;
 import android.widget.ImageView;
-import com.fss.Common.uiModule.gesturedetectors.MoveGestureDetector;
-import com.fss.Common.uiModule.gesturedetectors.RotateGestureDetector;
-import com.fss.Common.uiModule.gesturedetectors.ShoveGestureDetector;
+import com.fss.common.uiModule.gesturedetectors.MoveGestureDetector;
+import com.fss.common.uiModule.gesturedetectors.RotateGestureDetector;
+import com.fss.common.uiModule.gesturedetectors.ShoveGestureDetector;
 import com.fss.common.demo.R;
 
 

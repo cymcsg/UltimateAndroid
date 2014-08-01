@@ -19,9 +19,9 @@ import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.fss.Common.uiModule.listviewanimations.ArrayAdapter;
-import com.fss.Common.uiModule.listviewanimations.swinginadapters.prepared.AlphaInAnimationAdapter;
-import com.fss.Common.uiModule.listviewanimations.widget.DynamicListView;
+import com.fss.common.uiModule.listviewanimations.ArrayAdapter;
+import com.fss.common.uiModule.listviewanimations.swinginadapters.prepared.AlphaInAnimationAdapter;
+import com.fss.common.uiModule.listviewanimations.widget.DynamicListView;
 import com.fss.common.demo.R;
 import com.fss.common.demo.listviewanimations.ListAnimationListActivity;
 

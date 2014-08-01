@@ -29,7 +29,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import com.fss.Common.uiModule.foldingLayout.FoldingPaneLayout;
+import com.fss.common.uiModule.foldingLayout.FoldingPaneLayout;
 import com.fss.common.demo.R;
 
 
