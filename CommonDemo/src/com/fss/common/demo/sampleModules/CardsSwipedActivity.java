@@ -18,7 +18,6 @@
 package com.fss.common.demo.sampleModules;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.Log;

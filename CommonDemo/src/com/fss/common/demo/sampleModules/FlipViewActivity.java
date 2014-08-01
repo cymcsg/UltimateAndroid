@@ -9,14 +9,11 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.view.*;
 import android.widget.BaseAdapter;
-import android.widget.Button;
 import android.widget.TextView;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
-import com.fss.common.commonUtils.basicUtils.HandlerUtils;
 import com.fss.common.uiModule.flipViews.flipview.FlipView;
 import com.fss.common.uiModule.flipViews.flipview.OverFlipMode;
-import com.fss.common.uiModule.smoothprogressbar.SmoothProgressBar;
 import com.fss.common.demo.R;
 
 import java.util.ArrayList;

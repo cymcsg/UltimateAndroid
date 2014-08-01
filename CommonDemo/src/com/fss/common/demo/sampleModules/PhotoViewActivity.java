@@ -9,7 +9,6 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 import com.fss.common.commonUtils.basicUtils.HandlerUtils;
 import com.fss.common.ui.HomeasUpActionbarActivity;
-import com.fss.common.uiModule.photoview.PhotoView;
 import com.fss.common.uiModule.photoview.PhotoViewAttacher;
 import com.fss.common.demo.R;
 

@@ -1,7 +1,6 @@
 package com.fss.common.demo.foldableLayout.activities;
 
 import android.graphics.Bitmap;
-import android.graphics.Typeface;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.view.View;

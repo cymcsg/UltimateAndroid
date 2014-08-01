@@ -30,11 +30,8 @@ import com.fss.common.commonUtils.urlUtils.HttpsUtils;
 import com.fss.common.uiModule.customFonts.CalligraphyContextWrapper;
 import com.fss.common.uiModule.nineoldandroids.animation.Animator;
 import com.fss.common.ui.ToastUtil;
-import com.fss.common.uiModule.passcodelock.AppLockManager;
 import com.fss.common.uiModule.shimmer.Shimmer;
 import com.fss.common.uiModule.shimmer.ShimmerTextView;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
 
 
 public class MainActivity extends ActionBarActivity {

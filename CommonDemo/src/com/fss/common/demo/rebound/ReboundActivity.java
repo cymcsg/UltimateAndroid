@@ -10,7 +10,6 @@
 
 package com.fss.common.demo.rebound;
 
-import android.app.Activity;
 import android.os.Bundle;
 import com.fss.common.uiModule.swipeback.SwipeBackActivity;
 import com.fss.common.uiModule.swipeback.SwipeBackLayout;

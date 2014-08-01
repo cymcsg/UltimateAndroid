@@ -1,14 +1,9 @@
 package com.fss.common.demo.parallaxscrollexample;
 
 import android.app.Activity;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.widget.TextView;
 import com.fss.common.uiModule.parallaxscroll.ParallaxListView;
 import com.fss.common.demo.R;

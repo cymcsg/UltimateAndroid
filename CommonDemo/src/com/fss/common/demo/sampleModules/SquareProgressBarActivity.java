@@ -1,26 +1,14 @@
 package com.fss.common.demo.sampleModules;
 
-import android.graphics.Paint;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.ActionBarActivity;
-import android.widget.ImageView;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
-import com.fss.common.commonUtils.basicUtils.BasicUtils;
-import com.fss.common.commonUtils.basicUtils.HandlerUtils;
 import com.fss.common.commonUtils.logUtils.Logs;
-import com.fss.common.ui.HomeasUpActionbarActivity;
-import com.fss.common.uiModule.photoview.PhotoViewAttacher;
 import com.fss.common.uiModule.square_progressbar.SquareProgressBar;
-import com.fss.common.uiModule.square_progressbar.utils.PercentStyle;
-import com.fss.common.uiModule.tileView.os.AsyncTask;
 import com.fss.common.demo.R;
-
-import java.util.Timer;
-import java.util.TimerTask;
 
 /**
  * Created by cym on 14-6-26.

@@ -1,20 +1,13 @@
 package com.fss.common.demo.dynamicgrid.example;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.support.v4.app.TaskStackBuilder;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ScrollView;
-import android.widget.TextView;
 import android.widget.Toast;
-import com.fss.common.commonUtils.basicUtils.HandlerUtils;
 import com.fss.common.uiModule.dynamicgrid.DynamicGridView;
 import com.fss.common.demo.R;
 
