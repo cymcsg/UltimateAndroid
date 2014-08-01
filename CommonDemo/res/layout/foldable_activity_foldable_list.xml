@@ -1,4 +1,4 @@
-<com.fss.common.uiModule.foldablelayout.FoldableListLayout
+<com.fss.commons.uiModule.foldablelayout.FoldableListLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/foldable_list"
         android:layout_width="match_parent"

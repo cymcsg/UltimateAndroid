@@ -4,69 +4,69 @@
           android:versionCode="1"
           android:versionName="1.0">
     <uses-sdk android:minSdkVersion="8"/>
-    <application android:label="@string/app_name" android:name=".CommonApplication" android:theme="@style/AppTheme"
+    <application android:label="@string/app_name" android:name="com.fss.commons.demo.CommonApplication" android:theme="@style/AppTheme"
                  android:icon="@drawable/test_back">
-        <activity android:name=".MainActivity"
+        <activity android:name="com.fss.commons.demo.MainActivity"
                   android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".SmoothProgressBarActivity"></activity>
-        <activity android:name=".dynamicgrid.example.DynamicGridActivity"></activity>
-        <activity android:name=".cooldraganddrop.CoolDragAndDropActivity"></activity>
-        <activity android:name=".stickygridheadersexample.StickGridItemListActivity"></activity>
-        <activity android:name=".listviewfilter.ui.ListViewFilterActivity"></activity>
-        <activity android:name=".sampleModules.FlipViewActivity"></activity>
-        <activity android:name=".sampleModules.PhotoViewActivity"></activity>
-        <activity android:name=".sampleModules.SquareProgressBarActivity"></activity>
-        <activity android:name=".sampleModules.CircularBarActivity"></activity>
-        <activity android:name=".foldingDrawer.FoldingActivitys"></activity>
-        <activity android:name=".foldingDrawer.FoldingDrawerLayoutActivity"></activity>
-        <activity android:name=".foldingDrawer.FoldingLayoutActivity"></activity>
-        <activity android:name=".foldingDrawer.FoldingPaneLayoutActivity"></activity>
-        <activity android:name=".foldableLayout.activities.FoldableListActivity"></activity>
-        <activity android:name=".foldableLayout.activities.UnfoldableDetailsActivity"></activity>
-        <activity android:name=".sampleModules.CalendarSquareActivity"></activity>
-        <activity android:name=".sampleModules.KenBurnsViewActivity"></activity>
-        <activity android:name=".discrollview.DiscrollActivity"></activity>
-        <activity android:name=".sampleModules.PanningViewActivity"></activity>
-        <activity android:name=".parallaxscrollexample.ParallaxScrollActivity"></activity>
-        <activity android:name=".parallaxscrollexample.SingleParallaxExpandableListView"></activity>
-        <activity android:name=".parallaxscrollexample.SingleParallaxListView"></activity>
-        <activity android:name=".parallaxscrollexample.SingleParallaxScrollView"></activity>
-        <activity android:name=".parallaxscrollexample.MultipleParallaxExpandableListView"></activity>
-        <activity android:name=".parallaxscrollexample.MultipleParallaxListView"></activity>
-        <activity android:name=".parallaxscrollexample.MultipleParallaxScrollView"></activity>
-        <activity android:name=".sampleModules.ProgressbarWheelActivity"></activity>
-        <activity android:name=".viewpagerSlidingTab.ViewpagerSlidingTabsActivity"></activity>
-        <activity android:name=".rebound.ReboundActivity"></activity>
-        <activity android:name=".rebound.ReboundActivitySimple"></activity>
-        <activity android:name=".sampleModules.FaceCropActivity"></activity>
-        <activity android:name=".listviewanimations.ListAnimationActivity"></activity>
-        <activity android:name=".listviewanimations.ListAnimationListActivity"></activity>
-        <activity android:name=".listviewanimations.GoogleCardsActivity"></activity>
-        <activity android:name=".listviewanimations.GridViewActivity"></activity>
-        <activity android:name=".listviewanimations.itemmanipulationexamples.AnimateAdditionActivity"></activity>
-        <activity android:name=".listviewanimations.itemmanipulationexamples.DragAndDropActivity"></activity>
-        <activity android:name=".listviewanimations.appearanceexamples.AppearanceExamplesActivity"></activity>
+        <activity android:name="com.fss.commons.demo.SmoothProgressBarActivity"></activity>
+        <activity android:name="com.fss.commons.demo.dynamicgrid.example.DynamicGridActivity"></activity>
+        <activity android:name="com.fss.commons.demo.cooldraganddrop.CoolDragAndDropActivity"></activity>
+        <activity android:name="com.fss.commons.demo.stickygridheadersexample.StickGridItemListActivity"></activity>
+        <activity android:name="com.fss.commons.demo.listviewfilter.ui.ListViewFilterActivity"></activity>
+        <activity android:name="com.fss.commons.demo.sampleModules.FlipViewActivity"></activity>
+        <activity android:name="com.fss.commons.demo.sampleModules.PhotoViewActivity"></activity>
+        <activity android:name="com.fss.commons.demo.sampleModules.SquareProgressBarActivity"></activity>
+        <activity android:name="com.fss.commons.demo.sampleModules.CircularBarActivity"></activity>
+        <activity android:name="com.fss.commons.demo.foldingDrawer.FoldingActivitys"></activity>
+        <activity android:name="com.fss.commons.demo.foldingDrawer.FoldingDrawerLayoutActivity"></activity>
+        <activity android:name="com.fss.commons.demo.foldingDrawer.FoldingLayoutActivity"></activity>
+        <activity android:name="com.fss.commons.demo.foldingDrawer.FoldingPaneLayoutActivity"></activity>
+        <activity android:name="com.fss.commons.demo.foldableLayout.activities.FoldableListActivity"></activity>
+        <activity android:name="com.fss.commons.demo.foldableLayout.activities.UnfoldableDetailsActivity"></activity>
+        <activity android:name="com.fss.commons.demo.sampleModules.CalendarSquareActivity"></activity>
+        <activity android:name="com.fss.commons.demo.sampleModules.KenBurnsViewActivity"></activity>
+        <activity android:name="com.fss.commons.demo.discrollview.DiscrollActivity"></activity>
+        <activity android:name="com.fss.commons.demo.sampleModules.PanningViewActivity"></activity>
+        <activity android:name="com.fss.commons.demo.parallaxscrollexample.ParallaxScrollActivity"></activity>
+        <activity android:name="com.fss.commons.demo.parallaxscrollexample.SingleParallaxExpandableListView"></activity>
+        <activity android:name="com.fss.commons.demo.parallaxscrollexample.SingleParallaxListView"></activity>
+        <activity android:name="com.fss.commons.demo.parallaxscrollexample.SingleParallaxScrollView"></activity>
+        <activity android:name="com.fss.commons.demo.parallaxscrollexample.MultipleParallaxExpandableListView"></activity>
+        <activity android:name="com.fss.commons.demo.parallaxscrollexample.MultipleParallaxListView"></activity>
+        <activity android:name="com.fss.commons.demo.parallaxscrollexample.MultipleParallaxScrollView"></activity>
+        <activity android:name="com.fss.commons.demo.sampleModules.ProgressbarWheelActivity"></activity>
+        <activity android:name="com.fss.commons.demo.viewpagerSlidingTab.ViewpagerSlidingTabsActivity"></activity>
+        <activity android:name="com.fss.commons.demo.rebound.ReboundActivity"></activity>
+        <activity android:name="com.fss.commons.demo.rebound.ReboundActivitySimple"></activity>
+        <activity android:name="com.fss.commons.demo.sampleModules.FaceCropActivity"></activity>
+        <activity android:name="com.fss.commons.demo.listviewanimations.ListAnimationActivity"></activity>
+        <activity android:name="com.fss.commons.demo.listviewanimations.ListAnimationListActivity"></activity>
+        <activity android:name="com.fss.commons.demo.listviewanimations.GoogleCardsActivity"></activity>
+        <activity android:name="com.fss.commons.demo.listviewanimations.GridViewActivity"></activity>
+        <activity android:name="com.fss.commons.demo.listviewanimations.itemmanipulationexamples.AnimateAdditionActivity"></activity>
+        <activity android:name="com.fss.commons.demo.listviewanimations.itemmanipulationexamples.DragAndDropActivity"></activity>
+        <activity android:name="com.fss.commons.demo.listviewanimations.appearanceexamples.AppearanceExamplesActivity"></activity>
         <activity
-                android:name=".listviewanimations.itemmanipulationexamples.ItemManipulationsExamplesActivity"></activity>
+                android:name="com.fss.commons.demo.listviewanimations.itemmanipulationexamples.ItemManipulationsExamplesActivity"></activity>
 
-        <activity android:name=".listviewanimations.itemmanipulationexamples.ExpandableListItemActivity"></activity>
-        <activity android:name=".listviewanimations.itemmanipulationexamples.SwipeDismissActivity"></activity>
-        <activity android:name=".listviewanimations.itemmanipulationexamples.AnimateDismissActivity"></activity>
-        <activity android:name=".sampleModules.PullSplashActivity"></activity>
+        <activity android:name="com.fss.commons.demo.listviewanimations.itemmanipulationexamples.ExpandableListItemActivity"></activity>
+        <activity android:name="com.fss.commons.demo.listviewanimations.itemmanipulationexamples.SwipeDismissActivity"></activity>
+        <activity android:name="com.fss.commons.demo.listviewanimations.itemmanipulationexamples.AnimateDismissActivity"></activity>
+        <activity android:name="com.fss.commons.demo.sampleModules.PullSplashActivity"></activity>
 
-        <activity android:name=".utils.jsoup.UtilsDemoActivity"></activity>
+        <activity android:name="com.fss.commons.demo.utils.jsoup.UtilsDemoActivity"></activity>
 
-        <activity android:name=".sampleModules.ViewServerActivity"></activity>
-        <activity android:name=".activitytransition.ActivityTransitionActivity"></activity>
-        <activity android:name=".activitytransition.ActivityTransitiorSecond"></activity>
+        <activity android:name="com.fss.commons.demo.sampleModules.ViewServerActivity"></activity>
+        <activity android:name="com.fss.commons.demo.activitytransition.ActivityTransitionActivity"></activity>
+        <activity android:name="com.fss.commons.demo.activitytransition.ActivityTransitiorSecond"></activity>
         <provider
                 android:name="android.support.v4.content.FileProvider"
-                android:authorities="com.fss.common.demo.fileprovider"
+                android:authorities="com.fss.commons.demo.fileprovider"
                 android:grantUriPermissions="true"
                 android:exported="false">
             <meta-data
@@ -76,43 +76,43 @@
 
 
         <activity
-                android:name="com.fss.common.uiModule.passcodelock.PasscodeUnlockActivity"
+                android:name="com.fss.commons.uiModule.passcodelock.PasscodeUnlockActivity"
                 android:screenOrientation="portrait"
                 android:windowSoftInputMode="stateHidden">
         </activity>
         <activity
-                android:name="com.fss.common.uiModule.passcodelock.PasscodePreferencesActivity"
+                android:name="com.fss.commons.uiModule.passcodelock.PasscodePreferencesActivity"
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:screenOrientation="portrait"
                 android:windowSoftInputMode="stateHidden">
         </activity>
         <activity
-                android:name="com.fss.common.uiModule.passcodelock.PasscodeManagePasswordActivity"
+                android:name="com.fss.commons.uiModule.passcodelock.PasscodeManagePasswordActivity"
                 android:screenOrientation="portrait"
                 android:windowSoftInputMode="stateHidden">
         </activity>
-        <activity android:name=".sampleModules.GestureTouchActivity"></activity>
-        <activity android:name=".activityanimation.ActivityAnimationsActivity"
+        <activity android:name="com.fss.commons.demo.sampleModules.GestureTouchActivity"></activity>
+        <activity android:name="com.fss.commons.demo.activityanimation.ActivityAnimationsActivity"
                   android:theme="@style/AppTheme.Transparent"></activity>
-        <activity android:name=".activityanimation.SecondActivity"
+        <activity android:name="com.fss.commons.demo.activityanimation.SecondActivity"
                   android:theme="@style/AppTheme.Transparent"></activity>
-        <activity android:name=".activityanimation.ThirdActivity"
+        <activity android:name="com.fss.commons.demo.activityanimation.ThirdActivity"
                   android:theme="@style/AppTheme.Transparent"></activity>
-        <activity android:name=".activityanimation.DoorActivity" android:theme="@style/AppTheme.Transparent"></activity>
-        <activity android:name=".pullscrollview.PulldownViewActivity"></activity>
-        <activity android:name=".pullscrollview.PullScrollViewActivity"></activity>
-        <activity android:name=".pullscrollview.StretchViewActivity"></activity>
-        <activity android:name=".sampleModules.CardsSwipedActivity"></activity>
-        <activity android:name=".showcaseview.ShowCaseSampleActivity"></activity>
-        <activity android:name=".showcaseview.animations.AnimationSampleActivity"></activity>
-        <activity android:name=".showcaseview.legacy.MultipleShowcaseSampleActivity"></activity>
-        <activity android:name=".showcaseview.SingleShotActivity"></activity>
-        <activity android:name=".showcaseview.MemoryManagementTesting"></activity>
-        <activity android:name=".listbuddies.ListBuddiesActivity"></activity>
-        <activity android:name=".ResideMenuDemo.ResideMenuActivity"></activity>
+        <activity android:name="com.fss.commons.demo.activityanimation.DoorActivity" android:theme="@style/AppTheme.Transparent"></activity>
+        <activity android:name="com.fss.commons.demo.pullscrollview.PulldownViewActivity"></activity>
+        <activity android:name="com.fss.commons.demo.pullscrollview.PullScrollViewActivity"></activity>
+        <activity android:name="com.fss.commons.demo.pullscrollview.StretchViewActivity"></activity>
+        <activity android:name="com.fss.commons.demo.sampleModules.CardsSwipedActivity"></activity>
+        <activity android:name="com.fss.commons.demo.showcaseview.ShowCaseSampleActivity"></activity>
+        <activity android:name="com.fss.commons.demo.showcaseview.animations.AnimationSampleActivity"></activity>
+        <activity android:name="com.fss.commons.demo.showcaseview.legacy.MultipleShowcaseSampleActivity"></activity>
+        <activity android:name="com.fss.commons.demo.showcaseview.SingleShotActivity"></activity>
+        <activity android:name="com.fss.commons.demo.showcaseview.MemoryManagementTesting"></activity>
+        <activity android:name="com.fss.commons.demo.listbuddies.ListBuddiesActivity"></activity>
+        <activity android:name="com.fss.commons.demo.ResideMenuDemo.ResideMenuActivity"></activity>
 
-        <activity android:name=".sampleModules.AutofitTextViewActivity"></activity>
-        <activity android:name=".sampleModules.DraggableGridViewPagerTestActivity"></activity>
+        <activity android:name="com.fss.commons.demo.sampleModules.AutofitTextViewActivity"></activity>
+        <activity android:name="com.fss.commons.demo.sampleModules.DraggableGridViewPagerTestActivity"></activity>
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->

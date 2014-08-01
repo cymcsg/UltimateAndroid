@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.fss.common.uiModule.stickygridheaders.StickyGridHeadersGridView
+<com.fss.commons.uiModule.stickygridheaders.StickyGridHeadersGridView
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/asset_grid"

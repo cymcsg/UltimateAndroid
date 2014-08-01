@@ -15,7 +15,7 @@
         android:scaleType="fitXY"
         android:src="@drawable/pull_scroll_view_scrollview_header" />
 
-    <com.fss.common.uiModule.huitanScrollView.PullScrollView
+    <com.fss.commons.uiModule.huitanScrollView.PullScrollView
         android:id="@+id/scroll_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -183,6 +183,6 @@
                     android:background="@drawable/pull_scroll_view_card_whole" />
             </LinearLayout>
         </LinearLayout>
-</com.fss.common.uiModule.huitanScrollView.PullScrollView>
+</com.fss.commons.uiModule.huitanScrollView.PullScrollView>
 
 </RelativeLayout>

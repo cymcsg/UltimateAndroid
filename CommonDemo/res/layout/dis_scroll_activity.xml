@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<com.fss.common.uiModule.discrollview.DiscrollView
+<com.fss.commons.uiModule.discrollview.DiscrollView
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:discrollve="http://schemas.android.com/res/lib/com.fss.Common"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <com.fss.common.uiModule.discrollview.DiscrollViewContent
+    <com.fss.commons.uiModule.discrollview.DiscrollViewContent
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -70,7 +70,7 @@
                 <!--discrollve:discrollve_scaleX="true"-->
                 <!--discrollve:discrollve_scaleY="true"/>-->
 
-        <com.fss.common.demo.discrollview.DiscrollvablePurpleLayout
+        <com.fss.commons.demo.discrollview.DiscrollvablePurpleLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/purpled"
@@ -97,9 +97,9 @@
                     android:src="@drawable/test"
                     android:translationX="100dp"/>
 
-        </com.fss.common.demo.discrollview.DiscrollvablePurpleLayout>
+        </com.fss.commons.demo.discrollview.DiscrollvablePurpleLayout>
 
-        <com.fss.common.demo.discrollview.DiscrollvablePathLayout
+        <com.fss.commons.demo.discrollview.DiscrollvablePathLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/blue"
@@ -117,9 +117,9 @@
                     android:text="When the cheese comes out everybody's happy pecorino red leicester"
                     android:textSize="18sp"/>
 
-        </com.fss.common.demo.discrollview.DiscrollvablePathLayout>
+        </com.fss.commons.demo.discrollview.DiscrollvablePathLayout>
 
-        <com.fss.common.demo.discrollview.DiscrollvableRedLayout
+        <com.fss.commons.demo.discrollview.DiscrollvableRedLayout
                 android:layout_width="match_parent"
                 android:layout_height="450dp"
                 android:background="@color/red"
@@ -148,9 +148,9 @@
                     android:scaleY="0.1"
                     android:translationY="50dp"/>
 
-        </com.fss.common.demo.discrollview.DiscrollvableRedLayout>
+        </com.fss.commons.demo.discrollview.DiscrollvableRedLayout>
 
-        <com.fss.common.demo.discrollview.DiscrollvableGreenLayout
+        <com.fss.commons.demo.discrollview.DiscrollvableGreenLayout
                 android:layout_width="match_parent"
                 tools:visibility="gone"
                 android:layout_height="wrap_content"
@@ -168,9 +168,9 @@
                     android:text="Finally ..."
                     android:textSize="36sp"/>
 
-        </com.fss.common.demo.discrollview.DiscrollvableGreenLayout>
+        </com.fss.commons.demo.discrollview.DiscrollvableGreenLayout>
 
-        <com.fss.common.demo.discrollview.DiscrollvableLastLayout
+        <com.fss.commons.demo.discrollview.DiscrollvableLastLayout
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
                 android:gravity="center">
@@ -204,8 +204,8 @@
                     android:layout_below="@+id/lastView1"
                     android:src="@drawable/test_back1"/>
 
-        </com.fss.common.demo.discrollview.DiscrollvableLastLayout>
+        </com.fss.commons.demo.discrollview.DiscrollvableLastLayout>
 
-    </com.fss.common.uiModule.discrollview.DiscrollViewContent>
+    </com.fss.commons.uiModule.discrollview.DiscrollViewContent>
 
-</com.fss.common.uiModule.discrollview.DiscrollView>
+</com.fss.commons.uiModule.discrollview.DiscrollView>

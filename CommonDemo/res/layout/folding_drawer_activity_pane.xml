@@ -16,7 +16,7 @@
 
 
 <!-- A DrawerLayout is intended to be used as the top-level content view using match_parent for both width and height to consume the full space available. -->
-<com.fss.common.uiModule.foldingLayout.FoldingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.fss.commons.uiModule.foldingLayout.FoldingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                                 xmlns:sliding="http://schemas.android.com/apk/res-auto"
                                                 android:id="@+id/drawer_layout"
                                                 android:layout_width="match_parent"
@@ -51,4 +51,4 @@
          with the content view.
     -->
 
-</com.fss.common.uiModule.foldingLayout.FoldingPaneLayout>
+</com.fss.commons.uiModule.foldingLayout.FoldingPaneLayout>

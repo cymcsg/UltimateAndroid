@@ -1,4 +1,4 @@
-<com.fss.common.uiModule.timessquare.CalendarPickerView
+<com.fss.commons.uiModule.timessquare.CalendarPickerView
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/calendar_view"
