@@ -27,4 +27,8 @@
     <dimen name="showcase_text_padding">24dp</dimen>
     <dimen name="showcase_action_bar_offset">66dp</dimen>
 
+
+    <dimen name="historyscore_tb">10dp</dimen>
+
+
 </resources>
