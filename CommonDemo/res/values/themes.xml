@@ -138,4 +138,11 @@
     <style name="titleStyle" parent="@style/TextAppearance.AppCompat.Widget.Base.ActionBar.Title">
         <item name="android:textColor">@android:color/white</item>
     </style>
+
+
+    <style name="TextAppearance.YourApp.FloatLabel" parent="android:TextAppearance.Small">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 </resources>
