@@ -274,6 +274,16 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "Draggable");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "FloatLayout");
+        map.put("detail", "try");
+        map.put("subname", "FloatLayout");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "WireFrame");
+        map.put("detail", "try");
+        map.put("subname", "WireFrame");
+        enhanceList.add(map);
 //        map = new HashMap<>();
 //        map.put("name", "ResideMenu");
 //        map.put("detail", "try");
@@ -405,6 +415,13 @@ public class LandingFragment extends Fragment {
                     case 34:
                         BasicUtils.sendIntent(getActivity(), DraggableGridViewPagerTestActivity.class);
                         break;
+                    case 35:
+                        BasicUtils.sendIntent(getActivity(), FloatLabelActivity.class);
+                        break;
+                    case 36:
+                        BasicUtils.sendIntent(getActivity(), WireFrameActivity.class);
+                        break;
+
 
                 }
             }

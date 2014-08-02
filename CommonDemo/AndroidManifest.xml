@@ -113,6 +113,8 @@
 
         <activity android:name=".sampleModules.AutofitTextViewActivity"></activity>
         <activity android:name=".sampleModules.DraggableGridViewPagerTestActivity"></activity>
+        <activity android:name=".sampleModules.FloatLabelActivity"></activity>
+        <activity android:name=".sampleModules.WireFrameActivity"></activity>
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->
