@@ -115,6 +115,8 @@
         <activity android:name=".sampleModules.DraggableGridViewPagerTestActivity"></activity>
         <activity android:name=".sampleModules.FloatLabelActivity"></activity>
         <activity android:name=".sampleModules.WireFrameActivity"></activity>
+        <activity android:name=".sampleModules.TriangleFrameActivity"></activity>
+        <activity android:name=".sampleModules.RiseNumberActivity"></activity>
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->

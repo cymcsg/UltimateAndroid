@@ -284,6 +284,16 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "WireFrame");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "Trigle");
+        map.put("detail", "try");
+        map.put("subname", "Frame");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "RiseNumber");
+        map.put("detail", "try");
+        map.put("subname", "RiseNumber");
+        enhanceList.add(map);
 //        map = new HashMap<>();
 //        map.put("name", "ResideMenu");
 //        map.put("detail", "try");
@@ -420,6 +430,12 @@ public class LandingFragment extends Fragment {
                         break;
                     case 36:
                         BasicUtils.sendIntent(getActivity(), WireFrameActivity.class);
+                        break;
+                    case 37:
+                        BasicUtils.sendIntent(getActivity(), TriangleFrameActivity.class);
+                        break;
+                    case 38:
+                        BasicUtils.sendIntent(getActivity(), RiseNumberActivity.class);
                         break;
 
 
