@@ -6,8 +6,6 @@ package com.fss.common.demo.sampleModules;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import com.fss.common.demo.R;
 import com.fss.common.uiModule.risenumber.RiseNumberTextView;
@@ -24,9 +22,9 @@ public class RiseNumberActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.rise_number_activity);
 
-        mTextViewAll=(RiseNumberTextView)findViewById(R.id.text);
-        mTextViewIn=(RiseNumberTextView)findViewById(R.id.in);
-        mTextViewOut=(RiseNumberTextView)findViewById(R.id.out);
+        mTextViewAll = (RiseNumberTextView) findViewById(R.id.text);
+        mTextViewIn = (RiseNumberTextView) findViewById(R.id.in);
+        mTextViewOut = (RiseNumberTextView) findViewById(R.id.out);
 
         findViewById(R.id.restart).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,7 +38,8 @@ public class RiseNumberActivity extends Activity {
         init();
 
     }
-    private void init(){
+
+    private void init() {
         mTextViewAll.withNumber(46000).start();
         mTextViewIn.withNumber(489.15f).start();
         mTextViewOut.withNumber(367.24f).start();

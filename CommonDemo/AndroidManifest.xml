@@ -117,6 +117,7 @@
         <activity android:name=".sampleModules.WireFrameActivity"></activity>
         <activity android:name=".sampleModules.TriangleFrameActivity"></activity>
         <activity android:name=".sampleModules.RiseNumberActivity"></activity>
+        <activity android:name=".sampleModules.NiftyDialogActivity"></activity>
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->
