@@ -373,4 +373,6 @@
 
     <color name="btn_press_color">#FFa5281b</color>
     <color name="btn_unpress_color">#FFc0392b</color>
+
+    <color name="default_edgeeffect_color">#FF33B5E5</color>
 </resources>

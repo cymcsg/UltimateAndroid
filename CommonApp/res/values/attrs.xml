@@ -271,4 +271,8 @@
         <attr name="cb_color" format="color" />
         <attr name="cb_pressed_ring_width" format="dimension" />
     </declare-styleable>
+
+    <declare-styleable name="EdgeEffectView">
+        <attr name="edgeeffect_color" format="color"/>
+    </declare-styleable>
 </resources>
