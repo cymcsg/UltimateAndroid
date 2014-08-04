@@ -266,4 +266,9 @@
         <attr name="floatLabelTextAppearance" format="reference"/>
         <attr name="floatLabelSidePadding" format="reference|dimension"/>
     </declare-styleable>
+
+    <declare-styleable name="CircleButton">
+        <attr name="cb_color" format="color" />
+        <attr name="cb_pressed_ring_width" format="dimension" />
+    </declare-styleable>
 </resources>
