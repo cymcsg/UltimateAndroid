@@ -299,6 +299,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "Nifty");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "Icons");
+        map.put("detail", "try");
+        map.put("subname", "Icons");
+        enhanceList.add(map);
 //        map = new HashMap<>();
 //        map.put("name", "ResideMenu");
 //        map.put("detail", "try");
@@ -444,6 +449,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 39:
                         BasicUtils.sendIntent(getActivity(), NiftyDialogActivity.class);
+                        break;
+                    case 40:
+                        BasicUtils.sendIntent(getActivity(), DifferentIconsActivity.class);
                         break;
 
 

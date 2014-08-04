@@ -118,6 +118,7 @@
         <activity android:name=".sampleModules.TriangleFrameActivity"></activity>
         <activity android:name=".sampleModules.RiseNumberActivity"></activity>
         <activity android:name=".sampleModules.NiftyDialogActivity"></activity>
+        <activity android:name=".sampleModules.DifferentIconsActivity"></activity>
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->
