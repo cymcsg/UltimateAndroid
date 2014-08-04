@@ -16,6 +16,7 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 import com.fss.common.commonUtils.basicUtils.BasicUtils;
 import com.fss.common.commonUtils.moduleUtils.CryptoUtils;
+import com.fss.common.demo.edgeeffectoverride.EdgeEffectActivity;
 import com.fss.common.ui.Typefaces;
 import com.fss.common.uiModule.enhanceListView.EnhancedListView;
 import com.fss.common.uiModule.passcodelock.PasscodePreferencesActivity;
@@ -304,6 +305,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "Icons");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "EdgeEffect");
+        map.put("detail", "try");
+        map.put("subname", "EdgeEffect");
+        enhanceList.add(map);
 //        map = new HashMap<>();
 //        map.put("name", "ResideMenu");
 //        map.put("detail", "try");
@@ -452,6 +458,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 40:
                         BasicUtils.sendIntent(getActivity(), DifferentIconsActivity.class);
+                        break;
+                    case 41:
+                        BasicUtils.sendIntent(getActivity(), EdgeEffectActivity.class);
                         break;
 
 

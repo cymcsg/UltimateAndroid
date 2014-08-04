@@ -119,6 +119,16 @@
         <activity android:name=".sampleModules.RiseNumberActivity"></activity>
         <activity android:name=".sampleModules.NiftyDialogActivity"></activity>
         <activity android:name=".sampleModules.DifferentIconsActivity"></activity>
+
+        <activity android:name=".edgeeffectoverride.EdgeEffectActivity"></activity>
+        <activity android:name=".edgeeffectoverride.ExpandableListViewActivity"></activity>
+        <activity android:name=".edgeeffectoverride.ListViewActivity"></activity>
+        <activity android:name=".edgeeffectoverride.ScrollViewActivity"></activity>
+        <activity android:name=".edgeeffectoverride.ViewPagerActivity"></activity>
+        <activity android:name=".edgeeffectoverride.WebViewActivity"></activity>
+        <activity android:name=".edgeeffectoverride.GridViewActivity"></activity>
+
+
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->
