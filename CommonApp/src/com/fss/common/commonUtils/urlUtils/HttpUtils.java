@@ -11,6 +11,7 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.conn.ConnectTimeoutException;
 import org.apache.http.entity.mime.HttpMultipartMode;
 import org.apache.http.entity.mime.MultipartEntity;
+import org.apache.http.entity.mime.MultipartEntityBuilder;
 import org.apache.http.entity.mime.content.FileBody;
 import org.apache.http.entity.mime.content.StringBody;
 import org.apache.http.impl.client.DefaultHttpClient;
@@ -22,6 +23,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.InputStreamReader;
 import java.util.List;
+
 
 /**
  * Created by cym on 14-8-5.
@@ -162,8 +164,9 @@ public class HttpUtils {
      * @param file
      * @param files
      * @return status
+     * @deprecated
      */
-    public static String uploadFiles(String url, List<NameValuePair> paramsList, String fileParams, File file, File... files) {
+    public static String uploadFilesMPE(String url, List<NameValuePair> paramsList, String fileParams, File file, File... files) {
         String result = "";
         try {
             DefaultHttpClient mHttpClient;
@@ -186,6 +189,56 @@ public class HttpUtils {
                 multipartEntity.addPart(fileParams, new FileBody(f));
             }
             httpPost.setEntity(multipartEntity);
+            HttpResponse httpResp = mHttpClient.execute(httpPost);
+            // 判断是够请求成功
+            if (httpResp.getStatusLine().getStatusCode() == 200) {
+                // 获取返回的数据
+                result = EntityUtils.toString(httpResp.getEntity(), "UTF-8");
+                Logs.d("HttpPost success :");
+                Logs.d(result);
+            } else {
+                Logs.d("HttpPost failed" + "    " + httpResp.getStatusLine().getStatusCode() + "   " + EntityUtils.toString(httpResp.getEntity(), "UTF-8"));
+                result = "HttpPost failed";
+            }
+        } catch (ConnectTimeoutException e) {
+            result = "ConnectTimeoutException";
+            Logs.e("HttpPost overtime:  " + "");
+        } catch (Exception e) {
+            e.printStackTrace();
+            Logs.e(e, "");
+            result = "Exception";
+        }
+
+        return result;
+    }
+
+    public static String uploadFiles(String url, List<NameValuePair> paramsList, String fileParams, File file, File... files) {
+        String result = "";
+        try {
+            DefaultHttpClient mHttpClient;
+            HttpParams params = new BasicHttpParams();
+            params.setParameter(CoreProtocolPNames.PROTOCOL_VERSION, HttpVersion.HTTP_1_1);
+            params.setParameter(CoreConnectionPNames.CONNECTION_TIMEOUT, 30000);
+            params.setParameter(CoreConnectionPNames.SO_TIMEOUT, 30000);
+            mHttpClient = new DefaultHttpClient(params);
+            HttpPost httpPost = new HttpPost(url);
+
+            MultipartEntityBuilder entityBuilder = MultipartEntityBuilder.create();
+            entityBuilder.setMode(HttpMultipartMode.BROWSER_COMPATIBLE);
+
+            if (BasicUtils.judgeNotNull(paramsList)) {
+                for (NameValuePair nameValuePair : paramsList) {
+                    entityBuilder.addTextBody(nameValuePair.getName(), nameValuePair.getValue());
+                }
+            }
+
+
+            entityBuilder.addBinaryBody(fileParams, file);
+            for (File f : files) {
+                entityBuilder.addBinaryBody(fileParams,f);
+            }
+            HttpEntity entity = entityBuilder.build();
+            httpPost.setEntity(entity);
             HttpResponse httpResp = mHttpClient.execute(httpPost);
             // 判断是够请求成功
             if (httpResp.getStatusLine().getStatusCode() == 200) {
