@@ -30,7 +30,7 @@ import org.apache.http.util.EntityUtils;
 
 import android.util.Log;
 
-public class HttpUtils {
+public class HttpUtils_Deprecated {
 
     public static String TAG = "Chen";
     public static String rst = "";
