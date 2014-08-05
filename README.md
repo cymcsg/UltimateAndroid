@@ -35,12 +35,21 @@ Demo Manual
 -----
 Demo 使用方法
 --------------
+
+
 Demo is rely on appcompat and the CommonLibs, you can change CONFIGURATION in your IDES etc.
-***Some IDEs require additional configuration in order to enable annotation processing for Butter Knife,
+
+##Important:
+***Most of  IDEs require additional configuration in order to enable annotation processing for Butter Knife,
 or you can see [IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse Configuration for butter Knife][102].***
 
 Demo依赖于appcompat 和 CommonLibs，你可以在IDE或者配置文件里面添加一下依赖。
-**部分IDE需要开启annotation的编译（因为Butter Knife）的缘故，如果不清楚如何开启可以看一下[IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse Configuration for butter Knife][102].**
+
+##重要:
+**大部分IDE需要开启annotation的编译（因为Butter Knife）的缘故，如果不清楚如何开启可以看一下[IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse Configuration for butter Knife][102].**
+
+Please set the ides before you run the demo apps.
+
 
 ##UI Modules
 * Support animations for Android 2.3
@@ -173,6 +182,24 @@ Add [FaceCrop](https://github.com/Todd-Davies/ProgressWheel)
 2014.7.25 update PackageUtils
 
 2014.7.26 enableHttpResponseCache
+
+2014.7.28 add activity transition
+		  add autofit text view
+		  
+2014.7.29 update Async
+
+2014.7.30 add DragDemo
+          update UIL
+          
+2014.7.31 Update Preference Utils
+
+2014.8.1 add clear shareprefence
+         Change Package Name from 'com.fss.Common' to 'com.fss.common'
+        
+2014.8.2 add some UI
+
+2014.8.5 add Multiple Upload File
+
 
 The CommonLibs use many opensource program and I am very grateful to the author of them.
 The opensource program which I use:
