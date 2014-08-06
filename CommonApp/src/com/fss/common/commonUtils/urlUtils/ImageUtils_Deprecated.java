@@ -18,7 +18,7 @@ import android.net.Uri;
 import com.fss.common.commonUtils.logUtils.Logs;
 
 
-public class ImageUtils {
+public class ImageUtils_Deprecated {
     public static final int LEFT = 0;
     public static final int RIGHT = 1;
     public static final int TOP = 3;
