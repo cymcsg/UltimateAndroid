@@ -132,12 +132,12 @@ public class FileUtils {
 
     /** */
 
-    public static void deleteFile(String fileName) throws IOException {
+    public static void deleteFileOrFolder(String fileName) throws IOException {
         File f = new File(fileName);
         if (f.isDirectory()) {//如果是目录，先递归删除
             String[] list = f.list();
             for (int i = 0; i < list.length; i++) {
-                deleteFile(fileName + "//" + list[i]);//先删除目录下的文件
+                deleteFileOrFolder(fileName + "//" + list[i]);//先删除目录下的文件
             }
         }
         f.delete();
