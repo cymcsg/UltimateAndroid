@@ -13,7 +13,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import com.fss.common.R;
-import com.fss.common.commonUtils.fileUtils.FileUtils;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
 
@@ -94,9 +93,9 @@ public class PhotoActivity extends Activity {
                 //Bimp.bmp = bmp;
                 Bimp.drr = drr;
                 Bimp.max = max;
-                for (int i = 0; i < del.size(); i++) {
-                    FileUtils.deleteFileFromPath(SDPATH + del.get(i) + ".JPEG");
-                }
+//                for (int i = 0; i < del.size(); i++) {
+//                    FileUtils.deleteFileFromPath(SDPATH + del.get(i) + ".JPEG");
+//                }
                 finish();
             }
         });

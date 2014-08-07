@@ -26,6 +26,7 @@ import com.fss.common.R;
 import com.fss.common.commonUtils.logUtils.Logs;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
+
 import java.io.File;
 import java.util.Calendar;
 import java.util.Locale;
@@ -152,6 +153,7 @@ public class PublishedActivity extends Activity {
                 holder = (ViewHolder) convertView.getTag();
             }
 
+
             if (position == Bimp.drr.size()) {
                 holder.image.setImageBitmap(BitmapFactory.decodeResource(
                         getResources(), R.drawable.icon_addpic_unfocused));
@@ -161,6 +163,7 @@ public class PublishedActivity extends Activity {
             } else {
                 // holder.image.setImageBitmap(Bimp.bmp.get(position));
                 ImageLoader.getInstance().displayImage("file://" + Bimp.drr.get(position), holder.image);
+                Logs.d("drr---" + Bimp.drr.get(position) + "   " + position + "  " + Bimp.drr.size());
             }
 
             return convertView;
@@ -301,18 +304,18 @@ public class PublishedActivity extends Activity {
     }
 
 
-    private String path = "";
+    private static String path = "";
 
-    public void photo() {
-        Intent openCameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        File file = new File(Environment.getExternalStorageDirectory()
-                + "/myimage/", String.valueOf(System.currentTimeMillis())
-                + ".jpg");
-        path = file.getPath();
-        Uri imageUri = Uri.fromFile(file);
-        openCameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
-        startActivityForResult(openCameraIntent, TAKE_PICTURE);
-    }
+//    public void photo() {
+//        Intent openCameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+//        File file = new File(Environment.getExternalStorageDirectory()
+//                + "/myimage/", String.valueOf(System.currentTimeMillis())
+//                + ".jpg");
+//        path = file.getPath();
+//        Uri imageUri = Uri.fromFile(file);
+//        openCameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
+//        startActivityForResult(openCameraIntent, TAKE_PICTURE);
+//    }
 
     /**
      * 调用系统相机
@@ -337,7 +340,10 @@ public class PublishedActivity extends Activity {
                 case TAKE_PICTURE:
                     if (Bimp.drr.size() < 9 && resultCode == RESULT_OK) {
                         Bimp.drr.add(path);
+                        Logs.d("path--" + path);
                     }
+//                    if (adapter != null)
+//                        adapter.update();
                     break;
             }
         }
