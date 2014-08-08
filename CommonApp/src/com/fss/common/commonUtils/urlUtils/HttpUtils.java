@@ -22,6 +22,7 @@ import org.apache.http.util.EntityUtils;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -212,7 +213,17 @@ public class HttpUtils {
         return result;
     }
 
-    public static String uploadFiles(String url, List<NameValuePair> paramsList, String fileParams, File file, File... files) {
+    public static String uploadFiles(String url, List<NameValuePair> paramsList, String fileParams, File[] files) throws Exception {
+        List<File> fileList = new ArrayList<>();
+
+        for (File f : files) {
+            fileList.add(f);
+        }
+        return uploadFiles(url, paramsList, fileParams, fileList);
+
+    }
+
+    public static String uploadFiles(String url, List<NameValuePair> paramsList, String fileParams, List<File> files) throws Exception {
         String result = "";
         try {
             DefaultHttpClient mHttpClient;
@@ -232,17 +243,17 @@ public class HttpUtils {
                 }
             }
 
-
-            entityBuilder.addBinaryBody(fileParams, file);
+            // entityBuilder.addBinaryBody(fileParams, file);
             for (File f : files) {
-                entityBuilder.addBinaryBody(fileParams,f);
+                if (f != null && f.exists())
+                    entityBuilder.addBinaryBody(fileParams, f);
             }
             HttpEntity entity = entityBuilder.build();
             httpPost.setEntity(entity);
             HttpResponse httpResp = mHttpClient.execute(httpPost);
-            // 判断是够请求成功
+
             if (httpResp.getStatusLine().getStatusCode() == 200) {
-                // 获取返回的数据
+
                 result = EntityUtils.toString(httpResp.getEntity(), "UTF-8");
                 Logs.d("HttpPost success :");
                 Logs.d(result);
@@ -260,5 +271,15 @@ public class HttpUtils {
         }
 
         return result;
+
+    }
+
+    public static String uploadFiles(String url, List<NameValuePair> paramsList, String fileParams, File file, File... files) throws Exception {
+        List<File> fileList = new ArrayList<>();
+        fileList.add(file);
+        for (File f : files) {
+            fileList.add(f);
+        }
+        return uploadFiles(url, paramsList, fileParams, fileList);
     }
 }
