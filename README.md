@@ -200,6 +200,7 @@ Add [FaceCrop](https://github.com/Todd-Davies/ProgressWheel)
 
 2014.8.5 add Multiple Upload File
 
+2014.8.7 add activity like wechat friend group
 
 The CommonLibs use many opensource program and I am very grateful to the author of them.
 The opensource program which I use:
