@@ -127,7 +127,7 @@
         <activity android:name=".edgeeffectoverride.ViewPagerActivity"></activity>
         <activity android:name=".edgeeffectoverride.WebViewActivity"></activity>
         <activity android:name=".edgeeffectoverride.GridViewActivity"></activity>
-
+        <activity android:name=".sampleModules.ViewPagerTransformerActivity"></activity>
 
     </application>
 

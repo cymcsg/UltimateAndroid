@@ -310,6 +310,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "EdgeEffect");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "ViewPager");
+        map.put("detail", "try");
+        map.put("subname", "Transform");
+        enhanceList.add(map);
 //        map = new HashMap<>();
 //        map.put("name", "ResideMenu");
 //        map.put("detail", "try");
@@ -461,6 +466,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 41:
                         BasicUtils.sendIntent(getActivity(), EdgeEffectActivity.class);
+                        break;
+                    case 42:
+                        BasicUtils.sendIntent(getActivity(), ViewPagerTransformerActivity.class);
                         break;
 
 
