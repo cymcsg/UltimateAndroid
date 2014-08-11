@@ -219,7 +219,22 @@ public class BasicUtils {
     }
 
     public static boolean judgeNotNull(String string) {
-        return string != null && !string.equals("") ? true : false;
+        // return string != null && !string.equals("") && !string.equals("null") ? true : false;
+
+        return judgeNotNull(string, new String[0]);
+    }
+
+    public static boolean judgeNotNull(String string, String... strings) {
+        boolean flag = true;
+        if (!(string != null && !string.equals("") && !string.equals("null"))) return false;
+        for (String s : strings) {
+            if (s == null || s.equals("") || s.equals("null")) {
+                flag = false;
+                break;
+            }
+        }
+
+        return flag;
     }
 
     public static boolean judgeNotNull(byte[] bytes) {
@@ -235,6 +250,19 @@ public class BasicUtils {
     }
 
     public static boolean judgeNotNull(Object object) {
-        return object != null ? true : false;
+        return judgeNotNull(object,new Object[0]);
+    }
+
+    public static boolean judgeNotNull(Object object, Object... objects) {
+        boolean flag = true;
+        if (object == null) return false;
+        for (Object o : objects) {
+            if (o == null) {
+                flag = false;
+                break;
+            }
+        }
+
+        return flag;
     }
 }
