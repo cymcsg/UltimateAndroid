@@ -17,6 +17,7 @@ import butterknife.InjectView;
 import com.fss.common.commonUtils.basicUtils.BasicUtils;
 import com.fss.common.commonUtils.moduleUtils.CryptoUtils;
 import com.fss.common.demo.edgeeffectoverride.EdgeEffectActivity;
+import com.fss.common.demo.standUpTimer.ConfigureStandupTimer;
 import com.fss.common.ui.Typefaces;
 import com.fss.common.uiModule.enhanceListView.EnhancedListView;
 import com.fss.common.uiModule.passcodelock.PasscodePreferencesActivity;
@@ -315,6 +316,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "Transform");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "StandUpTimer");
+        map.put("detail", "try");
+        map.put("subname", "Timer");
+        enhanceList.add(map);
 //        map = new HashMap<>();
 //        map.put("name", "ResideMenu");
 //        map.put("detail", "try");
@@ -469,6 +475,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 42:
                         BasicUtils.sendIntent(getActivity(), ViewPagerTransformerActivity.class);
+                        break;
+                    case 43:
+                        BasicUtils.sendIntent(getActivity(), ConfigureStandupTimer.class);
                         break;
 
 

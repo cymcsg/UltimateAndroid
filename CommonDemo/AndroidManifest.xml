@@ -129,6 +129,15 @@
         <activity android:name=".edgeeffectoverride.GridViewActivity"></activity>
         <activity android:name=".sampleModules.ViewPagerTransformerActivity"></activity>
 
+        <activity android:name=".standUpTimer.ConfigureStandupTimer"></activity>
+        <activity android:name=".standUpTimer.Help"></activity>
+        <activity android:name=".standUpTimer.MeetingDetails"></activity>
+        <activity android:name=".standUpTimer.Prefs"></activity>
+        <activity android:name=".standUpTimer.StandupTimer"></activity>
+        <activity android:name=".standUpTimer.TeamDetails"></activity>
+        <activity android:name=".standUpTimer.TeamList"></activity>
+
+
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->
@@ -182,4 +191,5 @@
     <uses-permission android:name="android.permission.ACCESS_GPS"/>
 
     <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 </manifest>

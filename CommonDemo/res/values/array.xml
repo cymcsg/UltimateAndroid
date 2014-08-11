@@ -238,4 +238,12 @@
         <item>李四</item>
     </string-array>
 
+
+    <string-array name="meeting_lengths">
+        <item>five_min</item>
+        <item>ten_min</item>
+        <item>fifteen_min</item>
+        <item>twenty_min</item>
+    </string-array>
+
 </resources>
