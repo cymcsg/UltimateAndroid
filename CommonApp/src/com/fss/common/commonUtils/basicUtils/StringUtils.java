@@ -1,7 +1,6 @@
 package com.fss.common.commonUtils.basicUtils;
 
 
-
 import com.fss.common.commonUtils.logUtils.Logs;
 
 import java.io.BufferedReader;
@@ -10,13 +9,13 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
 
 /**
  * To get the HEX,SHA1,Unicode of String
  * User: cym
  * Date: 13-10-18
  * Time: 上午9:16
- *
  */
 public class StringUtils {
     /**
@@ -56,15 +55,16 @@ public class StringUtils {
 //            if ((requireLength < stringLength)&&requireLength>=2) {
 //                transString = initString.substring(0, requireLength/2 - 1) + "..";
 //            }
-         //   transString=String.format("%-12s",initString);
+            //   transString=String.format("%-12s",initString);
 
         } catch (Exception e) {
-            Logs.d(initString+"    "+stringLength+"   "+requireLength+"    "+transString);
+            Logs.d(initString + "    " + stringLength + "   " + requireLength + "    " + transString);
             e.printStackTrace();
             Logs.e(e, "");
         }
         return transString;
     }
+
     public static String alignStrings(String initString, int requireLength) {
         int stringLength = getStringUnicodeLength(initString);
         String transString = initString;
@@ -73,13 +73,13 @@ public class StringUtils {
                 for (int i = 0; i < (requireLength - stringLength); i++) {
                     transString = transString + "  ";
                 }
-            if ((requireLength < stringLength)&&requireLength>=2) {
+            if ((requireLength < stringLength) && requireLength >= 2) {
                 transString = initString.substring(0, requireLength - 1) + "..";
             }
-              // transString=String.format("%-12s",initString);
+            // transString=String.format("%-12s",initString);
 
         } catch (Exception e) {
-            Logs.d(initString+"    "+stringLength+"   "+requireLength+"    "+transString);
+            Logs.d(initString + "    " + stringLength + "   " + requireLength + "    " + transString);
             e.printStackTrace();
             Logs.e(e, "");
         }
@@ -101,7 +101,7 @@ public class StringUtils {
         return total.toString();
     }
 
-    public static String decodeHtml(String str){
+    public static String decodeHtml(String str) {
 
         String rst = str;
 
@@ -134,7 +134,7 @@ public class StringUtils {
         int expectedStringLen = keyData.length * 2;
         StringBuilder sb = new StringBuilder(expectedStringLen);
         for (int i = 0; i < keyData.length; i++) {
-            String hexStr = Integer.toString(keyData[i] & 0x00FF,16);
+            String hexStr = Integer.toString(keyData[i] & 0x00FF, 16);
             if (hexStr.length() == 1) {
                 hexStr = "0" + hexStr;
             }
@@ -142,13 +142,34 @@ public class StringUtils {
         }
         return sb.toString();
     }
+
     /**
-    * @param str
-    * @return if string is null or its size is 0 or it is made by space, return true, else return false.
-            */
+     * @param str
+     * @return if string is null or its size is 0 or it is made by space, return true, else return false.
+     */
     public static boolean isBlank(String str) {
         return (str == null || str.trim().length() == 0);
     }
 
+    public static boolean ifStringInList(String s, ArrayList<String> arrayList) {
+        if (BasicUtils.judgeNotNull(s) && BasicUtils.judgeNotNull(arrayList)) {
+            for (String str : arrayList) {
+                if (str.trim().contains(s))
+                    return true;
+            }
+        }
 
+        return false;
+    }
+
+    public static boolean ifStringExactlyInList(String s, ArrayList<String> arrayList) {
+        if (BasicUtils.judgeNotNull(s) && BasicUtils.judgeNotNull(arrayList)) {
+            for (String str : arrayList) {
+                if (str.equals(s))
+                    return true;
+            }
+        }
+
+        return false;
+    }
 }
