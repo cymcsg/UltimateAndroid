@@ -3,4 +3,7 @@
     <string name="app_name">CommonLibsForAndroid Demo</string>
     <string name="drawer_open">drawer_open</string>
     <string name="drawer_close">drawer_close</string>
+
+    <string name="valid_num_participants_warning">Number of participants must be between 1 and 20.</string>
+    <string name="valid_num_participants_warning_unlimited">Number of participants must be greater than 1.</string>
 </resources>
