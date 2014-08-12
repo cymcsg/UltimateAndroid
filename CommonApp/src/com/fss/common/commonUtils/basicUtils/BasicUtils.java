@@ -250,7 +250,7 @@ public class BasicUtils {
     }
 
     public static boolean judgeNotNull(Object object) {
-        return judgeNotNull(object,new Object[0]);
+        return judgeNotNull(object, new Object[0]);
     }
 
     public static boolean judgeNotNull(Object object, Object... objects) {
