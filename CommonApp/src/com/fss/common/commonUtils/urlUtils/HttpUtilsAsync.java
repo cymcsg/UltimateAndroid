@@ -90,11 +90,42 @@ public class HttpUtilsAsync {
         PersistentCookieStore myCookieStore = new PersistentCookieStore(context);
         client.setCookieStore(myCookieStore);
         client.get(getAbsoluteUrl(url), params, responseHandler);
-
     }
 
     public static void post(String url, AsyncHttpResponseHandler responseHandler) {
         AsyncHttpClient client = new AsyncHttpClient();
+        client.post(getAbsoluteUrl(url), responseHandler);
+    }
+
+    public static void postWithCookie(Context context, String url, AsyncHttpResponseHandler responseHandler) {
+        AsyncHttpClient client = new AsyncHttpClient();
+        PersistentCookieStore myCookieStore = new PersistentCookieStore(context);
+        //  myCookieStore.clear();
+        client.setCookieStore(myCookieStore);
+        client.post(getAbsoluteUrl(url), responseHandler);
+    }
+
+    public static void postWithCookie(Context context, String url, RequestParams params, AsyncHttpResponseHandler responseHandler) {
+        AsyncHttpClient client = new AsyncHttpClient();
+        PersistentCookieStore myCookieStore = new PersistentCookieStore(context);
+        client.setCookieStore(myCookieStore);
+        client.post(getAbsoluteUrl(url), params, responseHandler);
+    }
+
+    public static void postUseCookie(Context context, String url, HashMap hashMap, AsyncHttpResponseHandler responseHandler) {
+        PersistentCookieStore myCookieStore = new PersistentCookieStore(context);
+        if (BasicUtils.judgeNotNull(hashMap)) {
+            Iterator iterator = hashMap.entrySet().iterator();
+            while (iterator.hasNext()) {
+                Map.Entry entry = (Map.Entry) iterator.next();
+                Object key = entry.getKey();
+                Object value = entry.getValue();
+                Cookie cookie = new BasicClientCookie(key.toString(), value.toString());
+                myCookieStore.addCookie(cookie);
+            }
+        }
+        AsyncHttpClient client = new AsyncHttpClient();
+        client.setCookieStore(myCookieStore);
         client.post(getAbsoluteUrl(url), responseHandler);
     }
 
