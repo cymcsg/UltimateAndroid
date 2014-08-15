@@ -90,11 +90,18 @@ public class DaoUtils {
 
     }
 
-    private static QueryBuilder getQueryBuilder(AbstractDao dao, WhereCondition cond, WhereCondition... condmore) {
+    public static QueryBuilder getQueryBuilder(AbstractDao dao, WhereCondition cond, WhereCondition... condmore) {
         isLog();
         QueryBuilder qb = dao.queryBuilder();
         qb.where(cond, condmore);
         return qb;
+    }
+
+    public static void deleteByCondition(AbstractDao dao, WhereCondition cond, WhereCondition... condmore) {
+        isLog();
+        QueryBuilder qb = dao.queryBuilder();
+        qb.where(cond, condmore).buildDelete().executeDeleteWithoutDetachingEntities();
+
     }
 
 }
