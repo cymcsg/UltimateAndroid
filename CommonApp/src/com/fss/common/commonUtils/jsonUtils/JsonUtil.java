@@ -68,35 +68,6 @@ public class JsonUtil {
         return object;
     }
 
-    public static void iteratorArrayList(ArrayList arrayList) {
-        Iterator it1 = arrayList.iterator();
-        while (it1.hasNext()) {
-            int i = 0;
-            Iterator it = ((HashMap<String, String>) it1.next()).entrySet().iterator();
-            while (it.hasNext()) {
-                i++;
-                Map.Entry entry = (Map.Entry) it.next();
-                Object key = entry.getKey();
-                Object value = entry.getValue();
-                Logs.d("key--" + key + "  value   " + value + "\n");
-            }
-        }
-    }
-
-    public static void iteratorList(List inputList) {
-        Iterator it1 = inputList.iterator();
-        while (it1.hasNext()) {
-            int i = 0;
-            Iterator it = ((HashMap<String, String>) it1.next()).entrySet().iterator();
-            while (it.hasNext()) {
-                i++;
-                Map.Entry entry = (Map.Entry) it.next();
-                Object key = entry.getKey();
-                Object value = entry.getValue();
-                Logs.d("key--" + key + "  value   " + value + "\n");
-            }
-        }
-    }
 
 
 //    public static <T> T fromJSON(final TypeReference<T> type,

@@ -48,12 +48,12 @@ public class SpanVariableGridView extends AdapterView<BaseAdapter> {
 
     private int mColCount = 2;
     private int mItemMargin = 0;
-    private int mControlHeight = 0;
+    protected int mControlHeight = 0;
     private Rect mRect = new Rect();
-    private boolean mPopulating = false;
+    protected boolean mPopulating = false;
     private int mTouchState = TOUCH_STATE_RESTING;
 
-    private BaseAdapter mAdapter = null;
+    protected BaseAdapter mAdapter = null;
     private TransitionDrawable mItemTransitionDrawable = null;
     private List<CalculateChildrenPosition> mCalculateChildrenPositionList = new LinkedList<CalculateChildrenPosition>();
 
@@ -436,7 +436,7 @@ public class SpanVariableGridView extends AdapterView<BaseAdapter> {
 
     }
 
-    private int measureChildrens(final boolean justMeasure) {
+    protected int measureChildrens(final boolean justMeasure) {
 
         int row = 0;
         int col = 0;
