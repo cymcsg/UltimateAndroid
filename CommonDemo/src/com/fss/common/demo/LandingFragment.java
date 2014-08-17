@@ -16,6 +16,7 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 import com.fss.common.commonUtils.basicUtils.BasicUtils;
 import com.fss.common.commonUtils.moduleUtils.CryptoUtils;
+import com.fss.common.demo.circularProgressButton.CircularProgressButtonActivity;
 import com.fss.common.demo.edgeeffectoverride.EdgeEffectActivity;
 import com.fss.common.demo.standUpTimer.ConfigureStandupTimer;
 import com.fss.common.ui.Typefaces;
@@ -321,6 +322,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "Timer");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "CircularProgress");
+        map.put("detail", "try");
+        map.put("subname", "Button");
+        enhanceList.add(map);
 //        map = new HashMap<>();
 //        map.put("name", "ResideMenu");
 //        map.put("detail", "try");
@@ -478,6 +484,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 43:
                         BasicUtils.sendIntent(getActivity(), ConfigureStandupTimer.class);
+                        break;
+                    case 44:
+                        BasicUtils.sendIntent(getActivity(), CircularProgressButtonActivity.class);
                         break;
 
 

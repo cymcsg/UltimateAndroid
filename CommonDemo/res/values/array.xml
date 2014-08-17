@@ -246,4 +246,12 @@
         <item>twenty_min</item>
     </string-array>
 
+    <array name="circular_progress_button_list">
+        <item>IndeterminateProgressSample</item>
+        <item>IntegerProgressSample</item>
+        <item>StateChangeSample</item>
+        <item>ProgressPaddingSample</item>
+        <item>CustomSelectorSample</item>
+    </array>
+
 </resources>

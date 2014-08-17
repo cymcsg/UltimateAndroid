@@ -136,6 +136,12 @@
         <activity android:name=".standUpTimer.StandupTimer"></activity>
         <activity android:name=".standUpTimer.TeamDetails"></activity>
         <activity android:name=".standUpTimer.TeamList"></activity>
+        <activity android:name=".circularProgressButton.Sample1Activity"></activity>
+        <activity android:name=".circularProgressButton.Sample2Activity"></activity>
+        <activity android:name=".circularProgressButton.Sample3Activity"></activity>
+        <activity android:name=".circularProgressButton.Sample4Activity"></activity>
+        <activity android:name=".circularProgressButton.Sample5Activity"></activity>
+        <activity android:name=".circularProgressButton.CircularProgressButtonActivity"></activity>
 
 
     </application>
@@ -191,5 +197,5 @@
     <uses-permission android:name="android.permission.ACCESS_GPS"/>
 
     <uses-permission android:name="android.permission.NFC"/>
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
 </manifest>
