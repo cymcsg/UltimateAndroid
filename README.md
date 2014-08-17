@@ -10,7 +10,7 @@ CommonLibsForAndroid
 [中文简介](#chinese_introduction)
 
 
-<h2 id="english_introduction">Introduction</h2>  
+<h2 ><a name="english_introduction">Introduction</h2>  
 
 ---
 
@@ -55,7 +55,7 @@ Please set the ides before you run the demo apps.
   ``And there are also many UI modules which I do not mention here.``  
   
 
- <h2 id="chinese_introduction">简介</h2>   
+ <h2 ><a name="chinese_introduction"></a>简介</h2>   
 
 ---
 ####框架目前主要包含的功能有View Injection,ORM,异步网络请求和图片加载，自动化脚本测试,磁盘LRU等功能.同时提供了类似于TripleDes、Webview快速设置、Md5处理、String处理,Https处理等常用工具类，还有多种UI控件效果。并且这些功能正在逐步增加中。
