@@ -25,5 +25,18 @@
     <string name="pull_to_refresh_footer_release_label">Release to loading...</string>
     <string name="pull_to_refresh_footer_pull_label">Pull to loading...</string>
     <string name="pull_to_refresh_footer_refreshing_label">Loading...</string>
-
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
 </resources>
