@@ -327,6 +327,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "Button");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "JazzyViewPager");
+        map.put("detail", "try");
+        map.put("subname", "Jazzy");
+        enhanceList.add(map);
 //        map = new HashMap<>();
 //        map.put("name", "ResideMenu");
 //        map.put("detail", "try");
@@ -487,6 +492,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 44:
                         BasicUtils.sendIntent(getActivity(), CircularProgressButtonActivity.class);
+                        break;
+                    case 45:
+                        BasicUtils.sendIntent(getActivity(), JazzyViewActivity.class);
                         break;
 
 

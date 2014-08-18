@@ -64,6 +64,8 @@
         <activity android:name=".sampleModules.ViewServerActivity"></activity>
         <activity android:name=".activitytransition.ActivityTransitionActivity"></activity>
         <activity android:name=".activitytransition.ActivityTransitiorSecond"></activity>
+
+        <activity android:name=".sampleModules.JazzyViewActivity"></activity>
         <provider
                 android:name="android.support.v4.content.FileProvider"
                 android:authorities="com.fss.common.demo.fileprovider"
