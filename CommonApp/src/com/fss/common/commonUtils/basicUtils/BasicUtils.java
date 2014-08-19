@@ -156,6 +156,14 @@ public class BasicUtils {
         context.startActivity(intent);
     }
 
+    public static void sendIntent(Context context, Class classes, String key, String value, String anotherKey, String anotherValue) {
+        Intent intent = new Intent();
+        intent.setClass(context, classes);
+        intent.putExtra(key, value);
+        intent.putExtra(anotherKey, anotherValue);
+        context.startActivity(intent);
+    }
+
     public static void sendIntent(Context context, Class classes, String key, String value) {
         Intent intent = new Intent();
         intent.setClass(context, classes);
@@ -226,7 +234,7 @@ public class BasicUtils {
 
     public static boolean judgeNotNull(String string, String... strings) {
         boolean flag = true;
-        if (!(string != null && !string.equals("") && !string.equals("null"))) return false;
+        if (!(string != null && !string.equals("") && !string.equals("null")&&!string.trim().equals(""))) return false;
         for (String s : strings) {
             if (s == null || s.equals("") || s.equals("null")) {
                 flag = false;
