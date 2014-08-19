@@ -18,6 +18,7 @@ import com.fss.common.commonUtils.basicUtils.BasicUtils;
 import com.fss.common.commonUtils.moduleUtils.CryptoUtils;
 import com.fss.common.demo.circularProgressButton.CircularProgressButtonActivity;
 import com.fss.common.demo.edgeeffectoverride.EdgeEffectActivity;
+import com.fss.common.demo.quickreturnlistview.QuickReturnListViewActivity;
 import com.fss.common.demo.standUpTimer.ConfigureStandupTimer;
 import com.fss.common.ui.Typefaces;
 import com.fss.common.uiModule.enhanceListView.EnhancedListView;
@@ -332,6 +333,16 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "Jazzy");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "PulltoZoom");
+        map.put("detail", "try");
+        map.put("subname", "ListView");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "QuickReturn");
+        map.put("detail", "try");
+        map.put("subname", "ListView");
+        enhanceList.add(map);
 //        map = new HashMap<>();
 //        map.put("name", "ResideMenu");
 //        map.put("detail", "try");
@@ -495,6 +506,12 @@ public class LandingFragment extends Fragment {
                         break;
                     case 45:
                         BasicUtils.sendIntent(getActivity(), JazzyViewActivity.class);
+                        break;
+                    case 46:
+                        BasicUtils.sendIntent(getActivity(), PulltoZoomListViewActivity.class);
+                        break;
+                    case 47:
+                        BasicUtils.sendIntent(getActivity(), QuickReturnListViewActivity.class);
                         break;
 
 

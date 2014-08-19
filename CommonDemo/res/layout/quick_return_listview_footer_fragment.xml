@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
     
-    <com.larswerkman.quickreturnlistview.QuickReturnListView
+    <com.fss.common.ui.QuickReturnListView
         android:id="@android:id/list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -21,7 +21,7 @@
         android:paddingLeft="16dip"
         android:paddingRight="16dip"
         android:paddingTop="8dip"
-        android:text="@string/footer"
+        android:text="footer"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@android:color/primary_text_dark" />
 

@@ -6,12 +6,12 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="@dimen/top_height"
-        android:background="@color/top_item" />
+        android:layout_height="150dp"
+        android:background="#a6c" />
 
     <View
         android:id="@+id/placeholder"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/sticky_height" />
+        android:layout_height="120dp" />
 
 </LinearLayout>

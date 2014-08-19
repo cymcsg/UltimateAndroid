@@ -31,6 +31,8 @@ import android.widget.AbsListView;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import android.widget.AbsListView.OnScrollListener;
+import com.fss.common.demo.R;
+import com.fss.common.ui.QuickReturnListView;
 
 public class AnimationFragment extends ListFragment {
 
@@ -57,8 +59,8 @@ public class AnimationFragment extends ListFragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		View view = inflater.inflate(R.layout.fragment, null);
-		mHeader = inflater.inflate(R.layout.header, null);
+		View view = inflater.inflate(R.layout.quick_return_listview_fragment, null);
+		mHeader = inflater.inflate(R.layout.quick_return_listview_header, null);
 		mQuickReturnView = (TextView) view.findViewById(R.id.sticky);
 		mPlaceHolder = mHeader.findViewById(R.id.placeholder);
 		return view;
@@ -79,7 +81,7 @@ public class AnimationFragment extends ListFragment {
 				"Android", "Android", "Android" };
 
 		setListAdapter(new ArrayAdapter<String>(getActivity(),
-				R.layout.list_item, R.id.text1, array));
+				R.layout.quick_return_listview_list_item, R.id.text1, array));
 
 		mListView.getViewTreeObserver().addOnGlobalLayoutListener(
 				new ViewTreeObserver.OnGlobalLayoutListener() {

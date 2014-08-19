@@ -144,7 +144,8 @@
         <activity android:name=".circularProgressButton.Sample4Activity"></activity>
         <activity android:name=".circularProgressButton.Sample5Activity"></activity>
         <activity android:name=".circularProgressButton.CircularProgressButtonActivity"></activity>
-
+        <activity android:name=".sampleModules.PulltoZoomListViewActivity"></activity>
+        <activity android:name=".quickreturnlistview.QuickReturnListViewActivity"></activity>
 
     </application>
 

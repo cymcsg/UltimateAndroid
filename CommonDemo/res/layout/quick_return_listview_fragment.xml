@@ -4,13 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <com.larswerkman.quickreturnlistview.QuickReturnListView
+    <com.fss.common.ui.QuickReturnListView
         android:id="@android:id/list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/sticky"
-        style="@style/Item.Sticky" />
+        android:layout_width="wrap_content"
+        android:layout_height="150dp" android:textAppearance="?android:textAppearanceLarge"/>
 
 </FrameLayout>

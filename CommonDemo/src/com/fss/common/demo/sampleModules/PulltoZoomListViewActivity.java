@@ -10,21 +10,21 @@ import com.fss.common.ui.PullToZoomListView;
 
 
 public class PulltoZoomListViewActivity extends Activity {
-	PullToZoomListView listView;
-	private String[] adapterData; 
+    PullToZoomListView listView;
+    private String[] adapterData;
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
-		listView = (PullToZoomListView)findViewById(R.id.listview);
-        adapterData = new String[] { "Activity","Service","Content Provider","Intent","BroadcastReceiver","ADT","Sqlite3","HttpClient","DDMS","Android Studio","Fragment","Loader" }; 
- 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.pull_to_zoom_list_view_activity);
+        listView = (PullToZoomListView) findViewById(R.id.listview);
+        adapterData = new String[]{"Activity", "Service", "Content Provider", "Intent", "BroadcastReceiver", "ADT", "Sqlite3", "HttpClient", "DDMS", "Android Studio", "Fragment", "Loader"};
+
         listView.setAdapter(new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, adapterData));
-        listView.getHeaderView().setImageResource(R.drawable.splash01);
+        listView.getHeaderView().setImageResource(R.drawable.test_back);
         listView.getHeaderView().setScaleType(ImageView.ScaleType.CENTER_CROP);
-	}
+    }
 
 //	@Override
 //	public boolean onCreateOptionsMenu(Menu menu) {
