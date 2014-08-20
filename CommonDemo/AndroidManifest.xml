@@ -146,7 +146,9 @@
         <activity android:name=".circularProgressButton.CircularProgressButtonActivity"></activity>
         <activity android:name=".sampleModules.PulltoZoomListViewActivity"></activity>
         <activity android:name=".quickreturnlistview.QuickReturnListViewActivity"></activity>
-
+        <activity android:name=".superlistview.SuperListViewActivity"></activity>
+        <activity android:name=".superlistview.ListSample"></activity>
+        <activity android:name=".superlistview.GridSample"></activity>
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->

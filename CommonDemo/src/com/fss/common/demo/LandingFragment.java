@@ -20,6 +20,7 @@ import com.fss.common.demo.circularProgressButton.CircularProgressButtonActivity
 import com.fss.common.demo.edgeeffectoverride.EdgeEffectActivity;
 import com.fss.common.demo.quickreturnlistview.QuickReturnListViewActivity;
 import com.fss.common.demo.standUpTimer.ConfigureStandupTimer;
+import com.fss.common.demo.superlistview.SuperListViewActivity;
 import com.fss.common.ui.Typefaces;
 import com.fss.common.uiModule.enhanceListView.EnhancedListView;
 import com.fss.common.uiModule.passcodelock.PasscodePreferencesActivity;
@@ -343,6 +344,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "ListView");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "SuperListview");
+        map.put("detail", "try");
+        map.put("subname", "ListView");
+        enhanceList.add(map);
 //        map = new HashMap<>();
 //        map.put("name", "ResideMenu");
 //        map.put("detail", "try");
@@ -512,6 +518,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 47:
                         BasicUtils.sendIntent(getActivity(), QuickReturnListViewActivity.class);
+                        break;
+                    case 48:
+                        BasicUtils.sendIntent(getActivity(), SuperListViewActivity.class);
                         break;
 
 
