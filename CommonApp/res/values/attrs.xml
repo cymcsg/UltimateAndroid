@@ -268,8 +268,8 @@
     </declare-styleable>
 
     <declare-styleable name="CircleButton">
-        <attr name="cb_color" format="color" />
-        <attr name="cb_pressed_ring_width" format="dimension" />
+        <attr name="cb_color" format="color"/>
+        <attr name="cb_pressed_ring_width" format="dimension"/>
     </declare-styleable>
 
     <declare-styleable name="EdgeEffectView">
@@ -277,29 +277,29 @@
     </declare-styleable>
 
     <declare-styleable name="CircleImageView">
-        <attr name="border_widths" format="dimension" />
+        <attr name="border_widths" format="dimension"/>
         <attr name="border_color"/>
     </declare-styleable>
 
 
     <declare-styleable name="JazzyViewPager">
         <attr name="style">
-            <enum name="standard" value="0" />
-            <enum name="tablet" value="1" />
-            <enum name="cubein" value="2" />
-            <enum name="cubeout" value="3" />
-            <enum name="flipvertical" value="4" />
-            <enum name="fliphorizontal" value="5" />
-            <enum name="stack" value="6" />
-            <enum name="zoomin" value="7" />
-            <enum name="zoomout" value="8" />
-            <enum name="rotateup" value="9" />
-            <enum name="rotatedown" value="10" />
-            <enum name="accordion" value="11" />
+            <enum name="standard" value="0"/>
+            <enum name="tablet" value="1"/>
+            <enum name="cubein" value="2"/>
+            <enum name="cubeout" value="3"/>
+            <enum name="flipvertical" value="4"/>
+            <enum name="fliphorizontal" value="5"/>
+            <enum name="stack" value="6"/>
+            <enum name="zoomin" value="7"/>
+            <enum name="zoomout" value="8"/>
+            <enum name="rotateup" value="9"/>
+            <enum name="rotatedown" value="10"/>
+            <enum name="accordion" value="11"/>
         </attr>
-        <attr name="fadeEnabled" format="boolean" />
-        <attr name="outlineEnabled" format="boolean" />
-        <attr name="outlineColor" format="color|reference" />
+        <attr name="fadeEnabled" format="boolean"/>
+        <attr name="outlineEnabled" format="boolean"/>
+        <attr name="outlineColor" format="color|reference"/>
     </declare-styleable>
 
 
@@ -332,6 +332,18 @@
         <attr name="supergv__columns" format="integer"/>
         <attr name="supergv__verticalSpacing" format="dimension"/>
         <attr name="supergv__horizontalSpacing" format="dimension"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="StaggeredGridView">
+        <attr name="column_count" format="integer"/>
+        <attr name="column_count_portrait" format="integer"/>
+        <attr name="column_count_landscape" format="integer"/>
+        <attr name="item_margin" format="dimension"/>
+        <attr name="grid_paddingLeft" format="dimension"/>
+        <attr name="grid_paddingRight" format="dimension"/>
+        <attr name="grid_paddingTop" format="dimension"/>
+        <attr name="grid_paddingBottom" format="dimension"/>
     </declare-styleable>
 
 </resources>
