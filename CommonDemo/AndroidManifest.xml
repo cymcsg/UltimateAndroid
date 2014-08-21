@@ -149,6 +149,11 @@
         <activity android:name=".superlistview.SuperListViewActivity"></activity>
         <activity android:name=".superlistview.ListSample"></activity>
         <activity android:name=".superlistview.GridSample"></activity>
+        <activity android:name=".staggeredgridview.StaggeredGridActivity"></activity>
+        <activity android:name=".staggeredgridview.ListViewActivity"></activity>
+        <activity android:name=".staggeredgridview.StaggeredGridActivityFragment"></activity>
+        <activity android:name=".staggeredgridview.StaggeredGridEmptyViewActivity"></activity>
+        <activity android:name=".staggeredgridview.StaggeredGridViewActivity"></activity>
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->
