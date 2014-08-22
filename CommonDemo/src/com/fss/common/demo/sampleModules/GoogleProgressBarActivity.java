@@ -1,4 +1,4 @@
-package com.fss.common.demo.googleprogressbar;
+package com.fss.common.demo.sampleModules;
 
 import android.app.ListActivity;
 import android.os.Bundle;
