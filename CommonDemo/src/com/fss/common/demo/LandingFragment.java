@@ -360,6 +360,16 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "ListView");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "FlowTextView");
+        map.put("detail", "try");
+        map.put("subname", "TextView");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "Google");
+        map.put("detail", "try");
+        map.put("subname", "ProgressBar");
+        enhanceList.add(map);
 //        map = new HashMap<>();
 //        map.put("name", "ResideMenu");
 //        map.put("detail", "try");
@@ -538,6 +548,12 @@ public class LandingFragment extends Fragment {
                         break;
                     case 50:
                         BasicUtils.sendIntent(getActivity(), DropDownListViewDemo.class);
+                        break;
+                    case 51:
+                        BasicUtils.sendIntent(getActivity(), FlowTextViewActivity.class);
+                        break;
+                    case 52:
+                        BasicUtils.sendIntent(getActivity(), GoogleProgressBarActivity.class);
                         break;
 
 

@@ -156,6 +156,8 @@
         <activity android:name=".staggeredgridview.StaggeredGridViewActivity"></activity>
 
         <activity android:name=".sampleModules.DropDownListViewDemo"></activity>
+        <activity android:name=".sampleModules.FlowTextViewActivity"></activity>
+        <activity android:name=".sampleModules.GoogleProgressBarActivity"></activity>
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->
