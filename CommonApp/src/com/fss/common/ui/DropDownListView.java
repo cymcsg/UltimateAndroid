@@ -41,14 +41,6 @@ import com.fss.common.R;
  * <li>{@link #setFooterDefaultText(String)}, {@link #setFooterLoadingText(String)},
  * {@link #setFooterNoMoreText(String)} to set text</li>
  * </ul>
- * <ul>
- * other setting see <a href="http://www.trinea.cn/?p=523">http://www.trinea.cn/?p=523</a>
- * </ul>
- * <ul>
- * principle see <a href="http://trinea.iteye.com/blog/1562281">http://trinea.iteye.com/blog/1562281</a>
- * </ul>
- *
- * @author <a href="http://www.trinea.cn" target="_blank">Trinea</a> 2012-5-20
  */
 public class DropDownListView extends ListView implements OnScrollListener {
 

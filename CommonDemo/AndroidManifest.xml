@@ -154,6 +154,8 @@
         <activity android:name=".staggeredgridview.StaggeredGridActivityFragment"></activity>
         <activity android:name=".staggeredgridview.StaggeredGridEmptyViewActivity"></activity>
         <activity android:name=".staggeredgridview.StaggeredGridViewActivity"></activity>
+
+        <activity android:name=".sampleModules.DropDownListViewDemo"></activity>
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->

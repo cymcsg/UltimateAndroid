@@ -355,6 +355,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "GridView");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "DropDownListview");
+        map.put("detail", "try");
+        map.put("subname", "ListView");
+        enhanceList.add(map);
 //        map = new HashMap<>();
 //        map.put("name", "ResideMenu");
 //        map.put("detail", "try");
@@ -530,6 +535,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 49:
                         BasicUtils.sendIntent(getActivity(), StaggeredGridViewActivity.class);
+                        break;
+                    case 50:
+                        BasicUtils.sendIntent(getActivity(), DropDownListViewDemo.class);
                         break;
 
 
