@@ -346,4 +346,13 @@
         <attr name="grid_paddingBottom" format="dimension"/>
     </declare-styleable>
 
+
+    <declare-styleable name="GoogleProgressBar">
+        <attr name="type" format="enum">
+            <enum name="folding_circles" value="0" />
+            <enum name="google_music_dices" value="1" />
+            <enum name="nexus_rotation_cross" value="2" />
+        </attr>
+        <attr name="colors" format="reference"/>
+    </declare-styleable>
 </resources>
