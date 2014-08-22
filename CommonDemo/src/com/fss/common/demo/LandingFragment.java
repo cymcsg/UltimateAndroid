@@ -18,6 +18,7 @@ import com.fss.common.commonUtils.basicUtils.BasicUtils;
 import com.fss.common.commonUtils.moduleUtils.CryptoUtils;
 import com.fss.common.demo.circularProgressButton.CircularProgressButtonActivity;
 import com.fss.common.demo.edgeeffectoverride.EdgeEffectActivity;
+import com.fss.common.demo.googleprogressbar.GoogleProgressBarActivity;
 import com.fss.common.demo.quickreturnlistview.QuickReturnListViewActivity;
 import com.fss.common.demo.staggeredgridview.StaggeredGridViewActivity;
 import com.fss.common.demo.standUpTimer.ConfigureStandupTimer;
