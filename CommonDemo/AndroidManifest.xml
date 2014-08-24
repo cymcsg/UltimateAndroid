@@ -159,6 +159,12 @@
         <activity android:name=".sampleModules.FlowTextViewActivity"></activity>
         <activity android:name=".sampleModules.GoogleProgressBarActivity"></activity>
         <activity android:name=".sampleModules.NumberProgressBarActivity"></activity>
+
+        <activity android:name=".fancyCoverFlow.FancyCoverFlowActivity"></activity>
+        <activity android:name=".fancyCoverFlow.example.SimpleExample"></activity>
+        <activity android:name=".fancyCoverFlow.example.ViewGroupExample"></activity>
+        <activity android:name=".fancyCoverFlow.example.ViewGroupReflectionExample"></activity>
+        <activity android:name=".fancyCoverFlow.example.XmlInflateExample"></activity>
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->

@@ -18,6 +18,7 @@ import com.fss.common.commonUtils.basicUtils.BasicUtils;
 import com.fss.common.commonUtils.moduleUtils.CryptoUtils;
 import com.fss.common.demo.circularProgressButton.CircularProgressButtonActivity;
 import com.fss.common.demo.edgeeffectoverride.EdgeEffectActivity;
+import com.fss.common.demo.fancyCoverFlow.FancyCoverFlowActivity;
 import com.fss.common.demo.sampleModules.GoogleProgressBarActivity;
 import com.fss.common.demo.quickreturnlistview.QuickReturnListViewActivity;
 import com.fss.common.demo.staggeredgridview.StaggeredGridViewActivity;
@@ -376,6 +377,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "ProgressBar");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "FancyCoverFlow");
+        map.put("detail", "try");
+        map.put("subname", "FancyCoverFlow");
+        enhanceList.add(map);
 //        map = new HashMap<>();
 //        map.put("name", "ResideMenu");
 //        map.put("detail", "try");
@@ -563,6 +569,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 53:
                         BasicUtils.sendIntent(getActivity(), NumberProgressBarActivity.class);
+                        break;
+                    case 54:
+                        BasicUtils.sendIntent(getActivity(), FancyCoverFlowActivity.class);
                         break;
 
 
