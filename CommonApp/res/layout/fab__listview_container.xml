@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2014. Marshal Chen.
+  -->
+
+<com.fss.common.uiModule.fadingactionbar.view.RootLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/fab__header_container" />
+
+    <View
+        android:layout_gravity="top"
+        android:id="@+id/fab__listview_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light" />
+
+</com.fss.common.uiModule.fadingactionbar.view.RootLayout>
