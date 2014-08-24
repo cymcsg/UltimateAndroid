@@ -157,4 +157,7 @@
         <item name="android:onClick">dialogShow</item>
         <item name="android:textSize">20sp</item>
     </style>
+
+    <item type="id" name="drag_handle" />
+    <item type="id" name="click_remove" />
 </resources>

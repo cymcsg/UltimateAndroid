@@ -17,6 +17,9 @@ import butterknife.InjectView;
 import com.fss.common.commonUtils.basicUtils.BasicUtils;
 import com.fss.common.commonUtils.moduleUtils.CryptoUtils;
 import com.fss.common.demo.circularProgressButton.CircularProgressButtonActivity;
+import com.fss.common.demo.dragSortListview.Launcher;
+import com.fss.common.demo.dragSortListview.MultipleChoiceListView;
+import com.fss.common.demo.dragSortListview.SingleChoiceListView;
 import com.fss.common.demo.edgeeffectoverride.EdgeEffectActivity;
 import com.fss.common.demo.fancyCoverFlow.FancyCoverFlowActivity;
 import com.fss.common.demo.sampleModules.GoogleProgressBarActivity;
@@ -382,6 +385,17 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "FancyCoverFlow");
         enhanceList.add(map);
+
+        map = new HashMap<>();
+        map.put("name", "DragSort");
+        map.put("detail", "try");
+        map.put("subname", "Listview");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "DragSort");
+        map.put("detail", "try");
+        map.put("subname", "Listview");
+        enhanceList.add(map);
 //        map = new HashMap<>();
 //        map.put("name", "ResideMenu");
 //        map.put("detail", "try");
@@ -572,6 +586,12 @@ public class LandingFragment extends Fragment {
                         break;
                     case 54:
                         BasicUtils.sendIntent(getActivity(), FancyCoverFlowActivity.class);
+                        break;
+                    case 55:
+                        BasicUtils.sendIntent(getActivity(), SingleChoiceListView.class);
+                        break;
+                    case 56:
+                        BasicUtils.sendIntent(getActivity(), MultipleChoiceListView.class);
                         break;
 
 

@@ -165,6 +165,18 @@
         <activity android:name=".fancyCoverFlow.example.ViewGroupExample"></activity>
         <activity android:name=".fancyCoverFlow.example.ViewGroupReflectionExample"></activity>
         <activity android:name=".fancyCoverFlow.example.XmlInflateExample"></activity>
+
+        <activity android:name=".dragSortListview.ArbItemSizeDSLV"></activity>
+        <activity android:name=".dragSortListview.Launcher"></activity>
+        <activity android:name=".dragSortListview.MultipleChoiceListView"></activity>
+        <activity android:name=".dragSortListview.Sections"></activity>
+        <activity android:name=".dragSortListview.BGHandle"></activity>
+        <activity android:name=".dragSortListview.CursorDSLV"></activity>
+        <activity android:name=".dragSortListview.SingleChoiceListView"></activity>
+        <activity android:name=".dragSortListview.TestBedDSLV"></activity>
+        <activity android:name=".dragSortListview.WarpDSLV"></activity>
+
+
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->
