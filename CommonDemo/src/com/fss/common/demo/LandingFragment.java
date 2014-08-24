@@ -21,6 +21,7 @@ import com.fss.common.demo.dragSortListview.Launcher;
 import com.fss.common.demo.dragSortListview.MultipleChoiceListView;
 import com.fss.common.demo.dragSortListview.SingleChoiceListView;
 import com.fss.common.demo.edgeeffectoverride.EdgeEffectActivity;
+import com.fss.common.demo.fadingactionbar.HomeActivity;
 import com.fss.common.demo.fancyCoverFlow.FancyCoverFlowActivity;
 import com.fss.common.demo.sampleModules.GoogleProgressBarActivity;
 import com.fss.common.demo.quickreturnlistview.QuickReturnListViewActivity;
@@ -396,6 +397,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "Listview");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "FadingActionbar");
+        map.put("detail", "try");
+        map.put("subname", "FadingActionbar");
+        enhanceList.add(map);
 //        map = new HashMap<>();
 //        map.put("name", "ResideMenu");
 //        map.put("detail", "try");
@@ -592,6 +598,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 56:
                         BasicUtils.sendIntent(getActivity(), MultipleChoiceListView.class);
+                        break;
+                    case 57:
+                        BasicUtils.sendIntent(getActivity(), HomeActivity.class);
                         break;
 
 

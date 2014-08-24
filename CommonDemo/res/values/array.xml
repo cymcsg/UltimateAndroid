@@ -209,7 +209,7 @@
         <item>Taiwan</item>
         <item>Tajikistan</item>
         <item>Tanzania</item>
-        <item>Thailand </item>
+        <item>Thailand</item>
         <item>Timor-Leste</item>
         <item>Togo</item>
         <item>Tonga</item>
@@ -255,7 +255,6 @@
     </array>
 
 
-
     <integer-array name="rainbow">
         <item>@color/holo_blue_dark</item>
         <item>@color/holo_purple_dark</item>
@@ -291,4 +290,14 @@
         <item>#cccccc</item>
         <item>#888888</item>
     </string-array>
+    <string-array name="drawer_items">
+        <item>New York</item>
+        <item>Tokyo</item>
+        <item>London</item>
+    </string-array>
+    <array name="city_images">
+        <item>@drawable/fading_actionbar_ny</item>
+        <item>@drawable/fading_actionbar_tokyo</item>
+        <item>@drawable/fading_actionbar_london</item>
+    </array>
 </resources>

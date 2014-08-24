@@ -176,6 +176,18 @@
         <activity android:name=".dragSortListview.TestBedDSLV"></activity>
         <activity android:name=".dragSortListview.WarpDSLV"></activity>
 
+        <activity android:name=".fadingactionbar.HeaderOverlayActivity"></activity>
+        <activity android:name=".fadingactionbar.HomeActivity"></activity>
+        <activity android:name=".fadingactionbar.LightActionBarActivity"></activity>
+        <activity android:name=".fadingactionbar.ListViewActivity"></activity>
+        <activity android:name=".fadingactionbar.LightBackgroundActivity"></activity>
+        <activity android:name=".fadingactionbar.NavigationDrawerActivity"></activity>
+        <activity android:name=".fadingactionbar.NoParallaxActivity"></activity>
+        <activity android:name=".fadingactionbar.SampleFragmentActivity"></activity>
+        <activity android:name=".fadingactionbar.ScrollViewActivity"></activity>
+        <activity android:name=".fadingactionbar.ShortContentActivity"></activity>
+        <activity android:name=".fadingactionbar.WebViewActivity"></activity>
+
 
     </application>
 
