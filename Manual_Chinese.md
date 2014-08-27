@@ -54,12 +54,8 @@ Another use is simplifying the view holder pattern inside of a list adapter.
     	ButterKnife.inject(this, view);
       }
       }
-	}
-
-
-
-  
-
+	}	
+--------
 4.异步网络请求:
   使用异步网络请求工具，你不需要在额外的声明Thread来进行网络请求。
 
