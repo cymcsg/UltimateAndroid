@@ -1,8 +1,8 @@
 CommonLibsForAndroid 使用手册
 =====
-[English Version]()
+[English Version](https://github.com/cymcsg/CommonLibsForAndroid/blob/master/Manual_English.md)
 
-[ReadMe]()
+[ReadMe](https://github.com/cymcsg/CommonLibsForAndroid)
 
 
 ###简介
@@ -58,6 +58,7 @@ Another use is simplifying the view holder pattern inside of a list adapter.
       }
   	}
 	}
+
 
 
 4.异步网络请求:

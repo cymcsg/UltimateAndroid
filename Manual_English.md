@@ -1,8 +1,8 @@
 CommonLibsForAndroid Manual
 =====
-[中文教程]()
+[中文教程](https://github.com/cymcsg/CommonLibsForAndroid/blob/master/Manual_Chinese.md)
 
-[ReadMe]()
+[ReadMe](https://github.com/cymcsg/CommonLibsForAndroid)
 
 ###Info
 
@@ -63,6 +63,7 @@ Another use is simplifying the view holder pattern inside of a list adapter.
   	}
 	}
 
+<br>
 
 4.Asynchronous Network:
   Use asynchronous utils,you do not need to use an addtional Thread to visit network.

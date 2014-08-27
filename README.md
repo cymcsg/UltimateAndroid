@@ -9,6 +9,10 @@ CommonLibsForAndroid
 
 [中文简介](#chinese_introduction)
 
+[English Manual](https://github.com/cymcsg/CommonLibsForAndroid/blob/master/Manual_English.md)
+
+[中文教程](https://github.com/cymcsg/CommonLibsForAndroid/blob/master/Manual_Chinese.md)
+
 
 <h2 ><a name="english_introduction">Introduction</h2>  
 
