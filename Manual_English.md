@@ -38,7 +38,7 @@ or you can see [IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse 
 Another use is simplifying the view holder pattern inside of a list adapter.
 
 	public class MyAdapter extends BaseAdapter {
- 	  @Override public View getView(int position, View view, ViewGroup parent) {
+	@Override public View getView(int position, View view, ViewGroup parent) {
     	ViewHolder holder;
     	if (view != null) {
       	holder = (ViewHolder) view.getTag();
@@ -49,22 +49,17 @@ Another use is simplifying the view holder pattern inside of a list adapter.
     	}
     	holder.name.setText("John Doe");
     	// etc...
-
-  	  return view;
-  	}
-
-  	static class ViewHolder {
-   	  @InjectView(R.id.title) TextView name;
-   	  @InjectView(R.id.job_title) TextView jobTitle;
-	
-   	  public ViewHolder(View view) {
-   	    ButterKnife.inject(this, view);
+    	return view;
+    	}
+    	static class ViewHolder {
+    	@InjectView(R.id.title) TextView name;
+    	@InjectView(R.id.job_title) TextView jobTitle;
+    	public ViewHolder(View view) {
+    	ButterKnife.inject(this, view);
       }
-  	}
+      }
 	}
-
-<br>
-
+	
 4.Asynchronous Network:
   Use asynchronous utils,you do not need to use an addtional Thread to visit network.
 
@@ -121,9 +116,8 @@ Post request:
   ```ImageLoader.getInstance().displayImage((imageUri, imageView));```
   
   Or for some advantage usage:
-  
-  	// Load image, decode it to Bitmap and display Bitmap in ImageView (or any other view 
-	//  which implements ImageAware interface)
+
+
 	imageLoader.displayImage(imageUri, imageView, displayOptions, new ImageLoadingListener() 	{
 	    @Override
     	public void onLoadingStarted(String imageUri, View view) {
@@ -133,20 +127,21 @@ Post request:
     	public void onLoadingFailed(String imageUri, View view, FailReason failReason) {
 	        ...
 	    }
- 	   @Override
- 	   public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
- 	       ...
- 	   }
- 	   @Override
-  	  public void onLoadingCancelled(String imageUri, View view) {
-  	      ...
-  	  }
+	    @Override
+	    public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
+	    ...
+	    }
+	    @Override
+	    public void onLoadingCancelled(String imageUri, View view) {
+	     ...
+	     }
 	}, new ImageLoadingProgressListener() {
-  	  @Override
-  	  public void onProgressUpdate(String imageUri, View view, int current, int total) {
-  	      ...
-  	  }
+	 @Override
+	 public void onProgressUpdate(String imageUri, View view, int current, int total) {
+	 ...
+	 }
 	});
+	
 	
 <br>
 

@@ -34,7 +34,7 @@ CommonLibsForAndroid 使用手册
 Another use is simplifying the view holder pattern inside of a list adapter.
 
 	public class MyAdapter extends BaseAdapter {
- 	  @Override public View getView(int position, View view, ViewGroup parent) {
+	@Override public View getView(int position, View view, ViewGroup parent) {
     	ViewHolder holder;
     	if (view != null) {
       	holder = (ViewHolder) view.getTag();
@@ -45,21 +45,20 @@ Another use is simplifying the view holder pattern inside of a list adapter.
     	}
     	holder.name.setText("John Doe");
     	// etc...
-
-  	  return view;
-  	}
-
-  	static class ViewHolder {
-   	  @InjectView(R.id.title) TextView name;
-   	  @InjectView(R.id.job_title) TextView jobTitle;
-	
-   	  public ViewHolder(View view) {
-   	    ButterKnife.inject(this, view);
+    	return view;
+    	}
+    	static class ViewHolder {
+    	@InjectView(R.id.title) TextView name;
+    	@InjectView(R.id.job_title) TextView jobTitle;
+    	public ViewHolder(View view) {
+    	ButterKnife.inject(this, view);
       }
-  	}
+      }
 	}
 
 
+
+  
 
 4.异步网络请求:
   使用异步网络请求工具，你不需要在额外的声明Thread来进行网络请求。
@@ -117,9 +116,7 @@ Post request:
   ```ImageLoader.getInstance().displayImage((imageUri, imageView));```
   
   或者高级使用:
-  
-  	// Load image, decode it to Bitmap and display Bitmap in ImageView (or any other view 
-	//  which implements ImageAware interface)
+
 	imageLoader.displayImage(imageUri, imageView, displayOptions, new ImageLoadingListener() 	{
 	    @Override
     	public void onLoadingStarted(String imageUri, View view) {
@@ -129,19 +126,19 @@ Post request:
     	public void onLoadingFailed(String imageUri, View view, FailReason failReason) {
 	        ...
 	    }
- 	   @Override
- 	   public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
- 	       ...
- 	   }
- 	   @Override
-  	  public void onLoadingCancelled(String imageUri, View view) {
-  	      ...
-  	  }
+	    @Override
+	    public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
+	    ...
+	    }
+	    @Override
+	    public void onLoadingCancelled(String imageUri, View view) {
+	     ...
+	     }
 	}, new ImageLoadingProgressListener() {
-  	  @Override
-  	  public void onProgressUpdate(String imageUri, View view, int current, int total) {
-  	      ...
-  	  }
+	 @Override
+	 public void onProgressUpdate(String imageUri, View view, int current, int total) {
+	 ...
+	 }
 	});
 	
 <br>
