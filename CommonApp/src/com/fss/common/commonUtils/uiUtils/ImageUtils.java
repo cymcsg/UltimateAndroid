@@ -5,7 +5,7 @@ import android.graphics.*;
 import java.io.*;
 
 /**
- * Created by cym on 14-8-6.
+ * Some effect of images
  */
 public class ImageUtils {
     public static final int LEFT = 0;

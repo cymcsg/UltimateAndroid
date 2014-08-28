@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by cym on 14-7-15.
+ * JsonMetaReader
  */
 public class JsonMetaReader<T> {
     private Class<T> persistentClass;

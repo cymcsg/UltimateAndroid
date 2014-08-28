@@ -8,7 +8,6 @@ import com.fss.common.commonUtils.logUtils.Logs;
  * A webview which can open itself and add some error info instead of the url
  * User: cym
  * Date: 13-11-4
- * Time: 下午4:48
  *
  */
 

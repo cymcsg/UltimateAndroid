@@ -13,7 +13,6 @@ import android.widget.RelativeLayout;
  * Some method help do some UI works
  * User: cym
  * Date: 13-9-22
- * Time: 上午10:56
  *
  */
 public class BasicUiUtils {

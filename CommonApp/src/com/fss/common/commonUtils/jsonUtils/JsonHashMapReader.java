@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 
 /**
- * Created by cym on 14-7-15.
+ * Meta Json Reader of HashMap
  */
 public class JsonHashMapReader extends JsonMetaReader<HashMap> {
 

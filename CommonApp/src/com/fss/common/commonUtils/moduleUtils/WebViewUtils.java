@@ -11,7 +11,6 @@ import com.fss.common.commonUtils.logUtils.Logs;
  * Some default value of webview
  * User: cym
  * Date: 13-10-31
- * Time: 下午3:48
  */
 //WebViewUtils
 public class WebViewUtils {

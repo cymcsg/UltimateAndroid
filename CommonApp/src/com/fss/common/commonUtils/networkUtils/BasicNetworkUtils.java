@@ -9,7 +9,6 @@ import android.net.NetworkInfo;
  *
  * User: cym
  * Date: 13-9-22
- * Time: 下午2:09
  *
  */
 public class BasicNetworkUtils {

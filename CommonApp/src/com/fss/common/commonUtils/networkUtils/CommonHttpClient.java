@@ -32,10 +32,7 @@ import android.net.NetworkInfo;
 import android.net.Uri;
 import android.text.TextUtils;
 
-/*
- * 定制自己的HttpClient,确保唯一实例，提供全局访问接口
- * 自定义timeout时间等参数
- */
+
 public class CommonHttpClient {
 	private static final int TIMEOUT = 3600000;
 	private static final int TIMEOUT_SOCKET = 3600000;
