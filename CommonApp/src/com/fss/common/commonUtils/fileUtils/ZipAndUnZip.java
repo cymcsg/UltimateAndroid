@@ -5,13 +5,11 @@ import com.fss.common.commonUtils.logUtils.Logs;
 import java.io.*;
 import java.util.zip.*;
 
+/**
+ * Zip an UnZip files that can  use zip or gzip
+ */
 public class ZipAndUnZip {
-    /**
-     * 解压缩文件到指定的目录.
-     *
-     * @param unZipfileName 需要解压缩的文件
-     * @param mDestPath     解压缩后存放的路径
-     */
+
     public static int unZip(String unZipfileName, String mDestPath) {
         if (!mDestPath.endsWith("/")) {
             mDestPath = mDestPath + "/";
@@ -29,7 +27,7 @@ public class ZipAndUnZip {
                 if (zipEntry.isDirectory()) {
                     file.mkdirs();
                 } else {
-                    // 如果指定文件的目录不存在,则创建之.
+
                     File parent = file.getParentFile();
                     if (!parent.exists()) {
                         parent.mkdirs();
@@ -129,13 +127,11 @@ public class ZipAndUnZip {
         return fname;
     }
 
-    public static void gzips() throws Exception {
+    public static void gzips(String zipfileName, String mDestFile ) throws Exception {
 
-        //做准备压缩一个字符文件，注，这里的字符文件要是GBK编码方式的
-        BufferedReader in = new BufferedReader(new InputStreamReader(new FileInputStream("d:/test/a/all.json"), "UTF-8"));
+        BufferedReader in = new BufferedReader(new InputStreamReader(new FileInputStream(zipfileName), "UTF-8"));
 
-        BufferedOutputStream out = new BufferedOutputStream(new GZIPOutputStream(new FileOutputStream("d:/test/a/test.txt.gz")));
-        System.out.println("开始写压缩文件...");
+        BufferedOutputStream out = new BufferedOutputStream(new GZIPOutputStream(new FileOutputStream(zipfileName)));
         int c;
         while ((c = in.read()) != -1) {
 
