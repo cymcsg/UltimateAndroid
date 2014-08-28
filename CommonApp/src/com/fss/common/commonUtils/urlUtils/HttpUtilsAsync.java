@@ -15,8 +15,17 @@ import java.util.Iterator;
 import java.util.Map;
 
 /**
- * Created by cym on 14-4-29.
- */
+ * HttpUtils which use asynchoronous method to help you use network method without
+ * using an addtional Thread
+ *<p>
+ * {@link #get(String, com.loopj.android.http.RequestParams, com.loopj.android.http.AsyncHttpResponseHandler)}</p>
+ * <p>{@link #post(String, com.loopj.android.http.RequestParams, com.loopj.android.http.AsyncHttpResponseHandler)}</p>
+ * <p>{@link #getUseCookie(android.content.Context, String, java.util.HashMap, com.loopj.android.http.AsyncHttpResponseHandler)}</p>
+ * <p>{@link #getWithCookie(android.content.Context, String, com.loopj.android.http.RequestParams, com.loopj.android.http.AsyncHttpResponseHandler)}</p>
+ * <p>{@link #postWithCookie(android.content.Context, String, com.loopj.android.http.RequestParams, com.loopj.android.http.AsyncHttpResponseHandler)}</p>
+ * <p>{@link #postUseCookie(android.content.Context, String, java.util.HashMap, com.loopj.android.http.AsyncHttpResponseHandler)}</p>
+ *
+ * */
 public class HttpUtilsAsync {
     private static final String BASE_URL = "http://api.fss.com/1/";
     private static final int TIME_OUT = 25000;
