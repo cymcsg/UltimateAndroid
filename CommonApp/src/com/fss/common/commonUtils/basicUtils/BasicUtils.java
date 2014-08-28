@@ -13,9 +13,17 @@ import java.text.DecimalFormat;
 import java.util.*;
 
 /**
- * User: cym
- * Date: 13-9-24
- * Time: 下午3:28
+ * Some useful utils
+ * <p>{@link #judgeNotNull(String, String...)}</p>
+ * <p>{@link #judgeNotNull(Object)}</p>
+ * <p>{@link #getVersionName(android.content.Context)}</p>
+ * <p>{@link #iterateHashMap(java.util.HashMap, String)}</p>
+ * <p>{@link #iterateListHashMap(java.util.List, String)}</p>
+ * <p>{@link #sendIntent(android.content.Context, Class)}</p>
+ * <p>{@link #sendIntent(android.content.Context, Class, String, android.os.Parcelable)}</p>
+ * <p>{@link #getSharedPreferences(android.content.Context, String, String)}</p>
+ * <p>{@link #putSharedPreferences(android.content.Context, String, String, String)}</p>
+ *
  */
 public class BasicUtils {
     /**
@@ -92,13 +100,13 @@ public class BasicUtils {
 
     }
 
-    // 获取当前应用的版本号：
+    //
     public static String getVersionName(Context context) {
         String version = "";
         try {
-            // 获取packagemanager的实例
+            // get packagemanager
             PackageManager packageManager = context.getPackageManager();
-            // getPackageName()是你当前类的包名，0代表是获取版本信息
+            // getPackageName()--your current package name，0 means get package info
             PackageInfo packInfo = packageManager.getPackageInfo(context
                     .getPackageName(), 0);
             version = packInfo.versionName;
@@ -226,12 +234,23 @@ public class BasicUtils {
         sharedDate.commit();
     }
 
+    /**
+     * @see #judgeNotNull(String, String...)
+     * @param string
+     * @return
+     */
     public static boolean judgeNotNull(String string) {
         // return string != null && !string.equals("") && !string.equals("null") ? true : false;
 
         return judgeNotNull(string, new String[0]);
     }
 
+    /**
+     * Judge if a variable of String or String[] is null or ""
+     * @param string
+     * @param strings
+     * @return
+     */
     public static boolean judgeNotNull(String string, String... strings) {
         boolean flag = true;
         if (!(string != null && !string.equals("") && !string.equals("null")&&!string.trim().equals(""))) return false;

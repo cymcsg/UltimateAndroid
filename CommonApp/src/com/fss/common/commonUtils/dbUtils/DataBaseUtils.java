@@ -1,4 +1,4 @@
-package com.fss.common.commonUtils.basicUtils;
+package com.fss.common.commonUtils.dbUtils;
 
 import android.content.Context;
 import android.content.pm.PackageInfo;
@@ -17,7 +17,7 @@ import java.io.*;
  * Time: 下午2:30
  * .
  */
-public class PackageUtils {
+public class DataBaseUtils {
 
     public static boolean copyDateBaseToMemory(Context context, String dbname, int resource,String signName) {
         String packageName = context.getPackageName();
@@ -48,12 +48,12 @@ public class PackageUtils {
 
     private static void copyDataBaseToPhone(String DATABASE_PATH, String dbName, Context context, int resource) {
 
-        // 判断数据库是否存在
+
         boolean dbExist = checkDataBase(DATABASE_PATH, dbName);
 
         if (dbExist) {
             Logs.d("The database is exist.");
-        } else {// 不存在就把raw里的数据库写入手机
+        } else {
             try {
                 copyDataBase(DATABASE_PATH, dbName, context, resource);
             } catch (IOException e) {
@@ -63,7 +63,7 @@ public class PackageUtils {
     }
 
     /**
-     * 判断数据库是否存在
+     *
      *
      * @return false or true
      */
@@ -81,11 +81,7 @@ public class PackageUtils {
         return db != null ? true : false;
     }
 
-    /**
-     * 复制数据库到手机指定文件夹下
-     *
-     * @throws java.io.IOException
-     */
+
     private static void copyDataBase(String DATABASE_PATH, String dbName, Context context, int resource) throws IOException {
         String databaseFilenames = DATABASE_PATH + dbName;
         File dir = new File(DATABASE_PATH);
@@ -104,14 +100,6 @@ public class PackageUtils {
         os.close();
     }
 
-    public static String getVersionName(Context context) throws Exception {
-        // 获取packagemanager的实例
-        PackageManager packageManager = context.getPackageManager();
-        // getPackageName()是你当前类的包名，0代表是获取版本信息
-        PackageInfo packInfo = packageManager.getPackageInfo(context
-                .getPackageName(), 0);
-        String version = packInfo.versionName;
-        return version;
-    }
+
 
 }

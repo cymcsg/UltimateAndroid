@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * @deprecated
  * TO do something with File,like read ,del etc.
  * User: cym
  * Date: 13-10-23

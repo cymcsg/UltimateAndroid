@@ -7,7 +7,7 @@ import android.view.View;
 import com.fss.common.commonUtils.logUtils.Logs;
 
 /**
- *
+ * An easy way to send Handler
  */
 public class HandlerUtils {
     public static void dismissView() {

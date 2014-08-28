@@ -15,14 +15,14 @@ import java.util.ArrayList;
  * To get the HEX,SHA1,Unicode of String
  * User: cym
  * Date: 13-10-18
- * Time: 上午9:16
+ *
  */
 public class StringUtils {
     /**
-     * 获取字符串的长度，中文占一个字符,英文数字占半个字符
+     * get Unicode Length
      *
-     * @param value 指定的字符串
-     * @return 字符串的长度
+     * @param value
+     * @return
      */
     public static int getStringUnicodeLength(String value) {
         int valueLength = 0;

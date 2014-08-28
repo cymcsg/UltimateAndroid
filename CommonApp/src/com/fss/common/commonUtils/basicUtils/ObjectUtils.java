@@ -4,7 +4,9 @@
 
 package com.fss.common.commonUtils.basicUtils;
 
-
+/**
+ * Compare object or convert some types
+ */
 public class ObjectUtils {
 
     /**

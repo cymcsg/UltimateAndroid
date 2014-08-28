@@ -10,9 +10,9 @@ import de.greenrobot.dao.query.WhereCondition;
 import java.util.List;
 
 /**
- * Created by cym on 14-7-11.
+ * Userful Dao Utils when using GreenDao
  */
-public class DaoUtils {
+public class GreenDaoUtils {
 
     static boolean isLog = true;
 

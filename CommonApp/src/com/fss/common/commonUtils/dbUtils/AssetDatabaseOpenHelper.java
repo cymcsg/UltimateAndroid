@@ -21,7 +21,6 @@ import java.io.InputStream;
  * will be used for reading only.</li>
  * </ul>
  *
- * @author <a href="http://www.trinea.cn" target="_blank">Trinea</a> 2013-12-5
  */
 public class AssetDatabaseOpenHelper {
 

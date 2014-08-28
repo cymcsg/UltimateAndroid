@@ -23,7 +23,7 @@ import java.io.File;
 import java.util.List;
 
 /**
- * PackageUtils
+ * DataBaseUtils
  * <ul>
  * <strong>Install package</strong>
  * <li>{@link PackageUtils#installNormal(android.content.Context, String)}</li>
@@ -54,7 +54,7 @@ import java.util.List;
  */
 public class PackageUtils {
 
-    public static final String TAG                  = "PackageUtils";
+    public static final String TAG                  = "DataBaseUtils";
     /**
      * App installation location settings values, same to {@link PackageUtils#APP_INSTALL_AUTO}
      */

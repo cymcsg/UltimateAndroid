@@ -33,53 +33,51 @@ public class CrashHandler implements UncaughtExceptionHandler {
 
     public static final String TAG = "Chen";
 
-    //系统默认的UncaughtException处理类   
+    //Default UncaughtException
     private UncaughtExceptionHandler mDefaultHandler;
-    //CrashHandler实例  
+    //CrashHandler Instance
     private static CrashHandler INSTANCE = new CrashHandler();
-    //程序的Context对象  
+    //Context
     private Context mContext;
     private Object systemServiceObject;
-    //用来存储设备信息和异常信息  
+    //to store error info
     private Map<String, String> infos = new HashMap<String, String>();
 
-    //用于格式化日期,作为日志文件名的一部分  
+    //As part of file name
     private SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
 
-    /**
-     * 保证只有一个CrashHandler实例
-     */
+
     private CrashHandler() {
     }
 
     /**
-     * 获取CrashHandler实例 ,单例模式
+     * Singleton
      */
     public static CrashHandler getInstance() {
         return INSTANCE;
     }
 
     /**
-     * 初始化
+     * Initialize
      *
      * @param context
      */
     public void init(Context context, Object systemServiceObject) {
         mContext = context;
-        //获取系统默认的UncaughtException处理器  
+
         mDefaultHandler = Thread.getDefaultUncaughtExceptionHandler();
-        //设置该CrashHandler为程序的默认处理器  
+
         Thread.setDefaultUncaughtExceptionHandler(this);
         this.systemServiceObject = systemServiceObject;
     }
 
     /**
-     * 当UncaughtException发生时会转入该函数来处理
+     *
      */
     @Override
     public void uncaughtException(Thread thread, Throwable ex) {
         if (!handleException(ex) && mDefaultHandler != null) {
-            //如果用户没有处理则让系统默认的异常处理器来处理  
+
             mDefaultHandler.uncaughtException(thread, ex);
         } else {
             try {
@@ -102,12 +100,7 @@ public class CrashHandler implements UncaughtExceptionHandler {
         }
     }
 
-    /**
-     * 自定义错误处理,收集错误信息 发送错误报告等操作均在此完成.
-     *
-     * @param ex
-     * @return true:如果处理了该异常信息;否则返回false.
-     */
+
     private boolean handleException(Throwable ex) {
         if (ex == null) {
             return false;
@@ -117,20 +110,19 @@ public class CrashHandler implements UncaughtExceptionHandler {
             @Override
             public void run() {
                 Looper.prepare();
-                Toast.makeText(mContext, "啊噢，出错咯！赶紧向我们反馈bug吧", Toast.LENGTH_SHORT).show();
+                Toast.makeText(mContext, "There is something wrong", Toast.LENGTH_SHORT).show();
                 Looper.loop();
             }
         }.start();
-        //收集设备参数信息   
         collectDeviceInfo(mContext);
-        //保存日志文件   
+
         String filemameString = saveCrashInfo2File(ex);
         Log.d("filemameString", filemameString);
         return true;
     }
 
     /**
-     * 收集设备参数信息
+     * Collect Device info
      *
      * @param ctx
      */
@@ -166,10 +158,10 @@ public class CrashHandler implements UncaughtExceptionHandler {
     }
 
     /**
-     * 保存错误信息到文件中
+     * Save Info to files
      *
      * @param ex
-     * @return 返回文件名称, 便于将文件传送到服务器
+     * @return filename
      */
     private String saveCrashInfo2File(Throwable ex) {
 

@@ -7,13 +7,11 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /**
- *
- * User: cym
- * Date: 13-10-23
- * Time: 上午9:55
+ *@deprecated
+ * Temp
  *
  */
-public class UpdateUtils {
+public class TempUtils {
     public static void updateInMemory(String fileName) {
         String[] args = {"chmod", "604", fileName};
         exec(args);
