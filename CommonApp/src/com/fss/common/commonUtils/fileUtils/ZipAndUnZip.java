@@ -142,7 +142,7 @@ public class ZipAndUnZip {
 
     }
 
-    public static void unzipgzips(String inFileName) throws Exception {
+    public static void unzipGzips(String inFileName) throws Exception {
         try {
 
             if (!getExtension(inFileName).equalsIgnoreCase("gz")) {

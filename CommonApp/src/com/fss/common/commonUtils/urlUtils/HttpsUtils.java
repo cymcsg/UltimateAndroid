@@ -87,6 +87,9 @@ public class HttpsUtils {
 
     }
 
+    /**
+     * @deprecated
+     */
     public static void sendWithSSlSocket() {
         SSLSocketFactory sslsocketfactory = (SSLSocketFactory) SSLSocketFactory.getDefault();
         URL url = null;
@@ -112,9 +115,7 @@ public class HttpsUtils {
     public static void sendWithSSlSocketWithCrt(Context context, String crtUri,String uri) {
         SSLSocketFactory sslsocketfactory = buildSslSocketFactory(context,crtUri);
         URL url = null;
-        Logs.d("11");
         try {
-            Logs.d("22");
             url = new URL(uri);
             HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
             conn.setSSLSocketFactory(sslsocketfactory);
@@ -122,7 +123,6 @@ public class HttpsUtils {
             InputStreamReader inputstreamreader = new InputStreamReader(inputstream);
             BufferedReader bufferedreader = new BufferedReader(inputstreamreader);
             String string = null;
-            Logs.d("33");
             while ((string = bufferedreader.readLine()) != null) {
                 Logs.d("Received " + string);
             }
@@ -130,7 +130,6 @@ public class HttpsUtils {
             e.printStackTrace();
             Logs.e(e, "");
         }
-        Logs.d("44");
 
     }
 }

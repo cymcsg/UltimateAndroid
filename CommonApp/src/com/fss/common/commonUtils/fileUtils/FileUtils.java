@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @deprecated
+ *
  * TO do something with File,like read ,del etc.
  * User: cym
  * Date: 13-10-23
@@ -33,15 +33,9 @@ public class FileUtils {
         return sb.toString();
     }
 
-    public static String getCurrentDataPath(Context context) {
-        String currentDataPath = "";
-        if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
-            currentDataPath = Environment.getExternalStorageDirectory().getAbsolutePath() + "/testDefault";
+    public static String getCurrentDataPath(Context context) throws IOException{
 
-        } else {
-            currentDataPath = context.getFilesDir().getAbsolutePath();
-        }
-        return currentDataPath;
+        return getCurrentDataPath(context,"");
     }
 
     public static String getCurrentDataPath(Context context, String folderName) throws IOException {
@@ -56,6 +50,12 @@ public class FileUtils {
         return currentDataPath;
     }
 
+    /**
+     * @deprecated
+     * @param fileName
+     * @param content
+     * @throws IOException
+     */
     public static void writeFileFromString(String fileName, String content) throws IOException {
         FileOutputStream fileOutputStream = new FileOutputStream(new File(fileName));
         BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(fileOutputStream);
@@ -65,6 +65,12 @@ public class FileUtils {
         fileOutputStream.close();
     }
 
+    /**
+     * @deprecated
+     * @param fileName
+     * @param content
+     * @throws IOException
+     */
     public static void writeFileFromStringBuffers(String fileName, String content) throws IOException {
         String s = new String();
         String s1 = new String();
@@ -97,9 +103,9 @@ public class FileUtils {
 
 
     /**
-     * 创建文件夹
+     * Create Folder
      *
-     * @param fileName 目录
+     * @param fileName folder
      */
     public static void createDir(String fileName) throws IOException {
         File dir = new File(fileName);
@@ -109,10 +115,10 @@ public class FileUtils {
     }/** */
 
     /**
-     * 创建新文件
+     * Create New File
      *
-     * @param path     目录
-     * @param fileName 文件名
+     * @param path     Folder Name
+     * @param fileName File Name
      * @throws java.io.IOException
      */
     public static void createFile(String path, String fileName) throws IOException {
@@ -121,9 +127,9 @@ public class FileUtils {
             file.createNewFile();
     }/** */
     /**
-     * 删除文件
+     * Delete File
      *
-     * @param fileName 文件名
+     * @param fileName
      */
     public void delFile(String fileName) throws IOException {
         File file = new File(fileName);
@@ -131,14 +137,20 @@ public class FileUtils {
             file.delete();
     }
 
-    /** */
+    /**
+     * Delete the File no matter it's a file or folder.If the file is a folder,this method
+     * will delete all the file in the folder.
+     *
+     * @param fileName
+     * @throws IOException
+     */
 
     public static void deleteFileOrFolder(String fileName) throws IOException {
         File f = new File(fileName);
-        if (f.isDirectory()) {//如果是目录，先递归删除
+        if (f.isDirectory()) {
             String[] list = f.list();
             for (int i = 0; i < list.length; i++) {
-                deleteFileOrFolder(fileName + "//" + list[i]);//先删除目录下的文件
+                deleteFileOrFolder(fileName + "//" + list[i]);
             }
         }
         f.delete();
@@ -146,24 +158,22 @@ public class FileUtils {
 
     public static void delFolder(String folderPath) {
         try {
-            delAllFile(folderPath);  //删除完里面所有内容
+            delAllFile(folderPath);
             String filePath = folderPath;
             filePath = filePath.toString();
             File myFilePath = new File(filePath);
-            myFilePath.delete();  //删除空文件夹
+            myFilePath.delete();
 
         } catch (Exception e) {
-            System.out.println("删除文件夹操作出错");
-            e.printStackTrace();
-
+           Logs.e(e,"");
         }
 
     }
 
     /**
-     * 删除文件夹里面的所有文件
      *
-     * @param path String  文件夹路径  如  c:/fqf
+     *
+     * @param path String  folder path  like  c:/fqf
      */
     public static void delAllFile(String path) throws IOException {
         File file = new File(path);
@@ -185,15 +195,15 @@ public class FileUtils {
                 temp.delete();
             }
             if (temp.isDirectory()) {
-                delAllFile(path + "/" + tempList[i]);//先删除文件夹里面的文件
-                delFolder(path + "/" + tempList[i]);//再删除空文件夹
+                delAllFile(path + "/" + tempList[i]);
+                delFolder(path + "/" + tempList[i]);
             }
         }
     }
 
 
     /**
-     * 追加文件：使用FileOutputStream，在构造FileOutputStream时，把第二个参数设为true
+     * append file using FileOutputStream
      *
      * @param fileName
      * @param content
@@ -216,14 +226,13 @@ public class FileUtils {
     }
 
     /**
-     * 追加文件：使用FileWriter
+     * append file using FileWriter
      *
      * @param fileName
      * @param content
      */
-    public static void WriteStreamAppendByFileWriter(String fileName, String content) throws IOException {
+    public static void writeStreamAppendByFileWriter(String fileName, String content) throws IOException {
         try {
-            // 打开一个写文件器，构造函数中的第二个参数true表示以追加形式写文件
             FileWriter writer = new FileWriter(fileName, true);
             writer.write(content);
             writer.close();
@@ -233,18 +242,16 @@ public class FileUtils {
     }
 
     /**
-     * 追加文件：使用RandomAccessFile
+     * append file using RandomAccessFile
      *
-     * @param fileName 文件名
-     * @param content  追加的内容
+     * @param fileName
+     * @param content
      */
     public static void WriteStreamAppendByRandomAccessFile(String fileName, String content) throws IOException {
         try {
-            // 打开一个随机访问文件流，按读写方式
             RandomAccessFile randomFile = new RandomAccessFile(fileName, "rw");
-            // 文件长度，字节数
             long fileLength = randomFile.length();
-            // 将写文件指针移到文件尾。
+            // Write point to the end of file.
             randomFile.seek(fileLength);
             randomFile.writeBytes(content);
             randomFile.close();
@@ -254,10 +261,10 @@ public class FileUtils {
     }
 
     /**
-     * 复制单个文件
+     * copy file
      *
-     * @param oldPath String  原文件路径  如：c:/fqf.txt
-     * @param newPath String  复制后路径  如：f:/fqf.txt
+     * @param oldPath String
+     * @param newPath String
      * @return boolean
      */
     public static void copyFileFromPath(String oldPath, String newPath) throws IOException {
@@ -265,20 +272,20 @@ public class FileUtils {
             int bytesum = 0;
             int byteread = 0;
             File oldfile = new File(oldPath);
-            if (oldfile.exists()) {  //文件存在时
-                InputStream inStream = new FileInputStream(oldPath);  //读入原文件
+            if (oldfile.exists()) {
+                InputStream inStream = new FileInputStream(oldPath);
                 FileOutputStream fs = new FileOutputStream(newPath);
-                byte[] buffer = new byte[1444];
+                byte[] buffer = new byte[1024];
                 int length;
                 while ((byteread = inStream.read(buffer)) != -1) {
-                    bytesum += byteread;  //字节数  文件大小
+                    bytesum += byteread;
                     System.out.println(bytesum);
                     fs.write(buffer, 0, byteread);
                 }
                 inStream.close();
             }
         } catch (Exception e) {
-            System.out.println("复制单个文件操作出错");
+            System.out.println("copy failed");
             e.printStackTrace();
 
         }
@@ -286,31 +293,31 @@ public class FileUtils {
     }
 
     /**
-     * 复制单个文件
+     * Copy File from InputStream
      *
      * @param is      InputStream
-     * @param newPath String  复制后路径  如：f:/fqf.txt
+     * @param newPath String
      * @return boolean
      */
-    public static void copyFileFromAssest(InputStream is, String newPath) throws IOException {
+    public static void copyFileFromInputStream(InputStream is, String newPath) throws IOException {
         FileOutputStream fs = null;
         try {
             int bytesum = 0;
             int byteread = 0;
-            if (is != null) {  //文件存在时
+            if (is != null) {
 
                 fs = new FileOutputStream(newPath);
-                byte[] buffer = new byte[1444];
+                byte[] buffer = new byte[1024];
                 int length;
                 while ((byteread = is.read(buffer)) != -1) {
-                    bytesum += byteread;  //字节数  文件大小
+                    bytesum += byteread;
                     System.out.println(bytesum);
                     fs.write(buffer, 0, byteread);
                 }
                 is.close();
             }
         } catch (Exception e) {
-            System.out.println("复制单个文件操作出错");
+            System.out.println("Copy Failed");
             e.printStackTrace();
 
         } finally {
@@ -326,16 +333,17 @@ public class FileUtils {
     }
 
     /**
-     * 复制整个文件夹内容
+     * @deprecated
+     * Copy all the files in folder
      *
-     * @param oldPath String  原文件路径  如：c:/fqf
-     * @param newPath String  复制后路径  如：f:/fqf/ff
+     * @param oldPath String
+     * @param newPath String
      * @return boolean
      */
     public void copyFolder(String oldPath, String newPath) throws IOException {
 
         try {
-            (new File(newPath)).mkdirs();  //如果文件夹不存在  则建立新文件夹
+            (new File(newPath)).mkdirs();
             File a = new File(oldPath);
             String[] file = a.list();
             File temp = null;
@@ -372,7 +380,7 @@ public class FileUtils {
     }
 
     /**
-     * 移动文件到指定目录
+     *
      *
      * @param oldPath String  如：c:/fqf.txt
      * @param newPath String  如：d:/fqf.txt
@@ -384,10 +392,10 @@ public class FileUtils {
     }
 
     /**
-     * 移动文件到指定目录
      *
-     * @param oldPath String  如：c:/fqf.txt
-     * @param newPath String  如：d:/fqf.txt
+     *
+     * @param oldPath String
+     * @param newPath String
      */
     public void moveFolder(String oldPath, String newPath) throws IOException {
         copyFolder(oldPath, newPath);

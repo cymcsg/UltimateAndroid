@@ -50,7 +50,7 @@ public class BasicUtils {
 
     public static void iterateListHashMap(List list, String classAndMethodName) {
 
-        //支持并发
+        //support concurrent
         try {
             for (Iterator it = list.iterator(); it.hasNext(); ) {
                 iterateHashMap((HashMap) it.next(), classAndMethodName);
