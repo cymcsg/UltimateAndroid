@@ -1,6 +1,10 @@
 CommonLibsForAndroid
 ==========================
 
+###Version:0.0.1beta
+###当前版本：0.0.1beta
+<br>
+
 ###Using CommonLibs is a fast way  to help you  develop Android apps 
 
 ### 快速开发Android应用的框架  
