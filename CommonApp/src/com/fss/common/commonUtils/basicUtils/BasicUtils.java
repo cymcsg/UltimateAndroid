@@ -13,7 +13,7 @@ import java.text.DecimalFormat;
 import java.util.*;
 
 /**
- * Some useful utils
+ * Some useful Utils
  * <p>{@link #judgeNotNull(String, String...)}</p>
  * <p>{@link #judgeNotNull(Object)}</p>
  * <p>{@link #getVersionName(android.content.Context)}</p>
