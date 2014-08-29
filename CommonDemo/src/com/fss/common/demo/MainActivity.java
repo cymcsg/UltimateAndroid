@@ -52,9 +52,7 @@ public class MainActivity extends ActionBarActivity {
     @InjectView(R.id.favShimmerReaLayout)
     View favShimmerReaLayout;
 
-    /**
-     * Called when the activity is first created.
-     */
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,10 +63,6 @@ public class MainActivity extends ActionBarActivity {
                 .add(R.id.main_content_frame, mContent).commit();
         initViews();
         initShimmerTextView();
-
-
-//        UtilsDemo.TestJsoup();
-
 
     }
 
@@ -242,7 +236,6 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void run() {
                 super.run();
-                Logs.d("11111");
                 HttpsUtils.sendWithSSlSocketWithCrt(MainActivity.this, "ca.crt", "https://xxx.xxx");
             }
         }.start();
