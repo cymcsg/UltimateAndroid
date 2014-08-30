@@ -39,13 +39,13 @@ public class CrashHandler implements UncaughtExceptionHandler {
     private static CrashHandler INSTANCE = new CrashHandler();
     //Context
     private Context mContext;
-    private Object systemServiceObject;
+    //private Object systemServiceObject;
     //to store error info
     private Map<String, String> infos = new HashMap<String, String>();
 
     //As part of file name
     private SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
-
+    String crashFilePath = "/crash/";
 
     private CrashHandler() {
     }
@@ -62,13 +62,14 @@ public class CrashHandler implements UncaughtExceptionHandler {
      *
      * @param context
      */
-    public void init(Context context, Object systemServiceObject) {
+    public void init(Context context, String crashFilePath) {
         mContext = context;
 
         mDefaultHandler = Thread.getDefaultUncaughtExceptionHandler();
 
         Thread.setDefaultUncaughtExceptionHandler(this);
-        this.systemServiceObject = systemServiceObject;
+        // this.systemServiceObject = systemServiceObject;
+        this.crashFilePath = crashFilePath;
     }
 
     /**
@@ -105,7 +106,7 @@ public class CrashHandler implements UncaughtExceptionHandler {
         if (ex == null) {
             return false;
         }
-        //使用Toast来显示异常信息  
+
         new Thread() {
             @Override
             public void run() {
@@ -135,11 +136,6 @@ public class CrashHandler implements UncaughtExceptionHandler {
                 String versionCode = pi.versionCode + "";
                 infos.put("versionName", versionName);
                 infos.put("versionCode", versionCode);
-//                if (!ChatFragment.serviceIsRunning(ctx, "com.qingdaonews.utils.GetMessageServices"))   {
-//                    Logs.e("collect----");
-//                    Intent   getMessageServicesIntent = new Intent(ctx, GetMessageServices.class);
-//                    ctx.stopService(getMessageServicesIntent) ;
-//                }
 
             }
         } catch (NameNotFoundException e) {
@@ -189,7 +185,8 @@ public class CrashHandler implements UncaughtExceptionHandler {
             String fileName = "crash-" + time + "-" + timestamp + ".log";
             if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
 
-                String path =  StorageUtils.getCacheDirectory(mContext)+"/crash/";
+                String path = StorageUtils.getCacheDirectory(mContext) +
+                        (BasicUtils.judgeNotNull(crashFilePath) ? crashFilePath : "/crash/");
                 File dir = new File(path);
                 if (!dir.exists()) {
                     dir.mkdirs();

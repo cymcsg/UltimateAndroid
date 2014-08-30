@@ -1,6 +1,7 @@
 package com.fss.common;
 
 import android.app.Application;
+import com.activeandroid.ActiveAndroid;
 import com.fss.common.commonUtils.urlUtils.UniversalImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
@@ -16,7 +17,8 @@ public class CommonApplication extends Application {
         // Create global configuration and initialize ImageLoader with this configuration
         ImageLoaderConfiguration config = UniversalImageLoader.getDefaultImageLoaderConfiguration(getApplicationContext());
         ImageLoader.getInstance().init(config);
-        //  ActiveAndroid.initialize(this);
+
+        ActiveAndroid.initialize(this);
 
     }
 
