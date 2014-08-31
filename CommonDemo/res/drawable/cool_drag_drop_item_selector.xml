@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
- <selector xmlns:android="http://schemas.android.com/apk/res/android">
-     <item android:state_pressed="true" android:drawable="@drawable/cool_drag_drop_long_click_transition"/>
-     <item android:state_focused="true" android:drawable="@drawable/cool_drag_drop_long_click_transition"/>
-     <item android:state_selected="true" android:drawable="@drawable/cool_drag_drop_long_click_transition"/>
-     <item android:drawable="@drawable/cool_drag_drop_card"/>
-     </selector>

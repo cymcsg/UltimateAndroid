@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-  ~ Copyright (c) 2014. Marshal Chen.
-  -->
-
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-   <item android:id="@+id/delete_meeting" android:title="delete"
-      android:icon="@android:drawable/ic_menu_delete" />
-</menu>
