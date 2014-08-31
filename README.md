@@ -1,11 +1,14 @@
-CommonLibsForAndroid
+UltimateAndroid
 ==========================
 
 ###Version:0.0.1beta
 ###当前版本：0.0.1beta
 <br>
+#####Formerly known as CommonLibsForAndroid
+#####原名： CommonLibsForAndroid
+<br>
+###Using UltimateAndroid is a fast way  to help you  develop Android apps 
 
-###Using CommonLibs is a fast way  to help you  develop Android apps 
 
 ### 快速开发Android应用的框架  
 <br>  
@@ -13,9 +16,9 @@ CommonLibsForAndroid
 
 [中文简介](#chinese_introduction)
 
-[English Manual](https://github.com/cymcsg/CommonLibsForAndroid/blob/master/Manual_English.md)
+[English Manual](https://github.com/cymcsg/UltimateAndroid/blob/master/Manual_English.md)
 
-[中文教程](https://github.com/cymcsg/CommonLibsForAndroid/blob/master/Manual_Chinese.md)
+[中文教程](https://github.com/cymcsg/UltimateAndroid/blob/master/Manual_Chinese.md)
 
 
 <h2 ><a name="english_introduction">Introduction</h2>  
@@ -41,7 +44,7 @@ Demo Manual
 
 
 
-Demo is rely on appcompat and the CommonLibs, you can change CONFIGURATION in your IDES etc.
+Demo is rely on appcompat and the UltimateAndroid, you can change CONFIGURATION in your IDES etc.
 
 ##Important:
 ***Most of  IDEs require additional configuration in order to enable annotation processing for Butter Knife,
@@ -81,7 +84,7 @@ Please set the ides before you run the demo apps.
 Demo 使用方法
 --------------
 
-Demo依赖于appcompat 和 CommonLibs，你可以在IDE或者配置文件里面添加一下依赖。
+Demo依赖于appcompat 和 UltimateAndroid，你可以在IDE或者配置文件里面添加一下依赖。
 
 ##重要:
 **大部分IDE需要开启annotation的编译（因为Butter Knife）的缘故，如果不清楚如何开启可以看一下[IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse Configuration for butter Knife][102].**
@@ -214,7 +217,7 @@ Add [FaceCrop](https://github.com/Todd-Davies/ProgressWheel)
 
 2014.8.7 add activity like wechat friend group
 
-The CommonLibs use many opensource program and I am very grateful to the author of them.
+The UltimateAndroid use many opensource program and I am very grateful to the author of them.
 The opensource program which I use:
 
 1.JakeWharton's [Butter Knife][1] for View Injection.

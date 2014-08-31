@@ -1,15 +1,15 @@
 CommonLibsForAndroid Manual
 =====
-[中文教程](https://github.com/cymcsg/CommonLibsForAndroid/blob/master/Manual_Chinese.md)
+[中文教程](https://github.com/cymcsg/UltimateAndroid/blob/master/Manual_Chinese.md)
 
-[ReadMe](https://github.com/cymcsg/CommonLibsForAndroid)
+[ReadMe](https://github.com/cymcsg/UltimateAndroid)
 
 ###Info
 
 
-1.The core function of CommonLibsForAndroid Framework contains  View Injection,ORM,Asynchronous Http and Image etc.
+1.The core function of UltimateAndroid Framework contains  View Injection,ORM,Asynchronous Http and Image etc.
 
-2.CommonLibsForAndroid  use a lot terrific opensource project.
+2.UltimateAndroid  use a lot terrific opensource project.
 
 
 ###Quick Setup（Basic Usage）

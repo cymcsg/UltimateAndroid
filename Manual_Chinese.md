@@ -1,17 +1,17 @@
-CommonLibsForAndroid 使用手册
+UltimateAndroid 使用手册
 =====
-[English Version](https://github.com/cymcsg/CommonLibsForAndroid/blob/master/Manual_English.md)
+[English Version](https://github.com/cymcsg/UltimateAndroid/blob/master/Manual_English.md)
 
-[ReadMe](https://github.com/cymcsg/CommonLibsForAndroid)
+[ReadMe](https://github.com/cymcsg/UltimateAndroid)
 
 
 ###简介
 1.框架核心模块包括视图注入，ORM，异步的Http与图像请求等内容。
-2.CommonLibsForAndroid 使用了许多优秀的开源框架
+2.UltimateAndroid 使用了许多优秀的开源框架
 3.目前的项目结构还未采用Gradle，可能在未来某一时间会采用
 
 ###快速入门（基础使用）
-1.如果这是您第一次使用CommonLibsForAndroid，你可以使用CommonApplication作为Android App的Application或者使用自定义的Application继承CommonApplication。
+1.如果这是您第一次使用UltimateAndroid，你可以使用CommonApplication作为Android App的Application或者使用自定义的Application继承CommonApplication。
 
 2.由于框架使用了View Injection，**大部分IDE需要开启annotation的编译（使用了Butter Knife），如果不清楚如何开启可以看一下[IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse Configuration for butter Knife][102].**
 
