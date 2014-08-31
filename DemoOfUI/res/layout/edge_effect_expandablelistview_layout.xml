@@ -5,7 +5,7 @@
                 android:layout_height="match_parent"
                 tools:context=".ExpandableListViewActivity">
 
-    <com.fss.common.uiModule.edgeeffectoverride.EdgeEffectExpandableListView
+    <com.marshalchen.common.uiModule.edgeeffectoverride.EdgeEffectExpandableListView
             android:id="@+id/expandablelistview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

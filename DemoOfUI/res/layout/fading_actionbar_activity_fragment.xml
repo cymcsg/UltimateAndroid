@@ -12,6 +12,6 @@
         android:tag="sampleFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        class="com.fss.common.demo.fadingactionbar.SampleFragment" />
+        class="com.marshalchen.common.demoofui.fadingactionbar.SampleFragment" />
 
 </FrameLayout>

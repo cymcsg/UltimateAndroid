@@ -3,7 +3,7 @@
   ~ Copyright (c) 2014. Marshal Chen.
   -->
 
-<com.fss.common.demo.dragSortListview.CheckableLinearLayout
+<com.marshalchen.common.demoofui.dragSortListview.CheckableLinearLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_width="fill_parent"
   android:layout_height="@dimen/item_height"
@@ -29,4 +29,4 @@
     android:layout_width="@dimen/item_height"
     android:layout_height="@dimen/item_height"
     android:layout_weight="0" />
-</com.fss.common.demo.dragSortListview.CheckableLinearLayout>
+</com.marshalchen.common.demoofui.dragSortListview.CheckableLinearLayout>

@@ -22,7 +22,7 @@
             layout="@layout/list_filter_loading_empty_view"
              />
         
-         <com.fss.common.demo.listviewfilter.ui.PinnedHeaderListView
+         <com.marshalchen.common.demoofui.listviewfilter.ui.PinnedHeaderListView
             android:id="@+id/list_view"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"

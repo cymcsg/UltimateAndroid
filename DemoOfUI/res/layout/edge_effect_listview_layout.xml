@@ -6,7 +6,7 @@
         android:layout_height="match_parent"
         tools:context=".ListViewActivity">
 
-    <com.fss.common.uiModule.edgeeffectoverride.EdgeEffectListView
+    <com.marshalchen.common.uiModule.edgeeffectoverride.EdgeEffectListView
             android:id="@+id/listview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

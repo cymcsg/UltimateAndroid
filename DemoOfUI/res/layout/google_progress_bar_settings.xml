@@ -5,7 +5,7 @@
 
     <fragment
             android:id="@+id/prefs_fragment"
-            android:name="com.fss.common.demo.googleprogressbar.PrefsFragment"
+            android:name="com.marshalchen.common.demoofui.googleprogressbar.PrefsFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 

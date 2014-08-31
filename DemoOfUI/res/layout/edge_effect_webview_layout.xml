@@ -6,7 +6,7 @@
         android:layout_height="match_parent"
         tools:context=".ListViewActivity">
 
-    <com.fss.common.uiModule.edgeeffectoverride.EdgeEffectWebView
+    <com.marshalchen.common.uiModule.edgeeffectoverride.EdgeEffectWebView
             android:id="@+id/webview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

@@ -8,11 +8,11 @@
     <android.support.v4.view.ViewPager android:layout_width="match_parent" android:layout_height="80dp"
                                        android:visibility="visible" android:id="@+id/landingMallViewpager"
             ></android.support.v4.view.ViewPager>
-    <com.fss.common.uiModule.viewpagerindicator.CirclePageIndicator android:layout_width="fill_parent"
+    <com.marshalchen.common.uiModule.viewpagerindicator.CirclePageIndicator android:layout_width="fill_parent"
                                                                     android:layout_below="@id/landingMallViewpager"
                                                                     android:id="@+id/landingMallViewPagerIndicator"
-                                                                    android:layout_height="wrap_content"></com.fss.common.uiModule.viewpagerindicator.CirclePageIndicator>
-    <com.fss.common.uiModule.titanic.TitanicTextView
+                                                                    android:layout_height="wrap_content"></com.marshalchen.common.uiModule.viewpagerindicator.CirclePageIndicator>
+    <com.marshalchen.common.uiModule.titanic.TitanicTextView
             android:id="@+id/titanicTextView"
             android:text="Loading" android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
@@ -20,12 +20,12 @@
             android:textColor="@color/threec"
             android:textSize="70sp"/>
 
-    <com.fss.common.uiModule.enhanceListView.EnhancedListView android:layout_width="fill_parent"
+    <com.marshalchen.common.uiModule.enhanceListView.EnhancedListView android:layout_width="fill_parent"
                                                               android:id="@+id/landingEnhanceListView"
 
                                                               android:layout_height="wrap_content">
 
-    </com.fss.common.uiModule.enhanceListView.EnhancedListView>
+    </com.marshalchen.common.uiModule.enhanceListView.EnhancedListView>
 
 
 </LinearLayout>

@@ -10,7 +10,7 @@
     android:gravity="center_horizontal"
     android:orientation="vertical">
 
-    <com.fss.common.uiModule.circularProgressButton.CircularProgressButton
+    <com.marshalchen.common.uiModule.circularProgressButton.CircularProgressButton
             android:id="@+id/circularButton1"
             android:layout_width="196dp"
             android:layout_height="64dp"
@@ -25,7 +25,7 @@
             app:cpb_selectorComplete="@drawable/circular_progress_button_complete_state_selector"
             app:cpb_selectorError="@drawable/circular_progress_button_error_state_selector"/>
 
-    <com.fss.common.uiModule.circularProgressButton.CircularProgressButton
+    <com.marshalchen.common.uiModule.circularProgressButton.CircularProgressButton
             android:id="@+id/circularButton2"
             android:layout_width="196dp"
             android:layout_height="64dp"

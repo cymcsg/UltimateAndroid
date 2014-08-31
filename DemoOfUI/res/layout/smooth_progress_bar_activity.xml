@@ -3,21 +3,21 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent" android:orientation="vertical"
         android:layout_height="match_parent" android:paddingTop="?android:attr/actionBarSize">
-    <com.fss.common.uiModule.smoothprogressbar.ContentLoadingSmoothProgressBar
+    <com.marshalchen.common.uiModule.smoothprogressbar.ContentLoadingSmoothProgressBar
             android:layout_marginTop="22dp"
             android:id="@+id/smoothProgressBar" android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:indeterminate="true"
             style="@style/GPlusProgressBar"/>
-    <com.fss.common.uiModule.smoothprogressbar.ContentLoadingSmoothProgressBar
+    <com.marshalchen.common.uiModule.smoothprogressbar.ContentLoadingSmoothProgressBar
             android:layout_marginTop="22dp" android:id="@+id/smoothProgressBar1"
             android:visibility="invisible"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:indeterminate="true"
             style="@style/GNowProgressBar"/>
-    <com.fss.common.uiModule.smoothprogressbar.ContentLoadingSmoothProgressBar
+    <com.marshalchen.common.uiModule.smoothprogressbar.ContentLoadingSmoothProgressBar
             android:id="@+id/smoothProgressBar2"
             android:layout_marginTop="22dp"
             android:visibility="invisible"
@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:indeterminate="true"
             style="@style/SmoothProgressBar"/>
-    <com.fss.common.uiModule.smoothprogressbar.ContentLoadingSmoothProgressBar
+    <com.marshalchen.common.uiModule.smoothprogressbar.ContentLoadingSmoothProgressBar
             android:id="@+id/smoothProgressBar3"
             android:layout_marginTop="22dp"
             android:visibility="invisible"

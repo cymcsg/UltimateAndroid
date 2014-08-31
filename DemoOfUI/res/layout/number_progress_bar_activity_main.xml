@@ -12,7 +12,7 @@
     android:orientation="vertical"
    >
 
-    <com.fss.common.ui.NumberProgressBar
+    <com.marshalchen.common.ui.NumberProgressBar
         android:id="@+id/numberbar1"
         android:layout_width="wrap_content"
         android:padding="20dp"
@@ -21,7 +21,7 @@
         style="@style/NumberProgressBar_Default"
         android:layout_height="wrap_content" />
 
-    <com.fss.common.ui.NumberProgressBar
+    <com.marshalchen.common.ui.NumberProgressBar
         android:id="@+id/numberbar2"
         android:layout_height="wrap_content"
         android:padding="20dp"
@@ -30,14 +30,14 @@
         style="@style/NumberProgressBar_Passing_Green"
      />
 
-    <com.fss.common.ui.NumberProgressBar
+    <com.marshalchen.common.ui.NumberProgressBar
         android:id="@+id/numberbar3"
         android:layout_margin="20dp"
         style="@style/NumberProgressBar_Relax_Blue"
         custom:progress_num="30"
         android:layout_height="wrap_content" />
 
-    <com.fss.common.ui.NumberProgressBar
+    <com.marshalchen.common.ui.NumberProgressBar
         android:id="@+id/numberbar4"
         android:layout_width="wrap_content"
         android:layout_margin="20dp"
@@ -46,7 +46,7 @@
         android:layout_height="wrap_content" />
 
 
-    <com.fss.common.ui.NumberProgressBar
+    <com.marshalchen.common.ui.NumberProgressBar
         android:id="@+id/numberbar5"
         android:layout_width="wrap_content"
         android:layout_margin="20dp"
@@ -55,7 +55,7 @@
         android:layout_height="wrap_content" />
 
 
-    <com.fss.common.ui.NumberProgressBar
+    <com.marshalchen.common.ui.NumberProgressBar
         android:id="@+id/numberbar6"
         android:layout_width="wrap_content"
         android:layout_margin="20dp"
@@ -63,7 +63,7 @@
         custom:progress_num="60"
         android:layout_height="wrap_content" />
 
-    <com.fss.common.ui.NumberProgressBar
+    <com.marshalchen.common.ui.NumberProgressBar
         android:id="@+id/numberbar7"
         android:layout_width="wrap_content"
         android:layout_margin="20dp"
@@ -71,7 +71,7 @@
         custom:progress_num="70"
         android:layout_height="wrap_content" />
 
-    <com.fss.common.ui.NumberProgressBar
+    <com.marshalchen.common.ui.NumberProgressBar
         android:id="@+id/numberbar8"
         android:layout_width="wrap_content"
         android:layout_margin="20dp"

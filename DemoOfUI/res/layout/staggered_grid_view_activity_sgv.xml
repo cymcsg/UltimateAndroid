@@ -1,4 +1,4 @@
-<com.fss.common.uiModule.staggeredgridview.StaggeredGridView
+<com.marshalchen.common.uiModule.staggeredgridview.StaggeredGridView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/grid_view"

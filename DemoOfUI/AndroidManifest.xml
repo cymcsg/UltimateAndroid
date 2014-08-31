@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.fss.common.demo"
+          package="com.marshalchen.common.demoofui"
           android:versionCode="1"
           android:versionName="1.0">
     <uses-sdk android:minSdkVersion="8"/>
-    <application android:label="@string/app_name" android:name=".CommonApplication" android:theme="@style/AppTheme"
+    <application android:label="@string/app_name" android:name="com.marshalchen.common.demoofui.CommonApplication" android:theme="@style/AppTheme"
                  android:icon="@drawable/test_back">
         <activity android:name=".MainActivity"
                   android:label="@string/app_name">
@@ -59,7 +59,7 @@
         <activity android:name=".listviewanimations.itemmanipulationexamples.AnimateDismissActivity"></activity>
         <activity android:name=".sampleModules.PullSplashActivity"></activity>
 
-        <activity android:name=".utils.jsoup.UtilsDemoActivity"></activity>
+        <activity android:name=".jsoup.UtilsDemoActivity"></activity>
 
         <activity android:name=".sampleModules.ViewServerActivity"></activity>
         <activity android:name=".activitytransition.ActivityTransitionActivity"></activity>
@@ -68,7 +68,7 @@
         <activity android:name=".sampleModules.JazzyViewActivity"></activity>
         <provider
                 android:name="android.support.v4.content.FileProvider"
-                android:authorities="com.fss.common.demo.fileprovider"
+                android:authorities="com.marshalchen.common.demoofui.fileprovider"
                 android:grantUriPermissions="true"
                 android:exported="false">
             <meta-data
@@ -78,18 +78,18 @@
 
 
         <activity
-                android:name="com.fss.common.uiModule.passcodelock.PasscodeUnlockActivity"
+                android:name="com.marshalchen.common.uiModule.passcodelock.PasscodeUnlockActivity"
                 android:screenOrientation="portrait"
                 android:windowSoftInputMode="stateHidden">
         </activity>
         <activity
-                android:name="com.fss.common.uiModule.passcodelock.PasscodePreferencesActivity"
+                android:name="com.marshalchen.common.uiModule.passcodelock.PasscodePreferencesActivity"
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:screenOrientation="portrait"
                 android:windowSoftInputMode="stateHidden">
         </activity>
         <activity
-                android:name="com.fss.common.uiModule.passcodelock.PasscodeManagePasswordActivity"
+                android:name="com.marshalchen.common.uiModule.passcodelock.PasscodeManagePasswordActivity"
                 android:screenOrientation="portrait"
                 android:windowSoftInputMode="stateHidden">
         </activity>
