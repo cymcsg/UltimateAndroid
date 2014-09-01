@@ -7,7 +7,7 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 
 /**
- * Created by cym on 14-4-30.
+ * CommonApplication which config ImageLoader and ActiveAndroid
  */
 public class CommonApplication extends Application {
 
