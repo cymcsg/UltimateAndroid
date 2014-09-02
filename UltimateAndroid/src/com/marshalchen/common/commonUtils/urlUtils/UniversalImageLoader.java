@@ -32,6 +32,15 @@ public class UniversalImageLoader {
     }
 
     public static ImageLoaderConfiguration getDefaultImageLoaderConfiguration(Context context, boolean isWriteLog) {
+        ImageLoaderConfiguration.Builder builder = getDefaultImageLoaderConfigurationBuilder(context);
+        if (isWriteLog) {
+            builder.writeDebugLogs();
+        }
+        ImageLoaderConfiguration config = builder.build();
+        return config;
+    }
+
+    public static ImageLoaderConfiguration.Builder getDefaultImageLoaderConfigurationBuilder(Context context) {
         File cacheDir = StorageUtils.getCacheDirectory(context);
         ImageLoaderConfiguration.Builder builder = new ImageLoaderConfiguration.Builder(context)
 //                .memoryCacheExtraOptions(480, 800) // default = device screen dimensions
@@ -51,16 +60,17 @@ public class UniversalImageLoader {
                 .imageDecoder(new BaseImageDecoder(false)) // default
                         //   .defaultDisplayImageOptions(DisplayImageOptions.createSimple()) // default
                 .defaultDisplayImageOptions(getDefaultImageOptions());
-
-        if (isWriteLog) {
-            builder.writeDebugLogs();
-        }
-        ImageLoaderConfiguration config = builder.build();
-        return config;
+        return builder;
     }
 
     public static DisplayImageOptions getDefaultImageOptions() {
-        DisplayImageOptions options = new DisplayImageOptions.Builder()
+        DisplayImageOptions options = getDefaultImageOptionsBuilder()
+                .build();
+        return options;
+    }
+
+    public static DisplayImageOptions.Builder getDefaultImageOptionsBuilder() {
+        DisplayImageOptions.Builder builder = new DisplayImageOptions.Builder()
                 .resetViewBeforeLoading(false)  // default
                         //  .delayBeforeLoading(1000)
                 .showImageOnLoading(R.drawable.titanic_wave_black)
@@ -70,8 +80,7 @@ public class UniversalImageLoader {
                 .displayer(new SimpleBitmapDisplayer()) // default
                 .handler(new Handler()) // default
                 .cacheInMemory(true)
-                .cacheOnDisc(true)
-                .build();
-        return options;
+                .cacheOnDisc(true);
+        return builder;
     }
 }
