@@ -35,6 +35,14 @@ public class GreenDaoUtils {
         return indexFavList;
     }
 
+    public static List getList(AbstractDao dao, WhereCondition cond, WhereCondition... condMore) {
+        isLog();
+        List indexFavList = dao.queryBuilder()
+                .where(cond, condMore)
+                .list();
+        return indexFavList;
+    }
+
     public static List getList(AbstractDao dao, Property... orderProperty) {
         isLog();
         List indexFavList = dao.queryBuilder()
@@ -82,9 +90,11 @@ public class GreenDaoUtils {
     public static void insert(AbstractDao dao, List entities) {
         dao.insertInTx(entities);
     }
-    public static void delete(AbstractDao dao,  Object entity) {
-       dao.delete(entity);
+
+    public static void delete(AbstractDao dao, Object entity) {
+        dao.delete(entity);
     }
+
     public static void delete(AbstractDao dao, List entities) {
         dao.deleteInTx(entities);
 
