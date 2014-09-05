@@ -28,7 +28,7 @@ import de.greenrobot.daogenerator.Schema;
  */
 public class DbDaoGenerator {
     final static String generatePath = "xxx/src/";
-    final static String getGenerateSchemaPath="com.xxx.xxx.models.gen";
+    final static String getGenerateSchemaPath = "com.xxx.xxx.models.gen";
 
     public static void main(String[] args) throws Exception {
         Schema schema = new Schema(1, getGenerateSchemaPath);
@@ -43,6 +43,8 @@ public class DbDaoGenerator {
         note.addStringProperty("brandId").notNull();
         note.addDateProperty("brandImageUri");
         note.addStringProperty("brandInfos");
+        note.setHasKeepSections(true);
+        note.setSkipGeneration(true);
     }
 
 //    private static void addCustomerOrder(Schema schema) {

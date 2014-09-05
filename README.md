@@ -20,7 +20,9 @@ UltimateAndroid
 
 [中文教程](https://github.com/cymcsg/UltimateAndroid/blob/master/Manual_Chinese.md)
 
+###[中文详细教程](Tutorials/TableofContents.md)
 
+<br>
 <h2 ><a name="english_introduction">Introduction</h2>  
 
 ---

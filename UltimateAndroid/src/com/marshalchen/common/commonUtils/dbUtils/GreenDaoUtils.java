@@ -91,6 +91,14 @@ public class GreenDaoUtils {
         dao.insertInTx(entities);
     }
 
+    public static void insertOrReplace(AbstractDao dao, Object entity) {
+        dao.insertOrReplace(entity);
+    }
+
+    public static void insertOrReplace(AbstractDao dao, List entities) {
+        dao.insertOrReplace(entities);
+    }
+
     public static void delete(AbstractDao dao, Object entity) {
         dao.delete(entity);
     }

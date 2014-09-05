@@ -21,6 +21,7 @@ import android.os.Environment;
 import android.os.Looper;
 import android.util.Log;
 import android.widget.Toast;
+import com.marshalchen.common.commonUtils.logUtils.Logs;
 import com.nostra13.universalimageloader.utils.StorageUtils;
 
 /**
@@ -61,6 +62,7 @@ public class CrashHandler implements UncaughtExceptionHandler {
      * Initialize
      *
      * @param context
+     * @param crashFilePath
      */
     public void init(Context context, String crashFilePath) {
         mContext = context;
@@ -70,6 +72,15 @@ public class CrashHandler implements UncaughtExceptionHandler {
         Thread.setDefaultUncaughtExceptionHandler(this);
         // this.systemServiceObject = systemServiceObject;
         this.crashFilePath = crashFilePath;
+    }
+
+    /**
+     * Initialize
+     *
+     * @param context
+     */
+    public void init(Context context) {
+        init(context, "/crash/");
     }
 
     /**
@@ -185,8 +196,11 @@ public class CrashHandler implements UncaughtExceptionHandler {
             String fileName = "crash-" + time + "-" + timestamp + ".log";
             if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
 
-                String path = StorageUtils.getCacheDirectory(mContext) +
-                        (BasicUtils.judgeNotNull(crashFilePath) ? crashFilePath : "/crash/");
+                String path =
+                        //StorageUtils.getCacheDirectory(mContext) +
+                        Environment.getExternalStorageDirectory().getAbsolutePath() +
+                                (BasicUtils.judgeNotNull(crashFilePath) ? crashFilePath : "/crash/");
+                Logs.d("path----" + path);
                 File dir = new File(path);
                 if (!dir.exists()) {
                     dir.mkdirs();
