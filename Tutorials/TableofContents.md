@@ -5,8 +5,7 @@ UltimateAndroid快速开发框架教程
 
 ####本套教程主要是介绍UltimateAndroid框架的使用,同时会采用一个项目作为例子来讲述如何更好的使用UltimateAndroid
 
-```目录：```
-
+``目录：``
 
 一、[部署UltimateAndroid框架（Eclipse版和AndroidStudio版)](Chapter1.md)
 
