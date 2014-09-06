@@ -27,7 +27,7 @@ import java.util.List;
 
 
 /**
- * Created by cym on 14-8-5.
+ * HttpUtils which use apache http client
  */
 public class HttpUtils {
 
