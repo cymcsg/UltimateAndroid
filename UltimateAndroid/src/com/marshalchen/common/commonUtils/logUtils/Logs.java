@@ -148,7 +148,7 @@ public final class Logs {
             Log.e(sApplicationTag, getContent(getCurrentStackTraceElement())+"\n>"+exception.getMessage());
 //            Log.e(sApplicationTag, Thread.currentThread().getStackTrace()[2].getClassName());
 //            Log.e(sApplicationTag, Thread.currentThread().getStackTrace()[2].getMethodName());
-
+            exception.printStackTrace();
         }
     }
     public static void e(Exception exception,String string) {
@@ -159,6 +159,24 @@ public final class Logs {
             exception.printStackTrace();
         }
     }
+
+    public static void e(String string,Exception exception) {
+        if (sIsLogEnabled) {
+            Log.e(sApplicationTag, getContent(getCurrentStackTraceElement())+"\n>"+exception.getMessage()+"\n>"+exception.getStackTrace()+"   "+string);
+//            Log.e(sApplicationTag, Thread.currentThread().getStackTrace()[2].getClassName());
+//            Log.e(sApplicationTag, Thread.currentThread().getStackTrace()[2].getMethodName());
+            exception.printStackTrace();
+        }
+    }
+    public static void e(String tag,String message,Exception exception) {
+        if (sIsLogEnabled) {
+            Log.e(tag, getContent(getCurrentStackTraceElement())+"\n>"+exception.getMessage()+"\n>"+exception.getStackTrace()+"   "+message);
+//            Log.e(sApplicationTag, Thread.currentThread().getStackTrace()[2].getClassName());
+//            Log.e(sApplicationTag, Thread.currentThread().getStackTrace()[2].getMethodName());
+            exception.printStackTrace();
+        }
+    }
+
 //    /**
 //     *
 //     * &lt;p&gt;

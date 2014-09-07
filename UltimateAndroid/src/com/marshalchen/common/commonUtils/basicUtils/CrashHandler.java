@@ -95,19 +95,12 @@ public class CrashHandler implements UncaughtExceptionHandler {
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
-                Log.e(TAG, "error : ", e);
+                Logs.e( "error : ", e);
             }
             //退出程序  
-            Log.d(TAG, "uncaught exception is catched!");
-//           
-            //    AlarmManager mgr = (AlarmManager) systemServiceObject;
-//            Intent intent=new Intent();
-//            intent.setClass(mContext, Welcome.class);
-//            PendingIntent m_restartIntent = PendingIntent.getActivity(mContext, 0, intent, Intent.FLAG_ACTIVITY_NEW_TASK);
-//            mgr.set(AlarmManager.RTC, System.currentTimeMillis() + 3000, m_restartIntent);
-            Log.d("Chen", "PendingIntent");
+            Logs.d("uncaught exception is catched!");
             System.exit(0);
-            Log.d("Chen", "SystemPendingIntent");
+            Logs.d( "SystemPendingIntent");
             android.os.Process.killProcess(android.os.Process.myPid());
         }
     }
@@ -129,7 +122,7 @@ public class CrashHandler implements UncaughtExceptionHandler {
         collectDeviceInfo(mContext);
 
         String filemameString = saveCrashInfo2File(ex);
-        Log.d("filemameString", filemameString);
+        Logs.d("filemameString", filemameString);
         return true;
     }
 
@@ -150,16 +143,16 @@ public class CrashHandler implements UncaughtExceptionHandler {
 
             }
         } catch (NameNotFoundException e) {
-            Log.e(TAG, "an error occured when collect package info", e);
+            Logs.e( "an error occured when collect package info", e);
         }
         Field[] fields = Build.class.getDeclaredFields();
         for (Field field : fields) {
             try {
                 field.setAccessible(true);
                 infos.put(field.getName(), field.get(null).toString());
-                Log.d(TAG, field.getName() + " : " + field.get(null));
+                Logs.d(field.getName() + " : " + field.get(null));
             } catch (Exception e) {
-                Log.e(TAG, "an error occured when collect crash info", e);
+                Logs.e( "an error occured when collect crash info", e);
             }
         }
     }
@@ -211,7 +204,7 @@ public class CrashHandler implements UncaughtExceptionHandler {
             }
             return fileName;
         } catch (Exception e) {
-            Log.e(TAG, "an error occured while writing file...", e);
+            Logs.e( "an error occured while writing file...", e);
         }
         return null;
     }
