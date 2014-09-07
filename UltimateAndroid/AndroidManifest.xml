@@ -3,7 +3,7 @@
           package="com.marshalchen.common"
           android:versionCode="1"
           android:versionName="1.0">
-    <uses-sdk android:minSdkVersion="7"></uses-sdk>
+    <uses-sdk android:minSdkVersion="14"></uses-sdk>
     <application android:label="" android:icon="@drawable/ic_launcher">
 
     </application>

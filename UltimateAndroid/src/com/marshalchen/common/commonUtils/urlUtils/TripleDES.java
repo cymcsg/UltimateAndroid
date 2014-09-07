@@ -11,8 +11,7 @@ import java.security.MessageDigest;
 
 /**
  *
- * User: marshalchen
- * Date: 13-7-4
+ * TripleDES Method
  */
 public class TripleDES {
     private final static String token = "";
