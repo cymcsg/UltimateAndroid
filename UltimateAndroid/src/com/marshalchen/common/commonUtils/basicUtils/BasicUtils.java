@@ -23,7 +23,6 @@ import java.util.*;
  * <p>{@link #sendIntent(android.content.Context, Class, String, android.os.Parcelable)}</p>
  * <p>{@link #getSharedPreferences(android.content.Context, String, String)}</p>
  * <p>{@link #putSharedPreferences(android.content.Context, String, String, String)}</p>
- *
  */
 public class BasicUtils {
     /**
@@ -235,9 +234,9 @@ public class BasicUtils {
     }
 
     /**
-     * @see #judgeNotNull(String, String...)
      * @param string
      * @return
+     * @see #judgeNotNull(String, String...)
      */
     public static boolean judgeNotNull(String string) {
         // return string != null && !string.equals("") && !string.equals("null") ? true : false;
@@ -247,13 +246,15 @@ public class BasicUtils {
 
     /**
      * Judge if a variable of String or String[] is null or ""
+     *
      * @param string
      * @param strings
      * @return
      */
     public static boolean judgeNotNull(String string, String... strings) {
         boolean flag = true;
-        if (!(string != null && !string.equals("") && !string.equals("null")&&!string.trim().equals(""))) return false;
+        if (!(string != null && !string.equals("") && !string.equals("null") && !string.trim().equals("")))
+            return false;
         for (String s : strings) {
             if (s == null || s.equals("") || s.equals("null")) {
                 flag = false;
@@ -286,7 +287,7 @@ public class BasicUtils {
         for (Object o : objects) {
             if (o == null) {
                 flag = false;
-                break;
+                return flag;
             }
         }
 
