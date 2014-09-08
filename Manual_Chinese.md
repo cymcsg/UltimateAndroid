@@ -17,7 +17,8 @@ UltimateAndroid 使用手册
 
 3.视图注入：
  ```Example:```
-  
+ 
+ 
  	class ExampleActivity extends Activity {
   	@InjectView(R.id.title) TextView title;
   	@InjectView(R.id.subtitle) TextView subtitle;
@@ -28,10 +29,12 @@ UltimateAndroid 使用手册
     	setContentView(R.layout.simple_activity);
     	ButterKnife.inject(this);
     	// TODO Use "injected" views...
-  }
-}
+      }
+    }
 
 Another use is simplifying the view holder pattern inside of a list adapter.
+
+
 
 	public class MyAdapter extends BaseAdapter {
 	@Override public View getView(int position, View view, ViewGroup parent) {
@@ -55,7 +58,7 @@ Another use is simplifying the view holder pattern inside of a list adapter.
       }
       }
 	}	
---------
+
 4.异步网络请求:
   使用异步网络请求工具，你不需要在额外的声明Thread来进行网络请求。
 
