@@ -16,10 +16,10 @@ UltimateAndroid 使用手册
 2.由于框架使用了View Injection，**大部分IDE需要开启annotation的编译（使用了Butter Knife），如果不清楚如何开启可以看一下[IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse Configuration for butter Knife][102].**
 
 3.视图注入：
+
  ```Example:```
  
- 
- 	class ExampleActivity extends Activity {
+  	class ExampleActivity extends Activity {
   	@InjectView(R.id.title) TextView title;
   	@InjectView(R.id.subtitle) TextView subtitle;
   	@InjectView(R.id.footer) TextView footer;
@@ -33,8 +33,6 @@ UltimateAndroid 使用手册
     }
 
 Another use is simplifying the view holder pattern inside of a list adapter.
-
-
 
 	public class MyAdapter extends BaseAdapter {
 	@Override public View getView(int position, View view, ViewGroup parent) {
