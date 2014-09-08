@@ -1,13 +1,10 @@
 UltimateAndroid快速开发框架教程（一）:部署框架
------
-````为了方便大家更好的使用UltimateAndroid进行Android快速开发，特撰写此教程。不当之处，还请多多指教。```` 
+==========================
+``为了方便大家更好的使用UltimateAndroid进行Android快速开发，特撰写此教程。不当之处，还请多多指教。`` 
 
-````由于目前使用Eclipse和Intellij Idea（Android Studio）作为开发工具的人都非常多，为了方便大家部署，针对这两种开发环境都进行相应的说明````
+``由于目前使用Eclipse和Intellij Idea（Android Studio）作为开发工具的人都非常多，为了方便大家部署，针对这两种开发环境都进行相应的说明``
 
 ``项目地址是https://github.com/cymcsg/UltimateAndroid.git，如有疑问可以直接在github的issue上提问，或者加入QQ群讨论：341970175，加群请注明Android开发``
-
-
-
 
     注意事项：
     1.JDK,Android Sdk配置完毕，JDK建议是JDK1.7版本，否则需要修改项目语言版本；

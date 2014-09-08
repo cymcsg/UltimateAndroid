@@ -17,7 +17,7 @@ UltimateAndroid 使用手册
 
 3.视图注入：
 
- ```Example:```
+ Example:
  
   	class ExampleActivity extends Activity {
   	@InjectView(R.id.title) TextView title;
