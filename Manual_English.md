@@ -20,7 +20,7 @@ or you can see [IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse 
 
 3.View Injection:
   
-  ```Example:```
+  ``Example:``
   
  	class ExampleActivity extends Activity {
   	@InjectView(R.id.title) TextView title;
