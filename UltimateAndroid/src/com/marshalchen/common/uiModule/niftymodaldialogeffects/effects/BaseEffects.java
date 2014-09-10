@@ -1,22 +1,44 @@
-/*
- * Copyright (c) 2014. Marshal Chen.
- */
-
 package com.marshalchen.common.uiModule.niftymodaldialogeffects.effects;
 
 import android.view.View;
 
-import com.marshalchen.common.uiModule.nineoldandroids.view.ViewHelper;
 import com.marshalchen.common.uiModule.nineoldandroids.animation.AnimatorSet;
-
+import com.marshalchen.common.uiModule.nineoldandroids.view.ViewHelper;
 
 /**
  * Created by lee on 2014/7/30.
+ *
+ *
+ * The MIT License (MIT)
+ *
+ * Copyright (c) 2014 daimajia
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ *
+ * Acknowledgements daimajia
+ * https://github.com/daimajia
  */
 public abstract  class BaseEffects {
-    public final int DURATION = 1 * 700;
 
-    private long mDuration=DURATION ;
+    private static final int DURATION = 1 * 700;
+
+    protected long mDuration =DURATION ;
 
     private AnimatorSet mAnimatorSet;
 
@@ -32,14 +54,6 @@ public abstract  class BaseEffects {
         mAnimatorSet.start();
     }
     public void reset(View view) {
-        ViewHelper.setAlpha(view, 1);
-        ViewHelper.setScaleX(view, 1);
-        ViewHelper.setScaleY(view, 1);
-        ViewHelper.setTranslationX(view, 0);
-        ViewHelper.setTranslationY(view, 0);
-        ViewHelper.setRotation(view, 0);
-        ViewHelper.setRotationY(view, 0);
-        ViewHelper.setRotationX(view, 0);
         ViewHelper.setPivotX(view, view.getMeasuredWidth() / 2.0f);
         ViewHelper.setPivotY(view, view.getMeasuredHeight() / 2.0f);
     }
@@ -48,6 +62,9 @@ public abstract  class BaseEffects {
     public AnimatorSet getAnimatorSet() {
         return mAnimatorSet;
     }
-
+    
+    public void setDuration(long duration) {
+        this.mDuration = duration;
+    }
 
 }

@@ -240,7 +240,7 @@
         <item name="android:minHeight">36dp</item>
         <item name="android:layout_weight">1</item>
         <item name="android:layout_margin">15dp</item>
-        <item name="android:background">@drawable/test_back</item>
+        <item name="android:background">@drawable/test</item>
         <item name="android:textColor">#ffffff</item>
         <item name="android:gravity">center</item>
     </style>
