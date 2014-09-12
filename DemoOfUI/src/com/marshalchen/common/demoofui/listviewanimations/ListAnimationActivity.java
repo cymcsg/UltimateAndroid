@@ -128,31 +128,31 @@ public class ListAnimationActivity extends Activity {
             mService = IInAppBillingService.Stub.asInterface(service);
             //			supportInvalidateOptionsMenu();
 
-            new Thread() {
-
-                @Override
-                public void run() {
-                    try {
-                        Bundle ownedItems = mService.getPurchases(3, getPackageName(), "inapp", null);
-
-                        int response = ownedItems.getInt("RESPONSE_CODE");
-                        if (response == 0) {
-                            ArrayList<String> purchaseDataList = ownedItems.getStringArrayList("INAPP_PURCHASE_DATA_LIST");
-
-                            if (purchaseDataList != null) {
-                                for (String purchaseData : purchaseDataList) {
-                                    JSONObject json = new JSONObject(purchaseData);
-                                    mService.consumePurchase(3, getPackageName(), json.getString("purchaseToken"));
-                                }
-                            }
-                        }
-                    } catch (RemoteException e) {
-                        e.printStackTrace();
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }.start();
+//            new Thread() {
+//
+//                @Override
+//                public void run() {
+//                    try {
+//                        Bundle ownedItems = mService.getPurchases(3, getPackageName(), "inapp", null);
+//
+//                        int response = ownedItems.getInt("RESPONSE_CODE");
+//                        if (response == 0) {
+//                            ArrayList<String> purchaseDataList = ownedItems.getStringArrayList("INAPP_PURCHASE_DATA_LIST");
+//
+//                            if (purchaseDataList != null) {
+//                                for (String purchaseData : purchaseDataList) {
+//                                    JSONObject json = new JSONObject(purchaseData);
+//                                    mService.consumePurchase(3, getPackageName(), json.getString("purchaseToken"));
+//                                }
+//                            }
+//                        }
+//                    } catch (RemoteException e) {
+//                        e.printStackTrace();
+//                    } catch (JSONException e) {
+//                        e.printStackTrace();
+//                    }
+//                }
+//            }.start();
         }
     };
 
