@@ -5,20 +5,23 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 import com.marshalchen.common.R;
 
 /**
  * Created by cym on 14-9-11.
  */
-public abstract class AbstractSwipeRefreshActivity extends ActionBarActivity implements SwipeRefreshLayout.OnRefreshListener {
+public abstract class AbstractSwipeRefreshLoadMoreActivity extends ActionBarActivity implements SwipeRefreshLayout.OnRefreshListener {
 
     protected SwipeRefreshLayout refreshLayout;
+    protected RelativeLayout swipeReaLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         super.setContentView(R.layout.swipe_refresh_layout);
         refreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_container);
+        swipeReaLayout = (RelativeLayout) findViewById(R.id.swipeReaLayout);
     }
 
     @Override
@@ -34,7 +37,7 @@ public abstract class AbstractSwipeRefreshActivity extends ActionBarActivity imp
 
     @Override
     public void setContentView(View view, ViewGroup.LayoutParams params) {
-        refreshLayout.addView(view, params);
+        swipeReaLayout.addView(view, params);
         initSwipeOptions();
     }
 
