@@ -4,12 +4,9 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.AbsListView;
 import android.widget.ListView;
-import com.marshalchen.common.commonUtils.basicUtils.HandlerUtils;
 import com.marshalchen.common.commonUtils.logUtils.Logs;
 
-/**
- * Created by cym on 14-9-12.
- */
+
 public class LoadMoreListView extends ListView {
 
     int currentFirstVisibleItem;

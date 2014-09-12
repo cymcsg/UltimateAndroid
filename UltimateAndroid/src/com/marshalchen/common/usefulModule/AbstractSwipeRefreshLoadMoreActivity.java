@@ -19,7 +19,7 @@ public abstract class AbstractSwipeRefreshLoadMoreActivity extends ActionBarActi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        super.setContentView(R.layout.swipe_refresh_layout);
+        super.setContentView(R.layout.swipe_refresh_list_more_layout);
         refreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_container);
         swipeReaLayout = (RelativeLayout) findViewById(R.id.swipeReaLayout);
     }
