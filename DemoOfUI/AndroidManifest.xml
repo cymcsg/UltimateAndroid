@@ -190,7 +190,7 @@
         <activity android:name=".fadingactionbar.WebViewActivity"></activity>
         <activity android:name=".sampleModules.SwipeRefreshLayoutDemo"></activity>
 
-
+        <activity android:name=".sampleModules.UltimateListviewActivity"></activity>
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->
