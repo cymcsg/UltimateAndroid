@@ -3,6 +3,8 @@ UltimateAndroid
 
 ###Version:0.0.2
 ###当前版本：0.0.2
+
+![Build Status](https://drone.io/github.com/cymcsg/UltimateAndroid/status.png)
 <br>
 #####Formerly known as CommonLibsForAndroid
 #####原名： CommonLibsForAndroid
@@ -107,6 +109,8 @@ Demo依赖于appcompat 和 UltimateAndroid，你可以在IDE或者配置文件�
 
 
 Some  Demo of Ui:
+
+
 ![tutorials2](http://blog.marshalchen.com/images/tutorial2-1.gif)
 
 ![tutorials2](http://blog.marshalchen.com/images/tutorial2-2.gif)
