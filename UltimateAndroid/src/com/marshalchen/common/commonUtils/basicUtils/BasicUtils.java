@@ -192,6 +192,14 @@ public class BasicUtils {
         context.startActivity(intent);
     }
 
+    public static void sendIntent(Context context, Class classes, String key, ArrayList<? extends Parcelable> value, String anotherKey, String anotherValue) {
+        Intent intent = new Intent();
+        intent.setClass(context, classes);
+        intent.putParcelableArrayListExtra(key, value);
+        intent.putExtra(anotherKey, anotherValue);
+        context.startActivity(intent);
+    }
+
     public static String getSharedPreferences(Context context, String fileName, String parameterName) {
         SharedPreferences sp = context.getSharedPreferences(fileName, 0);
         String parameter = sp.getString(parameterName, "");
