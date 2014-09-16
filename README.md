@@ -4,7 +4,7 @@ UltimateAndroid
 ###Version:0.0.2
 ###当前版本：0.0.2
 
-![Build Status](https://drone.io/github.com/cymcsg/UltimateAndroid/status.png)
+[![Build Status](https://drone.io/github.com/cymcsg/UltimateAndroid/status.png)](https://drone.io/github.com/cymcsg/UltimateAndroid/latest)
 <br>
 #####Formerly known as CommonLibsForAndroid
 #####原名： CommonLibsForAndroid
