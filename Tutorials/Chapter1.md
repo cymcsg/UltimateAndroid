@@ -7,7 +7,8 @@ UltimateAndroid快速开发框架教程（一）:部署框架
 ``项目地址是https://github.com/cymcsg/UltimateAndroid.git，如有疑问可以直接在github的issue上提问，或者加入QQ群讨论：341970175，加群请注明Android开发``
 
     注意事项：
-    1.JDK,Android Sdk配置完毕，JDK建议是JDK1.7版本，否则需要修改项目语言版本；
+    1.JDK,Android Sdk配置完毕，JDK建议是JDK1.7版本，否则需要修改项目语言版本至1.7（很多人都询问这个问题，重要）；
+    
     2.本教程的操作系统环境是OS X 10.9，IDE环境eclipse4.4，Intellij Idea 13.1，Android Sdk 为4.4.2和23.0，Android Studio是在Intellij基础上衍生出来的，配置方法相似。
     3.由于本人使用Intellij Idea，所以之后的教程将基本已Intellij Idea环境下为样本。
 
