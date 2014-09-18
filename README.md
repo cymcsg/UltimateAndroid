@@ -38,9 +38,6 @@ Up to now,I have only write the demo of most parts of UI modules and View Inject
 #####I will try to make the demo more interesting and containing other parts such as ORM,Asynchronous Http and Image in next days.Welcome to fork.
 
 
-###QQ Group：341970175
-
-	
 
 	
 Demo Manual
