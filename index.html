@@ -1,43 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
     <title>UltimateAndroid by cymcsg</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
   </head>
-
   <body>
-    <header>
-      <div class="inner">
-        <h1>UltimateAndroid</h1>
-        <h2>UltimateAndroid is a framework to help developing Android apps in a fast way</h2>
-        <a href="https://github.com/cymcsg/UltimateAndroid" class="button"><small>View project on</small>GitHub</a>
-      </div>
-    </header>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/cymcsg/UltimateAndroid">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/cymcsg/UltimateAndroid/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/cymcsg/UltimateAndroid/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h1>
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>UltimateAndroid</h1>
+          <p>UltimateAndroid is a framework to help developing Android apps in a fast way</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/cymcsg">cymcsg</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
 <a name="ultimateandroid" class="anchor" href="#ultimateandroid"><span class="octicon octicon-link"></span></a>UltimateAndroid</h1>
 
 <h3>
-<a name="version001beta" class="anchor" href="#version001beta"><span class="octicon octicon-link"></span></a>Version:0.0.1beta</h3>
+<a name="version002" class="anchor" href="#version002"><span class="octicon octicon-link"></span></a>Version:0.0.2</h3>
 
 <h3>
-<a name="%E5%BD%93%E5%89%8D%E7%89%88%E6%9C%AC001beta" class="anchor" href="#%E5%BD%93%E5%89%8D%E7%89%88%E6%9C%AC001beta"><span class="octicon octicon-link"></span></a>当前版本：0.0.1beta</h3>
+<a name="%E5%BD%93%E5%89%8D%E7%89%88%E6%9C%AC002" class="anchor" href="#%E5%BD%93%E5%89%8D%E7%89%88%E6%9C%AC002"><span class="octicon octicon-link"></span></a>当前版本：0.0.2</h3>
 
-<p><br></p>
+<p><a href="https://drone.io/github.com/cymcsg/UltimateAndroid/latest"><img src="https://drone.io/github.com/cymcsg/UltimateAndroid/status.png" alt="Build Status"></a>
+<br></p>
 
 <h5>
 <a name="formerly-known-as-commonlibsforandroid" class="anchor" href="#formerly-known-as-commonlibsforandroid"><span class="octicon octicon-link"></span></a>Formerly known as CommonLibsForAndroid</h5>
@@ -59,7 +70,13 @@
 
 <p><a href="https://github.com/cymcsg/UltimateAndroid/blob/master/Manual_English.md">English Manual</a></p>
 
-<p><a href="https://github.com/cymcsg/UltimateAndroid/blob/master/Manual_Chinese.md">中文教程</a></p>
+<p><a href="https://github.com/cymcsg/UltimateAndroid/blob/master/Manual_Chinese.md">中文说明</a></p>
+
+<h3>
+<a name="%E4%B8%AD%E6%96%87%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B" class="anchor" href="#%E4%B8%AD%E6%96%87%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B"><span class="octicon octicon-link"></span></a><a href="Tutorials/TableofContents.md">中文详细教程</a>
+</h3>
+
+<p><br></p>
 
 <h2>
 <a name="introduction" class="anchor" href="#introduction"><span class="octicon octicon-link"></span></a><a name="english_introduction">Introduction</a>
@@ -74,9 +91,6 @@
 
 <h5>
 <a name="i-will-try-to-make-the-demo-more-interesting-and-containing-other-parts-such-as-ormasynchronous-http-and-image-in-next-dayswelcome-to-fork" class="anchor" href="#i-will-try-to-make-the-demo-more-interesting-and-containing-other-parts-such-as-ormasynchronous-http-and-image-in-next-dayswelcome-to-fork"><span class="octicon octicon-link"></span></a>I will try to make the demo more interesting and containing other parts such as ORM,Asynchronous Http and Image in next days.Welcome to fork.</h5>
-
-<h3>
-<a name="qq-group341970175" class="anchor" href="#qq-group341970175"><span class="octicon octicon-link"></span></a>QQ Group：341970175</h3>
 
 <h2>
 <a name="demo-manual" class="anchor" href="#demo-manual"><span class="octicon octicon-link"></span></a>Demo Manual</h2>
@@ -147,128 +161,25 @@ or you can see <a href="http://jakewharton.github.io/butterknife/ide-idea.html">
 </li>
 </ul><p>目前Demo非常简陋，不断完善中。</p>
 
-<h2>
-<a name="update" class="anchor" href="#update"><span class="octicon octicon-link"></span></a>Update：</h2>
+<p>Some  Demo of Ui:</p>
 
-<p>2014.6.12:<code>Add descriptions of most of the classes.</code></p>
+<p><img src="http://blog.marshalchen.com/images/tutorial2-1.gif" alt="tutorials2"></p>
 
-<pre><code>      增加了类说明，还有一些方法名相对明确。
-</code></pre>
+<p><img src="http://blog.marshalchen.com/images/tutorial2-2.gif" alt="tutorials2"></p>
 
-<p>2014.6.14：<code>Add NineOldAndroids to support Android 2.1~2.3</code></p>
+<p><img src="http://blog.marshalchen.com/images/tutorial2-3.gif" alt="tutorials2"></p>
 
-<pre><code>       增加了支持2.3的android动画，毕竟在某些地方2.3的占有率并不低。该类库如果不需要可移除。
-</code></pre>
+<p><img src="http://blog.marshalchen.com/images/tutorial2-4.gif" alt="tutorials2"></p>
 
-<p>2014.6.16  <code>Add enhanceListView for swipe to dismiss;
-           Move NineOldAndroids to Main Lib project.</code></p>
+<p><img src="http://blog.marshalchen.com/images/tutorial2-5.gif" alt="tutorials2"></p>
 
-<pre><code>       增加了滑动删除的Listview；
-       将NineOldAndroids从依赖项目改为放入主Lib工程，方便大家配置使用。
-</code></pre>
+<p><img src="http://blog.marshalchen.com/images/tutorial2-6.gif" alt="tutorials2"></p>
 
-<p>2014.6.18  Add <a href="https://github.com/RomainPiel/Shimmer-android">Shimmer-Android</a></p>
+<p><img src="http://blog.marshalchen.com/images/tutorial2-7.gif" alt="tutorials2"></p>
 
-<pre><code>       增加了Shimmer类库
-</code></pre>
+<p><img src="http://blog.marshalchen.com/images/tutorial2-8.gif" alt="tutorials2"></p>
 
-<p>2014.6.19  <code>Add Sample Demo!! It is very sample demo but I will add more in the next week.</code></p>
-
-<pre><code>      增加了Demo！现在还很简单，但是我再慢慢补充中。
-</code></pre>
-
-<p>2014.6.20  Add <a href="https://github.com/moagrius/TileView/tree/master">TileView</a> and Add demo of TileView</p>
-
-<p>2014.6.22  <code>Add colors resource</code></p>
-
-<p>2014.6.24  Add <a href="https://github.com/castorflex/SmoothProgressBar">SmoothProgressBar</a></p>
-
-<pre><code>      增加了Android风格的进度条的Demo。
-</code></pre>
-
-<p>2014.6.25 Add <a href="https://github.com/TonicArtos/StickyGridHeaders">StickyGridHeaders</a></p>
-
-<pre><code>      增加了头部浮现控件和根据Letter过滤控件
-</code></pre>
-
-<p>2014.6.26 Add <a href="https://github.com/emilsjolander/android-FlipView">Flip View</a> like FlipBoard<br>
-          Add <a href="https://github.com/chrisbanes/PhotoView">PhotoView</a>which can help you zoom image by various touch gestures.</p>
-
-<pre><code>      增加了类似FlipBoard的效果。
-      增加了手势放缩图片的控件。
-</code></pre>
-
-<p>2014.6.27 Add <a href="https://github.com/mrwonderman/android-square-progressbar">Square Progress</a><br>
-          Add <a href="https://github.com/alexvasilkov/FoldableLayout">FolderableLayout</a><br>
-          Add<a href="https://github.com/tibi1712/FoldingNavigationDrawer-Android">FoldingNavigationDrawer</a></p>
-
-<pre><code>      增加了几种进度条的加载方式
-      增加了折叠的图片处理或者侧边菜单的样式。
-</code></pre>
-
-<p>2014.6.28 Add <a href="https://github.com/square/android-times-square">Calendar widget</a><br>
-          Add Demo.apk</p>
-
-<pre><code>      增加了日历选择控件
-      增加了DemoApk
-</code></pre>
-
-<p>2014.6.30<br>
-Add <a href="https://github.com/Todd-Davies/ProgressWheel">FaceCrop</a><br>
-          Add <a href="https://github.com/flavioarfaria/KenBurnsView">KenBurns</a><br>
-          Add <a href="https://github.com/flavienlaurent/PanningView">PanningView</a><br>
-          Add <a href="https://github.com/lafosca/AndroidFaceCropper">ProgressWheel</a><br>
-          Add <a href="https://github.com/astuetz/PagerSlidingTabStrip">ViewpagerSlidingTabs</a>  </p>
-
-<p>2014.7.2 Add <a href="https://github.com/facebook/rebound">Rebound</a>
-         Add <a href="https://github.com/RomainPiel/Titanic">Titanic</a></p>
-
-<p>2014.7.3 Add <a href="https://github.com/astuetz/PagerSlidingTabStrip">PagerSlidingTabStrip</a></p>
-
-<p>2014.7.4 Add <a href="https://github.com/nhaarman/ListViewAnimations">ListviewAnimations</a></p>
-
-<p>2014.7.8 Add Https Utils</p>
-
-<p>2014.7.10 Add DaoUtils to help deal with Sqlite</p>
-
-<p>2014.7.14 Add Swipe Back Demo</p>
-
-<p>2014.7.16 Add JsonMetaReader</p>
-
-<p>2014.7.17 Add Pull to Splash </p>
-
-<p>2014.7.18 Add jsoup demo
-          Update demo.apk</p>
-
-<p>2014.7.20 Add some utils
-          Add some Ui Views<a href="https://github.com/Trinea/android-common">Trinea</a></p>
-
-<p>2014.7.22 Add gesture detector</p>
-
-<p>2014.7.23 Add swiped card</p>
-
-<p>2014.7.25 update PackageUtils</p>
-
-<p>2014.7.26 enableHttpResponseCache</p>
-
-<p>2014.7.28 add activity transition
-          add autofit text view</p>
-
-<p>2014.7.29 update Async</p>
-
-<p>2014.7.30 add DragDemo
-          update UIL</p>
-
-<p>2014.7.31 Update Preference Utils</p>
-
-<p>2014.8.1 add clear shareprefence
-         Change Package Name from 'com.fss.Common' to 'com.fss.common'</p>
-
-<p>2014.8.2 add some UI</p>
-
-<p>2014.8.5 add Multiple Upload File</p>
-
-<p>2014.8.7 add activity like wechat friend group</p>
+<p><img src="http://blog.marshalchen.com/images/tutorial2-9.gif" alt="tutorials2"></p>
 
 <p>The UltimateAndroid use many opensource program and I am very grateful to the author of them.
 The opensource program which I use:</p>
@@ -328,25 +239,10 @@ limitations under the License.
 </code></pre>
 
 <h1></h1>
-        </section>
+      </section>
 
-        <aside id="sidebar">
-          <a href="https://github.com/cymcsg/UltimateAndroid/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/cymcsg/UltimateAndroid/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
-
-          <p class="repo-owner"><a href="https://github.com/cymcsg/UltimateAndroid"></a> is maintained by <a href="https://github.com/cymcsg">cymcsg</a>.</p>
-
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
     </div>
-
-  
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
   </body>
 </html>
