@@ -18,7 +18,7 @@ UltimateAndroid
 
 [中文简介](#chinese_introduction)
 
-[English Manual](https://github.com/cymcsg/UltimateAndroid/blob/master/Manual_English.md)
+[English Quick Setup](https://github.com/cymcsg/UltimateAndroid/blob/master/Manual_English.md)
 
 [中文说明](https://github.com/cymcsg/UltimateAndroid/blob/master/Manual_Chinese.md)
 
