@@ -282,7 +282,21 @@ public class BasicUtils {
     }
 
     public static boolean judgeNotNull(List list) {
-        return list != null && list.size() > 0 ? true : false;
+        //return list != null && list.size() > 0 ? true : false;
+        return judgeNotNull(list, null);
+    }
+
+    public static boolean judgeNotNull(List list, List... lists) {
+        boolean flag = true;
+        if (list == null || list.size() == 0) return false;
+        if (judgeNotNull(lists))
+        for (List l : lists) {
+            if (l == null || l.size() == 0) {
+                flag = false;
+                return false;
+            }
+        }
+        return flag;
     }
 
     public static boolean judgeNotNull(Object object) {
