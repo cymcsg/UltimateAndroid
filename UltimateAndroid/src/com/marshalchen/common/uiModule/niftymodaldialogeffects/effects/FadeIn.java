@@ -1,9 +1,6 @@
-/*
- * Copyright (c) 2014. Marshal Chen.
- */
-
 package com.marshalchen.common.uiModule.niftymodaldialogeffects.effects;
 
+import android.util.Log;
 import android.view.View;
 
 import com.marshalchen.common.uiModule.nineoldandroids.animation.ObjectAnimator;
@@ -16,7 +13,7 @@ public class FadeIn extends BaseEffects{
     @Override
     protected void setupAnimation(View view) {
         getAnimatorSet().playTogether(
-                ObjectAnimator.ofFloat(view,"alpha",0,1).setDuration(DURATION)
+                ObjectAnimator.ofFloat(view,"alpha",0,1).setDuration(mDuration)
 
         );
     }

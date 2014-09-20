@@ -20,34 +20,34 @@ import com.marshalchen.common.R;
  */
 public abstract class BaseSuperAbsListview extends FrameLayout implements AbsListView.OnScrollListener {
 
-    protected              int   ITEM_LEFT_TO_LOAD_MORE = 10;
+    protected int ITEM_LEFT_TO_LOAD_MORE = 10;
 
-    protected ViewStub    mProgress;
-    protected ViewStub    mMoreProgress;
+    protected ViewStub mProgress;
+    protected ViewStub mMoreProgress;
     protected AbsListView mList;
-    protected ViewStub    mEmpty;
+    protected ViewStub mEmpty;
 
-    protected float   mDividerHeight;
-    protected int     mDivider;
+    protected float mDividerHeight;
+    protected int mDivider;
     protected boolean mClipToPadding;
-    protected int     mPadding;
-    protected int     mPaddingTop;
-    protected int     mPaddingBottom;
-    protected int     mPaddingLeft;
-    protected int     mPaddingRight;
-    protected int     mScrollbarStyle;
-    protected int     mEmptyId;
-    protected int     mMoreProgressId;
+    protected int mPadding;
+    protected int mPaddingTop;
+    protected int mPaddingBottom;
+    protected int mPaddingLeft;
+    protected int mPaddingRight;
+    protected int mScrollbarStyle;
+    protected int mEmptyId;
+    protected int mMoreProgressId;
 
     protected AbsListView.OnScrollListener mOnScrollListener;
 
-    protected OnMoreListener     mOnMoreListener;
-    protected boolean            isLoadingMore;
-    protected int                mSelector;
+    protected OnMoreListener mOnMoreListener;
+    protected boolean isLoadingMore;
+    protected int mSelector;
     protected SwipeRefreshLayout mPtrLayout;
 
     protected int mSuperListViewMainLayout;
-    private   int mProgressId;
+    private int mProgressId;
 
     public SwipeRefreshLayout getSwipeToRefresh() {
         return mPtrLayout;
@@ -134,6 +134,7 @@ public abstract class BaseSuperAbsListview extends FrameLayout implements AbsLis
      * Automativally hide the progressbar
      * Set the refresh to false
      * If adapter is empty, then the emptyview is shown
+     *
      * @param adapter
      */
     public void setAdapter(ListAdapter adapter) {
@@ -171,7 +172,7 @@ public abstract class BaseSuperAbsListview extends FrameLayout implements AbsLis
      */
     public void showProgress() {
         hideList();
-        if(mEmptyId != 0 ) mEmpty.setVisibility(View.INVISIBLE);
+        if (mEmptyId != 0) mEmpty.setVisibility(View.INVISIBLE);
         mProgress.setVisibility(View.VISIBLE);
     }
 
@@ -195,6 +196,7 @@ public abstract class BaseSuperAbsListview extends FrameLayout implements AbsLis
 
     /**
      * Set the listener when refresh is triggered and enable the SwipeRefreshLayout
+     *
      * @param listener
      */
     public void setRefreshListener(SwipeRefreshLayout.OnRefreshListener listener) {
@@ -204,6 +206,7 @@ public abstract class BaseSuperAbsListview extends FrameLayout implements AbsLis
 
     /**
      * Set the colors for the SwipeRefreshLayout states
+     *
      * @param col1
      * @param col2
      * @param col3
@@ -229,6 +232,7 @@ public abstract class BaseSuperAbsListview extends FrameLayout implements AbsLis
 
     /**
      * Set the scroll listener for the listview
+     *
      * @param listener
      */
     public void setOnScrollListener(AbsListView.OnScrollListener listener) {
@@ -237,6 +241,7 @@ public abstract class BaseSuperAbsListview extends FrameLayout implements AbsLis
 
     /**
      * Set the onItemClickListener for the listview
+     *
      * @param listener
      */
     public void setOnItemClickListener(AdapterView.OnItemClickListener listener) {
@@ -244,7 +249,6 @@ public abstract class BaseSuperAbsListview extends FrameLayout implements AbsLis
     }
 
     /**
-     *
      * @return the listview adapter
      */
     public ListAdapter getAdapter() {
@@ -257,11 +261,12 @@ public abstract class BaseSuperAbsListview extends FrameLayout implements AbsLis
 
     @Override
     public void onScrollStateChanged(AbsListView view, int scrollState) {
-        if(mOnScrollListener != null) mOnScrollListener.onScrollStateChanged(view, scrollState);
+        if (mOnScrollListener != null) mOnScrollListener.onScrollStateChanged(view, scrollState);
     }
 
     /**
      * Sets the More listener
+     *
      * @param onMoreListener
      * @param max            Number of items before loading more
      */
@@ -284,6 +289,7 @@ public abstract class BaseSuperAbsListview extends FrameLayout implements AbsLis
 
     /**
      * Enable/Disable the More event
+     *
      * @param isLoadingMore
      */
     public void setLoadingMore(boolean isLoadingMore) {
@@ -301,7 +307,8 @@ public abstract class BaseSuperAbsListview extends FrameLayout implements AbsLis
 
             }
         }
-        if(mOnScrollListener != null) mOnScrollListener.onScroll(view, firstVisibleItem, visibleItemCount, totalItemCount);
+        if (mOnScrollListener != null)
+            mOnScrollListener.onScroll(view, firstVisibleItem, visibleItemCount, totalItemCount);
     }
 
     /**

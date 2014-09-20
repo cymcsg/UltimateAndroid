@@ -41,7 +41,7 @@ public class Launcher extends ListActivity {
 
         try {
           PackageInfo pi = getPackageManager().getPackageInfo(
-            "com.fss.common.demo.dragSortListview", PackageManager.GET_ACTIVITIES);
+            "com.marshalchen.common.demoofui.dragSortListview", PackageManager.GET_ACTIVITIES);
 
           mActivities = new ArrayList<ActivityInfo>(Arrays.asList(pi.activities));
           String ourName = getClass().getName();

@@ -1,12 +1,7 @@
-/*
- * Copyright (c) 2014. Marshal Chen.
- */
-
 package com.marshalchen.common.uiModule.niftymodaldialogeffects;
 
 
-import com.marshalchen.common.uiModule.niftymodaldialogeffects.effects.*;
-
+import  com.marshalchen.common.uiModule.niftymodaldialogeffects.effects.*;
 /**
  * Created by lee on 2014/7/30.
  */
@@ -26,17 +21,25 @@ public enum  Effectstype {
     Slit(Slit.class),
     Shake(Shake.class),
     Sidefill(SideFall.class);
-    private Class effectsClazz;
+    private Class<? extends BaseEffects> effectsClazz;
 
-    private Effectstype(Class mclass) {
+    private Effectstype(Class<? extends BaseEffects> mclass) {
         effectsClazz = mclass;
     }
 
     public BaseEffects getAnimator() {
-        try {
-            return (BaseEffects) effectsClazz.newInstance();
-        } catch (Exception e) {
-            throw new Error("Can not init animatorClazz instance");
-        }
+        BaseEffects bEffects=null;
+	try {
+		bEffects = effectsClazz.newInstance();
+	} catch (ClassCastException e) {
+		throw new Error("Can not init animatorClazz instance");
+	} catch (InstantiationException e) {
+		// TODO Auto-generated catch block
+		throw new Error("Can not init animatorClazz instance");
+	} catch (IllegalAccessException e) {
+		// TODO Auto-generated catch block
+		throw new Error("Can not init animatorClazz instance");
+	}
+	return bEffects;
     }
 }

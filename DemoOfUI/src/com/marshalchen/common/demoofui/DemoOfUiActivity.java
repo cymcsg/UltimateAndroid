@@ -34,7 +34,7 @@ import com.marshalchen.common.uiModule.shimmer.Shimmer;
 import com.marshalchen.common.uiModule.shimmer.ShimmerTextView;
 
 
-public class MainActivity extends ActionBarActivity {
+public class DemoOfUiActivity extends ActionBarActivity {
     private CharSequence mDrawerTitle;
     private CharSequence mTitle;
     private ActionBarDrawerToggle mDrawerToggle;
@@ -106,7 +106,7 @@ public class MainActivity extends ActionBarActivity {
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String s) {
-                ToastUtil.show(MainActivity.this, "test~", Toast.LENGTH_SHORT);
+                ToastUtil.show(DemoOfUiActivity.this, "test~", Toast.LENGTH_SHORT);
                 return false;
             }
 
@@ -236,7 +236,7 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void run() {
                 super.run();
-                HttpsUtils.sendWithSSlSocketWithCrt(MainActivity.this, "ca.crt", "https://xxx.xxx");
+                HttpsUtils.sendWithSSlSocketWithCrt(DemoOfUiActivity.this, "ca.crt", "https://xxx.xxx");
             }
         }.start();
     }
@@ -257,7 +257,7 @@ public class MainActivity extends ActionBarActivity {
                     @Override
                     public void onAnimationEnd(Animator animation) {
                         main_content_frame.setVisibility(View.VISIBLE);
-                        main_content_frame.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.fade_ins));
+                        main_content_frame.startAnimation(AnimationUtils.loadAnimation(DemoOfUiActivity.this, R.anim.fade_ins));
                         favShimmerReaLayout.setVisibility(View.GONE);
                     }
 

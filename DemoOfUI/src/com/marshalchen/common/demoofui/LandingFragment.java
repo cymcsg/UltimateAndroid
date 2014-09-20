@@ -401,6 +401,16 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "FadingActionbar");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "SwipeFreshLayout");
+        map.put("detail", "try");
+        map.put("subname", "Layout");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "UltimateListview");
+        map.put("detail", "try");
+        map.put("subname", "Listview");
+        enhanceList.add(map);
 //        map = new HashMap<>();
 //        map.put("name", "ResideMenu");
 //        map.put("detail", "try");
@@ -600,6 +610,12 @@ public class LandingFragment extends Fragment {
                         break;
                     case 57:
                         BasicUtils.sendIntent(getActivity(), HomeActivity.class);
+                        break;
+                    case 58:
+                        BasicUtils.sendIntent(getActivity(), SwipeRefreshLayoutDemo.class);
+                        break;
+                    case 59:
+                        BasicUtils.sendIntent(getActivity(), UltimateListviewActivity.class);
                         break;
 
 

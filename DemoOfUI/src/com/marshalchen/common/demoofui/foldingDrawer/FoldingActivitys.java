@@ -47,7 +47,7 @@ public class FoldingActivitys extends ActionBarActivity {
             public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
                                     long arg3) {
                 Intent intent = new Intent();
-                intent.setClassName(FoldingActivitys.this, "com.fss.common.demo.foldingDrawer." + testValues[arg2]
+                intent.setClassName(FoldingActivitys.this, "com.marshalchen.common.demoofui.foldingDrawer." + testValues[arg2]
                         + "Activity");
 
                 startActivity(intent);
