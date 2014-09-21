@@ -31,8 +31,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uiModule.fancycoverflow.FancyCoverFlow;
-import com.marshalchen.common.uiModule.fancycoverflow.FancyCoverFlowAdapter;
+import com.marshalchen.common.uimodule.fancycoverflow.FancyCoverFlow;
+import com.marshalchen.common.uimodule.fancycoverflow.FancyCoverFlowAdapter;
 
 public class ViewGroupExample extends Activity {
 

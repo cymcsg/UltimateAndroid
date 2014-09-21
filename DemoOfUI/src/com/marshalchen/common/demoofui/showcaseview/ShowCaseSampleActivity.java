@@ -15,10 +15,10 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import com.marshalchen.common.uiModule.showcaseview.ApiUtils;
-import com.marshalchen.common.uiModule.showcaseview.OnShowcaseEventListener;
-import com.marshalchen.common.uiModule.showcaseview.ShowcaseView;
-import com.marshalchen.common.uiModule.showcaseview.targets.ViewTarget;
+import com.marshalchen.common.uimodule.showcaseview.ApiUtils;
+import com.marshalchen.common.uimodule.showcaseview.OnShowcaseEventListener;
+import com.marshalchen.common.uimodule.showcaseview.ShowcaseView;
+import com.marshalchen.common.uimodule.showcaseview.targets.ViewTarget;
 import com.marshalchen.common.demoofui.R;
 import com.marshalchen.common.demoofui.showcaseview.animations.AnimationSampleActivity;
 

@@ -10,7 +10,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
-    <com.marshalchen.common.uiModule.fancycoverflow.FancyCoverFlow
+    <com.marshalchen.common.uimodule.fancycoverflow.FancyCoverFlow
         android:id="@+id/fancyCoverFlow"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

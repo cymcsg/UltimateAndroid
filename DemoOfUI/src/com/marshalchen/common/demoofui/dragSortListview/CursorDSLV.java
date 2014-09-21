@@ -5,8 +5,8 @@
 package com.marshalchen.common.demoofui.dragSortListview;
 
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uiModule.dragSortListView.DragSortListView;
-import com.marshalchen.common.uiModule.dragSortListView.SimpleDragSortCursorAdapter;
+import com.marshalchen.common.uimodule.dragSortListView.DragSortListView;
+import com.marshalchen.common.uimodule.dragSortListView.SimpleDragSortCursorAdapter;
 
 import android.database.MatrixCursor;
 import android.os.Bundle;

@@ -7,8 +7,8 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.widget.ArrayAdapter;
 import android.widget.Toast;
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uiModule.superlistview.OnMoreListener;
-import com.marshalchen.common.uiModule.superlistview.SuperGridview;
+import com.marshalchen.common.uimodule.superlistview.OnMoreListener;
+import com.marshalchen.common.uimodule.superlistview.SuperGridview;
 
 
 import java.util.ArrayList;

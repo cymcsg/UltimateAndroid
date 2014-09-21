@@ -6,7 +6,7 @@ import android.widget.ImageView;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import com.marshalchen.common.ui.HomeasUpActionbarActivity;
-import com.marshalchen.common.uiModule.facecropper.FaceCropper;
+import com.marshalchen.common.uimodule.facecropper.FaceCropper;
 import com.marshalchen.common.demoofui.R;
 
 public class FaceCropActivity extends HomeasUpActionbarActivity {

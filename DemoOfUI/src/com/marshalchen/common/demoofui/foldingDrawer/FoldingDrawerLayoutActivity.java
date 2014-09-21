@@ -38,7 +38,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import com.marshalchen.common.commonUtils.basicUtils.HandlerUtils;
 import com.marshalchen.common.commonUtils.logUtils.Logs;
-import com.marshalchen.common.uiModule.foldingLayout.FoldingDrawerLayout;
+import com.marshalchen.common.uimodule.foldingLayout.FoldingDrawerLayout;
 import com.marshalchen.common.demoofui.R;
 
 

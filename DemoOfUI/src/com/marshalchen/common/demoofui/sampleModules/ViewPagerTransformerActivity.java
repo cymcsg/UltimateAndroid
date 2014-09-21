@@ -22,7 +22,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uiModule.viewpagertransforms.*;
+import com.marshalchen.common.uimodule.viewpagertransforms.*;
 
 
 public class ViewPagerTransformerActivity extends Activity implements OnNavigationListener {

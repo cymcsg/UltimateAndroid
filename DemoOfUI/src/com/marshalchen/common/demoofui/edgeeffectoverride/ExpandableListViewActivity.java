@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.SimpleExpandableListAdapter;
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uiModule.edgeeffectoverride.EdgeEffectExpandableListView;
+import com.marshalchen.common.uimodule.edgeeffectoverride.EdgeEffectExpandableListView;
 
 import java.util.ArrayList;
 import java.util.HashMap;

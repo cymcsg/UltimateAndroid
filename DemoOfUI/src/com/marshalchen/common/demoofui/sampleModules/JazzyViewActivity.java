@@ -8,8 +8,8 @@ import android.view.*;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.TextView;
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uiModule.jazzyviewpager.JazzyViewPager;
-import com.marshalchen.common.uiModule.jazzyviewpager.OutlineContainer;
+import com.marshalchen.common.uimodule.jazzyviewpager.JazzyViewPager;
+import com.marshalchen.common.uimodule.jazzyviewpager.OutlineContainer;
 
 public class JazzyViewActivity extends Activity {
 

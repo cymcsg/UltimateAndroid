@@ -11,7 +11,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uiModule.circularProgressButton.CircularProgressButton;
+import com.marshalchen.common.uimodule.circularProgressButton.CircularProgressButton;
 
 /**
  * Indeterminate Progress Sample

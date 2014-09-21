@@ -8,7 +8,7 @@
         xmlns:custom="http://schemas.android.com/apk/res-auto"
         >
 
-    <com.marshalchen.common.uiModule.panningview.PanningView
+    <com.marshalchen.common.uimodule.panningview.PanningView
             android:id="@+id/panningView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

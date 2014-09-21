@@ -12,7 +12,7 @@
             android:scaleType="centerCrop"
             android:contentDescription="image"
             />
-    <com.marshalchen.common.uiModule.rebound.ui.SpringConfiguratorView
+    <com.marshalchen.common.uimodule.rebound.ui.SpringConfiguratorView
             android:id="@+id/spring_configurator"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

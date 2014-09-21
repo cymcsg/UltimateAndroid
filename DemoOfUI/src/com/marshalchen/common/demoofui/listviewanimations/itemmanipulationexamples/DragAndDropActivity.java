@@ -19,9 +19,9 @@ import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.marshalchen.common.uiModule.listviewanimations.ArrayAdapter;
-import com.marshalchen.common.uiModule.listviewanimations.swinginadapters.prepared.AlphaInAnimationAdapter;
-import com.marshalchen.common.uiModule.listviewanimations.widget.DynamicListView;
+import com.marshalchen.common.uimodule.listviewanimations.ArrayAdapter;
+import com.marshalchen.common.uimodule.listviewanimations.swinginadapters.prepared.AlphaInAnimationAdapter;
+import com.marshalchen.common.uimodule.listviewanimations.widget.DynamicListView;
 import com.marshalchen.common.demoofui.R;
 import com.marshalchen.common.demoofui.listviewanimations.ListAnimationListActivity;
 

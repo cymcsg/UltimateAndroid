@@ -15,7 +15,7 @@ import android.view.Menu;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uiModule.fadingactionbar.FadingActionBarHelper;
+import com.marshalchen.common.uimodule.fadingactionbar.FadingActionBarHelper;
 
 
 public class HeaderOverlayActivity extends Activity {

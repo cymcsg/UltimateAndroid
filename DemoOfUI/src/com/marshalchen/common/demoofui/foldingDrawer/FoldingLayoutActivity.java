@@ -36,9 +36,9 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ImageView;
 import android.widget.SeekBar;
-import com.marshalchen.common.uiModule.foldingLayout.BaseFoldingLayout;
-import com.marshalchen.common.uiModule.foldingLayout.FoldingLayout;
-import com.marshalchen.common.uiModule.foldingLayout.listener.OnFoldListener;
+import com.marshalchen.common.uimodule.foldingLayout.BaseFoldingLayout;
+import com.marshalchen.common.uimodule.foldingLayout.FoldingLayout;
+import com.marshalchen.common.uimodule.foldingLayout.listener.OnFoldListener;
 import com.marshalchen.common.demoofui.R;
 
 

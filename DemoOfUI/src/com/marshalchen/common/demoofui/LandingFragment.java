@@ -28,11 +28,11 @@ import com.marshalchen.common.demoofui.staggeredgridview.StaggeredGridViewActivi
 import com.marshalchen.common.demoofui.standUpTimer.ConfigureStandupTimer;
 import com.marshalchen.common.demoofui.superlistview.SuperListViewActivity;
 import com.marshalchen.common.ui.Typefaces;
-import com.marshalchen.common.uiModule.enhanceListView.EnhancedListView;
-import com.marshalchen.common.uiModule.passcodelock.PasscodePreferencesActivity;
-import com.marshalchen.common.uiModule.titanic.Titanic;
-import com.marshalchen.common.uiModule.titanic.TitanicTextView;
-import com.marshalchen.common.uiModule.viewpagerindicator.CirclePageIndicator;
+import com.marshalchen.common.uimodule.enhanceListView.EnhancedListView;
+import com.marshalchen.common.uimodule.passcodelock.PasscodePreferencesActivity;
+import com.marshalchen.common.uimodule.titanic.Titanic;
+import com.marshalchen.common.uimodule.titanic.TitanicTextView;
+import com.marshalchen.common.uimodule.viewpagerindicator.CirclePageIndicator;
 import com.marshalchen.common.demoofui.activityanimation.ActivityAnimationsActivity;
 import com.marshalchen.common.demoofui.activitytransition.ActivityTransitionActivity;
 import com.marshalchen.common.demoofui.cooldraganddrop.CoolDragAndDropActivity;

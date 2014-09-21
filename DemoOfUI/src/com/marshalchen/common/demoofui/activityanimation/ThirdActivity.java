@@ -1,6 +1,6 @@
 package com.marshalchen.common.demoofui.activityanimation;
 
-import com.marshalchen.common.uiModule.activityanimation.AnimatedRectActivity;
+import com.marshalchen.common.uimodule.activityanimation.AnimatedRectActivity;
 import com.marshalchen.common.demoofui.R;
 
 public class ThirdActivity extends AnimatedRectActivity {

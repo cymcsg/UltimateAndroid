@@ -3,14 +3,14 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent" android:orientation="vertical"
         android:layout_height="match_parent">
-    <!--<com.marshalchen.common.uiModule.flipViews.flip.FlipViewController-->
+    <!--<com.marshalchen.common.uimodule.flipViews.flip.FlipViewController-->
     <!--xmlns:flipview="http://schemas.android.com/apk/res-auto"-->
     <!--android:layout_width="match_parent"-->
     <!--android:layout_height="match_parent"-->
     <!--android:id="@+id/flipViewList"-->
     <!--flipview:orientation="vertical"-->
     <!--/>-->
-    <com.marshalchen.common.uiModule.flipViews.flipview.FlipView
+    <com.marshalchen.common.uimodule.flipViews.flipview.FlipView
             xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:flipview="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
@@ -18,7 +18,7 @@
             android:id="@+id/flipViewListVertical"
             flipview:orientation="vertical"
             flipview:overFlipMode="glow"/>
-    <com.marshalchen.common.uiModule.flipViews.flipview.FlipView
+    <com.marshalchen.common.uimodule.flipViews.flipview.FlipView
             xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:flipview="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"

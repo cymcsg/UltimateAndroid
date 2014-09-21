@@ -2,9 +2,9 @@ package com.marshalchen.common.demoofui.showcaseview;
 
 import android.app.Activity;
 import android.os.Bundle;
-import com.marshalchen.common.uiModule.showcaseview.ShowcaseView;
-import com.marshalchen.common.uiModule.showcaseview.targets.Target;
-import com.marshalchen.common.uiModule.showcaseview.targets.ViewTarget;
+import com.marshalchen.common.uimodule.showcaseview.ShowcaseView;
+import com.marshalchen.common.uimodule.showcaseview.targets.Target;
+import com.marshalchen.common.uimodule.showcaseview.targets.ViewTarget;
 import com.marshalchen.common.demoofui.R;
 
 

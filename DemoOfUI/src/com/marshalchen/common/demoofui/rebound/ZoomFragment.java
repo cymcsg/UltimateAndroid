@@ -18,7 +18,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
-import com.marshalchen.common.uiModule.rebound.*;
+import com.marshalchen.common.uimodule.rebound.*;
 import com.marshalchen.common.demoofui.R;
 
 public class ZoomFragment extends Fragment {

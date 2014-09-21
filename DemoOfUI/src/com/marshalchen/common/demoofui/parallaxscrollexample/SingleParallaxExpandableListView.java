@@ -6,7 +6,7 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.widget.TextView;
 
-import com.marshalchen.common.uiModule.parallaxscroll.ParallaxExpandableListView;
+import com.marshalchen.common.uimodule.parallaxscroll.ParallaxExpandableListView;
 import com.marshalchen.common.demoofui.R;
 
 public class SingleParallaxExpandableListView extends Activity {

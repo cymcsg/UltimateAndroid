@@ -10,7 +10,7 @@
     android:gravity="center_horizontal"
     android:orientation="vertical">
 
-    <com.marshalchen.common.uiModule.circularProgressButton.CircularProgressButton
+    <com.marshalchen.common.uimodule.circularProgressButton.CircularProgressButton
         android:id="@+id/circularButton1"
         android:layout_width="196dp"
         android:layout_height="64dp"
@@ -21,7 +21,7 @@
         app:cpb_iconError="@drawable/circular_progress_button_action_cancel"
         app:cpb_textIdle="Upload" />
 
-    <com.marshalchen.common.uiModule.circularProgressButton.CircularProgressButton
+    <com.marshalchen.common.uimodule.circularProgressButton.CircularProgressButton
         android:id="@+id/circularButton2"
         android:layout_width="196dp"
         android:layout_height="64dp"

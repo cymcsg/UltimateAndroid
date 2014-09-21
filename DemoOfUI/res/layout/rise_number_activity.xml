@@ -26,7 +26,7 @@
             android:textSize="16sp"
             android:text="My Money"/>
 
-        <com.marshalchen.common.uiModule.risenumber.RiseNumberTextView
+        <com.marshalchen.common.uimodule.risenumber.RiseNumberTextView
             android:id="@+id/text"
             android:layout_marginTop="25dp"
             android:layout_width="wrap_content"
@@ -54,7 +54,7 @@
                 android:minEms="5"
                 android:textSize="24sp" />
 
-            <com.marshalchen.common.uiModule.risenumber.RiseNumberTextView
+            <com.marshalchen.common.uimodule.risenumber.RiseNumberTextView
                 android:id="@+id/in"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
                 android:minEms="5"
                 android:text="Money Out" />
 
-            <com.marshalchen.common.uiModule.risenumber.RiseNumberTextView
+            <com.marshalchen.common.uimodule.risenumber.RiseNumberTextView
                 android:id="@+id/out"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

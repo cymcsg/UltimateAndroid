@@ -11,8 +11,8 @@
 package com.marshalchen.common.demoofui.rebound;
 
 import android.os.Bundle;
-import com.marshalchen.common.uiModule.swipeback.SwipeBackActivity;
-import com.marshalchen.common.uiModule.swipeback.SwipeBackLayout;
+import com.marshalchen.common.uimodule.swipeback.SwipeBackActivity;
+import com.marshalchen.common.uimodule.swipeback.SwipeBackLayout;
 import com.marshalchen.common.demoofui.R;
 
 public class ReboundActivity extends SwipeBackActivity {

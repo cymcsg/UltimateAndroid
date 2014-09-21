@@ -7,8 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import com.marshalchen.common.uiModule.listbuddies.adapters.CircularLoopAdapter;
-import com.marshalchen.common.uiModule.listbuddies.views.ListBuddiesLayout;
+import com.marshalchen.common.uimodule.listbuddies.adapters.CircularLoopAdapter;
+import com.marshalchen.common.uimodule.listbuddies.views.ListBuddiesLayout;
 import com.marshalchen.common.demoofui.R;
 import com.nostra13.universalimageloader.core.ImageLoader;
 

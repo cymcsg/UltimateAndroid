@@ -11,7 +11,7 @@
             android:layout_height="match_parent"/>
     <RelativeLayout android:layout_width="fill_parent" android:id="@+id/favShimmerReaLayout"
                     android:layout_height="fill_parent">
-        <com.marshalchen.common.uiModule.shimmer.ShimmerTextView
+        <com.marshalchen.common.uimodule.shimmer.ShimmerTextView
                 android:id="@+id/favShimmerTextView"
                 android:text="Loading"
                 android:layout_width="wrap_content"
@@ -31,7 +31,7 @@
               android:divider="@android:color/transparent"
               android:dividerHeight="0dp"
               android:background="@color/white"/>
-    <!--<com.marshalchen.common.uiModule.slideExpand.ActionSlideExpandableListView-->
+    <!--<com.marshalchen.common.uimodule.slideExpand.ActionSlideExpandableListView-->
     <!--android:id="@+id/left_drawer_listview"-->
     <!--android:layout_width="240dp"-->
     <!--android:layout_height="match_parent"-->

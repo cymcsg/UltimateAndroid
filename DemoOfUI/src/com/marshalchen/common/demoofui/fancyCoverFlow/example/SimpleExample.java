@@ -8,7 +8,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import com.marshalchen.common.demoofui.R;
 import com.marshalchen.common.demoofui.fancyCoverFlow.shared.FancyCoverFlowSampleAdapter;
-import com.marshalchen.common.uiModule.fancycoverflow.FancyCoverFlow;
+import com.marshalchen.common.uimodule.fancycoverflow.FancyCoverFlow;
 
 
 public class SimpleExample extends Activity {

@@ -14,7 +14,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Toast;
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uiModule.staggeredgridview.util.DynamicHeightTextView;
+import com.marshalchen.common.uimodule.staggeredgridview.util.DynamicHeightTextView;
 
 
 /***
