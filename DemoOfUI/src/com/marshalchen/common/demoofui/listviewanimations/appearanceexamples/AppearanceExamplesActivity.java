@@ -28,13 +28,13 @@ import android.widget.TextView;
 import com.marshalchen.common.demoofui.R;
 import com.marshalchen.common.demoofui.listviewanimations.ListAnimationListActivity;
 
-import com.marshalchen.common.uiModule.listviewanimations.ArrayAdapter;
-import com.marshalchen.common.uiModule.listviewanimations.swinginadapters.AnimationAdapter;
-import com.marshalchen.common.uiModule.listviewanimations.swinginadapters.prepared.AlphaInAnimationAdapter;
-import com.marshalchen.common.uiModule.listviewanimations.swinginadapters.prepared.ScaleInAnimationAdapter;
-import com.marshalchen.common.uiModule.listviewanimations.swinginadapters.prepared.SwingBottomInAnimationAdapter;
-import com.marshalchen.common.uiModule.listviewanimations.swinginadapters.prepared.SwingLeftInAnimationAdapter;
-import com.marshalchen.common.uiModule.listviewanimations.swinginadapters.prepared.SwingRightInAnimationAdapter;
+import com.marshalchen.common.uimodule.listviewanimations.ArrayAdapter;
+import com.marshalchen.common.uimodule.listviewanimations.swinginadapters.AnimationAdapter;
+import com.marshalchen.common.uimodule.listviewanimations.swinginadapters.prepared.AlphaInAnimationAdapter;
+import com.marshalchen.common.uimodule.listviewanimations.swinginadapters.prepared.ScaleInAnimationAdapter;
+import com.marshalchen.common.uimodule.listviewanimations.swinginadapters.prepared.SwingBottomInAnimationAdapter;
+import com.marshalchen.common.uimodule.listviewanimations.swinginadapters.prepared.SwingLeftInAnimationAdapter;
+import com.marshalchen.common.uimodule.listviewanimations.swinginadapters.prepared.SwingRightInAnimationAdapter;
 
 import java.util.ArrayList;
 

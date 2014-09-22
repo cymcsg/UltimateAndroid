@@ -12,7 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.marshalchen.common.uiModule.dynamicgrid.BaseDynamicGridAdapter;
+import com.marshalchen.common.uimodule.dynamicgrid.BaseDynamicGridAdapter;
 import com.marshalchen.common.demoofui.R;
 
 

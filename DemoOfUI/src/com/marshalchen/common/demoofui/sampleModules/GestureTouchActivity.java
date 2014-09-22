@@ -11,9 +11,9 @@ import android.view.ScaleGestureDetector;
 import android.view.View;
 import android.view.View.OnTouchListener;
 import android.widget.ImageView;
-import com.marshalchen.common.uiModule.gesturedetectors.MoveGestureDetector;
-import com.marshalchen.common.uiModule.gesturedetectors.RotateGestureDetector;
-import com.marshalchen.common.uiModule.gesturedetectors.ShoveGestureDetector;
+import com.marshalchen.common.uimodule.gesturedetectors.MoveGestureDetector;
+import com.marshalchen.common.uimodule.gesturedetectors.RotateGestureDetector;
+import com.marshalchen.common.uimodule.gesturedetectors.ShoveGestureDetector;
 import com.marshalchen.common.demoofui.R;
 
 

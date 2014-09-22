@@ -2,8 +2,8 @@ package com.marshalchen.common.demoofui;
 
 import android.app.Application;
 import com.marshalchen.common.commonUtils.urlUtils.UniversalImageLoader;
-import com.marshalchen.common.uiModule.customFonts.CalligraphyConfig;
-import com.marshalchen.common.uiModule.passcodelock.AppLockManager;
+import com.marshalchen.common.uimodule.customFonts.CalligraphyConfig;
+import com.marshalchen.common.uimodule.passcodelock.AppLockManager;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 

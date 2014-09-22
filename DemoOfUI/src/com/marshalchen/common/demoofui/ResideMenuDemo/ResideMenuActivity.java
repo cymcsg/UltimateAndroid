@@ -7,8 +7,8 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Toast;
-import com.marshalchen.common.uiModule.ResideMenu.ResideMenu;
-import com.marshalchen.common.uiModule.ResideMenu.ResideMenuItem;
+import com.marshalchen.common.uimodule.ResideMenu.ResideMenu;
+import com.marshalchen.common.uimodule.ResideMenu.ResideMenuItem;
 import com.marshalchen.common.demoofui.R;
 
 

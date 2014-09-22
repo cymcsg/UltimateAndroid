@@ -3,7 +3,7 @@ package com.marshalchen.common.demoofui.parallaxscrollexample;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import com.marshalchen.common.uiModule.parallaxscroll.ParallaxListView;
+import com.marshalchen.common.uimodule.parallaxscroll.ParallaxListView;
 import com.marshalchen.common.demoofui.R;
 
 

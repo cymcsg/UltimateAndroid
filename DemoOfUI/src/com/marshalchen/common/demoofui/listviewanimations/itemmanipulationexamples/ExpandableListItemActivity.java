@@ -31,8 +31,8 @@ import android.widget.Toast;
 import com.marshalchen.common.demoofui.R;
 import com.marshalchen.common.demoofui.listviewanimations.ListAnimationListActivity;
 
-import com.marshalchen.common.uiModule.listviewanimations.itemmanipulation.ExpandableListItemAdapter;
-import com.marshalchen.common.uiModule.listviewanimations.swinginadapters.prepared.AlphaInAnimationAdapter;
+import com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.ExpandableListItemAdapter;
+import com.marshalchen.common.uimodule.listviewanimations.swinginadapters.prepared.AlphaInAnimationAdapter;
 
 import java.util.List;
 

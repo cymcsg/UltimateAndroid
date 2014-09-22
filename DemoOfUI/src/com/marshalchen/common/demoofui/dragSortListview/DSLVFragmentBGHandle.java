@@ -14,8 +14,8 @@ import android.widget.ArrayAdapter;
 import android.view.MotionEvent;
 
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uiModule.dragSortListView.DragSortListView;
-import com.marshalchen.common.uiModule.dragSortListView.DragSortController;
+import com.marshalchen.common.uimodule.dragSortListView.DragSortListView;
+import com.marshalchen.common.uimodule.dragSortListView.DragSortController;
 
 public class DSLVFragmentBGHandle extends DSLVFragment {
 

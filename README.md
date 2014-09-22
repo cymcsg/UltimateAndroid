@@ -20,7 +20,7 @@ UltimateAndroid
 
 [English Quick Setup](https://github.com/cymcsg/UltimateAndroid/blob/master/Manual_English.md)
 
-[中文说明](https://github.com/cymcsg/UltimateAndroid/blob/master/Manual_Chinese.md)
+[中文说明](https://github.com/cymcsg/UltimateAndroid/blob/master/Tutorials/TableofContents.md)
 
 ###[中文详细教程](Tutorials/TableofContents.md)
 

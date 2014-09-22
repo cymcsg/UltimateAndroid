@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
-import com.marshalchen.common.uiModule.cooldraganddrop.SpanVariableGridView;
+import com.marshalchen.common.uimodule.cooldraganddrop.SpanVariableGridView;
 import com.marshalchen.common.demoofui.R;
 
 public class ItemAdapter extends ArrayAdapter<Item> implements SpanVariableGridView.CalculateChildrenPosition {

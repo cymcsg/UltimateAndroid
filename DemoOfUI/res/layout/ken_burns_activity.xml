@@ -12,12 +12,12 @@
             android:layout_height="match_parent"
             android:inAnimation="@android:anim/fade_in"
             android:outAnimation="@android:anim/fade_out">
-        <com.marshalchen.common.uiModule.kenburnsview.KenBurnsView
+        <com.marshalchen.common.uimodule.kenburnsview.KenBurnsView
                 android:id="@+id/kenBurnsImageView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:src="@drawable/test_back"/>
-        <com.marshalchen.common.uiModule.kenburnsview.KenBurnsView
+        <com.marshalchen.common.uimodule.kenburnsview.KenBurnsView
                 android:id="@+id/kenBurnsImageView1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

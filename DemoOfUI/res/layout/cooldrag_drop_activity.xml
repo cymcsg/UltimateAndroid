@@ -16,13 +16,13 @@
                       android:layout_width="match_parent"
                       android:layout_height="match_parent">
             <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="231231"/>
-            <com.marshalchen.common.uiModule.cooldraganddrop.CoolDragAndDropGridView
+            <com.marshalchen.common.uimodule.cooldraganddrop.CoolDragAndDropGridView
                     android:id="@+id/coolDragAndDropGridView"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     dragAndDrop:itemMargin="5dp"
                     dragAndDrop:numColumns="3">
-            </com.marshalchen.common.uiModule.cooldraganddrop.CoolDragAndDropGridView>
+            </com.marshalchen.common.uimodule.cooldraganddrop.CoolDragAndDropGridView>
             <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="2222"/>
 
         </LinearLayout>

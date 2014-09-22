@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 
-import com.marshalchen.common.uiModule.parallaxscroll.ParallaxExpandableListView;
+import com.marshalchen.common.uimodule.parallaxscroll.ParallaxExpandableListView;
 import com.marshalchen.common.demoofui.R;
 
 public class MultipleParallaxExpandableListView extends Activity {

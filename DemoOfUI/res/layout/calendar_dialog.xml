@@ -1,4 +1,4 @@
-<com.marshalchen.common.uiModule.timessquare.CalendarPickerView
+<com.marshalchen.common.uimodule.timessquare.CalendarPickerView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/calendar_view"
     android:layout_width="match_parent"

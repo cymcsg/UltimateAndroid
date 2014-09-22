@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uiModule.googleprogressbar.GoogleProgressBar;
+import com.marshalchen.common.uimodule.googleprogressbar.GoogleProgressBar;
 
 
 public class GoogleProgressBarActivity extends ListActivity {

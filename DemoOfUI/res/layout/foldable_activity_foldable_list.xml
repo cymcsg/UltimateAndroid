@@ -1,4 +1,4 @@
-<com.marshalchen.common.uiModule.foldablelayout.FoldableListLayout
+<com.marshalchen.common.uimodule.foldablelayout.FoldableListLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/foldable_list"
         android:layout_width="match_parent"

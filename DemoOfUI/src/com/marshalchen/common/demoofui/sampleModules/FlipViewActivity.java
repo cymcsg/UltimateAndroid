@@ -12,8 +12,8 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
-import com.marshalchen.common.uiModule.flipViews.flipview.FlipView;
-import com.marshalchen.common.uiModule.flipViews.flipview.OverFlipMode;
+import com.marshalchen.common.uimodule.flipViews.flipview.FlipView;
+import com.marshalchen.common.uimodule.flipViews.flipview.OverFlipMode;
 import com.marshalchen.common.demoofui.R;
 
 import java.util.ArrayList;

@@ -2,7 +2,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-    <com.marshalchen.common.uiModule.superlistview.SuperListview
+    <com.marshalchen.common.uimodule.superlistview.SuperListview
             xmlns:superlistview="http://schemas.android.com/apk/res-auto"
             android:id="@+id/list"
             android:layout_width="match_parent"
@@ -13,5 +13,5 @@
             superlistview:superlv__empty="@layout/super_list_view_emptyview"
             superlistview:superlv__moreProgress="@layout/super_list_view_view_more_progress"
             superlistview:superlv__scrollbarStyle="outsideOverlay" >
-    </com.marshalchen.common.uiModule.superlistview.SuperListview>
+    </com.marshalchen.common.uimodule.superlistview.SuperListview>
 </RelativeLayout>

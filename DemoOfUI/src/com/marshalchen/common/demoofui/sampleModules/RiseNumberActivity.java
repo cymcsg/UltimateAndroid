@@ -8,7 +8,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uiModule.risenumber.RiseNumberTextView;
+import com.marshalchen.common.uimodule.risenumber.RiseNumberTextView;
 
 
 public class RiseNumberActivity extends Activity {

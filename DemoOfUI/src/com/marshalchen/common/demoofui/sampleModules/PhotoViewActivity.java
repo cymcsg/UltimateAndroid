@@ -9,7 +9,7 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 import com.marshalchen.common.commonUtils.basicUtils.HandlerUtils;
 import com.marshalchen.common.ui.HomeasUpActionbarActivity;
-import com.marshalchen.common.uiModule.photoview.PhotoViewAttacher;
+import com.marshalchen.common.uimodule.photoview.PhotoViewAttacher;
 import com.marshalchen.common.demoofui.R;
 
 /**

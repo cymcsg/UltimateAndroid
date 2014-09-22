@@ -1,0 +1,144 @@
+
+##Update：
+
+2014.9.16 add SwipeReFreshLoadMoreActivity and DialogShower
+
+2014.8.25 add drag sort listview 
+
+2014.8.24 add drag sort listview
+
+2014.8.22 add google progress bar
+
+2014.8.20 add pull to zoom list view
+
+2014.8.13 add circleimageview
+
+2014.8.9 
+
+	add ViewPagerTransForm
+	增加了viewpager切换效果
+	
+2014.8.7 add activity like wechat friend group
+
+2014.8.5 add Multiple Upload File Function
+
+2014.7.31 Update Preference Utils
+
+2014.7.28 add activity transition  add autofit text view
+
+2014.7.26 enableHttpResponseCache
+
+2014.7.25 update PackageUtils
+
+2014.7.23 Add swiped card
+
+2014.7.22 Add gesture detector
+
+2014.7.20 Add some Ui Views[Trinea](https://github.com/Trinea/android-common)
+
+2014.7.17 Add Pull to Splash 
+
+2014.7.16 Add JsonMetaReader
+
+2014.7.14 Add Swipe Back Demo
+
+2014.7.10 Add DaoUtils to help deal with Sqlite
+
+2014.7.8 Add Https Utils
+
+2014.7.4 Add [ListviewAnimations](https://github.com/nhaarman/ListViewAnimations)
+
+2014.7.3 Add [PagerSlidingTabStrip](https://github.com/astuetz/PagerSlidingTabStrip)
+
+2014.7.2 Add [Rebound](https://github.com/facebook/rebound)
+         Add [Titanic](https://github.com/RomainPiel/Titanic)
+         
+2014.6.30   
+Add [FaceCrop](https://github.com/Todd-Davies/ProgressWheel)  
+          Add [KenBurns](https://github.com/flavioarfaria/KenBurnsView)  
+          Add [PanningView](https://github.com/flavienlaurent/PanningView)  
+          Add [ProgressWheel](https://github.com/lafosca/AndroidFaceCropper)  
+          Add [ViewpagerSlidingTabs](https://github.com/astuetz/PagerSlidingTabStrip)  
+          
+2014.6.28 Add [Calendar widget](https://github.com/square/android-times-square)  
+          Add Demo.apk
+
+          增加了日历选择控件
+          增加了DemoApk
+
+2014.6.27 Add [Square Progress](https://github.com/mrwonderman/android-square-progressbar)  
+          Add [FolderableLayout](https://github.com/alexvasilkov/FoldableLayout)  
+          Add[FoldingNavigationDrawer](https://github.com/tibi1712/FoldingNavigationDrawer-Android)
+
+
+          增加了几种进度条的加载方式
+          增加了折叠的图片处理或者侧边菜单的样式。
+          
+2014.6.26 Add [Flip View](https://github.com/emilsjolander/android-FlipView) like FlipBoard  
+          Add [PhotoView](https://github.com/chrisbanes/PhotoView)which can help you zoom image by various touch gestures.
+          
+          增加了类似FlipBoard的效果。
+          增加了手势放缩图片的控件。
+          
+
+2014.6.25 Add [StickyGridHeaders](https://github.com/TonicArtos/StickyGridHeaders)
+			
+		  增加了头部浮现控件和根据Letter过滤控件
+		  
+2014.6.24  Add [SmoothProgressBar](https://github.com/castorflex/SmoothProgressBar)
+
+          增加了Android风格的进度条的Demo。
+          
+          
+2014.6.18  Add [Shimmer-Android][12]
+
+           增加了Shimmer类库         
+           
+2014.6.16  ```Add enhanceListView for swipe to dismiss;
+          ```
+
+           增加了滑动删除的Listview；            		                      
+2014.6.14：```Add NineOldAndroids to support Android 2.1~2.3```
+
+           增加了支持2.3的android动画，毕竟在某些地方2.3的占有率并不低。该类库如果不需要可移除。
+
+
+          
+2014.6.12:```Add descriptions of most of the classes.```
+
+          增加了类说明，还有一些方法名相对明确。
+
+
+
+
+
+
+		  
+
+
+
+
+          
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+

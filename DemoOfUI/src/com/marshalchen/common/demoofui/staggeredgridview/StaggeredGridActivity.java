@@ -14,7 +14,7 @@ import android.widget.AdapterView;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uiModule.staggeredgridview.StaggeredGridView;
+import com.marshalchen.common.uimodule.staggeredgridview.StaggeredGridView;
 
 
 public class StaggeredGridActivity extends Activity implements AbsListView.OnScrollListener, AbsListView.OnItemClickListener, AdapterView.OnItemLongClickListener {

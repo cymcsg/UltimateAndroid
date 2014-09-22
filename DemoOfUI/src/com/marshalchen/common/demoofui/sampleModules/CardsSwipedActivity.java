@@ -22,9 +22,9 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Window;
-import com.marshalchen.common.uiModule.cardsSwiped.model.CardModel;
-import com.marshalchen.common.uiModule.cardsSwiped.view.CardContainer;
-import com.marshalchen.common.uiModule.cardsSwiped.view.SimpleCardStackAdapter;
+import com.marshalchen.common.uimodule.cardsSwiped.model.CardModel;
+import com.marshalchen.common.uimodule.cardsSwiped.view.CardContainer;
+import com.marshalchen.common.uimodule.cardsSwiped.view.SimpleCardStackAdapter;
 import com.marshalchen.common.demoofui.R;
 
 

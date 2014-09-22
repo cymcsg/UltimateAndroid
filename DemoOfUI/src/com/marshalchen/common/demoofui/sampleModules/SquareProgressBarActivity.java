@@ -7,7 +7,7 @@ import android.support.v7.app.ActionBarActivity;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import com.marshalchen.common.commonUtils.logUtils.Logs;
-import com.marshalchen.common.uiModule.square_progressbar.SquareProgressBar;
+import com.marshalchen.common.uimodule.square_progressbar.SquareProgressBar;
 import com.marshalchen.common.demoofui.R;
 
 /**

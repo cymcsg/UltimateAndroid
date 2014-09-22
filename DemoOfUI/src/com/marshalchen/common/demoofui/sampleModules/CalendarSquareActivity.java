@@ -10,7 +10,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Toast;
 import com.marshalchen.common.commonUtils.logUtils.Logs;
-import com.marshalchen.common.uiModule.timessquare.CalendarPickerView;
+import com.marshalchen.common.uimodule.timessquare.CalendarPickerView;
 import com.marshalchen.common.demoofui.R;
 
 import java.util.ArrayList;

@@ -7,7 +7,7 @@
     android:layout_height="wrap_content"
     android:descendantFocusability="blocksDescendants">
 
-    <com.marshalchen.common.uiModule.staggeredgridview.util.DynamicHeightTextView
+    <com.marshalchen.common.uimodule.staggeredgridview.util.DynamicHeightTextView
         android:id="@+id/txt_line1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

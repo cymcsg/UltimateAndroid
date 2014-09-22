@@ -5,7 +5,7 @@
                 android:background="@color/white"
                 android:orientation="vertical">
 
-    <com.marshalchen.common.uiModule.huitanScrollView.StretchScrollView
+    <com.marshalchen.common.uimodule.huitanScrollView.StretchScrollView
             android:id="@+id/scroll_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -16,6 +16,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"/>
-    </com.marshalchen.common.uiModule.huitanScrollView.StretchScrollView>
+    </com.marshalchen.common.uimodule.huitanScrollView.StretchScrollView>
 
 </RelativeLayout>

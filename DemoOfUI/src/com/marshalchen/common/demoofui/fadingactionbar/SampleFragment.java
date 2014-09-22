@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uiModule.fadingactionbar.FadingActionBarHelper;
+import com.marshalchen.common.uimodule.fadingactionbar.FadingActionBarHelper;
 
 public class SampleFragment extends Fragment {
     private FadingActionBarHelper mFadingHelper;

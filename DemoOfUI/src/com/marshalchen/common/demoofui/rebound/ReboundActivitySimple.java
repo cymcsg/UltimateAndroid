@@ -18,7 +18,7 @@ import android.widget.ImageView;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import com.marshalchen.common.commonUtils.logUtils.Logs;
-import com.marshalchen.common.uiModule.rebound.*;
+import com.marshalchen.common.uimodule.rebound.*;
 import com.marshalchen.common.demoofui.R;
 
 public class ReboundActivitySimple extends Activity {

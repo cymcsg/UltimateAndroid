@@ -2,7 +2,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-    <com.marshalchen.common.uiModule.superlistview.SuperGridview
+    <com.marshalchen.common.uimodule.superlistview.SuperGridview
             xmlns:superlistview="http://schemas.android.com/apk/res-auto"
             android:id="@+id/list"
             android:layout_width="match_parent"
@@ -16,7 +16,7 @@
             superlistview:supergv__verticalSpacing="10dp"
             superlistview:supergv__horizontalSpacing="10dp"
             superlistview:superlv__scrollbarStyle="outsideOverlay" >
-</com.marshalchen.common.uiModule.superlistview.SuperGridview>
+</com.marshalchen.common.uimodule.superlistview.SuperGridview>
 
 
 </RelativeLayout>

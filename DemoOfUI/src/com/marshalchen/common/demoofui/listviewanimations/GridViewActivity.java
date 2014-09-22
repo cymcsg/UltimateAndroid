@@ -16,8 +16,8 @@ import android.view.ViewGroup;
 import android.widget.GridView;
 import android.widget.ImageView;
 
-import com.marshalchen.common.uiModule.listviewanimations.ArrayAdapter;
-import com.marshalchen.common.uiModule.listviewanimations.swinginadapters.prepared.SwingBottomInAnimationAdapter;
+import com.marshalchen.common.uimodule.listviewanimations.ArrayAdapter;
+import com.marshalchen.common.uimodule.listviewanimations.swinginadapters.prepared.SwingBottomInAnimationAdapter;
 import com.marshalchen.common.demoofui.R;
 
 public class GridViewActivity extends ActionBarActivity {

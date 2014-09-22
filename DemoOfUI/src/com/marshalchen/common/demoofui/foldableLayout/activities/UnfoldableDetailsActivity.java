@@ -9,8 +9,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.marshalchen.common.commonUtils.logUtils.Logs;
-import com.marshalchen.common.uiModule.foldablelayout.UnfoldableView;
-import com.marshalchen.common.uiModule.foldablelayout.shading.GlanceFoldShading;
+import com.marshalchen.common.uimodule.foldablelayout.UnfoldableView;
+import com.marshalchen.common.uimodule.foldablelayout.shading.GlanceFoldShading;
 import com.marshalchen.common.demoofui.R;
 import com.marshalchen.common.demoofui.foldableLayout.items.Painting;
 import com.marshalchen.common.demoofui.foldableLayout.items.PaintingsAdapter;

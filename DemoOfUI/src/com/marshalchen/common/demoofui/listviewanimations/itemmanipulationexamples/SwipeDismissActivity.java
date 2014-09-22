@@ -26,12 +26,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-import com.marshalchen.common.uiModule.listviewanimations.ArrayAdapter;
-import com.marshalchen.common.uiModule.listviewanimations.itemmanipulation.OnDismissCallback;
-import com.marshalchen.common.uiModule.listviewanimations.itemmanipulation.swipedismiss.SwipeDismissAdapter;
-import com.marshalchen.common.uiModule.listviewanimations.itemmanipulation.swipedismiss.contextualundo.ContextualUndoAdapter;
-import com.marshalchen.common.uiModule.listviewanimations.itemmanipulation.swipedismiss.contextualundo.ContextualUndoAdapter.CountDownFormatter;
-import com.marshalchen.common.uiModule.listviewanimations.itemmanipulation.swipedismiss.contextualundo.ContextualUndoAdapter.DeleteItemCallback;
+import com.marshalchen.common.uimodule.listviewanimations.ArrayAdapter;
+import com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.OnDismissCallback;
+import com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.swipedismiss.SwipeDismissAdapter;
+import com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.swipedismiss.contextualundo.ContextualUndoAdapter;
+import com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.swipedismiss.contextualundo.ContextualUndoAdapter.CountDownFormatter;
+import com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.swipedismiss.contextualundo.ContextualUndoAdapter.DeleteItemCallback;
 import com.marshalchen.common.demoofui.R;
 import com.marshalchen.common.demoofui.listviewanimations.ListAnimationListActivity;
 

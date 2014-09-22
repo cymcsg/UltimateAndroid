@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uiModule.dragSortListView.DragSortListView;
+import com.marshalchen.common.uimodule.dragSortListView.DragSortListView;
 
 import android.app.ListActivity;
 import android.os.Bundle;

@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.widget.TextView;
-import com.marshalchen.common.uiModule.parallaxscroll.ParallaxListView;
+import com.marshalchen.common.uimodule.parallaxscroll.ParallaxListView;
 import com.marshalchen.common.demoofui.R;
 
 

@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uiModule.superlistview.SuperListview;
+import com.marshalchen.common.uimodule.superlistview.SuperListview;
 
 
 import java.util.ArrayList;

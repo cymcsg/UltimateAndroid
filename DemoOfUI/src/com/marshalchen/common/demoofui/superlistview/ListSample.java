@@ -9,9 +9,9 @@ import android.widget.ListView;
 import android.widget.Toast;
 import com.marshalchen.common.commonUtils.logUtils.Logs;
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uiModule.superlistview.OnMoreListener;
-import com.marshalchen.common.uiModule.superlistview.SuperListview;
-import com.marshalchen.common.uiModule.superlistview.SwipeDismissListViewTouchListener;
+import com.marshalchen.common.uimodule.superlistview.OnMoreListener;
+import com.marshalchen.common.uimodule.superlistview.SuperListview;
+import com.marshalchen.common.uimodule.superlistview.SwipeDismissListViewTouchListener;
 
 
 import java.util.ArrayList;

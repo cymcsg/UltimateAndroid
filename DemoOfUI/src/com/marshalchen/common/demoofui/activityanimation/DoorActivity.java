@@ -1,7 +1,7 @@
 package com.marshalchen.common.demoofui.activityanimation;
 
 import android.os.Bundle;
-import com.marshalchen.common.uiModule.activityanimation.AnimatedDoorActivity;
+import com.marshalchen.common.uimodule.activityanimation.AnimatedDoorActivity;
 import com.marshalchen.common.demoofui.R;
 
 

@@ -12,7 +12,7 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uiModule.dragSortListView.DragSortListView;
+import com.marshalchen.common.uimodule.dragSortListView.DragSortListView;
 
 public class WarpDSLV extends ListActivity {
 
