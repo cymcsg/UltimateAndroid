@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import com.marshalchen.common.uiModule.activityanimation.AnimatedRectActivity;
+import com.marshalchen.common.uimodule.activityanimation.AnimatedRectActivity;
 import com.marshalchen.common.demoofui.R;
 
 

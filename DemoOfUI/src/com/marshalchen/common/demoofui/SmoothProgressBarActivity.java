@@ -9,7 +9,7 @@ import android.support.v7.app.ActionBarActivity;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import com.marshalchen.common.commonUtils.basicUtils.HandlerUtils;
-import com.marshalchen.common.uiModule.smoothprogressbar.SmoothProgressBar;
+import com.marshalchen.common.uimodule.smoothprogressbar.SmoothProgressBar;
 
 public class SmoothProgressBarActivity extends ActionBarActivity {
 

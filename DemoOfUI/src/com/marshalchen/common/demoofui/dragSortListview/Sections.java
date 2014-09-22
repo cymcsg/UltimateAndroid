@@ -22,8 +22,8 @@ import android.graphics.Point;
 import android.util.Log;
 
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uiModule.dragSortListView.DragSortListView;
-import com.marshalchen.common.uiModule.dragSortListView.DragSortController;
+import com.marshalchen.common.uimodule.dragSortListView.DragSortListView;
+import com.marshalchen.common.uimodule.dragSortListView.DragSortController;
 
 public class Sections extends ListActivity {
 

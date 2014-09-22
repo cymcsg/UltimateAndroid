@@ -11,7 +11,7 @@ import android.graphics.PathMeasure;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.LinearLayout;
-import com.marshalchen.common.uiModule.discrollview.Discrollvable;
+import com.marshalchen.common.uimodule.discrollview.Discrollvable;
 import com.marshalchen.common.demoofui.R;
 
 

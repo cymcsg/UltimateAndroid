@@ -2,7 +2,7 @@ package com.marshalchen.common.demoofui.foldableLayout.activities;
 
 import android.os.Bundle;
 
-import com.marshalchen.common.uiModule.foldablelayout.FoldableListLayout;
+import com.marshalchen.common.uimodule.foldablelayout.FoldableListLayout;
 import com.marshalchen.common.demoofui.R;
 import com.marshalchen.common.demoofui.foldableLayout.items.PaintingsAdapter;
 

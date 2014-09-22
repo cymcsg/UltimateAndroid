@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uiModule.edgeeffectoverride.EdgeEffectGridView;
+import com.marshalchen.common.uimodule.edgeeffectoverride.EdgeEffectGridView;
 
 
 public class GridViewActivity extends Activity {

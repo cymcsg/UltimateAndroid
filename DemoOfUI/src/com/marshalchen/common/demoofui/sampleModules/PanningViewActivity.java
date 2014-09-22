@@ -5,7 +5,7 @@ import android.os.Bundle;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import com.marshalchen.common.ui.HomeasUpActionbarActivity;
-import com.marshalchen.common.uiModule.panningview.PanningView;
+import com.marshalchen.common.uimodule.panningview.PanningView;
 import com.marshalchen.common.demoofui.R;
 
 public class PanningViewActivity extends HomeasUpActionbarActivity {

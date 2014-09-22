@@ -1,4 +1,4 @@
-CommonLibsForAndroid Manual
+UltimateAndroid Quick Setup
 =====
 [中文教程](https://github.com/cymcsg/UltimateAndroid/blob/master/Manual_Chinese.md)
 

@@ -14,7 +14,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uiModule.dragSortListView.DragSortListView;
+import com.marshalchen.common.uimodule.dragSortListView.DragSortListView;
 
 
 public class SingleChoiceListView extends ListActivity

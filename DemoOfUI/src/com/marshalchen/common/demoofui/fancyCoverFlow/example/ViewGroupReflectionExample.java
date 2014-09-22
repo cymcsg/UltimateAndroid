@@ -15,8 +15,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uiModule.fancycoverflow.FancyCoverFlow;
-import com.marshalchen.common.uiModule.fancycoverflow.FancyCoverFlowAdapter;
+import com.marshalchen.common.uimodule.fancycoverflow.FancyCoverFlow;
+import com.marshalchen.common.uimodule.fancycoverflow.FancyCoverFlowAdapter;
 
 
 public class ViewGroupReflectionExample extends Activity {

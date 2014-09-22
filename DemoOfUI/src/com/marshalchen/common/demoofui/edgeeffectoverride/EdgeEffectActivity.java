@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uiModule.edgeeffectoverride.EdgeEffectListView;
+import com.marshalchen.common.uimodule.edgeeffectoverride.EdgeEffectListView;
 
 
 public class EdgeEffectActivity extends Activity implements AdapterView.OnItemClickListener {

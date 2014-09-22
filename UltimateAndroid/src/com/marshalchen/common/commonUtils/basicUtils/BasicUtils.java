@@ -192,6 +192,14 @@ public class BasicUtils {
         context.startActivity(intent);
     }
 
+    public static void sendIntent(Context context, Class classes, String key, ArrayList<? extends Parcelable> value, String anotherKey, String anotherValue) {
+        Intent intent = new Intent();
+        intent.setClass(context, classes);
+        intent.putParcelableArrayListExtra(key, value);
+        intent.putExtra(anotherKey, anotherValue);
+        context.startActivity(intent);
+    }
+
     public static String getSharedPreferences(Context context, String fileName, String parameterName) {
         SharedPreferences sp = context.getSharedPreferences(fileName, 0);
         String parameter = sp.getString(parameterName, "");
@@ -274,7 +282,21 @@ public class BasicUtils {
     }
 
     public static boolean judgeNotNull(List list) {
-        return list != null && list.size() > 0 ? true : false;
+        //return list != null && list.size() > 0 ? true : false;
+        return judgeNotNull(list, null);
+    }
+
+    public static boolean judgeNotNull(List list, List... lists) {
+        boolean flag = true;
+        if (list == null || list.size() == 0) return false;
+        if (judgeNotNull(lists))
+        for (List l : lists) {
+            if (l == null || l.size() == 0) {
+                flag = false;
+                return false;
+            }
+        }
+        return flag;
     }
 
     public static boolean judgeNotNull(Object object) {

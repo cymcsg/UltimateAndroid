@@ -31,9 +31,9 @@ import android.widget.ListView;
 import com.marshalchen.common.demoofui.R;
 import com.marshalchen.common.demoofui.listviewanimations.BaseActivity;
 import com.marshalchen.common.demoofui.listviewanimations.ListAnimationListActivity;
-import com.marshalchen.common.uiModule.listviewanimations.ArrayAdapter;
-import com.marshalchen.common.uiModule.listviewanimations.itemmanipulation.AnimateDismissAdapter;
-import com.marshalchen.common.uiModule.listviewanimations.itemmanipulation.OnDismissCallback;
+import com.marshalchen.common.uimodule.listviewanimations.ArrayAdapter;
+import com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.AnimateDismissAdapter;
+import com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.OnDismissCallback;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -11,8 +11,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uiModule.niftymodaldialogeffects.Effectstype;
-import com.marshalchen.common.uiModule.niftymodaldialogeffects.NiftyDialogBuilder;
+import com.marshalchen.common.uimodule.niftymodaldialogeffects.Effectstype;
+import com.marshalchen.common.uimodule.niftymodaldialogeffects.NiftyDialogBuilder;
 
 
 public class NiftyDialogActivity extends Activity {

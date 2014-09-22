@@ -7,8 +7,8 @@ import android.widget.ViewSwitcher;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import com.marshalchen.common.ui.HomeasUpActionbarActivity;
-import com.marshalchen.common.uiModule.kenburnsview.KenBurnsView;
-import com.marshalchen.common.uiModule.kenburnsview.Transition;
+import com.marshalchen.common.uimodule.kenburnsview.KenBurnsView;
+import com.marshalchen.common.uimodule.kenburnsview.Transition;
 import com.marshalchen.common.demoofui.R;
 
 public class KenBurnsViewActivity extends HomeasUpActionbarActivity {

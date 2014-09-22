@@ -12,8 +12,8 @@ import android.view.MenuItem;
 import android.view.MenuInflater;
 import android.os.Bundle;
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uiModule.dragSortListView.DragSortListView;
-import com.marshalchen.common.uiModule.dragSortListView.DragSortController;
+import com.marshalchen.common.uimodule.dragSortListView.DragSortListView;
+import com.marshalchen.common.uimodule.dragSortListView.DragSortController;
 
 
 public class TestBedDSLV extends FragmentActivity implements

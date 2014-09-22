@@ -5,7 +5,7 @@
 package com.marshalchen.common.demoofui.circularProgressButton;
 
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uiModule.circularProgressButton.CircularProgressButton;
+import com.marshalchen.common.uimodule.circularProgressButton.CircularProgressButton;
 
 import android.app.ActionBar;
 import android.app.Activity;

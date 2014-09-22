@@ -7,8 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.RadioButton;
-import com.marshalchen.common.uiModule.activityanimation.AnimatedDoorLayout;
-import com.marshalchen.common.uiModule.activityanimation.AnimatedRectLayout;
+import com.marshalchen.common.uimodule.activityanimation.AnimatedDoorLayout;
+import com.marshalchen.common.uimodule.activityanimation.AnimatedRectLayout;
 import com.marshalchen.common.demoofui.R;
 
 

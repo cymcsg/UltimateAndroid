@@ -39,4 +39,15 @@
         <item>RotateDown</item>
         <item>Accordion</item>
     </string-array>
+    <string name="dialog_shower_notice_title">Update Data</string>
+    <string name="dialog_shower_positive_button">Update Now</string>
+    <string name="dialog_shower_negative_button">Remind me later</string>
+    <string name="dialog_shower_notice_current_textview">Downloading</string>
+    <string name="dialog_shower_notice_prepare_downloading">Prepare Downloading</string>
+    <string name="dialog_shower_download_title">Update Data</string>
+    <string name="dialog_shower_download_finish">Finished</string>
+    <string name="dialog_shower_download_cancel">Cancel</string>
+    <string name="dialog_shower_download_error_title">Update Failed</string>
+    <string name="dialog_shower_download_error_message">Update failed,please try again</string>
+    <string name="dialog_shower_download_error_button">Confirm</string>
 </resources>

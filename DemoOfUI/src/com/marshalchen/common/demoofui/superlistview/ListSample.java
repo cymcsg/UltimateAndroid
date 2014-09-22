@@ -7,10 +7,11 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
+import com.marshalchen.common.commonUtils.logUtils.Logs;
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uiModule.superlistview.OnMoreListener;
-import com.marshalchen.common.uiModule.superlistview.SuperListview;
-import com.marshalchen.common.uiModule.superlistview.SwipeDismissListViewTouchListener;
+import com.marshalchen.common.uimodule.superlistview.OnMoreListener;
+import com.marshalchen.common.uimodule.superlistview.SuperListview;
+import com.marshalchen.common.uimodule.superlistview.SwipeDismissListViewTouchListener;
 
 
 import java.util.ArrayList;
@@ -39,7 +40,7 @@ public class ListSample extends Activity implements SwipeRefreshLayout.OnRefresh
             @Override
             public void run() {
                 try {
-                    Thread.sleep(2000);
+                    Thread.sleep(1000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -54,6 +55,8 @@ public class ListSample extends Activity implements SwipeRefreshLayout.OnRefresh
                         mAdapter.add("More stuff5");
                         mAdapter.add("More stuff6");
                         mAdapter.add("More stuff7");
+                        mAdapter.add("More stuff8");
+                        mAdapter.add("More stuff9");
 
 
                         mList.setAdapter(mAdapter);
@@ -71,18 +74,18 @@ public class ListSample extends Activity implements SwipeRefreshLayout.OnRefresh
         mList.setRefreshingColor(android.R.color.holo_orange_light, android.R.color.holo_blue_light, android.R.color.holo_green_light, android.R.color.holo_red_light);
 
         // I want to get loadMore triggered if I see the last item (1)
-        mList.setupMoreListener(this, 1);
+        mList.setupMoreListener(this, 8);
 
-        mList.setupSwipeToDismiss(new SwipeDismissListViewTouchListener.DismissCallbacks() {
-            @Override
-            public boolean canDismiss(int position) {
-                return true;
-            }
-
-            @Override
-            public void onDismiss(ListView listView, int[] reverseSortedPositions) {
-            }
-        }, true);
+//        mList.setupSwipeToDismiss(new SwipeDismissListViewTouchListener.DismissCallbacks() {
+//            @Override
+//            public boolean canDismiss(int position) {
+//                return true;
+//            }
+//
+//            @Override
+//            public void onDismiss(ListView listView, int[] reverseSortedPositions) {
+//            }
+//        }, true);
     }
 
     @Override
@@ -98,7 +101,7 @@ public class ListSample extends Activity implements SwipeRefreshLayout.OnRefresh
                 mAdapter.insert("New stuff", 0);
 
             }
-        }, 200);
+        }, 2000);
 
 
     }
@@ -106,9 +109,19 @@ public class ListSample extends Activity implements SwipeRefreshLayout.OnRefresh
     @Override
     public void onMoreAsked(int numberOfItems, int numberBeforeMore, int currentItemPos) {
 
-        Toast.makeText(this, "More", Toast.LENGTH_LONG).show();
-
+        Toast.makeText(this, "More", Toast.LENGTH_SHORT).show();
         //demo purpose, adding to the bottom
-        mAdapter.add("More asked, more served");
+        Logs.d("more-----");
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            public void run() {
+                Logs.d("more----");
+
+                // demo purpose, adding to the top so you can see it
+                mAdapter.add("More asked, more served" + System.currentTimeMillis());
+                mList.hideMoreProgress();
+            }
+        }, 2000);
+
     }
 }

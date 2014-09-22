@@ -10,7 +10,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uiModule.fadingactionbar.FadingActionBarHelper;
+import com.marshalchen.common.uimodule.fadingactionbar.FadingActionBarHelper;
 
 public class WebViewActivity extends Activity {
 

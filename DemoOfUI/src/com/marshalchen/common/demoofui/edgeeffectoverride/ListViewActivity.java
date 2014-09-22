@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uiModule.edgeeffectoverride.EdgeEffectListView;
+import com.marshalchen.common.uimodule.edgeeffectoverride.EdgeEffectListView;
 
 public class ListViewActivity extends Activity {
 

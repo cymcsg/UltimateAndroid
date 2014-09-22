@@ -12,10 +12,10 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.app.Activity;
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uiModule.wireframe.HomeArc;
-import com.marshalchen.common.uiModule.wireframe.HomeColumnar;
-import com.marshalchen.common.uiModule.wireframe.HomeDiagram;
-import com.marshalchen.common.uiModule.wireframe.Score;
+import com.marshalchen.common.uimodule.wireframe.HomeArc;
+import com.marshalchen.common.uimodule.wireframe.HomeColumnar;
+import com.marshalchen.common.uimodule.wireframe.HomeDiagram;
+import com.marshalchen.common.uimodule.wireframe.Score;
 
 public class WireFrameActivity extends Activity {
 

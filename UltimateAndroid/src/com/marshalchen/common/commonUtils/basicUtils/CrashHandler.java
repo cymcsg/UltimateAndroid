@@ -33,6 +33,7 @@ import com.nostra13.universalimageloader.utils.StorageUtils;
 public class CrashHandler implements UncaughtExceptionHandler {
 
     public static final String TAG = "Chen";
+    String showMessage = "There is something wrong with the app.";
 
     //Default UncaughtException
     private UncaughtExceptionHandler mDefaultHandler;
@@ -64,7 +65,7 @@ public class CrashHandler implements UncaughtExceptionHandler {
      * @param context
      * @param crashFilePath
      */
-    public void init(Context context, String crashFilePath) {
+    public void init(Context context, String crashFilePath, String showMessage) {
         mContext = context;
 
         mDefaultHandler = Thread.getDefaultUncaughtExceptionHandler();
@@ -72,6 +73,9 @@ public class CrashHandler implements UncaughtExceptionHandler {
         Thread.setDefaultUncaughtExceptionHandler(this);
         // this.systemServiceObject = systemServiceObject;
         this.crashFilePath = crashFilePath;
+        if (BasicUtils.judgeNotNull(showMessage)) {
+            this.showMessage = showMessage;
+        }
     }
 
     /**
@@ -84,6 +88,15 @@ public class CrashHandler implements UncaughtExceptionHandler {
     }
 
     /**
+     * Initialize
+     *
+     * @param context
+     */
+    public void init(Context context, String crashFilePath) {
+        init(context, crashFilePath, "");
+    }
+
+    /**
      *
      */
     @Override
@@ -93,14 +106,14 @@ public class CrashHandler implements UncaughtExceptionHandler {
             mDefaultHandler.uncaughtException(thread, ex);
         } else {
             try {
-                Thread.sleep(1000);
+                Thread.sleep(100);
             } catch (InterruptedException e) {
-                Logs.e( "error : ", e);
+                Logs.e("error : ", e);
             }
             //退出程序  
             Logs.d("uncaught exception is catched!");
             System.exit(0);
-            Logs.d( "SystemPendingIntent");
+            Logs.d("SystemPendingIntent");
             android.os.Process.killProcess(android.os.Process.myPid());
         }
     }
@@ -115,7 +128,7 @@ public class CrashHandler implements UncaughtExceptionHandler {
             @Override
             public void run() {
                 Looper.prepare();
-                Toast.makeText(mContext, "There is something wrong", Toast.LENGTH_SHORT).show();
+                Toast.makeText(mContext, showMessage, Toast.LENGTH_SHORT).show();
                 Looper.loop();
             }
         }.start();
@@ -143,7 +156,7 @@ public class CrashHandler implements UncaughtExceptionHandler {
 
             }
         } catch (NameNotFoundException e) {
-            Logs.e( "an error occured when collect package info", e);
+            Logs.e("an error occured when collect package info", e);
         }
         Field[] fields = Build.class.getDeclaredFields();
         for (Field field : fields) {
@@ -152,7 +165,7 @@ public class CrashHandler implements UncaughtExceptionHandler {
                 infos.put(field.getName(), field.get(null).toString());
                 Logs.d(field.getName() + " : " + field.get(null));
             } catch (Exception e) {
-                Logs.e( "an error occured when collect crash info", e);
+                Logs.e("an error occured when collect crash info", e);
             }
         }
     }
@@ -204,7 +217,7 @@ public class CrashHandler implements UncaughtExceptionHandler {
             }
             return fileName;
         } catch (Exception e) {
-            Logs.e( "an error occured while writing file...", e);
+            Logs.e("an error occured while writing file...", e);
         }
         return null;
     }

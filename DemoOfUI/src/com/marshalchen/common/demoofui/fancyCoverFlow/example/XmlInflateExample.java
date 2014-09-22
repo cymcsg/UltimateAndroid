@@ -7,7 +7,7 @@ package com.marshalchen.common.demoofui.fancyCoverFlow.example;
 import android.os.Bundle;
 import com.marshalchen.common.demoofui.R;
 import com.marshalchen.common.demoofui.fancyCoverFlow.shared.FancyCoverFlowSampleAdapter;
-import com.marshalchen.common.uiModule.fancycoverflow.FancyCoverFlow;
+import com.marshalchen.common.uimodule.fancycoverflow.FancyCoverFlow;
 
 
 public class XmlInflateExample extends SimpleExample {

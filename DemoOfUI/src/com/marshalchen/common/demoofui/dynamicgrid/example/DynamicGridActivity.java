@@ -8,7 +8,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Toast;
-import com.marshalchen.common.uiModule.dynamicgrid.DynamicGridView;
+import com.marshalchen.common.uimodule.dynamicgrid.DynamicGridView;
 import com.marshalchen.common.demoofui.R;
 
 

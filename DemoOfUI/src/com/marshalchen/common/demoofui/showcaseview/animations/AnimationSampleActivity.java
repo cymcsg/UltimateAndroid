@@ -4,10 +4,10 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-import com.marshalchen.common.uiModule.showcaseview.ApiUtils;
-import com.marshalchen.common.uiModule.showcaseview.ShowcaseView;
-import com.marshalchen.common.uiModule.showcaseview.targets.Target;
-import com.marshalchen.common.uiModule.showcaseview.targets.ViewTarget;
+import com.marshalchen.common.uimodule.showcaseview.ApiUtils;
+import com.marshalchen.common.uimodule.showcaseview.ShowcaseView;
+import com.marshalchen.common.uimodule.showcaseview.targets.Target;
+import com.marshalchen.common.uimodule.showcaseview.targets.ViewTarget;
 import com.marshalchen.common.demoofui.R;
 
 

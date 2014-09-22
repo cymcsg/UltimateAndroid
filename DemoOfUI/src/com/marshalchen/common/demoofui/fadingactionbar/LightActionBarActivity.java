@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.Menu;
 
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uiModule.fadingactionbar.FadingActionBarHelper;
+import com.marshalchen.common.uimodule.fadingactionbar.FadingActionBarHelper;
 
 public class LightActionBarActivity extends Activity {
 

@@ -7,7 +7,7 @@ import android.text.Spanned;
 import android.view.View;
 import android.widget.Button;
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uiModule.flowtextview.FlowTextView;
+import com.marshalchen.common.uimodule.flowtextview.FlowTextView;
 
 
 public class FlowTextViewActivity extends ActionBarActivity implements View.OnClickListener {

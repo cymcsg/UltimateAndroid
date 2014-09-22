@@ -25,7 +25,7 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.marshalchen.common.uiModule.listviewanimations.ArrayAdapter;
+import com.marshalchen.common.uimodule.listviewanimations.ArrayAdapter;
 import com.marshalchen.common.demoofui.R;
 
 public class ListAnimationListActivity extends BaseActivity {

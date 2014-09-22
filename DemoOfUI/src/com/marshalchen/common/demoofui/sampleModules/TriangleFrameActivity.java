@@ -8,8 +8,8 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.widget.LinearLayout;
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uiModule.triangle.RotaryView;
-import com.marshalchen.common.uiModule.triangle.TriangleView;
+import com.marshalchen.common.uimodule.triangle.RotaryView;
+import com.marshalchen.common.uimodule.triangle.TriangleView;
 
 public class TriangleFrameActivity extends Activity {
 

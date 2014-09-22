@@ -5,7 +5,7 @@
 package com.marshalchen.common.demoofui.dragSortListview;
 
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uiModule.dragSortListView.DragSortController;
+import com.marshalchen.common.uimodule.dragSortListView.DragSortController;
 
 import android.support.v4.app.DialogFragment;
 import android.app.AlertDialog;

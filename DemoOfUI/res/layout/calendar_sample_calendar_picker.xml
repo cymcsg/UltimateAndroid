@@ -58,7 +58,7 @@
 
     </HorizontalScrollView>
 
-    <com.marshalchen.common.uiModule.timessquare.CalendarPickerView
+    <com.marshalchen.common.uimodule.timessquare.CalendarPickerView
             android:id="@+id/calendar_view"
             android:layout_width="match_parent"
             android:layout_height="0dp"
