@@ -44,10 +44,18 @@ public class GreenDaoUtils {
     }
 
     public static List getList(AbstractDao dao, Property... orderProperty) {
+        return getList(dao,true,orderProperty);
+    }
+
+    public static List getList(AbstractDao dao, boolean isAsc, Property... orderProperty) {
         isLog();
-        List indexFavList = dao.queryBuilder()
-                .orderAsc(orderProperty)
-                .list();
+        QueryBuilder queryBuilder = dao.queryBuilder();
+        if (isAsc) {
+            queryBuilder = queryBuilder.orderAsc(orderProperty);
+        } else {
+            queryBuilder = queryBuilder.orderDesc(orderProperty);
+        }
+        List indexFavList = queryBuilder.list();
         return indexFavList;
     }
 
