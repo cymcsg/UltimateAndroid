@@ -10,6 +10,14 @@ import android.util.Log;
  */
 public final class Logs {
 
+    public static boolean issIsLogEnabled() {
+        return sIsLogEnabled;
+    }
+
+    public static void setsIsLogEnabled(boolean sIsLogEnabled) {
+        Logs.sIsLogEnabled = sIsLogEnabled;
+    }
+
     private static boolean sIsLogEnabled = true;// 是否打开LOG
 
     private static String sApplicationTag = "Chen";// LOG默认TAG
@@ -20,6 +28,7 @@ public final class Logs {
         return Thread.currentThread().getStackTrace()[4];
 
     }
+
 
     //打印LOG
     public static void trace() {
