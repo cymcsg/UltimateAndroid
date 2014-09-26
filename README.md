@@ -56,7 +56,7 @@ Please set the ides before you run the demo apps.
 
 ```UltimateAndroid  depends on appcompat.UltimateAndroidUi  depends on UltimateAndroid.And the DemoOfUi is depends on UltimateAndroidUi.```
 
-However,if you want to use UltimateAndroid without the UIModules,you can just depend on UltimateAndroid and this will make the app more flexible.
+```However,if you want to use UltimateAndroid without the UIModules,you can just depend on UltimateAndroid and this will make the app more flexible.```
 
 ##UI Modules
 * Support animations for Android 2.3
@@ -79,7 +79,7 @@ However,if you want to use UltimateAndroid without the UIModules,you can just de
 
 使用DemoOfUI的时候,需要注意```UltimateAndroid 依赖 appcompat.UltimateAndroidUi 依赖 UltimateAndroid.DemoOfUi 依赖 UltimateAndroidUi.```
 
-如果你不需要使用UiModule的话，可以直接依赖UltimateAndroid，这样体积会更纤细。
+```如果你不需要使用UiModule的话，可以直接依赖UltimateAndroid，这样体积会更纤细。```
 
 
 我将尽力在接下啦的日子中将Demo做的更有趣，同时也包括了类似ORM，异步图片和网路加载等模块。
