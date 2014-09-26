@@ -1,10 +1,7 @@
 package com.marshalchen.common.commonUtils.moduleUtils;
 
 import android.content.Context;
-import android.webkit.CookieManager;
-import android.webkit.CookieSyncManager;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
+import android.webkit.*;
 import com.marshalchen.common.commonUtils.logUtils.Logs;
 
 /**
@@ -59,5 +56,15 @@ public class WebViewUtils {
         Logs.d(cookieManager.getCookie(domainNameUrl));
         CookieSyncManager.getInstance().sync();
         //    CookieSyncManager.getInstance().stopSync();
+    }
+
+    public static WebBackForwardList getHistoricalList(WebView webView) {
+        return webView.copyBackForwardList();
+    }
+
+    public static String getHistoricalUrl(WebView webView) {
+        WebBackForwardList webBackForwardList = getHistoricalList(webView);
+        return webBackForwardList.getItemAtIndex(webBackForwardList.getCurrentIndex() - 1).getUrl();
+
     }
 }

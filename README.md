@@ -1,8 +1,8 @@
 UltimateAndroid
 ==========================
 
-###Version:0.0.2
-###当前版本：0.0.2
+###Version:0.1.0 beta
+###当前版本：0.1.0 beta
 
 [![Build Status](https://drone.io/github.com/cymcsg/UltimateAndroid/status.png)](https://drone.io/github.com/cymcsg/UltimateAndroid/latest)
 <br>
@@ -29,7 +29,7 @@ UltimateAndroid
 
 ---
 
-#####The lib contains many feature like View Injection,ORM,Asynchronous Http and Image,User scenario testing,many UI Modules,Https Utils etc.And there are also many useful feature like TripleDes Utils,WebViewUtils,Md5Utils etc.The lib will be added by more feature in the future.   
+#####The lib contains many feature like View Injection,ORM,Asynchronous Http and Image,User scenario testing,many UI Modules,Https Utils etc.And there are also many useful feature like WebViewUtils,DaoUtils, TripleDes Utils etc.The lib will be added by more feature in the future.   
 	
 If I add a new feature,I will write a demo for it at a same time.Some old features do not have demo but I will try to complete them.If you want to try the demo,you can download the Apk directly. 
 	 
@@ -54,6 +54,9 @@ or you can see [IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse 
 
 Please set the ides before you run the demo apps.
 
+```UltimateAndroid  depends on appcompat.UltimateAndroidUi  depends on UltimateAndroid.And the DemoOfUi is depends on UltimateAndroidUi.```
+
+```However,if you want to use UltimateAndroid without the UIModules,you can just depend on UltimateAndroid and this will make the app more flexible.```
 
 ##UI Modules
 * Support animations for Android 2.3
@@ -74,9 +77,14 @@ Please set the ides before you run the demo apps.
 		
 部分老的功能还没有Demo，但我会不断的完善。目前每加入一个新功能都会增加Demo.Demo的Apk文件可以直接下载使用.  
 
-框架的Demo目前主要只包含了UI Module部分和View Injection，看上去有些无聊，不过你仍可以查看这些有趣的UI效果.
+使用DemoOfUI的时候,需要注意```UltimateAndroid 依赖 appcompat.UltimateAndroidUi 依赖 UltimateAndroid.DemoOfUi 依赖 UltimateAndroidUi.```
 
-####我将尽力在接下啦的日子中将Demo做的更有趣，同时也包括了类似ORM，异步图片和网路加载等模块。
+```如果你不需要使用UiModule的话，可以直接依赖UltimateAndroid，这样体积会更纤细。```
+
+
+我将尽力在接下啦的日子中将Demo做的更有趣，同时也包括了类似ORM，异步图片和网路加载等模块。
+
+
 
 
 
