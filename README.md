@@ -234,9 +234,13 @@ Please set the ides before you run the demo apps.
 
 使用DemoOfUI的时候,需要注意```UltimateAndroid 依赖 appcompat.UltimateAndroidUi 依赖 UltimateAndroid.DemoOfUi 依赖 UltimateAndroidUi.```
 
+
 ```如果你不需要使用UiModule的话，可以直接依赖UltimateAndroid，这样体积会更纤细。```
 
+
 [UI截图在这里](#demo_of_ui)
+
+
 Demo的Apk文件可以直接下载使用.
 
 
