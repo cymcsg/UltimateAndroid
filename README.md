@@ -18,9 +18,6 @@ UltimateAndroid
 
 [中文简介](#chinese_introduction)
 
-[English Quick Setup](https://github.com/cymcsg/UltimateAndroid/blob/master/Manual_English.md)
-
-[中文说明](https://github.com/cymcsg/UltimateAndroid/blob/master/Tutorials/TableofContents.md)
 
 ###[中文详细教程](Tutorials/TableofContents.md)
 
@@ -29,13 +26,15 @@ UltimateAndroid
 
 ---
 
-#####The lib contains many feature like View Injection,ORM,Asynchronous Http and Image,User scenario testing,many UI Modules,Https Utils etc.And there are also many useful feature like WebViewUtils,DaoUtils, TripleDes Utils etc.The lib will be added by more feature in the future.   
+#####The framework contains many feature like View Injection,ORM,Asynchronous Http and Image,User scenario testing,many UI Modules,Https Utils etc.And there are also many useful feature like WebViewUtils,DaoUtils, TripleDes Utils etc.The framework will be added by more feature in the future. 
 	
-If I add a new feature,I will write a demo for it at a same time.Some old features do not have demo but I will try to complete them.If you want to try the demo,you can download the Apk directly. 
+
 	 
-Up to now,I have only write the demo of most parts of UI modules and View Injection.The demo is something boring,but you can also see many kinds of UI modules.
+Up to now,I have only write the demo of most parts of UI modules and View Injection.The demo is something boring,but you can also see many kinds of UI modules.The DemoOfUi's screenshots are below,and you can download the apk directly.
+
+[Demo of Ui's screenshot is here.](#demo_of_ui)
 	
-#####I will try to make the demo more interesting and containing other parts such as ORM,Asynchronous Http and Image in next days.Welcome to fork.
+#####Welcome to fork.
 
 
 
@@ -47,9 +46,165 @@ Demo Manual
 
 Demo is rely on appcompat and the UltimateAndroid, you can change CONFIGURATION in your IDES etc.
 
-##Important:
-***Most of  IDEs require additional configuration in order to enable annotation processing for Butter Knife,
+###Quick Setup（Basic Usage）
+1.If this is the first time for you to use the framework, you can use CommonApplication as your Application of Android app or just let your custom application extends CommonApplication.
+
+2. As the function of View Injection which use ButterKnife,you should config your IDE before you can compile the project.***Most of  IDEs require additional configuration in order to enable annotation processing for Butter Knife,
 or you can see [IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse Configuration for butter Knife][102].***
+
+3.View Injection:
+  
+  ``Example:``
+  
+ 	class ExampleActivity extends Activity {
+  	@InjectView(R.id.title) TextView title;
+  	@InjectView(R.id.subtitle) TextView subtitle;
+  	@InjectView(R.id.footer) TextView footer;
+
+  	@Override public void onCreate(Bundle savedInstanceState) {
+    	super.onCreate(savedInstanceState);
+    	setContentView(R.layout.simple_activity);
+    	ButterKnife.inject(this);
+    	// TODO Use "injected" views...
+  }
+}
+
+Another use is simplifying the view holder pattern inside of a list adapter.
+
+	public class MyAdapter extends BaseAdapter {
+	@Override public View getView(int position, View view, ViewGroup parent) {
+    	ViewHolder holder;
+    	if (view != null) {
+      	holder = (ViewHolder) view.getTag();
+    	} else {
+      	view = inflater.inflate(R.layout.whatever, parent, false);
+      	holder = new ViewHolder(view);
+      	view.setTag(holder);
+    	}
+    	holder.name.setText("John Doe");
+    	// etc...
+    	return view;
+    	}
+    	static class ViewHolder {
+    	@InjectView(R.id.title) TextView name;
+    	@InjectView(R.id.job_title) TextView jobTitle;
+    	public ViewHolder(View view) {
+    	ButterKnife.inject(this, view);
+      }
+      }
+	}
+	
+4.Asynchronous Network:
+  Use asynchronous utils,you do not need to use an addtional Thread to visit network.
+
+	HttpUtilsAsync.get("http://www.google.com", new AsyncHttpResponseHandler() {
+
+    @Override
+    public void onStart() {
+        // called before request is started
+    }
+
+    @Override
+    public void onSuccess(int statusCode, Header[] headers, byte[] response) {
+        // called when response HTTP status is "200 OK"
+    }
+
+    @Override
+    public void onFailure(int statusCode, Header[] headers, byte[] errorResponse, Throwable e) {
+        // called when response HTTP status is "4XX" (eg. 401, 403, 404)
+    }
+
+    @Override
+    public void onRetry(int retryNo) {
+        // called when request is retried
+	}
+	});
+	
+Post request:
+	
+	HttpUtilsAsync.post("http://www.google.com", new AsyncHttpResponseHandler() {
+
+    @Override
+    public void onStart() {
+        // called before request is started
+    }
+
+    @Override
+    public void onSuccess(int statusCode, Header[] headers, byte[] response) {
+        // called when response HTTP status is "200 OK"
+    }
+
+    @Override
+    public void onFailure(int statusCode, Header[] headers, byte[] errorResponse, Throwable e) {
+        // called when response HTTP status is "4XX" (eg. 401, 403, 404)
+    }
+
+    @Override
+    public void onRetry(int retryNo) {
+        // called when request is retried
+	}
+	});
+	
+5.Display Images:
+  If you have already use or extend CommonApplication,you can use like this:
+  ```ImageLoader.getInstance().displayImage((imageUri, imageView));```
+  
+  Or for some advantage usage:
+
+
+	imageLoader.displayImage(imageUri, imageView, displayOptions, new ImageLoadingListener() 	{
+	    @Override
+    	public void onLoadingStarted(String imageUri, View view) {
+        	...
+    	}
+    	@Override
+    	public void onLoadingFailed(String imageUri, View view, FailReason failReason) {
+	        ...
+	    }
+	    @Override
+	    public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
+	    ...
+	    }
+	    @Override
+	    public void onLoadingCancelled(String imageUri, View view) {
+	     ...
+	     }
+	}, new ImageLoadingProgressListener() {
+	 @Override
+	 public void onProgressUpdate(String imageUri, View view, int current, int total) {
+	 ...
+	 }
+	});
+	
+	
+<br>
+
+	// Load image, decode it to Bitmap and return Bitmap to callback
+	ImageSize targetSize = new ImageSize(120, 80); // result Bitmap will be fit to this size
+	imageLoader.loadImage(imageUri, targetSize, displayOptions, new 	SimpleImageLoadingListener() {
+    @Override
+    public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
+        // Do whatever you want with Bitmap
+    }
+	});	
+	
+	
+Acceptable URIs examples:
+
+	String imageUri = "http://site.com/image.png"; // from Web
+	String imageUri = "file:///mnt/sdcard/image.png"; // from SD card
+	String imageUri = "content://media/external/audio/albumart/13"; // from content provider
+	String imageUri = "assets://image.png"; // from assets
+	String imageUri = "drawable://" + R.drawable.image; // from drawables (only images, 	non-9patch)
+	
+**NOTE**: Use drawable:// only if you really need it! Always consider the native way to load drawables - ImageView.setImageResource(...) instead of using of ImageLoader.
+
+
+6.ORM:
+
+ The Orm Module of the framework contains both [GreenDao](https://github.com/greenrobot/greenDAO) and [ActiveRecord](https://github.com/pardom/ActiveAndroid).
+ 
+ You can choose either of them freely.			
 
 
 Please set the ides before you run the demo apps.
@@ -75,29 +230,184 @@ Please set the ides before you run the demo apps.
 ---
 ####框架目前主要包含的功能有View Injection,ORM,异步网络请求和图片加载，自动化脚本测试,磁盘LRU等功能.同时提供了类似于TripleDes、Webview快速设置、Md5处理、String处理,Https处理等常用工具类，还有多种UI控件效果。并且这些功能正在逐步增加中。
 		
-部分老的功能还没有Demo，但我会不断的完善。目前每加入一个新功能都会增加Demo.Demo的Apk文件可以直接下载使用.  
-
-使用DemoOfUI的时候,需要注意```UltimateAndroid 依赖 appcompat.UltimateAndroidUi 依赖 UltimateAndroid.DemoOfUi 依赖 UltimateAndroidUi.```
-
-```如果你不需要使用UiModule的话，可以直接依赖UltimateAndroid，这样体积会更纤细。```
 
 
-我将尽力在接下啦的日子中将Demo做的更有趣，同时也包括了类似ORM，异步图片和网路加载等模块。
+使用DemoOfUI的时候,需要注意UltimateAndroid 依赖 appcompat.UltimateAndroidUi 依赖 UltimateAndroid.DemoOfUi 依赖 UltimateAndroidUi.如果你不需要使用UiModule的话，可以直接依赖UltimateAndroid，这样体积会更纤细。Demo的Apk文件可以直接下载使用.
+
+[UI截图在这里](#demo_of_ui)
 
 
-
+#####Welcome to fork.
 
 
 ###QQ交流群：341970175（请注明Android开发）
+
+
 
 Demo 使用方法
 --------------
 
 Demo依赖于appcompat 和 UltimateAndroid，你可以在IDE或者配置文件里面添加一下依赖。
 
-##重要:
-**大部分IDE需要开启annotation的编译（因为Butter Knife）的缘故，如果不清楚如何开启可以看一下[IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse Configuration for butter Knife][102].**
+###快速入门（基础使用）
+1.如果这是您第一次使用UltimateAndroid，你可以使用CommonApplication作为Android App的Application或者使用自定义的Application继承CommonApplication。
 
+2.由于框架使用了View Injection，**大部分IDE需要开启annotation的编译（使用了Butter Knife），如果不清楚如何开启可以看一下[IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse Configuration for butter Knife][102].**
+
+3.视图注入：
+
+ Example:
+ 
+  	class ExampleActivity extends Activity {
+  	@InjectView(R.id.title) TextView title;
+  	@InjectView(R.id.subtitle) TextView subtitle;
+  	@InjectView(R.id.footer) TextView footer;
+
+  	@Override public void onCreate(Bundle savedInstanceState) {
+    	super.onCreate(savedInstanceState);
+    	setContentView(R.layout.simple_activity);
+    	ButterKnife.inject(this);
+    	// TODO Use "injected" views...
+      }
+    }
+
+Another use is simplifying the view holder pattern inside of a list adapter.
+
+	public class MyAdapter extends BaseAdapter {
+	@Override public View getView(int position, View view, ViewGroup parent) {
+    	ViewHolder holder;
+    	if (view != null) {
+      	holder = (ViewHolder) view.getTag();
+    	} else {
+      	view = inflater.inflate(R.layout.whatever, parent, false);
+      	holder = new ViewHolder(view);
+      	view.setTag(holder);
+    	}
+    	holder.name.setText("John Doe");
+    	// etc...
+    	return view;
+    	}
+    	static class ViewHolder {
+    	@InjectView(R.id.title) TextView name;
+    	@InjectView(R.id.job_title) TextView jobTitle;
+    	public ViewHolder(View view) {
+    	ButterKnife.inject(this, view);
+      }
+      }
+	}	
+
+4.异步网络请求:
+  使用异步网络请求工具，你不需要在额外的声明Thread来进行网络请求。
+
+	HttpUtilsAsync.get("http://www.google.com", new AsyncHttpResponseHandler() {
+
+    @Override
+    public void onStart() {
+        // called before request is started
+    }
+
+    @Override
+    public void onSuccess(int statusCode, Header[] headers, byte[] response) {
+        // called when response HTTP status is "200 OK"
+    }
+
+    @Override
+    public void onFailure(int statusCode, Header[] headers, byte[] errorResponse, Throwable e) {
+        // called when response HTTP status is "4XX" (eg. 401, 403, 404)
+    }
+
+    @Override
+    public void onRetry(int retryNo) {
+        // called when request is retried
+	}
+	});
+	
+Post request:
+	
+	HttpUtilsAsync.post("http://www.google.com", new AsyncHttpResponseHandler() {
+
+    @Override
+    public void onStart() {
+        // called before request is started
+    }
+
+    @Override
+    public void onSuccess(int statusCode, Header[] headers, byte[] response) {
+        // called when response HTTP status is "200 OK"
+    }
+
+    @Override
+    public void onFailure(int statusCode, Header[] headers, byte[] errorResponse, Throwable e) {
+        // called when response HTTP status is "4XX" (eg. 401, 403, 404)
+    }
+
+    @Override
+    public void onRetry(int retryNo) {
+        // called when request is retried
+	}
+	});
+	
+5.显示图片:
+  如果你已经使用或继承了CommonApplication，你可以如下使用:
+  ```ImageLoader.getInstance().displayImage((imageUri, imageView));```
+  
+  或者高级使用:
+
+	imageLoader.displayImage(imageUri, imageView, displayOptions, new ImageLoadingListener() 	{
+	    @Override
+    	public void onLoadingStarted(String imageUri, View view) {
+        	...
+    	}
+    	@Override
+    	public void onLoadingFailed(String imageUri, View view, FailReason failReason) {
+	        ...
+	    }
+	    @Override
+	    public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
+	    ...
+	    }
+	    @Override
+	    public void onLoadingCancelled(String imageUri, View view) {
+	     ...
+	     }
+	}, new ImageLoadingProgressListener() {
+	 @Override
+	 public void onProgressUpdate(String imageUri, View view, int current, int total) {
+	 ...
+	 }
+	});
+	
+<br>
+
+	// Load image, decode it to Bitmap and return Bitmap to callback
+	ImageSize targetSize = new ImageSize(120, 80); // result Bitmap will be fit to this size
+	imageLoader.loadImage(imageUri, targetSize, displayOptions, new 	SimpleImageLoadingListener() {
+    @Override
+    public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
+        // Do whatever you want with Bitmap
+    }
+	});	
+	
+	
+可以使用的URI格式:
+
+	String imageUri = "http://site.com/image.png"; // from Web
+	String imageUri = "file:///mnt/sdcard/image.png"; // from SD card
+	String imageUri = "content://media/external/audio/albumart/13"; // from content provider
+	String imageUri = "assets://image.png"; // from assets
+	String imageUri = "drawable://" + R.drawable.image; // from drawables (only images, 	non-9patch)
+	
+**NOTE**: Use drawable:// only if you really need it! Always consider the native way to load drawables - ImageView.setImageResource(...) instead of using of ImageLoader.
+
+
+6.ORM:
+
+ Orm模块包括[GreenDao](https://github.com/greenrobot/greenDAO) and [ActiveRecord](https://github.com/pardom/ActiveAndroid).
+ 
+ 你可以自由选择两者中的一个。					
+
+
+##UI 模块
 * 支持Android2.3 上面的动画效果
 * Listview的滑动删除
 * 动态的textview
@@ -110,10 +420,10 @@ Demo依赖于appcompat 和 UltimateAndroid，你可以在IDE或者配置文件�
 
   ``还有许多其他模块没有提到``  
 
-目前Demo非常简陋，不断完善中。
 
 
-Some  Demo of Ui:
+<h2 ><a name="demo_of_ui">Some  Demo of Ui:</h2>  
+
 
 
 ![tutorials2](http://blog.marshalchen.com/images/tutorial2-1.gif)
