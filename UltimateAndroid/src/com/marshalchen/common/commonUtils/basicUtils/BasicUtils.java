@@ -17,6 +17,7 @@ import java.util.*;
  * <p>{@link #judgeNotNull(String, String...)}</p>
  * <p>{@link #judgeNotNull(Object)}</p>
  * <p>{@link #getVersionName(android.content.Context)}</p>
+ * <p>{@link #getVersionCode(android.content.Context)}</p>
  * <p>{@link #iterateHashMap(java.util.HashMap, String)}</p>
  * <p>{@link #iterateListHashMap(java.util.List, String)}</p>
  * <p>{@link #sendIntent(android.content.Context, Class)}</p>
@@ -109,6 +110,26 @@ public class BasicUtils {
             PackageInfo packInfo = packageManager.getPackageInfo(context
                     .getPackageName(), 0);
             version = packInfo.versionName;
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            Logs.e(e.getMessage());
+
+        } finally {
+            return version;
+        }
+
+    }
+
+    public static int getVersionCode(Context context) {
+        int version = 0;
+        try {
+            // get packagemanager
+            PackageManager packageManager = context.getPackageManager();
+            // getPackageName()--your current package name，0 means get package info
+            PackageInfo packInfo = packageManager.getPackageInfo(context
+                    .getPackageName(), 0);
+            version = packInfo.versionCode;
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -290,12 +311,12 @@ public class BasicUtils {
         boolean flag = true;
         if (list == null || list.size() == 0) return false;
         if (judgeNotNull(lists))
-        for (List l : lists) {
-            if (l == null || l.size() == 0) {
-                flag = false;
-                return false;
+            for (List l : lists) {
+                if (l == null || l.size() == 0) {
+                    flag = false;
+                    return false;
+                }
             }
-        }
         return flag;
     }
 
