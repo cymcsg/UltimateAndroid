@@ -9,6 +9,7 @@ import android.widget.*;
 import com.marshalchen.common.demoofui.R;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * User: special

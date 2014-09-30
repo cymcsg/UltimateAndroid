@@ -16,6 +16,7 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 import com.marshalchen.common.commonUtils.basicUtils.BasicUtils;
 import com.marshalchen.common.commonUtils.moduleUtils.CryptoUtils;
+import com.marshalchen.common.demoofui.ResideMenuDemo.ResideMenuActivity;
 import com.marshalchen.common.demoofui.circularProgressButton.CircularProgressButtonActivity;
 import com.marshalchen.common.demoofui.dragSortListview.MultipleChoiceListView;
 import com.marshalchen.common.demoofui.dragSortListview.SingleChoiceListView;
@@ -411,11 +412,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "Listview");
         enhanceList.add(map);
-//        map = new HashMap<>();
-//        map.put("name", "ResideMenu");
-//        map.put("detail", "try");
-//        map.put("subname", "ResideMenu");
-//     enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "ResideMenu");
+        map.put("detail", "try");
+        map.put("subname", "ResideMenu");
+        enhanceList.add(map);
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
         landingEnhanceListView.setAdapter(enhancedListAdapter);
         landingEnhanceListView.setDismissCallback(new EnhancedListView.OnDismissCallback() {
@@ -616,6 +617,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 59:
                         BasicUtils.sendIntent(getActivity(), UltimateListviewActivity.class);
+                        break;
+                    case 60:
+                        BasicUtils.sendIntent(getActivity(), ResideMenuActivity.class);
                         break;
 
 
