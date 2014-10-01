@@ -28,6 +28,7 @@ import com.marshalchen.common.demoofui.quickreturnlistview.QuickReturnListViewAc
 import com.marshalchen.common.demoofui.staggeredgridview.StaggeredGridViewActivity;
 import com.marshalchen.common.demoofui.standUpTimer.ConfigureStandupTimer;
 import com.marshalchen.common.demoofui.superlistview.SuperListViewActivity;
+import com.marshalchen.common.demoofui.swipelayoutdemo.SwipeLayoutActivity;
 import com.marshalchen.common.ui.Typefaces;
 import com.marshalchen.common.uimodule.enhanceListView.EnhancedListView;
 import com.marshalchen.common.uimodule.passcodelock.PasscodePreferencesActivity;
@@ -417,6 +418,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "ResideMenu");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "Swipe");
+        map.put("detail", "try");
+        map.put("subname", "SwipeLayout");
+        enhanceList.add(map);
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
         landingEnhanceListView.setAdapter(enhancedListAdapter);
         landingEnhanceListView.setDismissCallback(new EnhancedListView.OnDismissCallback() {
@@ -620,6 +626,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 60:
                         BasicUtils.sendIntent(getActivity(), ResideMenuActivity.class);
+                        break;
+                    case 61:
+                        BasicUtils.sendIntent(getActivity(), SwipeLayoutActivity.class);
                         break;
 
 

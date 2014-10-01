@@ -79,18 +79,18 @@
 
 
         <activity
-                android:name="com.marshalchen.common.PasscodeUnlockActivity"
+                android:name="com.marshalchen.common.uimodule.passcodelock.PasscodeUnlockActivity"
                 android:screenOrientation="portrait"
                 android:windowSoftInputMode="stateHidden">
         </activity>
         <activity
-                android:name="com.marshalchen.common.PasscodePreferencesActivity"
+                android:name="com.marshalchen.common.uimodule.passcodelock.PasscodePreferencesActivity"
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:screenOrientation="portrait"
                 android:windowSoftInputMode="stateHidden">
         </activity>
         <activity
-                android:name="com.marshalchen.common.PasscodeManagePasswordActivity"
+                android:name="com.marshalchen.common.uimodule.passcodelock.PasscodeManagePasswordActivity"
                 android:screenOrientation="portrait"
                 android:windowSoftInputMode="stateHidden">
         </activity>
@@ -191,6 +191,11 @@
         <activity android:name=".sampleModules.SwipeRefreshLayoutDemo"></activity>
 
         <activity android:name=".sampleModules.UltimateListviewActivity"></activity>
+
+        <activity android:name=".swipelayoutdemo.SwipeLayoutActivity"></activity>
+        <activity android:name=".swipelayoutdemo.GridViewExample"></activity>
+        <activity android:name=".swipelayoutdemo.ListViewExample"></activity>
+        <activity android:name=".swipelayoutdemo.NestedExample"></activity>
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->
