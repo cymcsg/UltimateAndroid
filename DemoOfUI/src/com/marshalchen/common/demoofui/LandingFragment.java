@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.*;
+import androidanimationsdemo.AndroidAnimationsDemoActivity;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import com.marshalchen.common.commonUtils.basicUtils.BasicUtils;
@@ -60,9 +61,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-/**
- * Created by cym on 14-5-4.
- */
+
 public class LandingFragment extends Fragment {
     View mainView;
     @InjectView(R.id.landingEnhanceListView)
@@ -423,6 +422,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "SwipeLayout");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "Animations");
+        map.put("detail", "try");
+        map.put("subname", "Animations");
+        enhanceList.add(map);
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
         landingEnhanceListView.setAdapter(enhancedListAdapter);
         landingEnhanceListView.setDismissCallback(new EnhancedListView.OnDismissCallback() {
@@ -629,6 +633,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 61:
                         BasicUtils.sendIntent(getActivity(), SwipeLayoutActivity.class);
+                        break;
+                    case 62:
+                        BasicUtils.sendIntent(getActivity(), AndroidAnimationsDemoActivity.class);
                         break;
 
 
