@@ -1,4 +1,4 @@
-package androidanimationsdemo;
+package com.marshalchen.common.demoofui.androidanimationsdemo;
 
 import android.content.Context;
 import android.view.LayoutInflater;

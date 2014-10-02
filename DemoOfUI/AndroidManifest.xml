@@ -197,8 +197,10 @@
         <activity android:name=".swipelayoutdemo.ListViewExample"></activity>
         <activity android:name=".swipelayoutdemo.NestedExample"></activity>
 
-        <activity android:name="androidanimationsdemo.AndroidAnimationsDemoActivity"></activity>
-        <activity android:name="androidanimationsdemo.ExampleActivity"></activity>
+        <activity android:name=".androidanimationsdemo.AndroidAnimationsDemoActivity"></activity>
+        <activity android:name=".androidanimationsdemo.ExampleActivity"></activity>
+
+        <activity android:name=".easingDemo.EasingActivity"></activity>
 
     </application>
 

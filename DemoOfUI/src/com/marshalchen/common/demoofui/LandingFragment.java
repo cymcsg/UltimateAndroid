@@ -12,7 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.*;
-import androidanimationsdemo.AndroidAnimationsDemoActivity;
+import com.marshalchen.common.demoofui.androidanimationsdemo.AndroidAnimationsDemoActivity;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import com.marshalchen.common.commonUtils.basicUtils.BasicUtils;
@@ -21,6 +21,7 @@ import com.marshalchen.common.demoofui.ResideMenuDemo.ResideMenuActivity;
 import com.marshalchen.common.demoofui.circularProgressButton.CircularProgressButtonActivity;
 import com.marshalchen.common.demoofui.dragSortListview.MultipleChoiceListView;
 import com.marshalchen.common.demoofui.dragSortListview.SingleChoiceListView;
+import com.marshalchen.common.demoofui.easingDemo.EasingActivity;
 import com.marshalchen.common.demoofui.edgeeffectoverride.EdgeEffectActivity;
 import com.marshalchen.common.demoofui.fadingactionbar.HomeActivity;
 import com.marshalchen.common.demoofui.fancyCoverFlow.FancyCoverFlowActivity;
@@ -427,6 +428,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "Animations");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "Easing");
+        map.put("detail", "try");
+        map.put("subname", "Activity");
+        enhanceList.add(map);
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
         landingEnhanceListView.setAdapter(enhancedListAdapter);
         landingEnhanceListView.setDismissCallback(new EnhancedListView.OnDismissCallback() {
@@ -636,6 +642,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 62:
                         BasicUtils.sendIntent(getActivity(), AndroidAnimationsDemoActivity.class);
+                        break;
+                    case 63:
+                        BasicUtils.sendIntent(getActivity(), EasingActivity.class);
                         break;
 
 

@@ -1,4 +1,4 @@
-package androidanimationsdemo;
+package com.marshalchen.common.demoofui.androidanimationsdemo;
 
 import android.app.Activity;
 import android.os.Bundle;
