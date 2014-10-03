@@ -25,7 +25,7 @@ public class AndroidAnimationsDemoActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.android_animations_activity_my);
+        setContentView(R.layout.android_animations_activity);
         mListView = (ListView)findViewById(R.id.list_items);
         mTarget = findViewById(R.id.hello_world);
         mAdapter = new EffectAdapter(this);
@@ -77,7 +77,7 @@ public class AndroidAnimationsDemoActivity extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.android_animations_my, menu);
+        getMenuInflater().inflate(R.menu.android_animations, menu);
         return true;
     }
 
