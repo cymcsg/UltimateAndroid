@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <declare-styleable name="CircularImageView">
-        <attr name="border" format="boolean"></attr>
-        <attr name="border_width" format="integer"></attr>
-        <attr name="border_color"/>
-        <attr name="shadow" format="boolean"></attr>
-    </declare-styleable>
+
 
     <declare-styleable name="Theme">
         <attr name="circularImageViewStyle" format="reference"></attr>
@@ -41,12 +36,8 @@
         <attr name="ButtonImage" format="integer"/>
         <attr name="ButtonText" format="integer"/>
     </declare-styleable>
-    <declare-styleable name="roundedimageview">
-        <attr name="border_thickness" format="dimension"/>
-        <attr name="border_color"/>
-        <attr name="border_color_pressed" format="color"></attr>
-        <attr name="border_default_image_resource" format="reference"></attr>
-    </declare-styleable>
+
+
     <attr name="border_color" format="color"/>
 
 
@@ -421,5 +412,15 @@
         <attr name="fling_handle_id" format="integer" />
         <attr name="click_remove_id" format="integer" />
         <attr name="use_default_controller" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="RoundedImageView">
+        <attr name="corner_radius" format="dimension" />
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color"/>
+        <attr name="mutate_background" format="boolean" />
+        <attr name="oval" format="boolean" />
+        <attr name="android:scaleType" />
     </declare-styleable>
 </resources>
