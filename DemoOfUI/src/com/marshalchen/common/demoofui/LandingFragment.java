@@ -438,6 +438,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "Activity");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "AndroidViewHover");
+        map.put("detail", "try");
+        map.put("subname", "Hover");
+        enhanceList.add(map);
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
         landingEnhanceListView.setAdapter(enhancedListAdapter);
         landingEnhanceListView.setDismissCallback(new EnhancedListView.OnDismissCallback() {
@@ -653,6 +658,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 64:
                         BasicUtils.sendIntent(getActivity(), JumpingBeansActivity.class);
+                        break;
+                    case 65:
+                        BasicUtils.sendIntent(getActivity(), AndroidViewHoverActivity.class);
                         break;
 
 
