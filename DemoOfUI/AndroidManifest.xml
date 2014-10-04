@@ -203,6 +203,7 @@
         <activity android:name=".easingDemo.EasingActivity"></activity>
         <activity android:name=".sampleModules.JumpingBeansActivity"></activity>
         <activity android:name=".sampleModules.AndroidViewHoverActivity"></activity>
+        <activity android:name=".slider.SliderActivity"></activity>
 
     </application>
 

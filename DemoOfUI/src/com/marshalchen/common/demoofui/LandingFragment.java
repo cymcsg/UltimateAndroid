@@ -27,6 +27,7 @@ import com.marshalchen.common.demoofui.fadingactionbar.HomeActivity;
 import com.marshalchen.common.demoofui.fancyCoverFlow.FancyCoverFlowActivity;
 import com.marshalchen.common.demoofui.sampleModules.GoogleProgressBarActivity;
 import com.marshalchen.common.demoofui.quickreturnlistview.QuickReturnListViewActivity;
+import com.marshalchen.common.demoofui.slider.SliderActivity;
 import com.marshalchen.common.demoofui.staggeredgridview.StaggeredGridViewActivity;
 import com.marshalchen.common.demoofui.standUpTimer.ConfigureStandupTimer;
 import com.marshalchen.common.demoofui.superlistview.SuperListViewActivity;
@@ -443,6 +444,13 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "Hover");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "Slider");
+        map.put("detail", "try");
+        map.put("subname", "Slider");
+        enhanceList.add(map);
+
+
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
         landingEnhanceListView.setAdapter(enhancedListAdapter);
         landingEnhanceListView.setDismissCallback(new EnhancedListView.OnDismissCallback() {
@@ -661,6 +669,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 65:
                         BasicUtils.sendIntent(getActivity(), AndroidViewHoverActivity.class);
+                        break;
+                    case 66:
+                        BasicUtils.sendIntent(getActivity(), SliderActivity.class);
                         break;
 
 
