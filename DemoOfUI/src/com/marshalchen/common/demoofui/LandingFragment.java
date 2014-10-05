@@ -16,7 +16,6 @@ import com.marshalchen.common.demoofui.androidanimationsdemo.AndroidAnimationsDe
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import com.marshalchen.common.commonUtils.basicUtils.BasicUtils;
-import com.marshalchen.common.commonUtils.moduleUtils.CryptoUtils;
 import com.marshalchen.common.demoofui.ResideMenuDemo.ResideMenuActivity;
 import com.marshalchen.common.demoofui.circularProgressButton.CircularProgressButtonActivity;
 import com.marshalchen.common.demoofui.dragSortListview.MultipleChoiceListView;
@@ -85,7 +84,7 @@ public class LandingFragment extends Fragment {
         initTitanicView();
         initEnhanceList();
         initViewPager();
-        CryptoUtils.testCrypto(getActivity());
+        //CryptoUtils.testCrypto(getActivity());
         return mainView;
     }
 

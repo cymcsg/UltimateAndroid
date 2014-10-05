@@ -1,6 +1,7 @@
-package com.marshalchen.common.commonUtils.moduleUtils;
+package com.marshalchen.common.uimodule.utils;
 
 import android.content.Context;
+
 import com.facebook.crypto.Crypto;
 import com.facebook.crypto.Entity;
 import com.facebook.crypto.cipher.NativeGCMCipher;
