@@ -18,7 +18,7 @@ public class CommonApplication extends Application {
         ImageLoader.getInstance().init(config);
         //  ActiveAndroid.initialize(this);
         AppLockManager.getInstance().enableDefaultAppLockIfAvailable(this);
-        CalligraphyConfig.initDefault("fonts/Satisfy-Regular.ttf", R.attr.fontPath);
+      //  CalligraphyConfig.initDefault("fonts/Satisfy-Regular.ttf", R.attr.fontPath);
     }
 
     @Override
