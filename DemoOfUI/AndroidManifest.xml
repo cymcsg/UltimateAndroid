@@ -206,6 +206,8 @@
         <activity android:name=".slider.SliderActivity"></activity>
 
         <activity android:name=".sampleModules.CalendarListViewActivity"></activity>
+        <activity android:name=".easyandroidanimations.EasyAnimationListActivity"></activity>
+        <activity android:name=".easyandroidanimations.AnimationDetailActivity"></activity>
 
     </application>
 

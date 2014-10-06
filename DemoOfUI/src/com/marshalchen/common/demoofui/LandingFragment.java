@@ -21,6 +21,7 @@ import com.marshalchen.common.demoofui.circularProgressButton.CircularProgressBu
 import com.marshalchen.common.demoofui.dragSortListview.MultipleChoiceListView;
 import com.marshalchen.common.demoofui.dragSortListview.SingleChoiceListView;
 import com.marshalchen.common.demoofui.easingDemo.EasingActivity;
+import com.marshalchen.common.demoofui.easyandroidanimations.EasyAnimationListActivity;
 import com.marshalchen.common.demoofui.edgeeffectoverride.EdgeEffectActivity;
 import com.marshalchen.common.demoofui.fadingactionbar.HomeActivity;
 import com.marshalchen.common.demoofui.fancyCoverFlow.FancyCoverFlowActivity;
@@ -453,6 +454,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "CalendarListView");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "EasyAnimation");
+        map.put("detail", "try");
+        map.put("subname", "EasyAnimation");
+        enhanceList.add(map);
 
 
 
@@ -680,6 +686,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 67:
                         BasicUtils.sendIntent(getActivity(), CalendarListViewActivity.class);
+                        break;
+                    case 68:
+                        BasicUtils.sendIntent(getActivity(), EasyAnimationListActivity.class);
                         break;
 
 
