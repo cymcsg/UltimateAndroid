@@ -448,6 +448,12 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "Slider");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "CalendarListView");
+        map.put("detail", "try");
+        map.put("subname", "CalendarListView");
+        enhanceList.add(map);
+
 
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -671,6 +677,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 66:
                         BasicUtils.sendIntent(getActivity(), SliderActivity.class);
+                        break;
+                    case 67:
+                        BasicUtils.sendIntent(getActivity(), CalendarListViewActivity.class);
                         break;
 
 

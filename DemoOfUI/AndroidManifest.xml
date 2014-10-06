@@ -205,6 +205,8 @@
         <activity android:name=".sampleModules.AndroidViewHoverActivity"></activity>
         <activity android:name=".slider.SliderActivity"></activity>
 
+        <activity android:name=".sampleModules.CalendarListViewActivity"></activity>
+
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->
