@@ -18,8 +18,9 @@ UltimateAndroid
 
 [中文简介](#chinese_introduction)
 
+###[English Tutorials](https://github.com/cymcsg/UltimateAndroid/blob/master/Tutorials/TableofContents_eng.md)
+###[中文详细教程](https://github.com/cymcsg/UltimateAndroid/blob/master/Tutorials/TableofContents_zh.md)
 
-###[中文详细教程](Tutorials/TableofContents.md)
 
 <br>
 <h2 ><a name="english_introduction">Introduction</h2>  

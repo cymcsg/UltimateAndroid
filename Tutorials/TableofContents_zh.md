@@ -7,9 +7,9 @@ UltimateAndroid快速开发框架教程
 
 ``目录：``
 
-一、[部署UltimateAndroid框架（Eclipse版和AndroidStudio版)](https://github.com/cymcsg/UltimateAndroid/blob/master/Tutorials/Chapter1.md)
+一、[部署UltimateAndroid框架（Eclipse版和AndroidStudio版)](https://github.com/cymcsg/UltimateAndroid/blob/master/Tutorials/Chapter1_zh.md)
 
-二、[导入DemoOfUi,实现多种UI效果](https://github.com/cymcsg/UltimateAndroid/blob/master/Tutorials/Chapter2.md)
+二、[导入DemoOfUi,实现多种UI效果](https://github.com/cymcsg/UltimateAndroid/blob/master/Tutorials/Chapter2_zh.md)
 
 三、例程：项目介绍和初始化
 
