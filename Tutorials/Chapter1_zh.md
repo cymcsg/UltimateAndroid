@@ -16,9 +16,9 @@ UltimateAndroid快速开发框架教程（一）:部署框架
 ####一、Eclipse环境下：
 1.在命令行下```git clone https://github.com/cymcsg/UltimateAndroid.git```或者直接下载Zip包，并解压。
 
-2.将目录下的``appcompat``,``UltimateAndroid``两个目录导入，如果需要看UI Demo的话导入``DemoOfUI``,如果需要看项目Demo的话导入``Demo``。（注意需要导入Android项目existing android code而不是existing project）
+2.将目录下的``appcompat``,``UltimateAndroid``两个目录导入，如果需要UiModule则导入``UiModule``如果需要看UI Demo的话导入``DemoOfUI``,如果需要看项目Demo的话导入``Demo``。（注意需要导入Android项目existing android code而不是existing project）
 
-3.将各项目下的libs目录的jar包引入项目依赖并设置为Export（在最新版SDK+ADT中是自动配置好的），并添加UltimateAndroid依赖与Appcompat，DemoOfUI依赖于UltimateAndroid，如果这时项目有报错，注意看一下是不是没修改JRE的版本为1.7。
+3.将各项目下的libs目录的jar包引入项目依赖并设置为Export（在最新版SDK+ADT中是自动配置好的），并添加UltimateAndroid依赖与Appcompat，UltimateAndroidUi依赖于UltimateAndroid，DemoOfUI依赖于UltimateAndroidUi，如果这时项目有报错，注意看一下是不是没修改JRE的版本为1.7。
 
 4.右键项目，选择``Java Compiler``下的``Annotation Processing``如图，开启annotation processing并将butterknife 的jar包加入。（所有使用View Injection的项目都需要设置，所以除了UltimateAndroid之外，DemoOfUi和Demo也需要设置）。
 ![Eclipse1](http://blog.marshalchen.com/images/eclipse1.png)
@@ -29,9 +29,9 @@ UltimateAndroid快速开发框架教程（一）:部署框架
 ####二、Intellij Idea（Android Studio）环境下
 1.在命令行下```git clone https://github.com/cymcsg/UltimateAndroid.git```或者直接下载Zip包，并解压。
 
-2.将目录下的``appcompat``,``UltimateAndroid``两个目录导入，如果需要看UI Demo的话导入``DemoOfUI``,如果需要看项目Demo的话导入``Demo``。
+2.将目录下的``appcompat``,``UltimateAndroid``两个目录导入，如果需要UiModule则导入``UiModule``如果需要看UI Demo的话导入``DemoOfUI``,如果需要看项目Demo的话导入``Demo``。（注意需要导入Android项目existing android code而不是existing project）
 
-3.将各项目下的libs目录的jar包引入项目依赖并设置为Export，并添加UltimateAndroid依赖与Appcompat，DemoOfUI依赖于UltimateAndroid，如果这时项目有报错，注意看一下是不是没修改JRE的版本为1.7。
+3.将各项目下的libs目录的jar包引入项目依赖并设置为Export，并添加UltimateAndroid依赖与Appcompat，UltimateAndroidUi依赖于UltimateAndroid，DemoOfUI依赖于UltimateAndroidUi，如果这时项目有报错，注意看一下是不是没修改JRE的版本为1.7。
 
 4.点击``Preference-Compiler-Annotation Processors``,打开``annotation processing``（所有使用View Injection的项目都需要设置，所以除了UltimateAndroid之外，DemoOfUi和Demo也需要设置）
 ![Intellij](http://blog.marshalchen.com/images/intellij1.png)

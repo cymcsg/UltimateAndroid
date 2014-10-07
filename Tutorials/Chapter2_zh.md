@@ -12,7 +12,7 @@ UltimateAndroid快速开发框架教程（二）:导入DemoOfUi,实现多种UI�
     3.由于本人使用Intellij Idea，所以之后的教程将基本已Intellij Idea环境下为样本。
     
     
-#####一、[如教程一所示导入DemoOfUI项目](https://github.com/cymcsg/UltimateAndroid/blob/master/Tutorials/Chapter1.md)
+#####一、[如教程一所示导入DemoOfUI项目](https://github.com/cymcsg/UltimateAndroid/blob/master/Tutorials/Chapter1_zh.md)
 
 ####二、运行Demo，获得演示效果如下：(如果想直接看Demo程式，可以运行目录下的[APK文件](https://github.com/cymcsg/UltimateAndroid/blob/master/DemoOfUI.apk))
 
