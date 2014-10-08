@@ -72,7 +72,7 @@ public class PullDoorView extends RelativeLayout {
         mImgView.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT,
                 LayoutParams.MATCH_PARENT));
         mImgView.setScaleType(ImageView.ScaleType.FIT_XY);// 填充整个屏幕
-        mImgView.setImageResource(R.drawable.test_back); // 默认背景
+        mImgView.setImageResource(R.drawable.test); // 默认背景
         addView(mImgView);
     }
 

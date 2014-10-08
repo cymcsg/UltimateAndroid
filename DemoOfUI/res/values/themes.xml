@@ -160,4 +160,9 @@
 
     <item type="id" name="drag_handle" />
     <item type="id" name="click_remove" />
+
+
+    <style name="BiggerText" parent="android:TextAppearance.Holo.Large">
+        <item name="android:textSize">32sp</item>
+    </style>
 </resources>

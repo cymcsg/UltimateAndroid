@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
  * TO do something with File,like read ,del etc.
  * User: cym
  * Date: 13-10-23
@@ -33,9 +32,9 @@ public class FileUtils {
         return sb.toString();
     }
 
-    public static String getCurrentDataPath(Context context) throws IOException{
+    public static String getCurrentDataPath(Context context) throws IOException {
 
-        return getCurrentDataPath(context,"");
+        return getCurrentDataPath(context, "");
     }
 
     public static String getCurrentDataPath(Context context, String folderName) throws IOException {
@@ -51,10 +50,10 @@ public class FileUtils {
     }
 
     /**
-     * @deprecated
      * @param fileName
      * @param content
      * @throws IOException
+     * @deprecated
      */
     public static void writeFileFromString(String fileName, String content) throws IOException {
         FileOutputStream fileOutputStream = new FileOutputStream(new File(fileName));
@@ -66,10 +65,10 @@ public class FileUtils {
     }
 
     /**
-     * @deprecated
      * @param fileName
      * @param content
      * @throws IOException
+     * @deprecated
      */
     public static void writeFileFromStringBuffers(String fileName, String content) throws IOException {
         String s = new String();
@@ -165,14 +164,12 @@ public class FileUtils {
             myFilePath.delete();
 
         } catch (Exception e) {
-           Logs.e(e,"");
+            Logs.e(e, "");
         }
 
     }
 
     /**
-     *
-     *
      * @param path String  folder path  like  c:/fqf
      */
     public static void delAllFile(String path) throws IOException {
@@ -333,12 +330,10 @@ public class FileUtils {
     }
 
     /**
-     * @deprecated
-     * Copy all the files in folder
-     *
      * @param oldPath String
      * @param newPath String
      * @return boolean
+     * @deprecated Copy all the files in folder
      */
     public void copyFolder(String oldPath, String newPath) throws IOException {
 
@@ -380,8 +375,6 @@ public class FileUtils {
     }
 
     /**
-     *
-     *
      * @param oldPath String  如：c:/fqf.txt
      * @param newPath String  如：d:/fqf.txt
      */
@@ -392,8 +385,6 @@ public class FileUtils {
     }
 
     /**
-     *
-     *
      * @param oldPath String
      * @param newPath String
      */
@@ -695,7 +686,7 @@ public class FileUtils {
      * @see
      */
     public static String getFileNameWithoutExtension(String filePath) {
-        if (BasicUtils.judgeNotNull(filePath)) {
+        if (isFileExist(filePath)) {
             return filePath;
         }
 
@@ -732,7 +723,7 @@ public class FileUtils {
      * @return file name from path, include suffix
      */
     public static String getFileName(String filePath) {
-        if (BasicUtils.judgeNotNull(filePath)) {
+        if (isFileExist(filePath)) {
             return filePath;
         }
 
@@ -764,7 +755,7 @@ public class FileUtils {
      */
     public static String getFolderName(String filePath) {
 
-        if (BasicUtils.judgeNotNull(filePath)) {
+        if (isFileExist(filePath)) {
             return filePath;
         }
 
@@ -829,11 +820,11 @@ public class FileUtils {
     public static boolean makeDirs(String filePath) {
         String folderName = getFolderName(filePath);
 
-        if (BasicUtils.judgeNotNull(folderName)) {
+        File folder = new File(folderName);
+        Logs.d(folder.getAbsolutePath() + "   " + folder.exists());
+        if (folder.exists()) {
             return false;
         }
-
-        File folder = new File(folderName);
         return (folder.exists() && folder.isDirectory()) ? true : folder.mkdirs();
     }
 

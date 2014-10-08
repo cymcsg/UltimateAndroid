@@ -12,21 +12,26 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.*;
+import com.marshalchen.common.demoofui.androidanimationsdemo.AndroidAnimationsDemoActivity;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import com.marshalchen.common.commonUtils.basicUtils.BasicUtils;
-import com.marshalchen.common.commonUtils.moduleUtils.CryptoUtils;
+import com.marshalchen.common.demoofui.ResideMenuDemo.ResideMenuActivity;
 import com.marshalchen.common.demoofui.circularProgressButton.CircularProgressButtonActivity;
 import com.marshalchen.common.demoofui.dragSortListview.MultipleChoiceListView;
 import com.marshalchen.common.demoofui.dragSortListview.SingleChoiceListView;
+import com.marshalchen.common.demoofui.easingDemo.EasingActivity;
+import com.marshalchen.common.demoofui.easyandroidanimations.EasyAnimationListActivity;
 import com.marshalchen.common.demoofui.edgeeffectoverride.EdgeEffectActivity;
 import com.marshalchen.common.demoofui.fadingactionbar.HomeActivity;
 import com.marshalchen.common.demoofui.fancyCoverFlow.FancyCoverFlowActivity;
 import com.marshalchen.common.demoofui.sampleModules.GoogleProgressBarActivity;
 import com.marshalchen.common.demoofui.quickreturnlistview.QuickReturnListViewActivity;
+import com.marshalchen.common.demoofui.slider.SliderActivity;
 import com.marshalchen.common.demoofui.staggeredgridview.StaggeredGridViewActivity;
 import com.marshalchen.common.demoofui.standUpTimer.ConfigureStandupTimer;
 import com.marshalchen.common.demoofui.superlistview.SuperListViewActivity;
+import com.marshalchen.common.demoofui.swipelayoutdemo.SwipeLayoutActivity;
 import com.marshalchen.common.ui.Typefaces;
 import com.marshalchen.common.uimodule.enhanceListView.EnhancedListView;
 import com.marshalchen.common.uimodule.passcodelock.PasscodePreferencesActivity;
@@ -58,9 +63,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-/**
- * Created by cym on 14-5-4.
- */
+
 public class LandingFragment extends Fragment {
     View mainView;
     @InjectView(R.id.landingEnhanceListView)
@@ -82,7 +85,7 @@ public class LandingFragment extends Fragment {
         initTitanicView();
         initEnhanceList();
         initViewPager();
-        CryptoUtils.testCrypto(getActivity());
+        //CryptoUtils.testCrypto(getActivity());
         return mainView;
     }
 
@@ -411,11 +414,54 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "Listview");
         enhanceList.add(map);
-//        map = new HashMap<>();
-//        map.put("name", "ResideMenu");
-//        map.put("detail", "try");
-//        map.put("subname", "ResideMenu");
-//     enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "ResideMenu");
+        map.put("detail", "try");
+        map.put("subname", "ResideMenu");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "Swipe");
+        map.put("detail", "try");
+        map.put("subname", "SwipeLayout");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "Animations");
+        map.put("detail", "try");
+        map.put("subname", "Animations");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "Easing");
+        map.put("detail", "try");
+        map.put("subname", "Activity");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "JumpingBeans");
+        map.put("detail", "try");
+        map.put("subname", "Activity");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "AndroidViewHover");
+        map.put("detail", "try");
+        map.put("subname", "Hover");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "Slider");
+        map.put("detail", "try");
+        map.put("subname", "Slider");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "CalendarListView");
+        map.put("detail", "try");
+        map.put("subname", "CalendarListView");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "EasyAnimation");
+        map.put("detail", "try");
+        map.put("subname", "EasyAnimation");
+        enhanceList.add(map);
+
+
+
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
         landingEnhanceListView.setAdapter(enhancedListAdapter);
         landingEnhanceListView.setDismissCallback(new EnhancedListView.OnDismissCallback() {
@@ -616,6 +662,33 @@ public class LandingFragment extends Fragment {
                         break;
                     case 59:
                         BasicUtils.sendIntent(getActivity(), UltimateListviewActivity.class);
+                        break;
+                    case 60:
+                        BasicUtils.sendIntent(getActivity(), ResideMenuActivity.class);
+                        break;
+                    case 61:
+                        BasicUtils.sendIntent(getActivity(), SwipeLayoutActivity.class);
+                        break;
+                    case 62:
+                        BasicUtils.sendIntent(getActivity(), AndroidAnimationsDemoActivity.class);
+                        break;
+                    case 63:
+                        BasicUtils.sendIntent(getActivity(), EasingActivity.class);
+                        break;
+                    case 64:
+                        BasicUtils.sendIntent(getActivity(), JumpingBeansActivity.class);
+                        break;
+                    case 65:
+                        BasicUtils.sendIntent(getActivity(), AndroidViewHoverActivity.class);
+                        break;
+                    case 66:
+                        BasicUtils.sendIntent(getActivity(), SliderActivity.class);
+                        break;
+                    case 67:
+                        BasicUtils.sendIntent(getActivity(), CalendarListViewActivity.class);
+                        break;
+                    case 68:
+                        BasicUtils.sendIntent(getActivity(), EasyAnimationListActivity.class);
                         break;
 
 

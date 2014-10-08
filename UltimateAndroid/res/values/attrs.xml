@@ -1,204 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <declare-styleable name="CircularImageView">
-        <attr name="border" format="boolean"></attr>
-        <attr name="border_width" format="integer"></attr>
-        <attr name="border_color"/>
-        <attr name="shadow" format="boolean"></attr>
-    </declare-styleable>
-
-    <declare-styleable name="Theme">
-        <attr name="circularImageViewStyle" format="reference"></attr>
-    </declare-styleable>
-
-
-    <declare-styleable name="SmoothProgressBar">
-        <attr name="spbStyle" format="reference"/>
-        <attr name="spb_color" format="color"/>
-        <attr name="spb_stroke_width" format="dimension"/>
-        <attr name="spb_stroke_separator_length" format="dimension"/>
-        <attr name="spb_sections_count" format="integer"/>
-        <attr name="spb_speed" format="float"/>
-        <attr name="spb_progressiveStart_speed" format="float"/>
-        <attr name="spb_progressiveStop_speed" format="float"/>
-        <attr name="spb_interpolator" format="enum">
-            <enum name="spb_interpolator_accelerate" value="0"/>
-            <enum name="spb_interpolator_linear" value="1"/>
-            <enum name="spb_interpolator_acceleratedecelerate" value="2"/>
-            <enum name="spb_interpolator_decelerate" value="3"/>
-        </attr>
-        <attr name="spb_reversed" format="boolean"/>
-        <attr name="spb_mirror_mode" format="boolean"/>
-        <attr name="spb_colors" format="reference"/>
-        <attr name="spb_progressiveStart_activated" format="boolean"/>
-        <attr name="spb_background" format="reference"/>
-        <attr name="spb_generate_background_with_colors" format="boolean"/>
-    </declare-styleable>
-
-
     <declare-styleable name="CustomImageButton">
         <attr name="ButtonImage" format="integer"/>
         <attr name="ButtonText" format="integer"/>
     </declare-styleable>
-    <declare-styleable name="roundedimageview">
-        <attr name="border_thickness" format="dimension"/>
-        <attr name="border_color"/>
-        <attr name="border_color_pressed" format="color"></attr>
-        <attr name="border_default_image_resource" format="reference"></attr>
-    </declare-styleable>
     <attr name="border_color" format="color"/>
-
-
-    <declare-styleable name="SwipeBackLayout">
-        <attr name="edge_size" format="dimension"/>
-        <attr name="edge_flag">
-            <enum name="left" value="0"/>
-            <enum name="right" value="1"/>
-            <enum name="bottom" value="2"/>
-            <enum name="all" value="3"/>
-        </attr>
-        <attr name="shadow_left" format="reference"/>
-        <attr name="shadow_right" format="reference"/>
-        <attr name="shadow_bottom" format="reference"/>
-    </declare-styleable>
-
-    <attr name="SwipeBackLayoutStyle" format="reference"/>
-    <declare-styleable name="ShimmerView">
-        <attr name="reflectionColor" format="color"/>
-    </declare-styleable>
-
-    <declare-styleable name="SpanVariableGridView">
-        <attr name="numColumns" format="integer"/>
-        <attr name="itemMargin" format="dimension"/>
-    </declare-styleable>
-
-    <attr name="orientation" format="enum">
-        <enum name="vertical" value="0"/>
-        <enum name="horizontal" value="1"/>
-    </attr>
-    <!--FlipViews-->
-    <declare-styleable name="FlipViewController">
-
-        <attr name="orientation"></attr>
-
-        <attr name="animationBitmapFormat" format="enum">
-            <enum name="ARGB_8888" value="0"/>
-            <enum name="ARGB_4444" value="1"/>
-            <enum name="RGB_565" value="2"/>
-        </attr>
-    </declare-styleable>
-
-    <declare-styleable name="FlipView">
-        <attr name="orientation"></attr>
-        <attr name="overFlipMode" format="enum">
-            <enum name="glow" value="0"/>
-            <enum name="rubber_band" value="1"/>
-        </attr>
-    </declare-styleable>
-
-
-    <declare-styleable name="HoloCircularProgressBar">
-        <attr name="stroke_width" format="dimension"/>
-        <attr name="progress" format="float"/>
-        <attr name="marker_progress" format="float"/>
-        <attr name="progress_color" format="color"/>
-        <attr name="progress_background_color" format="color"/>
-        <attr name="thumb_visible" format="boolean"/>
-        <attr name="marker_visible" format="boolean"/>
-        <attr name="android:gravity"/>
-    </declare-styleable>
-
-    <attr name="circularProgressBarStyle" format="reference"/>
-
-    <declare-styleable name="FoldingMenu">
-        <attr name="foldNumber" format="integer"/>
-    </declare-styleable>
-
-
-    <declare-styleable name="CalendarPickerView">
-        <attr name="android:background"/>
-        <attr name="dividerColor" format="color"/>
-        <attr name="dayBackground" format="reference"/>
-        <attr name="dayTextColor" format="color"/>
-        <attr name="titleTextColor" format="color"/>
-        <attr name="headerTextColor" format="color"/>
-    </declare-styleable>
-
-    <declare-styleable name="calendar_cell">
-        <attr name="state_selectable" format="boolean"/>
-        <attr name="state_current_month" format="boolean"/>
-        <attr name="state_today" format="boolean"/>
-        <attr name="state_range_first" format="boolean"/>
-        <attr name="state_range_middle" format="boolean"/>
-        <attr name="state_range_last" format="boolean"/>
-        <attr name="state_highlighted" format="boolean"/>
-    </declare-styleable>
-
-
-    <declare-styleable name="DiscrollView_LayoutParams">
-        <attr name="discrollve_alpha" format="boolean"/>
-        <attr name="discrollve_scaleX" format="boolean"/>
-        <attr name="discrollve_scaleY" format="boolean"/>
-        <attr name="discrollve_threshold" format="float"/>
-        <attr name="discrollve_fromBgColor" format="color"/>
-        <attr name="discrollve_toBgColor" format="color"/>
-        <attr name="discrollve_translation"/>
-    </declare-styleable>
-
-    <attr name="discrollve_translation">
-        <flag name="fromTop" value="0x01"/>
-        <flag name="fromBottom" value="0x02"/>
-        <flag name="fromLeft" value="0x04"/>
-        <flag name="fromRight" value="0x08"/>
-    </attr>
-
-
-    <declare-styleable name="PanningView">
-        <attr name="panningDurationInMs" format="integer"/>
-    </declare-styleable>
-
-
-    <declare-styleable name="ParallaxScroll">
-        <attr name="parallax_factor" format="float"/>
-        <attr name="inner_parallax_factor" format="float"/>
-        <attr name="parallax_views_num" format="integer"/>
-        <attr name="circular_parallax" format="boolean"/>
-    </declare-styleable>
-
-
-    <declare-styleable name="ProgressWheel">
-        <attr name="text" format="string"/>
-        <attr name="textColor" format="color"/>
-        <attr name="textSize" format="dimension"/>
-        <attr name="barColor" format="color"/>
-        <attr name="rimColor" format="color"/>
-        <attr name="rimWidth" format="dimension"/>
-        <attr name="spinSpeed" format="dimension"/>
-        <attr name="delayMillis" format="integer"/>
-        <attr name="circleColor" format="color"/>
-        <attr name="radius"/>
-        <attr name="barWidth" format="dimension"/>
-        <attr name="barLength" format="dimension"/>
-        <attr name="contourColor" format="color"/>
-        <attr name="contourSize" format="dimension"/>
-    </declare-styleable>
-    <attr name="radius" format="dimension"/>
-
-
-    <declare-styleable name="PagerSlidingTabStrip">
-        <attr name="pstsIndicatorColor" format="color"/>
-        <attr name="pstsUnderlineColor" format="color"/>
-        <attr name="pstsDividerColor" format="color"/>
-        <attr name="pstsIndicatorHeight" format="dimension"/>
-        <attr name="pstsUnderlineHeight" format="dimension"/>
-        <attr name="pstsDividerPadding" format="dimension"/>
-        <attr name="pstsTabPaddingLeftRight" format="dimension"/>
-        <attr name="pstsScrollOffset" format="dimension"/>
-        <attr name="pstsTabBackground" format="reference"/>
-        <attr name="pstsShouldExpand" format="boolean"/>
-        <attr name="pstsTextAllCaps" format="boolean"/>
-    </declare-styleable>
 
 
     <declare-styleable name="drop_down_list_attr">
@@ -207,54 +14,6 @@
         <attr name="isAutoLoadOnBottom" format="boolean"/>
     </declare-styleable>
 
-    <attr name="fontPath" format="string"/>
-    <declare-styleable name="PullScrollView">
-        <attr name="header" format="reference"/>
-        <attr name="headerHeight" format="dimension"/>
-        <attr name="headerVisibleHeight" format="dimension"/>
-    </declare-styleable>
-
-    <declare-styleable name="CardContainer">
-        <attr name="android:gravity"/>
-        <attr name="orientation"></attr>
-    </declare-styleable>
-
-    <declare-styleable name="ShowcaseView">
-        <attr name="sv_backgroundColor" format="color|reference"/>
-        <attr name="sv_detailTextColor" format="color|reference"/>
-        <attr name="sv_titleTextColor" format="color|reference"/>
-        <attr name="sv_buttonBackgroundColor" format="color|reference"/>
-        <attr name="sv_buttonForegroundColor" format="color|reference"/>
-        <attr name="sv_buttonText" format="string|reference"/>
-        <attr name="sv_detailTextAppearance" format="reference"/>
-        <attr name="sv_titleTextAppearance" format="reference"/>
-        <attr name="sv_showcaseColor" format="color|reference"/>
-        <attr name="sv_tintButtonColor" format="boolean|reference"/>
-    </declare-styleable>
-    <declare-styleable name="CustomTheme">
-        <attr name="showcaseViewStyle" format="reference"/>
-    </declare-styleable>
-
-
-    <declare-styleable name="SelectorOptions">
-        <attr name="selectorColor" format="color"/>
-    </declare-styleable>
-
-    <declare-styleable name="ListBuddiesOptions">
-        <attr name="gap" format="reference"/>
-        <attr name="gapColor" format="color"/>
-        <attr name="speed" format="integer"/>
-        <attr name="listsDivider" format="reference"/>
-        <attr name="listsDividerHeight" format="reference"/>
-        <attr name="autoScrollFaster" format="enum">
-            <enum name="right" value="0"/>
-            <enum name="left" value="1"/>
-        </attr>
-        <attr name="scrollFaster" format="enum">
-            <enum name="right" value="0"/>
-            <enum name="left" value="1"/>
-        </attr>
-    </declare-styleable>
 
     <declare-styleable name="AutofitTextView">
         <attr name="minTextSize" format="dimension"/>
@@ -282,79 +41,13 @@
     </declare-styleable>
 
 
-    <declare-styleable name="JazzyViewPager">
-        <attr name="style">
-            <enum name="standard" value="0"/>
-            <enum name="tablet" value="1"/>
-            <enum name="cubein" value="2"/>
-            <enum name="cubeout" value="3"/>
-            <enum name="flipvertical" value="4"/>
-            <enum name="fliphorizontal" value="5"/>
-            <enum name="stack" value="6"/>
-            <enum name="zoomin" value="7"/>
-            <enum name="zoomout" value="8"/>
-            <enum name="rotateup" value="9"/>
-            <enum name="rotatedown" value="10"/>
-            <enum name="accordion" value="11"/>
-        </attr>
-        <attr name="fadeEnabled" format="boolean"/>
-        <attr name="outlineEnabled" format="boolean"/>
-        <attr name="outlineColor" format="color|reference"/>
-    </declare-styleable>
+    <attr name="radius" format="dimension"/>
+    <attr name="orientation" format="enum">
+        <enum name="vertical" value="0"/>
+        <enum name="horizontal" value="1"/>
+    </attr>
 
 
-    <declare-styleable name="superlistview">
-        <attr name="superlv__listSelector" format="reference"/>
-        <attr name="superlv__empty" format="reference"/>
-        <attr name="superlv__moreProgress" format="reference"/>
-        <attr name="superlv__progress" format="reference"/>
-        <attr name="superlv__listDivider" format="reference"/>
-        <attr name="superlv__listDividerHeight" format="dimension"/>
-        <attr name="superlv__listClipToPadding" format="boolean"/>
-        <attr name="superlv__listPadding" format="dimension"/>
-        <attr name="superlv__listPaddingTop" format="dimension"/>
-        <attr name="superlv__listPaddingBottom" format="dimension"/>
-        <attr name="superlv__listPaddingLeft" format="dimension"/>
-        <attr name="superlv__listPaddingRight" format="dimension"/>
-        <attr name="superlv__scrollbarStyle">
-            <flag name="insideOverlay" value="0x0"/>
-            <flag name="insideInset" value="0x01000000"/>
-            <flag name="outsideOverlay" value="0x02000000"/>
-            <flag name="outsideInset" value="0x03000000"/>
-        </attr>
-
-        <!-- Layout to build a superList. Default values are  @layout/view_progress_listview for a list and
-         @layout/view_progress_gridview for a grid-->
-        <attr name="superlv_mainLayoutID" format="reference"/>
-    </declare-styleable>
-
-    <declare-styleable name="supergridview">
-        <attr name="supergv__columns" format="integer"/>
-        <attr name="supergv__verticalSpacing" format="dimension"/>
-        <attr name="supergv__horizontalSpacing" format="dimension"/>
-    </declare-styleable>
-
-
-    <declare-styleable name="StaggeredGridView">
-        <attr name="column_count" format="integer"/>
-        <attr name="column_count_portrait" format="integer"/>
-        <attr name="column_count_landscape" format="integer"/>
-        <attr name="item_margin" format="dimension"/>
-        <attr name="grid_paddingLeft" format="dimension"/>
-        <attr name="grid_paddingRight" format="dimension"/>
-        <attr name="grid_paddingTop" format="dimension"/>
-        <attr name="grid_paddingBottom" format="dimension"/>
-    </declare-styleable>
-
-
-    <declare-styleable name="GoogleProgressBar">
-        <attr name="type" format="enum">
-            <enum name="folding_circles" value="0"/>
-            <enum name="google_music_dices" value="1"/>
-            <enum name="nexus_rotation_cross" value="2"/>
-        </attr>
-        <attr name="colors" format="reference"/>
-    </declare-styleable>
 
 
     <declare-styleable name="NumberProgressBar">
@@ -378,48 +71,61 @@
         </attr>
     </declare-styleable>
 
-    <declare-styleable name="Themes">
+    <declare-styleable name="NumberProgressBarStyle">
         <attr name="numberProgressBarStyle" format="reference"/>
     </declare-styleable>
 
 
-    <declare-styleable name="FancyCoverFlow">
-        <attr name="unselectedAlpha" format="float"/>
-        <attr name="unselectedSaturation" format="float"/>
-        <attr name="unselectedScale" format="float"/>
-        <attr name="maxRotation" format="integer"/>
-        <attr name="scaleDownGravity" format="float"/>
-        <attr name="actionDistance" format="integer">
-            <enum name="auto" value="2147483647"/>
-        </attr>
+
+    <declare-styleable name="RoundedImageView">
+        <attr name="corner_radius" format="dimension" />
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color"/>
+        <attr name="mutate_background" format="boolean" />
+        <attr name="oval" format="boolean" />
+        <attr name="android:scaleType" />
     </declare-styleable>
 
-
-    <declare-styleable name="DragSortListView">
-        <attr name="collapsed_height" format="dimension" />
-        <attr name="drag_scroll_start" format="float" />
-        <attr name="max_drag_scroll_speed" format="float" />
-        <attr name="float_background_color" format="color" />
-        <attr name="remove_mode">
-            <enum name="clickRemove" value="0" />
-            <enum name="flingRemove" value="1" />
-        </attr>
-        <attr name="track_drag_sort" format="boolean"/>
-        <attr name="float_alpha" format="float"/>
-        <attr name="slide_shuffle_speed" format="float"/>
-        <attr name="remove_animation_duration" format="integer"/>
-        <attr name="drop_animation_duration" format="integer"/>
-        <attr name="drag_enabled" format="boolean" />
-        <attr name="sort_enabled" format="boolean" />
-        <attr name="remove_enabled" format="boolean" />
-        <attr name="drag_start_mode">
-            <enum name="onDown" value="0" />
-            <enum name="onMove" value="1" />
-            <enum name="onLongPress" value="2"/>
-        </attr>
-        <attr name="drag_handle_id" format="integer" />
-        <attr name="fling_handle_id" format="integer" />
-        <attr name="click_remove_id" format="integer" />
-        <attr name="use_default_controller" format="boolean" />
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color"/>
+        <attr name="pstsUnderlineColor" format="color"/>
+        <attr name="pstsDividerColor" format="color"/>
+        <attr name="pstsIndicatorHeight" format="dimension"/>
+        <attr name="pstsUnderlineHeight" format="dimension"/>
+        <attr name="pstsDividerPadding" format="dimension"/>
+        <attr name="pstsTabPaddingLeftRight" format="dimension"/>
+        <attr name="pstsScrollOffset" format="dimension"/>
+        <attr name="pstsTabBackground" format="reference"/>
+        <attr name="pstsShouldExpand" format="boolean"/>
+        <attr name="pstsTextAllCaps" format="boolean"/>
     </declare-styleable>
+
+    <declare-styleable name="ProgressWheel">
+        <attr name="text" format="string"/>
+        <attr name="textColor" format="color"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="barColor" format="color"/>
+        <attr name="rimColor" format="color"/>
+        <attr name="rimWidth" format="dimension"/>
+        <attr name="spinSpeed" format="dimension"/>
+        <attr name="delayMillis" format="integer"/>
+        <attr name="circleColor" format="color"/>
+        <attr name="radius"/>
+        <attr name="barWidth" format="dimension"/>
+        <attr name="barLength" format="dimension"/>
+        <attr name="contourColor" format="color"/>
+        <attr name="contourSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="HoloCircularProgressBar">
+        <attr name="stroke_width" format="dimension"/>
+        <attr name="progress" format="float"/>
+        <attr name="marker_progress" format="float"/>
+        <attr name="progress_color" format="color"/>
+        <attr name="progress_background_color" format="color"/>
+        <attr name="thumb_visible" format="boolean"/>
+        <attr name="marker_visible" format="boolean"/>
+        <attr name="android:gravity"/>
+    </declare-styleable>
+    <attr name="circularProgressBarStyle" format="reference"/>
 </resources>

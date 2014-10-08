@@ -40,7 +40,7 @@ public class ResideMenuActivity extends FragmentActivity implements View.OnClick
         resideMenu.setBackground(R.drawable.resize_menu_menu_background);
         resideMenu.attachToActivity(this);
         resideMenu.setMenuListener(menuListener);
-        //valid scale factor is between 0.0f and 1.0f. leftmenu'width is 150dip. 
+        //valid scale factor is between 0.0f and 1.0f. leftmenu'width is 150dip.
         resideMenu.setScaleValue(0.6f);
 
         // create menu items;

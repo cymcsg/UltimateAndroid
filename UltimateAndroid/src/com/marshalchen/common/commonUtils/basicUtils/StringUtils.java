@@ -13,8 +13,6 @@ import java.util.ArrayList;
 
 /**
  * To get the HEX,SHA1,Unicode of String
- * User: cym
- * Date: 13-10-18
  *
  */
 public class StringUtils {
@@ -27,20 +25,20 @@ public class StringUtils {
     public static int getStringUnicodeLength(String value) {
         int valueLength = 0;
         String chinese = "[\u4e00-\u9fa5]";
-        // 获取字段值的长度，如果含中文字符，则每个中文字符长度为2，否则为1
+        //Judge the unicodelength is 1 or 2
         for (int i = 0; i < value.length(); i++) {
-            // 获取一个字符
+
             String temp = value.substring(i, i + 1);
-            // 判断是否为中文字符
+
             if (temp.matches(chinese)) {
-                // 中文字符长度为1
+
                 valueLength += 2;
             } else {
-                // 其他字符长度为0.5
+
                 valueLength += 1;
             }
         }
-        //进位取整
+
         return valueLength;
     }
 

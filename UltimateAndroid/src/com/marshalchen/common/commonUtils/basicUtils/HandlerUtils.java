@@ -8,11 +8,21 @@ import com.marshalchen.common.commonUtils.logUtils.Logs;
 
 /**
  * An easy way to send Handler
+ * <p>{@link #dismissViewHandler}</p>
+ * <p>{@link #visiablViewHandler}</p>
+ * <p>{@link #invisiablViewHandler}</p>
+ * <p>{@link #sendMessageHandler(android.os.Handler, int)}</p>
+ * <p>{@link #sendMessageHandler(android.os.Handler, int, android.os.Bundle)}</p>
+ * <p>{@link #sendMessageHandler(android.os.Handler, int, Object)}</p>
+ * <p>{@link #sendMessageHandler(android.os.Handler, int, String, int)}</p>
+ * <p>{@link #sendMessageHandler(android.os.Handler, int, String, String)}</p>
+ * <p>{@link #sendMessageHandlerDelay(android.os.Handler, int, long)}</p>
+ * <p>{@link #sendMessageHandlerDelay(android.os.Handler, int, Object, long)}</p>
+ * <p>{@link #sendMessageHandlerDelay(android.os.Handler, int, String, String, long)}</p>
+ * <p>{@link #sendMessageHandlerDelay(android.os.Handler, int, String, int, long)}</p>
+ *
  */
 public class HandlerUtils {
-    public static void dismissView() {
-
-    }
 
     public static Handler dismissViewHandler = new Handler() {
 
