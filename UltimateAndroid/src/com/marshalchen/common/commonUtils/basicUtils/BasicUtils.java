@@ -100,7 +100,11 @@ public class BasicUtils {
 
     }
 
-    //
+    /**
+     * get the version name which defines in AndroidManifest.xml
+     * @param context
+     * @return
+     */
     public static String getVersionName(Context context) {
         String version = "";
         try {
@@ -121,6 +125,11 @@ public class BasicUtils {
 
     }
 
+    /**
+     * get the version code which defines in AndroidManifest.xml
+     * @param context
+     * @return
+     */
     public static int getVersionCode(Context context) {
         int version = 0;
         try {
@@ -141,6 +150,12 @@ public class BasicUtils {
 
     }
 
+    /**
+     * Pop a simple alertdialog
+     * @param context
+     * @param title
+     * @param message
+     */
     public static void popAlertDialog(Context context, String title, String message) {
         new AlertDialog.Builder(context)
                 .setPositiveButton("OK", null)
@@ -148,6 +163,12 @@ public class BasicUtils {
                 .setMessage(message).show();
     }
 
+    /**
+     * Pop a simple alertdialog
+     * @param context
+     * @param title
+     * @param message
+     */
     public static void popAlertDialog(Context context, int title, String message) {
         new AlertDialog.Builder(context)
                 .setPositiveButton("OK", null)

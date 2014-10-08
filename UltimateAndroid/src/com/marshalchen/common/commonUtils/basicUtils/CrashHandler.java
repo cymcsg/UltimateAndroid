@@ -25,10 +25,10 @@ import com.marshalchen.common.commonUtils.logUtils.Logs;
 import com.nostra13.universalimageloader.utils.StorageUtils;
 
 /**
- * @author cym
+ *
  * @ClassName: MyUncaughtExceptionHandler
  * @Description: catch the exception
- * @date 2013-5-13 上午10:36:26
+ *
  */
 public class CrashHandler implements UncaughtExceptionHandler {
 
