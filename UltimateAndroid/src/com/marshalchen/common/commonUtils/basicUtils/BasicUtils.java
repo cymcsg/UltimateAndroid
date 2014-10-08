@@ -102,6 +102,7 @@ public class BasicUtils {
 
     /**
      * get the version name which defines in AndroidManifest.xml
+     *
      * @param context
      * @return
      */
@@ -127,6 +128,7 @@ public class BasicUtils {
 
     /**
      * get the version code which defines in AndroidManifest.xml
+     *
      * @param context
      * @return
      */
@@ -152,6 +154,7 @@ public class BasicUtils {
 
     /**
      * Pop a simple alertdialog
+     *
      * @param context
      * @param title
      * @param message
@@ -165,6 +168,7 @@ public class BasicUtils {
 
     /**
      * Pop a simple alertdialog
+     *
      * @param context
      * @param title
      * @param message
@@ -303,10 +307,10 @@ public class BasicUtils {
      */
     public static boolean judgeNotNull(String string, String... strings) {
         boolean flag = true;
-        if (!(string != null && !string.equals("") && !string.equals("null") && !string.trim().equals("")))
+        if (!(string != null && string.trim().length() > 0 && !string.equals("null") && !string.trim().equals("")))
             return false;
         for (String s : strings) {
-            if (s == null || s.equals("") || s.equals("null")) {
+            if (s == null || string.trim().length() == 0 || s.equals("null")) {
                 flag = false;
                 break;
             }
