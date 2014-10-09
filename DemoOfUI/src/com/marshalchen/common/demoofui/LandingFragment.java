@@ -25,6 +25,7 @@ import com.marshalchen.common.demoofui.easyandroidanimations.EasyAnimationListAc
 import com.marshalchen.common.demoofui.edgeeffectoverride.EdgeEffectActivity;
 import com.marshalchen.common.demoofui.fadingactionbar.HomeActivity;
 import com.marshalchen.common.demoofui.fancyCoverFlow.FancyCoverFlowActivity;
+import com.marshalchen.common.demoofui.imageprocessingexample.ImageProcessingActivity;
 import com.marshalchen.common.demoofui.sampleModules.GoogleProgressBarActivity;
 import com.marshalchen.common.demoofui.quickreturnlistview.QuickReturnListViewActivity;
 import com.marshalchen.common.demoofui.slider.SliderActivity;
@@ -459,7 +460,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "EasyAnimation");
         enhanceList.add(map);
-
+        map = new HashMap<>();
+        map.put("name", "ImageProcessing");
+        map.put("detail", "try");
+        map.put("subname", "ImageProcessing");
+        enhanceList.add(map);
 
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -689,6 +694,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 68:
                         BasicUtils.sendIntent(getActivity(), EasyAnimationListActivity.class);
+                        break;
+                    case 69:
+                        BasicUtils.sendIntent(getActivity(), ImageProcessingActivity.class);
                         break;
 
 
