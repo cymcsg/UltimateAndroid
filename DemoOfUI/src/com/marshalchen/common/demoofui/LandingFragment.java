@@ -471,17 +471,12 @@ public class LandingFragment extends Fragment {
         map = new HashMap<>();
         map.put("name", "ImageProcessing");
         map.put("detail", "try");
-        map.put("subname", "GenericFilter");
-        enhanceList.add(map);
-        map = new HashMap<>();
-        map.put("name", "ImageProcessing");
-        map.put("detail", "try");
-        map.put("subname", "TwoInputfilter");
-        enhanceList.add(map);
-        map = new HashMap<>();
-        map.put("name", "ImageProcessing");
-        map.put("detail", "try");
         map.put("subname", "VideotoImage");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "TestHtml5Video");
+        map.put("detail", "try");
+        map.put("subname", "TestHtml5Video");
         enhanceList.add(map);
 
 
@@ -717,13 +712,10 @@ public class LandingFragment extends Fragment {
                         BasicUtils.sendIntent(getActivity(), ImageProcessingActivity.class);
                         break;
                     case 70:
-                        BasicUtils.sendIntent(getActivity(), ImageProcessingGenericFilterExample.class);
+                        BasicUtils.sendIntent(getActivity(), ImageProcessingVideotoImageActivity.class);
                         break;
                     case 71:
-                        BasicUtils.sendIntent(getActivity(), ImageProcessingTwoInputfilterActivity.class);
-                        break;
-                    case 72:
-                        BasicUtils.sendIntent(getActivity(), ImageProcessingVideotoImageActivity.class);
+                        BasicUtils.sendIntent(getActivity(), TestHTML5WebView.class);
                         break;
 
 

@@ -71,6 +71,7 @@
         <activity android:name=".imageprocessingexample.ImageProcessingGenericFilterExample"></activity>
         <activity android:name=".imageprocessingexample.ImageProcessingTwoInputfilterActivity"></activity>
         <activity android:name=".imageprocessingexample.ImageProcessingVideotoImageActivity"></activity>
+       <activity android:name=".sampleModules.TestHTML5WebView"></activity>
         <provider
                 android:name="android.support.v4.content.FileProvider"
                 android:authorities="com.marshalchen.common.demoofui.fileprovider"
