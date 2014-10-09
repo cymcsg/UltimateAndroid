@@ -478,6 +478,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "TestHtml5Video");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "CropImage");
+        map.put("detail", "try");
+        map.put("subname", "CropImage");
+        enhanceList.add(map);
 
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -716,6 +721,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 71:
                         BasicUtils.sendIntent(getActivity(), TestHTML5WebView.class);
+                        break;
+                    case 72:
+                        BasicUtils.sendIntent(getActivity(), CropExample.class);
                         break;
 
 
