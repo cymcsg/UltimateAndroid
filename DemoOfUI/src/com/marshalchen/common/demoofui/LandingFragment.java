@@ -29,6 +29,7 @@ import com.marshalchen.common.demoofui.imageprocessingexample.ImageProcessingAct
 import com.marshalchen.common.demoofui.imageprocessingexample.ImageProcessingVideotoImageActivity;
 import com.marshalchen.common.demoofui.sampleModules.GoogleProgressBarActivity;
 import com.marshalchen.common.demoofui.quickreturnlistview.QuickReturnListViewActivity;
+import com.marshalchen.common.demoofui.shapeimageview.ShapeImageViewActivity;
 import com.marshalchen.common.demoofui.slider.SliderActivity;
 import com.marshalchen.common.demoofui.staggeredgridview.StaggeredGridViewActivity;
 import com.marshalchen.common.demoofui.standUpTimer.ConfigureStandupTimer;
@@ -496,6 +497,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "MotionSample");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "ShapeImage");
+        map.put("detail", "try");
+        map.put("subname", "ShapeImage");
+        enhanceList.add(map);
 
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -746,6 +752,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 75:
                         BasicUtils.sendIntent(getActivity(), MotionSampleActivity.class);
+                        break;
+                    case 76:
+                        BasicUtils.sendIntent(getActivity(), ShapeImageViewActivity.class);
                         break;
 
 
