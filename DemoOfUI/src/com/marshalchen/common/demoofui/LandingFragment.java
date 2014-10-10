@@ -26,8 +26,6 @@ import com.marshalchen.common.demoofui.edgeeffectoverride.EdgeEffectActivity;
 import com.marshalchen.common.demoofui.fadingactionbar.HomeActivity;
 import com.marshalchen.common.demoofui.fancyCoverFlow.FancyCoverFlowActivity;
 import com.marshalchen.common.demoofui.imageprocessingexample.ImageProcessingActivity;
-import com.marshalchen.common.demoofui.imageprocessingexample.ImageProcessingGenericFilterExample;
-import com.marshalchen.common.demoofui.imageprocessingexample.ImageProcessingTwoInputfilterActivity;
 import com.marshalchen.common.demoofui.imageprocessingexample.ImageProcessingVideotoImageActivity;
 import com.marshalchen.common.demoofui.sampleModules.GoogleProgressBarActivity;
 import com.marshalchen.common.demoofui.quickreturnlistview.QuickReturnListViewActivity;
@@ -488,6 +486,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "CropperImage");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "ImageFilter");
+        map.put("detail", "try");
+        map.put("subname", "ImageFilter");
+        enhanceList.add(map);
 
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -732,6 +735,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 73:
                         BasicUtils.sendIntent(getActivity(), CropperSample.class);
+                        break;
+                    case 74:
+                        BasicUtils.sendIntent(getActivity(), ImageFilterActivity.class);
                         break;
 
 
