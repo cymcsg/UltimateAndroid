@@ -491,6 +491,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "ImageFilter");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "MotionSample");
+        map.put("detail", "try");
+        map.put("subname", "MotionSample");
+        enhanceList.add(map);
 
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -738,6 +743,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 74:
                         BasicUtils.sendIntent(getActivity(), ImageFilterActivity.class);
+                        break;
+                    case 75:
+                        BasicUtils.sendIntent(getActivity(), MotionSampleActivity.class);
                         break;
 
 
