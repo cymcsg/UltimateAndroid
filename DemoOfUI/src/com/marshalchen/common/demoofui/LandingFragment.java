@@ -483,6 +483,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "CropImage");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "CropperImage");
+        map.put("detail", "try");
+        map.put("subname", "CropperImage");
+        enhanceList.add(map);
 
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -724,6 +729,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 72:
                         BasicUtils.sendIntent(getActivity(), CropExample.class);
+                        break;
+                    case 73:
+                        BasicUtils.sendIntent(getActivity(), CropperSample.class);
                         break;
 
 
