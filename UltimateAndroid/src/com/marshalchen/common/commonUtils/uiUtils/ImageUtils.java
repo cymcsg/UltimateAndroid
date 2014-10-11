@@ -1,6 +1,7 @@
 package com.marshalchen.common.commonUtils.uiUtils;
 
 import android.graphics.*;
+import android.view.View;
 
 import java.io.*;
 
@@ -243,4 +244,17 @@ public class ImageUtils {
         return bitmap;
     }
 
+    public static Bitmap convertViewToBitmap(View view) {
+        view.measure(View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED), View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED));
+        view.layout(0, 0, view.getMeasuredWidth(), view.getMeasuredHeight());
+        view.buildDrawingCache();
+        Bitmap bitmap = view.getDrawingCache();
+        return bitmap;
+    }
+
+    public static Bitmap convertViewToBitmapWithCanvas(View view, int bitmapWidth, int bitmapHeight) {
+        Bitmap bitmap = Bitmap.createBitmap(bitmapWidth, bitmapHeight, Bitmap.Config.ARGB_8888);
+        view.draw(new Canvas(bitmap));
+        return bitmap;
+    }
 }
