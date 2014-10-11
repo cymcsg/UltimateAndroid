@@ -507,6 +507,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "CustomShapeImage");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "MarqueeView");
+        map.put("detail", "try");
+        map.put("subname", "MarqueeView");
+        enhanceList.add(map);
 
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -763,6 +768,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 77:
                         BasicUtils.sendIntent(getActivity(), CustomShapeImageViewActivity.class);
+                        break;
+                    case 78:
+                        BasicUtils.sendIntent(getActivity(), MarqueeViewSample.class);
                         break;
 
 
