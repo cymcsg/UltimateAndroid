@@ -81,6 +81,7 @@
         <activity android:name=".sampleModules.CustomShapeImageViewActivity"></activity>
         <activity android:name=".sampleModules.MarqueeViewSample"></activity>
         <activity android:name=".sampleModules.SignaturePadActivity"></activity>
+        <activity android:name=".sampleModules.DrawableActivity"></activity>
         <provider
                 android:name="android.support.v4.content.FileProvider"
                 android:authorities="com.marshalchen.common.demoofui.fileprovider"

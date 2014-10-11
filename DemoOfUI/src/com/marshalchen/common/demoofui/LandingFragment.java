@@ -517,6 +517,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "SignaturePad");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "DrawView");
+        map.put("detail", "try");
+        map.put("subname", "DrawviewActivity");
+        enhanceList.add(map);
 
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -779,6 +784,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 79:
                         BasicUtils.sendIntent(getActivity(), SignaturePadActivity.class);
+                        break;
+                    case 80:
+                        BasicUtils.sendIntent(getActivity(), DrawableActivity.class);
                         break;
 
 
