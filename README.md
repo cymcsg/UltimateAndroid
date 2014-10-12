@@ -21,6 +21,10 @@ UltimateAndroid
 ###[English Tutorials](https://github.com/cymcsg/UltimateAndroid/blob/master/Tutorials/TableofContents_eng.md)
 ###[中文详细教程](https://github.com/cymcsg/UltimateAndroid/blob/master/Tutorials/TableofContents_zh.md)
 
+[Ui sample](#demo_of_ui)
+
+[Ui 效果](#demo_of_ui)
+
 
 <br>
 <h2 ><a name="english_introduction">Introduction</h2>  
