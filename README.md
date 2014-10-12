@@ -449,6 +449,10 @@ Post request:
 
 ![tutorials2](http://blog.marshalchen.com/images/tutorial2-9.gif)
 
+![tutorials2](http://blog.marshalchen.com/images/tutorial2-10.gif)
+
+![tutorials2](http://blog.marshalchen.com/images/tutorial2-11.gif)
+
 
 
 The UltimateAndroid use many opensource program and I am very grateful to the author of them.
