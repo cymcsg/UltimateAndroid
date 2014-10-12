@@ -325,4 +325,11 @@
     <string name="choose_city">Choose a city</string>
     <string name="action_change_dataset">Change dataset</string>
     <string name="activity_title_webview">WebView sample</string>
+
+
+    <string-array name="showGuidelinesArray">
+        <item>Off</item>
+        <item>On Touch</item>
+        <item>On</item>
+    </string-array>
 </resources>

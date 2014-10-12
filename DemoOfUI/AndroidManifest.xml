@@ -67,6 +67,21 @@
         <activity android:name=".activitytransition.ActivityTransitiorSecond"></activity>
 
         <activity android:name=".sampleModules.JazzyViewActivity"></activity>
+        <activity android:name=".imageprocessingexample.ImageProcessingActivity"></activity>
+        <activity android:name=".imageprocessingexample.ImageProcessingGenericFilterExample"></activity>
+        <activity android:name=".imageprocessingexample.ImageProcessingTwoInputfilterActivity"></activity>
+        <activity android:name=".imageprocessingexample.ImageProcessingVideotoImageActivity"></activity>
+        <activity android:name=".sampleModules.TestHTML5WebView"></activity>
+        <activity android:name=".sampleModules.CropExample"></activity>
+        <activity android:name="com.marshalchen.common.uimodule.cropimage.CropImageActivity"></activity>
+        <activity android:name=".sampleModules.CropperSample"></activity>
+        <activity android:name=".sampleModules.ImageFilterActivity"></activity>
+        <activity android:name=".sampleModules.MotionSampleActivity"></activity>
+        <activity android:name=".shapeimageview.ShapeImageViewActivity"></activity>
+        <activity android:name=".sampleModules.CustomShapeImageViewActivity"></activity>
+        <activity android:name=".sampleModules.MarqueeViewSample"></activity>
+        <activity android:name=".sampleModules.SignaturePadActivity"></activity>
+        <activity android:name=".sampleModules.DrawableActivity"></activity>
         <provider
                 android:name="android.support.v4.content.FileProvider"
                 android:authorities="com.marshalchen.common.demoofui.fileprovider"

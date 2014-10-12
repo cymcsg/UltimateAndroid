@@ -25,8 +25,11 @@ import com.marshalchen.common.demoofui.easyandroidanimations.EasyAnimationListAc
 import com.marshalchen.common.demoofui.edgeeffectoverride.EdgeEffectActivity;
 import com.marshalchen.common.demoofui.fadingactionbar.HomeActivity;
 import com.marshalchen.common.demoofui.fancyCoverFlow.FancyCoverFlowActivity;
+import com.marshalchen.common.demoofui.imageprocessingexample.ImageProcessingActivity;
+import com.marshalchen.common.demoofui.imageprocessingexample.ImageProcessingVideotoImageActivity;
 import com.marshalchen.common.demoofui.sampleModules.GoogleProgressBarActivity;
 import com.marshalchen.common.demoofui.quickreturnlistview.QuickReturnListViewActivity;
+import com.marshalchen.common.demoofui.shapeimageview.ShapeImageViewActivity;
 import com.marshalchen.common.demoofui.slider.SliderActivity;
 import com.marshalchen.common.demoofui.staggeredgridview.StaggeredGridViewActivity;
 import com.marshalchen.common.demoofui.standUpTimer.ConfigureStandupTimer;
@@ -459,7 +462,66 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "EasyAnimation");
         enhanceList.add(map);
-
+        map = new HashMap<>();
+        map.put("name", "ImageProcessing");
+        map.put("detail", "try");
+        map.put("subname", "ImageProcessing");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "ImageProcessing");
+        map.put("detail", "try");
+        map.put("subname", "VideotoImage");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "TestHtml5Video");
+        map.put("detail", "try");
+        map.put("subname", "TestHtml5Video");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "CropImage");
+        map.put("detail", "try");
+        map.put("subname", "CropImage");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "CropperImage");
+        map.put("detail", "try");
+        map.put("subname", "CropperImage");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "ImageFilter");
+        map.put("detail", "try");
+        map.put("subname", "ImageFilter");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "MotionSample");
+        map.put("detail", "try");
+        map.put("subname", "MotionSample");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "ShapeImage");
+        map.put("detail", "try");
+        map.put("subname", "ShapeImage");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "CustomShapeImage");
+        map.put("detail", "try");
+        map.put("subname", "CustomShapeImage");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "MarqueeView");
+        map.put("detail", "try");
+        map.put("subname", "MarqueeView");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "SignaturePad");
+        map.put("detail", "try");
+        map.put("subname", "SignaturePad");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "DrawView");
+        map.put("detail", "try");
+        map.put("subname", "DrawviewActivity");
+        enhanceList.add(map);
 
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -689,6 +751,42 @@ public class LandingFragment extends Fragment {
                         break;
                     case 68:
                         BasicUtils.sendIntent(getActivity(), EasyAnimationListActivity.class);
+                        break;
+                    case 69:
+                        BasicUtils.sendIntent(getActivity(), ImageProcessingActivity.class);
+                        break;
+                    case 70:
+                        BasicUtils.sendIntent(getActivity(), ImageProcessingVideotoImageActivity.class);
+                        break;
+                    case 71:
+                        BasicUtils.sendIntent(getActivity(), TestHTML5WebView.class);
+                        break;
+                    case 72:
+                        BasicUtils.sendIntent(getActivity(), CropExample.class);
+                        break;
+                    case 73:
+                        BasicUtils.sendIntent(getActivity(), CropperSample.class);
+                        break;
+                    case 74:
+                        BasicUtils.sendIntent(getActivity(), ImageFilterActivity.class);
+                        break;
+                    case 75:
+                        BasicUtils.sendIntent(getActivity(), MotionSampleActivity.class);
+                        break;
+                    case 76:
+                        BasicUtils.sendIntent(getActivity(), ShapeImageViewActivity.class);
+                        break;
+                    case 77:
+                        BasicUtils.sendIntent(getActivity(), CustomShapeImageViewActivity.class);
+                        break;
+                    case 78:
+                        BasicUtils.sendIntent(getActivity(), MarqueeViewSample.class);
+                        break;
+                    case 79:
+                        BasicUtils.sendIntent(getActivity(), SignaturePadActivity.class);
+                        break;
+                    case 80:
+                        BasicUtils.sendIntent(getActivity(), DrawableActivity.class);
                         break;
 
 

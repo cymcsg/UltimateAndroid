@@ -202,7 +202,6 @@
     </declare-styleable>
 
 
-
     <declare-styleable name="SpanVariableGridView">
         <attr name="numColumns" format="integer"/>
         <attr name="itemMargin" format="dimension"/>
@@ -401,7 +400,6 @@
     </declare-styleable>
 
 
-
     <declare-styleable name="FancyCoverFlow">
         <attr name="unselectedAlpha" format="float"/>
         <attr name="unselectedSaturation" format="float"/>
@@ -415,31 +413,31 @@
 
 
     <declare-styleable name="DragSortListView">
-        <attr name="collapsed_height" format="dimension" />
-        <attr name="drag_scroll_start" format="float" />
-        <attr name="max_drag_scroll_speed" format="float" />
-        <attr name="float_background_color" format="color" />
+        <attr name="collapsed_height" format="dimension"/>
+        <attr name="drag_scroll_start" format="float"/>
+        <attr name="max_drag_scroll_speed" format="float"/>
+        <attr name="float_background_color" format="color"/>
         <attr name="remove_mode">
-            <enum name="clickRemove" value="0" />
-            <enum name="flingRemove" value="1" />
+            <enum name="clickRemove" value="0"/>
+            <enum name="flingRemove" value="1"/>
         </attr>
         <attr name="track_drag_sort" format="boolean"/>
         <attr name="float_alpha" format="float"/>
         <attr name="slide_shuffle_speed" format="float"/>
         <attr name="remove_animation_duration" format="integer"/>
         <attr name="drop_animation_duration" format="integer"/>
-        <attr name="drag_enabled" format="boolean" />
-        <attr name="sort_enabled" format="boolean" />
-        <attr name="remove_enabled" format="boolean" />
+        <attr name="drag_enabled" format="boolean"/>
+        <attr name="sort_enabled" format="boolean"/>
+        <attr name="remove_enabled" format="boolean"/>
         <attr name="drag_start_mode">
-            <enum name="onDown" value="0" />
-            <enum name="onMove" value="1" />
+            <enum name="onDown" value="0"/>
+            <enum name="onMove" value="1"/>
             <enum name="onLongPress" value="2"/>
         </attr>
-        <attr name="drag_handle_id" format="integer" />
-        <attr name="fling_handle_id" format="integer" />
-        <attr name="click_remove_id" format="integer" />
-        <attr name="use_default_controller" format="boolean" />
+        <attr name="drag_handle_id" format="integer"/>
+        <attr name="fling_handle_id" format="integer"/>
+        <attr name="click_remove_id" format="integer"/>
+        <attr name="use_default_controller" format="boolean"/>
     </declare-styleable>
 
     <declare-styleable name="GoogleProgressBar">
@@ -457,18 +455,111 @@
         <attr name="colorSelectedDayBackground" format="color"/>
         <attr name="colorSelectedDayText" format="color"/>
         <attr name="colorPreviousDay" format="color"/>
-        <attr name="colorNormalDay" format="color" />
-        <attr name="colorMonthName" format="color" />
-        <attr name="colorDayName" format="color" />
+        <attr name="colorNormalDay" format="color"/>
+        <attr name="colorMonthName" format="color"/>
+        <attr name="colorDayName" format="color"/>
         <attr name="textSizeDay" format="dimension"/>
-        <attr name="textSizeMonth" format="dimension" />
-        <attr name="textSizeDayName" format="dimension" />
-        <attr name="headerMonthHeight" format="dimension" />
-        <attr name="selectedDayRadius" format="dimension" />
-        <attr name="calendarHeight" format="dimension" />
-        <attr name="enablePreviousDay" format="boolean" />
-        <attr name="startCurrentMonth" format="boolean" />
-        <attr name="currentDaySelected" format="boolean" />
-        <attr name="drawRoundRect" format="boolean" />
+        <attr name="textSizeMonth" format="dimension"/>
+        <attr name="textSizeDayName" format="dimension"/>
+        <attr name="headerMonthHeight" format="dimension"/>
+        <attr name="selectedDayRadius" format="dimension"/>
+        <attr name="calendarHeight" format="dimension"/>
+        <attr name="enablePreviousDay" format="boolean"/>
+        <attr name="startCurrentMonth" format="boolean"/>
+        <attr name="currentDaySelected" format="boolean"/>
+        <attr name="drawRoundRect" format="boolean"/>
     </declare-styleable>
+
+
+    <attr name="cropImageStyle" format="reference"/>
+
+    <declare-styleable name="CropImageView">
+        <attr name="highlightColor" format="reference|color"/>
+        <attr name="showThirds" format="boolean"/>
+        <attr name="showHandles">
+            <enum name="changing" value="0"/>
+            <enum name="always" value="1"/>
+            <enum name="never" value="2"/>
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="CropperImageView">
+        <attr name="guidelines">
+            <enum name="on" value="2"/>
+            <enum name="onTouch" value="1"/>
+            <enum name="off" value="0"/>
+        </attr>
+        <attr name="fixAspectRatio" format="boolean"/>
+        <attr name="aspectRatioX" format="integer"/>
+        <attr name="aspectRatioY" format="integer"/>
+        <attr name="imageResource" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="ParallaxImageView">
+        <attr name="intensity" format="float"/>
+        <attr name="tiltSensitivity" format="float"/>
+        <attr name="forwardTiltOffset" format="float"/>
+        <attr name="scaledIntensity" format="boolean"/>
+    </declare-styleable>
+
+
+    <attr name="arrowPosition">
+        <enum name="left" value="0"/>
+        <enum name="right" value="1"/>
+    </attr>
+    <attr name="borderType">
+        <enum name="stroke" value="0"/>
+        <enum name="fill" value="1"/>
+    </attr>
+    <attr name="strokeCap">
+        <enum name="butt" value="0"/>
+        <enum name="round" value="1"/>
+        <enum name="square" value="2"/>
+    </attr>
+    <attr name="strokeJoin">
+        <enum name="bevel" value="0"/>
+        <enum name="miter" value="1"/>
+        <enum name="round" value="2"/>
+    </attr>
+    <declare-styleable name="ShaderImageView">
+        <attr name="square" format="boolean"/>
+        <attr name="borderColor" format="color"/>
+        <attr name="borderWidth" format="dimension"/>
+        <attr name="borderAlpha" format="float"/>
+        <attr name="foreground" format="integer|reference"/>
+        <!-- Rounded Image View -->
+        <attr name="ShaderImageViewRadius" format="dimension"/>
+        <!--BubbleImageView-->
+        <attr name="arrowPosition"/>
+        <attr name="triangleHeight" format="dimension"/>
+        <!--PorterImageView-->
+        <attr name="ShaderImageViewShape" format="integer|reference"/>
+        <!--ShaderImageView-->
+        <attr name="borderType"/>
+        <attr name="strokeCap"/>
+        <attr name="strokeJoin"/>
+        <attr name="strokeMiter" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomShapeImageView">
+        <attr name="shape_custom" format="integer">
+            <enum name="circle" value="1"/>
+            <enum name="rectangle" value="2"/>
+            <enum name="svg" value="3"/>
+        </attr>
+
+        <attr name="svg_raw_resource" format="reference"/>
+
+    </declare-styleable>
+
+
+    <declare-styleable name="SignaturePad">
+        <attr name="minWidth" format="float"/>
+        <attr name="maxWidth" format="float"/>
+        <attr name="penColor" format="color"/>
+        <attr name="velocityFilterWeight" format="float"/>
+    </declare-styleable>
+
+
 </resources>

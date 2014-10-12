@@ -128,4 +128,10 @@
         <attr name="android:gravity"/>
     </declare-styleable>
     <attr name="circularProgressBarStyle" format="reference"/>
+
+    <declare-styleable name="MarqueeView">
+        <attr name="marqueeSpeed" format="integer"/>
+        <attr name="pause" format="integer"/>
+        <attr name="autoStart" format="boolean"/>
+    </declare-styleable>
 </resources>

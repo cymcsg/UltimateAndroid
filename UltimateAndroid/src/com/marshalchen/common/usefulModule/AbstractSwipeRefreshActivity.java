@@ -44,7 +44,7 @@ public abstract class AbstractSwipeRefreshActivity extends ActionBarActivity imp
         disableSwipe();
     }
 
-    private void setAppearance() {
+    protected void setAppearance() {
         refreshLayout.setColorScheme(android.R.color.holo_blue_bright,
                 android.R.color.holo_green_light,
                 android.R.color.holo_orange_light,

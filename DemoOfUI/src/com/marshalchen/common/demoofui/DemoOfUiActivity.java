@@ -56,7 +56,7 @@ public class DemoOfUiActivity extends ActionBarActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.main_landing_activity);
         ButterKnife.inject(this);
         mContent = new LandingFragment();
         getSupportFragmentManager().beginTransaction()
