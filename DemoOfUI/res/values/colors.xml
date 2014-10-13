@@ -30,4 +30,10 @@
     <color name="transparent">#00000000</color>
 
     <color name="bg_handle_pressed">#a0a0a0</color>
+
+
+    <color name="android_view_color_01">#59dbe0</color>
+    <color name="android_view_color_02">#f57f68</color>
+    <color name="android_view_color_03">#87d288</color>
+    <color name="android_view_color_04">#f8b552</color>
 </resources>

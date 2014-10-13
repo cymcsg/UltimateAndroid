@@ -522,6 +522,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "DrawviewActivity");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "AndroidWeekView");
+        map.put("detail", "try");
+        map.put("subname", "AndroidWeekView");
+        enhanceList.add(map);
 
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -787,6 +792,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 80:
                         BasicUtils.sendIntent(getActivity(), DrawableActivity.class);
+                        break;
+                    case 81:
+                        BasicUtils.sendIntent(getActivity(), AndroidWeekViewActivity.class);
                         break;
 
 
