@@ -527,6 +527,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "AndroidWeekView");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "AnimationFilcker");
+        map.put("detail", "try");
+        map.put("subname", "AnimationFilcker");
+        enhanceList.add(map);
 
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -795,6 +800,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 81:
                         BasicUtils.sendIntent(getActivity(), AndroidWeekViewActivity.class);
+                        break;
+                    case 82:
+                        BasicUtils.sendIntent(getActivity(), FilckerAnimationListActivity.class);
                         break;
 
 
