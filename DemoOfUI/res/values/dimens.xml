@@ -4,4 +4,8 @@
     <dimen name="section_div_height">20dp</dimen>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <item name="menuFromDegrees" format="float" type="dimen">180.0</item>
+    <item name="menuToDegrees" format="float" type="dimen">360.0</item>
+    <dimen name="menuChildSize">30dp</dimen>
 </resources>

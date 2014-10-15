@@ -36,6 +36,7 @@ import com.marshalchen.common.demoofui.standUpTimer.ConfigureStandupTimer;
 import com.marshalchen.common.demoofui.superlistview.SuperListViewActivity;
 import com.marshalchen.common.demoofui.swipelayoutdemo.SwipeLayoutActivity;
 import com.marshalchen.common.ui.Typefaces;
+import com.marshalchen.common.uimodule.arcmenu.ArcMenu;
 import com.marshalchen.common.uimodule.enhanceListView.EnhancedListView;
 import com.marshalchen.common.uimodule.passcodelock.PasscodePreferencesActivity;
 import com.marshalchen.common.uimodule.titanic.Titanic;
@@ -532,6 +533,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "AnimationFilcker");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "ArcMenu");
+        map.put("detail", "try");
+        map.put("subname", "ArcMenu");
+        enhanceList.add(map);
 
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -803,6 +809,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 82:
                         BasicUtils.sendIntent(getActivity(), FilckerAnimationListActivity.class);
+                        break;
+                    case 83:
+                        BasicUtils.sendIntent(getActivity(), ArcMenuActivity.class);
                         break;
 
 
