@@ -31,7 +31,7 @@ UltimateAndroid
 
 ---
 
-#####The framework contains many feature like View Injection,ORM,Asynchronous Http and Image,User scenario testing,many UI Modules,Https Utils etc.And there are also many useful feature like WebViewUtils,DaoUtils, TripleDes Utils etc.The framework will be added by more feature in the future. 
+#####The framework contains many features like View Injection,ORM,Asynchronous Http and Image,User scenario testing,many UI Modules etc.And there are also many useful feature like WebViewUtils,DaoUtils,Https Utils, TripleDes Utils etc.The framework will be added  more feature in the future. 
 	
 
 	 
