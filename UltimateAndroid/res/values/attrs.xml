@@ -131,4 +131,19 @@
         <attr name="pause" format="integer"/>
         <attr name="autoStart" format="boolean"/>
     </declare-styleable>
+
+    <declare-styleable name="ExpandedCircleProgressView">
+        <attr name="innerCircleSize" format="dimension" />
+        <attr name="outerCircleSize" format="dimension" />
+
+        <attr name="innerCircleColor" format="color" />
+        <attr name="outerCircleColor" format="color" />
+
+        <attr name="textProgressColor" format="color" />
+        <attr name="progressCircleColor" format="color" />
+
+        <attr name="outerCircleLineWidth" format="dimension" />
+
+        <attr name="textProgressSize" format="dimension" />
+    </declare-styleable>
 </resources>
