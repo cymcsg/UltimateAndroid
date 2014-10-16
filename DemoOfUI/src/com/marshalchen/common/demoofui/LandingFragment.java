@@ -538,6 +538,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "ArcMenu");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "ExpandCircle");
+        map.put("detail", "try");
+        map.put("subname", "ExpandCircle");
+        enhanceList.add(map);
 
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -812,6 +817,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 83:
                         BasicUtils.sendIntent(getActivity(), ArcMenuActivity.class);
+                        break;
+                    case 84:
+                        BasicUtils.sendIntent(getActivity(), ExpandCircleProgressExampleActivity.class);
                         break;
 
 
