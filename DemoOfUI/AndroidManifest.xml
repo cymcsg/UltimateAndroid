@@ -86,6 +86,8 @@
         <activity android:name=".sampleModules.FilckerAnimationListActivity"></activity>
         <activity android:name=".sampleModules.ArcMenuActivity"></activity>
         <activity android:name=".sampleModules.ExpandCircleProgressExampleActivity"></activity>
+        <activity android:name=".artbook.FreeFlowArtbookActivity"></activity>
+        <activity android:name=".sampleModules.FreeFlowPhotoGridActivity"></activity>
         <provider
                 android:name="android.support.v4.content.FileProvider"
                 android:authorities="com.marshalchen.common.demoofui.fileprovider"

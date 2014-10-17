@@ -17,6 +17,7 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 import com.marshalchen.common.commonUtils.basicUtils.BasicUtils;
 import com.marshalchen.common.demoofui.ResideMenuDemo.ResideMenuActivity;
+import com.marshalchen.common.demoofui.artbook.FreeFlowArtbookActivity;
 import com.marshalchen.common.demoofui.circularProgressButton.CircularProgressButtonActivity;
 import com.marshalchen.common.demoofui.dragSortListview.MultipleChoiceListView;
 import com.marshalchen.common.demoofui.dragSortListview.SingleChoiceListView;
@@ -543,6 +544,16 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "ExpandCircle");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "FreeFlow");
+        map.put("detail", "try");
+        map.put("subname", "ArtBook");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "FreeFlow");
+        map.put("detail", "try");
+        map.put("subname", "PhotoGrid");
+        enhanceList.add(map);
 
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -820,6 +831,12 @@ public class LandingFragment extends Fragment {
                         break;
                     case 84:
                         BasicUtils.sendIntent(getActivity(), ExpandCircleProgressExampleActivity.class);
+                        break;
+                    case 85:
+                        BasicUtils.sendIntent(getActivity(), FreeFlowArtbookActivity.class);
+                        break;
+                    case 86:
+                        BasicUtils.sendIntent(getActivity(), FreeFlowPhotoGridActivity.class);
                         break;
 
 
