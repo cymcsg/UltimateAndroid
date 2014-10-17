@@ -45,11 +45,19 @@ public class ZipAndUnZip {
         } catch (IOException ioe) {
             ioe.printStackTrace();
             return 0;
-        }
-        catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
-            Logs.e(e,"");
+            Logs.e(e, "");
             return 0;
+        } finally {
+            try {
+                if (fileOut != null) fileOut.close();
+                if (zipIn != null) zipIn.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+                Logs.e(e, "");
+            }
+
         }
     }
 
@@ -90,6 +98,14 @@ public class ZipAndUnZip {
         } catch (IOException ioe) {
             ioe.printStackTrace();
             return 0;
+        } finally {
+            try {
+                if (fileOut != null) fileOut.close();
+                if (zipIn != null) zipIn.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+                Logs.e(e, "");
+            }
         }
     }
 
@@ -98,7 +114,7 @@ public class ZipAndUnZip {
      *
      * @param f Incoming file to get the extension of
      * @return <code>String</code> representing the extension of the incoming
-     *         file.
+     * file.
      */
     public static String getExtension(String f) {
         String ext = "";
@@ -115,7 +131,7 @@ public class ZipAndUnZip {
      *
      * @param f Incoming file to get the filename
      * @return <code>String</code> representing the filename without its
-     *         extension.
+     * extension.
      */
     public static String getFileName(String f) {
         String fname = "";
@@ -127,7 +143,7 @@ public class ZipAndUnZip {
         return fname;
     }
 
-    public static void gzips(String zipfileName, String mDestFile ) throws Exception {
+    public static void gzips(String zipfileName, String mDestFile) throws Exception {
 
         BufferedReader in = new BufferedReader(new InputStreamReader(new FileInputStream(zipfileName), "UTF-8"));
 
@@ -143,6 +159,8 @@ public class ZipAndUnZip {
     }
 
     public static void unzipGzips(String inFileName) throws Exception {
+        GZIPInputStream in = null;
+        FileOutputStream out = null;
         try {
 
             if (!getExtension(inFileName).equalsIgnoreCase("gz")) {
@@ -151,7 +169,7 @@ public class ZipAndUnZip {
             }
 
             System.out.println("Opening the compressed file.");
-            GZIPInputStream in = null;
+
             try {
                 in = new GZIPInputStream(new FileInputStream(inFileName));
             } catch (FileNotFoundException e) {
@@ -161,7 +179,7 @@ public class ZipAndUnZip {
 
             System.out.println("Open the output file.");
             String outFileName = getFileName(inFileName);
-            FileOutputStream out = null;
+
             try {
                 out = new FileOutputStream(outFileName);
             } catch (FileNotFoundException e) {
@@ -177,24 +195,33 @@ public class ZipAndUnZip {
             }
 
             System.out.println("Closing the file and stream");
-            in.close();
-            out.close();
+
 
         } catch (IOException e) {
             e.printStackTrace();
             System.exit(1);
+        } finally {
+            try {
+                if (in != null) in.close();
+                if (out != null) out.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+                Logs.e(e, "");
+            }
         }
     }
 
 
     public static void zipFile(String fileFrom, String fileTo) {
-
+        FileInputStream in = null;
+        FileOutputStream out = null;
+        ZipOutputStream zipOut = null;
         try {
             File file = new File(fileFrom);
             file.getName();
-            FileInputStream in = new FileInputStream(fileFrom);
-            FileOutputStream out = new FileOutputStream(fileTo);
-            ZipOutputStream zipOut = new ZipOutputStream(out);
+            in = new FileInputStream(fileFrom);
+            out = new FileOutputStream(fileTo);
+            zipOut = new ZipOutputStream(out);
             ZipEntry entry = new ZipEntry(file.getName());
             zipOut.putNextEntry(entry);
             int nNumber;
@@ -211,6 +238,15 @@ public class ZipAndUnZip {
         } catch (IOException e) {
 
             System.out.println(e);
+        } finally {
+            try {
+                if (in != null) in.close();
+                if (out != null) out.close();
+                if (zipOut != null) zipOut.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+                Logs.e(e, "");
+            }
         }
     }
 }
