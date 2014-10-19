@@ -16,7 +16,11 @@ public class GreenDaoUtils {
 
     static boolean isLog = true;
 
-    private static void isLog() {
+    public static void setIsLog(boolean isLog) {
+        GreenDaoUtils.isLog = isLog;
+    }
+
+    private static void setIfLog() {
         if (isLog) {
             QueryBuilder.LOG_SQL = true;
             QueryBuilder.LOG_VALUES = true;
@@ -27,7 +31,7 @@ public class GreenDaoUtils {
     }
 
     public static List getList(AbstractDao dao, Property orderProperty, WhereCondition cond, WhereCondition... condMore) {
-        isLog();
+        setIfLog();
         List indexFavList = dao.queryBuilder()
                 .where(cond, condMore)
                 .orderAsc(orderProperty)
@@ -36,7 +40,7 @@ public class GreenDaoUtils {
     }
 
     public static List getList(AbstractDao dao, WhereCondition cond, WhereCondition... condMore) {
-        isLog();
+        setIfLog();
         List indexFavList = dao.queryBuilder()
                 .where(cond, condMore)
                 .list();
@@ -48,7 +52,7 @@ public class GreenDaoUtils {
     }
 
     public static List getList(AbstractDao dao, boolean isAsc, Property... orderProperty) {
-        isLog();
+        setIfLog();
         QueryBuilder queryBuilder = dao.queryBuilder();
         if (isAsc) {
             queryBuilder = queryBuilder.orderAsc(orderProperty);
@@ -60,7 +64,7 @@ public class GreenDaoUtils {
     }
 
     public static List getList(AbstractDao dao) {
-        isLog();
+        setIfLog();
         List indexFavList = dao.queryBuilder()
                 .list();
         return indexFavList;
@@ -117,14 +121,14 @@ public class GreenDaoUtils {
     }
 
     public static QueryBuilder getQueryBuilder(AbstractDao dao, WhereCondition cond, WhereCondition... condmore) {
-        isLog();
+        setIfLog();
         QueryBuilder qb = dao.queryBuilder();
         qb.where(cond, condmore);
         return qb;
     }
 
     public static void deleteByCondition(AbstractDao dao, WhereCondition cond, WhereCondition... condmore) {
-        isLog();
+        setIfLog();
         QueryBuilder qb = dao.queryBuilder();
         qb.where(cond, condmore).buildDelete().executeDeleteWithoutDetachingEntities();
 
