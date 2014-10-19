@@ -2,14 +2,14 @@ UltimateAndroid
 ==========================
 
 ###Version:0.1.0 beta
-###当前版本：0.1.0 beta
+
 
 [![Build Status](https://drone.io/github.com/cymcsg/UltimateAndroid/status.png)](https://drone.io/github.com/cymcsg/UltimateAndroid/latest)
 <br>
 #####Formerly known as CommonLibsForAndroid
 #####原名： CommonLibsForAndroid
 <br>
-###Using UltimateAndroid is a fast way  to help you  develop Android apps 
+###UltimateAndroid is a framework which can help you  develop Android apps  in a fast way  
 
 
 ### 快速开发Android应用的框架  
@@ -18,8 +18,8 @@ UltimateAndroid
 
 [中文简介](#chinese_introduction)
 
-###[English Tutorials](https://github.com/cymcsg/UltimateAndroid/blob/master/Tutorials/TableofContents_eng.md)
-###[中文详细教程](https://github.com/cymcsg/UltimateAndroid/blob/master/Tutorials/TableofContents_zh.md)
+[English Tutorials](https://github.com/cymcsg/UltimateAndroid/blob/master/Tutorials/TableofContents_eng.md)
+[中文详细教程](https://github.com/cymcsg/UltimateAndroid/blob/master/Tutorials/TableofContents_zh.md)
 
 [Ui sample](#demo_of_ui)
 
@@ -31,7 +31,7 @@ UltimateAndroid
 
 ---
 
-#####The framework contains many features like View Injection,ORM,Asynchronous Http and Image,User scenario testing,many UI Modules etc.And there are also many useful feature like WebViewUtils,DaoUtils,Https Utils, TripleDes Utils etc.The framework will be added  more feature in the future. 
+#####The framework contains many features like View Injection,ORM,Asynchronous Networking and Image Loader,User scenario testing,over 100 Ui effects etc.And there are also many useful feature like WebViewUtils,DaoUtils,Https Utils, TripleDes Utils etc.The framework will be added  more feature in the future. 
 	
 
 	 
@@ -233,7 +233,7 @@ Please set the ides before you run the demo apps.
  <h2 ><a name="chinese_introduction"></a>简介</h2>   
 
 ---
-####框架目前主要包含的功能有View Injection,ORM,异步网络请求和图片加载，自动化脚本测试,磁盘LRU等功能.同时提供了类似于TripleDes、Webview快速设置、Md5处理、String处理,Https处理等常用工具类，还有多种UI控件效果。并且这些功能正在逐步增加中。
+####框架目前主要包含的功能有View Injection,ORM,异步网络请求和图片加载，自动化脚本测试,磁盘LRU等功能.同时提供了类似于TripleDes、Webview快速设置、Md5处理、String处理,Https处理等常用工具类，还有超过100多种UI控件效果。并且这些功能正在逐步增加中。
 		
 
 
