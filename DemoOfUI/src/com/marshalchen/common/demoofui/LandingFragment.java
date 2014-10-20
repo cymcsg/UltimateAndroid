@@ -554,6 +554,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "PhotoGrid");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "RecylerView");
+        map.put("detail", "try");
+        map.put("subname", "RecylerViewSample");
+        enhanceList.add(map);
 
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -837,6 +842,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 86:
                         BasicUtils.sendIntent(getActivity(), FreeFlowPhotoGridActivity.class);
+                        break;
+                    case 87:
+                        BasicUtils.sendIntent(getActivity(), RecyclerViewSample.class);
                         break;
 
 
