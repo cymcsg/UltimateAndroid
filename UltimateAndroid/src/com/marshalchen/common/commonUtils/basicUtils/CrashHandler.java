@@ -25,14 +25,12 @@ import com.marshalchen.common.commonUtils.logUtils.Logs;
 import com.nostra13.universalimageloader.utils.StorageUtils;
 
 /**
- *
  * @ClassName: MyUncaughtExceptionHandler
  * @Description: catch the exception
- *
  */
 public class CrashHandler implements UncaughtExceptionHandler {
 
-    public static final String TAG = "Chen";
+    public static String TAG = "Chen";
     String showMessage = "There is something wrong with the app.";
 
     //Default UncaughtException

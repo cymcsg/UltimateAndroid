@@ -17,6 +17,7 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 import com.marshalchen.common.commonUtils.basicUtils.BasicUtils;
 import com.marshalchen.common.demoofui.ResideMenuDemo.ResideMenuActivity;
+import com.marshalchen.common.demoofui.artbook.FreeFlowArtbookActivity;
 import com.marshalchen.common.demoofui.circularProgressButton.CircularProgressButtonActivity;
 import com.marshalchen.common.demoofui.dragSortListview.MultipleChoiceListView;
 import com.marshalchen.common.demoofui.dragSortListview.SingleChoiceListView;
@@ -36,6 +37,7 @@ import com.marshalchen.common.demoofui.standUpTimer.ConfigureStandupTimer;
 import com.marshalchen.common.demoofui.superlistview.SuperListViewActivity;
 import com.marshalchen.common.demoofui.swipelayoutdemo.SwipeLayoutActivity;
 import com.marshalchen.common.ui.Typefaces;
+import com.marshalchen.common.uimodule.arcmenu.ArcMenu;
 import com.marshalchen.common.uimodule.enhanceListView.EnhancedListView;
 import com.marshalchen.common.uimodule.passcodelock.PasscodePreferencesActivity;
 import com.marshalchen.common.uimodule.titanic.Titanic;
@@ -522,6 +524,36 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "DrawviewActivity");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "AndroidWeekView");
+        map.put("detail", "try");
+        map.put("subname", "AndroidWeekView");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "AnimationFilcker");
+        map.put("detail", "try");
+        map.put("subname", "AnimationFilcker");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "ArcMenu");
+        map.put("detail", "try");
+        map.put("subname", "ArcMenu");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "ExpandCircle");
+        map.put("detail", "try");
+        map.put("subname", "ExpandCircle");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "FreeFlow");
+        map.put("detail", "try");
+        map.put("subname", "ArtBook");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "FreeFlow");
+        map.put("detail", "try");
+        map.put("subname", "PhotoGrid");
+        enhanceList.add(map);
 
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -787,6 +819,24 @@ public class LandingFragment extends Fragment {
                         break;
                     case 80:
                         BasicUtils.sendIntent(getActivity(), DrawableActivity.class);
+                        break;
+                    case 81:
+                        BasicUtils.sendIntent(getActivity(), AndroidWeekViewActivity.class);
+                        break;
+                    case 82:
+                        BasicUtils.sendIntent(getActivity(), FilckerAnimationListActivity.class);
+                        break;
+                    case 83:
+                        BasicUtils.sendIntent(getActivity(), ArcMenuActivity.class);
+                        break;
+                    case 84:
+                        BasicUtils.sendIntent(getActivity(), ExpandCircleProgressExampleActivity.class);
+                        break;
+                    case 85:
+                        BasicUtils.sendIntent(getActivity(), FreeFlowArtbookActivity.class);
+                        break;
+                    case 86:
+                        BasicUtils.sendIntent(getActivity(), FreeFlowPhotoGridActivity.class);
                         break;
 
 

@@ -9,8 +9,8 @@ import android.widget.Scroller;
 /**
  * Created by cym on 14-5-8.
  */
-public class FixSpeedScroller extends Scroller{
-    private int mDuration = 5000;
+public class FixSpeedScroller extends Scroller {
+    private int mDuration = 1000;
     private double mScrollFactor = 1;
 
     public FixSpeedScroller(Context context) {
@@ -30,7 +30,7 @@ public class FixSpeedScroller extends Scroller{
     @Override
     public void startScroll(int startX, int startY, int dx, int dy, int duration) {
         // Ignore received duration, use fixed one instead
-        super.startScroll(startX, startY, dx, dy, (int) (duration * mScrollFactor));
+        super.startScroll(startX, startY, dx, dy, (int) (mDuration * mScrollFactor));
     }
 
     @Override
@@ -38,6 +38,7 @@ public class FixSpeedScroller extends Scroller{
         // Ignore received duration, use fixed one instead
         super.startScroll(startX, startY, dx, dy, mDuration);
     }
+
     /**
      * Set the factor by which the duration will change
      */
