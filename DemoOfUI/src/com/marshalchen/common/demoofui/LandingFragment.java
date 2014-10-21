@@ -123,447 +123,536 @@ public class LandingFragment extends Fragment {
         map.put("name", "SmoothBar");
         map.put("detail", "try");
         map.put("subname", "to ProgressBar");
+        map.put("class", "SmoothProgressBarActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "DynamicGrid");
         map.put("detail", "try");
         map.put("subname", "to DynamicGrid");
+        map.put("class", "DynamicGridActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "Cool Drag Drop ");
         map.put("detail", "try");
         map.put("subname", "to DragDrop");
+        map.put("class", "CoolDragAndDropActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "Stickyheader");
         map.put("detail", "try");
         map.put("subname", "to StickyHeader");
+        map.put("class", "StickGridItemListActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "ListViewFilter");
         map.put("detail", "try");
         map.put("subname", "to ListViewFilter");
+        map.put("class", "ListViewFilterActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "FlipView");
         map.put("detail", "try");
         map.put("subname", "to FlipView");
+        map.put("class", "FlipViewActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "Photoview");
         map.put("detail", "try");
         map.put("subname", "to Photoview");
+        map.put("class", "PhotoViewActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "FoldingActivity");
         map.put("detail", "try");
         map.put("subname", "to Folding");
+        map.put("class", "FoldingActivitys");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "CircularBar");
         map.put("detail", "try");
         map.put("subname", "to CircularBar");
+        map.put("class", "CircularBarActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "FoldableList");
         map.put("detail", "try");
         map.put("subname", "to FoldableList");
+        map.put("class", "FoldableListActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "UnfoldableList");
         map.put("detail", "try");
         map.put("subname", "to UnfoldableList");
+        map.put("class", "UnfoldableDetailsActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "TimeSquare");
         map.put("detail", "try");
         map.put("subname", "to TimeSquare");
+        map.put("class", "CalendarSquareActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "FaceCrop");
         map.put("detail", "try");
         map.put("subname", "to FaceCrop");
+        map.put("class", "FaceCropActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "KenBurns");
         map.put("detail", "try");
         map.put("subname", "to KenBurns");
+        map.put("class", "KenBurnsViewActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "Discroll");
         map.put("detail", "try");
         map.put("subname", "to Discroll");
+        map.put("class", "DiscrollActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "Panning");
         map.put("detail", "try");
         map.put("subname", "to Panning");
+        map.put("class", "PanningViewActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "ParScroll");
         map.put("detail", "try");
         map.put("subname", "to ParScroll");
+        map.put("class", "ParallaxScrollActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "ProgressWheel");
         map.put("detail", "try");
         map.put("subname", "to Wheel");
+        map.put("class", "ProgressbarWheelActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "ViewTabs");
         map.put("detail", "try");
         map.put("subname", "to ViewTabs");
+        map.put("class", "ViewpagerSlidingTabsActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "Rebound");
         map.put("detail", "try");
         map.put("subname", "Rebound");
+        map.put("class", "ReboundActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "ReboundSimple");
         map.put("detail", "try");
         map.put("subname", "Rebound");
+        map.put("class", "ReboundActivitySimple");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "ListAnim");
         map.put("detail", "try");
         map.put("subname", "ListAnim");
+        map.put("class", "ListAnimationActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "PullSplash");
         map.put("detail", "try");
         map.put("subname", "PullSplash");
+        map.put("class", "PullSplashActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "Jsoup");
         map.put("detail", "try");
         map.put("subname", "Jsoup");
+        map.put("class", "UtilsDemoActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "ViewServer");
         map.put("detail", "try");
         map.put("subname", "ViewServer");
+        map.put("class", "ViewServerActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "PassCode");
         map.put("detail", "try");
         map.put("subname", "PassCode");
+        map.put("class", "PasscodePreferencesActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "GestureTouch");
         map.put("detail", "try");
         map.put("subname", "GestureTouch");
+        map.put("class", "GestureTouchActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "act_anim");
         map.put("detail", "try");
         map.put("subname", "act_anim");
+        map.put("class", "ActivityAnimationsActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "pullscrollview");
         map.put("detail", "try");
         map.put("subname", "pull");
+        map.put("class", "PullScrollViewActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "card swiped");
         map.put("detail", "try");
         map.put("subname", "card swiped");
+        map.put("class", "CardsSwipedActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "ShowCase");
         map.put("detail", "try");
         map.put("subname", "ShowCase");
+        map.put("class", "ShowCaseSampleActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "ListBuddies");
         map.put("detail", "try");
         map.put("subname", "ListBuddies");
+        map.put("class", "ListBuddiesActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "ActivityTransition");
         map.put("detail", "try");
         map.put("subname", "act");
+        map.put("class", "ActivityTransitionActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "AutoFit");
         map.put("detail", "try");
         map.put("subname", "AutoFit");
+        map.put("class", "AutofitTextViewActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "Draggable");
         map.put("detail", "try");
         map.put("subname", "Draggable");
+        map.put("class", "DraggableGridViewPagerTestActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "FloatLayout");
         map.put("detail", "try");
         map.put("subname", "FloatLayout");
+        map.put("class", "FloatLabelActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "WireFrame");
         map.put("detail", "try");
         map.put("subname", "WireFrame");
+        map.put("class", "WireFrameActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "Trigle");
         map.put("detail", "try");
         map.put("subname", "Frame");
+        map.put("class", "TriangleFrameActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "RiseNumber");
         map.put("detail", "try");
         map.put("subname", "RiseNumber");
+        map.put("class", "RiseNumberActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "Nifty");
         map.put("detail", "try");
         map.put("subname", "Nifty");
+        map.put("class", "NiftyDialogActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "Icons");
         map.put("detail", "try");
         map.put("subname", "Icons");
+        map.put("class", "DifferentIconsActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "EdgeEffect");
         map.put("detail", "try");
         map.put("subname", "EdgeEffect");
+        map.put("class", "EdgeEffectActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "ViewPager");
         map.put("detail", "try");
         map.put("subname", "Transform");
+        map.put("class", "ViewPagerTransformerActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "StandUpTimer");
         map.put("detail", "try");
         map.put("subname", "Timer");
+        map.put("class", "ConfigureStandupTimer");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "CircularProgress");
         map.put("detail", "try");
         map.put("subname", "Button");
+        map.put("class", "CircularProgressButtonActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "JazzyViewPager");
         map.put("detail", "try");
         map.put("subname", "Jazzy");
+        map.put("class", "JazzyViewActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "PulltoZoom");
         map.put("detail", "try");
         map.put("subname", "ListView");
+        map.put("class", "PulltoZoomListViewActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "QuickReturn");
         map.put("detail", "try");
         map.put("subname", "ListView");
+        map.put("class", "QuickReturnListViewActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "SuperListview");
         map.put("detail", "try");
         map.put("subname", "ListView");
+        map.put("class", "SuperListViewActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "Staggered");
         map.put("detail", "try");
         map.put("subname", "GridView");
+        map.put("class", "StaggeredGridViewActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "DropDownListview");
         map.put("detail", "try");
         map.put("subname", "ListView");
+        map.put("class", "DropDownListViewDemo");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "FlowTextView");
         map.put("detail", "try");
         map.put("subname", "TextView");
+        map.put("class", "FlowTextViewActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "Google");
         map.put("detail", "try");
         map.put("subname", "ProgressBar");
+        map.put("class", "GoogleProgressBarActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "Number");
         map.put("detail", "try");
         map.put("subname", "ProgressBar");
+        map.put("class", "NumberProgressBarActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "FancyCoverFlow");
         map.put("detail", "try");
         map.put("subname", "FancyCoverFlow");
+        map.put("class", "FancyCoverFlowActivity");
         enhanceList.add(map);
 
         map = new HashMap<>();
         map.put("name", "DragSort");
         map.put("detail", "try");
         map.put("subname", "Listview");
+        map.put("class", "SingleChoiceListView");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "DragSort");
         map.put("detail", "try");
         map.put("subname", "Listview");
+        map.put("class", "MultipleChoiceListView");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "FadingActionbar");
         map.put("detail", "try");
         map.put("subname", "FadingActionbar");
+        map.put("class", "HomeActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "SwipeFreshLayout");
         map.put("detail", "try");
         map.put("subname", "Layout");
+        map.put("class", "SwipeRefreshLayoutDemo");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "UltimateListview");
         map.put("detail", "try");
         map.put("subname", "Listview");
+        map.put("class", "UltimateListviewActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "ResideMenu");
         map.put("detail", "try");
         map.put("subname", "ResideMenu");
+        map.put("class", "ResideMenuActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "Swipe");
         map.put("detail", "try");
         map.put("subname", "SwipeLayout");
+        map.put("class", "SwipeLayoutActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "Animations");
         map.put("detail", "try");
         map.put("subname", "Animations");
+        map.put("class", "AndroidAnimationsDemoActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "Easing");
         map.put("detail", "try");
         map.put("subname", "Activity");
+        map.put("class", "EasingActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "JumpingBeans");
         map.put("detail", "try");
         map.put("subname", "Activity");
+        map.put("class", "JumpingBeansActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "AndroidViewHover");
         map.put("detail", "try");
         map.put("subname", "Hover");
+        map.put("class", "AndroidViewHoverActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "Slider");
         map.put("detail", "try");
         map.put("subname", "Slider");
+        map.put("class", "SliderActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "CalendarListView");
         map.put("detail", "try");
         map.put("subname", "CalendarListView");
+        map.put("class", "CalendarListViewActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "EasyAnimation");
         map.put("detail", "try");
         map.put("subname", "EasyAnimation");
+        map.put("class", "EasyAnimationListActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "ImageProcessing");
         map.put("detail", "try");
         map.put("subname", "ImageProcessing");
+        map.put("class", "ImageProcessingActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "ImageProcessing");
         map.put("detail", "try");
         map.put("subname", "VideotoImage");
+        map.put("class", "ImageProcessingVideotoImageActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "TestHtml5Video");
         map.put("detail", "try");
         map.put("subname", "TestHtml5Video");
+        map.put("class", "TestHTML5WebView");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "CropImage");
         map.put("detail", "try");
         map.put("subname", "CropImage");
+        map.put("class", "");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "CropperImage");
         map.put("detail", "try");
         map.put("subname", "CropperImage");
+        map.put("class", "CropExample");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "ImageFilter");
         map.put("detail", "try");
         map.put("subname", "ImageFilter");
+        map.put("class", "ImageFilterActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "MotionSample");
         map.put("detail", "try");
         map.put("subname", "MotionSample");
+        map.put("class", "MotionSampleActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "ShapeImage");
         map.put("detail", "try");
         map.put("subname", "ShapeImage");
+        map.put("class", "ShapeImageViewActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "CustomShapeImage");
         map.put("detail", "try");
         map.put("subname", "CustomShapeImage");
+        map.put("class", "CustomShapeImageViewActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "MarqueeView");
         map.put("detail", "try");
         map.put("subname", "MarqueeView");
+        map.put("class", "MarqueeViewSample");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "SignaturePad");
         map.put("detail", "try");
         map.put("subname", "SignaturePad");
+        map.put("class", "SignaturePadActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "DrawView");
         map.put("detail", "try");
         map.put("subname", "DrawviewActivity");
+        map.put("class", "DrawableActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "AndroidWeekView");
         map.put("detail", "try");
         map.put("subname", "AndroidWeekView");
+        map.put("class", "AndroidWeekViewActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "AnimationFilcker");
         map.put("detail", "try");
         map.put("subname", "AnimationFilcker");
+        map.put("class", "FilckerAnimationListActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "ArcMenu");
         map.put("detail", "try");
         map.put("subname", "ArcMenu");
+        map.put("class", "ArcMenuActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "ExpandCircle");
         map.put("detail", "try");
         map.put("subname", "ExpandCircle");
+        map.put("class", "ExpandCircleProgressExampleActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "FreeFlow");
         map.put("detail", "try");
         map.put("subname", "ArtBook");
+        map.put("class", "FreeFlowArtbookActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "FreeFlow");
         map.put("detail", "try");
         map.put("subname", "PhotoGrid");
+        map.put("class", "FreeFlowPhotoGridActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "RecylerView");
         map.put("detail", "try");
         map.put("subname", "RecylerViewSample");
+        map.put("class", "RecyclerViewSample");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "RecylerView");
         map.put("detail", "try");
         map.put("subname", "RecylerViewItem");
+        map.put("class", "RecyclerViewItemAnimatorActivity");
         enhanceList.add(map);
 
 
@@ -584,276 +673,276 @@ public class LandingFragment extends Fragment {
         landingEnhanceListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                switch (position) {
-                    case 0:
+                switch (enhanceList.get(position).get("class")) {
+                    case "SmoothProgressBarActivity":
                         BasicUtils.sendIntent(getActivity(), SmoothProgressBarActivity.class);
                         break;
-                    case 1:
-                        BasicUtils.sendIntent(getActivity(), DynamicGridActivity.class);
+                    case "DynamicGridActivity":
+                           BasicUtils.sendIntent(getActivity(), DynamicGridActivity.class);
                         break;
-                    case 2:
-                        BasicUtils.sendIntent(getActivity(), CoolDragAndDropActivity.class);
+                    case "CoolDragAndDropActivity":
+                           BasicUtils.sendIntent(getActivity(), CoolDragAndDropActivity.class);
                         break;
-                    case 3:
-                        BasicUtils.sendIntent(getActivity(), StickGridItemListActivity.class);
+                    case "StickGridItemListActivity":
+                           BasicUtils.sendIntent(getActivity(), StickGridItemListActivity.class);
                         break;
-                    case 4:
-                        BasicUtils.sendIntent(getActivity(), ListViewFilterActivity.class);
+                    case "ListViewFilterActivity":
+                           BasicUtils.sendIntent(getActivity(), ListViewFilterActivity.class);
                         break;
-                    case 5:
-                        BasicUtils.sendIntent(getActivity(), FlipViewActivity.class);
+                    case "FlipViewActivity":
+                           BasicUtils.sendIntent(getActivity(), FlipViewActivity.class);
                         break;
-                    case 6:
-                        BasicUtils.sendIntent(getActivity(), PhotoViewActivity.class);
+                    case "PhotoViewActivity":
+                           BasicUtils.sendIntent(getActivity(), PhotoViewActivity.class);
                         break;
-                    case 7:
-                        BasicUtils.sendIntent(getActivity(), FoldingActivitys.class);
+                    case "FoldingActivitys":
+                           BasicUtils.sendIntent(getActivity(), FoldingActivitys.class);
                         break;
-                    case 8:
-                        BasicUtils.sendIntent(getActivity(), CircularBarActivity.class);
+                    case "CircularBarActivity":
+                           BasicUtils.sendIntent(getActivity(), CircularBarActivity.class);
                         break;
-                    case 9:
-                        BasicUtils.sendIntent(getActivity(), FoldableListActivity.class);
+                    case "FoldableListActivity":
+                           BasicUtils.sendIntent(getActivity(), FoldableListActivity.class);
                         break;
-                    case 10:
-                        BasicUtils.sendIntent(getActivity(), UnfoldableDetailsActivity.class);
+                    case "UnfoldableDetailsActivity":
+                           BasicUtils.sendIntent(getActivity(), UnfoldableDetailsActivity.class);
                         break;
-                    case 11:
-                        BasicUtils.sendIntent(getActivity(), CalendarSquareActivity.class);
+                    case "CalendarSquareActivity":
+                           BasicUtils.sendIntent(getActivity(), CalendarSquareActivity.class);
                         break;
-                    case 12:
-                        BasicUtils.sendIntent(getActivity(), FaceCropActivity.class);
+                    case "FaceCropActivity":
+                           BasicUtils.sendIntent(getActivity(), FaceCropActivity.class);
                         break;
-                    case 13:
-                        BasicUtils.sendIntent(getActivity(), KenBurnsViewActivity.class);
+                    case "KenBurnsViewActivity":
+                           BasicUtils.sendIntent(getActivity(), KenBurnsViewActivity.class);
                         break;
-                    case 14:
-                        BasicUtils.sendIntent(getActivity(), DiscrollActivity.class);
+                    case "DiscrollActivity":
+                           BasicUtils.sendIntent(getActivity(), DiscrollActivity.class);
                         break;
-                    case 15:
-                        BasicUtils.sendIntent(getActivity(), PanningViewActivity.class);
+                    case "PanningViewActivity":
+                           BasicUtils.sendIntent(getActivity(), PanningViewActivity.class);
                         break;
-                    case 16:
-                        BasicUtils.sendIntent(getActivity(), ParallaxScrollActivity.class);
+                    case "ParallaxScrollActivity":
+                           BasicUtils.sendIntent(getActivity(), ParallaxScrollActivity.class);
                         break;
-                    case 17:
-                        BasicUtils.sendIntent(getActivity(), ProgressbarWheelActivity.class);
+                    case "ProgressbarWheelActivity":
+                           BasicUtils.sendIntent(getActivity(), ProgressbarWheelActivity.class);
                         break;
-                    case 18:
-                        BasicUtils.sendIntent(getActivity(), ViewpagerSlidingTabsActivity.class);
+                    case "ViewpagerSlidingTabsActivity":
+                           BasicUtils.sendIntent(getActivity(), ViewpagerSlidingTabsActivity.class);
                         break;
-                    case 19:
-                        BasicUtils.sendIntent(getActivity(), ReboundActivity.class);
+                    case "ReboundActivity":
+                           BasicUtils.sendIntent(getActivity(), ReboundActivity.class);
                         break;
-                    case 20:
-                        BasicUtils.sendIntent(getActivity(), ReboundActivitySimple.class);
+                    case "ReboundActivitySimple":
+                           BasicUtils.sendIntent(getActivity(), ReboundActivitySimple.class);
                         break;
-                    case 21:
-                        BasicUtils.sendIntent(getActivity(), ListAnimationActivity.class);
+                    case "ListAnimationActivity":
+                           BasicUtils.sendIntent(getActivity(), ListAnimationActivity.class);
                         break;
-                    case 22:
-                        BasicUtils.sendIntent(getActivity(), PullSplashActivity.class);
+                    case "PullSplashActivity":
+                           BasicUtils.sendIntent(getActivity(), PullSplashActivity.class);
                         break;
-                    case 23:
-                        BasicUtils.sendIntent(getActivity(), UtilsDemoActivity.class);
+                    case "UtilsDemoActivity":
+                           BasicUtils.sendIntent(getActivity(), UtilsDemoActivity.class);
                         break;
-                    case 24:
-                        BasicUtils.sendIntent(getActivity(), ViewServerActivity.class);
+                    case "ViewServerActivity":
+                           BasicUtils.sendIntent(getActivity(), ViewServerActivity.class);
                         break;
-                    case 25:
-                        BasicUtils.sendIntent(getActivity(), PasscodePreferencesActivity.class);
+                    case "PasscodePreferencesActivity":
+                           BasicUtils.sendIntent(getActivity(), PasscodePreferencesActivity.class);
                         break;
-                    case 26:
-                        BasicUtils.sendIntent(getActivity(), GestureTouchActivity.class);
+                    case "GestureTouchActivity":
+                           BasicUtils.sendIntent(getActivity(), GestureTouchActivity.class);
                         break;
-                    case 27:
-                        BasicUtils.sendIntent(getActivity(), ActivityAnimationsActivity.class);
+                    case "ActivityAnimationsActivity":
+                           BasicUtils.sendIntent(getActivity(), ActivityAnimationsActivity.class);
                         break;
-                    case 28:
-                        BasicUtils.sendIntent(getActivity(), PullScrollViewActivity.class);
+                    case "PullScrollViewActivity":
+                           BasicUtils.sendIntent(getActivity(), PullScrollViewActivity.class);
                         break;
-                    case 29:
-                        BasicUtils.sendIntent(getActivity(), CardsSwipedActivity.class);
+                    case "CardsSwipedActivity":
+                           BasicUtils.sendIntent(getActivity(), CardsSwipedActivity.class);
                         break;
-                    case 30:
-                        BasicUtils.sendIntent(getActivity(), ShowCaseSampleActivity.class);
+                    case "ShowCaseSampleActivity":
+                           BasicUtils.sendIntent(getActivity(), ShowCaseSampleActivity.class);
                         break;
-                    case 31:
-                        BasicUtils.sendIntent(getActivity(), ListBuddiesActivity.class);
+                    case "ListBuddiesActivity":
+                           BasicUtils.sendIntent(getActivity(), ListBuddiesActivity.class);
                         break;
 //                    case 32:
 //                        BasicUtils.sendIntent(getActivity(), ResideMenuActivity.class);
 //                        break;
-                    case 32:
-                        BasicUtils.sendIntent(getActivity(), ActivityTransitionActivity.class);
+                    case "ActivityTransitionActivity":
+                           BasicUtils.sendIntent(getActivity(), ActivityTransitionActivity.class);
                         break;
-                    case 33:
-                        BasicUtils.sendIntent(getActivity(), AutofitTextViewActivity.class);
+                    case "AutofitTextViewActivity":
+                           BasicUtils.sendIntent(getActivity(), AutofitTextViewActivity.class);
                         break;
-                    case 34:
-                        BasicUtils.sendIntent(getActivity(), DraggableGridViewPagerTestActivity.class);
+                    case "DraggableGridViewPagerTestActivity":
+                           BasicUtils.sendIntent(getActivity(), DraggableGridViewPagerTestActivity.class);
                         break;
-                    case 35:
-                        BasicUtils.sendIntent(getActivity(), FloatLabelActivity.class);
+                    case "FloatLabelActivity":
+                           BasicUtils.sendIntent(getActivity(), FloatLabelActivity.class);
                         break;
-                    case 36:
-                        BasicUtils.sendIntent(getActivity(), WireFrameActivity.class);
+                    case "WireFrameActivity":
+                           BasicUtils.sendIntent(getActivity(), WireFrameActivity.class);
                         break;
-                    case 37:
-                        BasicUtils.sendIntent(getActivity(), TriangleFrameActivity.class);
+                    case "TriangleFrameActivity":
+                           BasicUtils.sendIntent(getActivity(), TriangleFrameActivity.class);
                         break;
-                    case 38:
-                        BasicUtils.sendIntent(getActivity(), RiseNumberActivity.class);
+                    case "RiseNumberActivity":
+                           BasicUtils.sendIntent(getActivity(), RiseNumberActivity.class);
                         break;
-                    case 39:
-                        BasicUtils.sendIntent(getActivity(), NiftyDialogActivity.class);
+                    case "NiftyDialogActivity":
+                           BasicUtils.sendIntent(getActivity(), NiftyDialogActivity.class);
                         break;
-                    case 40:
-                        BasicUtils.sendIntent(getActivity(), DifferentIconsActivity.class);
+                    case "DifferentIconsActivity":
+                           BasicUtils.sendIntent(getActivity(), DifferentIconsActivity.class);
                         break;
-                    case 41:
-                        BasicUtils.sendIntent(getActivity(), EdgeEffectActivity.class);
+                    case "EdgeEffectActivity":
+                           BasicUtils.sendIntent(getActivity(), EdgeEffectActivity.class);
                         break;
-                    case 42:
-                        BasicUtils.sendIntent(getActivity(), ViewPagerTransformerActivity.class);
+                    case "ViewPagerTransformerActivity":
+                           BasicUtils.sendIntent(getActivity(), ViewPagerTransformerActivity.class);
                         break;
-                    case 43:
-                        BasicUtils.sendIntent(getActivity(), ConfigureStandupTimer.class);
+                    case "ConfigureStandupTimer":
+                           BasicUtils.sendIntent(getActivity(), ConfigureStandupTimer.class);
                         break;
-                    case 44:
-                        BasicUtils.sendIntent(getActivity(), CircularProgressButtonActivity.class);
+                    case "CircularProgressButtonActivity":
+                           BasicUtils.sendIntent(getActivity(), CircularProgressButtonActivity.class);
                         break;
-                    case 45:
-                        BasicUtils.sendIntent(getActivity(), JazzyViewActivity.class);
+                    case "JazzyViewActivity":
+                           BasicUtils.sendIntent(getActivity(), JazzyViewActivity.class);
                         break;
-                    case 46:
-                        BasicUtils.sendIntent(getActivity(), PulltoZoomListViewActivity.class);
+                    case "PulltoZoomListViewActivity":
+                           BasicUtils.sendIntent(getActivity(), PulltoZoomListViewActivity.class);
                         break;
-                    case 47:
-                        BasicUtils.sendIntent(getActivity(), QuickReturnListViewActivity.class);
+                    case "QuickReturnListViewActivity":
+                           BasicUtils.sendIntent(getActivity(), QuickReturnListViewActivity.class);
                         break;
-                    case 48:
-                        BasicUtils.sendIntent(getActivity(), SuperListViewActivity.class);
+                    case "SuperListViewActivity":
+                           BasicUtils.sendIntent(getActivity(), SuperListViewActivity.class);
                         break;
-                    case 49:
-                        BasicUtils.sendIntent(getActivity(), StaggeredGridViewActivity.class);
+                    case "StaggeredGridViewActivity":
+                           BasicUtils.sendIntent(getActivity(), StaggeredGridViewActivity.class);
                         break;
-                    case 50:
-                        BasicUtils.sendIntent(getActivity(), DropDownListViewDemo.class);
+                    case "DropDownListViewDemo":
+                           BasicUtils.sendIntent(getActivity(), DropDownListViewDemo.class);
                         break;
-                    case 51:
-                        BasicUtils.sendIntent(getActivity(), FlowTextViewActivity.class);
+                    case "FlowTextViewActivity":
+                           BasicUtils.sendIntent(getActivity(), FlowTextViewActivity.class);
                         break;
-                    case 52:
-                        BasicUtils.sendIntent(getActivity(), GoogleProgressBarActivity.class);
+                    case "GoogleProgressBarActivity":
+                           BasicUtils.sendIntent(getActivity(), GoogleProgressBarActivity.class);
                         break;
-                    case 53:
-                        BasicUtils.sendIntent(getActivity(), NumberProgressBarActivity.class);
+                    case "NumberProgressBarActivity":
+                           BasicUtils.sendIntent(getActivity(), NumberProgressBarActivity.class);
                         break;
-                    case 54:
-                        BasicUtils.sendIntent(getActivity(), FancyCoverFlowActivity.class);
+                    case "FancyCoverFlowActivity":
+                           BasicUtils.sendIntent(getActivity(), FancyCoverFlowActivity.class);
                         break;
-                    case 55:
-                        BasicUtils.sendIntent(getActivity(), SingleChoiceListView.class);
+                    case "SingleChoiceListView":
+                           BasicUtils.sendIntent(getActivity(), SingleChoiceListView.class);
                         break;
-                    case 56:
-                        BasicUtils.sendIntent(getActivity(), MultipleChoiceListView.class);
+                    case "MultipleChoiceListView":
+                           BasicUtils.sendIntent(getActivity(), MultipleChoiceListView.class);
                         break;
-                    case 57:
-                        BasicUtils.sendIntent(getActivity(), HomeActivity.class);
+                    case "HomeActivity":
+                           BasicUtils.sendIntent(getActivity(), HomeActivity.class);
                         break;
-                    case 58:
-                        BasicUtils.sendIntent(getActivity(), SwipeRefreshLayoutDemo.class);
+                    case "SwipeRefreshLayoutDemo":
+                           BasicUtils.sendIntent(getActivity(), SwipeRefreshLayoutDemo.class);
                         break;
-                    case 59:
-                        BasicUtils.sendIntent(getActivity(), UltimateListviewActivity.class);
+                    case "UltimateListviewActivity":
+                           BasicUtils.sendIntent(getActivity(), UltimateListviewActivity.class);
                         break;
-                    case 60:
-                        BasicUtils.sendIntent(getActivity(), ResideMenuActivity.class);
+                    case "ResideMenuActivity":
+                           BasicUtils.sendIntent(getActivity(), ResideMenuActivity.class);
                         break;
-                    case 61:
-                        BasicUtils.sendIntent(getActivity(), SwipeLayoutActivity.class);
+                    case "SwipeLayoutActivity":
+                           BasicUtils.sendIntent(getActivity(), SwipeLayoutActivity.class);
                         break;
-                    case 62:
-                        BasicUtils.sendIntent(getActivity(), AndroidAnimationsDemoActivity.class);
+                    case "AndroidAnimationsDemoActivity":
+                           BasicUtils.sendIntent(getActivity(), AndroidAnimationsDemoActivity.class);
                         break;
-                    case 63:
-                        BasicUtils.sendIntent(getActivity(), EasingActivity.class);
+                    case "EasingActivity":
+                           BasicUtils.sendIntent(getActivity(), EasingActivity.class);
                         break;
-                    case 64:
-                        BasicUtils.sendIntent(getActivity(), JumpingBeansActivity.class);
+                    case "JumpingBeansActivity":
+                           BasicUtils.sendIntent(getActivity(), JumpingBeansActivity.class);
                         break;
-                    case 65:
-                        BasicUtils.sendIntent(getActivity(), AndroidViewHoverActivity.class);
+                    case "AndroidViewHoverActivity":
+                           BasicUtils.sendIntent(getActivity(), AndroidViewHoverActivity.class);
                         break;
-                    case 66:
-                        BasicUtils.sendIntent(getActivity(), SliderActivity.class);
+                    case "SliderActivity":
+                           BasicUtils.sendIntent(getActivity(), SliderActivity.class);
                         break;
-                    case 67:
-                        BasicUtils.sendIntent(getActivity(), CalendarListViewActivity.class);
+                    case "CalendarListViewActivity":
+                           BasicUtils.sendIntent(getActivity(), CalendarListViewActivity.class);
                         break;
-                    case 68:
-                        BasicUtils.sendIntent(getActivity(), EasyAnimationListActivity.class);
+                    case "EasyAnimationListActivity":
+                           BasicUtils.sendIntent(getActivity(), EasyAnimationListActivity.class);
                         break;
-                    case 69:
-                        BasicUtils.sendIntent(getActivity(), ImageProcessingActivity.class);
+                    case "ImageProcessingActivity":
+                           BasicUtils.sendIntent(getActivity(), ImageProcessingActivity.class);
                         break;
-                    case 70:
-                        BasicUtils.sendIntent(getActivity(), ImageProcessingVideotoImageActivity.class);
+                    case "ImageProcessingVideotoImageActivity":
+                           BasicUtils.sendIntent(getActivity(), ImageProcessingVideotoImageActivity.class);
                         break;
-                    case 71:
-                        BasicUtils.sendIntent(getActivity(), TestHTML5WebView.class);
+                    case "TestHTML5WebView":
+                           BasicUtils.sendIntent(getActivity(), TestHTML5WebView.class);
                         break;
-                    case 72:
-                        BasicUtils.sendIntent(getActivity(), CropExample.class);
+                    case "CropExample":
+                           BasicUtils.sendIntent(getActivity(), CropExample.class);
                         break;
-                    case 73:
-                        BasicUtils.sendIntent(getActivity(), CropperSample.class);
+                    case "CropperSample":
+                           BasicUtils.sendIntent(getActivity(), CropperSample.class);
                         break;
-                    case 74:
-                        BasicUtils.sendIntent(getActivity(), ImageFilterActivity.class);
+                    case "ImageFilterActivity":
+                           BasicUtils.sendIntent(getActivity(), ImageFilterActivity.class);
                         break;
-                    case 75:
-                        BasicUtils.sendIntent(getActivity(), MotionSampleActivity.class);
+                    case "MotionSampleActivity":
+                           BasicUtils.sendIntent(getActivity(), MotionSampleActivity.class);
                         break;
-                    case 76:
-                        BasicUtils.sendIntent(getActivity(), ShapeImageViewActivity.class);
+                    case "ShapeImageViewActivity":
+                           BasicUtils.sendIntent(getActivity(), ShapeImageViewActivity.class);
                         break;
-                    case 77:
-                        BasicUtils.sendIntent(getActivity(), CustomShapeImageViewActivity.class);
+                    case "CustomShapeImageViewActivity":
+                           BasicUtils.sendIntent(getActivity(), CustomShapeImageViewActivity.class);
                         break;
-                    case 78:
-                        BasicUtils.sendIntent(getActivity(), MarqueeViewSample.class);
+                    case "MarqueeViewSample":
+                           BasicUtils.sendIntent(getActivity(), MarqueeViewSample.class);
                         break;
-                    case 79:
-                        BasicUtils.sendIntent(getActivity(), SignaturePadActivity.class);
+                    case "SignaturePadActivity":
+                           BasicUtils.sendIntent(getActivity(), SignaturePadActivity.class);
                         break;
-                    case 80:
-                        BasicUtils.sendIntent(getActivity(), DrawableActivity.class);
+                    case "DrawableActivity":
+                           BasicUtils.sendIntent(getActivity(), DrawableActivity.class);
                         break;
-                    case 81:
-                        BasicUtils.sendIntent(getActivity(), AndroidWeekViewActivity.class);
+                    case "AndroidWeekViewActivity":
+                           BasicUtils.sendIntent(getActivity(), AndroidWeekViewActivity.class);
                         break;
-                    case 82:
-                        BasicUtils.sendIntent(getActivity(), FilckerAnimationListActivity.class);
+                    case "FilckerAnimationListActivity":
+                           BasicUtils.sendIntent(getActivity(), FilckerAnimationListActivity.class);
                         break;
-                    case 83:
-                        BasicUtils.sendIntent(getActivity(), ArcMenuActivity.class);
+                    case "ArcMenuActivity":
+                           BasicUtils.sendIntent(getActivity(), ArcMenuActivity.class);
                         break;
-                    case 84:
-                        BasicUtils.sendIntent(getActivity(), ExpandCircleProgressExampleActivity.class);
+                    case "ExpandCircleProgressExampleActivity":
+                           BasicUtils.sendIntent(getActivity(), ExpandCircleProgressExampleActivity.class);
                         break;
-                    case 85:
-                        BasicUtils.sendIntent(getActivity(), FreeFlowArtbookActivity.class);
+                    case "FreeFlowArtbookActivity":
+                           BasicUtils.sendIntent(getActivity(), FreeFlowArtbookActivity.class);
                         break;
-                    case 86:
-                        BasicUtils.sendIntent(getActivity(), FreeFlowPhotoGridActivity.class);
+                    case "FreeFlowPhotoGridActivity":
+                           BasicUtils.sendIntent(getActivity(), FreeFlowPhotoGridActivity.class);
                         break;
-                    case 87:
-                        BasicUtils.sendIntent(getActivity(), RecyclerViewSample.class);
+                    case "RecyclerViewSample":
+                           BasicUtils.sendIntent(getActivity(), RecyclerViewSample.class);
                         break;
-                    case 88:
-                        BasicUtils.sendIntent(getActivity(), RecyclerViewItemAnimatorActivity.class);
+                    case "RecyclerViewItemAnimatorActivity":
+                           BasicUtils.sendIntent(getActivity(), RecyclerViewItemAnimatorActivity.class);
                         break;
 
 
