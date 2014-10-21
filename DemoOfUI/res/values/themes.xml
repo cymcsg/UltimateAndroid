@@ -41,7 +41,7 @@
 
     <style name="ActionbarStyle" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
         <item name="background">@color/nav_bg</item>
-        <item name="android:background">@color/red</item>
+        <item name="android:background">@color/LightBlue</item>
         <item name="titleTextStyle">@style/MyActionBarTitleText</item>
         <item name="android:titleTextStyle" tools:ignore="NewApi">@style/MyActionBarTitleText</item>
     </style>

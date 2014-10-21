@@ -2,6 +2,8 @@ package com.marshalchen.common.demoofui.sampleModules;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.view.GestureDetectorCompat;
+import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -39,6 +41,31 @@ public class RecyclerViewSample extends Activity {
         }
         mAdapter = new MyAdapter(mDataset);
         mRecyclerView.setAdapter(mAdapter);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+
+        layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+
+        layoutManager.scrollToPosition(0);
+
+        mRecyclerView.setLayoutManager(layoutManager);
+//        RecyclerView.ItemDecoration itemDecoration =
+//        new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST);
+//        mRecyclerView.addItemDecoration(itemDecoration);
+
+// this is the default;
+// this call is actually only necessary with custom ItemAnimators
+        mRecyclerView.setItemAnimator(new DefaultItemAnimator());
+
+// onClickDetection is done in this Activity's OnItemTouchListener
+// with the help of a GestureDetector;
+// Tip by Ian Lake on G+ in a comment to this post:
+// https://plus.google.com/+LucasRocha/posts/37U8GWtYxDE
+//        mRecyclerView.addOnItemTouchListener(this);
+//        gesturedetector =
+//        new GestureDetectorCompat(this, new RecyclerViewDemoOnGestureListener());
+
+
+
     }
 
 

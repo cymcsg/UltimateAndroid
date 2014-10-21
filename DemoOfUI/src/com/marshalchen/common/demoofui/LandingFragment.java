@@ -28,6 +28,7 @@ import com.marshalchen.common.demoofui.fadingactionbar.HomeActivity;
 import com.marshalchen.common.demoofui.fancyCoverFlow.FancyCoverFlowActivity;
 import com.marshalchen.common.demoofui.imageprocessingexample.ImageProcessingActivity;
 import com.marshalchen.common.demoofui.imageprocessingexample.ImageProcessingVideotoImageActivity;
+import com.marshalchen.common.demoofui.recyclerviewitemanimator.RecyclerViewItemAnimatorActivity;
 import com.marshalchen.common.demoofui.sampleModules.GoogleProgressBarActivity;
 import com.marshalchen.common.demoofui.quickreturnlistview.QuickReturnListViewActivity;
 import com.marshalchen.common.demoofui.shapeimageview.ShapeImageViewActivity;
@@ -559,6 +560,11 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "RecylerViewSample");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "RecylerView");
+        map.put("detail", "try");
+        map.put("subname", "RecylerViewItem");
+        enhanceList.add(map);
 
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -845,6 +851,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case 87:
                         BasicUtils.sendIntent(getActivity(), RecyclerViewSample.class);
+                        break;
+                    case 88:
+                        BasicUtils.sendIntent(getActivity(), RecyclerViewItemAnimatorActivity.class);
                         break;
 
 
