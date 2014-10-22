@@ -135,7 +135,13 @@ public class LandingFragment extends Fragment {
         map.put("name", "Floating");
         map.put("detail", "try");
         map.put("subname", "FloatingActionButton");
-        map.put("class", "FloatingActionButtonActivity");
+        map.put("class", "FloatedActionButtonActivity");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "Floating");
+        map.put("detail", "try");
+        map.put("subname", "FloatingActionButton");
+        map.put("class", "FloatingActionButtonDemo");
         enhanceList.add(map);
 
         map = new HashMap<>();
@@ -960,8 +966,11 @@ public class LandingFragment extends Fragment {
                     case "RippleEffectActivity":
                         BasicUtils.sendIntent(getActivity(), RippleEffectActivity.class);
                         break;
-                    case "FloatingActionButtonActivity":
+                    case "FloatedActionButtonActivity":
                         BasicUtils.sendIntent(getActivity(), FloatingActionButtonActivity.class);
+                        break;
+                    case "FloatingActionButtonDemo":
+                        BasicUtils.sendIntent(getActivity(), FloatingActionButtonDemo.class);
                         break;
 
 
