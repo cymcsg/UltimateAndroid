@@ -132,6 +132,13 @@ public class LandingFragment extends Fragment {
         map.put("class", "RippleEffectActivity");
         enhanceList.add(map);
         map = new HashMap<>();
+        map.put("name", "Floating");
+        map.put("detail", "try");
+        map.put("subname", "FloatingActionButton");
+        map.put("class", "FloatingActionButtonActivity");
+        enhanceList.add(map);
+
+        map = new HashMap<>();
         map.put("name", "DynamicGrid");
         map.put("detail", "try");
         map.put("subname", "to DynamicGrid");
@@ -952,6 +959,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case "RippleEffectActivity":
                         BasicUtils.sendIntent(getActivity(), RippleEffectActivity.class);
+                        break;
+                    case "FloatingActionButtonActivity":
+                        BasicUtils.sendIntent(getActivity(), FloatingActionButtonActivity.class);
                         break;
 
 
