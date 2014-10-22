@@ -85,13 +85,13 @@ public class FloatingActionButton extends ImageButton {
   }
 
   private void initAttributes(Context context, AttributeSet attributeSet) {
-    TypedArray attr = context.obtainStyledAttributes(attributeSet, R.styleable.FloatingActionButton, 0, 0);
+    TypedArray attr = context.obtainStyledAttributes(attributeSet, R.styleable.FloatActionButton, 0, 0);
     if (attr != null) {
       try {
-        mColorNormal = attr.getColor(R.styleable.FloatingActionButton_colorNormal, getColor(android.R.color.holo_blue_dark));
-        mColorPressed = attr.getColor(R.styleable.FloatingActionButton_colorPressed, getColor(android.R.color.holo_blue_light));
-        mSize = attr.getInt(R.styleable.FloatingActionButton_size, SIZE_NORMAL);
-        mIcon = attr.getResourceId(R.styleable.FloatingActionButton_icon, 0);
+        mColorNormal = attr.getColor(R.styleable.FloatActionButton_colorNormal, getColor(android.R.color.holo_blue_dark));
+        mColorPressed = attr.getColor(R.styleable.FloatActionButton_colorPressed, getColor(android.R.color.holo_blue_light));
+        mSize = attr.getInt(R.styleable.FloatActionButton_size, SIZE_NORMAL);
+        mIcon = attr.getResourceId(R.styleable.FloatActionButton_icon, 0);
       } finally {
         attr.recycle();
       }

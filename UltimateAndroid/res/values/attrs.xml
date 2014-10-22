@@ -165,7 +165,7 @@
     </declare-styleable>
 
 
-    <declare-styleable name="FloatingActionButton">
+    <declare-styleable name="FloatActionButton">
         <attr name="colorPressed" format="color"/>
         <attr name="colorNormal" format="color"/>
         <attr name="icon" />

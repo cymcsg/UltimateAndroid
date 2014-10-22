@@ -25,7 +25,7 @@ import android.widget.FrameLayout;
 /**
  * Created by cym on 14-8-2.
  */
-public class FloatingActionButton extends View {
+public class FloatActionButton extends View {
 
     final static OvershootInterpolator overshootInterpolator = new OvershootInterpolator();
     final static AccelerateInterpolator accelerateInterpolator = new AccelerateInterpolator();
@@ -36,7 +36,7 @@ public class FloatingActionButton extends View {
     Bitmap mBitmap;
     boolean mHidden = false;
 
-    public FloatingActionButton(Context context) {
+    public FloatActionButton(Context context) {
         super(context);
         this.context = context;
         init(Color.WHITE);
@@ -47,7 +47,18 @@ public class FloatingActionButton extends View {
     }
 
     public void setFloatingActionButtonDrawable(Drawable FloatingActionButtonDrawable) {
-        mBitmap = ((BitmapDrawable) FloatingActionButtonDrawable).getBitmap();
+//        mBitmap = ((BitmapDrawable) FloatingActionButtonDrawable).getBitmap();
+
+
+        if(FloatingActionButtonDrawable instanceof BitmapDrawable) {
+            mBitmap  = ((BitmapDrawable)FloatingActionButtonDrawable).getBitmap();
+        }else{
+            Bitmap bitmap = Bitmap.createBitmap(FloatingActionButtonDrawable.getIntrinsicWidth(),FloatingActionButtonDrawable.getIntrinsicHeight(), Bitmap.Config.ARGB_8888);
+            Canvas canvas = new Canvas(bitmap);
+            FloatingActionButtonDrawable.setBounds(0, 0, canvas.getWidth(), canvas.getHeight());
+            FloatingActionButtonDrawable.draw(canvas);
+            mBitmap = bitmap;
+        }
         invalidate();
     }
 
@@ -175,8 +186,8 @@ public class FloatingActionButton extends View {
             return this;
         }
 
-        public FloatingActionButton create() {
-            final FloatingActionButton button = new FloatingActionButton(activity);
+        public FloatActionButton create() {
+            final FloatActionButton button = new FloatActionButton(activity);
             button.setFloatingActionButtonColor(this.color);
             button.setFloatingActionButtonDrawable(this.drawable);
             params.gravity = this.gravity;
