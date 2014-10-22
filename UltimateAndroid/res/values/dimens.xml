@@ -50,4 +50,10 @@
 
     <dimen name="fab_actions_spacing">16dp</dimen>
 
+
+
+    <dimen name="fab_shadow_size">8dp</dimen>
+    <dimen name="fab_mini_shadow_size">6dp</dimen>
+
+    <dimen name="fab_min_significant_scroll">4dp</dimen>
 </resources>
