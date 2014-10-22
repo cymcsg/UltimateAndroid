@@ -126,6 +126,12 @@ public class LandingFragment extends Fragment {
         map.put("class", "SmoothProgressBarActivity");
         enhanceList.add(map);
         map = new HashMap<>();
+        map.put("name", "RippleEffect");
+        map.put("detail", "try");
+        map.put("subname", "RippleEffect");
+        map.put("class", "RippleEffectActivity");
+        enhanceList.add(map);
+        map = new HashMap<>();
         map.put("name", "DynamicGrid");
         map.put("detail", "try");
         map.put("subname", "to DynamicGrid");
@@ -678,271 +684,274 @@ public class LandingFragment extends Fragment {
                         BasicUtils.sendIntent(getActivity(), SmoothProgressBarActivity.class);
                         break;
                     case "DynamicGridActivity":
-                           BasicUtils.sendIntent(getActivity(), DynamicGridActivity.class);
+                        BasicUtils.sendIntent(getActivity(), DynamicGridActivity.class);
                         break;
                     case "CoolDragAndDropActivity":
-                           BasicUtils.sendIntent(getActivity(), CoolDragAndDropActivity.class);
+                        BasicUtils.sendIntent(getActivity(), CoolDragAndDropActivity.class);
                         break;
                     case "StickGridItemListActivity":
-                           BasicUtils.sendIntent(getActivity(), StickGridItemListActivity.class);
+                        BasicUtils.sendIntent(getActivity(), StickGridItemListActivity.class);
                         break;
                     case "ListViewFilterActivity":
-                           BasicUtils.sendIntent(getActivity(), ListViewFilterActivity.class);
+                        BasicUtils.sendIntent(getActivity(), ListViewFilterActivity.class);
                         break;
                     case "FlipViewActivity":
-                           BasicUtils.sendIntent(getActivity(), FlipViewActivity.class);
+                        BasicUtils.sendIntent(getActivity(), FlipViewActivity.class);
                         break;
                     case "PhotoViewActivity":
-                           BasicUtils.sendIntent(getActivity(), PhotoViewActivity.class);
+                        BasicUtils.sendIntent(getActivity(), PhotoViewActivity.class);
                         break;
                     case "FoldingActivitys":
-                           BasicUtils.sendIntent(getActivity(), FoldingActivitys.class);
+                        BasicUtils.sendIntent(getActivity(), FoldingActivitys.class);
                         break;
                     case "CircularBarActivity":
-                           BasicUtils.sendIntent(getActivity(), CircularBarActivity.class);
+                        BasicUtils.sendIntent(getActivity(), CircularBarActivity.class);
                         break;
                     case "FoldableListActivity":
-                           BasicUtils.sendIntent(getActivity(), FoldableListActivity.class);
+                        BasicUtils.sendIntent(getActivity(), FoldableListActivity.class);
                         break;
                     case "UnfoldableDetailsActivity":
-                           BasicUtils.sendIntent(getActivity(), UnfoldableDetailsActivity.class);
+                        BasicUtils.sendIntent(getActivity(), UnfoldableDetailsActivity.class);
                         break;
                     case "CalendarSquareActivity":
-                           BasicUtils.sendIntent(getActivity(), CalendarSquareActivity.class);
+                        BasicUtils.sendIntent(getActivity(), CalendarSquareActivity.class);
                         break;
                     case "FaceCropActivity":
-                           BasicUtils.sendIntent(getActivity(), FaceCropActivity.class);
+                        BasicUtils.sendIntent(getActivity(), FaceCropActivity.class);
                         break;
                     case "KenBurnsViewActivity":
-                           BasicUtils.sendIntent(getActivity(), KenBurnsViewActivity.class);
+                        BasicUtils.sendIntent(getActivity(), KenBurnsViewActivity.class);
                         break;
                     case "DiscrollActivity":
-                           BasicUtils.sendIntent(getActivity(), DiscrollActivity.class);
+                        BasicUtils.sendIntent(getActivity(), DiscrollActivity.class);
                         break;
                     case "PanningViewActivity":
-                           BasicUtils.sendIntent(getActivity(), PanningViewActivity.class);
+                        BasicUtils.sendIntent(getActivity(), PanningViewActivity.class);
                         break;
                     case "ParallaxScrollActivity":
-                           BasicUtils.sendIntent(getActivity(), ParallaxScrollActivity.class);
+                        BasicUtils.sendIntent(getActivity(), ParallaxScrollActivity.class);
                         break;
                     case "ProgressbarWheelActivity":
-                           BasicUtils.sendIntent(getActivity(), ProgressbarWheelActivity.class);
+                        BasicUtils.sendIntent(getActivity(), ProgressbarWheelActivity.class);
                         break;
                     case "ViewpagerSlidingTabsActivity":
-                           BasicUtils.sendIntent(getActivity(), ViewpagerSlidingTabsActivity.class);
+                        BasicUtils.sendIntent(getActivity(), ViewpagerSlidingTabsActivity.class);
                         break;
                     case "ReboundActivity":
-                           BasicUtils.sendIntent(getActivity(), ReboundActivity.class);
+                        BasicUtils.sendIntent(getActivity(), ReboundActivity.class);
                         break;
                     case "ReboundActivitySimple":
-                           BasicUtils.sendIntent(getActivity(), ReboundActivitySimple.class);
+                        BasicUtils.sendIntent(getActivity(), ReboundActivitySimple.class);
                         break;
                     case "ListAnimationActivity":
-                           BasicUtils.sendIntent(getActivity(), ListAnimationActivity.class);
+                        BasicUtils.sendIntent(getActivity(), ListAnimationActivity.class);
                         break;
                     case "PullSplashActivity":
-                           BasicUtils.sendIntent(getActivity(), PullSplashActivity.class);
+                        BasicUtils.sendIntent(getActivity(), PullSplashActivity.class);
                         break;
                     case "UtilsDemoActivity":
-                           BasicUtils.sendIntent(getActivity(), UtilsDemoActivity.class);
+                        BasicUtils.sendIntent(getActivity(), UtilsDemoActivity.class);
                         break;
                     case "ViewServerActivity":
-                           BasicUtils.sendIntent(getActivity(), ViewServerActivity.class);
+                        BasicUtils.sendIntent(getActivity(), ViewServerActivity.class);
                         break;
                     case "PasscodePreferencesActivity":
-                           BasicUtils.sendIntent(getActivity(), PasscodePreferencesActivity.class);
+                        BasicUtils.sendIntent(getActivity(), PasscodePreferencesActivity.class);
                         break;
                     case "GestureTouchActivity":
-                           BasicUtils.sendIntent(getActivity(), GestureTouchActivity.class);
+                        BasicUtils.sendIntent(getActivity(), GestureTouchActivity.class);
                         break;
                     case "ActivityAnimationsActivity":
-                           BasicUtils.sendIntent(getActivity(), ActivityAnimationsActivity.class);
+                        BasicUtils.sendIntent(getActivity(), ActivityAnimationsActivity.class);
                         break;
                     case "PullScrollViewActivity":
-                           BasicUtils.sendIntent(getActivity(), PullScrollViewActivity.class);
+                        BasicUtils.sendIntent(getActivity(), PullScrollViewActivity.class);
                         break;
                     case "CardsSwipedActivity":
-                           BasicUtils.sendIntent(getActivity(), CardsSwipedActivity.class);
+                        BasicUtils.sendIntent(getActivity(), CardsSwipedActivity.class);
                         break;
                     case "ShowCaseSampleActivity":
-                           BasicUtils.sendIntent(getActivity(), ShowCaseSampleActivity.class);
+                        BasicUtils.sendIntent(getActivity(), ShowCaseSampleActivity.class);
                         break;
                     case "ListBuddiesActivity":
-                           BasicUtils.sendIntent(getActivity(), ListBuddiesActivity.class);
+                        BasicUtils.sendIntent(getActivity(), ListBuddiesActivity.class);
                         break;
 //                    case 32:
 //                        BasicUtils.sendIntent(getActivity(), ResideMenuActivity.class);
 //                        break;
                     case "ActivityTransitionActivity":
-                           BasicUtils.sendIntent(getActivity(), ActivityTransitionActivity.class);
+                        BasicUtils.sendIntent(getActivity(), ActivityTransitionActivity.class);
                         break;
                     case "AutofitTextViewActivity":
-                           BasicUtils.sendIntent(getActivity(), AutofitTextViewActivity.class);
+                        BasicUtils.sendIntent(getActivity(), AutofitTextViewActivity.class);
                         break;
                     case "DraggableGridViewPagerTestActivity":
-                           BasicUtils.sendIntent(getActivity(), DraggableGridViewPagerTestActivity.class);
+                        BasicUtils.sendIntent(getActivity(), DraggableGridViewPagerTestActivity.class);
                         break;
                     case "FloatLabelActivity":
-                           BasicUtils.sendIntent(getActivity(), FloatLabelActivity.class);
+                        BasicUtils.sendIntent(getActivity(), FloatLabelActivity.class);
                         break;
                     case "WireFrameActivity":
-                           BasicUtils.sendIntent(getActivity(), WireFrameActivity.class);
+                        BasicUtils.sendIntent(getActivity(), WireFrameActivity.class);
                         break;
                     case "TriangleFrameActivity":
-                           BasicUtils.sendIntent(getActivity(), TriangleFrameActivity.class);
+                        BasicUtils.sendIntent(getActivity(), TriangleFrameActivity.class);
                         break;
                     case "RiseNumberActivity":
-                           BasicUtils.sendIntent(getActivity(), RiseNumberActivity.class);
+                        BasicUtils.sendIntent(getActivity(), RiseNumberActivity.class);
                         break;
                     case "NiftyDialogActivity":
-                           BasicUtils.sendIntent(getActivity(), NiftyDialogActivity.class);
+                        BasicUtils.sendIntent(getActivity(), NiftyDialogActivity.class);
                         break;
                     case "DifferentIconsActivity":
-                           BasicUtils.sendIntent(getActivity(), DifferentIconsActivity.class);
+                        BasicUtils.sendIntent(getActivity(), DifferentIconsActivity.class);
                         break;
                     case "EdgeEffectActivity":
-                           BasicUtils.sendIntent(getActivity(), EdgeEffectActivity.class);
+                        BasicUtils.sendIntent(getActivity(), EdgeEffectActivity.class);
                         break;
                     case "ViewPagerTransformerActivity":
-                           BasicUtils.sendIntent(getActivity(), ViewPagerTransformerActivity.class);
+                        BasicUtils.sendIntent(getActivity(), ViewPagerTransformerActivity.class);
                         break;
                     case "ConfigureStandupTimer":
-                           BasicUtils.sendIntent(getActivity(), ConfigureStandupTimer.class);
+                        BasicUtils.sendIntent(getActivity(), ConfigureStandupTimer.class);
                         break;
                     case "CircularProgressButtonActivity":
-                           BasicUtils.sendIntent(getActivity(), CircularProgressButtonActivity.class);
+                        BasicUtils.sendIntent(getActivity(), CircularProgressButtonActivity.class);
                         break;
                     case "JazzyViewActivity":
-                           BasicUtils.sendIntent(getActivity(), JazzyViewActivity.class);
+                        BasicUtils.sendIntent(getActivity(), JazzyViewActivity.class);
                         break;
                     case "PulltoZoomListViewActivity":
-                           BasicUtils.sendIntent(getActivity(), PulltoZoomListViewActivity.class);
+                        BasicUtils.sendIntent(getActivity(), PulltoZoomListViewActivity.class);
                         break;
                     case "QuickReturnListViewActivity":
-                           BasicUtils.sendIntent(getActivity(), QuickReturnListViewActivity.class);
+                        BasicUtils.sendIntent(getActivity(), QuickReturnListViewActivity.class);
                         break;
                     case "SuperListViewActivity":
-                           BasicUtils.sendIntent(getActivity(), SuperListViewActivity.class);
+                        BasicUtils.sendIntent(getActivity(), SuperListViewActivity.class);
                         break;
                     case "StaggeredGridViewActivity":
-                           BasicUtils.sendIntent(getActivity(), StaggeredGridViewActivity.class);
+                        BasicUtils.sendIntent(getActivity(), StaggeredGridViewActivity.class);
                         break;
                     case "DropDownListViewDemo":
-                           BasicUtils.sendIntent(getActivity(), DropDownListViewDemo.class);
+                        BasicUtils.sendIntent(getActivity(), DropDownListViewDemo.class);
                         break;
                     case "FlowTextViewActivity":
-                           BasicUtils.sendIntent(getActivity(), FlowTextViewActivity.class);
+                        BasicUtils.sendIntent(getActivity(), FlowTextViewActivity.class);
                         break;
                     case "GoogleProgressBarActivity":
-                           BasicUtils.sendIntent(getActivity(), GoogleProgressBarActivity.class);
+                        BasicUtils.sendIntent(getActivity(), GoogleProgressBarActivity.class);
                         break;
                     case "NumberProgressBarActivity":
-                           BasicUtils.sendIntent(getActivity(), NumberProgressBarActivity.class);
+                        BasicUtils.sendIntent(getActivity(), NumberProgressBarActivity.class);
                         break;
                     case "FancyCoverFlowActivity":
-                           BasicUtils.sendIntent(getActivity(), FancyCoverFlowActivity.class);
+                        BasicUtils.sendIntent(getActivity(), FancyCoverFlowActivity.class);
                         break;
                     case "SingleChoiceListView":
-                           BasicUtils.sendIntent(getActivity(), SingleChoiceListView.class);
+                        BasicUtils.sendIntent(getActivity(), SingleChoiceListView.class);
                         break;
                     case "MultipleChoiceListView":
-                           BasicUtils.sendIntent(getActivity(), MultipleChoiceListView.class);
+                        BasicUtils.sendIntent(getActivity(), MultipleChoiceListView.class);
                         break;
                     case "HomeActivity":
-                           BasicUtils.sendIntent(getActivity(), HomeActivity.class);
+                        BasicUtils.sendIntent(getActivity(), HomeActivity.class);
                         break;
                     case "SwipeRefreshLayoutDemo":
-                           BasicUtils.sendIntent(getActivity(), SwipeRefreshLayoutDemo.class);
+                        BasicUtils.sendIntent(getActivity(), SwipeRefreshLayoutDemo.class);
                         break;
                     case "UltimateListviewActivity":
-                           BasicUtils.sendIntent(getActivity(), UltimateListviewActivity.class);
+                        BasicUtils.sendIntent(getActivity(), UltimateListviewActivity.class);
                         break;
                     case "ResideMenuActivity":
-                           BasicUtils.sendIntent(getActivity(), ResideMenuActivity.class);
+                        BasicUtils.sendIntent(getActivity(), ResideMenuActivity.class);
                         break;
                     case "SwipeLayoutActivity":
-                           BasicUtils.sendIntent(getActivity(), SwipeLayoutActivity.class);
+                        BasicUtils.sendIntent(getActivity(), SwipeLayoutActivity.class);
                         break;
                     case "AndroidAnimationsDemoActivity":
-                           BasicUtils.sendIntent(getActivity(), AndroidAnimationsDemoActivity.class);
+                        BasicUtils.sendIntent(getActivity(), AndroidAnimationsDemoActivity.class);
                         break;
                     case "EasingActivity":
-                           BasicUtils.sendIntent(getActivity(), EasingActivity.class);
+                        BasicUtils.sendIntent(getActivity(), EasingActivity.class);
                         break;
                     case "JumpingBeansActivity":
-                           BasicUtils.sendIntent(getActivity(), JumpingBeansActivity.class);
+                        BasicUtils.sendIntent(getActivity(), JumpingBeansActivity.class);
                         break;
                     case "AndroidViewHoverActivity":
-                           BasicUtils.sendIntent(getActivity(), AndroidViewHoverActivity.class);
+                        BasicUtils.sendIntent(getActivity(), AndroidViewHoverActivity.class);
                         break;
                     case "SliderActivity":
-                           BasicUtils.sendIntent(getActivity(), SliderActivity.class);
+                        BasicUtils.sendIntent(getActivity(), SliderActivity.class);
                         break;
                     case "CalendarListViewActivity":
-                           BasicUtils.sendIntent(getActivity(), CalendarListViewActivity.class);
+                        BasicUtils.sendIntent(getActivity(), CalendarListViewActivity.class);
                         break;
                     case "EasyAnimationListActivity":
-                           BasicUtils.sendIntent(getActivity(), EasyAnimationListActivity.class);
+                        BasicUtils.sendIntent(getActivity(), EasyAnimationListActivity.class);
                         break;
                     case "ImageProcessingActivity":
-                           BasicUtils.sendIntent(getActivity(), ImageProcessingActivity.class);
+                        BasicUtils.sendIntent(getActivity(), ImageProcessingActivity.class);
                         break;
                     case "ImageProcessingVideotoImageActivity":
-                           BasicUtils.sendIntent(getActivity(), ImageProcessingVideotoImageActivity.class);
+                        BasicUtils.sendIntent(getActivity(), ImageProcessingVideotoImageActivity.class);
                         break;
                     case "TestHTML5WebView":
-                           BasicUtils.sendIntent(getActivity(), TestHTML5WebView.class);
+                        BasicUtils.sendIntent(getActivity(), TestHTML5WebView.class);
                         break;
                     case "CropExample":
-                           BasicUtils.sendIntent(getActivity(), CropExample.class);
+                        BasicUtils.sendIntent(getActivity(), CropExample.class);
                         break;
                     case "CropperSample":
-                           BasicUtils.sendIntent(getActivity(), CropperSample.class);
+                        BasicUtils.sendIntent(getActivity(), CropperSample.class);
                         break;
                     case "ImageFilterActivity":
-                           BasicUtils.sendIntent(getActivity(), ImageFilterActivity.class);
+                        BasicUtils.sendIntent(getActivity(), ImageFilterActivity.class);
                         break;
                     case "MotionSampleActivity":
-                           BasicUtils.sendIntent(getActivity(), MotionSampleActivity.class);
+                        BasicUtils.sendIntent(getActivity(), MotionSampleActivity.class);
                         break;
                     case "ShapeImageViewActivity":
-                           BasicUtils.sendIntent(getActivity(), ShapeImageViewActivity.class);
+                        BasicUtils.sendIntent(getActivity(), ShapeImageViewActivity.class);
                         break;
                     case "CustomShapeImageViewActivity":
-                           BasicUtils.sendIntent(getActivity(), CustomShapeImageViewActivity.class);
+                        BasicUtils.sendIntent(getActivity(), CustomShapeImageViewActivity.class);
                         break;
                     case "MarqueeViewSample":
-                           BasicUtils.sendIntent(getActivity(), MarqueeViewSample.class);
+                        BasicUtils.sendIntent(getActivity(), MarqueeViewSample.class);
                         break;
                     case "SignaturePadActivity":
-                           BasicUtils.sendIntent(getActivity(), SignaturePadActivity.class);
+                        BasicUtils.sendIntent(getActivity(), SignaturePadActivity.class);
                         break;
                     case "DrawableActivity":
-                           BasicUtils.sendIntent(getActivity(), DrawableActivity.class);
+                        BasicUtils.sendIntent(getActivity(), DrawableActivity.class);
                         break;
                     case "AndroidWeekViewActivity":
-                           BasicUtils.sendIntent(getActivity(), AndroidWeekViewActivity.class);
+                        BasicUtils.sendIntent(getActivity(), AndroidWeekViewActivity.class);
                         break;
                     case "FilckerAnimationListActivity":
-                           BasicUtils.sendIntent(getActivity(), FilckerAnimationListActivity.class);
+                        BasicUtils.sendIntent(getActivity(), FilckerAnimationListActivity.class);
                         break;
                     case "ArcMenuActivity":
-                           BasicUtils.sendIntent(getActivity(), ArcMenuActivity.class);
+                        BasicUtils.sendIntent(getActivity(), ArcMenuActivity.class);
                         break;
                     case "ExpandCircleProgressExampleActivity":
-                           BasicUtils.sendIntent(getActivity(), ExpandCircleProgressExampleActivity.class);
+                        BasicUtils.sendIntent(getActivity(), ExpandCircleProgressExampleActivity.class);
                         break;
                     case "FreeFlowArtbookActivity":
-                           BasicUtils.sendIntent(getActivity(), FreeFlowArtbookActivity.class);
+                        BasicUtils.sendIntent(getActivity(), FreeFlowArtbookActivity.class);
                         break;
                     case "FreeFlowPhotoGridActivity":
-                           BasicUtils.sendIntent(getActivity(), FreeFlowPhotoGridActivity.class);
+                        BasicUtils.sendIntent(getActivity(), FreeFlowPhotoGridActivity.class);
                         break;
                     case "RecyclerViewSample":
-                           BasicUtils.sendIntent(getActivity(), RecyclerViewSample.class);
+                        BasicUtils.sendIntent(getActivity(), RecyclerViewSample.class);
                         break;
                     case "RecyclerViewItemAnimatorActivity":
-                           BasicUtils.sendIntent(getActivity(), RecyclerViewItemAnimatorActivity.class);
+                        BasicUtils.sendIntent(getActivity(), RecyclerViewItemAnimatorActivity.class);
+                        break;
+                    case "RippleEffectActivity":
+                        BasicUtils.sendIntent(getActivity(), RippleEffectActivity.class);
                         break;
 
 
