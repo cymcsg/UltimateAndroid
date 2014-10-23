@@ -93,6 +93,11 @@
         <activity android:name=".sampleModules.RippleEffectActivity"></activity>
         <activity android:name=".sampleModules.FloatingActionButtonActivity"></activity>
         <activity android:name=".sampleModules.FloatingActionButtonDemo"></activity>
+        <activity android:name=".circularfloatingactionmenu.MenuInScrollViewActivity"></activity>
+        <activity android:name=".circularfloatingactionmenu.CircularFloatingActivity"></activity>
+        <activity android:name=".circularfloatingactionmenu.MenuWithCustomActionButtonActivity"></activity>
+        <activity android:name=".circularfloatingactionmenu.MenuWithCustomAnimationActivity"></activity>
+        <activity android:name=".circularfloatingactionmenu.MenuWithFABActivity"></activity>
         <provider
                 android:name="android.support.v4.content.FileProvider"
                 android:authorities="com.marshalchen.common.demoofui.fileprovider"

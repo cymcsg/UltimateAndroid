@@ -19,6 +19,7 @@ import com.marshalchen.common.commonUtils.basicUtils.BasicUtils;
 import com.marshalchen.common.demoofui.ResideMenuDemo.ResideMenuActivity;
 import com.marshalchen.common.demoofui.artbook.FreeFlowArtbookActivity;
 import com.marshalchen.common.demoofui.circularProgressButton.CircularProgressButtonActivity;
+import com.marshalchen.common.demoofui.circularfloatingactionmenu.CircularFloatingActivity;
 import com.marshalchen.common.demoofui.dragSortListview.MultipleChoiceListView;
 import com.marshalchen.common.demoofui.dragSortListview.SingleChoiceListView;
 import com.marshalchen.common.demoofui.easingDemo.EasingActivity;
@@ -142,6 +143,12 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "FloatingActionButton");
         map.put("class", "FloatingActionButtonDemo");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "CircularMenu");
+        map.put("detail", "try");
+        map.put("subname", "CircularMenu");
+        map.put("class", "CircularFloatingActivity");
         enhanceList.add(map);
 
         map = new HashMap<>();
@@ -971,6 +978,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case "FloatingActionButtonDemo":
                         BasicUtils.sendIntent(getActivity(), FloatingActionButtonDemo.class);
+                        break;
+                    case "CircularFloatingActivity":
+                        BasicUtils.sendIntent(getActivity(), CircularFloatingActivity.class);
                         break;
 
 
