@@ -14,6 +14,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".MaterialActivity" android:theme="@style/Theme.MaterialTheme"></activity>
         <activity android:name=".SmoothProgressBarActivity"></activity>
         <activity android:name=".dynamicgrid.example.DynamicGridActivity"></activity>
         <activity android:name=".cooldraganddrop.CoolDragAndDropActivity"></activity>

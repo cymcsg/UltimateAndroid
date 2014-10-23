@@ -1,6 +1,7 @@
 package com.marshalchen.common.demoofui;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -92,6 +93,7 @@ public class LandingFragment extends Fragment {
         initTitanicView();
         initEnhanceList();
         initViewPager();
+
         //CryptoUtils.testCrypto(getActivity());
         return mainView;
     }
@@ -1019,6 +1021,7 @@ public class LandingFragment extends Fragment {
 //        landingMallViewPagerIndicator.setFillColor(getResources().getColor(R.color.white));
 //        landingMallViewPagerIndicator.setStrokeColor(getResources().getColor(R.color.black));
 //        landingMallViewPagerIndicator.setStrokeWidth(1 * 1.0f);
+
     }
 
 
@@ -1190,6 +1193,14 @@ public class LandingFragment extends Fragment {
         @Override
         public Object instantiateItem(ViewGroup container, int position) {
             container.addView(viewpagerList.get(position), 0);
+            viewpagerList.get(position).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent();
+                    intent.setClass(getActivity(), MaterialActivity.class);
+                    startActivity(intent);
+                }
+            });
             //   return super.instantiateItem(container, position);
             return viewpagerList.get(position);
         }
