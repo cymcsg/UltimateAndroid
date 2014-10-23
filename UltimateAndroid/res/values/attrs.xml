@@ -181,6 +181,7 @@
         <attr name="addButtonColorPressed" format="color"/>
         <attr name="addButtonColorNormal" format="color"/>
         <attr name="addButtonPlusIconColor" format="color"/>
+        <attr name="addButtonIsHorizontal" format="boolean"/>
     </declare-styleable>
 
     <declare-styleable name="FloatingActionButton">
