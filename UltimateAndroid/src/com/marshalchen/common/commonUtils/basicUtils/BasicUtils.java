@@ -13,7 +13,7 @@ import java.text.DecimalFormat;
 import java.util.*;
 
 /**
- * Some useful Utils
+ * Some Useful Utils
  * <p>{@link #judgeNotNull(String, String...)}</p>
  * <p>{@link #judgeNotNull(Object)}</p>
  * <p>{@link #getVersionName(android.content.Context)}</p>
@@ -27,7 +27,7 @@ import java.util.*;
  */
 public class BasicUtils {
     /**
-     * Print all items of HashMap(which value is or can be convert to String)
+     * Print all items of HashMap(Notice:The value should be or can be convert to String)
      *
      * @param hashMap
      * @param classAndMethodName
