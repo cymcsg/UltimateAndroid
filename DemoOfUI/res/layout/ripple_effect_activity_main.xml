@@ -113,15 +113,15 @@
             ripple:rv_rippleDuration="150"
             ripple:rv_ripplePadding="12dp">
 
-        <!--<com.melnykov.fab.FloatingActionButton-->
-        <!--android:id="@+id/button_floating_action"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:src="@drawable/ic_profil_plus"-->
-        <!--ripple:fab_colorNormal="@android:color/holo_red_dark"-->
-        <!--ripple:fab_colorPressed="@android:color/holo_red_dark"/>-->
-        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                   android:src="@drawable/group_add_pic"/>
+        <com.marshalchen.common.ui.FloatingActionButtonWithListView.FloatingActionButton
+        android:id="@+id/button_floating_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ripple_effect_ic_profil_plus"
+        ripple:fab_colorNormal="@android:color/holo_red_dark"
+        ripple:fab_colorPressed="@android:color/holo_red_dark"/>
+        <!--<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+                   <!--android:src="@drawable/group_add_pic"/>-->
     </com.marshalchen.common.ui.RippleView>
 
 </RelativeLayout>
