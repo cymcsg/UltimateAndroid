@@ -19,6 +19,7 @@ package com.marshalchen.common.demoofui.recyclerviewitemanimator;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
@@ -32,7 +33,7 @@ import com.marshalchen.common.demoofui.R;
 import com.marshalchen.common.ui.recyclerviewitemanimator.*;
 
 
-public class RecyclerViewItemAnimatorActivity extends Activity {
+public class RecyclerViewItemAnimatorActivity extends ActionBarActivity {
 
     RecyclerView mRecyclerView;
     SimpleAdapter mAdapter;
