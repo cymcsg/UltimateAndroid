@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.marshalchen.common.demoofui.materialmenu;
+package com.marshalchen.common.ui.materialmenu;
 
 import android.app.Activity;
 import android.content.res.Resources;

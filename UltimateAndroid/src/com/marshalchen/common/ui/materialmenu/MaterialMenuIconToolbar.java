@@ -1,4 +1,4 @@
-package com.marshalchen.common.demoofui.materialmenu;
+package com.marshalchen.common.ui.materialmenu;
 
 import android.app.Activity;
 import android.support.v7.widget.Toolbar;

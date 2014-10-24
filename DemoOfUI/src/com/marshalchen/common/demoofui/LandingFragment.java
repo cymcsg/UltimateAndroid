@@ -157,13 +157,13 @@ public class LandingFragment extends Fragment {
         map = new HashMap<>();
         map.put("name", "MaterialMenu");
         map.put("detail", "try");
-        map.put("subname", "MaterialMenuToolbarActivity");
+        map.put("subname", "ToolbarActivity");
         map.put("class", "MaterialMenuToolbarActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "MaterialMenu");
         map.put("detail", "try");
-        map.put("subname", "MaterialMenuAppcompatActivity");
+        map.put("subname", "AppcompatActivity");
         map.put("class", "MaterialMenuAppcompatActivity");
         enhanceList.add(map);
 

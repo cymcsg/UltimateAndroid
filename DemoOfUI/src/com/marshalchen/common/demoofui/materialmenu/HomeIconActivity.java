@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import com.marshalchen.common.demoofui.R;
+import com.marshalchen.common.ui.materialmenu.MaterialMenuIconCompat;
 
 
 import static com.marshalchen.common.ui.materialmenu.MaterialMenuDrawable.Stroke;

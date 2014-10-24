@@ -6,6 +6,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import com.marshalchen.common.demoofui.R;
+import com.marshalchen.common.ui.materialmenu.MaterialMenuIconToolbar;
 
 
 import static com.marshalchen.common.ui.materialmenu.MaterialMenuDrawable.Stroke;
