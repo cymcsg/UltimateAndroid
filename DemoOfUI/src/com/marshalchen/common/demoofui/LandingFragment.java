@@ -30,6 +30,7 @@ import com.marshalchen.common.demoofui.fadingactionbar.HomeActivity;
 import com.marshalchen.common.demoofui.fancyCoverFlow.FancyCoverFlowActivity;
 import com.marshalchen.common.demoofui.imageprocessingexample.ImageProcessingActivity;
 import com.marshalchen.common.demoofui.imageprocessingexample.ImageProcessingVideotoImageActivity;
+import com.marshalchen.common.demoofui.materialmenu.MaterialMenuAppcompatActivity;
 import com.marshalchen.common.demoofui.materialmenu.MaterialMenuToolbarActivity;
 import com.marshalchen.common.demoofui.recyclerviewitemanimator.RecyclerViewItemAnimatorActivity;
 import com.marshalchen.common.demoofui.sampleModules.GoogleProgressBarActivity;
@@ -159,6 +160,13 @@ public class LandingFragment extends Fragment {
         map.put("subname", "MaterialMenuToolbarActivity");
         map.put("class", "MaterialMenuToolbarActivity");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "MaterialMenu");
+        map.put("detail", "try");
+        map.put("subname", "MaterialMenuAppcompatActivity");
+        map.put("class", "MaterialMenuAppcompatActivity");
+        enhanceList.add(map);
+
         map = new HashMap<>();
         map.put("name", "DynamicGrid");
         map.put("detail", "try");
@@ -992,6 +1000,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case "MaterialMenuToolbarActivity":
                         BasicUtils.sendIntent(getActivity(), MaterialMenuToolbarActivity.class);
+                        break;
+                    case "MaterialMenuAppcompatActivity":
+                        BasicUtils.sendIntent(getActivity(), MaterialMenuAppcompatActivity.class);
                         break;
 
 

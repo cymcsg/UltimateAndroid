@@ -99,7 +99,12 @@
         <activity android:name=".circularfloatingactionmenu.MenuWithCustomActionButtonActivity"></activity>
         <activity android:name=".circularfloatingactionmenu.MenuWithCustomAnimationActivity"></activity>
         <activity android:name=".circularfloatingactionmenu.MenuWithFABActivity"></activity>
-        <activity android:name=".materialmenu.MaterialMenuToolbarActivity" android:theme="@style/Theme.MaterialTheme"></activity>
+        <activity android:name=".materialmenu.MaterialMenuToolbarActivity"
+                  android:theme="@style/Theme.MaterialTheme"></activity>
+        <activity android:name=".materialmenu.HomeIconActivity" android:theme="@style/MaterialMenuTheme"></activity>
+        <activity android:name=".materialmenu.MaterialMenuAppcompatActivity"
+                  android:theme="@style/MaterialMenuTheme"></activity>
+
 
         <provider
                 android:name="android.support.v4.content.FileProvider"
