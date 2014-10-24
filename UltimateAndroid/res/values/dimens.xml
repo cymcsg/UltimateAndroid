@@ -56,4 +56,7 @@
     <dimen name="fab_mini_shadow_size">6dp</dimen>
 
     <dimen name="fab_min_significant_scroll">4dp</dimen>
+
+
+    <dimen name="mm_up_arrow_margin">-16dp</dimen>
 </resources>
