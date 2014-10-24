@@ -30,6 +30,7 @@ import com.marshalchen.common.demoofui.fadingactionbar.HomeActivity;
 import com.marshalchen.common.demoofui.fancyCoverFlow.FancyCoverFlowActivity;
 import com.marshalchen.common.demoofui.imageprocessingexample.ImageProcessingActivity;
 import com.marshalchen.common.demoofui.imageprocessingexample.ImageProcessingVideotoImageActivity;
+import com.marshalchen.common.demoofui.materialmenu.MaterialMenuToolbarActivity;
 import com.marshalchen.common.demoofui.recyclerviewitemanimator.RecyclerViewItemAnimatorActivity;
 import com.marshalchen.common.demoofui.sampleModules.GoogleProgressBarActivity;
 import com.marshalchen.common.demoofui.quickreturnlistview.QuickReturnListViewActivity;
@@ -152,7 +153,12 @@ public class LandingFragment extends Fragment {
         map.put("subname", "CircularMenu");
         map.put("class", "CircularFloatingActivity");
         enhanceList.add(map);
-
+        map = new HashMap<>();
+        map.put("name", "MaterialMenu");
+        map.put("detail", "try");
+        map.put("subname", "MaterialMenuToolbarActivity");
+        map.put("class", "MaterialMenuToolbarActivity");
+        enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "DynamicGrid");
         map.put("detail", "try");
@@ -983,6 +989,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case "CircularFloatingActivity":
                         BasicUtils.sendIntent(getActivity(), CircularFloatingActivity.class);
+                        break;
+                    case "MaterialMenuToolbarActivity":
+                        BasicUtils.sendIntent(getActivity(), MaterialMenuToolbarActivity.class);
                         break;
 
 
