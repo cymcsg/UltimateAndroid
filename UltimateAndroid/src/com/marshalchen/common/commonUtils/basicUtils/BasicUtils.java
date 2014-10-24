@@ -60,12 +60,6 @@ public class BasicUtils {
             Logs.e(e.getMessage());
         }
 
-//Better speed,but not very good at concurrent
-//        for(int    i=0;    i<list.size();    i++)    {
-//              HashMap hashMap  =  (HashMap)  list.get(i);
-//            iterateHashMap(hashMap, classAndMethodName);
-//
-//        }
 
     }
 
