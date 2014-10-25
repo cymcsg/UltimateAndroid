@@ -19,11 +19,18 @@ UltimateAndroid
 [中文简介](#chinese_introduction)
 
 [English Tutorials](https://github.com/cymcsg/UltimateAndroid/blob/master/Tutorials/TableofContents_eng.md)
+
 [中文详细教程](https://github.com/cymcsg/UltimateAndroid/blob/master/Tutorials/TableofContents_zh.md)
 
 [Ui sample](#demo_of_ui)
 
 [Ui 效果](#demo_of_ui)
+
+###Update Ui for Material Design!
+
+
+[Update Log](https://github.com/cymcsg/UltimateAndroid/blob/master/updateLog.md)
+
 
 
 <br>
@@ -429,6 +436,7 @@ Post request:
 
 <h2 ><a name="demo_of_ui">Some  Demo of Ui:</h2>  
 
+![tutorials2](http://blog.marshalchen.com/images/tutorial2-12.gif)
 
 
 ![tutorials2](http://blog.marshalchen.com/images/tutorial2-1.gif)
