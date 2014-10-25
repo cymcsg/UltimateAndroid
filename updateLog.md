@@ -1,6 +1,28 @@
 
 ##Update：
 
+#####add Material Design Effect:
+
+2014.10.24         
+		   add [RippleEffect](https://github.com/traex/RippleEffect)		           
+		   add [Material Menu](https://github.com/balysv/material-menu)       
+		   add [FloatingActionButton](https://github.com/futuresimple/android-floating-action-button)		   
+		  add [FloatingActionButtonWithListView](https://github.com/makovkastar/FloatingActionButton)
+
+2014.10.20 add RecycleView
+
+2014.10.17 add FreeFlow
+
+2014.10.12 add Drawable Pad
+
+2014.10.9 add ImageProcessingFilter
+
+2014.10.6 add  [Android View Animations](https://github.com/daimajia/AndroidViewAnimations)
+
+2014.9.30 add Swipe Layout
+
+2014.9.20 add Http Upload 
+
 2014.9.16 add SwipeReFreshLoadMoreActivity and DialogShower
 
 2014.8.25 add drag sort listview 
