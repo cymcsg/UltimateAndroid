@@ -13,7 +13,7 @@ import android.widget.ListView;
 import com.marshalchen.common.R;
 
 /**
- * Created by cym on 14-9-12.
+ * UltimateListView which can pull to refresh using the SwipeRefreshLayout and load more
  */
 public class UltimateListview extends LinearLayout {
 

@@ -6,7 +6,9 @@ import android.widget.AbsListView;
 import android.widget.ListView;
 import com.marshalchen.common.commonUtils.logUtils.Logs;
 
-
+/**
+ * Load more list view in UltimateListView
+ */
 public class BasicUltimateListView extends ListView {
 
     int currentFirstVisibleItem;
