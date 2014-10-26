@@ -29,6 +29,7 @@ UltimateAndroid
 ###Update Ui for Material Design!
 
 
+
 [Update Log](https://github.com/cymcsg/UltimateAndroid/blob/master/updateLog.md)
 
 
@@ -242,7 +243,9 @@ Please set the ides before you run the demo apps.
 ---
 ####框架目前主要包含的功能有View Injection,ORM,异步网络请求和图片加载，自动化脚本测试,磁盘LRU等功能.同时提供了类似于TripleDes、Webview快速设置、Md5处理、String处理,Https处理等常用工具类，还有超过100多种UI控件效果。并且这些功能正在逐步增加中。
 		
+欢迎各种fork与提意见。
 
+如果大家有需要的功能，欢迎随时提意见。
 
 使用DemoOfUI的时候,需要注意UltimateAndroid 依赖 appcompat.UltimateAndroidUi 依赖 UltimateAndroid.DemoOfUi 依赖 UltimateAndroidUi.如果你不需要使用UiModule的话，可以直接依赖UltimateAndroid，这样体积会更纤细。Demo的Apk文件可以直接下载使用.
 
@@ -434,6 +437,8 @@ Post request:
 
 
 
+
+
 <h2 ><a name="demo_of_ui">Some  Demo of Ui:</h2>  
 
 ![tutorials2](http://blog.marshalchen.com/images/tutorial2-12.gif)
@@ -488,20 +493,36 @@ The opensource program which I use:
 
 11.JakeWharton's [Android-ViewPagerIndicator][11]
 
+12.[RippleEffect](https://github.com/traex/RippleEffect)
+
+13.[Material Menu](https://github.com/balysv/material-menu)
+
+14.[FloatingActionButton](https://github.com/futuresimple/android-floating-action-button)		   
+15.[FloatingActionButtonWithListView](https://github.com/makovkastar/FloatingActionButton)
+
+16. [Android View Animations](https://github.com/daimajia/AndroidViewAnimations)
+
+17.[Trinea](https://github.com/Trinea/android-common)
+
+18.[ListviewAnimations](https://github.com/nhaarman/ListViewAnimations)
+
+19.[PagerSlidingTabStrip](https://github.com/astuetz/PagerSlidingTabStrip)
+
+20.[Rebound](https://github.com/facebook/rebound)
+
+21. [Titanic](https://github.com/RomainPiel/Titanic)
+
+22.[FaceCrop](https://github.com/Todd-Davies/ProgressWheel)  
+
+23.[KenBurns](https://github.com/flavioarfaria/KenBurnsView)  
+
+There are some other projects which I write in [Update Log](https://github.com/cymcsg/UltimateAndroid/blob/master/updateLog.md).
+
+
 If there's anything I forgot to mention,I would be very appreciated for helping me notice it.
 
-And there are also many useful feature like TripleDes Utils,WebViewUtils,Md5Utils etc.
-
-TripleDes Utils,WebViewUtils,Md5Utils
 
 
-目前主要包含的功能有View Injection,ORM,异步网络请求和图片加载，自动化脚本测试,磁盘LRU等功能，同时提供了类似于TripleDes、Webview快速设置、Md5
-处理、String处理等常用工具类，还有类似于滑动返回、带动画的expandable listview等UI效果，以及类似于圆角图片，图像模糊等多种
-控件效果。并且这些功能正在逐步增加中。
-
-欢迎各种fork与提意见。
-
-如果大家有需要的功能，欢迎随时提意见。
 
 
 License
