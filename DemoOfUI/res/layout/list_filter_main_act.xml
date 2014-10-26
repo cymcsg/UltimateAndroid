@@ -9,7 +9,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:drawableLeft="@drawable/abc_ic_search"
+        android:drawableLeft="@drawable/abc_ic_search_api_mtrl_alpha"
         android:hint="Search"
         android:singleLine="true" />
 

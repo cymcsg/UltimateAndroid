@@ -300,4 +300,14 @@
         <item>@drawable/fading_actionbar_tokyo</item>
         <item>@drawable/fading_actionbar_london</item>
     </array>
+
+
+    <string-array name="animators">
+        <item>Slide left</item>
+        <item>Slide right</item>
+        <item>Slide top</item>
+        <item>Slide bottom</item>
+        <item>Scale</item>
+        <item>Slide right and Scale</item>
+    </string-array>
 </resources>

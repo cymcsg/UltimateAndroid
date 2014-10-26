@@ -8,6 +8,40 @@
         <item name="android:icon">@android:color/transparent</item>
         <item name="android:actionBarStyle" tools:ignore="NewApi">@style/ActionbarStyle</item>
         <item name="actionBarStyle">@style/ActionbarStyle</item>
+        <!-- Set AppCompat’s color theming attrs -->
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/orange</item>
+        <item name="colorAccent">@color/blue</item>
+        <!-- The rest of your attributes -->
+    </style>
+
+    <style name="MaterialMenuTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionBarStyle">@style/ActionBarStyle</item>
+        <item name="actionBarItemBackground">@null</item>
+        <item name="actionButtonStyle">@style/ActionButtonStyle</item>
+        <item name="actionOverflowButtonStyle">@style/OverflowButtonStyle</item>
+
+    </style>
+
+    <style name="ActionBarStyle" parent="Widget.AppCompat.ActionBar.Solid">
+        <item name="displayOptions">showTitle</item>
+        <item name="titleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse</item>
+    </style>
+
+    <style name="ActionButtonStyle" parent="Widget.AppCompat.ActionButton">
+        <item name="background">@drawable/action_bar_item_background</item>
+    </style>
+
+    <style name="OverflowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="background">@drawable/action_bar_item_background</item>
+    </style>
+
+
+
+
+    <style name="Theme.MaterialTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/orange</item>
     </style>
     <style name="LandingTheme" parent="Theme.AppCompat.Light">
         <item name="android:windowIsTranslucent">true</item>
@@ -19,6 +53,10 @@
         <item name="android:windowActionBarOverlay" tools:ignore="NewApi">true</item>
         <!-- Support library compatibility -->
         <item name="windowActionBarOverlay">true</item>
+        <!-- customize the color palette -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/DarkGray</item>
     </style>
     <style name="CustomTabPageIndicator" parent="Widget.TabPageIndicator">
         <item name="android:background">@drawable/vpi__tab_indicator</item>
@@ -41,7 +79,7 @@
 
     <style name="ActionbarStyle" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
         <item name="background">@color/nav_bg</item>
-        <item name="android:background">@color/red</item>
+        <item name="android:background">@color/LightBlue</item>
         <item name="titleTextStyle">@style/MyActionBarTitleText</item>
         <item name="android:titleTextStyle" tools:ignore="NewApi">@style/MyActionBarTitleText</item>
     </style>
@@ -127,15 +165,15 @@
         <!--<item name="android:checkMark">@drawable/apptheme_btn_radio_holo_dark</item>-->
     </style>
 
-    <style name="TranslucentActionBar" parent="@style/Widget.AppCompat.Base.ActionBar">
-        <item name="android:background">@null</item>
-        <item name="android:icon">@drawable/ic_launcher</item>
-        <item name="titleTextStyle">@style/titleStyle</item>
-    </style>
+    <!--<style name="TranslucentActionBar" parent="@style/Widget.AppCompat.Base.ActionBar">-->
+    <!--<item name="android:background">@null</item>-->
+    <!--<item name="android:icon">@drawable/ic_launcher</item>-->
+    <!--<item name="titleTextStyle">@style/titleStyle</item>-->
+    <!--</style>-->
 
-    <style name="titleStyle" parent="@style/TextAppearance.AppCompat.Widget.Base.ActionBar.Title">
-        <item name="android:textColor">@android:color/white</item>
-    </style>
+    <!--<style name="titleStyle" parent="@style/TextAppearance.AppCompat.Widget.Base.ActionBar.Title">-->
+    <!--<item name="android:textColor">@android:color/white</item>-->
+    <!--</style>-->
 
 
     <style name="TextAppearance.YourApp.FloatLabel" parent="android:TextAppearance.Small">

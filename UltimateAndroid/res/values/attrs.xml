@@ -146,4 +146,52 @@
 
         <attr name="textProgressSize" format="dimension" />
     </declare-styleable>
+
+    <declare-styleable name="RippleView">
+        <attr name="rv_alpha" format="integer" />
+        <attr name="rv_framerate" format="integer"/>
+        <attr name="rv_rippleDuration" format="integer"/>
+        <attr name="rv_zoomDuration" format="integer" />
+        <attr name="rv_color" format="color" />
+        <attr name="rv_centered" format="boolean" />
+        <attr name="rv_type" format="enum">
+            <enum name="simpleRipple" value="0"/>
+            <enum name="doubleRipple" value="1"/>
+            <enum name="rectangle" value="2" />
+        </attr>
+        <attr name="rv_ripplePadding" format="dimension" />
+        <attr name="rv_zoom" format="boolean" />
+
+    </declare-styleable>
+
+
+    <declare-styleable name="FloatActionButton">
+        <attr name="colorPressed" format="color"/>
+        <attr name="colorNormal" format="color"/>
+        <attr name="icon" />
+        <attr name="size" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="mini" value="1"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="AddFloatingActionButton">
+        <attr name="plusIconColor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="FloatingActionsMenu">
+        <attr name="addButtonColorPressed" format="color"/>
+        <attr name="addButtonColorNormal" format="color"/>
+        <attr name="addButtonPlusIconColor" format="color"/>
+        <attr name="addButtonIsHorizontal" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="FloatingActionButton">
+        <attr name="fab_colorPressed" format="color"/>
+        <attr name="fab_colorNormal" format="color"/>
+        <attr name="fab_shadow" format="boolean"/>
+        <attr name="fab_type" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="mini" value="1"/>
+        </attr>
+    </declare-styleable>
+
 </resources>
