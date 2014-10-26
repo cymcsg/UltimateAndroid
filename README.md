@@ -1,14 +1,12 @@
 UltimateAndroid
 ==========================
 
-###Version:0.1.0 beta
+###Version:0.2.0 beta
 
 
 [![Build Status](https://drone.io/github.com/cymcsg/UltimateAndroid/status.png)](https://drone.io/github.com/cymcsg/UltimateAndroid/latest)
 <br>
-#####Formerly known as CommonLibsForAndroid
-#####原名： CommonLibsForAndroid
-<br>
+
 ###UltimateAndroid is a framework which can help you  develop Android apps  in a fast way  
 
 
