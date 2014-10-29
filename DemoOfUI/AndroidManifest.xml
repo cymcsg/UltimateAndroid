@@ -104,8 +104,11 @@
         <activity android:name=".materialmenu.HomeIconActivity" android:theme="@style/MaterialMenuTheme"></activity>
         <activity android:name=".materialmenu.MaterialMenuAppcompatActivity"
                   android:theme="@style/MaterialMenuTheme"></activity>
-
-
+        <activity android:name=".pulltozoomview.PullToZoomActivity"></activity>
+        <activity android:name=".pulltozoomview.PullToZoomListActivity"></activity>
+        <activity android:name=".pulltozoomview.PullToZoomScrollActivity"></activity>
+        <activity android:name=".twowayview.TwoWayViewActivity"></activity>
+        <activity android:name=".recyclerplayground.RecyclerViewPlayGroundActivity"></activity>
         <provider
                 android:name="android.support.v4.content.FileProvider"
                 android:authorities="com.marshalchen.common.demoofui.fileprovider"

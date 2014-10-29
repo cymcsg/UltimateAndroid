@@ -32,6 +32,8 @@ import com.marshalchen.common.demoofui.imageprocessingexample.ImageProcessingAct
 import com.marshalchen.common.demoofui.imageprocessingexample.ImageProcessingVideotoImageActivity;
 import com.marshalchen.common.demoofui.materialmenu.MaterialMenuAppcompatActivity;
 import com.marshalchen.common.demoofui.materialmenu.MaterialMenuToolbarActivity;
+import com.marshalchen.common.demoofui.pulltozoomview.PullToZoomActivity;
+import com.marshalchen.common.demoofui.recyclerplayground.RecyclerViewPlayGroundActivity;
 import com.marshalchen.common.demoofui.recyclerviewitemanimator.RecyclerViewItemAnimatorActivity;
 import com.marshalchen.common.demoofui.sampleModules.GoogleProgressBarActivity;
 import com.marshalchen.common.demoofui.quickreturnlistview.QuickReturnListViewActivity;
@@ -41,6 +43,7 @@ import com.marshalchen.common.demoofui.staggeredgridview.StaggeredGridViewActivi
 import com.marshalchen.common.demoofui.standUpTimer.ConfigureStandupTimer;
 import com.marshalchen.common.demoofui.superlistview.SuperListViewActivity;
 import com.marshalchen.common.demoofui.swipelayoutdemo.SwipeLayoutActivity;
+import com.marshalchen.common.demoofui.twowayview.TwoWayViewActivity;
 import com.marshalchen.common.ui.Typefaces;
 import com.marshalchen.common.uimodule.arcmenu.ArcMenu;
 import com.marshalchen.common.uimodule.enhanceListView.EnhancedListView;
@@ -696,6 +699,24 @@ public class LandingFragment extends Fragment {
         map.put("subname", "RecylerViewItem");
         map.put("class", "RecyclerViewItemAnimatorActivity");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "PullToZoomActivity");
+        map.put("detail", "try");
+        map.put("subname", "PullToZoomActivity");
+        map.put("class", "PullToZoomActivity");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "TwoWayView");
+        map.put("detail", "try");
+        map.put("subname", "TwoWayViewActivity");
+        map.put("class", "TwoWayViewActivity");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "RecyclerView");
+        map.put("detail", "try");
+        map.put("subname", "RecyclerViewPlayGround");
+        map.put("class", "RecyclerViewPlayGroundActivity");
+        enhanceList.add(map);
 
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -1003,6 +1024,15 @@ public class LandingFragment extends Fragment {
                         break;
                     case "MaterialMenuAppcompatActivity":
                         BasicUtils.sendIntent(getActivity(), MaterialMenuAppcompatActivity.class);
+                        break;
+                    case "PullToZoomActivity":
+                        BasicUtils.sendIntent(getActivity(), PullToZoomActivity.class);
+                        break;
+                    case "TwoWayViewActivity":
+                        BasicUtils.sendIntent(getActivity(), TwoWayViewActivity.class);
+                        break;
+                    case "RecyclerViewPlayGroundActivity":
+                        BasicUtils.sendIntent(getActivity(), RecyclerViewPlayGroundActivity.class);
                         break;
 
 
