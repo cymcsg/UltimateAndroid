@@ -33,6 +33,7 @@ import com.marshalchen.common.demoofui.imageprocessingexample.ImageProcessingVid
 import com.marshalchen.common.demoofui.materialmenu.MaterialMenuAppcompatActivity;
 import com.marshalchen.common.demoofui.materialmenu.MaterialMenuToolbarActivity;
 import com.marshalchen.common.demoofui.pulltozoomview.PullToZoomActivity;
+import com.marshalchen.common.demoofui.recyclerplayground.RecyclerViewPlayGroundActivity;
 import com.marshalchen.common.demoofui.recyclerviewitemanimator.RecyclerViewItemAnimatorActivity;
 import com.marshalchen.common.demoofui.sampleModules.GoogleProgressBarActivity;
 import com.marshalchen.common.demoofui.quickreturnlistview.QuickReturnListViewActivity;
@@ -710,6 +711,12 @@ public class LandingFragment extends Fragment {
         map.put("subname", "TwoWayViewActivity");
         map.put("class", "TwoWayViewActivity");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "RecyclerView");
+        map.put("detail", "try");
+        map.put("subname", "RecyclerViewPlayGround");
+        map.put("class", "RecyclerViewPlayGroundActivity");
+        enhanceList.add(map);
 
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -1023,6 +1030,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case "TwoWayViewActivity":
                         BasicUtils.sendIntent(getActivity(), TwoWayViewActivity.class);
+                        break;
+                    case "RecyclerViewPlayGroundActivity":
+                        BasicUtils.sendIntent(getActivity(), RecyclerViewPlayGroundActivity.class);
                         break;
 
 

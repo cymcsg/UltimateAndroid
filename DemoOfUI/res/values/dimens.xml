@@ -18,4 +18,8 @@
     <dimen name="staggered_child_medium">230dp</dimen>
     <dimen name="staggered_child_large">310dp</dimen>
     <dimen name="staggered_child_xlarge">400dp</dimen>
+
+    <dimen name="navigation_drawer_width">240dp</dimen>
+
+    <dimen name="card_insets">8dp</dimen>
 </resources>
