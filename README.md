@@ -30,7 +30,7 @@ UltimateAndroid
 
 [Update Log](https://github.com/cymcsg/UltimateAndroid/blob/master/updateLog.md)
 
-
+Notice:The latest version of the framework needs Android Sdk Of 21.
 
 <br>
 <h2 ><a name="english_introduction">Introduction</h2>  
