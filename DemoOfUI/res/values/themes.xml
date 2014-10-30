@@ -260,4 +260,10 @@
         <item name="android:background">#33000000</item>
     </style>
 
+
+    <style name="Widget.HeaderBar.Spinner" parent="Widget.AppCompat.Spinner">
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0dp</item>
+    </style>
+
 </resources>
