@@ -715,13 +715,13 @@ public class LandingFragment extends Fragment {
         map = new HashMap<>();
         map.put("name", "RecyclerView");
         map.put("detail", "try");
-        map.put("subname", "RecyclerViewPlayGround");
+        map.put("subname", "PlayGround");
         map.put("class", "RecyclerViewPlayGroundActivity");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "StickyHeaders");
         map.put("detail", "try");
-        map.put("subname", "RecyclerViewStickyHeadersActivity");
+        map.put("subname", "RecyclerView");
         map.put("class", "RecyclerViewStickyHeadersActivity");
         enhanceList.add(map);
 
