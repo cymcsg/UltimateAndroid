@@ -7,8 +7,9 @@ UltimateAndroid rapid development framework tutorial (a): Deployment of the Fram
     Note：
     1.You need Jdk1.7 or set 1.7 as your java compile level；
     
-    2.My OS environment is OS X 10.9，IDE is eclipse4.4，Intellij Idea 13.1，Android Sdk is 4.4.2 and 23.0.
-   
+    2.My OS environment is OS X 10.9，IDE is eclipse4.4，Intellij Idea 13.1.
+    
+    3.The framework needs the lastest Android Sdk.It needs Android Api 21 now,but most part of the framework can run on even Android 2.1.
 
 
 ####a、Eclipse：
