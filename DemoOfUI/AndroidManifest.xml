@@ -46,7 +46,7 @@
         <activity android:name=".rebound.ReboundActivity"></activity>
         <activity android:name=".rebound.ReboundActivitySimple"></activity>
         <activity android:name=".sampleModules.FaceCropActivity"></activity>
-        <activity android:name=".listviewanimations.ListAnimationActivity"></activity>
+        <activity android:name=".listviewanimations.ListAnimationActivity" android:theme="@style/Widget.AppCompat.Light.ActionBar.Solid"></activity>
         <activity android:name=".listviewanimations.ListAnimationListActivity"></activity>
         <activity android:name=".listviewanimations.GoogleCardsActivity"></activity>
         <activity android:name=".listviewanimations.GridViewActivity"></activity>

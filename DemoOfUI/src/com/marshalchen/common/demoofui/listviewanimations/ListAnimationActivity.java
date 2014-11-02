@@ -17,9 +17,11 @@ package com.marshalchen.common.demoofui.listviewanimations;
 
 import java.util.ArrayList;
 
+import android.view.Window;
 import com.marshalchen.common.demoofui.R;
 import com.marshalchen.common.demoofui.listviewanimations.appearanceexamples.AppearanceExamplesActivity;
 import com.marshalchen.common.demoofui.listviewanimations.itemmanipulationexamples.ItemManipulationsExamplesActivity;
+import com.marshalchen.common.ui.HomeasUpActionbarActivity;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -51,6 +53,7 @@ public class ListAnimationActivity extends Activity {
             getWindow().addFlags(android.view.WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
         }
         if (Build.VERSION.SDK_INT > Build.VERSION_CODES.HONEYCOMB) {
+            getWindow().requestFeature(Window.FEATURE_ACTION_BAR);
             getActionBar().hide();
         }
 
