@@ -508,12 +508,12 @@ public class LandingFragment extends Fragment {
         map.put("subname", "Listview");
         map.put("class", "MultipleChoiceListView");
         enhanceList.add(map);
-        map = new HashMap<>();
-        map.put("name", "FadingActionbar");
-        map.put("detail", "try");
-        map.put("subname", "FadingActionbar");
-        map.put("class", "HomeActivity");
-        enhanceList.add(map);
+//        map = new HashMap<>();
+//        map.put("name", "FadingActionbar");
+//        map.put("detail", "try");
+//        map.put("subname", "FadingActionbar");
+//        map.put("class", "HomeActivity");
+//        enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "SwipeFreshLayout");
         map.put("detail", "try");
