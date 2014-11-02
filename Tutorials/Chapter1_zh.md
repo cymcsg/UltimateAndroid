@@ -24,6 +24,11 @@ UltimateAndroid快速开发框架教程（一）:部署框架
 4.右键项目，选择``Java Compiler``下的``Annotation Processing``如图，开启annotation processing并将butterknife 的jar包加入。（所有使用View Injection的项目都需要设置，所以除了UltimateAndroid之外，DemoOfUi和Demo也需要设置）。
 ![Eclipse1](http://blog.marshalchen.com/images/eclipse1.png)
 ![Eclipse2](http://blog.marshalchen.com/images/eclipse2.png)
+
+注意: 如果你找不到 ``Annotation Processing``,请安装eclipse的插件 ``Java Development Tools``
+
+![eclipse3](http://i.stack.imgur.com/ewIn8.png)
+
 5.之后就可以运行DemoOfUI或者Demo了。
 
 
