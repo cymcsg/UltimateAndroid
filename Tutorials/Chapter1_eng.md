@@ -22,7 +22,13 @@ UltimateAndroid rapid development framework tutorial (a): Deployment of the Fram
 4.Right click the  project, select ``Java Compiler`` and then ``Annotation Processing``, open annotation processing and add butterknife  jar  . (All items will need to use View Injection settings, so in addition to UltimateAndroid, DemoOfUi and Demo also need to be set).
 ![Eclipse1](http://blog.marshalchen.com/images/eclipse1.png)
 ![Eclipse2](http://blog.marshalchen.com/images/eclipse2.png)
-5.Then you can run the demos。
+Notice: If you can't find the ``Annotation Processing``,please install the plugin of ``Java Development Tools``
+
+![eclipse3](http://i.stack.imgur.com/ewIn8.png)
+
+5.Then you can run the demos.
+
+
 
 
 ####b、Intellij Idea（Android Studio)
