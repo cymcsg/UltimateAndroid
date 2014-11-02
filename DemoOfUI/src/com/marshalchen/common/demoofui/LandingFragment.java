@@ -35,6 +35,7 @@ import com.marshalchen.common.demoofui.materialmenu.MaterialMenuToolbarActivity;
 import com.marshalchen.common.demoofui.pulltozoomview.PullToZoomActivity;
 import com.marshalchen.common.demoofui.recyclerplayground.RecyclerViewPlayGroundActivity;
 import com.marshalchen.common.demoofui.recyclerviewitemanimator.RecyclerViewItemAnimatorActivity;
+import com.marshalchen.common.demoofui.recyclerviewstickyheaders.RecyclerViewStickyHeadersActivity;
 import com.marshalchen.common.demoofui.sampleModules.GoogleProgressBarActivity;
 import com.marshalchen.common.demoofui.quickreturnlistview.QuickReturnListViewActivity;
 import com.marshalchen.common.demoofui.shapeimageview.ShapeImageViewActivity;
@@ -714,8 +715,14 @@ public class LandingFragment extends Fragment {
         map = new HashMap<>();
         map.put("name", "RecyclerView");
         map.put("detail", "try");
-        map.put("subname", "RecyclerViewPlayGround");
+        map.put("subname", "PlayGround");
         map.put("class", "RecyclerViewPlayGroundActivity");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "StickyHeaders");
+        map.put("detail", "try");
+        map.put("subname", "RecyclerView");
+        map.put("class", "RecyclerViewStickyHeadersActivity");
         enhanceList.add(map);
 
 
@@ -1033,6 +1040,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case "RecyclerViewPlayGroundActivity":
                         BasicUtils.sendIntent(getActivity(), RecyclerViewPlayGroundActivity.class);
+                        break;
+                    case "RecyclerViewStickyHeadersActivity":
+                        BasicUtils.sendIntent(getActivity(), RecyclerViewStickyHeadersActivity.class);
                         break;
 
 

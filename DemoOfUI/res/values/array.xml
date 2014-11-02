@@ -310,4 +310,9 @@
         <item>Scale</item>
         <item>Slide right and Scale</item>
     </string-array>
+
+    <string-array name="recycler_view_sticky_header">
+        <item>Top</item>
+        <item>Overlay</item>
+    </string-array>
 </resources>

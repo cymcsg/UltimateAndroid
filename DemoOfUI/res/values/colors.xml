@@ -44,4 +44,10 @@
     <color name="item_default_color">#EEEEEE</color>
     <color name="item_pressed_color">#CCCCCC</color>
     <color name="item_activated_color">#77CEEE</color>
+
+    <color name="primary">#9fa8da</color>
+    <color name="primary_dark">#7986cb</color>
+    <color name="accent">#259b24</color>
+    <color name="text_primary">#D9FFFFFF</color>
+    <color name="text_secondary">#D9000000</color>
 </resources>
