@@ -64,8 +64,8 @@ public class RoundedImageView extends ImageView {
       setScaleType(ScaleType.FIT_CENTER);
     }
 
-    cornerRadius = a.getDimensionPixelSize(R.styleable.RoundedImageView_corner_radius, -1);
-    borderWidth = a.getDimensionPixelSize(R.styleable.RoundedImageView_border_width, -1);
+    cornerRadius = a.getDimensionPixelSize(R.styleable.RoundedImageView_riv_corner_radius, -1);
+    borderWidth = a.getDimensionPixelSize(R.styleable.RoundedImageView_riv_border_width, -1);
 
     // don't allow negative values for radius and border
     if (cornerRadius < 0) {
@@ -75,13 +75,13 @@ public class RoundedImageView extends ImageView {
       borderWidth = DEFAULT_BORDER_WIDTH;
     }
 
-    borderColor = a.getColorStateList(R.styleable.RoundedImageView_border_color);
+    borderColor = a.getColorStateList(R.styleable.RoundedImageView_riv_border_color);
     if (borderColor == null) {
       borderColor = ColorStateList.valueOf(RoundedDrawable.DEFAULT_BORDER_COLOR);
     }
 
-    mutateBackground = a.getBoolean(R.styleable.RoundedImageView_mutate_background, false);
-    isOval = a.getBoolean(R.styleable.RoundedImageView_oval, false);
+    mutateBackground = a.getBoolean(R.styleable.RoundedImageView_riv_mutate_background, false);
+    isOval = a.getBoolean(R.styleable.RoundedImageView_riv_oval, false);
 
     updateDrawableAttrs();
     updateBackgroundDrawableAttrs(true);
@@ -303,11 +303,11 @@ public class RoundedImageView extends ImageView {
     invalidate();
   }
 
-  public boolean isMutateBackground() {
+  public boolean mutatesBackground() {
     return mutateBackground;
   }
 
-  public void setMutateBackground(boolean mutate) {
+  public void mutateBackground(boolean mutate) {
     if (mutateBackground == mutate) { return; }
 
     mutateBackground = mutate;

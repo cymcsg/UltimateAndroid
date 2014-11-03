@@ -6,7 +6,7 @@ import android.graphics.Bitmap;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
 import android.widget.ImageView;
-
+//import com.squareup.picasso.Transformation;
 
 public final class RoundedTransformationBuilder {
 
