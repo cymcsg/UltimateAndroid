@@ -315,4 +315,11 @@
         <item>Top</item>
         <item>Overlay</item>
     </string-array>
+
+    <string-array name="action_list">
+        <item>Bitmap</item>
+        <item>Ovals</item>
+        <item>Picasso</item>
+        <item>Color</item>
+    </string-array>
 </resources>

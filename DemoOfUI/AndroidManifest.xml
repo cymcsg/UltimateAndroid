@@ -251,6 +251,7 @@
         <activity android:name=".sampleModules.CalendarListViewActivity"></activity>
         <activity android:name=".easyandroidanimations.EasyAnimationListActivity"></activity>
         <activity android:name=".easyandroidanimations.AnimationDetailActivity"></activity>
+        <activity android:name=".roundedimageview.RoundedImageViewActivity" android:theme="@style/android:Theme.Holo.Light.DarkActionBar"></activity>
 
     </application>
 

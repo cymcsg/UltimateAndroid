@@ -11,11 +11,11 @@
             android:id="@+id/avatar"
             android:src="@drawable/view_hover_daimajia"
             android:scaleType="centerCrop"
-            app:corner_radius="10dip"
-            app:border_width="1dp"
-            app:border_color="#ffffff"
-            app:mutate_background="true"
-            app:oval="true"/>
+            app:riv_corner_radius="10dip"
+            app:riv_border_width="1dp"
+            app:riv_border_color="#ffffff"
+            app:riv_mutate_background="true"
+            app:riv_oval="true"/>
     <TextView
             android:id="@+id/description"
             android:text="I'm Daimajia."

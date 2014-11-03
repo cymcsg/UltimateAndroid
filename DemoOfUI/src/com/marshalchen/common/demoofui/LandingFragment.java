@@ -36,6 +36,7 @@ import com.marshalchen.common.demoofui.pulltozoomview.PullToZoomActivity;
 import com.marshalchen.common.demoofui.recyclerplayground.RecyclerViewPlayGroundActivity;
 import com.marshalchen.common.demoofui.recyclerviewitemanimator.RecyclerViewItemAnimatorActivity;
 import com.marshalchen.common.demoofui.recyclerviewstickyheaders.RecyclerViewStickyHeadersActivity;
+import com.marshalchen.common.demoofui.roundedimageview.RoundedImageViewActivity;
 import com.marshalchen.common.demoofui.sampleModules.GoogleProgressBarActivity;
 import com.marshalchen.common.demoofui.quickreturnlistview.QuickReturnListViewActivity;
 import com.marshalchen.common.demoofui.shapeimageview.ShapeImageViewActivity;
@@ -724,6 +725,12 @@ public class LandingFragment extends Fragment {
         map.put("subname", "RecyclerView");
         map.put("class", "RecyclerViewStickyHeadersActivity");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "RoundedImageView");
+        map.put("detail", "try");
+        map.put("subname", "RoundedImageViewActivity");
+        map.put("class", "RoundedImageViewActivity");
+        enhanceList.add(map);
 
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -1043,6 +1050,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case "RecyclerViewStickyHeadersActivity":
                         BasicUtils.sendIntent(getActivity(), RecyclerViewStickyHeadersActivity.class);
+                        break;
+                    case "RoundedImageViewActivity":
+                        BasicUtils.sendIntent(getActivity(), RoundedImageViewActivity.class);
                         break;
 
 
