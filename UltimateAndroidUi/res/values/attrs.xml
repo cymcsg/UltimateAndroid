@@ -662,4 +662,12 @@
         <attr name="twowayview_rowSpan" format="integer"/>
     </declare-styleable>
 
+    <declare-styleable name="BlurDrawerLayout">
+        <attr name="blurRadius" format="integer"/>
+        <attr name="downScaleFactor" format="float"/>
+        <attr name="drawerUpImageId" format="reference"/>
+        <attr name="openDescription" format="reference"/>
+        <attr name="closeDescription" format="reference"/>
+    </declare-styleable>
+
 </resources>
