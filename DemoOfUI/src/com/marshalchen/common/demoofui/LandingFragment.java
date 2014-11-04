@@ -13,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.*;
+import com.marshalchen.common.demoofui.BlurNavigationDrawer.BlurNavigationDrawerActivity;
 import com.marshalchen.common.demoofui.androidanimationsdemo.AndroidAnimationsDemoActivity;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -726,10 +727,16 @@ public class LandingFragment extends Fragment {
         map.put("class", "RecyclerViewStickyHeadersActivity");
         enhanceList.add(map);
         map = new HashMap<>();
-        map.put("name", "RoundedImageView");
+        map.put("name", "RoundedImage");
         map.put("detail", "try");
         map.put("subname", "RoundedImageViewActivity");
         map.put("class", "RoundedImageViewActivity");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "BlurNavi");
+        map.put("detail", "try");
+        map.put("subname", "BlurNavigationDrawerActivity");
+        map.put("class", "BlurNavigationDrawerActivity");
         enhanceList.add(map);
 
 
@@ -1053,6 +1060,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case "RoundedImageViewActivity":
                         BasicUtils.sendIntent(getActivity(), RoundedImageViewActivity.class);
+                        break;
+                    case "BlurNavigationDrawerActivity":
+                        BasicUtils.sendIntent(getActivity(), BlurNavigationDrawerActivity.class);
                         break;
 
 

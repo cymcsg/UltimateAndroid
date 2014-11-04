@@ -46,7 +46,8 @@
         <activity android:name=".rebound.ReboundActivity"></activity>
         <activity android:name=".rebound.ReboundActivitySimple"></activity>
         <activity android:name=".sampleModules.FaceCropActivity"></activity>
-        <activity android:name=".listviewanimations.ListAnimationActivity" android:theme="@style/Widget.AppCompat.Light.ActionBar.Solid"></activity>
+        <activity android:name=".listviewanimations.ListAnimationActivity"
+                  android:theme="@style/Widget.AppCompat.Light.ActionBar.Solid"></activity>
         <activity android:name=".listviewanimations.ListAnimationListActivity"></activity>
         <activity android:name=".listviewanimations.GoogleCardsActivity"></activity>
         <activity android:name=".listviewanimations.GridViewActivity"></activity>
@@ -109,7 +110,8 @@
         <activity android:name=".pulltozoomview.PullToZoomScrollActivity"></activity>
         <activity android:name=".twowayview.TwoWayViewActivity"></activity>
         <activity android:name=".recyclerplayground.RecyclerViewPlayGroundActivity"></activity>
-        <activity android:name=".recyclerviewstickyheaders.RecyclerViewStickyHeadersActivity" android:theme="@style/Theme.MaterialTheme"></activity>
+        <activity android:name=".recyclerviewstickyheaders.RecyclerViewStickyHeadersActivity"
+                  android:theme="@style/Theme.MaterialTheme"></activity>
         <provider
                 android:name="android.support.v4.content.FileProvider"
                 android:authorities="com.marshalchen.common.demoofui.fileprovider"
@@ -251,8 +253,9 @@
         <activity android:name=".sampleModules.CalendarListViewActivity"></activity>
         <activity android:name=".easyandroidanimations.EasyAnimationListActivity"></activity>
         <activity android:name=".easyandroidanimations.AnimationDetailActivity"></activity>
-        <activity android:name=".roundedimageview.RoundedImageViewActivity" android:theme="@style/android:Theme.Holo.Light.DarkActionBar"></activity>
-
+        <activity android:name=".roundedimageview.RoundedImageViewActivity"
+                  android:theme="@style/android:Theme.Holo.Light.DarkActionBar"></activity>
+        <activity android:name=".BlurNavigationDrawer.BlurNavigationDrawerActivity"></activity>
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->
