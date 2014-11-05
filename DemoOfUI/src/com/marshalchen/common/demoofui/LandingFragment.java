@@ -20,6 +20,7 @@ import butterknife.InjectView;
 import com.marshalchen.common.commonUtils.basicUtils.BasicUtils;
 import com.marshalchen.common.demoofui.ResideMenuDemo.ResideMenuActivity;
 import com.marshalchen.common.demoofui.artbook.FreeFlowArtbookActivity;
+import com.marshalchen.common.demoofui.blurdialogfragment.BlurDialogActivity;
 import com.marshalchen.common.demoofui.circularProgressButton.CircularProgressButtonActivity;
 import com.marshalchen.common.demoofui.circularfloatingactionmenu.CircularFloatingActivity;
 import com.marshalchen.common.demoofui.dragSortListview.MultipleChoiceListView;
@@ -655,7 +656,7 @@ public class LandingFragment extends Fragment {
         map.put("class", "DrawableActivity");
         enhanceList.add(map);
         map = new HashMap<>();
-        map.put("name", "AndroidWeekView");
+        map.put("name", "WeekView");
         map.put("detail", "try");
         map.put("subname", "AndroidWeekView");
         map.put("class", "AndroidWeekViewActivity");
@@ -703,7 +704,7 @@ public class LandingFragment extends Fragment {
         map.put("class", "RecyclerViewItemAnimatorActivity");
         enhanceList.add(map);
         map = new HashMap<>();
-        map.put("name", "PullToZoomActivity");
+        map.put("name", "PullToZoom");
         map.put("detail", "try");
         map.put("subname", "PullToZoomActivity");
         map.put("class", "PullToZoomActivity");
@@ -737,6 +738,12 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "BlurNavigationDrawerActivity");
         map.put("class", "BlurNavigationDrawerActivity");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "BlurDialog");
+        map.put("detail", "try");
+        map.put("subname", "BlurDialogActivity");
+        map.put("class", "BlurDialogActivity");
         enhanceList.add(map);
 
 
@@ -1063,6 +1070,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case "BlurNavigationDrawerActivity":
                         BasicUtils.sendIntent(getActivity(), BlurNavigationDrawerActivity.class);
+                        break;
+                    case "BlurDialogActivity":
+                        BasicUtils.sendIntent(getActivity(), BlurDialogActivity.class);
                         break;
 
 

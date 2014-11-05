@@ -256,6 +256,10 @@
         <activity android:name=".roundedimageview.RoundedImageViewActivity"
                   android:theme="@style/android:Theme.Holo.Light.DarkActionBar"></activity>
         <activity android:name=".BlurNavigationDrawer.BlurNavigationDrawerActivity"></activity>
+
+        <activity android:name=".blurdialogfragment.BlurDialogActivity"></activity>
+        <activity android:name=".blurdialogfragment.SampleActionBarActivity"></activity>
+        <activity android:name=".blurdialogfragment.SampleFullScreenActivity"></activity>
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->
