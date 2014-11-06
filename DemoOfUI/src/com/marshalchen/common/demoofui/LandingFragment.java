@@ -102,7 +102,7 @@ public class LandingFragment extends Fragment {
         initTitanicView();
         initEnhanceList();
         initViewPager();
-
+        
         //CryptoUtils.testCrypto(getActivity());
         return mainView;
     }
@@ -745,6 +745,12 @@ public class LandingFragment extends Fragment {
         map.put("subname", "BlurDialogActivity");
         map.put("class", "BlurDialogActivity");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "CustomSwipe");
+        map.put("detail", "try");
+        map.put("subname", "CustomPullToRefreshActivity");
+        map.put("class", "CustomPullToRefreshActivity");
+        enhanceList.add(map);
 
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -1073,6 +1079,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case "BlurDialogActivity":
                         BasicUtils.sendIntent(getActivity(), BlurDialogActivity.class);
+                        break;
+                    case "CustomPullToRefreshActivity":
+                        BasicUtils.sendIntent(getActivity(), CustomPullToRefreshActivity.class);
                         break;
 
 
