@@ -670,4 +670,13 @@
         <attr name="closeDescription" format="reference"/>
     </declare-styleable>
 
+    <declare-styleable name="CustomPullRefreshLayout">
+        <attr name="cprlType" format="enum">
+            <enum name="circles" value="0" />
+            <enum name="water_drop" value="1" />
+            <enum name="ring" value="2" />
+        </attr>
+        <attr name="cprlColors" format="reference"/>
+    </declare-styleable>
+
 </resources>
