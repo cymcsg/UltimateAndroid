@@ -31,3 +31,10 @@ output/
 .settings/org.eclipse.jdt.core.prefs
 .settings/org.eclipse.jdt.launching.prefs
 .properties
+
+
+.gradle
+build/
+
+# Ignore Gradle GUI config
+gradle-app.setting

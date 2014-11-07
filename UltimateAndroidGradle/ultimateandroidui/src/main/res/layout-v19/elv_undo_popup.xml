@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="fill_parent"
+			  android:layout_height="match_parent"
+			  android:orientation="horizontal"
+			  android:background="@drawable/elv_toast_frame"
+			  android:gravity="center">
+
+	<TextView
+		android:id="@+id/text"
+		android:fontFamily="sans-serif-condensed"
+		android:textSize="16sp"
+		android:layout_weight="1"
+		android:ellipsize="end"
+		android:singleLine="true"
+		android:textColor="@color/elv_popup_text_color"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:shadowColor="#BB000000"
+		android:shadowRadius="2.75"/>
+
+	<View
+		android:layout_weight="0"
+		android:layout_marginRight="8dp"
+		android:layout_marginLeft="8dp"
+		android:layout_width="1dp"
+		android:layout_height="match_parent"
+		android:layout_marginTop="5dp"
+		android:layout_marginBottom="5dp"
+		android:background="@color/elv_separator_color"/>
+
+	<Button
+		android:id="@+id/undo"
+		android:fontFamily="sans-serif-condensed"
+		android:textColor="@color/elv_popup_text_color"
+		android:background="@drawable/elv_undo_btn_bg"
+		android:layout_weight="0"
+		android:drawableLeft="@drawable/elv_ic_action_undo"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:shadowColor="#BB000000"
+		android:shadowRadius="2.75"/>
+</LinearLayout>
