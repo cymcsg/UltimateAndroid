@@ -13,7 +13,7 @@ import com.marshalchen.common.uimodule.imageprocessing.filter.processing.*;
 import com.marshalchen.common.uimodule.imageprocessing.input.CameraPreviewInput;
 import com.marshalchen.common.uimodule.imageprocessing.input.GLTextureOutputRenderer;
 import com.marshalchen.common.uimodule.imageprocessing.input.ImageResourceInput;
-import com.marshalchen.common.uimodule.imageprocessing.output.ScreenEndpoint;
+import com.marshalchen.common.uimodule.imageprocessing.outputs.ScreenEndpoint;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Point;

@@ -76,7 +76,7 @@ import com.marshalchen.common.uimodule.androidanimations.specials.RollInAnimator
 import com.marshalchen.common.uimodule.androidanimations.specials.RollOutAnimator;
 import com.marshalchen.common.uimodule.androidanimations.specials.in.DropOutAnimator;
 import com.marshalchen.common.uimodule.androidanimations.specials.in.LandingAnimator;
-import com.marshalchen.common.uimodule.androidanimations.specials.out.TakingOffAnimator;
+import com.marshalchen.common.uimodule.androidanimations.specials.outs.TakingOffAnimator;
 import com.marshalchen.common.uimodule.androidanimations.zooming_entrances.ZoomInAnimator;
 import com.marshalchen.common.uimodule.androidanimations.zooming_entrances.ZoomInDownAnimator;
 import com.marshalchen.common.uimodule.androidanimations.zooming_entrances.ZoomInLeftAnimator;

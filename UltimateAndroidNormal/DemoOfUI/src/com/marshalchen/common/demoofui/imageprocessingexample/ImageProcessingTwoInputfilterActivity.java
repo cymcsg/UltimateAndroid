@@ -11,7 +11,7 @@ import com.marshalchen.common.uimodule.imageprocessing.filter.blend.*;
 import com.marshalchen.common.uimodule.imageprocessing.input.CameraPreviewInput;
 import com.marshalchen.common.uimodule.imageprocessing.input.GLTextureOutputRenderer;
 import com.marshalchen.common.uimodule.imageprocessing.input.ImageResourceInput;
-import com.marshalchen.common.uimodule.imageprocessing.output.ScreenEndpoint;
+import com.marshalchen.common.uimodule.imageprocessing.outputs.ScreenEndpoint;
 import android.os.Build;
 import android.os.Bundle;
 import android.app.Activity;
