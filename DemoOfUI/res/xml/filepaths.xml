@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<!--
-  ~ Copyright (c) 2014. Marshal Chen.
-  -->
-<paths>
-    <files-path path="assets/" name="big-world-map.gif" />
-    <external-path path="assets/" name="big-world-map.gif"/>
-</paths>

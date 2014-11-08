@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-   <transition xmlns:android="http://schemas.android.com/apk/res/android">
-          <item android:drawable="@drawable/cool_drag_drop_card_highlighted" />
-          <item android:drawable="@drawable/cool_drag_drop_card" />
-   </transition>
