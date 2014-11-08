@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:state_pressed="true" android:drawable="@drawable/elv_undo_btn_bg_pressed"/> <!-- pressed -->
+	<item android:state_focused="true" android:drawable="@drawable/elv_undo_btn_bg_focused"/> <!-- focused -->
+	<item android:drawable="@color/elv_btn_normal"/> <!-- default -->
+</selector>
