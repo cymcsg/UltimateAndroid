@@ -25,6 +25,7 @@ UltimateAndroid
 [Ui 效果](#demo_of_ui)
 
 ###Update Ui for Material Design!
+### Have both normal way and gradle way
 
 
 
@@ -58,7 +59,7 @@ Demo Manual
 Demo is rely on appcompat and the UltimateAndroid, you can change CONFIGURATION in your IDES etc.
 
 ###Quick Setup（Basic Usage）
-1.If this is the first time for you to use the framework, you can use CommonApplication as your Application of Android app or just let your custom application extends CommonApplication.  
+1.The normal way library and the gradle library are in different folders. If this is the first time for you to use the framework, you can use CommonApplication as your Application of Android app or just let your custom application extends CommonApplication.  
 
 2.UltimateAndroid  depends on appcompat. UltimateAndroidUi  depends on UltimateAndroid.And the DemoOfUi is depends on UltimateAndroidUi. As the function of View Injection which use ButterKnife,you should config your IDE before you can compile the project.***Most of  IDEs require additional configuration in order to enable annotation processing for Butter Knife,
 or you can see [IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse Configuration for butter Knife][102].***
@@ -265,7 +266,7 @@ Demo 使用方法
 Demo依赖于appcompat 和 UltimateAndroid，你可以在IDE或者配置文件里面添加一下依赖。
 
 ###快速入门（基础使用）
-1.如果这是您第一次使用UltimateAndroid，你可以使用CommonApplication作为Android App的Application或者使用自定义的Application继承CommonApplication。
+1.传统的library和gradle 的library在不同的文件夹中。如果这是您第一次使用UltimateAndroid，你可以使用CommonApplication作为Android App的Application或者使用自定义的Application继承CommonApplication。
 
 2.使用DemoOfUI的时候,需要注意UltimateAndroid 依赖 appcompat.UltimateAndroidUi 依赖 UltimateAndroid.DemoOfUi 依赖 UltimateAndroidUi.如果你不需要使用UiModule的话，可以直接依赖UltimateAndroid，这样体积会更纤细。Demo的Apk文件可以直接下载使用.由于框架使用了View Injection，**大部分IDE需要开启annotation的编译（使用了Butter Knife），如果不清楚如何开启可以看一下[IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse Configuration for butter Knife][102].**
 
