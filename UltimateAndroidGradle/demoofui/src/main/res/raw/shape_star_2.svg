@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="shape_hex.svg"
+   x="0px"
+   y="0px"
+   width="96px"
+   height="96px"
+   viewBox="0 0 96 96"
+   enable-background="new 0 0 96 96"
+   xml:space="preserve"><metadata
+   id="metadata3064"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs3062" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1366"
+   inkscape:window-height="705"
+   id="namedview3060"
+   showgrid="false"
+   inkscape:zoom="3.93"
+   inkscape:cx="48"
+   inkscape:cy="48"
+   inkscape:window-x="-8"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer_1" />
+
+<rect
+   id="rect3"
+   display="none"
+   fill="#FFFFFF"
+   stroke="#000000"
+   width="96"
+   height="96" />
+<path
+   sodipodi:type="star"
+   style="fill:#000000"
+   id="path2983"
+   sodipodi:sides="8"
+   sodipodi:cx="2.5445292"
+   sodipodi:cy="3.1246819"
+   sodipodi:r1="45.384731"
+   sodipodi:r2="36.717018"
+   sodipodi:arg1="0.68612399"
+   sodipodi:arg2="1.0788231"
+   inkscape:flatsided="false"
+   inkscape:rounded="3.1225023e-017"
+   inkscape:randomized="0"
+   d="M 37.659033,31.877863 19.888401,35.487153 7.0426639,48.285955 -8.0752245,38.272374 -26.208652,38.239186 -29.817942,20.468553 -42.616744,7.6228167 l 10.013581,-15.1178885 0.03319,-18.1334272 17.770633,-3.60929 12.8457365,-12.798802 15.1178885,10.013581 18.133427,0.03319 L 34.907,-14.21919 47.705803,-1.3734528 37.692221,13.744436 z"
+   inkscape:transform-center-x="3.7414556"
+   inkscape:transform-center-y="-0.85723747"
+   transform="matrix(1.0521461,0,0,1.0579917,45.498641,44.045322)" /></svg>
