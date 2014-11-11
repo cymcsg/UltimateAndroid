@@ -751,6 +751,12 @@ public class LandingFragment extends Fragment {
         map.put("subname", "CustomPullToRefreshActivity");
         map.put("class", "CustomPullToRefreshActivity");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "MaterialEditText");
+        map.put("detail", "try");
+        map.put("subname", "MaterialEditTextActivity");
+        map.put("class", "MaterialEditTextActivity");
+        enhanceList.add(map);
 
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -1082,6 +1088,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case "CustomPullToRefreshActivity":
                         BasicUtils.sendIntent(getActivity(), CustomPullToRefreshActivity.class);
+                        break;
+                    case "MaterialEditTextActivity":
+                        BasicUtils.sendIntent(getActivity(), MaterialEditTextActivity.class);
                         break;
 
 
