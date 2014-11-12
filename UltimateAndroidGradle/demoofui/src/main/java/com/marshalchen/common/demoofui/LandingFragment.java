@@ -757,6 +757,12 @@ public class LandingFragment extends Fragment {
         map.put("subname", "MaterialEditTextActivity");
         map.put("class", "MaterialEditTextActivity");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "RippleBackground");
+        map.put("detail", "try");
+        map.put("subname", "RippleBackgroundActivity");
+        map.put("class", "RippleBackgroundActivity");
+        enhanceList.add(map);
 
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -1091,6 +1097,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case "MaterialEditTextActivity":
                         BasicUtils.sendIntent(getActivity(), MaterialEditTextActivity.class);
+                        break;
+                    case "RippleBackgroundActivity":
+                        BasicUtils.sendIntent(getActivity(), RippleBackgroundActivity.class);
                         break;
 
 
