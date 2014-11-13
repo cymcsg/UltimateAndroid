@@ -34,6 +34,7 @@ import com.marshalchen.common.demoofui.imageprocessingexample.ImageProcessingAct
 import com.marshalchen.common.demoofui.imageprocessingexample.ImageProcessingVideotoImageActivity;
 import com.marshalchen.common.demoofui.materialmenu.MaterialMenuAppcompatActivity;
 import com.marshalchen.common.demoofui.materialmenu.MaterialMenuToolbarActivity;
+import com.marshalchen.common.demoofui.pagerSlidingTabStrip.PagerSlidingTabStripActivity;
 import com.marshalchen.common.demoofui.pulltozoomview.PullToZoomActivity;
 import com.marshalchen.common.demoofui.recyclerplayground.RecyclerViewPlayGroundActivity;
 import com.marshalchen.common.demoofui.recyclerviewitemanimator.RecyclerViewItemAnimatorActivity;
@@ -605,7 +606,7 @@ public class LandingFragment extends Fragment {
         map.put("name", "CropImage");
         map.put("detail", "try");
         map.put("subname", "CropImage");
-        map.put("class", "");
+        map.put("class", "CropperSample");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "CropperImage");
@@ -762,6 +763,12 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "RippleBackgroundActivity");
         map.put("class", "RippleBackgroundActivity");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "PagerSlidingTab");
+        map.put("detail", "try");
+        map.put("subname", "PagerSlidingTabStripActivity");
+        map.put("class", "PagerSlidingTabStripActivity");
         enhanceList.add(map);
 
 
@@ -1100,6 +1107,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case "RippleBackgroundActivity":
                         BasicUtils.sendIntent(getActivity(), RippleBackgroundActivity.class);
+                        break;
+                    case "PagerSlidingTabStripActivity":
+                        BasicUtils.sendIntent(getActivity(), PagerSlidingTabStripActivity.class);
                         break;
 
 
