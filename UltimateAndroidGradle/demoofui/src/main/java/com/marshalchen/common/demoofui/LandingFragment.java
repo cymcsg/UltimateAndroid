@@ -13,10 +13,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.*;
+
 import com.marshalchen.common.demoofui.BlurNavigationDrawer.BlurNavigationDrawerActivity;
 import com.marshalchen.common.demoofui.androidanimationsdemo.AndroidAnimationsDemoActivity;
+
 import butterknife.ButterKnife;
 import butterknife.InjectView;
+
 import com.marshalchen.common.commonUtils.basicUtils.BasicUtils;
 import com.marshalchen.common.demoofui.ResideMenuDemo.ResideMenuActivity;
 import com.marshalchen.common.demoofui.artbook.FreeFlowArtbookActivity;
@@ -34,6 +37,7 @@ import com.marshalchen.common.demoofui.imageprocessingexample.ImageProcessingAct
 import com.marshalchen.common.demoofui.imageprocessingexample.ImageProcessingVideotoImageActivity;
 import com.marshalchen.common.demoofui.materialmenu.MaterialMenuAppcompatActivity;
 import com.marshalchen.common.demoofui.materialmenu.MaterialMenuToolbarActivity;
+import com.marshalchen.common.demoofui.materialripple.MaterialRippleActivity;
 import com.marshalchen.common.demoofui.pagerSlidingTabStrip.PagerSlidingTabStripActivity;
 import com.marshalchen.common.demoofui.pulltozoomview.PullToZoomActivity;
 import com.marshalchen.common.demoofui.recyclerplayground.RecyclerViewPlayGroundActivity;
@@ -103,7 +107,7 @@ public class LandingFragment extends Fragment {
         initTitanicView();
         initEnhanceList();
         initViewPager();
-        
+
         //CryptoUtils.testCrypto(getActivity());
         return mainView;
     }
@@ -770,6 +774,12 @@ public class LandingFragment extends Fragment {
         map.put("subname", "PagerSlidingTabStripActivity");
         map.put("class", "PagerSlidingTabStripActivity");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "MaterialRipple");
+        map.put("detail", "try");
+        map.put("subname", "MaterialRippleActivity");
+        map.put("class", "MaterialRippleActivity");
+        enhanceList.add(map);
 
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -1110,6 +1120,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case "PagerSlidingTabStripActivity":
                         BasicUtils.sendIntent(getActivity(), PagerSlidingTabStripActivity.class);
+                        break;
+                    case "MaterialRippleActivity":
+                        BasicUtils.sendIntent(getActivity(), MaterialRippleActivity.class);
                         break;
 
 
