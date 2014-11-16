@@ -13,10 +13,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.*;
+
 import com.marshalchen.common.demoofui.BlurNavigationDrawer.BlurNavigationDrawerActivity;
 import com.marshalchen.common.demoofui.androidanimationsdemo.AndroidAnimationsDemoActivity;
+
 import butterknife.ButterKnife;
 import butterknife.InjectView;
+
 import com.marshalchen.common.commonUtils.basicUtils.BasicUtils;
 import com.marshalchen.common.demoofui.ResideMenuDemo.ResideMenuActivity;
 import com.marshalchen.common.demoofui.artbook.FreeFlowArtbookActivity;
@@ -34,6 +37,8 @@ import com.marshalchen.common.demoofui.imageprocessingexample.ImageProcessingAct
 import com.marshalchen.common.demoofui.imageprocessingexample.ImageProcessingVideotoImageActivity;
 import com.marshalchen.common.demoofui.materialmenu.MaterialMenuAppcompatActivity;
 import com.marshalchen.common.demoofui.materialmenu.MaterialMenuToolbarActivity;
+import com.marshalchen.common.demoofui.materialripple.MaterialRippleActivity;
+import com.marshalchen.common.demoofui.pagerSlidingTabStrip.PagerSlidingTabStripActivity;
 import com.marshalchen.common.demoofui.pulltozoomview.PullToZoomActivity;
 import com.marshalchen.common.demoofui.recyclerplayground.RecyclerViewPlayGroundActivity;
 import com.marshalchen.common.demoofui.recyclerviewitemanimator.RecyclerViewItemAnimatorActivity;
@@ -102,7 +107,7 @@ public class LandingFragment extends Fragment {
         initTitanicView();
         initEnhanceList();
         initViewPager();
-        
+
         //CryptoUtils.testCrypto(getActivity());
         return mainView;
     }
@@ -605,7 +610,7 @@ public class LandingFragment extends Fragment {
         map.put("name", "CropImage");
         map.put("detail", "try");
         map.put("subname", "CropImage");
-        map.put("class", "");
+        map.put("class", "CropperSample");
         enhanceList.add(map);
         map = new HashMap<>();
         map.put("name", "CropperImage");
@@ -750,6 +755,30 @@ public class LandingFragment extends Fragment {
         map.put("detail", "try");
         map.put("subname", "CustomPullToRefreshActivity");
         map.put("class", "CustomPullToRefreshActivity");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "MaterialEditText");
+        map.put("detail", "try");
+        map.put("subname", "MaterialEditTextActivity");
+        map.put("class", "MaterialEditTextActivity");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "RippleBackground");
+        map.put("detail", "try");
+        map.put("subname", "RippleBackgroundActivity");
+        map.put("class", "RippleBackgroundActivity");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "PagerSlidingTab");
+        map.put("detail", "try");
+        map.put("subname", "PagerSlidingTabStripActivity");
+        map.put("class", "PagerSlidingTabStripActivity");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "MaterialRipple");
+        map.put("detail", "try");
+        map.put("subname", "MaterialRippleActivity");
+        map.put("class", "MaterialRippleActivity");
         enhanceList.add(map);
 
 
@@ -1082,6 +1111,18 @@ public class LandingFragment extends Fragment {
                         break;
                     case "CustomPullToRefreshActivity":
                         BasicUtils.sendIntent(getActivity(), CustomPullToRefreshActivity.class);
+                        break;
+                    case "MaterialEditTextActivity":
+                        BasicUtils.sendIntent(getActivity(), MaterialEditTextActivity.class);
+                        break;
+                    case "RippleBackgroundActivity":
+                        BasicUtils.sendIntent(getActivity(), RippleBackgroundActivity.class);
+                        break;
+                    case "PagerSlidingTabStripActivity":
+                        BasicUtils.sendIntent(getActivity(), PagerSlidingTabStripActivity.class);
+                        break;
+                    case "MaterialRippleActivity":
+                        BasicUtils.sendIntent(getActivity(), MaterialRippleActivity.class);
                         break;
 
 

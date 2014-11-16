@@ -266,4 +266,13 @@
         <item name="android:dividerHeight">0dp</item>
     </style>
 
+    <style name="PagerSlidingTabStrip" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/lightgrey</item>
+        <!-- ...and here we setting appcompat’s color theming attrs -->
+        <item name="colorPrimary">@color/Green</item>
+        <item name="colorPrimaryDark">@color/holo_green_dark</item>
+        <item name="colorAccent">@color/yellowGreenColor</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
 </resources>

@@ -1,0 +1,47 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".DemoActivity"
+    >
+
+    <com.marshalchen.common.ui.MaterialRippleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffff00"
+        android:layout_marginTop="24dp"
+        app:rippleOverlay="true"
+        app:rippleColor="#585858"
+        app:rippleAlpha="0.2"
+        app:rippleDelayClick="false"
+        app:rippleHover="true">
+
+        <Button
+            android:id="@+id/ripple_layout_1"
+            android:layout_width="match_parent"
+            android:background="@drawable/material_ripple_selector"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Overlay with hover"/>
+
+    </com.marshalchen.common.ui.MaterialRippleLayout>
+
+
+    <Button
+        android:id="@+id/ripple_layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center"
+        android:background="@drawable/material_ripple_selector"
+        android:text="Ripples static init"/>
+
+</LinearLayout>

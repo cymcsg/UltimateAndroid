@@ -13,8 +13,20 @@ UltimateAndroid快速开发框架教程（一）:部署框架
     
     3.项目需要最新的Android Sdk，目前是Android Api 21，但是绝大部分内容可以在Android 2.1的系统上运行。
 
+####一、Android Stuidio下使用Gradle项目：
+1.在命令行下```git clone https://github.com/cymcsg/UltimateAndroid.git```或者直接下载Zip包，并解压。
 
-####一、Eclipse环境下：
+2.``Import Non-Android Studio Project``(需要Android Studio版本version>0.9.0)，之后根据需要选择框架或者Demo，可以直接导入UltimateAndroidGradle文件夹，gradle的版本需要>=2.1
+
+3.注意检查一下SDK的版本是否为5.0以上，java compile level是否为1.7以上。
+
+4.点击``Preference-Compiler-Annotation Processors``,打开``annotation processing``（所有使用View Injection的项目都需要设置，所以除了UltimateAndroid之外，DemoOfUi和Demo也需要设置）
+![Intellij](http://blog.marshalchen.com/images/intellij1.png)
+
+5.之后就可以运行DemoOfUI或者Demo了。
+
+
+####二、Eclipse环境下：
 1.在命令行下```git clone https://github.com/cymcsg/UltimateAndroid.git```或者直接下载Zip包，并解压。
 
 2.将目录下的``appcompat``,``UltimateAndroid``两个目录导入，如果需要UiModule则导入``UiModule``如果需要看UI Demo的话导入``DemoOfUI``,如果需要看项目Demo的话导入``Demo``。（注意需要导入Android项目existing android code而不是existing project）
@@ -32,7 +44,7 @@ UltimateAndroid快速开发框架教程（一）:部署框架
 5.之后就可以运行DemoOfUI或者Demo了。
 
 
-####二、Intellij Idea（Android Studio）环境下
+####三、Intellij Idea 环境下
 1.在命令行下```git clone https://github.com/cymcsg/UltimateAndroid.git```或者直接下载Zip包，并解压。
 
 2.将目录下的``appcompat``,``UltimateAndroid``两个目录导入，如果需要UiModule则导入``UiModule``如果需要看UI Demo的话导入``DemoOfUI``,如果需要看项目Demo的话导入``Demo``。（注意需要导入Android项目existing android code而不是existing project）

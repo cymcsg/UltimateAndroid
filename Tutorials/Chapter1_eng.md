@@ -12,7 +12,19 @@ UltimateAndroid rapid development framework tutorial (a): Deployment of the Fram
     3.The framework needs the lastest Android Sdk.It needs Android Api 21 now,but most part of the framework can run on even Android 2.1.
 
 
-####a、Eclipse：
+####a、Android Studio Using Gradle
+1.```git clone https://github.com/cymcsg/UltimateAndroid.git```or download the Zip directly.
+
+2.``Import Non-Android Studio Project``(need the version of Android Stuido>0.9.0),then you can choose ``UltimateAndroidGradle`` folder.
+
+3.Please pay attention to the version of SDK should be above API 21,the version of gradle should be above 2.1, the java compile level should be above 1.7.
+
+4.Click ``Preference-Compiler-Annotation Processors``,open ``annotation processing``
+![Intellij](http://blog.marshalchen.com/images/intellij1.png)
+
+5.Then you can run the demos。
+
+####b、Eclipse：
 1.```git clone https://github.com/cymcsg/UltimateAndroid.git```or download the Zip directly.
 
 2.Import ``appcompat``,``UltimateAndroid`` in the folder.If you need UiModules,please import ``UltimateAndroidUi``.If you need Ui Demo,please import ``DemoOfUi``.（import Android-existing android code）
@@ -31,7 +43,7 @@ Notice: If you can't find the ``Annotation Processing``,please install the plugi
 
 
 
-####b、Intellij Idea（Android Studio)
+####c、Intellij Idea
 1.```git clone https://github.com/cymcsg/UltimateAndroid.git```or download the Zip directly.
 
 2.Import ``appcompat``,``UltimateAndroid`` in the folder.If you need UiModules,please import UltimateAndroidUi.If you need Ui Demo,please import ``DemoOfUi``.

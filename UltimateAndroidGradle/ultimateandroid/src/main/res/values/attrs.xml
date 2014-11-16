@@ -194,4 +194,19 @@
         </attr>
     </declare-styleable>
 
+
+    <declare-styleable name="MaterialRippleLayout">
+        <attr name="rippleColor" format="color"/>
+        <attr name="rippleDimension" format="dimension"/>
+        <attr name="rippleOverlay" format="boolean"/>
+        <attr name="rippleAlpha" format="float"/>
+        <attr name="rippleDuration" format="integer"/>
+        <attr name="rippleFadeDuration" format="integer"/>
+        <attr name="rippleHover" format="boolean"/>
+        <attr name="rippleBackground" format="color"/>
+        <attr name="rippleDelayClick" format="boolean"/>
+        <attr name="ripplePersistent" format="boolean"/>
+        <attr name="rippleInAdapter" format="boolean"/>
+    </declare-styleable>
+
 </resources>

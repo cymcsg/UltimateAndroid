@@ -1,7 +1,7 @@
 UltimateAndroid
 ==========================
 
-###Version:0.2.0 beta
+###Version:0.3.0
 
 
 [![Build Status](https://drone.io/github.com/cymcsg/UltimateAndroid/status.png)](https://drone.io/github.com/cymcsg/UltimateAndroid/latest)
@@ -38,7 +38,11 @@ UltimateAndroid
 
 ---
 
-#####The framework contains many features like View Injection,ORM,Asynchronous Networking and Image Loader,User scenario testing,over 100 Ui effects etc.And there are also many useful feature like WebViewUtils,DaoUtils,Https Utils, TripleDes Utils etc.The framework will be added  more feature in the future. 
+#####UltimateAndroid contains many features like View Injection,ORM,Asynchronous Networking and Image Loader,User scenario testing,over 100 Ui effects etc.And there are also many useful feature like WebViewUtils,DaoUtils,Https Utils, TripleDes Utils etc.The framework will be added  more feature in the future. 
+
+
+
+#####The framework is like flask in python which contains some other opensource project like [Butter Knife][1],[Asynchronous Http Client for Android][2], [Universal Image Loader for Android][3] and many other which I said at the end of Readme or in the updatelog.
 	
 
 	 
@@ -56,15 +60,15 @@ Demo Manual
 
 
 
-Demo is rely on appcompat and the UltimateAndroid, you can change CONFIGURATION in your IDES etc.
+
 
 ###Quick Setup（Basic Usage）
-1.The normal way library and the gradle library are in different folders. If this is the first time for you to use the framework, you can use CommonApplication as your Application of Android app or just let your custom application extends CommonApplication.  
+1.The normal way library and the gradle library are in different folders. If you use gradle way,you can use ``Import Non-Android Studio Project``(version>0.9.0).If you use normal way,you can pay attention that UltimateAndroid  depends on appcompat, UltimateAndroidUi  depends on UltimateAndroid,and the DemoOfUi is depends on UltimateAndroidUi. 
 
-2.UltimateAndroid  depends on appcompat. UltimateAndroidUi  depends on UltimateAndroid.And the DemoOfUi is depends on UltimateAndroidUi. As the function of View Injection which use ButterKnife,you should config your IDE before you can compile the project.***Most of  IDEs require additional configuration in order to enable annotation processing for Butter Knife,
+2.As the function of View Injection which use ButterKnife,you should config your IDE before you can compile the project.***Most of  IDEs require additional configuration in order to enable annotation processing for Butter Knife,
 or you can see [IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse Configuration for butter Knife][102].***
 
-***Notice:The latest version of the framework needs Android Sdk  of Version 21.***
+***Notice:The latest version of the framework needs Android Sdk  of Version 21.If you use gradle project, you should use android studio which version should be 0.9.0+***
 
 3.View Injection:
   
@@ -266,11 +270,11 @@ Demo 使用方法
 Demo依赖于appcompat 和 UltimateAndroid，你可以在IDE或者配置文件里面添加一下依赖。
 
 ###快速入门（基础使用）
-1.传统的library和gradle 的library在不同的文件夹中。如果这是您第一次使用UltimateAndroid，你可以使用CommonApplication作为Android App的Application或者使用自定义的Application继承CommonApplication。
+1.传统的library和gradle 的library在不同的文件夹中。如果你使用gradle方式，可以用android studio的``Import Non-Android Studio Project``(version>0.9.0)。如果使用普通方式，需要注意UltimateAndroid 依赖 appcompat.UltimateAndroidUi 依赖 UltimateAndroid.DemoOfUi 依赖 UltimateAndroidUi.如果你不需要使用UiModule的话，可以直接依赖UltimateAndroid，这样体积会更纤细。
 
-2.使用DemoOfUI的时候,需要注意UltimateAndroid 依赖 appcompat.UltimateAndroidUi 依赖 UltimateAndroid.DemoOfUi 依赖 UltimateAndroidUi.如果你不需要使用UiModule的话，可以直接依赖UltimateAndroid，这样体积会更纤细。Demo的Apk文件可以直接下载使用.由于框架使用了View Injection，**大部分IDE需要开启annotation的编译（使用了Butter Knife），如果不清楚如何开启可以看一下[IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse Configuration for butter Knife][102].**
+2.Demo的Apk文件可以直接下载使用.由于框架使用了View Injection，**大部分IDE需要开启annotation的编译（使用了Butter Knife），如果不清楚如何开启可以看一下[IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse Configuration for butter Knife][102].**
 
-***注意：UltimateAndroid框架需要API21版本的Android SDK来进行编译***
+***注意：UltimateAndroid框架需要API21版本的Android SDK来进行编译,如果使用了gradle的project，android studio的版本需要大于0.9.0***
 
 3.视图注入：
 
@@ -503,7 +507,7 @@ The opensource program which I use:
 14.[FloatingActionButton](https://github.com/futuresimple/android-floating-action-button)		   
 15.[FloatingActionButtonWithListView](https://github.com/makovkastar/FloatingActionButton)
 
-16. [Android View Animations](https://github.com/daimajia/AndroidViewAnimations)
+16.[Android View Animations](https://github.com/daimajia/AndroidViewAnimations)
 
 17.[Trinea](https://github.com/Trinea/android-common)
 
@@ -513,7 +517,7 @@ The opensource program which I use:
 
 20.[Rebound](https://github.com/facebook/rebound)
 
-21. [Titanic](https://github.com/RomainPiel/Titanic)
+21.[Titanic](https://github.com/RomainPiel/Titanic)
 
 22.[FaceCrop](https://github.com/Todd-Davies/ProgressWheel)  
 

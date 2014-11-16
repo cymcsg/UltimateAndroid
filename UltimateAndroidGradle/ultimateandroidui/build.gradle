@@ -32,5 +32,9 @@ dependencies {
     compile 'com.android.support:support-v13:21.0.0'
     compile 'com.android.support:recyclerview-v7:21.0.0'
     compile project(':ultimateandroid')
+    compile 'com.rengwuxian.materialedittext:library:1.1.0'
+    compile 'com.skyfishjy.ripplebackground:library:1.0.1'
+    compile 'com.jpardogo.materialtabstrip:library:1.0.3'
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
 
 }
