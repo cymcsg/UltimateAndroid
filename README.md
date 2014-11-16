@@ -507,7 +507,7 @@ The opensource program which I use:
 14.[FloatingActionButton](https://github.com/futuresimple/android-floating-action-button)		   
 15.[FloatingActionButtonWithListView](https://github.com/makovkastar/FloatingActionButton)
 
-16. [Android View Animations](https://github.com/daimajia/AndroidViewAnimations)
+16.[Android View Animations](https://github.com/daimajia/AndroidViewAnimations)
 
 17.[Trinea](https://github.com/Trinea/android-common)
 
@@ -517,7 +517,7 @@ The opensource program which I use:
 
 20.[Rebound](https://github.com/facebook/rebound)
 
-21. [Titanic](https://github.com/RomainPiel/Titanic)
+21.[Titanic](https://github.com/RomainPiel/Titanic)
 
 22.[FaceCrop](https://github.com/Todd-Davies/ProgressWheel)  
 
