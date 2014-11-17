@@ -780,6 +780,12 @@ public class LandingFragment extends Fragment {
         map.put("subname", "MaterialRippleActivity");
         map.put("class", "MaterialRippleActivity");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "CircleProgress");
+        map.put("detail", "try");
+        map.put("subname", "CircleProgressActivity");
+        map.put("class", "CircleProgressActivity");
+        enhanceList.add(map);
 
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -1123,6 +1129,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case "MaterialRippleActivity":
                         BasicUtils.sendIntent(getActivity(), MaterialRippleActivity.class);
+                        break;
+                    case "CircleProgressActivity":
+                        BasicUtils.sendIntent(getActivity(), CircleProgressActivity.class);
                         break;
 
 

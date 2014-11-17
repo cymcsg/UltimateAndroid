@@ -284,6 +284,7 @@
             android:theme="@style/PagerSlidingTabStrip"></activity>
         <activity android:name=".materialripple.MaterialRippleActivity"></activity>
         <activity android:name=".materialripple.MaterialRippleListActivity"></activity>
+        <activity android:name=".sampleModules.CircleProgressActivity"></activity>
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->
