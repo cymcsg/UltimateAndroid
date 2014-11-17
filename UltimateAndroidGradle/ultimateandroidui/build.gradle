@@ -36,5 +36,6 @@ dependencies {
     compile 'com.skyfishjy.ripplebackground:library:1.0.1'
     compile 'com.jpardogo.materialtabstrip:library:1.0.3'
     compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    compile 'com.github.lzyzsd:circleprogress:1.0.0@aar'
 
 }
