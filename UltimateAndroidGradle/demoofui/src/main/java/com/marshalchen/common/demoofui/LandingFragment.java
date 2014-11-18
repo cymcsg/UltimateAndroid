@@ -35,6 +35,7 @@ import com.marshalchen.common.demoofui.fadingactionbar.HomeActivity;
 import com.marshalchen.common.demoofui.fancyCoverFlow.FancyCoverFlowActivity;
 import com.marshalchen.common.demoofui.imageprocessingexample.ImageProcessingActivity;
 import com.marshalchen.common.demoofui.imageprocessingexample.ImageProcessingVideotoImageActivity;
+import com.marshalchen.common.demoofui.materialdesigndemo.MaterialDesignActivity;
 import com.marshalchen.common.demoofui.materialmenu.MaterialMenuAppcompatActivity;
 import com.marshalchen.common.demoofui.materialmenu.MaterialMenuToolbarActivity;
 import com.marshalchen.common.demoofui.materialripple.MaterialRippleActivity;
@@ -786,6 +787,12 @@ public class LandingFragment extends Fragment {
         map.put("subname", "CircleProgressActivity");
         map.put("class", "CircleProgressActivity");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "MaterialDesign");
+        map.put("detail", "try");
+        map.put("subname", "MaterialDesignActivity");
+        map.put("class", "MaterialDesignActivity");
+        enhanceList.add(map);
 
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -1132,6 +1139,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case "CircleProgressActivity":
                         BasicUtils.sendIntent(getActivity(), CircleProgressActivity.class);
+                        break;
+                    case "MaterialDesignActivity":
+                        BasicUtils.sendIntent(getActivity(), MaterialDesignActivity.class);
                         break;
 
 

@@ -285,6 +285,13 @@
         <activity android:name=".materialripple.MaterialRippleActivity"></activity>
         <activity android:name=".materialripple.MaterialRippleListActivity"></activity>
         <activity android:name=".sampleModules.CircleProgressActivity"></activity>
+
+        <activity android:name=".materialdesigndemo.MaterialDesignActivity"></activity>
+        <activity android:name=".materialdesigndemo.ButtonsActivity"></activity>
+        <activity android:name=".materialdesigndemo.ProgressActivity"></activity>
+        <activity android:name=".materialdesigndemo.SwitchActivity"></activity>
+        <activity android:name=".materialdesigndemo.WidgetActivity"></activity>
+
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->
