@@ -43,18 +43,18 @@ UltimateAndroid
 
 
 #####The framework is like flask in python which contains some other opensource project like [Butter Knife][1],[Asynchronous Http Client for Android][2], [Universal Image Loader for Android][3] and many other which I said at the end of Readme or in the updatelog.
-	
 
-	 
+
+
 Up to now,I have only write the demo of most parts of UI modules and View Injection.The demo is something boring,but you can also see many kinds of UI modules.The DemoOfUi's screenshots are below,and you can download the apk directly.
 
 [Demo of Ui's screenshot is here.](#demo_of_ui)
-	
+
 #####Welcome to fork.
 
 
 
-	
+
 Demo Manual
 -----
 
@@ -63,7 +63,7 @@ Demo Manual
 
 
 ###Quick Setup（Basic Usage）
-1.The normal way library and the gradle library are in different folders. If you use gradle way,you can use ``Import Non-Android Studio Project``(version>0.9.0).If you use normal way,you can pay attention that UltimateAndroid  depends on appcompat, UltimateAndroidUi  depends on UltimateAndroid,and the DemoOfUi is depends on UltimateAndroidUi. 
+1.The normal way library and the gradle library are in different folders. If you use gradle way,you can use ``Import Non-Android Studio Project``(version>0.9.0).If you use normal way,you can pay attention that UltimateAndroid  depends on appcompat, UltimateAndroidUi  depends on UltimateAndroid,and the DemoOfUi is depends on UltimateAndroidUi.
 
 2.As the function of View Injection which use ButterKnife,you should config your IDE before you can compile the project.***Most of  IDEs require additional configuration in order to enable annotation processing for Butter Knife,
 or you can see [IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse Configuration for butter Knife][102].***
@@ -71,132 +71,139 @@ or you can see [IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse 
 ***Notice:The latest version of the framework needs Android Sdk  of Version 21.If you use gradle project, you should use android studio which version should be 0.9.0+***
 
 3.View Injection:
-  
-  ``Example:``
-  
- 	class ExampleActivity extends Activity {
-  	@InjectView(R.id.title) TextView title;
-  	@InjectView(R.id.subtitle) TextView subtitle;
-  	@InjectView(R.id.footer) TextView footer;
 
-  	@Override public void onCreate(Bundle savedInstanceState) {
-    	super.onCreate(savedInstanceState);
-    	setContentView(R.layout.simple_activity);
-    	ButterKnife.inject(this);
-    	// TODO Use "injected" views...
+  ``Example:``
+
+``` java
+	class ExampleActivity extends Activity {
+	@InjectView(R.id.title) TextView title;
+	@InjectView(R.id.subtitle) TextView subtitle;
+	@InjectView(R.id.footer) TextView footer;
+
+	@Override public void onCreate(Bundle savedInstanceState) {
+  	super.onCreate(savedInstanceState);
+  	setContentView(R.layout.simple_activity);
+  	ButterKnife.inject(this);
+  	// TODO Use "injected" views...
   }
 }
+```
 
 Another use is simplifying the view holder pattern inside of a list adapter.
 
-	public class MyAdapter extends BaseAdapter {
-	@Override public View getView(int position, View view, ViewGroup parent) {
-    	ViewHolder holder;
-    	if (view != null) {
-      	holder = (ViewHolder) view.getTag();
-    	} else {
-      	view = inflater.inflate(R.layout.whatever, parent, false);
-      	holder = new ViewHolder(view);
-      	view.setTag(holder);
-    	}
-    	holder.name.setText("John Doe");
-    	// etc...
-    	return view;
-    	}
-    	static class ViewHolder {
-    	@InjectView(R.id.title) TextView name;
-    	@InjectView(R.id.job_title) TextView jobTitle;
-    	public ViewHolder(View view) {
-    	ButterKnife.inject(this, view);
-      }
-      }
-	}
-	
+``` java
+public class MyAdapter extends BaseAdapter {
+@Override public View getView(int position, View view, ViewGroup parent) {
+  	ViewHolder holder;
+  	if (view != null) {
+    	holder = (ViewHolder) view.getTag();
+  	} else {
+    	view = inflater.inflate(R.layout.whatever, parent, false);
+    	holder = new ViewHolder(view);
+    	view.setTag(holder);
+  	}
+  	holder.name.setText("John Doe");
+  	// etc...
+  	return view;
+  	}
+  	static class ViewHolder {
+  	@InjectView(R.id.title) TextView name;
+  	@InjectView(R.id.job_title) TextView jobTitle;
+  	public ViewHolder(View view) {
+  	ButterKnife.inject(this, view);
+    }
+    }
+}
+```
+
 4.Asynchronous Network:
   Use asynchronous utils,you do not need to use an addtional Thread to visit network.
 
-	HttpUtilsAsync.get("http://www.google.com", new AsyncHttpResponseHandler() {
+``` java
+HttpUtilsAsync.get("http://www.google.com", new AsyncHttpResponseHandler() {
 
-    @Override
-    public void onStart() {
-        // called before request is started
-    }
+  @Override
+  public void onStart() {
+      // called before request is started
+  }
 
-    @Override
-    public void onSuccess(int statusCode, Header[] headers, byte[] response) {
-        // called when response HTTP status is "200 OK"
-    }
+  @Override
+  public void onSuccess(int statusCode, Header[] headers, byte[] response) {
+      // called when response HTTP status is "200 OK"
+  }
 
-    @Override
-    public void onFailure(int statusCode, Header[] headers, byte[] errorResponse, Throwable e) {
-        // called when response HTTP status is "4XX" (eg. 401, 403, 404)
-    }
+  @Override
+  public void onFailure(int statusCode, Header[] headers, byte[] errorResponse, Throwable e) {
+      // called when response HTTP status is "4XX" (eg. 401, 403, 404)
+  }
 
-    @Override
-    public void onRetry(int retryNo) {
-        // called when request is retried
-	}
-	});
-	
+  @Override
+  public void onRetry(int retryNo) {
+      // called when request is retried
+}
+});
+```
+
 Post request:
-	
-	HttpUtilsAsync.post("http://www.google.com", new AsyncHttpResponseHandler() {
 
-    @Override
-    public void onStart() {
-        // called before request is started
-    }
+``` java
+HttpUtilsAsync.post("http://www.google.com", new AsyncHttpResponseHandler() {
 
-    @Override
-    public void onSuccess(int statusCode, Header[] headers, byte[] response) {
-        // called when response HTTP status is "200 OK"
-    }
+  @Override
+  public void onStart() {
+      // called before request is started
+  }
 
-    @Override
-    public void onFailure(int statusCode, Header[] headers, byte[] errorResponse, Throwable e) {
-        // called when response HTTP status is "4XX" (eg. 401, 403, 404)
-    }
+  @Override
+  public void onSuccess(int statusCode, Header[] headers, byte[] response) {
+      // called when response HTTP status is "200 OK"
+  }
 
-    @Override
-    public void onRetry(int retryNo) {
-        // called when request is retried
-	}
-	});
-	
+  @Override
+  public void onFailure(int statusCode, Header[] headers, byte[] errorResponse, Throwable e) {
+      // called when response HTTP status is "4XX" (eg. 401, 403, 404)
+  }
+
+  @Override
+  public void onRetry(int retryNo) {
+      // called when request is retried
+}
+});
+```
+
 5.Display Images:
   If you have already use or extend CommonApplication,you can use like this:
   ```ImageLoader.getInstance().displayImage((imageUri, imageView));```
-  
+
   Or for some advantage usage:
 
+``` java
+imageLoader.displayImage(imageUri, imageView, displayOptions, new ImageLoadingListener() 	{
+    @Override
+  	public void onLoadingStarted(String imageUri, View view) {
+      	...
+  	}
+  	@Override
+  	public void onLoadingFailed(String imageUri, View view, FailReason failReason) {
+        ...
+    }
+    @Override
+    public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
+    ...
+    }
+    @Override
+    public void onLoadingCancelled(String imageUri, View view) {
+     ...
+     }
+}, new ImageLoadingProgressListener() {
+ @Override
+ public void onProgressUpdate(String imageUri, View view, int current, int total) {
+ ...
+ }
+});
+```
 
-	imageLoader.displayImage(imageUri, imageView, displayOptions, new ImageLoadingListener() 	{
-	    @Override
-    	public void onLoadingStarted(String imageUri, View view) {
-        	...
-    	}
-    	@Override
-    	public void onLoadingFailed(String imageUri, View view, FailReason failReason) {
-	        ...
-	    }
-	    @Override
-	    public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
-	    ...
-	    }
-	    @Override
-	    public void onLoadingCancelled(String imageUri, View view) {
-	     ...
-	     }
-	}, new ImageLoadingProgressListener() {
-	 @Override
-	 public void onProgressUpdate(String imageUri, View view, int current, int total) {
-	 ...
-	 }
-	});
-	
-	
-<br>
-
+``` java
 	// Load image, decode it to Bitmap and return Bitmap to callback
 	ImageSize targetSize = new ImageSize(120, 80); // result Bitmap will be fit to this size
 	imageLoader.loadImage(imageUri, targetSize, displayOptions, new 	SimpleImageLoadingListener() {
@@ -204,25 +211,27 @@ Post request:
     public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
         // Do whatever you want with Bitmap
     }
-	});	
-	
-	
+	});
+```
+
 Acceptable URIs examples:
 
-	String imageUri = "http://site.com/image.png"; // from Web
-	String imageUri = "file:///mnt/sdcard/image.png"; // from SD card
-	String imageUri = "content://media/external/audio/albumart/13"; // from content provider
-	String imageUri = "assets://image.png"; // from assets
-	String imageUri = "drawable://" + R.drawable.image; // from drawables (only images, 	non-9patch)
-	
+``` java
+String imageUri = "http://site.com/image.png"; // from Web
+String imageUri = "file:///mnt/sdcard/image.png"; // from SD card
+String imageUri = "content://media/external/audio/albumart/13"; // from content provider
+String imageUri = "assets://image.png"; // from assets
+String imageUri = "drawable://" + R.drawable.image; // from drawables (only images, 	non-9patch)
+```
+
 **NOTE**: Use drawable:// only if you really need it! Always consider the native way to load drawables - ImageView.setImageResource(...) instead of using of ImageLoader.
 
 
 6.ORM:
 
  The Orm Module of the framework contains both [GreenDao](https://github.com/greenrobot/greenDAO) and [ActiveRecord](https://github.com/pardom/ActiveAndroid).
- 
- You can choose either of them freely.			
+
+ You can choose either of them freely.
 
 
 Please set the ides before you run the demo apps.
@@ -239,15 +248,15 @@ Please set the ides before you run the demo apps.
 * Flip View for implementing flipping between views as seen in the popular Flipboard application
 * PhotoView to help produce an easily usable implementation of a zooming Android ImageView
 * PagerSlidingTabStrip and  ViewPagerIndicator to help customing View Pager more easily.
-* SwipeBackLayout to help you finish a activity by swipe the screen.  
-  ``And there are also many UI modules which I do not mention here.``  
-  
+* SwipeBackLayout to help you finish a activity by swipe the screen.
+  ``And there are also many UI modules which I do not mention here.``
 
- <h2 ><a name="chinese_introduction"></a>简介</h2>   
+
+ <h2 ><a name="chinese_introduction"></a>简介</h2>
 
 ---
 ####框架目前主要包含的功能有View Injection,ORM,异步网络请求和图片加载，自动化脚本测试,磁盘LRU等功能.同时提供了类似于TripleDes、Webview快速设置、Md5处理、String处理,Https处理等常用工具类，还有超过100多种UI控件效果。并且这些功能正在逐步增加中。
-		
+
 欢迎各种fork与提意见。
 
 如果大家有需要的功能，欢迎随时提意见。
@@ -279,154 +288,165 @@ Demo依赖于appcompat 和 UltimateAndroid，你可以在IDE或者配置文件�
 3.视图注入：
 
  Example:
- 
-  	class ExampleActivity extends Activity {
-  	@InjectView(R.id.title) TextView title;
-  	@InjectView(R.id.subtitle) TextView subtitle;
-  	@InjectView(R.id.footer) TextView footer;
 
-  	@Override public void onCreate(Bundle savedInstanceState) {
-    	super.onCreate(savedInstanceState);
-    	setContentView(R.layout.simple_activity);
-    	ButterKnife.inject(this);
-    	// TODO Use "injected" views...
-      }
-    }
+``` java
+class ExampleActivity extends Activity {
+@InjectView(R.id.title) TextView title;
+@InjectView(R.id.subtitle) TextView subtitle;
+@InjectView(R.id.footer) TextView footer;
+
+@Override public void onCreate(Bundle savedInstanceState) {
+	super.onCreate(savedInstanceState);
+	setContentView(R.layout.simple_activity);
+	ButterKnife.inject(this);
+	// TODO Use "injected" views...
+  }
+}
+```
 
 Another use is simplifying the view holder pattern inside of a list adapter.
 
-	public class MyAdapter extends BaseAdapter {
-	@Override public View getView(int position, View view, ViewGroup parent) {
-    	ViewHolder holder;
-    	if (view != null) {
-      	holder = (ViewHolder) view.getTag();
-    	} else {
-      	view = inflater.inflate(R.layout.whatever, parent, false);
-      	holder = new ViewHolder(view);
-      	view.setTag(holder);
-    	}
-    	holder.name.setText("John Doe");
-    	// etc...
-    	return view;
-    	}
-    	static class ViewHolder {
-    	@InjectView(R.id.title) TextView name;
-    	@InjectView(R.id.job_title) TextView jobTitle;
-    	public ViewHolder(View view) {
-    	ButterKnife.inject(this, view);
-      }
-      }
-	}	
+``` java
+public class MyAdapter extends BaseAdapter {
+@Override public View getView(int position, View view, ViewGroup parent) {
+  	ViewHolder holder;
+  	if (view != null) {
+    	holder = (ViewHolder) view.getTag();
+  	} else {
+    	view = inflater.inflate(R.layout.whatever, parent, false);
+    	holder = new ViewHolder(view);
+    	view.setTag(holder);
+  	}
+  	holder.name.setText("John Doe");
+  	// etc...
+  	return view;
+  	}
+  	static class ViewHolder {
+  	@InjectView(R.id.title) TextView name;
+  	@InjectView(R.id.job_title) TextView jobTitle;
+  	public ViewHolder(View view) {
+  	ButterKnife.inject(this, view);
+    }
+    }
+}
+```
 
 4.异步网络请求:
   使用异步网络请求工具，你不需要在额外的声明Thread来进行网络请求。
 
-	HttpUtilsAsync.get("http://www.google.com", new AsyncHttpResponseHandler() {
+``` java
+HttpUtilsAsync.get("http://www.google.com", new AsyncHttpResponseHandler() {
 
-    @Override
-    public void onStart() {
-        // called before request is started
-    }
+  @Override
+  public void onStart() {
+      // called before request is started
+  }
 
-    @Override
-    public void onSuccess(int statusCode, Header[] headers, byte[] response) {
-        // called when response HTTP status is "200 OK"
-    }
+  @Override
+  public void onSuccess(int statusCode, Header[] headers, byte[] response) {
+      // called when response HTTP status is "200 OK"
+  }
 
-    @Override
-    public void onFailure(int statusCode, Header[] headers, byte[] errorResponse, Throwable e) {
-        // called when response HTTP status is "4XX" (eg. 401, 403, 404)
-    }
+  @Override
+  public void onFailure(int statusCode, Header[] headers, byte[] errorResponse, Throwable e) {
+      // called when response HTTP status is "4XX" (eg. 401, 403, 404)
+  }
 
-    @Override
-    public void onRetry(int retryNo) {
-        // called when request is retried
-	}
-	});
-	
+  @Override
+  public void onRetry(int retryNo) {
+      // called when request is retried
+}
+});
+```
+
 Post request:
-	
-	HttpUtilsAsync.post("http://www.google.com", new AsyncHttpResponseHandler() {
 
-    @Override
-    public void onStart() {
-        // called before request is started
-    }
+``` java
+HttpUtilsAsync.post("http://www.google.com", new AsyncHttpResponseHandler() {
 
-    @Override
-    public void onSuccess(int statusCode, Header[] headers, byte[] response) {
-        // called when response HTTP status is "200 OK"
-    }
+  @Override
+  public void onStart() {
+      // called before request is started
+  }
 
-    @Override
-    public void onFailure(int statusCode, Header[] headers, byte[] errorResponse, Throwable e) {
-        // called when response HTTP status is "4XX" (eg. 401, 403, 404)
-    }
+  @Override
+  public void onSuccess(int statusCode, Header[] headers, byte[] response) {
+      // called when response HTTP status is "200 OK"
+  }
 
-    @Override
-    public void onRetry(int retryNo) {
-        // called when request is retried
-	}
-	});
-	
+  @Override
+  public void onFailure(int statusCode, Header[] headers, byte[] errorResponse, Throwable e) {
+      // called when response HTTP status is "4XX" (eg. 401, 403, 404)
+  }
+
+  @Override
+  public void onRetry(int retryNo) {
+      // called when request is retried
+}
+});
+```
+
 5.显示图片:
   如果你已经使用或继承了CommonApplication，你可以如下使用:
   ```ImageLoader.getInstance().displayImage((imageUri, imageView));```
-  
+
   或者高级使用:
 
-	imageLoader.displayImage(imageUri, imageView, displayOptions, new ImageLoadingListener() 	{
-	    @Override
-    	public void onLoadingStarted(String imageUri, View view) {
-        	...
-    	}
-    	@Override
-    	public void onLoadingFailed(String imageUri, View view, FailReason failReason) {
-	        ...
-	    }
-	    @Override
-	    public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
-	    ...
-	    }
-	    @Override
-	    public void onLoadingCancelled(String imageUri, View view) {
-	     ...
-	     }
-	}, new ImageLoadingProgressListener() {
-	 @Override
-	 public void onProgressUpdate(String imageUri, View view, int current, int total) {
-	 ...
-	 }
-	});
-	
-<br>
-
-	// Load image, decode it to Bitmap and return Bitmap to callback
-	ImageSize targetSize = new ImageSize(120, 80); // result Bitmap will be fit to this size
-	imageLoader.loadImage(imageUri, targetSize, displayOptions, new 	SimpleImageLoadingListener() {
+``` java
+imageLoader.displayImage(imageUri, imageView, displayOptions, new ImageLoadingListener() 	{
+    @Override
+  	public void onLoadingStarted(String imageUri, View view) {
+      	...
+  	}
+  	@Override
+  	public void onLoadingFailed(String imageUri, View view, FailReason failReason) {
+        ...
+    }
     @Override
     public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
-        // Do whatever you want with Bitmap
+    ...
     }
-	});	
-	
-	
+    @Override
+    public void onLoadingCancelled(String imageUri, View view) {
+     ...
+     }
+}, new ImageLoadingProgressListener() {
+ @Override
+ public void onProgressUpdate(String imageUri, View view, int current, int total) {
+ ...
+ }
+});
+```
+
+``` java
+// Load image, decode it to Bitmap and return Bitmap to callback
+ImageSize targetSize = new ImageSize(120, 80); // result Bitmap will be fit to this size
+imageLoader.loadImage(imageUri, targetSize, displayOptions, new 	SimpleImageLoadingListener() {
+  @Override
+  public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
+      // Do whatever you want with Bitmap
+  }
+});
+```
+
 可以使用的URI格式:
 
-	String imageUri = "http://site.com/image.png"; // from Web
-	String imageUri = "file:///mnt/sdcard/image.png"; // from SD card
-	String imageUri = "content://media/external/audio/albumart/13"; // from content provider
-	String imageUri = "assets://image.png"; // from assets
-	String imageUri = "drawable://" + R.drawable.image; // from drawables (only images, 	non-9patch)
-	
+``` java
+String imageUri = "http://site.com/image.png"; // from Web
+String imageUri = "file:///mnt/sdcard/image.png"; // from SD card
+String imageUri = "content://media/external/audio/albumart/13"; // from content provider
+String imageUri = "assets://image.png"; // from assets
+String imageUri = "drawable://" + R.drawable.image; // from drawables (only images, 	non-9patch)
+```
+
 **NOTE**: Use drawable:// only if you really need it! Always consider the native way to load drawables - ImageView.setImageResource(...) instead of using of ImageLoader.
 
 
 6.ORM:
 
  Orm模块包括[GreenDao](https://github.com/greenrobot/greenDAO) and [ActiveRecord](https://github.com/pardom/ActiveAndroid).
- 
- 你可以自由选择两者中的一个。					
+
+ 你可以自由选择两者中的一个。
 
 
 ##UI 模块
@@ -440,7 +460,7 @@ Post request:
 * 更方便的定制ViewPager
 * 滑动后退
 
-  ``还有许多其他模块没有提到``  
+  ``还有许多其他模块没有提到``
 
 
 
@@ -573,7 +593,3 @@ License
 
 
 
-      
-      
-	
-	
