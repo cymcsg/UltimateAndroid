@@ -49,6 +49,7 @@ import com.marshalchen.common.demoofui.sampleModules.GoogleProgressBarActivity;
 import com.marshalchen.common.demoofui.quickreturnlistview.QuickReturnListViewActivity;
 import com.marshalchen.common.demoofui.shapeimageview.ShapeImageViewActivity;
 import com.marshalchen.common.demoofui.slider.SliderActivity;
+import com.marshalchen.common.demoofui.smoothswitch.SwitchAnimationActivity;
 import com.marshalchen.common.demoofui.staggeredgridview.StaggeredGridViewActivity;
 import com.marshalchen.common.demoofui.standUpTimer.ConfigureStandupTimer;
 import com.marshalchen.common.demoofui.superlistview.SuperListViewActivity;
@@ -793,6 +794,12 @@ public class LandingFragment extends Fragment {
         map.put("subname", "MaterialDesignActivity");
         map.put("class", "MaterialDesignActivity");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "SwitchAnimation");
+        map.put("detail", "try");
+        map.put("subname", "SwitchAnimationActivity");
+        map.put("class", "SwitchAnimationActivity");
+        enhanceList.add(map);
 
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -1142,6 +1149,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case "MaterialDesignActivity":
                         BasicUtils.sendIntent(getActivity(), MaterialDesignActivity.class);
+                        break;
+                    case "SwitchAnimationActivity":
+                        BasicUtils.sendIntent(getActivity(), SwitchAnimationActivity.class);
                         break;
 
 
