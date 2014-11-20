@@ -44,6 +44,7 @@ import com.marshalchen.common.demoofui.pulltozoomview.PullToZoomActivity;
 import com.marshalchen.common.demoofui.recyclerplayground.RecyclerViewPlayGroundActivity;
 import com.marshalchen.common.demoofui.recyclerviewitemanimator.RecyclerViewItemAnimatorActivity;
 import com.marshalchen.common.demoofui.recyclerviewstickyheaders.RecyclerViewStickyHeadersActivity;
+import com.marshalchen.common.demoofui.rippleDrawable.RippleDrawableActivity;
 import com.marshalchen.common.demoofui.roundedimageview.RoundedImageViewActivity;
 import com.marshalchen.common.demoofui.sampleModules.GoogleProgressBarActivity;
 import com.marshalchen.common.demoofui.quickreturnlistview.QuickReturnListViewActivity;
@@ -795,10 +796,16 @@ public class LandingFragment extends Fragment {
         map.put("class", "MaterialDesignActivity");
         enhanceList.add(map);
         map = new HashMap<>();
-        map.put("name", "SwitchAnimation");
+        map.put("name", "SwitchAnim");
         map.put("detail", "try");
         map.put("subname", "SwitchAnimationActivity");
         map.put("class", "SwitchAnimationActivity");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "RippleDrawable");
+        map.put("detail", "try");
+        map.put("subname", "RippleDrawActivity");
+        map.put("class", "RippleDrawableActivity");
         enhanceList.add(map);
 
 
@@ -1152,6 +1159,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case "SwitchAnimationActivity":
                         BasicUtils.sendIntent(getActivity(), SwitchAnimationActivity.class);
+                        break;
+                    case "RippleDrawableActivity":
+                        BasicUtils.sendIntent(getActivity(), RippleDrawableActivity.class);
                         break;
 
 

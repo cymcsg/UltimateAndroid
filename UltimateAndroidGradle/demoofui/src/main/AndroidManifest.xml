@@ -295,6 +295,7 @@
         <activity android:name=".smoothswitch.FragmentDemo"></activity>
         <activity android:name=".smoothswitch.GridActivity"></activity>
         <activity android:name=".smoothswitch.ListActivity"></activity>
+        <activity android:name=".rippleDrawable.RippleDrawableActivity"></activity>
 
     </application>
 
