@@ -209,4 +209,15 @@
         <attr name="rippleInAdapter" format="boolean"/>
     </declare-styleable>
 
+    <declare-styleable name="MaterialProgressWheel">
+        <attr name="mpwProgressIndeterminate" format="boolean" />
+        <attr name="mpwBarColor" format="color" />
+        <attr name="mpwRimColor" format="color" />
+        <attr name="mpwRimWidth" format="dimension" />
+        <attr name="mpwSpinSpeed" format="float" />
+        <attr name="mpwBarSpinCycleTime" format="integer" />
+        <attr name="mpwCircleRadius" format="dimension" />
+        <attr name="mpwFillRadius" format="boolean" />
+        <attr name="mpwBarWidth" format="dimension" />
+    </declare-styleable>
 </resources>
