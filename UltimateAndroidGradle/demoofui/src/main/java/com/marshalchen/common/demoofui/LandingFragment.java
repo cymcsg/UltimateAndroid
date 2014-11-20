@@ -807,6 +807,12 @@ public class LandingFragment extends Fragment {
         map.put("subname", "RippleDrawActivity");
         map.put("class", "RippleDrawableActivity");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "MaterialProgress");
+        map.put("detail", "try");
+        map.put("subname", "MaterialProgress");
+        map.put("class", "MaterialProgressWheelActivity");
+        enhanceList.add(map);
 
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -1162,6 +1168,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case "RippleDrawableActivity":
                         BasicUtils.sendIntent(getActivity(), RippleDrawableActivity.class);
+                        break;
+                    case "MaterialProgressWheelActivity":
+                        BasicUtils.sendIntent(getActivity(), MaterialProgressWheelActivity.class);
                         break;
 
 

@@ -124,4 +124,24 @@
         <item>On Touch</item>
         <item>On</item>
     </string-array>
+
+
+    <string-array name="progress_value_options">
+        <item>Indeterminate</item>
+        <item>10%</item>
+        <item>25%</item>
+        <item>50%</item>
+        <item>75%</item>
+        <item>100%</item>
+    </string-array>
+    <string-array name="progress_color_options">
+        <item>Default</item>
+        <item>Red</item>
+        <item>Magenta</item>
+    </string-array>
+    <string-array name="wheel_color_options">
+        <item>Default</item>
+        <item>Light Gray</item>
+        <item>Gray</item>
+    </string-array>
 </resources>

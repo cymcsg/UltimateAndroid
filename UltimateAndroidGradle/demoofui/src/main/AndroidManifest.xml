@@ -296,6 +296,7 @@
         <activity android:name=".smoothswitch.GridActivity"></activity>
         <activity android:name=".smoothswitch.ListActivity"></activity>
         <activity android:name=".rippleDrawable.RippleDrawableActivity"></activity>
+        <activity android:name=".sampleModules.MaterialProgressWheelActivity"></activity>
 
     </application>
 
