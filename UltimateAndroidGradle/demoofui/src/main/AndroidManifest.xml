@@ -297,6 +297,7 @@
         <activity android:name=".smoothswitch.ListActivity"></activity>
         <activity android:name=".rippleDrawable.RippleDrawableActivity"></activity>
         <activity android:name=".sampleModules.MaterialProgressWheelActivity"></activity>
+        <activity android:name=".sampleModules.MenuCircleShowingAnimationActivity"></activity>
 
     </application>
 
