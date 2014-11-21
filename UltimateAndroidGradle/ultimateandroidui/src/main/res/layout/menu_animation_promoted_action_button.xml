@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ImageButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="56dp"
+    android:layout_height="56dp"
+    android:layout_gravity="bottom|right"
+    android:visibility="gone"
+    android:background="@drawable/menu_animation_onivas_fab_circle"
+    />
+
