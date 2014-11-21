@@ -55,6 +55,7 @@ import com.marshalchen.common.demoofui.staggeredgridview.StaggeredGridViewActivi
 import com.marshalchen.common.demoofui.standUpTimer.ConfigureStandupTimer;
 import com.marshalchen.common.demoofui.superlistview.SuperListViewActivity;
 import com.marshalchen.common.demoofui.swipelayoutdemo.SwipeLayoutActivity;
+import com.marshalchen.common.demoofui.switchbuttondemo.SwitchButtonActivity;
 import com.marshalchen.common.demoofui.twowayview.TwoWayViewActivity;
 import com.marshalchen.common.ui.Typefaces;
 import com.marshalchen.common.uimodule.arcmenu.ArcMenu;
@@ -819,6 +820,12 @@ public class LandingFragment extends Fragment {
         map.put("subname", "MenuCircleShowingAnimation");
         map.put("class", "MenuCircleShowingAnimationActivity");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "SwitchButton");
+        map.put("detail", "try");
+        map.put("subname", "SwitchButtonActivity");
+        map.put("class", "SwitchButtonActivity");
+        enhanceList.add(map);
 
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -1180,6 +1187,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case "MenuCircleShowingAnimationActivity":
                         BasicUtils.sendIntent(getActivity(), MenuCircleShowingAnimationActivity.class);
+                        break;
+                    case "SwitchButtonActivity":
+                        BasicUtils.sendIntent(getActivity(), SwitchButtonActivity.class);
                         break;
 
 

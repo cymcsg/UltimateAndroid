@@ -291,14 +291,18 @@
         <activity android:name=".materialdesigndemo.ProgressActivity"></activity>
         <activity android:name=".materialdesigndemo.SwitchActivity"></activity>
         <activity android:name=".materialdesigndemo.WidgetActivity"></activity>
-        <activity android:name=".smoothswitch.SwitchAnimationActivity" android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
+        <activity
+            android:name=".smoothswitch.SwitchAnimationActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
         <activity android:name=".smoothswitch.FragmentDemo"></activity>
         <activity android:name=".smoothswitch.GridActivity"></activity>
         <activity android:name=".smoothswitch.ListActivity"></activity>
         <activity android:name=".rippleDrawable.RippleDrawableActivity"></activity>
         <activity android:name=".sampleModules.MaterialProgressWheelActivity"></activity>
         <activity android:name=".sampleModules.MenuCircleShowingAnimationActivity"></activity>
-
+        <activity android:name=".switchbuttondemo.SwitchButtonActivity"></activity>
+        <activity android:name=".switchbuttondemo.UseActivity" android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
+        <activity android:name=".switchbuttondemo.StyleActivity"  android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->
