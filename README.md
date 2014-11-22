@@ -249,7 +249,7 @@ Please set the ides before you run the demo apps.
 * PhotoView to help produce an easily usable implementation of a zooming Android ImageView
 * PagerSlidingTabStrip and  ViewPagerIndicator to help customing View Pager more easily.
 * SwipeBackLayout to help you finish a activity by swipe the screen.
-  ``And there are also many UI modules which I do not mention here.``
+  ``And there are more than 100 UI modules which I do not mention here.``
 
 
  <h2 ><a name="chinese_introduction"></a>简介</h2>
@@ -460,7 +460,7 @@ String imageUri = "drawable://" + R.drawable.image; // from drawables (only imag
 * 更方便的定制ViewPager
 * 滑动后退
 
-  ``还有许多其他模块没有提到``
+  ``还有超过100多种其他模块没有提到``
 
 
 
