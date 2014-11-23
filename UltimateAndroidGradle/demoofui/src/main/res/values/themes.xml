@@ -275,4 +275,37 @@
         <item name="android:textColorPrimary">@android:color/white</item>
     </style>
 
+
+
+    <!-- style title -->
+    <style name="StyleTitleText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textColor">#444444</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="SwitchButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <style name="MaterialDesignStyle" parent="SwitchButtonStyle">
+        <item name="animationVelocity">6</item>
+        <item name="insetBottom">10dp</item>
+        <item name="insetTop">10dp</item>
+        <item name="insetLeft">10dp</item>
+        <item name="insetRight">10dp</item>
+        <item name="measureFactor">1.4</item>
+        <item name="switch_button_offDrawable">@drawable/switch_button_md_back_off</item>
+        <item name="switch_button_onDrawable">@drawable/switch_button_md_back_on</item>
+        <item name="thumbDrawable">@drawable/switch_button_md_thumb</item>
+        <item name="thumb_margin">-17dp</item>
+    </style>
 </resources>

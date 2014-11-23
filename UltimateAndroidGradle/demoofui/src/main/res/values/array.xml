@@ -322,4 +322,11 @@
         <item>Picasso</item>
         <item>Color</item>
     </string-array>
+
+
+    <string-array name="switch_button_contents">
+        <item>title_activity_style</item>
+        <item>title_activity_use</item>
+        <item>copyright</item>
+    </string-array>
 </resources>

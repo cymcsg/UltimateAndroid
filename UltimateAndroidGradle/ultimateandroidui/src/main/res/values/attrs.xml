@@ -679,4 +679,52 @@
         <attr name="cprlColors" format="reference"/>
     </declare-styleable>
 
+
+    <declare-styleable name="CustomAttributes">
+        <!--        indicate if the slider must show number indicator -->
+        <attr name="showNumberIndicator" format="boolean" />
+        <!--        in progress view indicate max value of progress -->
+
+        <!--        in progress view indicate min value of progress -->
+        <attr name="min" format="integer" />
+        <!--        in progress view indicate value of progress -->
+        <attr name="value" format="integer" />
+        <!--        in progress view indicate value of progress -->
+
+        <!--        in switche's view indicate state of view -->
+        <attr name="check" format="boolean" />
+        <!--        in float button indicate icon resource -->
+        <attr name="iconFloat" format="integer" />
+        <!--        in float button indicate if must start with animation -->
+        <attr name="animate" format="boolean" />
+        <!--        Speed of ripple animation -->
+        <attr name="rippleSpeed" format="float" />
+        <!--        in float button indicate if must start with animation -->
+
+    </declare-styleable>
+
+
+    <declare-styleable name="SwitchButton">
+        <attr name="switch_button_onDrawable" format="reference" />
+        <attr name="switch_button_offDrawable" format="reference" />
+        <attr name="thumbDrawable" format="reference" />
+        <attr name="thumb_margin" format="dimension|reference" />
+        <attr name="thumb_marginTop" format="dimension|reference" />
+        <attr name="thumb_marginBottom" format="dimension|reference" />
+        <attr name="thumb_marginLeft" format="dimension|reference" />
+        <attr name="thumb_marginRight" format="dimension|reference" />
+        <attr name="thumb_width" format="dimension|reference" />
+        <attr name="thumb_height" format="dimension|reference" />
+        <attr name="switch_button_onColor" format="color|reference" />
+        <attr name="switch_button_offColor" format="color|reference" />
+        <attr name="thumbColor" format="color|reference" />
+        <attr name="thumbPressedColor" format="color|reference" />
+        <attr name="animationVelocity" format="integer" />
+        <attr name="switch_button_radius" format="integer" />
+        <attr name="measureFactor" format="float" />
+        <attr name="insetLeft" format="dimension|reference" />
+        <attr name="insetRight" format="dimension|reference" />
+        <attr name="insetTop" format="dimension|reference" />
+        <attr name="insetBottom" format="dimension|reference" />
+    </declare-styleable>
 </resources>

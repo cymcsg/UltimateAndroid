@@ -1,6 +1,14 @@
 
 ##Update：
 
+2014.11.14 add some Material effect
+
+2014.11.7 add Gradle Version of Ultimate Android!
+
+2014.11.5 add [BlurDialog](https://github.com/tvbarthel/BlurDialogFragment)
+
+2014.11.3 add other rounded imageview
+
 #####add Material Design Effect:
 
 2014.10.24         

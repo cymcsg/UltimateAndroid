@@ -35,6 +35,7 @@ import com.marshalchen.common.demoofui.fadingactionbar.HomeActivity;
 import com.marshalchen.common.demoofui.fancyCoverFlow.FancyCoverFlowActivity;
 import com.marshalchen.common.demoofui.imageprocessingexample.ImageProcessingActivity;
 import com.marshalchen.common.demoofui.imageprocessingexample.ImageProcessingVideotoImageActivity;
+import com.marshalchen.common.demoofui.materialdesigndemo.MaterialDesignActivity;
 import com.marshalchen.common.demoofui.materialmenu.MaterialMenuAppcompatActivity;
 import com.marshalchen.common.demoofui.materialmenu.MaterialMenuToolbarActivity;
 import com.marshalchen.common.demoofui.materialripple.MaterialRippleActivity;
@@ -43,15 +44,18 @@ import com.marshalchen.common.demoofui.pulltozoomview.PullToZoomActivity;
 import com.marshalchen.common.demoofui.recyclerplayground.RecyclerViewPlayGroundActivity;
 import com.marshalchen.common.demoofui.recyclerviewitemanimator.RecyclerViewItemAnimatorActivity;
 import com.marshalchen.common.demoofui.recyclerviewstickyheaders.RecyclerViewStickyHeadersActivity;
+import com.marshalchen.common.demoofui.rippleDrawable.RippleDrawableActivity;
 import com.marshalchen.common.demoofui.roundedimageview.RoundedImageViewActivity;
 import com.marshalchen.common.demoofui.sampleModules.GoogleProgressBarActivity;
 import com.marshalchen.common.demoofui.quickreturnlistview.QuickReturnListViewActivity;
 import com.marshalchen.common.demoofui.shapeimageview.ShapeImageViewActivity;
 import com.marshalchen.common.demoofui.slider.SliderActivity;
+import com.marshalchen.common.demoofui.smoothswitch.SwitchAnimationActivity;
 import com.marshalchen.common.demoofui.staggeredgridview.StaggeredGridViewActivity;
 import com.marshalchen.common.demoofui.standUpTimer.ConfigureStandupTimer;
 import com.marshalchen.common.demoofui.superlistview.SuperListViewActivity;
 import com.marshalchen.common.demoofui.swipelayoutdemo.SwipeLayoutActivity;
+import com.marshalchen.common.demoofui.switchbuttondemo.SwitchButtonActivity;
 import com.marshalchen.common.demoofui.twowayview.TwoWayViewActivity;
 import com.marshalchen.common.ui.Typefaces;
 import com.marshalchen.common.uimodule.arcmenu.ArcMenu;
@@ -780,6 +784,48 @@ public class LandingFragment extends Fragment {
         map.put("subname", "MaterialRippleActivity");
         map.put("class", "MaterialRippleActivity");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "CircleProgress");
+        map.put("detail", "try");
+        map.put("subname", "CircleProgressActivity");
+        map.put("class", "CircleProgressActivity");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "MaterialDesign");
+        map.put("detail", "try");
+        map.put("subname", "MaterialDesignActivity");
+        map.put("class", "MaterialDesignActivity");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "SwitchAnim");
+        map.put("detail", "try");
+        map.put("subname", "SwitchAnimationActivity");
+        map.put("class", "SwitchAnimationActivity");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "RippleDrawable");
+        map.put("detail", "try");
+        map.put("subname", "RippleDrawActivity");
+        map.put("class", "RippleDrawableActivity");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "MaterialProgress");
+        map.put("detail", "try");
+        map.put("subname", "MaterialProgress");
+        map.put("class", "MaterialProgressWheelActivity");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "MenuCircle");
+        map.put("detail", "try");
+        map.put("subname", "MenuCircleShowingAnimation");
+        map.put("class", "MenuCircleShowingAnimationActivity");
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "SwitchButton");
+        map.put("detail", "try");
+        map.put("subname", "SwitchButtonActivity");
+        map.put("class", "SwitchButtonActivity");
+        enhanceList.add(map);
 
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -1123,6 +1169,27 @@ public class LandingFragment extends Fragment {
                         break;
                     case "MaterialRippleActivity":
                         BasicUtils.sendIntent(getActivity(), MaterialRippleActivity.class);
+                        break;
+                    case "CircleProgressActivity":
+                        BasicUtils.sendIntent(getActivity(), CircleProgressActivity.class);
+                        break;
+                    case "MaterialDesignActivity":
+                        BasicUtils.sendIntent(getActivity(), MaterialDesignActivity.class);
+                        break;
+                    case "SwitchAnimationActivity":
+                        BasicUtils.sendIntent(getActivity(), SwitchAnimationActivity.class);
+                        break;
+                    case "RippleDrawableActivity":
+                        BasicUtils.sendIntent(getActivity(), RippleDrawableActivity.class);
+                        break;
+                    case "MaterialProgressWheelActivity":
+                        BasicUtils.sendIntent(getActivity(), MaterialProgressWheelActivity.class);
+                        break;
+                    case "MenuCircleShowingAnimationActivity":
+                        BasicUtils.sendIntent(getActivity(), MenuCircleShowingAnimationActivity.class);
+                        break;
+                    case "SwitchButtonActivity":
+                        BasicUtils.sendIntent(getActivity(), SwitchButtonActivity.class);
                         break;
 
 

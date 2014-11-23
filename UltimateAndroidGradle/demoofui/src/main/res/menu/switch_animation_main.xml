@@ -1,0 +1,52 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.dk.sample.MainActivity" >
+
+    <item
+        android:id="@+id/action_scale"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="scale"/>
+    <item
+        android:id="@+id/action_rotate"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="rotate"/>
+    <item
+        android:id="@+id/action_flip_horizon"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="flip_horizon"/>
+    <item
+        android:id="@+id/action_flip_vertical"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="flip_vertial"/>
+    <item
+        android:id="@+id/action_horizon_left"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="horizon_left"/>
+    <item
+        android:id="@+id/action_horizon_right"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="horizon_right"/>
+    <item
+        android:id="@+id/action_alpha"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="alpha"/>
+    <item
+        android:id="@+id/action_cross"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="cross"/>
+    <item
+        android:id="@+id/action_next"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="action_next"/>
+
+</menu>
