@@ -27,6 +27,13 @@ android {
     }
 }
 
+ext {
+    PUBLISH_GROUP_ID = 'com.marshalchen'
+    PUBLISH_ARTIFACT_ID = 'ultimateandroid'
+    PUBLISH_VERSION = '0.3.0'
+}
+apply from: 'android-release-aar.gradle'
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:21.0.0'
