@@ -25,6 +25,12 @@ android {
         abortOnError false
     }
 }
+ext {
+    PUBLISH_GROUP_ID = 'com.marshalchen.ultimateandroid'
+    PUBLISH_ARTIFACT_ID = 'ultimateandroidui'
+    PUBLISH_VERSION = '0.4.0'
+}
+apply from: 'android-release-aar.gradle'
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -32,11 +38,14 @@ dependencies {
     compile 'com.android.support:support-v13:21.0.0'
     compile 'com.android.support:recyclerview-v7:21.0.0'
     compile project(':ultimateandroid')
+   // compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.4.0'
     compile 'com.rengwuxian.materialedittext:library:1.1.0'
     compile 'com.skyfishjy.ripplebackground:library:1.0.1'
     compile 'com.jpardogo.materialtabstrip:library:1.0.3'
     compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
     compile 'com.github.lzyzsd:circleprogress:1.0.0@aar'
     compile 'com.android.support:cardview-v7:21.0.+'
+   // compile 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.0'
+    compile 'com.github.pavlospt:roundedletterview:1.0'
 
 }
