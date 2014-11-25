@@ -7,6 +7,7 @@ package com.marshalchen.common.demoofui.dragSortListview;
 import com.marshalchen.common.demoofui.R;
 import com.marshalchen.common.uimodule.dragSortListView.DragSortController;
 
+import android.annotation.SuppressLint;
 import android.support.v4.app.DialogFragment;
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -29,6 +30,7 @@ public class DragInitModeDialog extends DialogFragment {
         mDragInitMode = DragSortController.ON_DOWN;
     }
 
+    @SuppressLint("ValidFragment")
     public DragInitModeDialog(int dragStartMode) {
         super();
         mDragInitMode = dragStartMode;
