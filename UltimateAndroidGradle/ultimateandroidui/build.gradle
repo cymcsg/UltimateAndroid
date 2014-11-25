@@ -30,7 +30,8 @@ ext {
     PUBLISH_ARTIFACT_ID = 'ultimateandroidui'
     PUBLISH_VERSION = '0.3.0'
 }
-//apply from: 'android-release-aar.gradle'
+apply from: 'android-release-aar.gradle'
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:21.0.0'
