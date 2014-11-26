@@ -68,23 +68,4 @@ public class JsonUtil {
         return object;
     }
 
-
-
-//    public static <T> T fromJSON(final TypeReference<T> type,
-//                                 final String jsonPacket) {
-//        T data = null;
-//
-//        try {
-//            data = new ObjectMapper().readValue(jsonPacket, type);
-//        } catch (Exception e) {
-//            // Handle the problem
-//        }
-//        return data;
-//    }
-
-//    public <T>  T fromJson(com.google.gson.JsonElement json, java.lang.Class<T> classOfT) throws com.google.gson.JsonSyntaxException
-//
-//    public <T>  T fromJson(com.google.gson.JsonElement json, java.lang.reflect.Type typeOfT) throws com.google.gson.JsonSyntaxException
-
-
 }

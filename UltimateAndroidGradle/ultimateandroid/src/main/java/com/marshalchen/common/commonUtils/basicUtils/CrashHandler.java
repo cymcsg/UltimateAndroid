@@ -25,8 +25,8 @@ import com.marshalchen.common.commonUtils.logUtils.Logs;
 import com.nostra13.universalimageloader.utils.StorageUtils;
 
 /**
- * @ClassName: MyUncaughtExceptionHandler
- * @Description: catch the exception
+ * @ClassName: CrashHandler
+ * @Description: Catch the uncaught exception
  */
 public class CrashHandler implements UncaughtExceptionHandler {
 

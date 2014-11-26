@@ -17,7 +17,7 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import com.marshalchen.common.commonUtils.logUtils.Logs;
 
-
+@Deprecated
 public class ImageUtils_Deprecated {
     public static final int LEFT = 0;
     public static final int RIGHT = 1;

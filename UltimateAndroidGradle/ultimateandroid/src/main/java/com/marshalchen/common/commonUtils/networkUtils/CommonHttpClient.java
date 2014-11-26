@@ -41,9 +41,7 @@ public class CommonHttpClient {
     public static final String CMWAP = "cmwap";
     public static final String WAP_3G = "3gwap";
     public static final String UNIWAP = "uniwap";
-    /**
-     * @Fields TYPE_NET_WORK_DISABLED : 网络不可用
-     */
+
     public static final int TYPE_NET_WORK_DISABLED = 0;
     /**
      * @Fields TYPE_CM_CU_WAP : 移动联通wap10.0.0.172
@@ -74,7 +72,7 @@ public class CommonHttpClient {
     // return singleStance ;
     // }
 
-    // 每次都返回新的HttpClient实例
+
     public static HttpClient getNewInstance(Context mContext) {
         HttpClient newInstance;
 

@@ -206,7 +206,7 @@ public class ViewServer implements Runnable {
      *
      * @see #stop()
      * @see #isRunning()
-     * @see WindowManagerService#startViewServer(int)
+     *
      */
     public boolean start() throws IOException {
         if (mThread != null) {
@@ -228,7 +228,7 @@ public class ViewServer implements Runnable {
      *
      * @see #start()
      * @see #isRunning()
-     * @see WindowManagerService#stopViewServer()
+     *
      */
     public boolean stop() {
         if (mThread != null) {
@@ -277,7 +277,7 @@ public class ViewServer implements Runnable {
      *
      * @see #start()
      * @see #stop()
-     * @see WindowManagerService#isViewServerRunning()  
+     *
      */
     public boolean isRunning() {
         return mThread != null && mThread.isAlive();

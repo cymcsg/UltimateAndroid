@@ -80,7 +80,6 @@ public class ZipAndUnZip {
                 if (zipEntry.isDirectory()) {
                     file.mkdirs();
                 } else {
-                    // 如果指定文件的目录不存在,则创建之.
                     File parent = file.getParentFile();
                     if (!parent.exists()) {
                         parent.mkdirs();
