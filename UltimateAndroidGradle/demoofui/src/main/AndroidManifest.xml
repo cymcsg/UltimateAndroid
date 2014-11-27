@@ -301,8 +301,19 @@
         <activity android:name=".sampleModules.MaterialProgressWheelActivity"></activity>
         <activity android:name=".sampleModules.MenuCircleShowingAnimationActivity"></activity>
         <activity android:name=".switchbuttondemo.SwitchButtonActivity"></activity>
-        <activity android:name=".switchbuttondemo.UseActivity" android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
-        <activity android:name=".switchbuttondemo.StyleActivity"  android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
+        <activity
+            android:name=".switchbuttondemo.UseActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
+        <activity
+            android:name=".switchbuttondemo.StyleActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
+        <activity
+            android:name=".sampleModules.MaterialTabsWithIconsActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity
+            android:name=".sampleModules.MaterialTabTextActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->

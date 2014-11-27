@@ -58,7 +58,6 @@ import com.marshalchen.common.demoofui.swipelayoutdemo.SwipeLayoutActivity;
 import com.marshalchen.common.demoofui.switchbuttondemo.SwitchButtonActivity;
 import com.marshalchen.common.demoofui.twowayview.TwoWayViewActivity;
 import com.marshalchen.common.ui.Typefaces;
-import com.marshalchen.common.uimodule.arcmenu.ArcMenu;
 import com.marshalchen.common.uimodule.enhanceListView.EnhancedListView;
 import com.marshalchen.common.uimodule.passcodelock.PasscodePreferencesActivity;
 import com.marshalchen.common.uimodule.titanic.Titanic;
@@ -826,6 +825,19 @@ public class LandingFragment extends Fragment {
         map.put("subname", "SwitchButtonActivity");
         map.put("class", "SwitchButtonActivity");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "MaterialTabicons");
+        map.put("detail", "try");
+        map.put("subname", "MaterialTabwithicons");
+        map.put("class", "MaterialTabsWithIconsActivity");
+
+        enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "MaterialTabText");
+        map.put("detail", "try");
+        map.put("subname", "MaterialTabText");
+        map.put("class", "MaterialTabTextActivity");
+        enhanceList.add(map);
 
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -1190,6 +1202,12 @@ public class LandingFragment extends Fragment {
                         break;
                     case "SwitchButtonActivity":
                         BasicUtils.sendIntent(getActivity(), SwitchButtonActivity.class);
+                        break;
+                    case "MaterialTabsWithIconsActivity":
+                        BasicUtils.sendIntent(getActivity(), MaterialTabsWithIconsActivity.class);
+                        break;
+                    case "MaterialTabTextActivity":
+                        BasicUtils.sendIntent(getActivity(), MaterialTabTextActivity.class);
                         break;
 
 

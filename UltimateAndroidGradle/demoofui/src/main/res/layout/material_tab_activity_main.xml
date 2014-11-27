@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentLeft="true"
+        android:background="?attr/colorPrimary"></android.support.v7.widget.Toolbar>
+
+    <com.marshalchen.common.uimodule.materialtabs.MaterialTabHost
+        android:id="@+id/materialTabHost"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        app:hasIcons="true"></com.marshalchen.common.uimodule.materialtabs.MaterialTabHost>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/materialTabHost"
+        android:background="@android:color/white" />
+
+</RelativeLayout>
