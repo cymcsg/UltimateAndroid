@@ -408,4 +408,7 @@
         <item name="android:text">crop__cancel</item>
     </style>
 
+    <declare-styleable name="MaterialTabHost">
+        <attr name="hasIcons" format="boolean" />
+    </declare-styleable>
 </resources>
