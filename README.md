@@ -30,7 +30,13 @@ UltimateAndroid
 
 
 
+#####Welcome to fork and pull request.
+My Email is ``cymcsg # gmail.com``
+
+
 [Update Log](https://github.com/cymcsg/UltimateAndroid/blob/master/updateLog.md)
+
+
 
 
 
@@ -39,11 +45,11 @@ UltimateAndroid
 
 ---
 
-#####UltimateAndroid contains many features like View Injection,ORM,Asynchronous Networking and Image Loader,User scenario testing,over 100 Ui effects etc.And there are also many useful feature like WebViewUtils,DaoUtils,Https Utils, TripleDes Utils etc.The framework will be added  more feature in the future. 
+#####UltimateAndroid framework contains many features like View Injection,ORM,Asynchronous Networking and Image Loader,User scenario testing,over 100 Ui effects etc.And there are also many useful features like WebViewUtils,DaoUtils,Https Utils, TripleDes Utils etc.The framework will be added  more feature in the future. 
 
 
 
-#####The framework is like flask in python which contains some other opensource project like [Butter Knife][1],[Asynchronous Http Client for Android][2], [Universal Image Loader for Android][3] and many other which I said at the end of Readme or in the updatelog.
+#####The framework is like flask(a web development framework) which contains some other opensource project like [Butter Knife][1],[Asynchronous Http Client for Android][2], [Universal Image Loader for Android][3] and many other which I said at the end of Readme or in the updatelog.
 
 
 
@@ -51,7 +57,6 @@ Up to now,I have only write the demo of most parts of UI modules and View Inject
 
 [Demo of Ui's screenshot is here.](#demo_of_ui)
 
-#####Welcome to fork.
 
 
 
