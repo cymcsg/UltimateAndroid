@@ -838,6 +838,12 @@ public class LandingFragment extends Fragment {
         map.put("subname", "MaterialTabText");
         map.put("class", "MaterialTabTextActivity");
         enhanceList.add(map);
+        map = new HashMap<>();
+        map.put("name", "MaterialList");
+        map.put("detail", "try");
+        map.put("subname", "MaterialListView");
+        map.put("class", "MaterialListViewActivity");
+        enhanceList.add(map);
 
 
         enhancedListAdapter = new EnhancedListAdapter(enhanceList);
@@ -1208,6 +1214,9 @@ public class LandingFragment extends Fragment {
                         break;
                     case "MaterialTabTextActivity":
                         BasicUtils.sendIntent(getActivity(), MaterialTabTextActivity.class);
+                        break;
+                    case "MaterialListViewActivity":
+                        BasicUtils.sendIntent(getActivity(), MaterialListViewActivity.class);
                         break;
 
 

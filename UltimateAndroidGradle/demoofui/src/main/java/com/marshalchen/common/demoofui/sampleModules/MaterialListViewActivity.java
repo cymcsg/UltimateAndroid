@@ -20,9 +20,10 @@ import com.dexafree.materialList.model.Card;
 import com.dexafree.materialList.model.CardList;
 import com.dexafree.materialList.model.WelcomeCard;
 import com.dexafree.materialList.view.MaterialListView;
+import com.marshalchen.common.demoofui.R;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MaterialListViewActivity extends ActionBarActivity {
 
     private MaterialListView mListView;
     private CardList cardsList;
@@ -32,7 +33,7 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.material_list_activity_main);
 
         mContext = this;
 
@@ -85,7 +86,7 @@ public class MainActivity extends ActionBarActivity {
                 card = new BigImageCard();
                 card.setDescription(description);
                 card.setTitle(title);
-                icon = getResources().getDrawable(R.drawable.photo);
+                icon = getResources().getDrawable(R.drawable.test);
                 card.setBitmap(icon);
                 card.setCanDismiss(false);
                 return card;
@@ -94,7 +95,7 @@ public class MainActivity extends ActionBarActivity {
                 card = new BasicImageButtonsCard();
                 card.setDescription(description);
                 card.setTitle(title);
-                icon = getResources().getDrawable(R.drawable.dog);
+                icon = getResources().getDrawable(R.drawable.test_back);
                 card.setBitmap(icon);
                 ((BasicImageButtonsCard)card).setLeftButtonText("LEFT");
                 ((BasicImageButtonsCard)card).setRightButtonText("RIGHT");
@@ -169,7 +170,7 @@ public class MainActivity extends ActionBarActivity {
                 card = new BigImageButtonsCard();
                 card.setDescription(description);
                 card.setTitle(title);
-                icon = getResources().getDrawable(R.drawable.photo);
+                icon = getResources().getDrawable(R.drawable.test_back2);
                 card.setBitmap(icon);
                 ((BigImageButtonsCard)card).setLeftButtonText("ADD CARD");
                 ((BigImageButtonsCard)card).setRightButtonText("RIGHT BUTTON");
@@ -207,7 +208,7 @@ public class MainActivity extends ActionBarActivity {
 
     private Card generateNewCard(){
         Card card = new BasicImageButtonsCard();
-        card.setBitmap(mContext, R.drawable.dog);
+        card.setBitmap(mContext, R.drawable.test_back1);
         card.setTitle("I'm new");
         card.setDescription("I've been generated on runtime!");
 
