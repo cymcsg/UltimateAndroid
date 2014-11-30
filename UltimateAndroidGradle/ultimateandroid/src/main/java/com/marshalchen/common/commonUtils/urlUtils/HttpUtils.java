@@ -36,24 +36,24 @@ public class HttpUtils {
     public static String getResponseFromPostUrl(String url, List<NameValuePair> params) throws Exception {
 
         String result = null;
-        // 新建HttpPost对象
+
         HttpPost httpPost = new HttpPost(url);
-        // 设置字符集
+
         HttpEntity entity = new UrlEncodedFormEntity(params, HTTP.UTF_8);
-        // 设置参数实体
+
         httpPost.setEntity(entity);
-        // 获取HttpClient对象
+
         HttpClient httpClient = new DefaultHttpClient();
-        //连接超时
+
         httpClient.getParams().setParameter(CoreConnectionPNames.CONNECTION_TIMEOUT, 30000);
-        //请求超时
+
         httpClient.getParams().setParameter(CoreConnectionPNames.SO_TIMEOUT, 30000);
         try {
-            // 获取HttpResponse实例
+
             HttpResponse httpResp = httpClient.execute(httpPost);
-            // 判断是够请求成功
+
             if (httpResp.getStatusLine().getStatusCode() == 200) {
-                // 获取返回的数据
+
                 result = EntityUtils.toString(httpResp.getEntity(), "UTF-8");
                 Logs.d("HttpPost success :");
                 Logs.d(result);

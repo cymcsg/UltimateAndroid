@@ -29,7 +29,7 @@ import org.apache.http.protocol.HTTP;
 import org.apache.http.util.EntityUtils;
 
 import android.util.Log;
-
+@Deprecated
 public class HttpUtils_Deprecated {
 
     public static String TAG = "Chen";

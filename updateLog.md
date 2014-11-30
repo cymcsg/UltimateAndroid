@@ -1,6 +1,12 @@
 
 ##Update：
 
+2014.11.28 add [Material List](https://github.com/dexafree/MaterialList)
+
+2014.11.27 add [Material Tab](https://github.com/neokree/MaterialTabs)
+
+2014.11.20 add [RippleDrawable](https://github.com/03uk/RippleDrawable)
+
 2014.11.14 add some Material effect
 
 2014.11.7 add Gradle Version of Ultimate Android!

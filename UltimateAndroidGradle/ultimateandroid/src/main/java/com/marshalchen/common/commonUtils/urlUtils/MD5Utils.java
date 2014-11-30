@@ -9,14 +9,7 @@ import java.security.DigestInputStream;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-/**
- *
- * User: cym
- * Date: 13-10-30
- * Time: 上午10:49
- *
- */
-//MD5Utils
+
 public class MD5Utils {
 
 

@@ -15,10 +15,9 @@ public class ImageUtils {
     public static final int BOTTOM = 4;
 
     /**
-     * 图片去色,返回灰度图片
+     * Gray Image
      *
-     * @param bmpOriginal 传入的图片
-     * @return 去色后的图片
+     * @param bmpOriginal
      */
     public static Bitmap toGrayscale(Bitmap bmpOriginal) {
         int width, height;
@@ -37,11 +36,11 @@ public class ImageUtils {
 
 
     /**
-     * 把图片变成圆角
+     * toRoundCorner
      *
-     * @param bitmap 需要修改的图片
-     * @param pixels 圆角的弧度
-     * @return 圆角图片
+     * @param bitmap 片
+     * @param pixels
+     * @return
      */
     public static Bitmap toRoundCorner(Bitmap bitmap, int pixels) {
         Bitmap output = Bitmap

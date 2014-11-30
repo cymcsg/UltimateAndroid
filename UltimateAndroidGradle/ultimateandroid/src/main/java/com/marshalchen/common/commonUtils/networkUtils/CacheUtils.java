@@ -8,21 +8,16 @@ import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-/**
- *
- * User: cym
- * Date: 13-10-30
- *
- */
+
 public class CacheUtils {
 
     public static Uri getImageURI(String path, File cache) throws Exception {
         String name = MD5Utils.getMD5(path) + path.substring(path.lastIndexOf("."));
         File file = new File(cache, name);
         if (file.exists()) {
-            return Uri.fromFile(file);//Uri.fromFile(path)这个方法能得到文件的URI
+            return Uri.fromFile(file);
         } else {
-            // 从网络上获取图片
+
             URL url = new URL(path);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setConnectTimeout(5000);
@@ -61,7 +56,7 @@ public class CacheUtils {
         bm.compress(Bitmap.CompressFormat.JPEG, 80, bos);
         bos.flush();
         bos.close();
-       // SharedPreferences sp=
+
     }
 
 }
