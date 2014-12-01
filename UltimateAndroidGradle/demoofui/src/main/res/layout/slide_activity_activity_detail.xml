@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="8dp"
+        android:background="#F0F0F0">
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="If there was ever a game that could cope with a few graphical imperfections, it'd be a frenetic multiplayer shooter like Titanfall. But flaws do visibly exist on the Xbox One version of that game, and Eurogamer has highlighted them in a side-by-side video with the PC version. You can see the impact of the console's lower resolution (1408 x 792) and weaker anti-aliasing, versus the 1080p experience offered by a mid-range Windows gaming rig (with a six-core AMD FX CPU and a NVIDIA GTX 760 graphics card). More noticeable than any of that, however, is the issue of screen tearing: Horizontal slashes that happen when the game drops below the holy grail of 60 frames per second that its creators intended. Like Eurogamer, we really don't think this does significant damage to Titanfall's overall experience -- we're still glued to it -- but this is one more notable instance of a mismatch between what developers wanted to achieve in a next-gen title, and what Microsoft's console was able to deliver."
+            android:textSize="16dp"
+            android:textColor="#333"/>
+</LinearLayout>
