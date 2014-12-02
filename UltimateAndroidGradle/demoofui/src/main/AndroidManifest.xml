@@ -791,6 +791,11 @@
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
         </activity>
+        <activity android:name=".sampleModules.PatioDemoActivity">
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui" />
+            </intent-filter>
+        </activity>
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->
