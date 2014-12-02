@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/patio_remove_actions_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/patio_action_remove_picture"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="patio_remove_picture"
+        android:drawableLeft="@drawable/patio_ic_patio_action_delete"
+        android:drawableStart="@drawable/patio_ic_patio_action_delete"
+        style="@style/PatioToolbarButton"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#ccc"/>
+
+    <Button
+        android:id="@+id/patio_action_cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="patio_action_cancel"
+        android:drawableLeft="@drawable/patio_ic_patio_action_cancel"
+        android:drawableStart="@drawable/patio_ic_patio_action_cancel"
+        style="@style/PatioToolbarButton"/>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Toolbars-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/patio_patio_add_actions_toolbar"/>
+        <include layout="@layout/patio_patio_remove_actions_toolbar"/>
+    </FrameLayout>
+
+    <!-- Thumbnails Container -->
+    <HorizontalScrollView
+        android:id="@+id/patio_thumbnails_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/patio_thumbnails_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:animateLayoutChanges="true">
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <!-- Thumbnails Message -->
+    <TextView
+        android:id="@+id/patio_thumbnails_count_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="patio_thumbnails_message"/>
+
+</merge>

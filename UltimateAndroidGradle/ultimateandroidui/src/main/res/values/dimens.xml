@@ -33,4 +33,8 @@
     <dimen name="tabhostHeight">48dp</dimen>
     <dimen name="tabSelectorHeight">2dp</dimen>
     <dimen name="materialTextTab">14sp</dimen>
+
+    <dimen name="patio_default_thumbnail_width">100dp</dimen>
+    <dimen name="patio_default_thumbnail_height">100dp</dimen>
+    <dimen name="patio_default_thumbnails_container_padding">8dp</dimen>
 </resources>
