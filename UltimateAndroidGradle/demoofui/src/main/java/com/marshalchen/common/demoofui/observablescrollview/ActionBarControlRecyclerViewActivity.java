@@ -24,6 +24,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import com.github.ksoichiro.android.observablescrollview.ObservableRecyclerView;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollViewCallbacks;
 import com.github.ksoichiro.android.observablescrollview.ScrollState;
+import com.marshalchen.common.demoofui.R;
 
 import java.util.ArrayList;
 
@@ -32,7 +33,7 @@ public class ActionBarControlRecyclerViewActivity extends ActionBarActivity impl
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_actionbarcontrolrecyclerview);
+        setContentView(R.layout.observable_scroll_view_activity_actionbarcontrolrecyclerview);
 
         ObservableRecyclerView recyclerView = (ObservableRecyclerView) findViewById(R.id.recycler);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

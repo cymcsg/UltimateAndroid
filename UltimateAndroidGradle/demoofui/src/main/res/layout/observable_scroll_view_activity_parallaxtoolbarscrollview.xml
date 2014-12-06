@@ -20,7 +20,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/parallax_image_height"
                 android:scaleType="centerCrop"
-                android:src="@drawable/example" />
+                android:src="@drawable/observable_scroll_view_example" />
 
             <View
                 android:id="@+id/anchor"
@@ -43,7 +43,7 @@
 
     </com.github.ksoichiro.android.observablescrollview.ObservableScrollView>
 
-    <include layout="@layout/gradient_header" />
+    <include layout="@layout/observable_scroll_view_gradient_header" />
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"

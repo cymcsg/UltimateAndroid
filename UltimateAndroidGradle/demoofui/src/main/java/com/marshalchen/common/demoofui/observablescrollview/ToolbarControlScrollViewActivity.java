@@ -25,6 +25,7 @@ import android.view.View;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollViewCallbacks;
 import com.github.ksoichiro.android.observablescrollview.ScrollState;
+import com.marshalchen.common.demoofui.R;
 import com.nineoldandroids.view.ViewHelper;
 import com.nineoldandroids.view.ViewPropertyAnimator;
 
@@ -38,7 +39,7 @@ public class ToolbarControlScrollViewActivity extends ActionBarActivity implemen
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_toolbarcontrolscrollview);
+        setContentView(R.layout.observable_scroll_view_activity_toolbarcontrolscrollview);
 
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
 

@@ -28,19 +28,22 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.marshalchen.common.demoofui.BuildConfig;
+import com.marshalchen.common.demoofui.R;
+
 public class AboutActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about);
+        setContentView(R.layout.observable_scroll_view_activity_about);
         ActionBar ab = getSupportActionBar();
         if (ab != null) {
             ab.setDisplayHomeAsUpEnabled(true);
             ab.setHomeButtonEnabled(true);
         }
-        ((TextView) findViewById(R.id.app_version)).setText(getString(R.string.msg_app_version, BuildConfig.VERSION_NAME, BuildConfig.GIT_HASH));
-        ((TextView) findViewById(R.id.lib_version)).setText(getString(R.string.msg_lib_version, BuildConfig.LIB_VERSION));
+        ((TextView) findViewById(R.id.app_version)).setText(getString(R.string.msg_app_version, BuildConfig.VERSION_NAME));
+        ((TextView) findViewById(R.id.lib_version)).setText(getString(R.string.msg_lib_version));
 
         initLicenses();
     }
@@ -104,6 +107,6 @@ public class AboutActivity extends ActionBarActivity {
     }
 
     private View createDivider(final LayoutInflater inflater) {
-        return inflater.inflate(R.layout.divider, null);
+        return inflater.inflate(R.layout.observable_scroll_view_divider, null);
     }
 }

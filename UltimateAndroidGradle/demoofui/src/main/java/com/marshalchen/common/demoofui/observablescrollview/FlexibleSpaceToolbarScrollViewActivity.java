@@ -29,6 +29,7 @@ import android.widget.TextView;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollViewCallbacks;
 import com.github.ksoichiro.android.observablescrollview.ScrollState;
+import com.marshalchen.common.demoofui.R;
 import com.nineoldandroids.view.ViewHelper;
 
 public class FlexibleSpaceToolbarScrollViewActivity extends ActionBarActivity implements ObservableScrollViewCallbacks {
@@ -41,7 +42,7 @@ public class FlexibleSpaceToolbarScrollViewActivity extends ActionBarActivity im
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_flexiblespacetoolbarscrollview);
+        setContentView(R.layout.observable_scroll_view_activity_flexiblespacetoolbarscrollview);
 
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

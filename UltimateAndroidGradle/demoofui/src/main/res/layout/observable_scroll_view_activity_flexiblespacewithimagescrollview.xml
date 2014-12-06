@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/flexible_space_image_height"
         android:scaleType="centerCrop"
-        android:src="@drawable/example" />
+        android:src="@drawable/observable_scroll_view_example" />
 
     <View
         android:id="@+id/overlay"
@@ -80,7 +80,7 @@
             android:background="@android:color/transparent" />
     </LinearLayout>
 
-    <com.melnykov.fab.FloatingActionButton
+    <com.marshalchen.common.ui.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -25,6 +25,7 @@ import com.github.ksoichiro.android.observablescrollview.ObservableGridView;
 import com.github.ksoichiro.android.observablescrollview.ObservableListView;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollViewCallbacks;
 import com.github.ksoichiro.android.observablescrollview.ScrollState;
+import com.marshalchen.common.demoofui.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,7 +35,7 @@ public class ActionBarControlGridViewActivity extends ActionBarActivity implemen
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_actionbarcontrolgridview);
+        setContentView(R.layout.observable_scroll_view_activity_actionbarcontrolgridview);
 
         ObservableGridView gridView = (ObservableGridView) findViewById(R.id.grid);
         gridView.setScrollViewCallbacks(this);

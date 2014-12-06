@@ -29,6 +29,7 @@ import android.widget.ArrayAdapter;
 import com.github.ksoichiro.android.observablescrollview.ObservableListView;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollViewCallbacks;
 import com.github.ksoichiro.android.observablescrollview.ScrollState;
+import com.marshalchen.common.demoofui.R;
 import com.nineoldandroids.view.ViewHelper;
 import com.nineoldandroids.view.ViewPropertyAnimator;
 
@@ -46,7 +47,7 @@ public class ToolbarControlListViewActivity extends ActionBarActivity implements
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_toolbarcontrollistview);
+        setContentView(R.layout.observable_scroll_view_activity_toolbarcontrollistview);
 
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
 
@@ -58,8 +59,8 @@ public class ToolbarControlListViewActivity extends ActionBarActivity implements
         mListView.setScrollViewCallbacks(this);
 
         LayoutInflater inflater = LayoutInflater.from(this);
-        mListView.addHeaderView(inflater.inflate(R.layout.padding, null)); // toolbar
-        mListView.addHeaderView(inflater.inflate(R.layout.padding, null)); // sticky view
+        mListView.addHeaderView(inflater.inflate(R.layout.observable_scroll_view_padding, null)); // toolbar
+        mListView.addHeaderView(inflater.inflate(R.layout.observable_scroll_view_padding, null)); // sticky view
         List<String> items = new ArrayList<String>();
         for (int i = 1; i <= 100; i++) {
             items.add("Item " + i);

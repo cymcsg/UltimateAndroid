@@ -23,13 +23,14 @@ import android.support.v7.app.ActionBarActivity;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollViewCallbacks;
 import com.github.ksoichiro.android.observablescrollview.ObservableWebView;
 import com.github.ksoichiro.android.observablescrollview.ScrollState;
+import com.marshalchen.common.demoofui.R;
 
 public class ActionBarControlWebViewActivity extends ActionBarActivity implements ObservableScrollViewCallbacks {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_actionbarcontrolwebview);
+        setContentView(R.layout.observable_scroll_view_activity_actionbarcontrolwebview);
 
         ObservableWebView webView = (ObservableWebView) findViewById(R.id.web);
         webView.setScrollViewCallbacks(this);

@@ -26,6 +26,7 @@ import android.widget.ArrayAdapter;
 import com.github.ksoichiro.android.observablescrollview.ObservableListView;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollViewCallbacks;
 import com.github.ksoichiro.android.observablescrollview.ScrollState;
+import com.marshalchen.common.demoofui.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,7 +38,7 @@ public class ActionBarControlListViewActivity extends ActionBarActivity implemen
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_actionbarcontrollistview);
+        setContentView(R.layout.observable_scroll_view_activity_actionbarcontrollistview);
 
         ObservableListView listView = (ObservableListView) findViewById(R.id.list);
         listView.setScrollViewCallbacks(this);

@@ -31,7 +31,8 @@ import android.view.ViewGroup;
 import com.github.ksoichiro.android.observablescrollview.ObservableListView;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollViewCallbacks;
 import com.github.ksoichiro.android.observablescrollview.ScrollState;
-import com.google.samples.apps.iosched.ui.widget.SlidingTabLayout;
+import com.marshalchen.common.demoofui.R;
+import com.marshalchen.common.demoofui.observablescrollview.ui.widget.SlidingTabLayout;
 import com.nineoldandroids.view.ViewHelper;
 import com.nineoldandroids.view.ViewPropertyAnimator;
 
@@ -50,7 +51,7 @@ public class ViewPagerTabListViewActivity extends ActionBarActivity implements O
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_viewpagertabscrollview);
+        setContentView(R.layout.observable_scroll_view_activity_viewpagertabscrollview);
 
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
 
@@ -62,7 +63,7 @@ public class ViewPagerTabListViewActivity extends ActionBarActivity implements O
         mPager.setAdapter(mPagerAdapter);
 
         SlidingTabLayout slidingTabLayout = (SlidingTabLayout) findViewById(R.id.sliding_tabs);
-        slidingTabLayout.setCustomTabView(R.layout.tab_indicator, android.R.id.text1);
+        slidingTabLayout.setCustomTabView(R.layout.observable_scroll_view_tab_indicator, android.R.id.text1);
         slidingTabLayout.setSelectedIndicatorColors(getResources().getColor(R.color.accent));
         slidingTabLayout.setDistributeEvenly(true);
         slidingTabLayout.setViewPager(mPager);

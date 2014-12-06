@@ -8,5 +8,5 @@
     android:gravity="center"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:textColor="@color/tab_text_color"
+    android:textColor="@color/observable_scroll_view_tab_text_color"
     android:textSize="14sp" />

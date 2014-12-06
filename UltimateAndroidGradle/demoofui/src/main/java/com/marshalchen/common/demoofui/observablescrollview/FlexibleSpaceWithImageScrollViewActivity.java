@@ -30,6 +30,7 @@ import android.widget.TextView;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollViewCallbacks;
 import com.github.ksoichiro.android.observablescrollview.ScrollState;
+import com.marshalchen.common.demoofui.R;
 import com.nineoldandroids.view.ViewHelper;
 import com.nineoldandroids.view.ViewPropertyAnimator;
 
@@ -54,7 +55,7 @@ public class FlexibleSpaceWithImageScrollViewActivity extends ActionBarActivity 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_flexiblespacewithimagescrollview);
+        setContentView(R.layout.observable_scroll_view_activity_flexiblespacewithimagescrollview);
 
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
 

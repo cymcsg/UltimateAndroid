@@ -801,6 +801,131 @@
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".observablescrollview.ObservableScrollViewActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".observablescrollview.ViewPagerTabListViewActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".observablescrollview.ToolbarControlRecyclerViewActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".observablescrollview.ToolbarControlScrollViewActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".observablescrollview.ToolbarControlWebViewActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".observablescrollview.AboutActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".observablescrollview.ActionBarControlGridViewActivity"
+         >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".observablescrollview.ActionBarControlListViewActivity"
+           >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".observablescrollview.ActionBarControlRecyclerViewActivity"
+           >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".observablescrollview.ActionBarControlScrollViewActivity"
+          >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".observablescrollview.ActionBarControlWebViewActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".observablescrollview.FlexibleSpaceToolbarScrollViewActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".observablescrollview.ScrollFromBottomListViewActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".observablescrollview.ScrollFromBottomRecyclerViewActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".observablescrollview.ViewPagerTabActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".observablescrollview.ViewPagerTabScrollViewActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </activity>
+
+
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->

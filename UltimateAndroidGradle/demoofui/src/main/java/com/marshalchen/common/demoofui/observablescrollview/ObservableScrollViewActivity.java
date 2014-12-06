@@ -28,6 +28,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
+import com.marshalchen.common.commonUtils.logUtils.Logs;
 import com.marshalchen.common.demoofui.BuildConfig;
 import com.marshalchen.common.demoofui.R;
 
@@ -92,7 +93,7 @@ public class ObservableScrollViewActivity extends ActionBarActivity implements A
 
         PackageManager pm = getPackageManager();
         List<ResolveInfo> list = pm.queryIntentActivities(mainIntent, 0);
-
+        Logs.d("observable-----" + (list == null));
         if (list == null) {
             return data;
         }
@@ -123,7 +124,7 @@ public class ObservableScrollViewActivity extends ActionBarActivity implements A
         }
 
         Collections.sort(data, DISPLAY_NAME_COMPARATOR);
-
+        Logs.d("data------" + data.size());
         return data;
     }
 

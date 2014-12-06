@@ -18,7 +18,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <include layout="@layout/padding" />
+    <include layout="@layout/observable_scroll_view_padding" />
 
-    <include layout="@layout/padding" />
+    <include layout="@layout/observable_scroll_view_padding" />
 </LinearLayout>

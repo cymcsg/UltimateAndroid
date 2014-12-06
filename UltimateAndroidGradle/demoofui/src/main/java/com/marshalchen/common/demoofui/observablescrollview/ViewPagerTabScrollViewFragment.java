@@ -11,6 +11,7 @@ import android.view.ViewTreeObserver;
 
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollViewCallbacks;
+import com.marshalchen.common.demoofui.R;
 
 public class ViewPagerTabScrollViewFragment extends Fragment {
 
@@ -18,7 +19,7 @@ public class ViewPagerTabScrollViewFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_scrollview, container, false);
+        View view = inflater.inflate(R.layout.observable_scroll_view_fragment_scrollview, container, false);
 
         final ObservableScrollView scrollView = (ObservableScrollView) view.findViewById(R.id.scroll);
         Activity parentActivity = getActivity();

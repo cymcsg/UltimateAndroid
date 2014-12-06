@@ -27,6 +27,7 @@ import android.view.View;
 import com.github.ksoichiro.android.observablescrollview.ObservableRecyclerView;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollViewCallbacks;
 import com.github.ksoichiro.android.observablescrollview.ScrollState;
+import com.marshalchen.common.demoofui.R;
 import com.nineoldandroids.view.ViewHelper;
 import com.nineoldandroids.view.ViewPropertyAnimator;
 
@@ -42,7 +43,7 @@ public class ToolbarControlRecyclerViewActivity extends ActionBarActivity implem
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_toolbarcontrolrecyclerview);
+        setContentView(R.layout.observable_scroll_view_activity_toolbarcontrolrecyclerview);
 
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
 
@@ -59,7 +60,7 @@ public class ToolbarControlRecyclerViewActivity extends ActionBarActivity implem
         for (int i = 1; i <= 100; i++) {
             items.add("Item " + i);
         }
-        View headerView = LayoutInflater.from(this).inflate(R.layout.recycler_header, null);
+        View headerView = LayoutInflater.from(this).inflate(R.layout.observable_scroll_view_recycler_header, null);
         mRecyclerView.setAdapter(new SimpleHeaderRecyclerAdapter(this, items, headerView));
     }
 

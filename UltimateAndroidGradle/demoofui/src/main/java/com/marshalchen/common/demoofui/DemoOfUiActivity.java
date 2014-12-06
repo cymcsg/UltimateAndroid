@@ -118,7 +118,7 @@ public class DemoOfUiActivity extends ActionBarActivity {
         searchView.setOnSearchClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // ToastUtil.show(MainActivity.this,"show~", Toast.LENGTH_SHORT);
+                // ToastUtil.show(ObservableScrollViewActivity.this,"show~", Toast.LENGTH_SHORT);
             }
         });
 

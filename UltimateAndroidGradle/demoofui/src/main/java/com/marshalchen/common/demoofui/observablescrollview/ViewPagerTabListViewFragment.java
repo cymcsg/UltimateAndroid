@@ -12,6 +12,7 @@ import android.widget.ArrayAdapter;
 
 import com.github.ksoichiro.android.observablescrollview.ObservableListView;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollViewCallbacks;
+import com.marshalchen.common.demoofui.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,11 +23,11 @@ public class ViewPagerTabListViewFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_listview, container, false);
+        View view = inflater.inflate(R.layout.observable_scroll_view_fragment_listview, container, false);
 
         Activity parentActivity = getActivity();
         final ObservableListView listView = (ObservableListView) view.findViewById(R.id.list);
-        listView.addHeaderView(inflater.inflate(R.layout.padding, null));
+        listView.addHeaderView(inflater.inflate(R.layout.observable_scroll_view_padding, null));
         List<String> items = new ArrayList<String>();
         for (int i = 1; i <= 100; i++) {
             items.add("Item " + i);

@@ -27,7 +27,7 @@
             app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"
             app:theme="@style/Toolbar" />
 
-        <com.google.samples.apps.iosched.ui.widget.SlidingTabLayout
+        <com.marshalchen.common.demoofui.observablescrollview.ui.widget.SlidingTabLayout
             android:id="@+id/sliding_tabs"
             android:layout_width="match_parent"
             android:layout_height="@dimen/tab_height"
