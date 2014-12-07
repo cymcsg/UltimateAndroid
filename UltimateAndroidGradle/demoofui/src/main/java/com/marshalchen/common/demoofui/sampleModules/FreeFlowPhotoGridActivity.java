@@ -186,7 +186,7 @@ public class FreeFlowPhotoGridActivity extends Activity {
 			tv.setFocusable(false);
 			tv.setBackgroundResource(R.drawable.free_flow_box);
 			// tv.setAlpha(.25f);
-			// button.setOnTouchListener(MainActivity.this);
+			// button.setOnTouchListener(ObservableScrollViewActivity.this);
 			tv.setText("s" + section + " p" + position);
 
 			return tv;
@@ -204,7 +204,7 @@ public class FreeFlowPhotoGridActivity extends Activity {
 
 			tv.setFocusable(false);
 			tv.setBackgroundColor(Color.GRAY);
-			// button.setOnTouchListener(MainActivity.this);
+			// button.setOnTouchListener(ObservableScrollViewActivity.this);
 			tv.setText("section header" + section);
 
 			return tv;

@@ -49,5 +49,10 @@ dependencies {
     compile 'com.github.pavlospt:roundedletterview:1.0'
     compile 'com.github.markushi:android-ui:1.2'
     compile 'com.github.dexafree:materiallist:1.2.0'
+    compile 'in.srain.cube:ultra-ptr:1.0.3'
+    compile 'in.srain.cube:clog:1.0.2'
+    compile 'in.srain.cube:cube-sdk:1.0.42@aar'
+    compile 'com.github.ksoichiro:android-observablescrollview:1.2.1'
+   // compile 'com.github.androidprogresslayout:library:1.1@aar'
 
 }

@@ -727,4 +727,22 @@
         <attr name="insetTop" format="dimension|reference" />
         <attr name="insetBottom" format="dimension|reference" />
     </declare-styleable>
+
+    <declare-styleable name="Patio">
+        <attr name="maxPictures" format="integer"/>
+        <attr name="thumbnailWidth" format="dimension"/>
+        <attr name="thumbnailHeight" format="dimension"/>
+        <attr name="thumbnailsContainerBackground" format="color"/>
+        <attr name="thumbnailsContainerPadding" format="dimension"/>
+        <attr name="actionsTextColor" format="color"/>
+        <attr name="thumbnailsMessage" format="string"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="CreditsRollView">
+        <attr name="scrollPosition" format="float" />
+        <attr name="angle" format="float" />
+        <attr name="endScrollMultiplier" format="float" />
+        <attr name="distanceFromText" format="float" />
+    </declare-styleable>
 </resources>

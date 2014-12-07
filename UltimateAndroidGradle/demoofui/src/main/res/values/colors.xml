@@ -48,6 +48,7 @@
     <color name="primary">#9fa8da</color>
     <color name="primary_dark">#7986cb</color>
     <color name="accent">#259b24</color>
+    <color name="accentLight">#F4FF81</color>
     <color name="text_primary">#D9FFFFFF</color>
     <color name="text_secondary">#D9000000</color>
 </resources>

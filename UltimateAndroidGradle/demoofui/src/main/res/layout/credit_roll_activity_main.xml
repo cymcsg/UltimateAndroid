@@ -1,0 +1,120 @@
+<!--
+  ~ Copyright 2014 Frakbot (Sebastiano Poggi and Francesco Pontillo)
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="net.frakbot.creditsrolldemo.MainActivity">
+
+    <com.marshalchen.common.uimodule.simplemodule.CreditsRollView
+            android:id="@+id/creditsroll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Oooh\n
+\n
+We\'re no strangers to love\n
+You know the rules and so do I\n
+A full commitment\'s what I\'m thinking of\n
+You wouldn\'t get this from any other guy\n
+\n
+I just wanna tell you how I\'m feeling\n
+Gotta make you understand\n
+\n
+Never gonna give you up\n
+Never gonna let you down\n
+Never gonna run around and desert you\n
+Never gonna make you cry\n
+Never gonna say goodbye\n
+Never gonna tell a lie and hurt you\n
+\n
+We\'ve known each other for so long\n
+Your heart\'s been aching, but\n
+You\'re too shy to say it\n
+Inside, we both know what\'s been going on\n
+We know the game and we\'re gonna play it\n
+\n
+And if you ask me how I\'m feeling\n
+Don\'t tell me you\'re too blind to see\n
+\n
+Never gonna give you up\n
+Never gonna let you down\n
+Never gonna run around and desert you\n
+Never gonna make you cry\n
+Never gonna say goodbye\n
+Never gonna tell a lie and hurt you\n
+\n
+Never gonna give you up\n
+Never gonna let you down\n
+Never gonna run around and desert you\n
+Never gonna make you cry\n
+Never gonna say goodbye\n
+Never gonna tell a lie and hurt you\n
+\n
+(Ooh, give you up)\n
+(Ooh, give you up)\n
+Never gonna give, never gonna give\n
+(Give you up)\n
+Never gonna give, never gonna give\n
+(Give you up)\n
+\n
+We\'ve known each other for so long\n
+Your heart\'s been aching, but\n
+You\'re too shy to say it\n
+Inside, we both know what\'s been going on\n
+We know the game and we\'re gonna play it\n
+\n
+I just wanna tell you how I\'m feeling\n
+Gotta make you understand\n
+\n
+Never gonna give you up\n
+Never gonna let you down\n
+Never gonna run around and desert you\n
+Never gonna make you cry\n
+Never gonna say goodbye\n
+Never gonna tell a lie and hurt you\n
+\n
+Never gonna give you up\n
+Never gonna let you down\n
+Never gonna run around and desert you\n
+Never gonna make you cry\n
+Never gonna say goodbye\n
+Never gonna tell a lie and hurt you\n
+\n
+Never gonna give you up\n
+Never gonna let you down\n
+Never gonna run around and desert you\n
+Never gonna make you cry\n
+Never gonna say goodbye\n
+Never gonna tell a lie and hurt you"
+            android:textSize="30sp"
+            android:textColor="#ffffc92a"
+            app:angle="35"
+            app:endScrollMultiplier="4.5"
+            app:distanceFromText="200"/>
+
+    <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:max="100000"/>
+
+</LinearLayout>
