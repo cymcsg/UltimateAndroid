@@ -842,43 +842,32 @@
         </activity>
         <activity
             android:name=".observablescrollview.AboutActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        </activity>
-        <activity
-            android:name=".observablescrollview.ActionBarControlGridViewActivity"
-         >
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity android:name=".observablescrollview.ActionBarControlGridViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="${applicationId}" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".observablescrollview.ActionBarControlListViewActivity"
-           >
+        <activity android:name=".observablescrollview.ActionBarControlListViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="${applicationId}" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".observablescrollview.ActionBarControlRecyclerViewActivity"
-           >
+        <activity android:name=".observablescrollview.ActionBarControlRecyclerViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="${applicationId}" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".observablescrollview.ActionBarControlScrollViewActivity"
-          >
+        <activity android:name=".observablescrollview.ActionBarControlScrollViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="${applicationId}" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".observablescrollview.ActionBarControlWebViewActivity"
-            >
+        <activity android:name=".observablescrollview.ActionBarControlWebViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="${applicationId}" />
@@ -922,6 +911,12 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="${applicationId}" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ultraPullToRefresh.ui.activity.UltraPullToRefreshHomeActivity" android:theme="@style/CubeTheme.NoWindowAniAndNoTitle">
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
         </activity>
 
