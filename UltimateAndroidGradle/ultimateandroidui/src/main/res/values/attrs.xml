@@ -745,4 +745,9 @@
         <attr name="endScrollMultiplier" format="float" />
         <attr name="distanceFromText" format="float" />
     </declare-styleable>
+
+    <declare-styleable name="ProgressLayout">
+        <attr name="progressLayoutProgressBackground" format="color"/>
+        <attr name="progressLayoutProgress" format="boolean"/>
+    </declare-styleable>
 </resources>
