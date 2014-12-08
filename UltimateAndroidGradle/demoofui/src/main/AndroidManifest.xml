@@ -914,7 +914,18 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ultraPullToRefresh.ui.activity.UltraPullToRefreshHomeActivity" android:theme="@style/CubeTheme.NoWindowAniAndNoTitle">
+        <activity
+            android:name=".ultraPullToRefresh.ui.activity.UltraPullToRefreshHomeActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".androidprogresslayout.ProgressLayoutActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
             <intent-filter>
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
