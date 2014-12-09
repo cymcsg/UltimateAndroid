@@ -18,6 +18,17 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.marshalchen.common.demoofui.cooldraganddrop.CoolDragAndDropActivity;
+import com.marshalchen.common.demoofui.materialdesigndemo.MaterialDesignActivity;
+import com.marshalchen.common.demoofui.materialmenu.MaterialMenuToolbarActivity;
+import com.marshalchen.common.demoofui.sampleModules.FloatingActionButtonDemo;
+import com.marshalchen.common.demoofui.sampleModules.GestureTouchActivity;
+import com.marshalchen.common.demoofui.sampleModules.KenBurnsViewActivity;
+import com.marshalchen.common.demoofui.sampleModules.MaterialListViewActivity;
+import com.marshalchen.common.demoofui.sampleModules.MotionSampleActivity;
+import com.marshalchen.common.demoofui.sampleModules.NumberProgressBarActivity;
+import com.marshalchen.common.demoofui.sampleModules.RippleEffectActivity;
+import com.marshalchen.common.demoofui.sampleModules.SignaturePadActivity;
 import com.marshalchen.common.ui.Typefaces;
 import com.marshalchen.common.uimodule.enhanceListView.EnhancedListView;
 import com.marshalchen.common.uimodule.titanic.Titanic;
@@ -144,6 +155,44 @@ public class LandingFragment extends Fragment {
                             info.activityInfo.name));
         }
         Collections.sort(myData, sDisplayNameComparator);
+
+        addItemToTop(myData,
+                "SignaturePadActivity",
+                new Intent(getActivity(), SignaturePadActivity.class));
+        addItemToTop(myData,
+                "SmoothProgressBarActivity",
+                new Intent(getActivity(), SmoothProgressBarActivity.class));
+        addItemToTop(myData,
+                "RippleEffectActivity",
+                new Intent(getActivity(), RippleEffectActivity.class));
+        addItemToTop(myData,
+                "NumberProgressBarActivity",
+                new Intent(getActivity(), NumberProgressBarActivity.class));
+        addItemToTop(myData,
+                "MotionSampleActivity",
+                new Intent(getActivity(), MotionSampleActivity.class));
+
+        addItemToTop(myData,
+                "MaterialMenuToolbarActivity",
+                new Intent(getActivity(), MaterialMenuToolbarActivity.class));
+        addItemToTop(myData,
+                "MaterialListViewActivity",
+                new Intent(getActivity(), MaterialListViewActivity.class));
+        addItemToTop(myData,
+                "KenBurnsViewActivity",
+                new Intent(getActivity(), KenBurnsViewActivity.class));
+        addItemToTop(myData,
+                "GestureTouchActivity",
+                new Intent(getActivity(), GestureTouchActivity.class));
+        addItemToTop(myData,
+                "FloatingActionButtonDemo",
+                new Intent(getActivity(), FloatingActionButtonDemo.class));
+        addItemToTop(myData,
+                "CoolDragAndDropActivity",
+                new Intent(getActivity(), CoolDragAndDropActivity.class));
+        addItemToTop(myData,
+                "MaterialDesignActivity",
+                new Intent(getActivity(), MaterialDesignActivity.class));
         return myData;
     }
 
@@ -166,6 +215,13 @@ public class LandingFragment extends Fragment {
         temp.put("title", name);
         temp.put("intent", intent);
         data.add(temp);
+    }
+
+    protected void addItemToTop(List<Map<String, ?>> data, String name, Intent intent) {
+        Map<String, Object> temp = new HashMap<String, Object>();
+        temp.put("title", name);
+        temp.put("intent", intent);
+        data.add(0, temp);
     }
 
     private void initViewPager() {
