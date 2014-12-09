@@ -79,7 +79,7 @@ repositories {
     }
 dependencies {
     ...
-    compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.4.0'
+    compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.4.1'
 }
 ```
 Ui framework:
@@ -89,7 +89,7 @@ repositories {
     }
 dependencies {
     ...
-    compile 'com.marshalchen.ultimateandroid:ultimateandroidui:0.4.0'
+    compile 'com.marshalchen.ultimateandroid:ultimateandroidui:0.4.1'
 }
 ```
 
