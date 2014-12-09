@@ -5,7 +5,7 @@ android {
     buildToolsVersion "21.1.0"
 
     defaultConfig {
-        applicationId "com.marshalchen.common.uimodule"
+        //applicationId "com.marshalchen.common.uimodule"
         minSdkVersion 14
         targetSdkVersion 21
         versionCode 1
@@ -28,7 +28,7 @@ android {
 ext {
     PUBLISH_GROUP_ID = 'com.marshalchen.ultimateandroid'
     PUBLISH_ARTIFACT_ID = 'ultimateandroidui'
-    PUBLISH_VERSION = '0.4.0'
+    PUBLISH_VERSION = '0.4.1'
 }
 apply from: 'android-release-aar.gradle'
 
@@ -38,7 +38,7 @@ dependencies {
     compile 'com.android.support:support-v13:21.0.0'
     compile 'com.android.support:recyclerview-v7:21.0.0'
     compile project(':ultimateandroid')
-   // compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.4.0'
+    //compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.4.1'
     compile 'com.rengwuxian.materialedittext:library:1.1.0'
     compile 'com.skyfishjy.ripplebackground:library:1.0.1'
     compile 'com.jpardogo.materialtabstrip:library:1.0.3'

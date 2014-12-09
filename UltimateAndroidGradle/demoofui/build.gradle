@@ -30,12 +30,15 @@ android {
         exclude 'META-INF/LICENSE'
     }
 }
-
+configurations.all {
+    // check for updates every build
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:21.0.0'
     compile 'com.android.support:support-v13:21.0.0'
     compile 'com.android.support:recyclerview-v7:21.0.0'
     compile project(':ultimateandroidui')
-//    compile 'com.marshalchen.ultimateandroid:ultimateandroidui:0.4.0'
+    //compile 'com.marshalchen.ultimateandroid:ultimateandroidui:0.4.1'
 }
