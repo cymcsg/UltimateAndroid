@@ -7,10 +7,10 @@ UltimateAndroid
 [![Build Status](https://drone.io/github.com/cymcsg/UltimateAndroid/status.png)](https://drone.io/github.com/cymcsg/UltimateAndroid/latest)
 <br>
 
-###UltimateAndroid is a framework which can help you  develop Android apps  in a fast way  
+###UltimateAndroid is a rapid development framework for developing your apps
 
 
-### 快速开发Android应用的框架  
+### 快速开发Android应用框架  UltimateAndroid
 <br>  
 [English Introduction](#english_introduction)
 
@@ -322,7 +322,7 @@ repositories {
     }
 dependencies {
     ...
-    compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.4.0'
+    compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.4.1'
 }
 ```
 Ui framework:
@@ -332,7 +332,7 @@ repositories {
     }
 dependencies {
     ...
-    compile 'com.marshalchen.ultimateandroid:ultimateandroidui:0.4.0'
+    compile 'com.marshalchen.ultimateandroid:ultimateandroidui:0.4.1'
 }
 ```
 
