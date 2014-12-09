@@ -1,6 +1,16 @@
 
 ##Update：
 
+
+2014.12.10 
+######Support Android Studio 1.0
+
+2014.12.09 add [android-Ultra-Pull-To-Refresh](https://github.com/liaohuqiu/android-Ultra-Pull-To-Refresh)
+
+2014.12.02 add [AndroidProgressLayout](https://github.com/antonkrasov/AndroidProgressLayout)
+
+2014.12.01 add [SlideActivity](https://github.com/chenjishi/SlideActivity)
+
 2014.11.28 add [Material List](https://github.com/dexafree/MaterialList)
 
 2014.11.27 add [Material Tab](https://github.com/neokree/MaterialTabs)

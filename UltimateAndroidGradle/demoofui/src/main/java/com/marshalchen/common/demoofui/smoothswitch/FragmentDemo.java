@@ -1,5 +1,6 @@
 package com.marshalchen.common.demoofui.smoothswitch;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -75,6 +76,8 @@ public class FragmentDemo extends FragmentActivity {
 
 }
 
+
+@SuppressLint("ValidFragment")
 class FlowerFragment extends Fragment {
     private View mConverView;
 

@@ -1,5 +1,6 @@
 package com.marshalchen.common.demoofui.sampleModules;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.res.Resources;
 import android.graphics.Color;
@@ -128,6 +129,7 @@ public class MaterialTabsWithIconsActivity extends ActionBarActivity implements 
         return null;
     }
 
+    @SuppressLint("ValidFragment")
     public class IndexFragment extends Fragment {
         @Override
         public View onCreateView(LayoutInflater inflater,

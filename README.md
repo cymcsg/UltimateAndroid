@@ -95,7 +95,7 @@ dependencies {
 
 
 #####Normal way:
-If you use gradle way and you want to edit it at the same time,you can use ``Import Non-Android Studio Project``(version>0.9.0).If you use normal way,you can pay attention that UltimateAndroid  depends on appcompat, UltimateAndroidUi  depends on UltimateAndroid,and the DemoOfUi is depends on UltimateAndroidUi.
+If you use gradle way and you want to edit it at the same time,you can use ``Import Non-Android Studio Project``(need Android Studio 1.0).If you use normal way,you can pay attention that UltimateAndroid  depends on appcompat, UltimateAndroidUi  depends on UltimateAndroid,and the DemoOfUi is depends on UltimateAndroidUi.
 
 2.As the function of View Injection which use ButterKnife,you should config your IDE before you can compile the project.***Most of  IDEs require additional configuration in order to enable annotation processing for Butter Knife,
 or you can see [IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse Configuration for butter Knife][102].***
@@ -281,6 +281,8 @@ Please set the ides before you run the demo apps.
 * PhotoView to help produce an easily usable implementation of a zooming Android ImageView
 * PagerSlidingTabStrip and  ViewPagerIndicator to help customing View Pager more easily.
 * SwipeBackLayout to help you finish a activity by swipe the screen.
+* Material Design
+* 
   ``And there are more than 100 UI modules which I do not mention here.``
 
 
@@ -339,7 +341,7 @@ dependencies {
 
 #####Normal way:
 
-1.传统的library和gradle 的library在不同的文件夹中。如果你使用gradle方式,你可以拷贝 "ultimateandroid.aar" 到你的项目中 ，添加``  compile(name:'ultimateandroid', ext:'aar')``到gradle file中 .如果你使用gradle方式，并且想同时修改框架，可以用android studio的``Import Non-Android Studio Project``(version>0.9.0)。如果使用普通方式，需要注意UltimateAndroid 依赖 appcompat.UltimateAndroidUi 依赖 UltimateAndroid.DemoOfUi 依赖 UltimateAndroidUi.如果你不需要使用UiModule的话，可以直接依赖UltimateAndroid，这样体积会更纤细。
+1.传统的library和gradle 的library在不同的文件夹中。如果你使用gradle方式,你可以拷贝 "ultimateandroid.aar" 到你的项目中 ，添加``  compile(name:'ultimateandroid', ext:'aar')``到gradle file中 .如果你使用gradle方式，并且想同时修改框架，可以用android studio的``Import Non-Android Studio Project``(需要Android Studio1.0)。如果使用普通方式，需要注意UltimateAndroid 依赖 appcompat.UltimateAndroidUi 依赖 UltimateAndroid.DemoOfUi 依赖 UltimateAndroidUi.如果你不需要使用UiModule的话，可以直接依赖UltimateAndroid，这样体积会更纤细。
 
 2.Demo的Apk文件可以直接下载使用.由于框架使用了View Injection，**大部分IDE需要开启annotation的编译（使用了Butter Knife），如果不清楚如何开启可以看一下[IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse Configuration for butter Knife][102].**
 
@@ -519,6 +521,7 @@ String imageUri = "drawable://" + R.drawable.image; // from drawables (only imag
 * 影视效果的图片
 * 更方便的定制ViewPager
 * 滑动后退
+* Material Design
 
   ``还有超过100多种其他模块没有提到``
 

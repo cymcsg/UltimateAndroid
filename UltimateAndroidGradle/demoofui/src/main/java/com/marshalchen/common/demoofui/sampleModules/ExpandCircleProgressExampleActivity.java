@@ -1,5 +1,6 @@
 package com.marshalchen.common.demoofui.sampleModules;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
@@ -22,7 +23,8 @@ public class ExpandCircleProgressExampleActivity extends FragmentActivity {
 		}
 	}
 
-	public class ExtendedCircleFragment extends Fragment {
+	@SuppressLint("ValidFragment")
+    public class ExtendedCircleFragment extends Fragment {
 
 		private ExpandedCircleProgressView mCircleProgressView;
 		protected int mProgress = 0;

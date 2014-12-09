@@ -6,6 +6,7 @@ package com.marshalchen.common.demoofui.dragSortListview;
 
 import com.marshalchen.common.demoofui.R;
 
+import android.annotation.SuppressLint;
 import android.support.v4.app.DialogFragment;
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -26,6 +27,7 @@ public class EnablesDialog extends DialogFragment {
         mEnabled[2] = false;
     }
 
+    @SuppressLint("ValidFragment")
     public EnablesDialog(boolean drag, boolean sort, boolean remove) {
         super();
         mEnabled = new boolean[3];

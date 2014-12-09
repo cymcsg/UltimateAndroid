@@ -1,5 +1,6 @@
 package com.marshalchen.common.demoofui.staggeredgridview;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -35,6 +36,7 @@ public class StaggeredGridActivityFragment extends FragmentActivity {
     }
 
 
+    @SuppressLint("ValidFragment")
     private class StaggeredGridFragment extends Fragment implements
             AbsListView.OnScrollListener, AbsListView.OnItemClickListener {
 
