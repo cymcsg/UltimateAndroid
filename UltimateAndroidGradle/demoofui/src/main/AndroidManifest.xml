@@ -930,6 +930,13 @@
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".sampleModules.DiscreteSeekBarActivity"
+            android:theme="@style/android:Theme.Light">
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui" />
+            </intent-filter>
+        </activity>
 
 
     </application>

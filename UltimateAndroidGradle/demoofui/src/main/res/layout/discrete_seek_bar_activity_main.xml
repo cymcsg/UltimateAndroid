@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              android:orientation="vertical"
+              tools:context=".MainActivity"
+
+    >
+
+    <TextView
+        android:textDirection="locale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"/>
+
+    <com.marshalchen.common.uimodule.discreteseekbar.DiscreteSeekBar
+        android:id="@+id/discrete1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:dsb_min="-5"
+        app:dsb_max="5"
+        app:dsb_value="-2"
+        />
+
+    <com.marshalchen.common.uimodule.discreteseekbar.DiscreteSeekBar
+        android:id="@+id/discrete2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:dsb_allowTrackClickToDrag="false"
+        app:dsb_indicatorTextAppearance="@style/CustomFloaterTextAppearance"
+        app:dsb_progressColor="@color/discrete_seek_bar_my_progress_color"
+        app:dsb_rippleColor="#FF7788FF"
+        app:dsb_indicatorColor="@color/discrete_seek_bar_my_floater_color"
+        app:dsb_indicatorFormatter="\\o/ %d"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bacon ipsum dolor amet chuck alcatra tenderloin brisket filet mignon. Cupim capicola ground round sirloin. Meatball prosciutto pork bresaola biltong, shankle cow drumstick picanha short loin beef ribs pastrami cupim tail. Shank pastrami turkey cow swine tail ham hamburger pork loin pork belly tri-tip cupim."/>
+            <com.marshalchen.common.uimodule.discreteseekbar.DiscreteSeekBar
+                android:id="@+id/discrete3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:dsb_min="1"
+                app:dsb_max="1000"
+                app:dsb_indicatorFormatter="%04d"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Brisket pig filet mignon porchetta short ribs, ball tip t-bone meatball alcatra prosciutto. Pork loin pastrami bacon, kevin meatloaf landjaeger ball tip andouille short ribs kielbasa cupim rump. Shoulder alcatra pork t-bone, sausage bacon filet mignon. Chuck pastrami tongue chicken brisket pork ball tip kevin tail frankfurter meatball prosciutto bacon. Venison short loin fatback pig picanha cow kevin tenderloin. Pork cupim leberkas, andouille frankfurter tenderloin meatloaf alcatra biltong.\nMeatloaf tenderloin ground round corned beef shoulder prosciutto biltong tail alcatra landjaeger frankfurter spare ribs. Rump swine capicola, shankle salami chuck sirloin sausage. Tenderloin pig tri-tip brisket chicken, ham ribeye short ribs shankle. T-bone turkey short loin jerky, porchetta turducken tail sausage biltong pork pork belly. Strip steak brisket pork loin salami, tail alcatra turkey kevin prosciutto jerky cupim ground round. Pork belly fatback bresaola porchetta andouille beef alcatra turkey picanha pork chop t-bone swine short loin ham. Short ribs pork swine, shoulder ham frankfurter tri-tip.\nDrumstick swine sausage tri-tip pork bacon. Kevin meatloaf andouille pork, shoulder short ribs capicola. Salami beef shank, shankle spare ribs cow doner leberkas tongue meatball hamburger shoulder. Pork chop ribeye prosciutto ground round brisket. Sirloin pig brisket short ribs corned beef, venison shoulder landjaeger cupim alcatra. Shankle andouille prosciutto, flank turkey venison kielbasa pork chop pork loin. Bresaola tri-tip turducken filet mignon, pork pig cow capicola brisket short ribs doner"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
