@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:match="http://schemas.android.com/apk/res-auto"
+    android:layout_width="400dp"
+    android:layout_height="300dp"
+    android:background="#ffffff"
+    >
+
+
+    <com.marshalchen.common.uimodule.matchview.MatchTextView
+        android:id="@+id/mTextView"
+        android:layout_centerInParent="true"
+        match:text="LOADING"
+        match:textSize="40sp"
+        match:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.marshalchen.common.uimodule.matchview.MatchButton
+        android:id="@+id/mButton"
+        android:layout_below="@+id/mTextView"
+        match:text="Cancle"
+        match:textSize="20sp"
+        match:textColor="#000000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

@@ -278,7 +278,7 @@
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
         </activity>
-        <activity android:name=".recyclerviewitemanimator.RecyclerViewItemAnimatorActivity">
+        <activity android:name=".recyclerviewitemanimator.RecyclerViewItemAnimatorActivity" android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
             <intent-filter>
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
@@ -937,8 +937,13 @@
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
         </activity>
-
-
+        <activity
+            android:name=".matchview.MatchViewActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui" />
+            </intent-filter>
+        </activity>
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->
