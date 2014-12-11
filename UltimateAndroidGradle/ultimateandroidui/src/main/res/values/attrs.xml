@@ -768,4 +768,17 @@
         <attr name="dsb_indicatorFormatter" format="string|reference"/>
         <attr name="dsb_rippleColor" format="color|reference"/>
     </declare-styleable>
+
+
+    <!--<declare-styleable name="match">-->
+        <!--<attr name="matchViewText" format="string" />-->
+        <!--<attr name="matchViewTextColor" format="color" />-->
+        <!--<attr name="matchViewTextSize" format="dimension" />-->
+    <!--</declare-styleable>-->
+
+    <declare-styleable name="match">
+        <attr name="text"/>
+        <attr name="textColor"/>
+        <attr name="textSize"/>
+    </declare-styleable>
 </resources>
