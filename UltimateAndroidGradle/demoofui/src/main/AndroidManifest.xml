@@ -921,6 +921,13 @@
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".sampleModules.WaveViewActivity"
+           >
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui" />
+            </intent-filter>
+        </activity>
 
 
         <activity
