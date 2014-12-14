@@ -45,7 +45,7 @@ My Email is ``cymcsg # gmail.com``
 
 ---
 
-#####UltimateAndroid framework contains many features like View Injection,ORM,Asynchronous Networking and Image Loader,User scenario testing,over 100 Ui effects etc.And there are also many useful features like WebViewUtils,DaoUtils,Https Utils, TripleDes Utils etc.The framework will be added  more feature in the future. 
+#####UltimateAndroid is a rapid development framework for developing your apps.UltimateAndroid framework contains many features like View Injection,ORM,Asynchronous Networking and Image Loader,User scenario testing,over 100 Ui effects etc.And there are also many useful features like WebViewUtils,DaoUtils,Https Utils, TripleDes Utils etc.The framework will be added  more feature in the future. 
 
 
 
@@ -53,7 +53,7 @@ My Email is ``cymcsg # gmail.com``
 
 
 
-Up to now,I have only write the demo of most parts of UI modules and View Injection.The demo is something boring,but you can also see many kinds of UI modules.The DemoOfUi's screenshots are below,and you can download the apk directly.
+Up to now,I have only write the demo of most parts of UI modules and View Injection.The demo is something boring,but you can see many kinds of UI modules.The DemoOfUi's screenshots are below,and you can download the apk directly.
 
 [Demo of Ui's screenshot is here.](#demo_of_ui)
 
@@ -70,9 +70,9 @@ Demo Manual
 
 ###Quick Setup（Basic Usage）
 1.
-#####Gradle way(Recommend):
+#####Gradle way(Recommended):
 
-Main framework:
+Core framework:
 ```groovy
 repositories {
         jcenter()
@@ -89,7 +89,7 @@ repositories {
     }
 dependencies {
     ...
-    compile 'com.marshalchen.ultimateandroid:ultimateandroidui:0.4.1'
+    compile 'com.marshalchen.ultimateandroid:ultimateandroidui:0.4.0'
 }
 ```
 
@@ -97,10 +97,10 @@ dependencies {
 #####Normal way:
 If you use gradle way and you want to edit it at the same time,you can use ``Import Non-Android Studio Project``(need Android Studio 1.0).If you use normal way,you can pay attention that UltimateAndroid  depends on appcompat, UltimateAndroidUi  depends on UltimateAndroid,and the DemoOfUi is depends on UltimateAndroidUi.
 
-2.As the function of View Injection which use ButterKnife,you should config your IDE before you can compile the project.***Most of  IDEs require additional configuration in order to enable annotation processing for Butter Knife,
+2.As the function of View Injection which uses ButterKnife,you should config your IDE before you can compile the project.***Most of  IDEs require additional configuration in order to enable annotation processing for Butter Knife,
 or you can see [IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse Configuration for butter Knife][102].***
 
-***Notice:The latest version of the framework needs Android Sdk  of Version 21.If you use gradle project, you should use android studio which version should be 0.9.0+***
+***Notice:The latest version of the framework needs Android Sdk  of Version 21.If you use gradle project, you should use android studio which version should be 1.0.0+***
 
 3.View Injection:
 
@@ -334,7 +334,7 @@ repositories {
     }
 dependencies {
     ...
-    compile 'com.marshalchen.ultimateandroid:ultimateandroidui:0.4.1'
+    compile 'com.marshalchen.ultimateandroid:ultimateandroidui:0.4.0'
 }
 ```
 
@@ -345,7 +345,7 @@ dependencies {
 
 2.Demo的Apk文件可以直接下载使用.由于框架使用了View Injection，**大部分IDE需要开启annotation的编译（使用了Butter Knife），如果不清楚如何开启可以看一下[IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse Configuration for butter Knife][102].**
 
-***注意：UltimateAndroid框架需要API21版本的Android SDK来进行编译,如果使用了gradle的project，android studio的版本需要大于0.9.0***
+***注意：UltimateAndroid框架需要API21版本的Android SDK来进行编译,如果使用了gradle的project，android studio的版本需要大于1.0.0***
 
 3.视图注入：
 
