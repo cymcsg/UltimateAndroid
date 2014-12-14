@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:match="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    >
+
+
+    <com.marshalchen.common.uimodule.matchview.MatchTextView
+        android:id="@+id/mMatchTextView"
+        android:layout_centerInParent="true"
+        match:text="MATCH VIEW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <SeekBar
+        android:layout_centerHorizontal="true"
+        android:id="@+id/mSeekBar"
+        android:max="100"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/mMatchTextView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+
+    <com.marshalchen.common.uimodule.matchview.MatchButton
+        android:id="@+id/mButton"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/mSeekBar"
+        android:layout_centerInParent="true"
+        match:text="Yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

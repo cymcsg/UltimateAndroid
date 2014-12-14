@@ -750,4 +750,61 @@
         <attr name="progressLayoutProgressBackground" format="color"/>
         <attr name="progressLayoutProgress" format="boolean"/>
     </declare-styleable>
+
+
+
+    <attr name="discreteSeekBarStyle" format="reference"/>
+    <declare-styleable name="DiscreteSeekBar">
+        <attr name="dsb_min" format="integer|dimension"/>
+        <attr name="dsb_max" format="integer|dimension"/>
+        <attr name="dsb_value" format="integer|dimension"/>
+        <attr name="dsb_mirrorForRtl" format="boolean"/>
+        <attr name="dsb_allowTrackClickToDrag" format="boolean"/>
+        <attr name="dsb_progressColor" format="color|reference"/>
+        <attr name="dsb_trackColor" format="color|reference"/>
+        <attr name="dsb_indicatorTextAppearance" format="reference"/>
+        <attr name="dsb_indicatorColor" format="color|reference"/>
+        <attr name="dsb_indicatorElevation" format="dimension"/>
+        <attr name="dsb_indicatorFormatter" format="string|reference"/>
+        <attr name="dsb_rippleColor" format="color|reference"/>
+    </declare-styleable>
+
+
+    <!--<declare-styleable name="match">-->
+        <!--<attr name="matchViewText" format="string" />-->
+        <!--<attr name="matchViewTextColor" format="color" />-->
+        <!--<attr name="matchViewTextSize" format="dimension" />-->
+    <!--</declare-styleable>-->
+
+    <declare-styleable name="match">
+        <attr name="text"/>
+        <attr name="textColor"/>
+        <attr name="textSize"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="WaveView">
+        <attr name="above_wave_color" format="color"/>
+        <attr name="blow_wave_color" format="color"/>
+        <attr name="waveViewProgress" format="integer"/>
+        <attr name="wave_length" format="enum">
+            <enum name="large" value="1"/>
+            <enum name="middle" value="2"/>
+            <enum name="little" value="3"/>
+        </attr>
+        <attr name="wave_height" format="enum">
+            <enum name="large" value="1"/>
+            <enum name="middle" value="2"/>
+            <enum name="little" value="3"/>
+        </attr>
+        <attr name="wave_hz" format="enum">
+            <enum name="fast" value="1"/>
+            <enum name="normal" value="2"/>
+            <enum name="slow" value="3"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="WaveViewTheme">
+        <attr name="waveViewStyle" format="reference"/>
+    </declare-styleable>
 </resources>
