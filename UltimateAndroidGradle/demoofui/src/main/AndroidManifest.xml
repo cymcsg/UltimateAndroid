@@ -278,7 +278,9 @@
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
         </activity>
-        <activity android:name=".recyclerviewitemanimator.RecyclerViewItemAnimatorActivity" android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+        <activity
+            android:name=".recyclerviewitemanimator.RecyclerViewItemAnimatorActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
             <intent-filter>
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
@@ -947,6 +949,11 @@
         <activity
             android:name=".matchview.MatchViewActivity"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".sampleModules.TimelyViewActivity">
             <intent-filter>
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
