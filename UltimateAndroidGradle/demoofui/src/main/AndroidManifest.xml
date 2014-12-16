@@ -917,15 +917,20 @@
         </activity>
 
         <activity
-            android:name=".ultraPullToRefresh.ui.activity.UltraPullToRefreshHomeActivity"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+            android:name=".ultraPullToRefresh.UltraPullToRefreshActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".sampleModules.WaveViewActivity"
-           >
+            android:name=".ultraPullToRefresh.UltraPullToRefreshStoreHouseActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".sampleModules.WaveViewActivity">
             <intent-filter>
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
