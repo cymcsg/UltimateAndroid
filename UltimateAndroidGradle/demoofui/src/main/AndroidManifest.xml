@@ -963,6 +963,11 @@
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
         </activity>
+        <activity android:name=".sampleModules.TransitionEverywhereActivity">
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui" />
+            </intent-filter>
+        </activity>
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->
