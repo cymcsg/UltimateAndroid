@@ -4,14 +4,19 @@ import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
-import android.view.*;
+import android.support.v7.app.ActionBarActivity;
+import android.view.Gravity;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.TextView;
 import com.marshalchen.common.demoofui.R;
 import com.marshalchen.common.uimodule.jazzyviewpager.JazzyViewPager;
 import com.marshalchen.common.uimodule.jazzyviewpager.OutlineContainer;
 
-public class JazzyViewActivity extends Activity {
+public class JazzyViewActivity extends ActionBarActivity {
 
 	private JazzyViewPager mJazzy;
 

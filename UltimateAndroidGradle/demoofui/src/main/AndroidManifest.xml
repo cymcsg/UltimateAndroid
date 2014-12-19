@@ -113,7 +113,8 @@
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
         </activity>
-        <activity android:name=".viewpagerSlidingTab.ViewpagerSlidingTabsActivity">
+        <activity android:name=".viewpagerSlidingTab.ViewpagerSlidingTabsActivity"
+            android:theme="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
             <intent-filter>
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
@@ -175,7 +176,8 @@
         </activity>
         <activity android:name=".activitytransition.ActivityTransitiorSecond"></activity>
 
-        <activity android:name=".sampleModules.JazzyViewActivity">
+        <activity android:name=".sampleModules.JazzyViewActivity"
+            android:theme="@style/Theme.AppCompat.Light">
             <intent-filter>
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
@@ -492,7 +494,8 @@
         <activity android:name=".edgeeffectoverride.ViewPagerActivity"></activity>
         <activity android:name=".edgeeffectoverride.WebViewActivity"></activity>
         <activity android:name=".edgeeffectoverride.GridViewActivity"></activity>
-        <activity android:name=".sampleModules.ViewPagerTransformerActivity">
+        <activity android:name=".sampleModules.ViewPagerTransformerActivity"
+            android:theme="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
             <intent-filter>
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
