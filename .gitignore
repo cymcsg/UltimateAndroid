@@ -15,6 +15,7 @@ release.properties
 .classpath
 .project
 .externalToolBuilders/
+.apt_generated/
 
 # IntelliJ
 *.iml
@@ -30,6 +31,7 @@ output/
 .settings/org.eclipse.jdt.apt.core.prefs
 .settings/org.eclipse.jdt.core.prefs
 .settings/org.eclipse.jdt.launching.prefs
+.settings/
 .properties
 
 
