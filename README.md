@@ -11,7 +11,7 @@ UltimateAndroid
 
 
 ### 快速开发Android应用框架  UltimateAndroid
-<br>  
+
 [English Introduction](#english_introduction)
 
 [中文简介](#chinese_introduction)
@@ -37,10 +37,6 @@ My Email is ``cymcsg # gmail.com``
 [Update Log](https://github.com/cymcsg/UltimateAndroid/blob/master/updateLog.md)
 
 
-
-
-
-<br>
 <h2 ><a name="english_introduction">Introduction</h2>  
 
 ---
@@ -66,8 +62,6 @@ Demo Manual
 
 
 
-
-
 ###Quick Setup（Basic Usage）
 1.
 #####Gradle way(Recommended):
@@ -89,7 +83,7 @@ repositories {
     }
 dependencies {
     ...
-    compile 'com.marshalchen.ultimateandroid:ultimateandroidui:0.4.0'
+    compile 'com.marshalchen.ultimateandroid:ultimateandroidui:0.4.3'
 }
 ```
 
@@ -334,7 +328,7 @@ repositories {
     }
 dependencies {
     ...
-    compile 'com.marshalchen.ultimateandroid:ultimateandroidui:0.4.0'
+    compile 'com.marshalchen.ultimateandroid:ultimateandroidui:0.4.3'
 }
 ```
 
