@@ -1,4 +1,12 @@
 apply plugin: 'com.android.application'
+apply plugin: 'idea'
+
+idea{
+    module {
+        downloadJavadoc = true
+        downloadSources = true
+    }
+}
 
 android {
     compileSdkVersion 21

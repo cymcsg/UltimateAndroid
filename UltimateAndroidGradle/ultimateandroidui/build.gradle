@@ -1,4 +1,13 @@
 apply plugin: 'com.android.library'
+apply plugin: 'idea'
+
+idea{
+    module {
+        downloadJavadoc = true
+        downloadSources = true
+    }
+}
+
 
 android {
     compileSdkVersion 21
@@ -26,9 +35,10 @@ android {
     }
 }
 ext {
+
     PUBLISH_GROUP_ID = 'com.marshalchen.ultimateandroid'
     PUBLISH_ARTIFACT_ID = 'ultimateandroidui'
-    PUBLISH_VERSION = '0.4.1'
+    PUBLISH_VERSION = '0.4.3'
 }
 apply from: 'android-release-aar.gradle'
 
@@ -38,21 +48,24 @@ dependencies {
     compile 'com.android.support:support-v13:21.0.2'
     compile 'com.android.support:recyclerview-v7:21.0.2'
     compile project(':ultimateandroid')
-    //compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.4.1'
+   // compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.4.1'
     compile 'com.rengwuxian.materialedittext:library:1.1.0'
     compile 'com.skyfishjy.ripplebackground:library:1.0.1'
     compile 'com.jpardogo.materialtabstrip:library:1.0.3'
     compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
     compile 'com.github.lzyzsd:circleprogress:1.0.0@aar'
-    compile 'com.android.support:cardview-v7:21.0.+'
-   // compile 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.0'
+    compile 'com.android.support:cardview-v7:21.0.2'
+    // compile 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.0'
     compile 'com.github.pavlospt:roundedletterview:1.0'
     compile 'com.github.markushi:android-ui:1.2'
     compile 'com.github.dexafree:materiallist:1.2.0'
-    compile 'in.srain.cube:ultra-ptr:1.0.3'
-    compile 'in.srain.cube:clog:1.0.2'
-    compile 'in.srain.cube:cube-sdk:1.0.42@aar'
+//    compile 'in.srain.cube:ultra-ptr:1.0.3'
+//    compile 'in.srain.cube:clog:1.0.2'
+//    compile 'in.srain.cube:cube-sdk:1.0.42@aar'
+    compile 'in.srain.cube:ultra-ptr:1.0.5@aar'
     compile 'com.github.ksoichiro:android-observablescrollview:1.2.1'
-   // compile 'com.github.androidprogresslayout:library:1.1@aar'
+    // compile 'com.github.androidprogresslayout:library:1.1@aar'
+    compile "com.github.andkulikov:transitions-everywhere:1.2.1"
+    compile 'com.github.hotchemi:ProgressMenuItem:0.3.3'
 
 }

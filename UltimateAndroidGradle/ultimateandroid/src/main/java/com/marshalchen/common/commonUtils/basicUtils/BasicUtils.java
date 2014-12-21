@@ -48,6 +48,16 @@ public class BasicUtils {
         }
     }
 
+    /**
+     * Print all items of HashMap(Notice:The value should be or can be convert to String)
+     * @param hashMap
+     */
+    public static void iterateHashMap(HashMap hashMap) {
+       iterateHashMap(hashMap,"");
+    }
+
+
+
     public static void iterateListHashMap(List list, String classAndMethodName) {
 
         //support concurrent
@@ -74,7 +84,6 @@ public class BasicUtils {
         } catch (Exception e) {
             e.printStackTrace();
             Logs.e(e.getMessage());
-            Logs.e("num----" + num);
         } finally {
             return numInt;
         }

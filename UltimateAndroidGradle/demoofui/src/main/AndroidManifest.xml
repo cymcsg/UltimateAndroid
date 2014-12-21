@@ -113,7 +113,8 @@
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
         </activity>
-        <activity android:name=".viewpagerSlidingTab.ViewpagerSlidingTabsActivity">
+        <activity android:name=".viewpagerSlidingTab.ViewpagerSlidingTabsActivity"
+            android:theme="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
             <intent-filter>
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
@@ -175,7 +176,8 @@
         </activity>
         <activity android:name=".activitytransition.ActivityTransitiorSecond"></activity>
 
-        <activity android:name=".sampleModules.JazzyViewActivity">
+        <activity android:name=".sampleModules.JazzyViewActivity"
+            android:theme="@style/Theme.AppCompat.Light">
             <intent-filter>
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
@@ -278,7 +280,9 @@
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
         </activity>
-        <activity android:name=".recyclerviewitemanimator.RecyclerViewItemAnimatorActivity" android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+        <activity
+            android:name=".recyclerviewitemanimator.RecyclerViewItemAnimatorActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
             <intent-filter>
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
@@ -490,7 +494,8 @@
         <activity android:name=".edgeeffectoverride.ViewPagerActivity"></activity>
         <activity android:name=".edgeeffectoverride.WebViewActivity"></activity>
         <activity android:name=".edgeeffectoverride.GridViewActivity"></activity>
-        <activity android:name=".sampleModules.ViewPagerTransformerActivity">
+        <activity android:name=".sampleModules.ViewPagerTransformerActivity"
+            android:theme="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
             <intent-filter>
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
@@ -915,15 +920,20 @@
         </activity>
 
         <activity
-            android:name=".ultraPullToRefresh.ui.activity.UltraPullToRefreshHomeActivity"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+            android:name=".ultraPullToRefresh.UltraPullToRefreshActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".sampleModules.WaveViewActivity"
-           >
+            android:name=".ultraPullToRefresh.UltraPullToRefreshStoreHouseActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".sampleModules.WaveViewActivity">
             <intent-filter>
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
@@ -947,6 +957,21 @@
         <activity
             android:name=".matchview.MatchViewActivity"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".sampleModules.TimelyViewActivity">
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".sampleModules.TransitionEverywhereActivity">
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".pullMenuItem.ProgressMenuItemActivity">
             <intent-filter>
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
