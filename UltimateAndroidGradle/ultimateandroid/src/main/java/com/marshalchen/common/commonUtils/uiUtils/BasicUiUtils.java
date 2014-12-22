@@ -1,6 +1,7 @@
 package com.marshalchen.common.commonUtils.uiUtils;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
 import android.view.MotionEvent;
 import android.view.View;
@@ -38,9 +39,7 @@ public class BasicUiUtils {
         }
     }
 
-    /**
-     * 根据手机的分辨率从 dp 的单位 转成为 px(像素)
-     */
+
     public static int dip2px(Context context, float dpValue) {
         final float scale = context.getResources().getDisplayMetrics().density;
         return (int) (dpValue * scale + 0.5f);
@@ -106,38 +105,33 @@ public class BasicUiUtils {
         a.setDuration((int)(initialHeight / v.getContext().getResources().getDisplayMetrics().density)*1);
         v.startAnimation(a);
     }
-    public class DropDownAnim extends Animation {
-        private final int targetHeight;
-        private final View view;
-        private final boolean down;
 
-        public DropDownAnim(View view, int targetHeight, boolean down) {
-            this.view = view;
-            this.targetHeight = targetHeight;
-            this.down = down;
-        }
-
-        @Override
-        protected void applyTransformation(float interpolatedTime, Transformation t) {
-            int newHeight;
-            if (down) {
-                newHeight = (int) (targetHeight * interpolatedTime);
-            } else {
-                newHeight = (int) (targetHeight * (1 - interpolatedTime));
-            }
-            view.getLayoutParams().height = newHeight;
-            view.requestLayout();
-        }
-
-        @Override
-        public void initialize(int width, int height, int parentWidth,
-                               int parentHeight) {
-            super.initialize(width, height, parentWidth, parentHeight);
-        }
-
-        @Override
-        public boolean willChangeBounds() {
-            return true;
-        }
+    /**
+     * Pop a simple alertdialog
+     *
+     * @param context
+     * @param title
+     * @param message
+     */
+    public static void popAlertDialog(Context context, String title, String message) {
+        new AlertDialog.Builder(context)
+                .setPositiveButton("OK", null)
+                .setTitle(title)
+                .setMessage(message).show();
     }
+
+    /**
+     * Pop a simple alertdialog
+     *
+     * @param context
+     * @param title
+     * @param message
+     */
+    public static void popAlertDialog(Context context, int title, String message) {
+        new AlertDialog.Builder(context)
+                .setPositiveButton("OK", null)
+                .setTitle(title)
+                .setMessage(message).show();
+    }
+
 }
