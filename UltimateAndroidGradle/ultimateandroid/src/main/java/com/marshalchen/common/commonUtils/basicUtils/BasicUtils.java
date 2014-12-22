@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Parcelable;
+
 import com.marshalchen.common.commonUtils.logUtils.Logs;
 
 import java.text.DecimalFormat;
@@ -18,8 +19,8 @@ import java.util.*;
  * <p>{@link #judgeNotNull(Object)}</p>
  * <p>{@link #getVersionName(android.content.Context)}</p>
  * <p>{@link #getVersionCode(android.content.Context)}</p>
- * <p>{@link #iterateHashMap(java.util.HashMap, String)}</p>
- * <p>{@link #iterateListHashMap(java.util.List, String)}</p>
+ * <p>{@link #iterateHashMap(java.util.HashMap)}</p>
+ * <p>{@link #iterateListHashMap(java.util.List)}</p>
  * <p>{@link #sendIntent(android.content.Context, Class)}</p>
  * <p>{@link #sendIntent(android.content.Context, Class, String, android.os.Parcelable)}</p>
  * <p>{@link #getSharedPreferences(android.content.Context, String, String)}</p>
@@ -27,43 +28,38 @@ import java.util.*;
  */
 public class BasicUtils {
     /**
-     * Print all items of HashMap(Notice:The value should be or can be convert to String)
+     * Print all items of HashMap
      *
      * @param hashMap
-     * @param classAndMethodName
      */
-    public static void iterateHashMap(HashMap hashMap, String classAndMethodName) {
-        Iterator iterator = hashMap.entrySet().iterator();
-        Logs.d(classAndMethodName);
-        while (iterator.hasNext()) {
-            Object obj = iterator.next();
-            Logs.d(obj.toString());
-            //Method2
-//            Map.Entry entry = (Map.Entry) obj;
-//            Object key = entry.getKey();
-//            Object val = entry.getValue();
-//            Logs.d(key.toString());
-//            Logs.d(val.toString());
-
+    public static void iterateHashMap(HashMap<String, Object> hashMap) {
+        for (Map.Entry<String, Object> entry : hashMap.entrySet()) {
+            String key = entry.getKey();
+            Object value = entry.getValue();
+            Logs.d("key: " + key + "   " + "value:  " + value.toString());
         }
     }
 
     /**
-     * Print all items of HashMap(Notice:The value should be or can be convert to String)
+     * Print all items of HashMap,avoid ConcurrentModificationExceptions
+     *
      * @param hashMap
      */
-    public static void iterateHashMap(HashMap hashMap) {
-       iterateHashMap(hashMap,"");
+    public static void iterateHashMapConcurrent(HashMap<String, Object> hashMap) {
+        Iterator<Map.Entry<String, Object>> iterator = hashMap.entrySet().iterator();
+        while (iterator.hasNext()) {
+            Map.Entry<String, Object> entry = iterator.next();
+            Logs.d("key: " + entry.getKey() + "   " + "value:  " + entry.getValue().toString());
+            // iterator.remove(); // avoids ConcurrentModificationException
+        }
     }
 
 
-
-    public static void iterateListHashMap(List list, String classAndMethodName) {
-
+    public static void iterateListHashMap(List list) {
         //support concurrent
         try {
             for (Iterator it = list.iterator(); it.hasNext(); ) {
-                iterateHashMap((HashMap) it.next(), classAndMethodName);
+                iterateHashMapConcurrent((HashMap) it.next());
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -73,35 +69,6 @@ public class BasicUtils {
 
     }
 
-    public static int convertStringToInt(String num) {
-        //Logs.d("inmessage-----"+num);
-        if (num == null) {
-            return 0;
-        }
-        int numInt = 0;
-        try {
-            numInt = Integer.valueOf(num);
-        } catch (Exception e) {
-            e.printStackTrace();
-            Logs.e(e.getMessage());
-        } finally {
-            return numInt;
-        }
-
-    }
-
-    public static long convertStringToLong(String num) {
-        long numInt = 0;
-        try {
-            numInt = Long.valueOf(num);
-        } catch (Exception e) {
-            e.printStackTrace();
-            Logs.e(e.getMessage());
-        } finally {
-            return numInt;
-        }
-
-    }
 
     /**
      * get the version name which defines in AndroidManifest.xml
@@ -155,45 +122,6 @@ public class BasicUtils {
 
     }
 
-    /**
-     * Pop a simple alertdialog
-     *
-     * @param context
-     * @param title
-     * @param message
-     */
-    public static void popAlertDialog(Context context, String title, String message) {
-        new AlertDialog.Builder(context)
-                .setPositiveButton("OK", null)
-                .setTitle(title)
-                .setMessage(message).show();
-    }
-
-    /**
-     * Pop a simple alertdialog
-     *
-     * @param context
-     * @param title
-     * @param message
-     */
-    public static void popAlertDialog(Context context, int title, String message) {
-        new AlertDialog.Builder(context)
-                .setPositiveButton("OK", null)
-                .setTitle(title)
-                .setMessage(message).show();
-    }
-
-
-    /**
-     * @param str
-     * @param formatAs
-     * @return
-     */
-    public static String formatNumber(String str, String formatAs) {
-        DecimalFormat df = new DecimalFormat(formatAs);
-        String str2 = df.format(Integer.parseInt(str));
-        return str2;
-    }
 
     /**
      * @param num
@@ -332,7 +260,7 @@ public class BasicUtils {
 
     public static boolean judgeNotNull(List list) {
         //return list != null && list.size() > 0 ? true : false;
-        return judgeNotNull(list, (Class<?>)null);
+        return judgeNotNull(list, (Class<?>) null);
     }
 
     public static boolean judgeNotNull(List list, List... lists) {
