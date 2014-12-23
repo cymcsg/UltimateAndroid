@@ -2,14 +2,14 @@
  * Copyright (c) 2014. Marshal Chen.
  */
 
-package com.marshalchen.common.usefulModule.standuptimer.model;
+package com.marshalchen.common.uimodule.standuptimer.model;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.marshalchen.common.usefulModule.standuptimer.dao.DAOFactory;
-import com.marshalchen.common.usefulModule.standuptimer.dao.TeamDAO;
-import com.marshalchen.common.usefulModule.standuptimer.utils.Logger;
+import com.marshalchen.common.uimodule.standuptimer.dao.DAOFactory;
+import com.marshalchen.common.uimodule.standuptimer.dao.TeamDAO;
+import com.marshalchen.common.uimodule.standuptimer.utils.Logger;
 import android.content.Context;
 
 public class Team {

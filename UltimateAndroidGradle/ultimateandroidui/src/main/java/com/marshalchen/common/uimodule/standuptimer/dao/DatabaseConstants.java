@@ -2,7 +2,7 @@
  * Copyright (c) 2014. Marshal Chen.
  */
 
-package com.marshalchen.common.usefulModule.standuptimer.dao;
+package com.marshalchen.common.uimodule.standuptimer.dao;
 
 public interface DatabaseConstants {
     public static final String DATABASE_NAME = "standup_timer.db";

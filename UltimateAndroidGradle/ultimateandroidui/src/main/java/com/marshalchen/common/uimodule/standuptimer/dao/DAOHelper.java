@@ -2,7 +2,7 @@
  * Copyright (c) 2014. Marshal Chen.
  */
 
-package com.marshalchen.common.usefulModule.standuptimer.dao;
+package com.marshalchen.common.uimodule.standuptimer.dao;
 
 import static android.provider.BaseColumns._ID;
 import android.content.Context;

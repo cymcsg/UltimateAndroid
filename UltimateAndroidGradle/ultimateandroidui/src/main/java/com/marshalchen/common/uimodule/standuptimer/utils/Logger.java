@@ -2,7 +2,7 @@
  * Copyright (c) 2014. Marshal Chen.
  */
 
-package com.marshalchen.common.usefulModule.standuptimer.utils;
+package com.marshalchen.common.uimodule.standuptimer.utils;
 
 import android.util.Log;
 

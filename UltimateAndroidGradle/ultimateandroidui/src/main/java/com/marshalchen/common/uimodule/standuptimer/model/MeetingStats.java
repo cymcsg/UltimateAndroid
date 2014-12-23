@@ -2,7 +2,7 @@
  * Copyright (c) 2014. Marshal Chen.
  */
 
-package com.marshalchen.common.usefulModule.standuptimer.model;
+package com.marshalchen.common.uimodule.standuptimer.model;
 
 import java.util.List;
 

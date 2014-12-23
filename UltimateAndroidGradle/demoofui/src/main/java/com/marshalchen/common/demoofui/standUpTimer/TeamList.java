@@ -17,8 +17,8 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.usefulModule.standuptimer.model.Team;
-import com.marshalchen.common.usefulModule.standuptimer.utils.Logger;
+import com.marshalchen.common.uimodule.standuptimer.model.Team;
+import com.marshalchen.common.uimodule.standuptimer.utils.Logger;
 
 public class TeamList extends ListActivity {
     private static final int CREATE_TEAM_DIALOG = 1;

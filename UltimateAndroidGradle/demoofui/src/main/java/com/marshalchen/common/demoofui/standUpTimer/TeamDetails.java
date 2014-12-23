@@ -16,11 +16,11 @@ import android.widget.*;
 import android.widget.AdapterView.AdapterContextMenuInfo;
 import android.widget.AdapterView.OnItemClickListener;
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.usefulModule.standuptimer.model.Meeting;
-import com.marshalchen.common.usefulModule.standuptimer.model.MeetingStats;
-import com.marshalchen.common.usefulModule.standuptimer.model.Team;
-import com.marshalchen.common.usefulModule.standuptimer.utils.Logger;
-import com.marshalchen.common.usefulModule.standuptimer.utils.TimeFormatHelper;
+import com.marshalchen.common.uimodule.standuptimer.model.Meeting;
+import com.marshalchen.common.uimodule.standuptimer.model.MeetingStats;
+import com.marshalchen.common.uimodule.standuptimer.model.Team;
+import com.marshalchen.common.uimodule.standuptimer.utils.Logger;
+import com.marshalchen.common.uimodule.standuptimer.utils.TimeFormatHelper;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
