@@ -1,6 +1,8 @@
 package com.marshalchen.common.commonUtils.basicUtils;
 
+import android.app.ActivityManager;
 import android.app.AlertDialog;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -291,5 +293,28 @@ public class BasicUtils {
         }
 
         return flag;
+    }
+
+    /**
+     * Check if the service is running
+     *
+     * @param context
+     * @param cls
+     * @return
+     */
+    public static boolean isServiceRunning(Context context, Class<?> cls) {
+        ActivityManager activityManager = (ActivityManager) context
+                .getSystemService(Context.ACTIVITY_SERVICE);
+        List<ActivityManager.RunningServiceInfo> services = activityManager
+                .getRunningServices(Integer.MAX_VALUE);
+
+        for (ActivityManager.RunningServiceInfo serviceInfo : services) {
+            ComponentName componentName = serviceInfo.service;
+            String serviceName = componentName.getClassName();
+            if (serviceName.equals(cls.getName())) {
+                return true;
+            }
+        }
+        return false;
     }
 }
