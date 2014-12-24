@@ -1,15 +1,22 @@
 package com.marshalchen.common.commonUtils.uiUtils;
 
 import android.app.Activity;
+import android.app.ActivityManager;
 import android.app.AlertDialog;
+import android.content.ComponentName;
 import android.content.Context;
+import android.content.pm.ActivityInfo;
+import android.content.res.Configuration;
 import android.util.TypedValue;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.Transformation;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.RelativeLayout;
+
+import java.util.List;
 
 /**
  * Some method help do some UI works
@@ -17,6 +24,7 @@ import android.widget.RelativeLayout;
 public class BasicUiUtils {
     /**
      * Hide soft keyboard method.
+     *
      * @param context
      * @param activity
      */
@@ -39,6 +47,7 @@ public class BasicUiUtils {
 
     /**
      * Hide soft keyboard by click。
+     *
      * @param context
      * @param activity
      * @param motionEvent Judge by motion event
@@ -51,6 +60,7 @@ public class BasicUiUtils {
 
     /**
      * Converte dp to pixels
+     *
      * @param context
      * @param dpValue
      * @return pixels
@@ -61,6 +71,7 @@ public class BasicUiUtils {
 
     /**
      * Converting pixels to dp
+     *
      * @param context
      * @param pxValue
      * @return dp
@@ -72,6 +83,7 @@ public class BasicUiUtils {
 
     /**
      * Converte dp to pixels
+     *
      * @param context
      * @param dpValue
      * @return pixels
@@ -83,6 +95,7 @@ public class BasicUiUtils {
 
     /**
      * Expand a view which has already collapsed
+     *
      * @param v
      */
     public static void expandViews(final View v) {
@@ -114,6 +127,7 @@ public class BasicUiUtils {
 
     /**
      * Collapse a view which has already expanded
+     *
      * @param v
      */
     public static void collapseViews(final View v) {
@@ -168,5 +182,64 @@ public class BasicUiUtils {
                 .setTitle(title)
                 .setMessage(message).show();
     }
+
+
+
+
+    /**
+     * Set the activity to be full screen
+     * @param activity
+     * @param isFullScreen
+     */
+    public static void setActivityFullScreen(Activity activity,
+                                             boolean isFullScreen) {
+        if (isFullScreen) {
+            activity.getWindow().addFlags(
+                    WindowManager.LayoutParams.FLAG_FULLSCREEN);
+            activity.getWindow().clearFlags(
+                    WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN);
+        } else {
+            activity.getWindow().addFlags(
+                    WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN);
+            activity.getWindow().clearFlags(
+                    WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        }
+    }
+
+    /**
+     * Set activity to be portrait
+     * @param activity
+     * @param isPortrait
+     */
+    public static void setActivityPortraitOrientation(Activity activity,
+                                                      boolean isPortrait) {
+        if (isPortrait) {
+            activity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        } else {
+            activity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
+        }
+    }
+
+    /**
+     * Lock the screen orientation as the current state
+     * @param activity
+     */
+    public static void lockScreenOrientation(Activity activity) {
+        if (activity.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            activity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        }
+        if (activity.getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
+            activity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        }
+    }
+
+    /**
+     * Unlock the screen orientation
+     * @param activity
+     */
+    public static void unlockScreenOrientation(Activity activity) {
+        activity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
+    }
+
 
 }
