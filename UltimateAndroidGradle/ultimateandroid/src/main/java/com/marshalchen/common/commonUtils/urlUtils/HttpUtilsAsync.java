@@ -1,17 +1,23 @@
 package com.marshalchen.common.commonUtils.urlUtils;
 
 import android.content.Context;
+
+import com.loopj.android.http.SyncHttpClient;
 import com.marshalchen.common.commonUtils.basicUtils.BasicUtils;
 import com.marshalchen.common.commonUtils.logUtils.Logs;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.PersistentCookieStore;
 import com.loopj.android.http.RequestParams;
+
+import org.apache.http.NameValuePair;
 import org.apache.http.cookie.Cookie;
 import org.apache.http.impl.cookie.BasicClientCookie;
 
+import java.io.File;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -161,5 +167,26 @@ public class HttpUtilsAsync {
         }
         Logs.d(returnUrl);
         return returnUrl;
+    }
+
+
+    public static void uploadFiles(String url, List<NameValuePair> paramsList, String fileParams, List<File> files, AsyncHttpResponseHandler responseHandler) {
+        SyncHttpClient syncHttpClient = new SyncHttpClient();
+
+        RequestParams params = new RequestParams();
+        try {
+            if (BasicUtils.judgeNotNull(paramsList)) {
+                for (NameValuePair nameValuePair : paramsList) {
+                    params.put(nameValuePair.getName(), nameValuePair.getValue());
+                }
+            }
+            if (BasicUtils.judgeNotNull(files))
+                params.put(fileParams, files);
+        } catch (Exception e) {
+            Logs.e(e, "");
+        }
+        syncHttpClient.setTimeout(TIME_OUT);
+        syncHttpClient.post(url, params, responseHandler);
+
     }
 }
