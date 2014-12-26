@@ -15,6 +15,7 @@ import org.apache.http.cookie.Cookie;
 import org.apache.http.impl.cookie.BasicClientCookie;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -23,36 +24,58 @@ import java.util.Map;
 /**
  * HttpUtils which use asynchoronous method to help you use network method without
  * using an addtional Thread
- *<p>
- * {@link #get(String, com.loopj.android.http.RequestParams, com.loopj.android.http.AsyncHttpResponseHandler)}</p>
+ * <p>{@link #get(String, com.loopj.android.http.RequestParams, com.loopj.android.http.AsyncHttpResponseHandler)}</p>
  * <p>{@link #post(String, com.loopj.android.http.RequestParams, com.loopj.android.http.AsyncHttpResponseHandler)}</p>
  * <p>{@link #getUseCookie(android.content.Context, String, java.util.HashMap, com.loopj.android.http.AsyncHttpResponseHandler)}</p>
  * <p>{@link #getWithCookie(android.content.Context, String, com.loopj.android.http.RequestParams, com.loopj.android.http.AsyncHttpResponseHandler)}</p>
  * <p>{@link #postWithCookie(android.content.Context, String, com.loopj.android.http.RequestParams, com.loopj.android.http.AsyncHttpResponseHandler)}</p>
  * <p>{@link #postUseCookie(android.content.Context, String, java.util.HashMap, com.loopj.android.http.AsyncHttpResponseHandler)}</p>
- *
- * */
+ */
 public class HttpUtilsAsync {
-    private static final String BASE_URL = "http://api.fss.com/1/";
-    private static final int TIME_OUT = 25000;
-    private AsyncHttpClient client = new AsyncHttpClient();
+
+    private static int timeout = 25000;
 
 
+    public static int getTimeout() {
+        return timeout;
+    }
+
+    public static void setTimeout(int timeout) {
+        HttpUtilsAsync.timeout = timeout;
+    }
+
+    /**
+     * Simple get request method with {@link com.loopj.android.http.RequestParams}
+     * @param url
+     * @param params
+     * @param responseHandler
+     */
     public static void get(String url, RequestParams params, AsyncHttpResponseHandler responseHandler) {
         AsyncHttpClient client = new AsyncHttpClient();
-        client.setTimeout(TIME_OUT);
+        client.setTimeout(timeout);
         client.get(getAbsoluteUrl(url), params, responseHandler);
     }
 
+    /**
+     * Simple post request method with {@link com.loopj.android.http.RequestParams}
+     * @param url
+     * @param params
+     * @param responseHandler
+     */
     public static void post(String url, RequestParams params, AsyncHttpResponseHandler responseHandler) {
         AsyncHttpClient client = new AsyncHttpClient();
-        client.setTimeout(TIME_OUT);
+        client.setTimeout(timeout);
         client.post(getAbsoluteUrl(url), params, responseHandler);
     }
 
+    /**
+     * Simple get request method
+     * @param url
+     * @param responseHandler
+     */
     public static void get(String url, AsyncHttpResponseHandler responseHandler) {
         AsyncHttpClient client = new AsyncHttpClient();
-        client.setTimeout(TIME_OUT);
+        client.setTimeout(timeout);
         client.get(getAbsoluteUrl(url), responseHandler);
     }
 
@@ -107,6 +130,11 @@ public class HttpUtilsAsync {
         client.get(getAbsoluteUrl(url), params, responseHandler);
     }
 
+    /**
+     * Simple post request method
+     * @param url
+     * @param responseHandler
+     */
     public static void post(String url, AsyncHttpResponseHandler responseHandler) {
         AsyncHttpClient client = new AsyncHttpClient();
         client.post(getAbsoluteUrl(url), responseHandler);
@@ -144,14 +172,26 @@ public class HttpUtilsAsync {
         client.post(getAbsoluteUrl(url), responseHandler);
     }
 
-    private static String getAbsoluteUrl(String relativeUrl) {
-//        return BASE_URL + relativeUrl;
+    /**
+     * To get the true url.
+     * If you want to use some relative url,you should override this method.
+     *
+     * @param relativeUrl
+     * @return the absolute url
+     */
+    protected static String getAbsoluteUrl(String relativeUrl) {
         return relativeUrl;
     }
 
+    /**
+     * To get the url with params.
+     *
+     * @param originUrl
+     * @param hashMap
+     * @return the url with params
+     */
     public static String getUrlFromHashMap(String originUrl, HashMap hashMap) {
         String returnUrl = originUrl;
-
         if (BasicUtils.judgeNotNull(hashMap)) {
             returnUrl = returnUrl + "?";
             Iterator iterator = hashMap.entrySet().iterator();
@@ -169,24 +209,52 @@ public class HttpUtilsAsync {
         return returnUrl;
     }
 
-
-    public static void uploadFiles(String url, List<NameValuePair> paramsList, String fileParams, List<File> files, AsyncHttpResponseHandler responseHandler) {
+    /**
+     * Upload files with {@link com.loopj.android.http.SyncHttpClient}
+     *
+     * @param url
+     * @param paramsList
+     * @param fileParams
+     * @param files
+     * @param responseHandler
+     */
+    public static void uploadFiles(String url, List<NameValuePair> paramsList, String fileParams, List<File> files, AsyncHttpResponseHandler responseHandler) throws Exception {
         SyncHttpClient syncHttpClient = new SyncHttpClient();
-
         RequestParams params = new RequestParams();
-        try {
-            if (BasicUtils.judgeNotNull(paramsList)) {
-                for (NameValuePair nameValuePair : paramsList) {
-                    params.put(nameValuePair.getName(), nameValuePair.getValue());
-                }
-            }
-            if (BasicUtils.judgeNotNull(files))
-                params.put(fileParams, files);
-        } catch (Exception e) {
-            Logs.e(e, "");
-        }
-        syncHttpClient.setTimeout(TIME_OUT);
-        syncHttpClient.post(url, params, responseHandler);
 
+        if (BasicUtils.judgeNotNull(paramsList)) {
+            for (NameValuePair nameValuePair : paramsList) {
+                params.put(nameValuePair.getName(), nameValuePair.getValue());
+            }
+        }
+        if (BasicUtils.judgeNotNull(files))
+            params.put(fileParams, files);
+
+        syncHttpClient.setTimeout(timeout);
+        syncHttpClient.post(url, params, responseHandler);
+    }
+
+    /**
+     * Upload file with {@link com.loopj.android.http.SyncHttpClient}
+     *
+     * @param url
+     * @param paramsList
+     * @param fileParams
+     * @param file
+     * @param responseHandler
+     * @throws FileNotFoundException
+     */
+    public static void uploadFile(String url, List<NameValuePair> paramsList, String fileParams, File file, AsyncHttpResponseHandler responseHandler) throws FileNotFoundException {
+        SyncHttpClient syncHttpClient = new SyncHttpClient();
+        RequestParams params = new RequestParams();
+        if (BasicUtils.judgeNotNull(paramsList)) {
+            for (NameValuePair nameValuePair : paramsList) {
+                params.put(nameValuePair.getName(), nameValuePair.getValue());
+            }
+        }
+        if (BasicUtils.judgeNotNull(file))
+            params.put(fileParams, file);
+        syncHttpClient.setTimeout(timeout);
+        syncHttpClient.post(url, params, responseHandler);
     }
 }
