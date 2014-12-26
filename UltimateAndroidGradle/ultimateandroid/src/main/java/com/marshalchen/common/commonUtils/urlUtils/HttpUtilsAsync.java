@@ -34,8 +34,6 @@ import java.util.Map;
 public class HttpUtilsAsync {
 
     private static int timeout = 25000;
-
-
     public static int getTimeout() {
         return timeout;
     }
@@ -45,7 +43,7 @@ public class HttpUtilsAsync {
     }
 
     /**
-     * Simple get request method with {@link com.loopj.android.http.RequestParams}
+     * Perform a HTTP GET request with {@link com.loopj.android.http.RequestParams}
      * @param url
      * @param params
      * @param responseHandler
@@ -57,7 +55,7 @@ public class HttpUtilsAsync {
     }
 
     /**
-     * Simple post request method with {@link com.loopj.android.http.RequestParams}
+     * Perform a HTTP POST request with {@link com.loopj.android.http.RequestParams}
      * @param url
      * @param params
      * @param responseHandler
@@ -69,7 +67,7 @@ public class HttpUtilsAsync {
     }
 
     /**
-     * Simple get request method
+     * Perform a HTTP GET request, without any parameters.
      * @param url
      * @param responseHandler
      */
@@ -79,6 +77,12 @@ public class HttpUtilsAsync {
         client.get(getAbsoluteUrl(url), responseHandler);
     }
 
+    /**
+     * Perform a HTTP GET request with cookie which generate by own context
+     * @param context
+     * @param url
+     * @param responseHandler
+     */
     public static void getWithCookie(Context context, String url, AsyncHttpResponseHandler responseHandler) {
         AsyncHttpClient client = new AsyncHttpClient();
         PersistentCookieStore myCookieStore = new PersistentCookieStore(context);
@@ -106,6 +110,13 @@ public class HttpUtilsAsync {
 
     }
 
+    /**
+     * Perform a HTTP GET request with cookies which are defined in hashmap
+     * @param context
+     * @param url
+     * @param hashMap
+     * @param responseHandler
+     */
     public static void getUseCookie(Context context, String url, HashMap hashMap, AsyncHttpResponseHandler responseHandler) {
         PersistentCookieStore myCookieStore = new PersistentCookieStore(context);
         if (BasicUtils.judgeNotNull(hashMap)) {
@@ -123,6 +134,13 @@ public class HttpUtilsAsync {
         client.get(getAbsoluteUrl(url), responseHandler);
     }
 
+
+    /**
+     * Perform a HTTP GET request with cookie which generate by own context
+     * @param context
+     * @param url
+     * @param responseHandler
+     */
     public static void getWithCookie(Context context, String url, RequestParams params, AsyncHttpResponseHandler responseHandler) {
         AsyncHttpClient client = new AsyncHttpClient();
         PersistentCookieStore myCookieStore = new PersistentCookieStore(context);
@@ -131,7 +149,7 @@ public class HttpUtilsAsync {
     }
 
     /**
-     * Simple post request method
+     * Perform a HTTP POST request, without any parameters.
      * @param url
      * @param responseHandler
      */
@@ -140,6 +158,12 @@ public class HttpUtilsAsync {
         client.post(getAbsoluteUrl(url), responseHandler);
     }
 
+    /**
+     * Perform a HTTP POST request with cookie which generate by own context
+     * @param context
+     * @param url
+     * @param responseHandler
+     */
     public static void postWithCookie(Context context, String url, AsyncHttpResponseHandler responseHandler) {
         AsyncHttpClient client = new AsyncHttpClient();
         PersistentCookieStore myCookieStore = new PersistentCookieStore(context);
@@ -148,6 +172,13 @@ public class HttpUtilsAsync {
         client.post(getAbsoluteUrl(url), responseHandler);
     }
 
+    /**
+     * Perform a HTTP POST request with cookie which generate by own context
+     * @param context
+     * @param url
+     * @param params
+     * @param responseHandler
+     */
     public static void postWithCookie(Context context, String url, RequestParams params, AsyncHttpResponseHandler responseHandler) {
         AsyncHttpClient client = new AsyncHttpClient();
         PersistentCookieStore myCookieStore = new PersistentCookieStore(context);
@@ -155,6 +186,13 @@ public class HttpUtilsAsync {
         client.post(getAbsoluteUrl(url), params, responseHandler);
     }
 
+    /**
+     * Perform a HTTP POST request with cookies which are defined in hashmap
+     * @param context
+     * @param url
+     * @param hashMap
+     * @param responseHandler
+     */
     public static void postUseCookie(Context context, String url, HashMap hashMap, AsyncHttpResponseHandler responseHandler) {
         PersistentCookieStore myCookieStore = new PersistentCookieStore(context);
         if (BasicUtils.judgeNotNull(hashMap)) {
