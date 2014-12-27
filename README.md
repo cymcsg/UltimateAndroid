@@ -89,7 +89,8 @@ dependencies {
 
 
 #####Normal way:
-If you use gradle way and you want to edit it at the same time,you can use ``Import Non-Android Studio Project``(need Android Studio 1.0).If you use normal way,you can pay attention that UltimateAndroid  depends on appcompat, UltimateAndroidUi  depends on UltimateAndroid,and the DemoOfUi is depends on UltimateAndroidUi.
+If you use gradle way and you want to edit it at the same time,you can use ``Import Non-Android Studio Project``(need Android Studio 1.0).
+If you use normal way,you can pay attention that UltimateAndroid  depends on appcompat, UltimateAndroidUi  depends on UltimateAndroid,and the DemoOfUi is depends on UltimateAndroidUi. However,if you want to use UltimateAndroid without the UIModules,you can just depend on UltimateAndroid and this will make the app more flexible.
 
 2.As the function of View Injection which uses ButterKnife,you should config your IDE before you can compile the project.***Most of  IDEs require additional configuration in order to enable annotation processing for Butter Knife,
 or you can see [IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse Configuration for butter Knife][102].***
@@ -262,9 +263,7 @@ String imageUri = "drawable://" + R.drawable.image; // from drawables (only imag
 
 Please set the ides before you run the demo apps.
 
-```UltimateAndroid  depends on appcompat.UltimateAndroidUi  depends on UltimateAndroid.And the DemoOfUi is depends on UltimateAndroidUi.```
 
-```However,if you want to use UltimateAndroid without the UIModules,you can just depend on UltimateAndroid and this will make the app more flexible.```
 
 ##UI Modules
 * Support animations for Android 2.3
