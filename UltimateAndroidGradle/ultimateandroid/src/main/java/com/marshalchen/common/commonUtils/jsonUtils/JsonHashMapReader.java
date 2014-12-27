@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 
 /**
- * Meta Json Reader of HashMap
+ * Meta Json Reader of HashMap which use gson
  */
 public class JsonHashMapReader extends JsonMetaReader<HashMap> {
 

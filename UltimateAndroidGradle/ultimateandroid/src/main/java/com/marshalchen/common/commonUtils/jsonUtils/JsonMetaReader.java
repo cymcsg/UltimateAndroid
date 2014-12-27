@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * JsonMetaReader
+ * JsonMetaReader which use gson
  */
 public class JsonMetaReader<T> {
     private Class<T> persistentClass;
