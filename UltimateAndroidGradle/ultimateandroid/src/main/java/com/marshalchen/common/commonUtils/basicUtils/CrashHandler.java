@@ -25,26 +25,24 @@ import com.marshalchen.common.commonUtils.logUtils.Logs;
 import com.nostra13.universalimageloader.utils.StorageUtils;
 
 /**
- * @ClassName: CrashHandler
- * @Description: Catch the uncaught exception
+ * Catch the uncaught exception
  */
 public class CrashHandler implements UncaughtExceptionHandler {
 
     public static String TAG = "Chen";
     String showMessage = "There is something wrong with the app.";
 
-    //Default UncaughtException
     private UncaughtExceptionHandler mDefaultHandler;
-    //CrashHandler Instance
+
     private static CrashHandler INSTANCE = new CrashHandler();
-    //Context
+
     private Context mContext;
-    //private Object systemServiceObject;
-    //to store error info
+
     private Map<String, String> infos = new HashMap<String, String>();
 
-    //As part of file name
+
     private SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
+
     String crashFilePath = "/crash/";
 
     private CrashHandler() {
@@ -95,12 +93,11 @@ public class CrashHandler implements UncaughtExceptionHandler {
     }
 
     /**
-     *
+     * Caught Exception
      */
     @Override
     public void uncaughtException(Thread thread, Throwable ex) {
         if (!handleException(ex) && mDefaultHandler != null) {
-
             mDefaultHandler.uncaughtException(thread, ex);
         } else {
             try {
@@ -108,10 +105,8 @@ public class CrashHandler implements UncaughtExceptionHandler {
             } catch (InterruptedException e) {
                 Logs.e("error : ", e);
             }
-            //退出程序  
             Logs.d("uncaught exception is catched!");
             System.exit(0);
-            Logs.d("SystemPendingIntent");
             android.os.Process.killProcess(android.os.Process.myPid());
         }
     }

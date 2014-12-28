@@ -317,4 +317,22 @@ public class BasicUtils {
         }
         return false;
     }
+
+    /**
+     * Compare two object
+     * if v1 > v2 return 1
+     * if v1 is not null, v2 is null return 1
+     * if v1 = v2, return 0
+     * if v1 is null, v2 is null return 0
+     * if v1 < v2, return -1
+     * if v1 is null, v2 is not null  return -1
+     *
+     * return v1.{@link Comparable#compareTo(Object)}
+     * @param v1
+     * @param v2
+     * @return
+     */
+    public static <V> int compare(V v1, V v2) {
+        return v1 == null ? (v2 == null ? 0 : -1) : (v2 == null ? 1 : ((Comparable)v1).compareTo(v2));
+    }
 }

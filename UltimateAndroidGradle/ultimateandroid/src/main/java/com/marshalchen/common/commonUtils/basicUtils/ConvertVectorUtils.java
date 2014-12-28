@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * A Easy Way to convert array,list,etc.
+ * An easy way to convert array,list,etc.
  */
 public class ConvertVectorUtils {
     public static <T> List<T> convertArrayToList(T t) {
