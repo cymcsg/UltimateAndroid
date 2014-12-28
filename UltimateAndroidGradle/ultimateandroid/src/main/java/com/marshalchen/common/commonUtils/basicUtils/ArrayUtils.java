@@ -23,6 +23,8 @@ import java.util.*;
  * <li>{@link #getNext(int[], int, int, boolean)}</li>
  * <li>{@link #getNext(long[], long, long, boolean)}</li>
  * </ul>
+ *
+ * @author <a href="http://www.trinea.cn" target="_blank">Trinea</a> 2011-10-24
  */
 public class ArrayUtils {
 
@@ -61,7 +63,7 @@ public class ArrayUtils {
 
         int currentPosition = -1;
         for (int i = 0; i < sourceArray.length; i++) {
-            if (ObjectUtils.isEquals(value, sourceArray[i])) {
+            if (isEquals(value, sourceArray[i])) {
                 currentPosition = i;
                 break;
             }
@@ -100,7 +102,7 @@ public class ArrayUtils {
 
         int currentPosition = -1;
         for (int i = 0; i < sourceArray.length; i++) {
-            if (ObjectUtils.isEquals(value, sourceArray[i])) {
+            if (isEquals(value, sourceArray[i])) {
                 currentPosition = i;
                 break;
             }
@@ -137,7 +139,7 @@ public class ArrayUtils {
             throw new IllegalArgumentException("The length of source array must be greater than 0.");
         }
 
-        Long[] array = ObjectUtils.transformLongArray(sourceArray);
+        Long[] array = transformLongArray(sourceArray);
         return getLast(array, value, defaultValue, isCircle);
 
     }
@@ -150,7 +152,7 @@ public class ArrayUtils {
             throw new IllegalArgumentException("The length of source array must be greater than 0.");
         }
 
-        Long[] array = ObjectUtils.transformLongArray(sourceArray);
+        Long[] array = transformLongArray(sourceArray);
         return getNext(array, value, defaultValue, isCircle);
     }
 
@@ -162,7 +164,7 @@ public class ArrayUtils {
             throw new IllegalArgumentException("The length of source array must be greater than 0.");
         }
 
-        Integer[] array = ObjectUtils.transformIntArray(sourceArray);
+        Integer[] array = transformIntArray(sourceArray);
         return getLast(array, value, defaultValue, isCircle);
 
     }
@@ -175,7 +177,7 @@ public class ArrayUtils {
             throw new IllegalArgumentException("The length of source array must be greater than 0.");
         }
 
-        Integer[] array = ObjectUtils.transformIntArray(sourceArray);
+        Integer[] array = transformIntArray(sourceArray);
         return getNext(array, value, defaultValue, isCircle);
     }
 
@@ -218,12 +220,82 @@ public class ArrayUtils {
         }
 
     }
-    public static void iteratorHashMapString(HashMap<String, String> map){
-        for (Map.Entry<String, String> entry : map.entrySet())
-        {
+
+    public static void iteratorHashMapString(HashMap<String, String> map) {
+        for (Map.Entry<String, String> entry : map.entrySet()) {
             Logs.d(entry.getKey() + "/" + entry.getValue());
         }
     }
 
+
+    /**
+     * compare two object
+     *
+     * @param actual
+     * @param expected
+     * @return <ul>
+     * <li>if both are null, return true</li>
+     * <li>return actual.{@link Object#equals(Object)}</li>
+     * </ul>
+     */
+    public static boolean isEquals(Object actual, Object expected) {
+        return actual == expected || (actual == null ? expected == null : actual.equals(expected));
+    }
+
+    /**
+     * convert long array to Long array
+     *
+     * @param source
+     * @return
+     */
+    public static Long[] transformLongArray(long[] source) {
+        Long[] destin = new Long[source.length];
+        for (int i = 0; i < source.length; i++) {
+            destin[i] = source[i];
+        }
+        return destin;
+    }
+
+    /**
+     * convert Long array to long array
+     *
+     * @param source
+     * @return
+     */
+    public static long[] transformLongArray(Long[] source) {
+        long[] destin = new long[source.length];
+        for (int i = 0; i < source.length; i++) {
+            destin[i] = source[i];
+        }
+        return destin;
+    }
+
+    /**
+     * convert int array to Integer array
+     *
+     * @param source
+     * @return
+     */
+    public static Integer[] transformIntArray(int[] source) {
+        Integer[] destin = new Integer[source.length];
+        for (int i = 0; i < source.length; i++) {
+            destin[i] = source[i];
+        }
+        return destin;
+    }
+
+    /**
+     * convert Integer array to int array
+     *
+     * @param source
+     * @return
+     */
+    public static int[] transformIntArray(Integer[] source) {
+        int[] destin = new int[source.length];
+        for (int i = 0; i < source.length; i++) {
+            destin[i] = source[i];
+        }
+        return destin;
+    }
 
 }
