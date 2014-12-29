@@ -26,6 +26,9 @@ import com.nostra13.universalimageloader.utils.StorageUtils;
 
 /**
  * Catch the uncaught exception
+ * Usage:
+ *  CrashHandler crashHandler = CrashHandler.getInstance();
+    crashHandler.init(getApplicationContext(), "/crash/", "Something error,please try again");
  */
 public class CrashHandler implements UncaughtExceptionHandler {
 
