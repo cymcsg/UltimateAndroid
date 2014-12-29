@@ -2,7 +2,7 @@
  * Copyright (c) 2014. Marshal Chen.
  */
 
-package com.marshalchen.common.usefulModule.standuptimer.dao;
+package com.marshalchen.common.uimodule.standuptimer.dao;
 
 import static android.provider.BaseColumns._ID;
 
@@ -11,9 +11,9 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
-import com.marshalchen.common.usefulModule.standuptimer.model.Meeting;
-import com.marshalchen.common.usefulModule.standuptimer.model.Team;
-import com.marshalchen.common.usefulModule.standuptimer.utils.Logger;
+import com.marshalchen.common.uimodule.standuptimer.model.Meeting;
+import com.marshalchen.common.uimodule.standuptimer.model.Team;
+import com.marshalchen.common.uimodule.standuptimer.utils.Logger;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;

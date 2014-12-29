@@ -9,7 +9,6 @@ import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.conn.ConnectTimeoutException;
-import org.apache.http.entity.ContentType;
 import org.apache.http.entity.mime.HttpMultipartMode;
 import org.apache.http.entity.mime.MultipartEntity;
 import org.apache.http.entity.mime.MultipartEntityBuilder;
@@ -241,8 +240,8 @@ public class HttpUtils {
 
             if (BasicUtils.judgeNotNull(paramsList)) {
                 for (NameValuePair nameValuePair : paramsList) {
-                    entityBuilder.addTextBody(nameValuePair.getName(), nameValuePair.getValue(),
-                            ContentType.create(HTTP.PLAIN_TEXT_TYPE, HTTP.UTF_8));
+                    entityBuilder.addTextBody(nameValuePair.getName(), nameValuePair.getValue()
+                           );
                 }
             }
 

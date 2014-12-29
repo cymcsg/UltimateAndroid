@@ -2,7 +2,7 @@
  * Copyright (c) 2014. Marshal Chen.
  */
 
-package com.marshalchen.common.usefulModule.standuptimer.dao;
+package com.marshalchen.common.uimodule.standuptimer.dao;
 
 import android.content.Context;
 

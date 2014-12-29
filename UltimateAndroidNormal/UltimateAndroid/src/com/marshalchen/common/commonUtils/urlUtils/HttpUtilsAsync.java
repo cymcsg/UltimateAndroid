@@ -1,31 +1,31 @@
 package com.marshalchen.common.commonUtils.urlUtils;
 
 import android.content.Context;
+import com.loopj.android.http.*;
 import com.marshalchen.common.commonUtils.basicUtils.BasicUtils;
 import com.marshalchen.common.commonUtils.logUtils.Logs;
-import com.loopj.android.http.AsyncHttpClient;
-import com.loopj.android.http.AsyncHttpResponseHandler;
-import com.loopj.android.http.PersistentCookieStore;
-import com.loopj.android.http.RequestParams;
+import org.apache.http.NameValuePair;
 import org.apache.http.cookie.Cookie;
 import org.apache.http.impl.cookie.BasicClientCookie;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 
 /**
  * HttpUtils which use asynchoronous method to help you use network method without
  * using an addtional Thread
- *<p>
+ * <p>
  * {@link #get(String, com.loopj.android.http.RequestParams, com.loopj.android.http.AsyncHttpResponseHandler)}</p>
  * <p>{@link #post(String, com.loopj.android.http.RequestParams, com.loopj.android.http.AsyncHttpResponseHandler)}</p>
  * <p>{@link #getUseCookie(android.content.Context, String, java.util.HashMap, com.loopj.android.http.AsyncHttpResponseHandler)}</p>
  * <p>{@link #getWithCookie(android.content.Context, String, com.loopj.android.http.RequestParams, com.loopj.android.http.AsyncHttpResponseHandler)}</p>
  * <p>{@link #postWithCookie(android.content.Context, String, com.loopj.android.http.RequestParams, com.loopj.android.http.AsyncHttpResponseHandler)}</p>
  * <p>{@link #postUseCookie(android.content.Context, String, java.util.HashMap, com.loopj.android.http.AsyncHttpResponseHandler)}</p>
- *
- * */
+ */
 public class HttpUtilsAsync {
     private static final String BASE_URL = "http://api.fss.com/1/";
     private static final int TIME_OUT = 25000;
@@ -161,5 +161,25 @@ public class HttpUtilsAsync {
         }
         Logs.d(returnUrl);
         return returnUrl;
+    }
+
+    public static void uploadFiles(String url, List<NameValuePair> paramsList, String fileParams, List<File> files, AsyncHttpResponseHandler responseHandler) {
+        SyncHttpClient syncHttpClient = new SyncHttpClient();
+
+        RequestParams params = new RequestParams();
+        try {
+            if (BasicUtils.judgeNotNull(paramsList)) {
+                for (NameValuePair nameValuePair : paramsList) {
+                    params.put(nameValuePair.getName(), nameValuePair.getValue());
+                }
+            }
+            if (BasicUtils.judgeNotNull(files))
+                params.put(fileParams, files);
+        } catch (Exception e) {
+            Logs.e(e, "");
+        }
+        syncHttpClient.setTimeout(TIME_OUT);
+        syncHttpClient.post(url, params, responseHandler);
+
     }
 }

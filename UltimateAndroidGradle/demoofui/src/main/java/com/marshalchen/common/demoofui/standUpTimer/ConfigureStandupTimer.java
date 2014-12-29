@@ -21,8 +21,8 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.usefulModule.standuptimer.model.Team;
-import com.marshalchen.common.usefulModule.standuptimer.utils.Logger;
+import com.marshalchen.common.uimodule.standuptimer.model.Team;
+import com.marshalchen.common.uimodule.standuptimer.utils.Logger;
 
 public class ConfigureStandupTimer extends Activity implements OnClickListener {
     private static final String MEETING_LENGTH = "meetingLength";

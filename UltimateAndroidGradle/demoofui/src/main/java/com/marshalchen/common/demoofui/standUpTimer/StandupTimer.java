@@ -20,10 +20,10 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.usefulModule.standuptimer.model.Meeting;
-import com.marshalchen.common.usefulModule.standuptimer.model.Team;
-import com.marshalchen.common.usefulModule.standuptimer.utils.Logger;
-import com.marshalchen.common.usefulModule.standuptimer.utils.TimeFormatHelper;
+import com.marshalchen.common.uimodule.standuptimer.model.Meeting;
+import com.marshalchen.common.uimodule.standuptimer.model.Team;
+import com.marshalchen.common.uimodule.standuptimer.utils.Logger;
+import com.marshalchen.common.uimodule.standuptimer.utils.TimeFormatHelper;
 
 import java.util.Date;
 import java.util.Timer;
