@@ -1,8 +1,5 @@
 package com.marshalchen.common.commonUtils.basicUtils;
 
-
-import com.marshalchen.common.commonUtils.logUtils.Logs;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -12,96 +9,57 @@ import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 
 /**
- * To get the HEX,SHA1,Unicode of String
- *
+ * Some utils about String
  */
 public class StringUtils {
     /**
-     * get Unicode Length
+     * Get Unicode Length.
+     * Chinese word  accounted for two bytes.
      *
      * @param value
      * @return
      */
     public static int getStringUnicodeLength(String value) {
         int valueLength = 0;
-        String chinese = "[\u4e00-\u9fa5]";
+        String chineseCode = "[\u4e00-\u9fa5]";
         //Judge the unicodelength is 1 or 2
         for (int i = 0; i < value.length(); i++) {
-
             String temp = value.substring(i, i + 1);
-
-            if (temp.matches(chinese)) {
-
+            if (temp.matches(chineseCode)) {
                 valueLength += 2;
             } else {
-
                 valueLength += 1;
             }
         }
-
         return valueLength;
     }
 
-    public static String alignString(String initString, int requireLength) {
-        int stringLength = getStringUnicodeLength(initString);
-        String transString = initString;
-        try {
-            if (requireLength > stringLength)
-                for (int i = 0; i < (requireLength - stringLength); i++) {
-                    transString = transString + "  ";
-                }
-//            if ((requireLength < stringLength)&&requireLength>=2) {
-//                transString = initString.substring(0, requireLength/2 - 1) + "..";
-//            }
-            //   transString=String.format("%-12s",initString);
-
-        } catch (Exception e) {
-            Logs.d(initString + "    " + stringLength + "   " + requireLength + "    " + transString);
-            e.printStackTrace();
-            Logs.e(e, "");
-        }
-        return transString;
-    }
-
-    public static String alignStrings(String initString, int requireLength) {
-        int stringLength = getStringUnicodeLength(initString);
-        String transString = initString;
-        try {
-            if (requireLength > stringLength)
-                for (int i = 0; i < (requireLength - stringLength); i++) {
-                    transString = transString + "  ";
-                }
-            if ((requireLength < stringLength) && requireLength >= 2) {
-                transString = initString.substring(0, requireLength - 1) + "..";
-            }
-            // transString=String.format("%-12s",initString);
-
-        } catch (Exception e) {
-            Logs.d(initString + "    " + stringLength + "   " + requireLength + "    " + transString);
-            e.printStackTrace();
-            Logs.e(e, "");
-        }
-        return transString;
-    }
-
-    public static String inputStreamToString(InputStream inputStream) {
+    /**
+     * Convert InputStream To String
+     *
+     * @param inputStream
+     * @return
+     * @throws IOException
+     */
+    public static String convertInputStreamToString(InputStream inputStream) throws IOException {
         StringBuilder total = new StringBuilder();
-        try {
-            BufferedReader r = new BufferedReader(new InputStreamReader(inputStream));
-
-            String line;
-            while ((line = r.readLine()) != null) {
-                total.append(line);
-            }
-        } catch (IOException e) {
-            Logs.e(e, "");
+        BufferedReader r = new BufferedReader(new InputStreamReader(inputStream));
+        String line;
+        while ((line = r.readLine()) != null) {
+            total.append(line);
         }
+
         return total.toString();
     }
 
-    public static String decodeHtml(String str) {
+    /**
+     * Decode Html String
+     * @param string
+     * @return
+     */
+    public static String decodeHtml(String string) {
 
-        String rst = str;
+        String rst = string;
 
         rst = rst.replaceAll("&lt;", "<");
         rst = rst.replaceAll("&gt;", ">");
@@ -113,18 +71,24 @@ public class StringUtils {
 
     }
 
-    public static String SHA1(String s) {
-        try {
-            MessageDigest digest = MessageDigest.getInstance("SHA-1");
-            digest.update(s.getBytes());
-            byte messageDigest[] = digest.digest();
-            return toHexString(messageDigest);
-        } catch (NoSuchAlgorithmException e) {
-            e.printStackTrace();
-        }
-        return "";
+    /**
+     * Get SHA1 of the String
+     *
+     * @param string
+     * @return
+     */
+    public static String SHA1(String string) throws NoSuchAlgorithmException {
+        MessageDigest digest = MessageDigest.getInstance("SHA-1");
+        digest.update(string.getBytes());
+        byte messageDigest[] = digest.digest();
+        return toHexString(messageDigest);
     }
 
+    /**
+     * Convert byte[] to Hex String
+     * @param keyData
+     * @return
+     */
     public static String toHexString(byte[] keyData) {
         if (keyData == null) {
             return null;
@@ -149,6 +113,13 @@ public class StringUtils {
         return (str == null || str.trim().length() == 0);
     }
 
+    /**
+     * Judge if the ArrayList<String> contains the String variable
+     *
+     * @param s
+     * @param arrayList
+     * @return If a String in ArrayList contains the variable return true
+     */
     public static boolean ifStringInList(String s, ArrayList<String> arrayList) {
         if (BasicUtils.judgeNotNull(s) && BasicUtils.judgeNotNull(arrayList)) {
             for (String str : arrayList) {
@@ -160,6 +131,13 @@ public class StringUtils {
         return false;
     }
 
+    /**
+     * Judge if the ArrayList<String> contains the String variable
+     *
+     * @param s
+     * @param arrayList
+     * @return If only a String in ArrayList equals the variable return true
+     */
     public static boolean ifStringExactlyInList(String s, ArrayList<String> arrayList) {
         if (BasicUtils.judgeNotNull(s) && BasicUtils.judgeNotNull(arrayList)) {
             for (String str : arrayList) {
