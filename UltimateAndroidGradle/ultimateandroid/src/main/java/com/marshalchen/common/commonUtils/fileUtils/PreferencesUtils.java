@@ -29,10 +29,12 @@ import android.content.SharedPreferences;
  * <li>get float {@link #getFloat(android.content.Context, String)}, {@link #getFloat(android.content.Context, String, float)}</li>
  * <li>get boolean {@link #getBoolean(android.content.Context, String)}, {@link #getBoolean(android.content.Context, String, boolean)}</li>
  * </ul>
+ *
+ * @author <a href="http://www.trinea.cn" target="_blank">Trinea</a> 2013-3-6
  */
 public class PreferencesUtils {
 
-    public static String PREFERENCE_NAME = "FssCommon";
+    public static String PREFERENCE_NAME = "UltimateAndroid";
 
     /**
      * put string preferences
