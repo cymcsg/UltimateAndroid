@@ -4,14 +4,12 @@ import android.util.Log;
 
 /**
  * A useful log class to help you auto add Tag and easy to disable log
- * User: cym
- * Date: 13-9-3
- * Time: 上午11:16
+ * You can simply use Logs instead of Log
  */
 public final class Logs {
-    private static boolean sIsLogEnabled = true;// 是否打开LOG
+    private static boolean sIsLogEnabled = true;
 
-    private static String sApplicationTag = "Chen";// LOG默认TAG
+    private static String sApplicationTag = "Chen";
 
     private static final String TAG_CONTENT_PRINT = "%s:%s.%s:%d";
 
@@ -21,7 +19,6 @@ public final class Logs {
     }
 
 
-    //打印LOG
     public static void trace() {
         if (sIsLogEnabled) {
             Log.d(sApplicationTag,
@@ -29,28 +26,24 @@ public final class Logs {
         }
     }
 
-    //获取LOG
     private static String getContent(StackTraceElement trace) {
         return String.format(TAG_CONTENT_PRINT, sApplicationTag,
                 trace.getClassName(), trace.getMethodName(),
                 trace.getLineNumber());
     }
 
-    //获取LOG
     private static String getContents(StackTraceElement trace) {
         return String.format("%s:%s:%d", sApplicationTag,
                 trace.getMethodName(),
                 trace.getLineNumber());
     }
 
-    //打印默认TAG的LOG
     public static void traceStack() {
         if (sIsLogEnabled) {
             traceStack(sApplicationTag, Log.ERROR);
         }
     }
 
-    // 打印Log当前调用栈信息
     public static void traceStack(String tag, int priority) {
 
         if (sIsLogEnabled) {
@@ -80,35 +73,23 @@ public final class Logs {
 
     public static void v(String msg) {
         if (sIsLogEnabled) {
-            //  String   methodname=getCurrentStackTraceElement().getMethodName()
-            // Log.d(sApplicationTag, getContents(getCurrentStackTraceElement()).substring(getContent(getCurrentStackTraceElement()).getStringUnicodeLength()-12,getContent(getCurrentStackTraceElement()).getStringUnicodeLength())+">"+msg);
             Log.v(sApplicationTag, getContents(getCurrentStackTraceElement()) + ">" + msg);
         }
     }
 
-    //指定TAG和指定内容的方法
     public static void d(String tag, String msg) {
         if (sIsLogEnabled) {
             Log.d(tag, getContent(getCurrentStackTraceElement()) + ">" + msg);
         }
     }
 
-    //默认TAG和制定内容的方法
-    public static void ds(String msg) {
-        if (sIsLogEnabled) {
-            Log.d(sApplicationTag, getContent(getCurrentStackTraceElement()) + ">" + msg);
-        }
-    }
 
     public static void d(String msg) {
         if (sIsLogEnabled) {
-            //  String   methodname=getCurrentStackTraceElement().getMethodName()
-            // Log.d(sApplicationTag, getContents(getCurrentStackTraceElement()).substring(getContent(getCurrentStackTraceElement()).getStringUnicodeLength()-12,getContent(getCurrentStackTraceElement()).getStringUnicodeLength())+">"+msg);
             Log.d(sApplicationTag, getContents(getCurrentStackTraceElement()) + ">" + msg);
         }
     }
 
-    //下面的定义和上面方法相同，可以定义不同等级的Debugger
     public static void i(String tag, String msg) {
         if (sIsLogEnabled) {
             Log.i(tag, getContent(getCurrentStackTraceElement()) + ">" + msg);
@@ -133,26 +114,21 @@ public final class Logs {
         }
     }
 
-    //默认TAG和制定内容的方法
     public static void i(String msg) {
         if (sIsLogEnabled) {
             Log.i(sApplicationTag, getContent(getCurrentStackTraceElement()) + ">" + msg);
         }
     }
 
-    //默认TAG和制定内容的方法
     public static void w(String msg) {
         if (sIsLogEnabled) {
             Log.w(sApplicationTag, getContent(getCurrentStackTraceElement()) + ">" + msg);
         }
     }
 
-    //默认TAG和制定内容的方法
     public static void e(String msg) {
         if (sIsLogEnabled) {
             Log.e(sApplicationTag, getContent(getCurrentStackTraceElement()) + "\n>" + msg);
-//            Log.e(sApplicationTag, Thread.currentThread().getStackTrace()[2].getClassName());
-//            Log.e(sApplicationTag, Thread.currentThread().getStackTrace()[2].getMethodName());
 
         }
     }
@@ -160,8 +136,6 @@ public final class Logs {
     public static void e(Exception exception) {
         if (sIsLogEnabled) {
             Log.e(sApplicationTag, getContent(getCurrentStackTraceElement()) + "\n>" + exception.getMessage());
-//            Log.e(sApplicationTag, Thread.currentThread().getStackTrace()[2].getClassName());
-//            Log.e(sApplicationTag, Thread.currentThread().getStackTrace()[2].getMethodName());
             exception.printStackTrace();
         }
     }
@@ -169,8 +143,6 @@ public final class Logs {
     public static void e(Exception exception, String string) {
         if (sIsLogEnabled) {
             Log.e(sApplicationTag, getContent(getCurrentStackTraceElement()) + "\n>" + exception.getMessage() + "\n>" + exception.getStackTrace() + "   " + string);
-//            Log.e(sApplicationTag, Thread.currentThread().getStackTrace()[2].getClassName());
-//            Log.e(sApplicationTag, Thread.currentThread().getStackTrace()[2].getMethodName());
             exception.printStackTrace();
         }
     }
@@ -178,8 +150,6 @@ public final class Logs {
     public static void e(String string, Exception exception) {
         if (sIsLogEnabled) {
             Log.e(sApplicationTag, getContent(getCurrentStackTraceElement()) + "\n>" + exception.getMessage() + "\n>" + exception.getStackTrace() + "   " + string);
-//            Log.e(sApplicationTag, Thread.currentThread().getStackTrace()[2].getClassName());
-//            Log.e(sApplicationTag, Thread.currentThread().getStackTrace()[2].getMethodName());
             exception.printStackTrace();
         }
     }
@@ -187,49 +157,21 @@ public final class Logs {
     public static void e(String tag, String message, Exception exception) {
         if (sIsLogEnabled) {
             Log.e(tag, getContent(getCurrentStackTraceElement()) + "\n>" + exception.getMessage() + "\n>" + exception.getStackTrace() + "   " + message);
-//            Log.e(sApplicationTag, Thread.currentThread().getStackTrace()[2].getClassName());
-//            Log.e(sApplicationTag, Thread.currentThread().getStackTrace()[2].getMethodName());
             exception.printStackTrace();
         }
     }
 
-//    /**
-//     *
-//     * &lt;p&gt;
-//     * 获取方法参数名称
-//     * &lt;/p&gt;
-//     *
-//     * @param cm
-//     * @return
-//     */
-//    protected static String[] getMethodParamNames(CtMethod cm) {
-//        if (sIsLogEnabled) {}
-//        CtClass cc = cm.getDeclaringClass();
-//        MethodInfo methodInfo = cm.getMethodInfo();
-//        CodeAttribute codeAttribute = methodInfo.getCodeAttribute();
-//        LocalVariableAttribute attr = (LocalVariableAttribute) codeAttribute
-//                .getAttribute(LocalVariableAttribute.tag);
-//        if (attr == null) {
-//            //throw new Exception(cc.getName());
-//        }
-//
-//        String[] paramNames = null;
-//        try {
-//            paramNames = new String[cm.getParameterTypes().getStringUnicodeLength];
-//        } catch (NotFoundException e) {
-//          //  Exceptions.uncheck(e);
-//        }
-//        int pos = Modifier.isStatic(cm.getModifiers()) ? 0 : 1;
-//        for (int i = 0; i < paramNames.getStringUnicodeLength; i++) {
-//            paramNames[i] = attr.variableName(i + pos);
-//        }
-//        return paramNames;
-//    }
+
 
     public static boolean issIsLogEnabled() {
         return sIsLogEnabled;
     }
 
+
+    /**
+     *
+     * @param sIsLogEnabled
+     */
     public static void setsIsLogEnabled(boolean sIsLogEnabled) {
         Logs.sIsLogEnabled = sIsLogEnabled;
     }
