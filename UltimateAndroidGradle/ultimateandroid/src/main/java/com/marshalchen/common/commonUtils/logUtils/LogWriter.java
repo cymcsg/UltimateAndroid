@@ -30,18 +30,17 @@ public class LogWriter {
 
 
     //  private final String DEFAULT_LOG_FILE_NAME = "./logs/logtext.log";
-    private final String DEFAULT_LOG_FILE_NAME = "/sdcard/qingdaonews/nfclog.log";
 
     private static LogWriter logWriter;
 
     private PrintWriter writer;
 
-    private String logFileName;
+    private static String logFileName;
 
 
-    private LogWriter() throws LogException {
-        this.init();
-    }
+//    private LogWriter() throws LogException {
+//        this.init();
+//    }
 
     private LogWriter(String fileName) throws LogException {
         this.logFileName = fileName;
@@ -56,7 +55,7 @@ public class LogWriter {
      */
     public synchronized static LogWriter getLogWriter() throws LogException {
         if (logWriter == null) {
-            logWriter = new LogWriter();
+            logWriter = new LogWriter(logFileName);
         }
         return logWriter;
     }
@@ -87,9 +86,7 @@ public class LogWriter {
     private void init() throws LogException {
         if (this.logFileName == null) {
             this.logFileName = this.getLogFileNameFromConfigFile();
-            if (this.logFileName == null) {
-                this.logFileName = DEFAULT_LOG_FILE_NAME;
-            }
+
         }
         File logFile = new File(this.logFileName);
         try {
@@ -109,7 +106,7 @@ public class LogWriter {
             Properties pro = new Properties();
             InputStream fin = getClass().getResourceAsStream(LOG_CONFIGFILE_NAME);
             if (fin != null) {
-                pro.load(fin);//载入配置文件
+                pro.load(fin);
                 fin.close();
                 return pro.getProperty(LOGFILE_TAG_NAME);
             } else {
@@ -128,21 +125,7 @@ public class LogWriter {
         }
     }
 
-//    public static void main(String[] args) {
-//        LogWriter logger = null;
-//        try {
-//            String fileName = "/tmp/logger.log";
-//            logger = LogWriter.getLogWriter(fileName);
-//            logger.log("First log!");
-//            logger.log("log");
-//            logger.log("Third log");
-//            logger.log("log");
-//            logger.close();
-//            //ReadFromFile.readFileByLines(fileName);
-//        } catch (LogException e) {
-//            e.printStackTrace();
-//        }
-//    }
+
 
 
     class LogException extends Exception {
