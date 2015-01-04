@@ -5,8 +5,16 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
 
-
+/**
+ * Check network status
+ */
 public class BasicNetworkUtils {
+
+    /**
+     * Check if the device has connected network.
+     * @param context
+     * @return
+     */
     public static boolean checkNetwork(Context context) {
         ConnectivityManager conn = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo net = conn.getActiveNetworkInfo();
@@ -16,6 +24,11 @@ public class BasicNetworkUtils {
         return false;
     }
 
+    /**
+     * Check the network is Wifi or not
+     * @param context
+     * @return
+     */
     public static boolean isWifiConnected(Context context) {
         if (context != null) {
             ConnectivityManager mConnectivityManager = (ConnectivityManager) context
