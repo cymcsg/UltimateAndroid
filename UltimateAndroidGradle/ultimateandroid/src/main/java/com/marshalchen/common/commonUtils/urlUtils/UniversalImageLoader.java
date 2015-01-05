@@ -22,7 +22,7 @@ import java.io.File;
  */
 public class UniversalImageLoader {
     /**
-     * The method is to get the Default UniversalImageLoader config
+     * Get default ImageLoaderConfiguration
      *
      * @param context
      * @return ImageLoaderConfiguration
@@ -31,6 +31,12 @@ public class UniversalImageLoader {
         return getDefaultImageLoaderConfiguration(context, false);
     }
 
+    /**
+     * Get default ImageLoaderConfiguration and you can choose the ImageLoader will write log or not.
+     * @param context
+     * @param isWriteLog
+     * @return
+     */
     public static ImageLoaderConfiguration getDefaultImageLoaderConfiguration(Context context, boolean isWriteLog) {
         ImageLoaderConfiguration.Builder builder = getDefaultImageLoaderConfigurationBuilder(context);
         if (isWriteLog) {
@@ -40,6 +46,11 @@ public class UniversalImageLoader {
         return config;
     }
 
+    /**
+     * Get default ImageLoaderConfiguration.Builder,and you can easily change the builder.
+     * @param context
+     * @return
+     */
     public static ImageLoaderConfiguration.Builder getDefaultImageLoaderConfigurationBuilder(Context context) {
         File cacheDir = StorageUtils.getCacheDirectory(context);
         ImageLoaderConfiguration.Builder builder = new ImageLoaderConfiguration.Builder(context)
@@ -63,12 +74,20 @@ public class UniversalImageLoader {
         return builder;
     }
 
+    /**
+     * Return default DisplayImageOptions
+     * @return
+     */
     public static DisplayImageOptions getDefaultImageOptions() {
         DisplayImageOptions options = getDefaultImageOptionsBuilder()
                 .build();
         return options;
     }
 
+    /**
+     * Return default DisplayImageOptions.Builder
+     * @return
+     */
     public static DisplayImageOptions.Builder getDefaultImageOptionsBuilder() {
         DisplayImageOptions.Builder builder = new DisplayImageOptions.Builder()
                 .resetViewBeforeLoading(false)  // default

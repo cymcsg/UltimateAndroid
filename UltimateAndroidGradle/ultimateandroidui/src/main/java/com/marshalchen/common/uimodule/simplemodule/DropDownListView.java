@@ -2,7 +2,7 @@
  * Copyright (c) 2014. Marshal Chen.
  */
 
-package com.marshalchen.common.ui;
+package com.marshalchen.common.uimodule.simplemodule;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -25,7 +25,7 @@ import com.marshalchen.common.R;
  * <strong>DropDown Listener</strong>
  * <li>define isDropDownStyle="true" at layout xml or call {@link #setDropDownStyle(boolean)} to enable drop down style
  * before</li>
- * <li>{@link #setOnDropDownListener(com.marshalchen.common.ui.DropDownListView.OnDropDownListener)} set listener which will be excuted when drop down, but you
+ * <li>{@link #setOnDropDownListener(DropDownListView.OnDropDownListener)} set listener which will be excuted when drop down, but you
  * should call {@link #onDropDownComplete()} manual at the end of listener to reinstate status.</li>
  * <li>{@link #setHeaderDefaultText(String)}, {@link #setHeaderLoadingText(String)}, {@link #setHeaderPullText(String)},
  * {@link #setHeaderReleaseText(String)}, {@link #setHeaderSecondText(CharSequence)} to set text</li>

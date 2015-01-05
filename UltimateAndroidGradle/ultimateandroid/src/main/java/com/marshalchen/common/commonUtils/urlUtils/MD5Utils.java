@@ -12,7 +12,6 @@ import java.security.NoSuchAlgorithmException;
 
 public class MD5Utils {
 
-
     public static String getMD5(String content) {
         try {
             MessageDigest digest = MessageDigest.getInstance("MD5");
@@ -35,7 +34,6 @@ public class MD5Utils {
     }
 
     public static String fileMD5(String inputFile) throws IOException {
-        // 缓冲区大小（这个可以抽出一个参数）
         int bufferSize = 256 * 1024;
         FileInputStream fileInputStream = null;
         DigestInputStream digestInputStream = null;
