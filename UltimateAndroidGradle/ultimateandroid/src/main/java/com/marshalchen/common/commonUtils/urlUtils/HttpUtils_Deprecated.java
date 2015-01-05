@@ -30,37 +30,29 @@ import org.apache.http.util.EntityUtils;
 
 import android.util.Log;
 @Deprecated
+/**
+ * Use {@link com.marshalchen.common.commonUtils.urlUtils.HttpUtilsAsync} instead.
+ */
 public class HttpUtils_Deprecated {
 
     public static String TAG = "Chen";
     public static String rst = "";
 
     /*
-     * 发送POST请求，通过URL和参数获取服务器反馈应答，通过返回的应答对象 在对数据头进行分析(如获得报文头 报文体等)
      */
     public static String getResponseFromPostUrl(String url, String logininfo, List<NameValuePair> params) throws Exception {
 
         String result = null;
-        // 新建HttpPost对象  
         HttpPost httpPost = new HttpPost(url);
-        // 设置字符集  
         HttpEntity entity = new UrlEncodedFormEntity(params, HTTP.UTF_8);
-        // 设置参数实体  
         httpPost.setEntity(entity);
-        // 获取HttpClient对象  
         HttpClient httpClient = new DefaultHttpClient();
-        //连接超时  
         httpClient.getParams().setParameter(CoreConnectionPNames.CONNECTION_TIMEOUT, 30000);
-        //请求超时  
         httpClient.getParams().setParameter(CoreConnectionPNames.SO_TIMEOUT, 30000);
         try {
-            // 获取HttpResponse实例  
             HttpResponse httpResp = httpClient.execute(httpPost);
-            // 判断是够请求成功  
             if (httpResp.getStatusLine().getStatusCode() == 200) {
-                // 获取返回的数据  
                 result = EntityUtils.toString(httpResp.getEntity(), "UTF-8");
-                Logs.d("HttpPost方式请求成功，返回数据如下：");
                 Logs.d(result);
             } else {
                 Logs.d("HttpPost方式请求失败" + "    " + httpResp.getStatusLine().getStatusCode() + "   " + EntityUtils.toString(httpResp.getEntity(), "UTF-8"));
@@ -68,7 +60,6 @@ public class HttpUtils_Deprecated {
             }
         } catch (ConnectTimeoutException e) {
             result = "over_time";
-            Logs.e("HttpPost方式请求失败:  " + "操作超时");
         } catch (Exception e) {
             e.printStackTrace();
             Logs.e(e.getMessage());
@@ -130,22 +121,13 @@ public class HttpUtils_Deprecated {
 
     }
 
-    /**
-     * 处理httpResponse信息,返回json,保存cookie
-     *
-     * @param
-     * @return String
-     */
+
     public static String GetJson_Cookie(String httpUrl) {
         String strResult = null;
         try {
-            // HttpGet连接对象
             HttpGet httpRequest = new HttpGet(httpUrl);
-            // 取得HttpClient对象
             HttpClient httpclient = new DefaultHttpClient();
-            // 请求HttpClient，取得HttpResponse
             HttpResponse httpResponse = httpclient.execute(httpRequest);
-            //保存cookie
             StringBuffer sb = new StringBuffer();
             String inputLine = "";
             if (httpResponse.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
@@ -167,7 +149,7 @@ public class HttpUtils_Deprecated {
 
                             if ("member".equals(vss[0])) {
                                 rst = vs[i] + ";";
-                                Log.d("Chen", "cookie信息:" + rst);
+
                                 isok++;
                             }
                         }
@@ -176,26 +158,19 @@ public class HttpUtils_Deprecated {
 
                 }
             }
-
-            // 请求成功
             if (httpResponse.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
-                // 取得返回的字符串
                 strResult = EntityUtils.toString(httpResponse.getEntity());
             } else {
-                Log.i(TAG, "请求错误");
+
             }
         } catch (Exception e) {
-            Log.i(TAG, "请求网络异常");
+
             strResult = "net_ex";
         }
         return strResult;
     }
 
-    /*
-     * 发送GET请求，通过URL和参数获取服务器反馈应答，通过返回的应答对象 在对数据头进行分析(如获得报文头 报文体等) params 的格式为
-     * key1=value1,key2=value2 url 是一个不带参数的URL params是发送get请求的参数 其将直接在url后面添加
-     * headinfo 是发送get请求的微博验证信息 即登陆时系统给出的合法用户验证信息
-     */
+
     public static String getResponseFromGetUrl(String url, String logininfo,
                                                String params) throws Exception {
         Log.d("Chen", "url--" + url);

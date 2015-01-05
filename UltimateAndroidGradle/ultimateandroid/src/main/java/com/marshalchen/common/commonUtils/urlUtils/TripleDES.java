@@ -7,65 +7,109 @@ import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
+
+import java.io.IOException;
 import java.security.MessageDigest;
 
 /**
+ * TripleDES Method.
+ * Before use {@link #encrypt(String)} or {@link #decrypt(byte[])} {@link #decrypt(String)} directly,you should use {@link #setToken(String)} first.
  *
- * TripleDES Method
  */
 public class TripleDES {
-    private final static String token = "";
-    public static byte[] copyOf(byte[] original, int newLength) {
+    private static String token = "";
 
+
+    protected static byte[] copyOf(byte[] original, int newLength) throws NegativeArraySizeException {
         if (newLength < 0) {
             throw new NegativeArraySizeException(Integer.toString(newLength));
         }
         return copyOfRange(original, 0, newLength);
     }
 
-    public static int judgeVerionOfSdk() {
+    /**
+     * Return the user-visible SDK version of the framework
+     *
+     * @return Build.VERSION.SDK_INT
+     */
+    public static int getSdkVersion() {
         return Build.VERSION.SDK_INT;
     }
 
-    public static String Base64encoding(byte[] context,int type) {
-        String result="";
-        if (judgeVerionOfSdk() > 7) {
-            result= Base64.encodeToString(context, type);
+    /**
+     * Base64-encode the given data and return a newly allocated String with the result.
+     *
+     * @param context
+     * @param type
+     * @return
+     */
+    public static String Base64encoding(byte[] context, int type) {
+        String result = "";
+        if (getSdkVersion() > 7) {
+            result = Base64.encodeToString(context, type);
         } else {
-            result= com.marshalchen.common.commonUtils.urlUtils.Base64.encodeBytes(context);
+            result = com.marshalchen.common.commonUtils.urlUtils.Base64.encodeBytes(context);
         }
         return result;
     }
-    public static byte[] Base64encodingByte(byte[] context,int type) {
+
+    /**
+     * Base64-encode the given data and return a newly allocated byte[] with the result.
+     *
+     * @param context
+     * @param type
+     * @return
+     */
+    public static byte[] Base64encodingByte(byte[] context, int type) {
         byte[] result;
-        if (judgeVerionOfSdk() > 17) {
-            result= Base64.encode(context, type);
+        if (getSdkVersion() > 17) {
+            result = Base64.encode(context, type);
         } else {
-            result= com.marshalchen.common.commonUtils.urlUtils.Base64.encodeBytesToBytes(context);
+            result = com.marshalchen.common.commonUtils.urlUtils.Base64.encodeBytesToBytes(context);
         }
         return result;
     }
-    public static byte[] Base64decoding(String context,int type) throws  Exception{
+
+    /**
+     * Decode the Base64-encoded data in input and return the data in a new byte array.
+     * The padding '=' characters at the end are considered optional, but if any are present, there must be the correct number of them.
+     *
+     * @param context
+     * @param type
+     * @return
+     * @throws IllegalArgumentException if the input contains incorrect padding
+     */
+    public static byte[] Base64decoding(String context, int type) throws IllegalArgumentException, IOException {
         byte[] result;
-        if (judgeVerionOfSdk() > 17) {
-            result= Base64.decode(context, type);
+        if (getSdkVersion() > 17) {
+            result = Base64.decode(context, type);
         } else {
-            result= com.marshalchen.common.commonUtils.urlUtils.Base64.decode(context);
+            result = com.marshalchen.common.commonUtils.urlUtils.Base64.decode(context);
         }
         return result;
     }
-    public static byte[] Base64decodingByte(byte[] context,int type) throws  Exception{
+
+    /**
+     * Decode the Base64-encoded data in input and return the data in a new byte array.
+     * The padding '=' characters at the end are considered optional, but if any are present, there must be the correct number of them.
+     *
+     * @param context
+     * @param type
+     * @return
+     * @throws Exception
+     */
+    public static byte[] Base64decodingByte(byte[] context, int type) throws Exception {
         byte[] result;
-        if (judgeVerionOfSdk() > 17) {
-            result= Base64.decode(context, type);
+        if (getSdkVersion() > 17) {
+            result = Base64.decode(context, type);
         } else {
-            result= com.marshalchen.common.commonUtils.urlUtils.Base64.decode(context);
+            result = com.marshalchen.common.commonUtils.urlUtils.Base64.decode(context);
         }
         return result;
     }
 
 
-    public static byte[] copyOfRange(byte[] original, int start, int end) {
+    private static byte[] copyOfRange(byte[] original, int start, int end) {
         if (start > end) {
             throw new IllegalArgumentException();
         }
@@ -80,27 +124,15 @@ public class TripleDES {
         return result;
     }
 
-    public static byte[] encrypt(String message) throws Exception {
-        final MessageDigest md = MessageDigest.getInstance("SHA-1");
-        final byte[] digestOfPassword = md.digest(token
-                .getBytes());
-        byte[] keyBytes = copyOf(digestOfPassword, 24);
-        for (int j = 0, k = 16; j < 8; ) {
-            keyBytes[k++] = keyBytes[j++];
-        }
-        final SecretKey key = new SecretKeySpec(keyBytes, "DESede");
-        String s1 = "12345678";
-        byte[] bytes = s1.getBytes();
-        final IvParameterSpec iv = new IvParameterSpec(bytes);
-        final Cipher cipher = Cipher.getInstance("DESede/CBC/PKCS5Padding");
-        cipher.init(Cipher.ENCRYPT_MODE, key, iv);
-        final byte[] plainTextBytes = message.getBytes("utf-8");
-        final byte[] cipherText = cipher.doFinal(plainTextBytes);
-        String ss = Base64encoding(cipherText, 0);
-        return Base64encodingByte(cipherText, 0);
-    }
 
-    public static String encrypts(String message) throws Exception {
+    /**
+     * Encrypt the message with TripleDES
+     *
+     * @param message
+     * @return
+     * @throws Exception
+     */
+    public static String encrypt(String message) throws Exception {
         final MessageDigest md = MessageDigest.getInstance("SHA-1");
         final byte[] digestOfPassword = md.digest(token
                 .getBytes());
@@ -121,8 +153,15 @@ public class TripleDES {
         return new String(result, "UTF-8");
     }
 
+    /**
+     * Decrypt the message with TripleDES
+     *
+     * @param message
+     * @return
+     * @throws Exception
+     */
     public static String decrypt(byte[] message) throws Exception {
-        byte[] values =Base64decodingByte(message, 0);
+        byte[] values = Base64decodingByte(message, 0);
         final MessageDigest md = MessageDigest.getInstance("SHA-1");
         final byte[] digestOfPassword = md.digest(token
                 .getBytes("utf-8"));
@@ -141,7 +180,14 @@ public class TripleDES {
         return new String(plainText, "UTF-8");
     }
 
-    public static String decrypts(String message) throws Exception {
+    /**
+     * Decrypt the message with TripleDES
+     *
+     * @param message
+     * @return
+     * @throws Exception
+     */
+    public static String decrypt(String message) throws Exception {
         if (message == null || message == "") return "";
         byte[] values = Base64decoding(message, 0);
         final MessageDigest md = MessageDigest.getInstance("SHA-1");
@@ -161,22 +207,12 @@ public class TripleDES {
         return new String(plainText, "UTF-8");
     }
 
-
-    //delete all the wrap of String
-    public static String replaceNewLine(String strText) {
-        String strResult = "";
-        int intStart = 0;
-        int intLoc = strText.indexOf("\n", intStart);
-        while (intLoc != -1) {
-            strResult += strText.substring(intStart, intLoc - 1);
-            intStart = intLoc + 1;
-            intLoc = strText.indexOf("\n", intStart);
-        }
-        strResult += strText.substring(intStart, strText.length());
-        return strResult;
-    }
-
-
+    /**
+     * Revert byte to hex
+     *
+     * @param b
+     * @return
+     */
     public static String byte2hex(byte[] b) {
         String hs = "";
         String stmp = "";
@@ -190,7 +226,12 @@ public class TripleDES {
         return hs.toUpperCase();
     }
 
-
+    /**
+     * Revert hex to byte
+     *
+     * @param b
+     * @return
+     */
     public static byte[] hex2byte(byte[] b) {
         if ((b.length % 2) != 0)
             throw new IllegalArgumentException("wrong index");
@@ -202,5 +243,13 @@ public class TripleDES {
             b2[n / 2] = (byte) Integer.parseInt(item, 16);
         }
         return b2;
+    }
+
+    public static String getToken() {
+        return token;
+    }
+
+    public static void setToken(String token) {
+        TripleDES.token = token;
     }
 }
