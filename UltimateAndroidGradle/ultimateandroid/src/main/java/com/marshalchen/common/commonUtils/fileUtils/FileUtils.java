@@ -2,8 +2,8 @@ package com.marshalchen.common.commonUtils.fileUtils;
 
 import android.content.Context;
 import android.os.Environment;
+
 import com.marshalchen.common.commonUtils.basicUtils.BasicUtils;
-import com.marshalchen.common.commonUtils.basicUtils.StringUtils;
 import com.marshalchen.common.commonUtils.logUtils.Logs;
 
 import java.io.*;
@@ -11,25 +11,86 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * TO do something with File,like read ,del etc.
- * User: cym
- * Date: 13-10-23
- * Time: 上午11:01
+ * To do something with file,like reading ,writing etc.
  */
 public class FileUtils {
-    public static String readFilesToString(String fileName) throws IOException {
+
+    /**
+     * Read file to String
+     *
+     * @param fileName
+     * @param charset
+     * @return
+     * @throws IOException
+     */
+    public static String readFile(String fileName, String charset) throws IOException {
         File file = new File(fileName);
-        if (!file.exists() || file.isDirectory())
-            throw new FileNotFoundException();
-        BufferedReader br = new BufferedReader(new FileReader(file));
-        String temp = null;
-        StringBuffer sb = new StringBuffer();
-        temp = br.readLine();
-        while (temp != null) {
-            sb.append(temp + "\n");
-            temp = br.readLine();
+        return readFile(file, charset);
+    }
+
+    /**
+     * Read file to String with default charset 'UTF-8'
+     *
+     * @param fileName
+     * @return
+     * @throws IOException
+     */
+    public static String readFile(String fileName) throws IOException {
+        return readFile(fileName, "UTF-8");
+    }
+
+
+    /**
+     * Read file to String with default charset 'UTF-8'
+     *
+     * @param fileName
+     * @return
+     * @throws IOException
+     */
+    public static String readFile(File fileName) throws IOException {
+        return readFile(fileName, "UTF-8");
+    }
+
+
+    /**
+     * Read file to String
+     *
+     * @param fileName
+     * @param charset
+     * @return
+     * @throws IOException
+     */
+    public static String readFile(File fileName, String charset) throws IOException {
+        if (fileName == null || !fileName.isFile()) {
+            return null;
         }
-        return sb.toString();
+        StringBuilder sb = new StringBuilder("");
+        BufferedReader reader = null;
+        try {
+            InputStreamReader is = new InputStreamReader(new FileInputStream(fileName), charset);
+            reader = new BufferedReader(is);
+            String line = null;
+            while ((line = reader.readLine()) != null) {
+                if (!sb.toString().equals("")) {
+                    sb.append("\r\n");
+                }
+                sb.append(line);
+            }
+            reader.close();
+            return sb.toString();
+        } catch (IOException e) {
+            Logs.e(e, "IOException");
+            throw e;
+        } finally {
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    Logs.e(e, "IOException occurred when closing BufferedReader");
+                    throw e;
+                }
+            }
+        }
     }
 
     public static String getCurrentDataPath(Context context) throws IOException {
@@ -40,78 +101,14 @@ public class FileUtils {
     public static String getCurrentDataPath(Context context, String folderName) throws IOException {
         String currentDataPath = "";
         if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
-
             currentDataPath = Environment.getExternalStorageDirectory().getAbsolutePath() + "/" + folderName;
-            createDir(currentDataPath);
+            makeDirs(currentDataPath);
         } else {
             currentDataPath = context.getFilesDir().getAbsolutePath();
         }
         return currentDataPath;
     }
 
-    /**
-     * @param fileName
-     * @param content
-     * @throws java.io.IOException
-     * @deprecated
-     */
-    public static void writeFileFromString(String fileName, String content) throws IOException {
-        FileOutputStream fileOutputStream = new FileOutputStream(new File(fileName));
-        BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(fileOutputStream);
-        bufferedOutputStream.write(content.getBytes());
-        bufferedOutputStream.flush();
-        bufferedOutputStream.close();
-        fileOutputStream.close();
-    }
-
-    /**
-     * @param fileName
-     * @param content
-     * @throws java.io.IOException
-     * @deprecated
-     */
-    public static void writeFileFromStringBuffers(String fileName, String content) throws IOException {
-        String s = new String();
-        String s1 = new String();
-        try {
-            File f = new File(fileName);
-            if (f.exists()) {
-                Logs.d("文件存在");
-            } else {
-                Logs.d("文件不存在，正在创建...");
-                if (f.createNewFile()) {
-                    Logs.d("文件创建成功！");
-                } else {
-                    Logs.d("文件创建失败！");
-                }
-            }
-            BufferedReader input = new BufferedReader(new FileReader(f));
-            while ((s = input.readLine()) != null) {
-                s1 += s + "\n";
-            }
-            System.out.println("文件内容：" + s1);
-            input.close();
-            s1 += content;
-            BufferedWriter output = new BufferedWriter(new FileWriter(f));
-            output.write(s1);
-            output.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-
-    /**
-     * Create Folder
-     *
-     * @param fileName folder
-     */
-    public static void createDir(String fileName) throws IOException {
-        File dir = new File(fileName);
-        Logs.d(fileName + "    " + dir.exists());
-        if (!dir.exists())
-            dir.mkdir();
-    }/** */
 
     /**
      * Create New File
@@ -124,83 +121,11 @@ public class FileUtils {
         File file = new File(path + "/" + fileName);
         if (!file.exists())
             file.createNewFile();
-    }/** */
-    /**
-     * Delete File
-     *
-     * @param fileName
-     */
-    public void delFile(String fileName) throws IOException {
-        File file = new File(fileName);
-        if (file.exists() && file.isFile())
-            file.delete();
-    }
-
-    /**
-     * Delete the File no matter it's a file or folder.If the file is a folder,this method
-     * will delete all the file in the folder.
-     *
-     * @param fileName
-     * @throws java.io.IOException
-     */
-
-    public static void deleteFileOrFolder(String fileName) throws IOException {
-        File f = new File(fileName);
-        if (f.isDirectory()) {
-            String[] list = f.list();
-            for (int i = 0; i < list.length; i++) {
-                deleteFileOrFolder(fileName + "//" + list[i]);
-            }
-        }
-        f.delete();
-    }
-
-    public static void delFolder(String folderPath) {
-        try {
-            delAllFile(folderPath);
-            String filePath = folderPath;
-            filePath = filePath.toString();
-            File myFilePath = new File(filePath);
-            myFilePath.delete();
-
-        } catch (Exception e) {
-            Logs.e(e, "");
-        }
-
-    }
-
-    /**
-     * @param path String  folder path  like  c:/fqf
-     */
-    public static void delAllFile(String path) throws IOException {
-        File file = new File(path);
-        if (!file.exists()) {
-            return;
-        }
-        if (!file.isDirectory()) {
-            return;
-        }
-        String[] tempList = file.list();
-        File temp = null;
-        for (int i = 0; i < tempList.length; i++) {
-            if (path.endsWith(File.separator)) {
-                temp = new File(path + tempList[i]);
-            } else {
-                temp = new File(path + File.separator + tempList[i]);
-            }
-            if (temp.isFile()) {
-                temp.delete();
-            }
-            if (temp.isDirectory()) {
-                delAllFile(path + "/" + tempList[i]);
-                delFolder(path + "/" + tempList[i]);
-            }
-        }
     }
 
 
     /**
-     * append file using FileOutputStream
+     * Append file using FileOutputStream
      *
      * @param fileName
      * @param content
@@ -223,7 +148,7 @@ public class FileUtils {
     }
 
     /**
-     * append file using FileWriter
+     * Append file using FileWriter
      *
      * @param fileName
      * @param content
@@ -239,7 +164,7 @@ public class FileUtils {
     }
 
     /**
-     * append file using RandomAccessFile
+     * Append file using RandomAccessFile
      *
      * @param fileName
      * @param content
@@ -258,7 +183,7 @@ public class FileUtils {
     }
 
     /**
-     * copy file
+     * Copy file
      *
      * @param oldPath String
      * @param newPath String
@@ -329,124 +254,18 @@ public class FileUtils {
 
     }
 
-    /**
-     * @param oldPath String
-     * @param newPath String
-     * @return boolean
-     * @deprecated Copy all the files in folder
-     */
-    public void copyFolder(String oldPath, String newPath) throws IOException {
-
-        try {
-            (new File(newPath)).mkdirs();
-            File a = new File(oldPath);
-            String[] file = a.list();
-            File temp = null;
-            for (int i = 0; i < file.length; i++) {
-                if (oldPath.endsWith(File.separator)) {
-                    temp = new File(oldPath + file[i]);
-                } else {
-                    temp = new File(oldPath + File.separator + file[i]);
-                }
-
-                if (temp.isFile()) {
-                    FileInputStream input = new FileInputStream(temp);
-                    FileOutputStream output = new FileOutputStream(newPath + "/" +
-                            (temp.getName()).toString());
-                    byte[] b = new byte[1024 * 5];
-                    int len;
-                    while ((len = input.read(b)) != -1) {
-                        output.write(b, 0, len);
-                    }
-                    output.flush();
-                    output.close();
-                    input.close();
-                }
-                if (temp.isDirectory()) {//如果是子文件夹
-                    copyFolder(oldPath + "/" + file[i], newPath + "/" + file[i]);
-                }
-            }
-        } catch (Exception e) {
-            System.out.println("复制整个文件夹内容操作出错");
-            e.printStackTrace();
-
-        }
-
-    }
 
     /**
-     * @param oldPath String  如：c:/fqf.txt
-     * @param newPath String  如：d:/fqf.txt
-     */
-    public void moveFile(String oldPath, String newPath) throws IOException {
-        copyFile(oldPath, newPath);
-        delFile(oldPath);
-
-    }
-
-    /**
-     * @param oldPath String
-     * @param newPath String
-     */
-    public void moveFolder(String oldPath, String newPath) throws IOException {
-        copyFolder(oldPath, newPath);
-        delFolder(oldPath);
-
-    }
-
-    public final static String FILE_EXTENSION_SEPARATOR = ".";
-
-    /**
-     * read file
-     *
-     * @param filePath
-     * @param charsetName The name of a supported {@link java.nio.charset.Charset </code>charset<code>}
-     * @return if file not exist, return null, else return content of file
-     * @throws RuntimeException if an error occurs while operator BufferedReader
-     */
-    public static StringBuilder readFile(String filePath, String charsetName) {
-        File file = new File(filePath);
-        StringBuilder fileContent = new StringBuilder("");
-        if (file == null || !file.isFile()) {
-            return null;
-        }
-
-        BufferedReader reader = null;
-        try {
-            InputStreamReader is = new InputStreamReader(new FileInputStream(file), charsetName);
-            reader = new BufferedReader(is);
-            String line = null;
-            while ((line = reader.readLine()) != null) {
-                if (!fileContent.toString().equals("")) {
-                    fileContent.append("\r\n");
-                }
-                fileContent.append(line);
-            }
-            reader.close();
-            return fileContent;
-        } catch (IOException e) {
-            throw new RuntimeException("IOException occurred. ", e);
-        } finally {
-            if (reader != null) {
-                try {
-                    reader.close();
-                } catch (IOException e) {
-                    throw new RuntimeException("IOException occurred. ", e);
-                }
-            }
-        }
-    }
-
-    /**
-     * write file
+     * If {@code append} is true and the file already exists, it will be appended to; otherwise
+     * it will be truncated. The file will be created if it does not exist.
      *
      * @param filePath
      * @param content
-     * @param append   is append, if true, write to the end of file, else clear content of file and write into it
+     * @param append   Indicates whether or not to append to an existing file.
      * @return return false if content is empty, true otherwise
      * @throws RuntimeException if an error occurs while operator FileWriter
      */
-    public static boolean writeFile(String filePath, String content, boolean append) {
+    public static boolean writeFile(String filePath, String content, boolean append) throws IOException {
         if (BasicUtils.judgeNotNull(content)) {
             return false;
         }
@@ -459,87 +278,37 @@ public class FileUtils {
             fileWriter.close();
             return true;
         } catch (IOException e) {
-            throw new RuntimeException("IOException occurred. ", e);
+            throw e;
         } finally {
             if (fileWriter != null) {
                 try {
                     fileWriter.close();
                 } catch (IOException e) {
-                    throw new RuntimeException("IOException occurred. ", e);
+                    throw e;
                 }
             }
         }
     }
 
-    /**
-     * write file
-     *
-     * @param filePath
-     * @param contentList
-     * @param append      is append, if true, write to the end of file, else clear content of file and write into it
-     * @return return false if contentList is empty, true otherwise
-     * @throws RuntimeException if an error occurs while operator FileWriter
-     */
-    public static boolean writeFile(String filePath, List<String> contentList, boolean append) {
-        if (BasicUtils.judgeNotNull(contentList)) {
-            return false;
-        }
-
-        FileWriter fileWriter = null;
-        try {
-            makeDirs(filePath);
-            fileWriter = new FileWriter(filePath, append);
-            int i = 0;
-            for (String line : contentList) {
-                if (i++ > 0) {
-                    fileWriter.write("\r\n");
-                }
-                fileWriter.write(line);
-            }
-            fileWriter.close();
-            return true;
-        } catch (IOException e) {
-            throw new RuntimeException("IOException occurred. ", e);
-        } finally {
-            if (fileWriter != null) {
-                try {
-                    fileWriter.close();
-                } catch (IOException e) {
-                    throw new RuntimeException("IOException occurred. ", e);
-                }
-            }
-        }
-    }
 
     /**
-     * write file, the string will be written to the begin of the file
+     * If the file already exists, it will be truncated. The file will be created if it does not exist.
      *
      * @param filePath
      * @param content
      * @return
      */
-    public static boolean writeFile(String filePath, String content) {
+    public static boolean writeFile(String filePath, String content) throws IOException {
         return writeFile(filePath, content, false);
     }
 
-    /**
-     * write file, the string list will be written to the begin of the file
-     *
-     * @param filePath
-     * @param contentList
-     * @return
-     */
-    public static boolean writeFile(String filePath, List<String> contentList) {
-        return writeFile(filePath, contentList, false);
-    }
 
     /**
-     * write file, the bytes will be written to the begin of the file
+     * Write file with InputStream
      *
      * @param filePath
      * @param stream
      * @return
-     * @see {@link #writeFile(String, java.io.InputStream, boolean)}
      */
     public static boolean writeFile(String filePath, InputStream stream) {
         return writeFile(filePath, stream, false);
@@ -571,7 +340,7 @@ public class FileUtils {
     }
 
     /**
-     * write file
+     * Write file
      *
      * @param file   the file to be opened for writing.
      * @param stream the input stream
@@ -608,7 +377,7 @@ public class FileUtils {
     }
 
     /**
-     * copy file
+     * Copy file
      *
      * @param sourceFilePath
      * @param destFilePath
@@ -625,72 +394,19 @@ public class FileUtils {
         return writeFile(destFilePath, inputStream);
     }
 
-    /**
-     * read file to string list, a element of list is a line
-     *
-     * @param filePath
-     * @param charsetName The name of a supported {@link java.nio.charset.Charset </code>charset<code>}
-     * @return if file not exist, return null, else return content of file
-     * @throws RuntimeException if an error occurs while operator BufferedReader
-     */
-    public static List<String> readFileToList(String filePath, String charsetName) {
-        File file = new File(filePath);
-        List<String> fileContent = new ArrayList<String>();
-        if (file == null || !file.isFile()) {
-            return null;
-        }
-
-        BufferedReader reader = null;
-        try {
-            InputStreamReader is = new InputStreamReader(new FileInputStream(file), charsetName);
-            reader = new BufferedReader(is);
-            String line = null;
-            while ((line = reader.readLine()) != null) {
-                fileContent.add(line);
-            }
-            reader.close();
-            return fileContent;
-        } catch (IOException e) {
-            throw new RuntimeException("IOException occurred. ", e);
-        } finally {
-            if (reader != null) {
-                try {
-                    reader.close();
-                } catch (IOException e) {
-                    throw new RuntimeException("IOException occurred. ", e);
-                }
-            }
-        }
-    }
 
     /**
-     * get file name from path, not include suffix
-     * <p/>
-     * <pre>
-     *      getFileNameWithoutExtension(null)               =   null
-     *      getFileNameWithoutExtension("")                 =   ""
-     *      getFileNameWithoutExtension("   ")              =   "   "
-     *      getFileNameWithoutExtension("abc")              =   "abc"
-     *      getFileNameWithoutExtension("a.mp3")            =   "a"
-     *      getFileNameWithoutExtension("a.b.rmvb")         =   "a.b"
-     *      getFileNameWithoutExtension("c:\\")              =   ""
-     *      getFileNameWithoutExtension("c:\\a")             =   "a"
-     *      getFileNameWithoutExtension("c:\\a.b")           =   "a"
-     *      getFileNameWithoutExtension("c:a.txt\\a")        =   "a"
-     *      getFileNameWithoutExtension("/home/admin")      =   "admin"
-     *      getFileNameWithoutExtension("/home/admin/a.txt/b.mp3")  =   "b"
-     * </pre>
+     * Get only the file name without extension
      *
      * @param filePath
-     * @return file name from path, not include suffix
-     * @see
+     * @return
      */
     public static String getFileNameWithoutExtension(String filePath) {
         if (isFileExist(filePath)) {
             return filePath;
         }
 
-        int extenPosi = filePath.lastIndexOf(FILE_EXTENSION_SEPARATOR);
+        int extenPosi = filePath.lastIndexOf(".");
         int filePosi = filePath.lastIndexOf(File.separator);
         if (filePosi == -1) {
             return (extenPosi == -1 ? filePath : filePath.substring(0, extenPosi));
@@ -702,25 +418,10 @@ public class FileUtils {
     }
 
     /**
-     * get file name from path, include suffix
-     * <p/>
-     * <pre>
-     *      getFileName(null)               =   null
-     *      getFileName("")                 =   ""
-     *      getFileName("   ")              =   "   "
-     *      getFileName("a.mp3")            =   "a.mp3"
-     *      getFileName("a.b.rmvb")         =   "a.b.rmvb"
-     *      getFileName("abc")              =   "abc"
-     *      getFileName("c:\\")              =   ""
-     *      getFileName("c:\\a")             =   "a"
-     *      getFileName("c:\\a.b")           =   "a.b"
-     *      getFileName("c:a.txt\\a")        =   "a"
-     *      getFileName("/home/admin")      =   "admin"
-     *      getFileName("/home/admin/a.txt/b.mp3")  =   "b.mp3"
-     * </pre>
+     * Get  the file name with extension
      *
      * @param filePath
-     * @return file name from path, include suffix
+     * @return
      */
     public static String getFileName(String filePath) {
         if (isFileExist(filePath)) {
@@ -732,23 +433,7 @@ public class FileUtils {
     }
 
     /**
-     * get folder name from path
-     * <p/>
-     * <pre>
-     *      getFolderName(null)               =   null
-     *      getFolderName("")                 =   ""
-     *      getFolderName("   ")              =   ""
-     *      getFolderName("a.mp3")            =   ""
-     *      getFolderName("a.b.rmvb")         =   ""
-     *      getFolderName("abc")              =   ""
-     *      getFolderName("c:\\")              =   "c:"
-     *      getFolderName("c:\\a")             =   "c:"
-     *      getFolderName("c:\\a.b")           =   "c:"
-     *      getFolderName("c:a.txt\\a")        =   "c:a.txt"
-     *      getFolderName("c:a\\b\\c\\d.txt")    =   "c:a\\b\\c"
-     *      getFolderName("/home/admin")      =   "/home"
-     *      getFolderName("/home/admin/a.txt/b.mp3")  =   "/home/admin/a.txt"
-     * </pre>
+     * Get folder name from the filepath
      *
      * @param filePath
      * @return
@@ -764,33 +449,17 @@ public class FileUtils {
     }
 
     /**
-     * get suffix of file from path
-     * <p/>
-     * <pre>
-     *      getFileExtension(null)               =   ""
-     *      getFileExtension("")                 =   ""
-     *      getFileExtension("   ")              =   "   "
-     *      getFileExtension("a.mp3")            =   "mp3"
-     *      getFileExtension("a.b.rmvb")         =   "rmvb"
-     *      getFileExtension("abc")              =   ""
-     *      getFileExtension("c:\\")              =   ""
-     *      getFileExtension("c:\\a")             =   ""
-     *      getFileExtension("c:\\a.b")           =   "b"
-     *      getFileExtension("c:a.txt\\a")        =   ""
-     *      getFileExtension("/home/admin")      =   ""
-     *      getFileExtension("/home/admin/a.txt/b")  =   ""
-     *      getFileExtension("/home/admin/a.txt/b.mp3")  =   "mp3"
-     * </pre>
+     * Get extension of the file
      *
      * @param filePath
      * @return
      */
     public static String getFileExtension(String filePath) {
-        if (StringUtils.isBlank(filePath)) {
-            return filePath;
+        if (!BasicUtils.judgeNotNull(filePath)) {
+            return "";
         }
 
-        int extenPosi = filePath.lastIndexOf(FILE_EXTENSION_SEPARATOR);
+        int extenPosi = filePath.lastIndexOf(".");
         int filePosi = filePath.lastIndexOf(File.separator);
         if (extenPosi == -1) {
             return "";
@@ -799,52 +468,28 @@ public class FileUtils {
     }
 
     /**
-     * Creates the directory named by the trailing filename of this file, including the complete directory path required
-     * to create this directory. <br/>
-     * <br/>
-     * <ul>
-     * <strong>Attentions:</strong>
-     * <li>makeDirs("C:\\Users\\Trinea") can only create users folder</li>
-     * <li>makeFolder("C:\\Users\\Trinea\\") can create Trinea folder</li>
-     * </ul>
+     * Create Folder
      *
-     * @param filePath
-     * @return true if the necessary directories have been created or the target directory already exists, false one of
-     * the directories can not be created.
-     * <ul>
-     * <li>if {@link com.marshalchen.common.commonUtils.fileUtils.FileUtils#getFolderName(String)} return null, return false</li>
-     * <li>if target directory already exists, return true</li>
-     * <li>return {@link java.io.File#}</li>
-     * </ul>
+     * @param dirPath
+     * @return
      */
-    public static boolean makeDirs(String filePath) {
-        String folderName = getFolderName(filePath);
-
-        File folder = new File(folderName);
-        Logs.d(folder.getAbsolutePath() + "   " + folder.exists());
+    public static boolean makeDirs(String dirPath) {
+        File folder = new File(dirPath);
         if (folder.exists()) {
             return false;
         }
         return (folder.exists() && folder.isDirectory()) ? true : folder.mkdirs();
     }
 
-    /**
-     * @param filePath
-     * @return
-     * @see #makeDirs(String)
-     */
-    public static boolean makeFolders(String filePath) {
-        return makeDirs(filePath);
-    }
 
     /**
-     * Indicates if this file represents a file on the underlying file system.
+     * Indicates if the file represents a file exists.
      *
      * @param filePath
      * @return
      */
     public static boolean isFileExist(String filePath) {
-        if (StringUtils.isBlank(filePath)) {
+        if (!BasicUtils.judgeNotNull(filePath)) {
             return false;
         }
 
@@ -853,37 +498,28 @@ public class FileUtils {
     }
 
     /**
-     * Indicates if this file represents a directory on the underlying file system.
+     * Indicates if the file represents a directory exists.
      *
      * @param directoryPath
      * @return
      */
     public static boolean isFolderExist(String directoryPath) {
-        if (StringUtils.isBlank(directoryPath)) {
+        if (!BasicUtils.judgeNotNull(directoryPath)) {
             return false;
         }
-
         File dire = new File(directoryPath);
         return (dire.exists() && dire.isDirectory());
     }
 
     /**
-     * delete file or directory
-     * <ul>
-     * <li>if path is null or empty, return true</li>
-     * <li>if path not exist, return true</li>
-     * <li>if path exist, delete recursion. return true</li>
-     * <ul>
+     * Delete the File no matter it's a file or folder.If the file path is a folder,this method
+     * will delete all the file in the folder.
      *
-     * @param path
+     * @param filePath
      * @return
      */
-    public static boolean deleteFileFromPath(String path) {
-        if (StringUtils.isBlank(path)) {
-            return true;
-        }
-
-        File file = new File(path);
+    public static boolean deleteFile(String filePath) throws IOException {
+        File file = new File(filePath);
         if (!file.exists()) {
             return true;
         }
@@ -897,27 +533,22 @@ public class FileUtils {
             if (f.isFile()) {
                 f.delete();
             } else if (f.isDirectory()) {
-                deleteFileFromPath(f.getAbsolutePath());
+                deleteFile(f.getAbsolutePath());
             }
         }
         return file.delete();
     }
 
     /**
-     * get file size
-     * <ul>
-     * <li>if path is null or empty, return -1</li>
-     * <li>if path exist and it is a file, return file size, else return -1</li>
-     * <ul>
+     * Get size of the file
      *
      * @param path
-     * @return returns the length of this file in bytes. returns -1 if the file does not exist.
+     * @return Return the length of the file in bytes. Return -1 if the file does not exist.
      */
     public static long getFileSize(String path) {
-        if (StringUtils.isBlank(path)) {
+        if (!BasicUtils.judgeNotNull(path)) {
             return -1;
         }
-
         File file = new File(path);
         return (file.exists() && file.isFile() ? file.length() : -1);
     }

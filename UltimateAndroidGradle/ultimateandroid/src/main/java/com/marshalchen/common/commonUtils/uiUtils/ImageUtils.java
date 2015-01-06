@@ -38,7 +38,7 @@ public class ImageUtils {
     /**
      * toRoundCorner
      *
-     * @param bitmap 片
+     * @param bitmap
      * @param pixels
      * @return
      */
@@ -61,36 +61,39 @@ public class ImageUtils {
     }
 
     /**
-     * 水印
+     * Create watermark picture
      *
-     * @param
+     * @param srcBitmap
+     * @param watermark
      * @return
      */
-    public static Bitmap createBitmapForWatermark(Bitmap src, Bitmap watermark) {
-        if (src == null) {
+    public static Bitmap createBitmapForWatermark(Bitmap srcBitmap, Bitmap watermark) {
+        if (srcBitmap == null) {
             return null;
         }
-        int w = src.getWidth();
-        int h = src.getHeight();
+        int w = srcBitmap.getWidth();
+        int h = srcBitmap.getHeight();
         int ww = watermark.getWidth();
         int wh = watermark.getHeight();
         // create the new blank bitmap
-        Bitmap newb = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);// 创建一个新的和SRC长度宽度一样的位图
+        Bitmap newb = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
         Canvas cv = new Canvas(newb);
         // draw src into
-        cv.drawBitmap(src, 0, 0, null);// 在 0，0坐标开始画入src
+        cv.drawBitmap(srcBitmap, 0, 0, null);
         // draw watermark into
-        cv.drawBitmap(watermark, w - ww + 5, h - wh + 5, null);// 在src的右下角画入水印
+        cv.drawBitmap(watermark, w - ww + 5, h - wh + 5, null);
         // save all clip
-        cv.save(Canvas.ALL_SAVE_FLAG);// 保存
+        cv.save(Canvas.ALL_SAVE_FLAG);
         // store
-        cv.restore();// 存储
+        cv.restore();
         return newb;
     }
 
     /**
-     * 图片合成
+     * Picture compose.
      *
+     * @param direction
+     * @param bitmaps
      * @return
      */
     public static Bitmap potoMix(int direction, Bitmap... bitmaps) {
@@ -101,12 +104,12 @@ public class ImageUtils {
             return bitmaps[0];
         }
         Bitmap newBitmap = bitmaps[0];
-// newBitmap = createBitmapForFotoMix(bitmaps[0],bitmaps[1],direction);
         for (int i = 1; i < bitmaps.length; i++) {
             newBitmap = createBitmapForFotoMix(newBitmap, bitmaps[i], direction);
         }
         return newBitmap;
     }
+
 
     private static Bitmap createBitmapForFotoMix(Bitmap first, Bitmap second, int direction) {
         if (first == null) {
@@ -144,7 +147,14 @@ public class ImageUtils {
         return newBitmap;
     }
 
-    // 对分辨率较大的图片进行缩放
+    /**
+     * Zoom bitmap using Matrix
+     *
+     * @param bitmap
+     * @param width
+     * @param height
+     * @return
+     */
     public static Bitmap zoomBitmap(Bitmap bitmap, float width, float height) {
 
         int w = bitmap.getWidth();
@@ -157,7 +167,7 @@ public class ImageUtils {
 
         float scaleHeight = ((float) height / h);
 
-        matrix.postScale(scaleWidth, scaleHeight);// 利用矩阵进行缩放不会造成内存溢出
+        matrix.postScale(scaleWidth, scaleHeight);
 
         Bitmap newbmp = Bitmap.createBitmap(bitmap, 0, 0, w, h, matrix, true);
 
@@ -166,60 +176,70 @@ public class ImageUtils {
     }
 
     /**
-     * 保存图片为PNG
+     * Save bitmap to a .png file
      *
      * @param bitmap
      * @param name
      */
-    public static void savePNG_After(Bitmap bitmap, String name) {
+    public static void saveBitmapToPNG(Bitmap bitmap, String name) throws FileNotFoundException, IOException {
         File file = new File(name);
-        try {
-            FileOutputStream out = new FileOutputStream(file);
-            if (bitmap.compress(Bitmap.CompressFormat.PNG, 100, out)) {
-                out.flush();
-                out.close();
-            }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
+        FileOutputStream out = new FileOutputStream(file);
+        if (bitmap.compress(Bitmap.CompressFormat.PNG, 100, out)) {
+            out.flush();
+            out.close();
         }
     }
 
     /**
-     * 保存图片为JPEG
+     * Save bitmap to a .jpeg file
      *
      * @param bitmap
      * @param path
      */
-    public static void saveJPGE_After(Bitmap bitmap, String path) {
+    public static void saveJPGE_After(Bitmap bitmap, String path) throws FileNotFoundException, IOException {
         File file = new File(path);
-        try {
-            FileOutputStream out = new FileOutputStream(file);
-            if (bitmap.compress(Bitmap.CompressFormat.JPEG, 100, out)) {
-                out.flush();
-                out.close();
-            }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-
+        FileOutputStream out = new FileOutputStream(file);
+        if (bitmap.compress(Bitmap.CompressFormat.JPEG, 100, out)) {
+            out.flush();
+            out.close();
         }
     }
 
-    public static Bitmap revitionImageSize(String path, int width) throws IOException {
+    /**
+     * Revert image file to a square with custom size
+     *
+     * @param path
+     * @param width
+     * @return
+     * @throws IOException
+     */
+    public static Bitmap revertImageSize(String path, int width) throws IOException {
 
-        return revitionImageSize(path, width, width);
+        return revertImageSize(path, width, width);
     }
 
-    public static Bitmap revitionImageSize(String path) throws IOException {
+    /**
+     * Revert image file to a square with width and height equal 1000
+     *
+     * @param path
+     * @return
+     * @throws IOException
+     */
+    public static Bitmap revertImageSize(String path) throws IOException {
 
-        return revitionImageSize(path, 1000, 1000);
+        return revertImageSize(path, 1000, 1000);
     }
 
-    public static Bitmap revitionImageSize(String path, int width, int height) throws IOException {
+    /**
+     * Revert image file to custom size
+     *
+     * @param path
+     * @param width
+     * @param height
+     * @return
+     * @throws IOException
+     */
+    public static Bitmap revertImageSize(String path, int width, int height) throws IOException {
         BufferedInputStream in = new BufferedInputStream(new FileInputStream(
                 new File(path)));
         BitmapFactory.Options options = new BitmapFactory.Options();
@@ -243,6 +263,12 @@ public class ImageUtils {
         return bitmap;
     }
 
+    /**
+     * Convert a View to Bitmap using view.getDrawingCache()
+     *
+     * @param view
+     * @return
+     */
     public static Bitmap convertViewToBitmap(View view) {
         view.measure(View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED), View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED));
         view.layout(0, 0, view.getMeasuredWidth(), view.getMeasuredHeight());
@@ -251,6 +277,14 @@ public class ImageUtils {
         return bitmap;
     }
 
+    /**
+     * Convert a View to Bitmap using view.draw(new Canvas(bitmap))
+     *
+     * @param view
+     * @param bitmapWidth
+     * @param bitmapHeight
+     * @return
+     */
     public static Bitmap convertViewToBitmapWithCanvas(View view, int bitmapWidth, int bitmapHeight) {
         Bitmap bitmap = Bitmap.createBitmap(bitmapWidth, bitmapHeight, Bitmap.Config.ARGB_8888);
         view.draw(new Canvas(bitmap));

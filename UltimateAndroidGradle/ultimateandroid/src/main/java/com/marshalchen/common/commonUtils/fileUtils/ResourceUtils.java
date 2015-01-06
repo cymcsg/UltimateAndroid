@@ -15,7 +15,8 @@ import java.util.List;
 
 /**
  * ResourceUtils
- * 
+ *
+ * @author <a href="http://www.trinea.cn" target="_blank">Trinea</a> 2012-5-26
  */
 public class ResourceUtils {
 

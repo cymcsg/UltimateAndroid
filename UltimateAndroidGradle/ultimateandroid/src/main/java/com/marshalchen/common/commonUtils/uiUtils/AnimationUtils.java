@@ -7,17 +7,32 @@ package com.marshalchen.common.commonUtils.uiUtils;
 import android.animation.Keyframe;
 import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
+import android.annotation.TargetApi;
+import android.os.Build;
 import android.view.View;
-import com.marshalchen.common.R;
 
-
+/**
+ * Some shake Animation
+ */
+@TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
 public class AnimationUtils {
-
-    public static ObjectAnimator tada(View view) {
-        return tada(view, 1f);
+    /**
+     * @param view
+     * @return
+     * @see #wholeShake(android.view.View, float) ,default shakeFactor=1f
+     */
+    public static ObjectAnimator wholeShake(View view) {
+        return wholeShake(view, 1f);
     }
 
-    public static ObjectAnimator tada(View view, float shakeFactor) {
+    /**
+     * Shake the view for whole direction
+     *
+     * @param view
+     * @param shakeFactor
+     * @return
+     */
+    public static ObjectAnimator wholeShake(View view, float shakeFactor) {
 
         PropertyValuesHolder pvhScaleX = PropertyValuesHolder.ofKeyframe(View.SCALE_X,
                 Keyframe.ofFloat(0f, 1f),
@@ -65,7 +80,13 @@ public class AnimationUtils {
                 setDuration(1000);
     }
 
-    public static ObjectAnimator nope(View view) {
+    /**
+     * Shake the view from left to right
+     *
+     * @param view
+     * @return
+     */
+    public static ObjectAnimator leftRightShake(View view) {
         // int delta = view.getResources().getDimensionPixelOffset(R.dimen.spacing_medium);
         int delta = 40;
         PropertyValuesHolder pvhTranslateX = PropertyValuesHolder.ofKeyframe(View.TRANSLATION_X,

@@ -19,6 +19,9 @@ import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
 import com.marshalchen.common.R;
 
+/**
+ * A webview which support many Html5 feature like video ,audio etc.
+ */
 public class Html5Webview extends WebView {
 
     private Context mContext;
@@ -132,7 +135,7 @@ public class Html5Webview extends WebView {
 
         @Override
         public void onHideCustomView() {
-            System.out.println("customview hideeeeeeeeeeeeeeeeeeeeeeeeeee");
+
             if (mCustomView == null)
                 return;
 

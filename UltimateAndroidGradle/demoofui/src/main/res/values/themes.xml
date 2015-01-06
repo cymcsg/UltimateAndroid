@@ -10,7 +10,7 @@
         <item name="actionBarStyle">@style/ActionbarStyle</item>
         <!-- Set AppCompat’s color theming attrs -->
         <item name="colorPrimary">@color/red</item>
-        <item name="colorPrimaryDark">@color/orange</item>
+        <item name="colorPrimaryDark">@color/LightBlue</item>
         <item name="colorAccent">@color/blue</item>
         <!-- The rest of your attributes -->
     </style>

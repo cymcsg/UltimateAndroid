@@ -6,10 +6,18 @@ import java.io.*;
 import java.util.zip.*;
 
 /**
- * Zip an UnZip files that can  use zip or gzip
+ * Zip an unzip utils that can  use zip or gzip
  */
 public class ZipAndUnZip {
 
+
+    /**
+     * Unzip file
+     *
+     * @param unZipfileName
+     * @param mDestPath
+     * @return
+     */
     public static int unZip(String unZipfileName, String mDestPath) {
         if (!mDestPath.endsWith("/")) {
             mDestPath = mDestPath + "/";
@@ -61,7 +69,13 @@ public class ZipAndUnZip {
         }
     }
 
-
+    /**
+     * Unzip file using InputStream unzipfileStream
+     *
+     * @param unzipfileStream
+     * @param mDestPath
+     * @return
+     */
     public static int unZip(InputStream unzipfileStream, String mDestPath) {
         if (!mDestPath.endsWith("/")) {
             mDestPath = mDestPath + "/";
@@ -142,6 +156,13 @@ public class ZipAndUnZip {
         return fname;
     }
 
+    /**
+     * Gzip file.
+     *
+     * @param zipfileName
+     * @param mDestFile
+     * @throws Exception
+     */
     public static void gzips(String zipfileName, String mDestFile) throws Exception {
 
         BufferedReader in = new BufferedReader(new InputStreamReader(new FileInputStream(zipfileName), "UTF-8"));
@@ -157,7 +178,24 @@ public class ZipAndUnZip {
 
     }
 
+    /**
+     * Unzip a gzip file with default output file path.
+     *
+     * @param inFileName
+     * @throws Exception
+     */
     public static void unzipGzips(String inFileName) throws Exception {
+        unzipGzips(inFileName, getFileName(inFileName));
+    }
+
+    /**
+     * Unzip a gzip file.
+     *
+     * @param inFileName
+     * @param outFileName
+     * @throws Exception
+     */
+    public static void unzipGzips(String inFileName, String outFileName) throws Exception {
         GZIPInputStream in = null;
         FileOutputStream out = null;
         try {
@@ -175,9 +213,7 @@ public class ZipAndUnZip {
                 System.err.println("File not found. " + inFileName);
                 System.exit(1);
             }
-
             System.out.println("Open the output file.");
-            String outFileName = getFileName(inFileName);
 
             try {
                 out = new FileOutputStream(outFileName);
@@ -210,7 +246,12 @@ public class ZipAndUnZip {
         }
     }
 
-
+    /**
+     * Zip a file.
+     *
+     * @param fileFrom
+     * @param fileTo
+     */
     public static void zipFile(String fileFrom, String fileTo) {
         FileInputStream in = null;
         FileOutputStream out = null;
