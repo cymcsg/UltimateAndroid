@@ -306,9 +306,8 @@ public class BasicUtils {
      * @see #judgeNotNull(String, String...)
      */
     public static boolean judgeNotNull(String string) {
-        // return string != null && !string.equals("") && !string.equals("null") ? true : false;
+        return string != null && !string.equals("") && !string.equals("null") ? true : false;
 
-        return judgeNotNull(string, new String[0]);
     }
 
     /**
