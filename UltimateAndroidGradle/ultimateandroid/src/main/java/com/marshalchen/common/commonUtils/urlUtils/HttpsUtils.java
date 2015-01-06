@@ -1,13 +1,16 @@
 package com.marshalchen.common.commonUtils.urlUtils;
 
 
+import android.accounts.NetworkErrorException;
 import android.content.Context;
+
 import com.marshalchen.common.commonUtils.logUtils.Logs;
 
 import javax.net.ssl.HttpsURLConnection;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.TrustManagerFactory;
+
 import java.io.*;
 
 import java.net.URL;
@@ -22,11 +25,17 @@ import java.security.cert.X509Certificate;
 
 public class HttpsUtils {
 
-    public static Certificate getX509CertifaceteFromCrtFile() {
+    /**
+     * Get X509 Certificate
+     *
+     * @param certFilePath
+     * @return Certificate
+     */
+    public static Certificate getX509CertifaceteFromCrtFile(String certFilePath) {
         InputStream inStream = null;
         X509Certificate cert = null;
         try {
-            inStream = new FileInputStream("fileName-of-cert");
+            inStream = new FileInputStream(certFilePath);
             CertificateFactory cf = CertificateFactory.getInstance("X.509");
             cert = (X509Certificate) cf.generateCertificate(inStream);
             inStream.close();
@@ -38,15 +47,20 @@ public class HttpsUtils {
         }
     }
 
-    public static SSLSocketFactory buildSslSocketFactory(Context context,String crtUrl) {
-
+    /**
+     * Build SSLSocketFactory using certificate file from assets.
+     *
+     * @param context
+     * @param certFilePath
+     * @return
+     */
+    public static SSLSocketFactory buildSslSocketFactory(Context context, String certFilePath) {
         try {
-
             // Load CAs from an InputStream
             // (could be from a resource or ByteArrayInputStream or ...)
             CertificateFactory cf = CertificateFactory.getInstance("X.509");
-            // From https://www.washington.edu/itconnect/security/ca/load-der.crt
-            InputStream is = context.getResources().getAssets().open(crtUrl);
+
+            InputStream is = context.getResources().getAssets().open(certFilePath);
             InputStream caInput = new BufferedInputStream(is);
             Certificate ca;
             try {
@@ -90,11 +104,11 @@ public class HttpsUtils {
     /**
      * @deprecated
      */
-    public static void sendWithSSlSocket() {
+    public static void sendWithSSlSocket(String urlLink) {
         SSLSocketFactory sslsocketfactory = (SSLSocketFactory) SSLSocketFactory.getDefault();
         URL url = null;
         try {
-            url = new URL("https://xxx.xxx");
+            url = new URL(urlLink);
             HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
             conn.setSSLSocketFactory(sslsocketfactory);
             InputStream inputstream = conn.getInputStream();
@@ -112,23 +126,46 @@ public class HttpsUtils {
 
     }
 
-    public static void sendWithSSlSocketWithCrt(Context context, String crtUri,String uri) {
-        SSLSocketFactory sslsocketfactory = buildSslSocketFactory(context,crtUri);
-        URL url = null;
+    /**
+     * Send https request with certificate file in assets.
+     *
+     * @param context
+     * @param certFilePath
+     * @param uri
+     * @return The response from server.
+     * @throws Exception
+     */
+    public static String sendWithSSlSocketWithCrt(Context context, String certFilePath, String uri) throws Exception{
+        SSLSocketFactory sslsocketfactory = buildSslSocketFactory(context, certFilePath);
+        URL url;
+        InputStream inputstream = null;
+        InputStreamReader inputstreamreader = null;
+        BufferedReader bufferedreader = null;
+        StringBuilder content = new StringBuilder("");
         try {
             url = new URL(uri);
             HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
             conn.setSSLSocketFactory(sslsocketfactory);
-            InputStream inputstream = conn.getInputStream();
-            InputStreamReader inputstreamreader = new InputStreamReader(inputstream);
-            BufferedReader bufferedreader = new BufferedReader(inputstreamreader);
+            inputstream = conn.getInputStream();
+            inputstreamreader = new InputStreamReader(inputstream);
+            bufferedreader = new BufferedReader(inputstreamreader);
             String string = null;
             while ((string = bufferedreader.readLine()) != null) {
-                Logs.d("Received " + string);
+                content.append(string);
+
             }
+            bufferedreader.close();
+            return content.toString();
         } catch (Exception e) {
-            e.printStackTrace();
             Logs.e(e, "");
+            throw e;
+        } finally {
+            if (inputstream != null)
+                inputstream.close();
+            if (inputstreamreader != null)
+                inputstreamreader.close();
+            if (bufferedreader != null)
+                bufferedreader.close();
         }
 
     }
