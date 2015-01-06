@@ -15,7 +15,8 @@ import android.view.animation.LinearInterpolator;
 import android.view.animation.RotateAnimation;
 import android.widget.*;
 import android.widget.AbsListView.OnScrollListener;
-import com.marshalchen.common.R;
+
+import com.marshalchen.common.uimodule.R;
 
 
 /**
