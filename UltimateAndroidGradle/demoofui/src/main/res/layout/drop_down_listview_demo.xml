@@ -4,7 +4,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-    <com.marshalchen.common.ui.DropDownListView
+    <com.marshalchen.common.uimodule.simplemodule.DropDownListView
             android:id="@+id/list_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

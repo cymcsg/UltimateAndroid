@@ -14,7 +14,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.ui.DropDownListView;
+import com.marshalchen.common.uimodule.simplemodule.DropDownListView;
 import com.marshalchen.common.ui.ToastUtil;
 
 

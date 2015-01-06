@@ -230,15 +230,15 @@ public class DemoOfUiActivity extends ActionBarActivity {
         // getSupportParentActivityIntent();
     }
 
-    private void testHttps() {
-        new Thread() {
-            @Override
-            public void run() {
-                super.run();
-                HttpsUtils.sendWithSSlSocketWithCrt(DemoOfUiActivity.this, "ca.crt", "https://xxx.xxx");
-            }
-        }.start();
-    }
+//    private void testHttps() {
+//        new Thread() {
+//            @Override
+//            public void run() {
+//                super.run();
+//                HttpsUtils.sendWithSSlSocketWithCrt(DemoOfUiActivity.this, "ca.crt", "https://xxx.xxx");
+//            }
+//        }.start();
+//    }
 
     private void initShimmerTextView() {
         main_content_frame.setVisibility(View.INVISIBLE);
