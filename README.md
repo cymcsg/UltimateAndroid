@@ -27,7 +27,7 @@ UltimateAndroid
 
 ###Update Ui for Material Design!
 ### Support Android Studio 1.0
-##### You can see javadoc [here](http://blog.marshalchen.com/UltimateAndroid/)
+##### You can see javadoc [here](http://blog.marshalchen.com/UltimateAndroid/ultimateandroiddoc/index.html)
 
 
 
