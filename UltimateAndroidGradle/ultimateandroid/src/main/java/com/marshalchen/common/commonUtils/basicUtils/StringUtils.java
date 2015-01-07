@@ -71,18 +71,7 @@ public class StringUtils {
 
     }
 
-    /**
-     * Get SHA1 of the String
-     *
-     * @param string
-     * @return
-     */
-    public static String SHA1(String string) throws NoSuchAlgorithmException {
-        MessageDigest digest = MessageDigest.getInstance("SHA-1");
-        digest.update(string.getBytes());
-        byte messageDigest[] = digest.digest();
-        return toHexString(messageDigest);
-    }
+
 
     /**
      * Convert byte[] to Hex String

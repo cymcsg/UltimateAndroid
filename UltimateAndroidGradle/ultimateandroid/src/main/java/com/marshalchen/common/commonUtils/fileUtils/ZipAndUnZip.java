@@ -122,39 +122,6 @@ public class ZipAndUnZip {
         }
     }
 
-    /**
-     * Used to extract and return the extension of a given file.
-     *
-     * @param f Incoming file to get the extension of
-     * @return <code>String</code> representing the extension of the incoming
-     * file.
-     */
-    public static String getExtension(String f) {
-        String ext = "";
-        int i = f.lastIndexOf('.');
-
-        if (i > 0 && i < f.length() - 1) {
-            ext = f.substring(i + 1);
-        }
-        return ext;
-    }
-
-    /**
-     * Used to extract the filename without its extension.
-     *
-     * @param f Incoming file to get the filename
-     * @return <code>String</code> representing the filename without its
-     * extension.
-     */
-    public static String getFileName(String f) {
-        String fname = "";
-        int i = f.lastIndexOf('.');
-
-        if (i > 0 && i < f.length() - 1) {
-            fname = f.substring(0, i);
-        }
-        return fname;
-    }
 
     /**
      * Gzip file.
@@ -185,7 +152,7 @@ public class ZipAndUnZip {
      * @throws Exception
      */
     public static void unzipGzips(String inFileName) throws Exception {
-        unzipGzips(inFileName, getFileName(inFileName));
+        unzipGzips(inFileName, FileUtils.getFileNameWithoutExtension(inFileName));
     }
 
     /**
@@ -200,7 +167,7 @@ public class ZipAndUnZip {
         FileOutputStream out = null;
         try {
 
-            if (!getExtension(inFileName).equalsIgnoreCase("gz")) {
+            if (!FileUtils.getFileExtension(inFileName).equalsIgnoreCase("gz")) {
                 System.err.println("File name must have extension of \".gz\"");
                 System.exit(1);
             }
