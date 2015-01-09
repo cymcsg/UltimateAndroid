@@ -3,7 +3,6 @@ package com.marshalchen.common.usefulModule;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.graphics.drawable.Drawable;
 import android.os.Handler;
 import android.os.Message;
 import android.view.LayoutInflater;
@@ -11,18 +10,13 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
 import com.marshalchen.common.R;
-import com.marshalchen.common.commonUtils.basicUtils.BasicUtils;
-import com.marshalchen.common.commonUtils.basicUtils.HandlerUtils;
-import com.marshalchen.common.commonUtils.logUtils.Logs;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 /**
- * Created by cym on 14-9-16.
+ * A custom DownloadDialogShower to show download progress dialog easily
  */
-public class DialogShower {
+public class DownloadDialogShower {
     ProgressBar mProgress;
     AlertDialog.Builder builder;
     AlertDialog progressDialog;
@@ -35,7 +29,7 @@ public class DialogShower {
     public static final int DOWN_ERROR = 3;
     Context mContext;
 
-    private DialogShower(Context mContext) {
+    private DownloadDialogShower(Context mContext) {
         this.mContext = mContext;
         initVariables();
     }
@@ -273,11 +267,11 @@ public class DialogShower {
 
     public static class Builder {
         Context builderContext;
-        private DialogShower dialogShower;
+        private DownloadDialogShower downloadDialogShower;
 
         public Builder(Context context) {
             initDefaults(context);
-            dialogShower = new DialogShower(builderContext);
+            downloadDialogShower = new DownloadDialogShower(builderContext);
         }
 
         private void initDefaults(Context context) {
@@ -286,72 +280,72 @@ public class DialogShower {
         }
 
         public Builder setNoticeTitle(String title) {
-            dialogShower.setNoticeTitle(title);
+            downloadDialogShower.setNoticeTitle(title);
             return this;
         }
 
         public Builder setDownloadTitle(String title) {
-            dialogShower.setDownloadTitle(title);
+            downloadDialogShower.setDownloadTitle(title);
             return this;
         }
 
         public Builder setErrorTitle(String title) {
-            dialogShower.setErrorTitle(title);
+            downloadDialogShower.setErrorTitle(title);
             return this;
         }
 
         public Builder setCurrentDownload(String title) {
-            dialogShower.setCurrentDownload(title);
+            downloadDialogShower.setCurrentDownload(title);
             return this;
         }
 
         public Builder setDownloadCancel(String title) {
-            dialogShower.setDownloadCancel(title);
+            downloadDialogShower.setDownloadCancel(title);
             return this;
         }
 
         public Builder setDownloadFinshed(String title) {
-            dialogShower.setDownloadFinshed(title);
+            downloadDialogShower.setDownloadFinshed(title);
             return this;
         }
 
         public Builder setErrorButton(String title) {
-            dialogShower.setErrorButton(title);
+            downloadDialogShower.setErrorButton(title);
             return this;
         }
 
         public Builder setErrorMessage(String title) {
-            dialogShower.setErrorMessage(title);
+            downloadDialogShower.setErrorMessage(title);
             return this;
         }
 
         public Builder setNegativeButtonString(String title) {
-            dialogShower.setNegativeButtonString(title);
+            downloadDialogShower.setNegativeButtonString(title);
             return this;
         }
 
         public Builder setPositiveButtonString(String title) {
-            dialogShower.setPositiveButtonString(title);
+            downloadDialogShower.setPositiveButtonString(title);
             return this;
         }
 
         public Builder setPrepareDownloadingTextViewString(String title) {
-            dialogShower.setPrepareDownloadingTextViewString(title);
+            downloadDialogShower.setPrepareDownloadingTextViewString(title);
             return this;
         }
 
         public Builder setTotalDownload(String title) {
-            dialogShower.setTotalDownload(title);
+            downloadDialogShower.setTotalDownload(title);
             return this;
         }
 
         public Builder setUpdateCurrentTextViewString(String title) {
-            dialogShower.setUpdateCurrentTextViewString(title);
+            downloadDialogShower.setUpdateCurrentTextViewString(title);
             return this;
         }
 
-        public DialogShower build() {
-            return dialogShower;
+        public DownloadDialogShower build() {
+            return downloadDialogShower;
         }
     }
 }

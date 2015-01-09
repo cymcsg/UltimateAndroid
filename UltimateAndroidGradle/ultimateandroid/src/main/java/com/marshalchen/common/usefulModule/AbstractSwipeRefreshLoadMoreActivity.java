@@ -6,10 +6,12 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
+
 import com.marshalchen.common.R;
 
 /**
- * Created by cym on 14-9-11.
+ * An abstract activity which contains SwipeRefresh and load more.
+ * You can simply extend it like an activity
  */
 public abstract class AbstractSwipeRefreshLoadMoreActivity extends ActionBarActivity implements SwipeRefreshLayout.OnRefreshListener {
 
