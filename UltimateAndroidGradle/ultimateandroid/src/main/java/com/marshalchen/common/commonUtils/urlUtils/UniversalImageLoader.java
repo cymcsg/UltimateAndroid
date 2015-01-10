@@ -63,10 +63,10 @@ public class UniversalImageLoader {
 //                .memoryCache(new LruMemoryCache(2 * 1024 * 1024))
 //                .memoryCacheSize(2 * 1024 * 1024)
                 .memoryCacheSizePercentage(13) // default
-                .discCache(new UnlimitedDiscCache(cacheDir)) // default
+                .diskCache(new UnlimitedDiscCache(cacheDir)) // default
 //                .discCacheSize(50 * 1024 * 1024)
-                .discCacheFileCount(1000)
-                .discCacheFileNameGenerator(new HashCodeFileNameGenerator()) // default
+                .diskCacheFileCount(1000)
+                .diskCacheFileNameGenerator(new HashCodeFileNameGenerator()) // default
                 .imageDownloader(new BaseImageDownloader(context)) // default
                 .imageDecoder(new BaseImageDecoder(false)) // default
                         //   .defaultDisplayImageOptions(DisplayImageOptions.createSimple()) // default
@@ -99,7 +99,7 @@ public class UniversalImageLoader {
                 .displayer(new SimpleBitmapDisplayer()) // default
                 .handler(new Handler()) // default
                 .cacheInMemory(true)
-                .cacheOnDisc(true);
+                .cacheOnDisk(true);
         return builder;
     }
 }

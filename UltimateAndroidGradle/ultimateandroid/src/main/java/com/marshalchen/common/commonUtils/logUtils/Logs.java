@@ -71,61 +71,113 @@ public final class Logs {
         }
     }
 
+    /**
+     * Send a VERBOSE log message.
+     *
+     * @param msg
+     */
     public static void v(String msg) {
         if (sIsLogEnabled) {
             Log.v(sApplicationTag, getContents(getCurrentStackTraceElement()) + ">" + msg);
         }
     }
 
+    /**
+     * Send a DEBUG log message.
+     *
+     * @param tag
+     * @param msg
+     */
     public static void d(String tag, String msg) {
         if (sIsLogEnabled) {
             Log.d(tag, getContent(getCurrentStackTraceElement()) + ">" + msg);
         }
     }
 
-
+    /**
+     * Send a DEBUG log message.
+     *
+     * @param msg
+     */
     public static void d(String msg) {
         if (sIsLogEnabled) {
             Log.d(sApplicationTag, getContents(getCurrentStackTraceElement()) + ">" + msg);
         }
     }
 
+    /**
+     * Send an INFO log message.
+     *
+     * @param tag
+     * @param msg
+     */
     public static void i(String tag, String msg) {
         if (sIsLogEnabled) {
             Log.i(tag, getContent(getCurrentStackTraceElement()) + ">" + msg);
         }
     }
 
+    /**
+     * @param message
+     * @param args
+     */
     public static void d(String message, Object... args) {
         if (sIsLogEnabled) {
             d(String.format(message, args));
         }
     }
 
+    /**
+     * Send a WARN log message.
+     *
+     * @param tag
+     * @param msg
+     */
     public static void w(String tag, String msg) {
         if (sIsLogEnabled) {
             Log.w(tag, getContent(getCurrentStackTraceElement()) + ">" + msg);
         }
     }
 
+    /**
+     * Send an ERROR log message.
+     *
+     * @param tag
+     * @param msg
+     */
     public static void e(String tag, String msg) {
         if (sIsLogEnabled) {
             Log.e(tag, getContent(getCurrentStackTraceElement()) + ">" + msg);
         }
     }
 
+    /**
+     * Send an INFO log message.
+     *
+     * @param msg
+     */
     public static void i(String msg) {
         if (sIsLogEnabled) {
             Log.i(sApplicationTag, getContent(getCurrentStackTraceElement()) + ">" + msg);
         }
     }
 
+    /**
+     * Send a WARN log message.
+     *
+     * @param msg
+     */
     public static void w(String msg) {
         if (sIsLogEnabled) {
             Log.w(sApplicationTag, getContent(getCurrentStackTraceElement()) + ">" + msg);
         }
     }
 
+    /**
+     * Send an ERROR log message.
+     *
+     * @param msg
+     */
     public static void e(String msg) {
         if (sIsLogEnabled) {
             Log.e(sApplicationTag, getContent(getCurrentStackTraceElement()) + "\n>" + msg);
@@ -133,6 +185,11 @@ public final class Logs {
         }
     }
 
+    /**
+     * Send an ERROR log message.
+     *
+     * @param exception
+     */
     public static void e(Exception exception) {
         if (sIsLogEnabled) {
             Log.e(sApplicationTag, getContent(getCurrentStackTraceElement()) + "\n>" + exception.getMessage());
@@ -140,6 +197,12 @@ public final class Logs {
         }
     }
 
+    /**
+     * Send an ERROR log message.
+     *
+     * @param exception
+     * @param string
+     */
     public static void e(Exception exception, String string) {
         if (sIsLogEnabled) {
             Log.e(sApplicationTag, getContent(getCurrentStackTraceElement()) + "\n>" + exception.getMessage() + "\n>" + exception.getStackTrace() + "   " + string);
@@ -147,6 +210,12 @@ public final class Logs {
         }
     }
 
+    /**
+     * Send an ERROR log message.
+     *
+     * @param string
+     * @param exception
+     */
     public static void e(String string, Exception exception) {
         if (sIsLogEnabled) {
             Log.e(sApplicationTag, getContent(getCurrentStackTraceElement()) + "\n>" + exception.getMessage() + "\n>" + exception.getStackTrace() + "   " + string);
@@ -154,6 +223,13 @@ public final class Logs {
         }
     }
 
+    /**
+     * Send an ERROR log message.
+     *
+     * @param tag
+     * @param message
+     * @param exception
+     */
     public static void e(String tag, String message, Exception exception) {
         if (sIsLogEnabled) {
             Log.e(tag, getContent(getCurrentStackTraceElement()) + "\n>" + exception.getMessage() + "\n>" + exception.getStackTrace() + "   " + message);
@@ -162,13 +238,13 @@ public final class Logs {
     }
 
 
-
     public static boolean issIsLogEnabled() {
         return sIsLogEnabled;
     }
 
 
     /**
+     * Set if the Logs print log or not
      *
      * @param sIsLogEnabled
      */
