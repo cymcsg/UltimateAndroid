@@ -1,8 +1,7 @@
-/*
- * Copyright (c) 2014. Marshal Chen.
- */
-
 package com.marshalchen.common.commonUtils.fileUtils;
+
+import java.io.File;
+import java.util.List;
 
 import android.app.ActivityManager;
 import android.app.ActivityManager.RunningTaskInfo;
@@ -16,57 +15,57 @@ import android.net.Uri;
 import android.os.Build;
 import android.provider.Settings;
 import android.util.Log;
+
 import com.marshalchen.common.commonUtils.basicUtils.BasicUtils;
 
-
-import java.io.File;
-import java.util.List;
-
 /**
- * DataBaseUtils
+ * PackageUtils
  * <ul>
  * <strong>Install package</strong>
- * <li>{@link com.marshalchen.common.commonUtils.fileUtils.PackageUtils#installNormal(android.content.Context, String)}</li>
- * <li>{@link com.marshalchen.common.commonUtils.fileUtils.PackageUtils#installSilent(android.content.Context, String)}</li>
- * <li>{@link com.marshalchen.common.commonUtils.fileUtils.PackageUtils#install(android.content.Context, String)}</li>
+ * <li>{@link PackageUtils#installNormal(Context, String)}</li>
+ * <li>{@link PackageUtils#installSilent(Context, String)}</li>
+ * <li>{@link PackageUtils#install(Context, String)}</li>
  * </ul>
  * <ul>
  * <strong>Uninstall package</strong>
- * <li>{@link com.marshalchen.common.commonUtils.fileUtils.PackageUtils#uninstallNormal(android.content.Context, String)}</li>
- * <li>{@link com.marshalchen.common.commonUtils.fileUtils.PackageUtils#uninstallSilent(android.content.Context, String)}</li>
- * <li>{@link com.marshalchen.common.commonUtils.fileUtils.PackageUtils#uninstall(android.content.Context, String)}</li>
+ * <li>{@link PackageUtils#uninstallNormal(Context, String)}</li>
+ * <li>{@link PackageUtils#uninstallSilent(Context, String)}</li>
+ * <li>{@link PackageUtils#uninstall(Context, String)}</li>
  * </ul>
  * <ul>
  * <strong>Is system application</strong>
- * <li>{@link com.marshalchen.common.commonUtils.fileUtils.PackageUtils#isSystemApplication(android.content.Context)}</li>
- * <li>{@link com.marshalchen.common.commonUtils.fileUtils.PackageUtils#isSystemApplication(android.content.Context, String)}</li>
- * <li>{@link com.marshalchen.common.commonUtils.fileUtils.PackageUtils#isSystemApplication(android.content.pm.PackageManager, String)}</li>
+ * <li>{@link PackageUtils#isSystemApplication(Context)}</li>
+ * <li>{@link PackageUtils#isSystemApplication(Context, String)}</li>
+ * <li>{@link PackageUtils#isSystemApplication(PackageManager, String)}</li>
  * </ul>
  * <ul>
  * <strong>Others</strong>
- * <li>{@link com.marshalchen.common.commonUtils.fileUtils.PackageUtils#getInstallLocation()} get system install location</li>
- * <li>{@link com.marshalchen.common.commonUtils.fileUtils.PackageUtils#isTopActivity(android.content.Context, String)} whether the app whost package's name is packageName is on the
+ * <li>{@link PackageUtils#getInstallLocation()} get system install location</li>
+ * <li>{@link PackageUtils#isTopActivity(Context, String)} whether the app whost package's name is packageName is on the
  * top of the stack</li>
- * <li>{@link com.marshalchen.common.commonUtils.fileUtils.PackageUtils#startInstalledAppDetails(android.content.Context, String)} start InstalledAppDetails Activity</li>
+ * <li>{@link PackageUtils#startInstalledAppDetails(Context, String)} start InstalledAppDetails Activity</li>
  * </ul>
  *
  * @author <a href="http://www.trinea.cn" target="_blank">Trinea</a> 2013-5-15
  */
 public class PackageUtils {
 
-    public static final String TAG                  = "DataBaseUtils";
-    /**
-     * App installation location settings values, same to {@link com.marshalchen.common.commonUtils.fileUtils.PackageUtils#APP_INSTALL_AUTO}
-     */
-    public static final int    APP_INSTALL_AUTO     = 0;
-    public static final int    APP_INSTALL_INTERNAL = 1;
-    public static final int    APP_INSTALL_EXTERNAL = 2;
+    public static final String TAG = "PackageUtils";
+
+    private PackageUtils() {
+        throw new AssertionError();
+    }
+
+
+    public static final int APP_INSTALL_AUTO     = 0;
+    public static final int APP_INSTALL_INTERNAL = 1;
+    public static final int APP_INSTALL_EXTERNAL = 2;
 
     /**
      * install according conditions
      * <ul>
-     * <li>if system application or rooted, see {@link #installSilent(android.content.Context, String)}</li>
-     * <li>else see {@link #installNormal(android.content.Context, String)}</li>
+     * <li>if system application or rooted, see {@link #installSilent(Context, String)}</li>
+     * <li>else see {@link #installNormal(Context, String)}</li>
      * </ul>
      *
      * @param context
@@ -112,9 +111,9 @@ public class PackageUtils {
      *
      * @param context
      * @param filePath file path of package
-     * @return {@link com.marshalchen.common.commonUtils.fileUtils.PackageUtils#INSTALL_SUCCEEDED} means install success, other means failed. details see
-     *         {@link com.marshalchen.common.commonUtils.fileUtils.PackageUtils}.INSTALL_FAILED_*. same to {@link android.content.pm.PackageManager}.INSTALL_*
-     * @see #installSilent(android.content.Context, String, String)
+     * @return {@link PackageUtils#INSTALL_SUCCEEDED} means install success, other means failed. details see
+     *         {@link PackageUtils}.INSTALL_FAILED_*. same to {@link PackageManager}.INSTALL_*
+     * @see #installSilent(Context, String, String)
      */
     public static int installSilent(Context context, String filePath) {
         return installSilent(context, filePath, " -r " + getInstallLocationParams());
@@ -132,8 +131,8 @@ public class PackageUtils {
      * @param context
      * @param filePath file path of package
      * @param pmParams pm install params
-     * @return {@link com.marshalchen.common.commonUtils.fileUtils.PackageUtils#INSTALL_SUCCEEDED} means install success, other means failed. details see
-     *         {@link com.marshalchen.common.commonUtils.fileUtils.PackageUtils}.INSTALL_FAILED_*. same to {@link android.content.pm.PackageManager}.INSTALL_*
+     * @return {@link PackageUtils#INSTALL_SUCCEEDED} means install success, other means failed. details see
+     *         {@link PackageUtils}.INSTALL_FAILED_*. same to {@link PackageManager}.INSTALL_*
      */
     public static int installSilent(Context context, String filePath, String pmParams) {
         if (filePath == null || filePath.length() == 0) {
@@ -274,8 +273,8 @@ public class PackageUtils {
     /**
      * uninstall according conditions
      * <ul>
-     * <li>if system application or rooted, see {@link #uninstallSilent(android.content.Context, String)}</li>
-     * <li>else see {@link #uninstallNormal(android.content.Context, String)}</li>
+     * <li>if system application or rooted, see {@link #uninstallSilent(Context, String)}</li>
+     * <li>else see {@link #uninstallNormal(Context, String)}</li>
      * </ul>
      *
      * @param context
@@ -315,7 +314,7 @@ public class PackageUtils {
      * @param context
      * @param packageName package name of app
      * @return
-     * @see #uninstallSilent(android.content.Context, String, boolean)
+     * @see #uninstallSilent(Context, String, boolean)
      */
     public static int uninstallSilent(Context context, String packageName) {
         return uninstallSilent(context, packageName, true);
@@ -329,7 +328,7 @@ public class PackageUtils {
      * <li>You should add <strong>android.permission.DELETE_PACKAGES</strong> in manifest, so no need to request root
      * permission, if you are system app.</li>
      * </ul>
-     * 
+     *
      * @param context file path of package
      * @param packageName package name of app
      * @param isKeepData whether keep the data and cache directories around after package removal
@@ -369,7 +368,7 @@ public class PackageUtils {
 
     /**
      * whether context is system application
-     * 
+     *
      * @param context
      * @return
      */
@@ -383,7 +382,7 @@ public class PackageUtils {
 
     /**
      * whether packageName is system application
-     * 
+     *
      * @param context
      * @param packageName
      * @return
@@ -398,7 +397,7 @@ public class PackageUtils {
 
     /**
      * whether packageName is system application
-     * 
+     *
      * @param packageManager
      * @param packageName
      * @return <ul>
@@ -429,20 +428,20 @@ public class PackageUtils {
      * <strong>Attentions:</strong>
      * <li>You should add <strong>android.permission.GET_TASKS</strong> in manifest</li>
      * </ul>
-     * 
+     *
      * @param context
      * @param packageName
      * @return if params error or task stack is null, return null, otherwise retun whether the app is on the top of
      *         stack
      */
     public static Boolean isTopActivity(Context context, String packageName) {
-        if (context == null || BasicUtils.judgeNotNull(packageName)) {
+        if (context == null || !BasicUtils.judgeNotNull(packageName)) {
             return null;
         }
 
         ActivityManager activityManager = (ActivityManager)context.getSystemService(Context.ACTIVITY_SERVICE);
         List<RunningTaskInfo> tasksInfo = activityManager.getRunningTasks(1);
-        if (BasicUtils.judgeNotNull(tasksInfo)) {
+        if (!BasicUtils.judgeNotNull(tasksInfo)) {
             return null;
         }
         try {
@@ -455,7 +454,7 @@ public class PackageUtils {
 
     /**
      * get app version code
-     * 
+     *
      * @param context
      * @return
      */
@@ -480,9 +479,8 @@ public class PackageUtils {
     /**
      * get system install location<br/>
      * can be set by System Menu Setting->Storage->Prefered install location
-     * 
+     *
      * @return
-     * @see {@link com.marshalchen.common.commonUtils.fileUtils.PackageUtils#getInstallLocation()}
      */
     public static int getInstallLocation() {
         ShellUtils.CommandResult commandResult = ShellUtils.execCommand(
@@ -506,7 +504,7 @@ public class PackageUtils {
 
     /**
      * get params for pm install location
-     * 
+     *
      * @return
      */
     private static String getInstallLocationParams() {
@@ -522,20 +520,21 @@ public class PackageUtils {
 
     /**
      * start InstalledAppDetails Activity
-     * 
+     *
      * @param context
      * @param packageName
      */
     public static void startInstalledAppDetails(Context context, String packageName) {
         Intent intent = new Intent();
         int sdkVersion = Build.VERSION.SDK_INT;
-        if (sdkVersion >= 9) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.GINGERBREAD) {
             intent.setAction(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
             intent.setData(Uri.fromParts("package", packageName, null));
         } else {
             intent.setAction(Intent.ACTION_VIEW);
             intent.setClassName("com.android.settings", "com.android.settings.InstalledAppDetails");
-            intent.putExtra((sdkVersion == 8 ? "pkg" : "com.android.settings.ApplicationPkgName"), packageName);
+            intent.putExtra((sdkVersion == Build.VERSION_CODES.FROYO ? "pkg"
+                    : "com.android.settings.ApplicationPkgName"), packageName);
         }
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         context.startActivity(intent);
@@ -637,7 +636,6 @@ public class PackageUtils {
     /**
      * Installation return code<br/>
      * the new package failed because it has specified that it is a test-only package and the caller has not supplied
-     * the {@link #INSTALL_FAILED_TEST_ONLY} flag.
      */
     public static final int INSTALL_FAILED_TEST_ONLY                       = -15;
 
