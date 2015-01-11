@@ -6,19 +6,19 @@ import java.io.*;
 import java.util.zip.*;
 
 /**
- * Zip an unzip utils that can  use zip or gzip
+ * Zip an unzip utils that can use zip or gzip
  */
-public class ZipAndUnZip {
+public class ZipAndUnzip {
 
 
     /**
      * Unzip file
      *
-     * @param unZipfileName
+     * @param unzipfileName
      * @param mDestPath
      * @return
      */
-    public static int unZip(String unZipfileName, String mDestPath) {
+    public static int unZip(String unzipfileName, String mDestPath) {
         if (!mDestPath.endsWith("/")) {
             mDestPath = mDestPath + "/";
         }
@@ -29,7 +29,7 @@ public class ZipAndUnZip {
         int readedBytes = 0;
         byte buf[] = new byte[4096];
         try {
-            zipIn = new ZipInputStream(new BufferedInputStream(new FileInputStream(unZipfileName)));
+            zipIn = new ZipInputStream(new BufferedInputStream(new FileInputStream(unzipfileName)));
             while ((zipEntry = zipIn.getNextEntry()) != null) {
                 file = new File(mDestPath + zipEntry.getName());
                 if (zipEntry.isDirectory()) {
@@ -126,15 +126,15 @@ public class ZipAndUnZip {
     /**
      * Gzip file.
      *
-     * @param zipfileName
+     * @param zipFileName
      * @param mDestFile
      * @throws Exception
      */
-    public static void gzips(String zipfileName, String mDestFile) throws Exception {
+    public static void gzips(String zipFileName, String mDestFile) throws Exception {
 
-        BufferedReader in = new BufferedReader(new InputStreamReader(new FileInputStream(zipfileName), "UTF-8"));
+        BufferedReader in = new BufferedReader(new InputStreamReader(new FileInputStream(zipFileName), "UTF-8"));
 
-        BufferedOutputStream out = new BufferedOutputStream(new GZIPOutputStream(new FileOutputStream(zipfileName)));
+        BufferedOutputStream out = new BufferedOutputStream(new GZIPOutputStream(new FileOutputStream(mDestFile)));
         int c;
         while ((c = in.read()) != -1) {
 
