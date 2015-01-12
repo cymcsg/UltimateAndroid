@@ -67,5 +67,6 @@ dependencies {
     // compile 'com.github.androidprogresslayout:library:1.1@aar'
     compile "com.github.andkulikov:transitions-everywhere:1.2.1"
     compile 'com.github.hotchemi:ProgressMenuItem:0.3.3'
+    compile(group: 'com.github.navasmdc', name: 'MaterialDesign', version: '1.0', ext: 'aar')
 
 }

@@ -185,7 +185,7 @@ public class NumberProgressBar extends View {
         }
 
         setProgress(attributes.getInt(R.styleable.NumberProgressBar_progress_num, 0));
-        setMax(attributes.getInt(R.styleable.NumberProgressBar_max, 100));
+        setMax(attributes.getInt(R.styleable.NumberProgressBar_number_progressbar_max, 100));
         //
         attributes.recycle();
 

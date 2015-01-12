@@ -239,7 +239,7 @@ public class HoloCircularProgressBar extends View {
 		setProgressColor(attributes.getColor(R.styleable.HoloCircularProgressBar_progress_color, Color.CYAN));
 		setProgressBackgroundColor(attributes.getColor(R.styleable.HoloCircularProgressBar_progress_background_color,
 				Color.MAGENTA));
-		setProgress(attributes.getFloat(R.styleable.HoloCircularProgressBar_progress, 0.0f));
+		setProgress(attributes.getFloat(R.styleable.HoloCircularProgressBar_hcp_progress, 0.0f));
 		setMarkerProgress(attributes.getFloat(R.styleable.HoloCircularProgressBar_marker_progress, 0.0f));
 		setWheelSize((int) attributes.getDimension(R.styleable.HoloCircularProgressBar_stroke_width, 10));
 		mIsThumbEnabled = attributes.getBoolean(R.styleable.HoloCircularProgressBar_thumb_visible, true);
