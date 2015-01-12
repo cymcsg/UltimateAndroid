@@ -1,20 +1,16 @@
 package com.marshalchen.common.demoofui.materialdesigndemo;
 
-
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.view.View;
 import android.view.Window;
-import android.view.View.OnClickListener;
 
+import com.gc.materialdesign.views.ProgressBarDeterminate;
+import com.gc.materialdesign.views.ProgressBarIndeterminateDeterminate;
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uimodule.materialdesign.views.ProgressBarDetermininate;
-import com.marshalchen.common.uimodule.materialdesign.views.ProgressBarIndeterminateDeterminate;
 
 
 public class ProgressActivity extends Activity {
@@ -37,7 +33,7 @@ public class ProgressActivity extends Activity {
         findViewById(R.id.sliderNumber).setBackgroundColor(color);
         
         
-        progreesBarDetermininate = (ProgressBarDetermininate) findViewById(R.id.progressDeterminate);
+        progreesBarDeterminate = (ProgressBarDeterminate) findViewById(R.id.progressDeterminate);
 		progressTimer.start();
 		progressBarIndeterminateDeterminate = (ProgressBarIndeterminateDeterminate) findViewById(R.id.progressBarIndeterminateDeterminate);
 		progressTimer2.start();
@@ -45,7 +41,7 @@ public class ProgressActivity extends Activity {
     
     
     
-ProgressBarDetermininate progreesBarDetermininate;
+    ProgressBarDeterminate progreesBarDeterminate;
     
     Thread progressTimer = new Thread(new Runnable() {
 		
@@ -66,7 +62,7 @@ ProgressBarDetermininate progreesBarDetermininate;
 		int progress = 0;
 		@Override
 		public boolean handleMessage(Message msg) {
-			progreesBarDetermininate.setProgress(progress++);
+			progreesBarDeterminate.setProgress(progress++);
 			return false;
 		}
 	});

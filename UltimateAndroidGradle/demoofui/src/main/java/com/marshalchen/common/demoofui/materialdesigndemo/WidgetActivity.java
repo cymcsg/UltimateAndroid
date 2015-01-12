@@ -1,6 +1,10 @@
 package com.marshalchen.common.demoofui.materialdesigndemo;
 
-
+import com.gc.materialdesign.views.ButtonFlat;
+import com.gc.materialdesign.widgets.ColorSelector;
+import com.gc.materialdesign.widgets.Dialog;
+import com.gc.materialdesign.widgets.SnackBar;
+import com.marshalchen.common.demoofui.R;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -11,14 +15,9 @@ import android.view.Window;
 import android.view.View.OnClickListener;
 import android.widget.Toast;
 
-import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uimodule.materialdesign.widgets.ColorSelector;
-import com.marshalchen.common.uimodule.materialdesign.widgets.Dialog;
-import com.marshalchen.common.uimodule.materialdesign.widgets.SnackBar;
-
 public class WidgetActivity extends Activity {
 
-	int backgroundColor = Color.parseColor("#1E88E5");
+	private int backgroundColor = Color.parseColor("#1E88E5");
 
 	@SuppressLint("NewApi")
 	@Override
@@ -38,8 +37,8 @@ public class WidgetActivity extends Activity {
 
 							@Override
 							public void onClick(View v) {
-								findViewById(R.id.buttonSnackBar)
-										.setBackgroundColor(Color.RED);
+								ButtonFlat btn = (ButtonFlat) findViewById(R.id.buttonSnackBar);
+								btn.setTextColor(Color.RED);
 							}
 						}).show();
 			}
@@ -54,14 +53,14 @@ public class WidgetActivity extends Activity {
 					
 					@Override
 					public void onClick(View v) {
-						Toast.makeText(WidgetActivity.this, "Click accept button", 1).show();
+						Toast.makeText(WidgetActivity.this, "Click accept button", Toast.LENGTH_LONG).show();
 					}
 				});
 				dialog.setOnCancelButtonClickListener(new OnClickListener() {
 					
 					@Override
 					public void onClick(View v) {
-						Toast.makeText(WidgetActivity.this, "Click cancel button", 1).show();
+						Toast.makeText(WidgetActivity.this, "Click cancel button", Toast.LENGTH_LONG).show();
 					}
 				});
 				dialog.show();

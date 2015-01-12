@@ -32,14 +32,14 @@
             android:layout_marginTop="128dp"
             android:background="#88CECECE" />
 
-        <com.marshalchen.common.uimodule.materialdesign.views.ButtonFloatSmall
+        <com.gc.materialdesign.views.ButtonFloatSmall
             android:id="@+id/buttonColorSelector"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="32dp"
             android:layout_marginTop="108dp"
             android:background="#1E88E5"
-            materialdesign:iconFloat="@drawable/material_design_icn_select_color" />
+            materialdesign:iconDrawable="@drawable/material_design_icn_select_color" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -60,7 +60,7 @@
             android:background="#1E88E5" />
     </RelativeLayout>
 
-    <com.marshalchen.common.uimodule.materialdesign.views.LayoutRipple
+    <com.gc.materialdesign.views.LayoutRipple
         android:id="@+id/itemButtons"
         android:layout_width="fill_parent"
         android:layout_height="64dp"
@@ -80,9 +80,9 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="104dp"
             android:text="Buttons" />
-    </com.marshalchen.common.uimodule.materialdesign.views.LayoutRipple>
+    </com.gc.materialdesign.views.LayoutRipple>
 
-    <com.marshalchen.common.uimodule.materialdesign.views.LayoutRipple
+    <com.gc.materialdesign.views.LayoutRipple
         android:id="@+id/itemSwitches"
         android:layout_width="fill_parent"
         android:layout_height="64dp"
@@ -102,9 +102,9 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="104dp"
             android:text="Switches" />
-    </com.marshalchen.common.uimodule.materialdesign.views.LayoutRipple>
+    </com.gc.materialdesign.views.LayoutRipple>
 
-    <com.marshalchen.common.uimodule.materialdesign.views.LayoutRipple
+    <com.gc.materialdesign.views.LayoutRipple
         android:id="@+id/itemProgress"
         android:layout_width="fill_parent"
         android:layout_height="64dp"
@@ -124,9 +124,9 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="104dp"
             android:text="Progress indicators" />
-    </com.marshalchen.common.uimodule.materialdesign.views.LayoutRipple>
+    </com.gc.materialdesign.views.LayoutRipple>
 
-    <com.marshalchen.common.uimodule.materialdesign.views.LayoutRipple
+    <com.gc.materialdesign.views.LayoutRipple
         android:id="@+id/itemWidgets"
         android:layout_width="fill_parent"
         android:layout_height="64dp"
@@ -146,6 +146,6 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="104dp"
             android:text="Widgets" />
-    </com.marshalchen.common.uimodule.materialdesign.views.LayoutRipple>
+    </com.gc.materialdesign.views.LayoutRipple>
 
 </LinearLayout>

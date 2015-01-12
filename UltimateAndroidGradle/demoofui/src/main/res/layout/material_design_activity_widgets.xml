@@ -33,12 +33,11 @@
             android:layout_width="fill_parent"
             android:layout_height="72dp" >
 
-            <com.marshalchen.common.uimodule.materialdesign.views.ButtonFlat
+            <com.gc.materialdesign.views.ButtonFlat
                 android:id="@+id/buttonSnackBar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:background="#1E88E5"
                 android:text="Show SnackBar" />
         </RelativeLayout>
         <RelativeLayout
@@ -63,12 +62,11 @@
             android:layout_width="fill_parent"
             android:layout_height="72dp" >
 
-            <com.marshalchen.common.uimodule.materialdesign.views.ButtonFlat
+            <com.gc.materialdesign.views.ButtonFlat
                 android:id="@+id/buttonDialog"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:background="#1E88E5"
                 android:text="Show Dialog" />
         </RelativeLayout>
         <RelativeLayout
@@ -93,12 +91,11 @@
             android:layout_width="fill_parent"
             android:layout_height="72dp" >
 
-            <com.marshalchen.common.uimodule.materialdesign.views.ButtonFlat
+            <com.gc.materialdesign.views.ButtonFlat
                 android:id="@+id/buttonColorSelector"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:background="#1E88E5"
                 android:text="Show Color Selector" />
         </RelativeLayout>
     </LinearLayout>
