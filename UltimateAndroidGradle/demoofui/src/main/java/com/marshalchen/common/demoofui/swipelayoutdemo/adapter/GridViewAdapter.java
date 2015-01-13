@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uimodule.swipelayout.adapters.BaseSwipeAdapter;
+import com.daimajia.swipe.adapters.BaseSwipeAdapter;
 
 
 public class GridViewAdapter extends BaseSwipeAdapter {

@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uimodule.swipelayout.SwipeLayout;
+import com.daimajia.swipe.SwipeLayout;
 
 public class NestedExample extends Activity {
 

@@ -3,7 +3,7 @@ package com.marshalchen.common.demoofui.swipelayoutdemo.adapter;
 import android.content.Context;
 
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uimodule.swipelayout.adapters.ArraySwipeAdapter;
+import com.daimajia.swipe.adapters.ArraySwipeAdapter;
 
 
 import java.util.List;

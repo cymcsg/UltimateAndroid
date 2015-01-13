@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import com.marshalchen.common.demoofui.R;
 import com.marshalchen.common.uimodule.nineoldandroids.view.ViewHelper;
-import com.marshalchen.common.uimodule.swipelayout.SwipeLayout;
+import com.daimajia.swipe.SwipeLayout;
 
 public class SwipeLayoutActivity extends Activity {
 
