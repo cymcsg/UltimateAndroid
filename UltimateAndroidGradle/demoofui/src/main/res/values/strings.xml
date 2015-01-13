@@ -125,7 +125,7 @@
         <item>Light Gray</item>
         <item>Gray</item>
     </string-array>
-    //observable scroll view    <string name="title_activity_actionbarcontrolgridview">GridView &amp; Action Bar</string>
+    //observable scroll view        <string name="title_activity_actionbarcontrolgridview">GridView &amp; Action Bar</string>
     <string name="title_activity_actionbarcontrollistview">ListView &amp; Action Bar</string>
     <string name="title_activity_actionbarcontrolrecyclerview">RecyclerView &amp; Action Bar</string>
     <string name="title_activity_actionbarcontrolscrollview">ScrollView &amp; Action Bar</string>
@@ -220,7 +220,7 @@ See the License for the specific language governing permissions and
 limitations under the License.</p>]]>
         </item>
     </string-array>
-    //end of observable scroll view    <string name="ptr_demo_block_grid_view">Contains A GridView</string>
+    //end of observable scroll view        <string name="ptr_demo_block_grid_view">Contains A GridView</string>
     <string name="ptr_demo_block_frame_layout">Contains A FrameLayout</string>
     <string name="ptr_demo_block_only_text_view">Contains Even A TextView</string>
     <string name="ptr_demo_block_pull_to_refresh">Pull to Refresh</string>
@@ -234,4 +234,8 @@ limitations under the License.</p>]]>
     <string name="ptr_demo_storehouse_header_using_string_array_in_title">using xml: </string>
     <string name="ptr_demo_block_storehouse_header_using_string">StoreHouse Style \n\nusing string</string>
     <string name="ptr_demo_storehouse_header_using_string_in_title">using string: </string>
+    <string name="title_activity_how_to_use">HowToUseActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
 </resources>

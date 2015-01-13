@@ -1007,12 +1007,14 @@
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".sampleModules.AnimationUtilsDemo"
-            >
+        <activity android:name=".sampleModules.AnimationUtilsDemo" >
             <intent-filter>
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".HowToUseActivity"
+            android:label="@string/title_activity_how_to_use" >
         </activity>
     </application>
 
