@@ -37,6 +37,20 @@ public class HowToUseActivity extends ActionBarActivity {
                 mHowToUseDetail.setText("compile \"com.daimajia.swipelayout:library:1.1.7@aar\"");
                 mHowToUseProjectDetail.setText("https://github.com/daimajia/AndroidSwipeLayout");
                 break;
+            case "MaterialDesignActivity":
+                mHowToUseDetail.setText("compile(group: 'com.github.navasmdc', name: 'MaterialDesign', version: '1.0', ext: 'aar')");
+                mHowToUseProjectDetail.setText("https://github.com/navasmdc/MaterialDesignLibrary");
+                break;
+            case "ProgressMenuItemActivity":
+                mHowToUseDetail.setText("compile 'com.github.hotchemi:ProgressMenuItem:0.3.3'");
+                mHowToUseProjectDetail.setText("https://github.com/hotchemi/ProgressMenuItem");
+                break;
+            case "TransitionEverywhereActivity":
+                mHowToUseDetail.setText("compile \"com.github.andkulikov:transitions-everywhere:1.2.1\"");
+                mHowToUseProjectDetail.setText("https://github.com/andkulikov/transitions-everywhere");
+                break;
+
+
         }
 
     }
@@ -56,7 +70,7 @@ public class HowToUseActivity extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.howToUse) {
             return true;
         }
 

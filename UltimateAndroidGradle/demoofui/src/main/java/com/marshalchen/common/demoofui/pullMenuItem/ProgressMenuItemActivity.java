@@ -5,6 +5,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.marshalchen.common.commonUtils.basicUtils.BasicUtils;
+import com.marshalchen.common.demoofui.HowToUseActivity;
 import com.marshalchen.common.demoofui.R;
 
 import progress.menu.item.ProgressMenuItemHelper;
@@ -33,6 +35,10 @@ public class ProgressMenuItemActivity extends ActionBarActivity {
             case R.id.action_refresh:
                 new ReloadAsyncTask(progressHelper).execute();
                 return true;
+            case R.id.howToUse:
+                BasicUtils.sendIntent(this, HowToUseActivity.class, "data", "ProgressMenuItemActivity");
+                return true;
+
             default:
                 return super.onOptionsItemSelected(item);
         }

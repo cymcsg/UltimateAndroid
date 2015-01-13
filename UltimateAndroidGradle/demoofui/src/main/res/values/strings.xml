@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Ultimate Android Demo of Ui</string>
+    <string name="app_name">UltimateAndroid Demo of Ui</string>
     <string name="drawer_open">drawer_open</string>
     <string name="drawer_close">drawer_close</string>
     <string name="valid_num_participants_warning">Number of participants must be between 1 and 20.</string>
