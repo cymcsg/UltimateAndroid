@@ -1,4 +1,4 @@
-package com.marshalchen.common.ui;
+package com.marshalchen.common.uimodule.simplemodule;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -10,7 +10,8 @@ import android.os.Bundle;
 import android.os.Parcelable;
 import android.util.AttributeSet;
 import android.view.View;
-import com.marshalchen.common.R;
+
+import com.marshalchen.common.uimodule.R;
 
 /**
  * Created by daimajia on 14-4-30.
