@@ -64,5 +64,6 @@ dependencies {
     compile 'com.github.hotchemi:ProgressMenuItem:0.3.3'
     compile(group: 'com.github.navasmdc', name: 'MaterialDesign', version: '1.0', ext: 'aar')
     compile "com.daimajia.swipelayout:library:1.1.7@aar"
+    compile 'com.lorentzos.swipecards:library:1.0.8'
 
 }
