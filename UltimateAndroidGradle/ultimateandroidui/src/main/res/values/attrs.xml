@@ -820,4 +820,8 @@
     <declare-styleable name="NumberProgressBarStyle">
         <attr name="numberProgressBarStyle" format="reference" />
     </declare-styleable>
+
+    <declare-styleable name="DraggableFlagView">
+        <attr name="df_color" format="color"/>
+    </declare-styleable>
 </resources>
