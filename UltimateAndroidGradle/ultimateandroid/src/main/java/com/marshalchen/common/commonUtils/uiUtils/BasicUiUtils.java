@@ -7,9 +7,11 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
+import android.graphics.Rect;
 import android.util.TypedValue;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.Transformation;
@@ -241,5 +243,35 @@ public class BasicUiUtils {
         activity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
     }
 
+    /**
+     * Get height of the device
+     * @param context
+     * @return
+     */
+    public static int getDeviceHeight(Context context) {
+        WindowManager manager = (WindowManager) context
+                .getSystemService(Context.WINDOW_SERVICE);
+        return manager.getDefaultDisplay().getHeight();
+    }
+
+    /**
+     * Get height of status bar
+     * @param activity
+     * @return
+     */
+    public static int getStatusBarHeight(Activity activity) {
+        Rect frame = new Rect();
+        activity.getWindow().getDecorView().getWindowVisibleDisplayFrame(frame);
+        return frame.top;
+    }
+
+    /**
+     * Get height of the top
+     * @param activity
+     * @return
+     */
+    public static int getTopBarHeight(Activity activity) {
+        return activity.getWindow().findViewById(Window.ID_ANDROID_CONTENT).getTop();
+    }
 
 }
