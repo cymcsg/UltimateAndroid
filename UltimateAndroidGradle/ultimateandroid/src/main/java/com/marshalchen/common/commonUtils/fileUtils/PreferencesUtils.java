@@ -34,7 +34,15 @@ import android.content.SharedPreferences;
  */
 public class PreferencesUtils {
 
-    public static String PREFERENCE_NAME = "UltimateAndroid";
+    public static String getPREFERENCE_NAME() {
+        return PREFERENCE_NAME;
+    }
+
+    public static void setPREFERENCE_NAME(String PREFERENCE_NAME) {
+        PreferencesUtils.PREFERENCE_NAME = PREFERENCE_NAME;
+    }
+
+    private static String PREFERENCE_NAME = "UltimateAndroid";
 
     /**
      * put string preferences
