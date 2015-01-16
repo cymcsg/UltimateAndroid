@@ -824,4 +824,24 @@
     <declare-styleable name="DraggableFlagView">
         <attr name="df_color" format="color"/>
     </declare-styleable>
+
+    <declare-styleable name="RoundCornerProgress">
+        <attr name="rcp_progress" format="integer" />
+        <attr name="rcp_backgroundPadding" format="dimension" />
+        <attr name="rcp_backgroundRadius" format="dimension" />
+        <attr name="rcp_max" format="integer" />
+        <attr name="rcp_iconSrc" format="integer" />
+        <attr name="rcp_iconSize" format="dimension" />
+        <attr name="rcp_iconPadding" format="dimension" />
+        <attr name="rcp_headerColor" format="color" />
+        <attr name="rcp_progressColor" format="color" />
+        <attr name="rcp_backgroundColor" format="color" />
+        <attr name="rcp_textProgressColor" format="color" />
+        <attr name="rcp_textProgress" format="string" />
+        <attr name="rcp_textProgressUnit" format="string" />
+        <attr name="rcp_textProgressSize" format="dimension" />
+        <attr name="rcp_textProgressWidth" format="dimension" />
+        <attr name="rcp_textProgressPadding" format="dimension" />
+        <attr name="rcp_autoTextChange" format="boolean" />
+    </declare-styleable>
 </resources>

@@ -1025,6 +1025,11 @@
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
         </activity>
+        <activity android:name=".sampleModules.RoundCornerProgressBarActivity">
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
