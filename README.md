@@ -42,7 +42,7 @@ My Email is ``cymcsg # gmail.com``
 
 ---
 
-#####UltimateAndroid is a rapid development framework for developing your apps.UltimateAndroid framework contains many features like View Injection,ORM,Asynchronous Networking and Image Loader,User scenario testing,over 100 Ui effects etc.And there are also many useful features like WebViewUtils,DaoUtils,Https Utils, CryptographyUtils etc.The framework will be added  more feature in the future. 
+#####UltimateAndroid is a rapid development framework for developing  apps.UltimateAndroid framework contains many features like View Injection,ORM,Asynchronous Networking and Image Loader,User scenario testing,over 100 Ui effects etc.And there are also many useful features like WebViewUtils,DaoUtils,Https Utils, CryptographyUtils etc.The framework will be added  more feature in the future. 
 
 
 
@@ -96,7 +96,7 @@ If you use normal way,you can pay attention that UltimateAndroid  depends on app
 2.As the function of View Injection which uses ButterKnife,you should config your IDE before you can compile the project.***Most of  IDEs require additional configuration in order to enable annotation processing for Butter Knife,
 or you can see [IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse Configuration for butter Knife][102].***
 
-***Notice:The latest version of the framework needs Android Sdk  of Version 21.If you use gradle project, you should use android studio which version should be 1.0.0+***
+***Notice:The latest version of the framework needs Android Sdk  of Version 21. If you use gradle project, you should use android studio which version should be 1.0.0+***
 
 3.View Injection:
 
