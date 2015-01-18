@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Copyright 2015 Akexorcist
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/round_corner_progress_bar_background_dark"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="round_corner_progress_bar"
+            android:textColor="@color/round_corner_progress_bar_text"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/round_corner_progress_bar_background_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.marshalchen.common.uimodule.roundcornerprogressbar.RoundCornerProgressBar
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                app:rcp_backgroundColor="@color/round_corner_progress_bar_custom_progress_background"
+                app:rcp_backgroundPadding="2dp"
+                app:rcp_backgroundRadius="0dp"
+                app:rcp_max="100"
+                app:rcp_progress="50"
+                app:rcp_progressColor="@color/round_corner_progress_bar_custom_progress_orange_progress" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="corner_rounder_1"
+                android:textColor="@color/round_corner_progress_bar_text"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/round_corner_progress_bar_background_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.marshalchen.common.uimodule.roundcornerprogressbar.RoundCornerProgressBar
+                android:layout_width="250dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                app:rcp_backgroundColor="@color/round_corner_progress_bar_custom_progress_background"
+                app:rcp_backgroundPadding="2dp"
+                app:rcp_backgroundRadius="20dp"
+                app:rcp_max="100"
+                app:rcp_progress="90"
+                app:rcp_progressColor="@color/round_corner_progress_bar_custom_progress_blue_progress" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="corner_rounder_2"
+                android:textColor="@color/round_corner_progress_bar_text"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/round_corner_progress_bar_background_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.marshalchen.common.uimodule.roundcornerprogressbar.RoundCornerProgressBar
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                app:rcp_backgroundColor="@color/round_corner_progress_bar_custom_progress_background"
+                app:rcp_backgroundPadding="2dp"
+                app:rcp_backgroundRadius="5dp"
+                app:rcp_max="100"
+                app:rcp_progress="45"
+                app:rcp_progressColor="@color/round_corner_progress_bar_custom_progress_green_progress" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="corner_rounder_3"
+                android:textColor="@color/round_corner_progress_bar_text"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/round_corner_progress_bar_background_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.marshalchen.common.uimodule.roundcornerprogressbar.RoundCornerProgressBar
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                app:rcp_backgroundColor="@color/round_corner_progress_bar_custom_progress_background"
+                app:rcp_backgroundPadding="5dp"
+                app:rcp_backgroundRadius="10dp"
+                app:rcp_max="100"
+                app:rcp_progress="70"
+                app:rcp_progressColor="@color/round_corner_progress_bar_custom_progress_red_progress" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="corner_rounder_4"
+                android:textColor="@color/round_corner_progress_bar_text"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/round_corner_progress_bar_background_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.marshalchen.common.uimodule.roundcornerprogressbar.RoundCornerProgressBar
+                android:layout_width="250dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                app:rcp_backgroundColor="@color/round_corner_progress_bar_custom_progress_background"
+                app:rcp_backgroundPadding="10dp"
+                app:rcp_backgroundRadius="30dp"
+                app:rcp_max="100"
+                app:rcp_progress="10"
+                app:rcp_progressColor="@color/round_corner_progress_bar_custom_progress_purple_progress" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="corner_rounder_5"
+                android:textColor="@color/round_corner_progress_bar_text"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="icon_round_corner_progress_bar"
+            android:textColor="@color/round_corner_progress_bar_text"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/round_corner_progress_bar_background_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.marshalchen.common.uimodule.roundcornerprogressbar.IconRoundCornerProgressBar
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                app:rcp_backgroundColor="@color/round_corner_progress_bar_custom_progress_background"
+                app:rcp_backgroundPadding="2dp"
+                app:rcp_backgroundRadius="5dp"
+                app:rcp_headerColor="@color/round_corner_progress_bar_custom_progress_red_header"
+                app:rcp_iconPadding="5dp"
+                app:rcp_iconSize="40dp"
+                app:rcp_iconSrc="@drawable/test"
+                app:rcp_max="150"
+                app:rcp_progress="90"
+                app:rcp_progressColor="@color/round_corner_progress_bar_custom_progress_red_progress" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="icon_corner_rounder_1"
+                android:textColor="@color/round_corner_progress_bar_text"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/round_corner_progress_bar_background_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.marshalchen.common.uimodule.roundcornerprogressbar.IconRoundCornerProgressBar
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                app:rcp_backgroundColor="@color/round_corner_progress_bar_custom_progress_background"
+                app:rcp_backgroundPadding="10dp"
+                app:rcp_backgroundRadius="5dp"
+                app:rcp_headerColor="@color/round_corner_progress_bar_custom_progress_blue_header"
+                app:rcp_iconPadding="5dp"
+                app:rcp_iconSize="70dp"
+                app:rcp_iconSrc="@drawable/test_back"
+                app:rcp_max="150"
+                app:rcp_progress="40"
+                app:rcp_progressColor="@color/round_corner_progress_bar_custom_progress_blue_progress" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="icon_corner_rounder_2"
+                android:textColor="@color/round_corner_progress_bar_text"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/round_corner_progress_bar_background_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.marshalchen.common.uimodule.roundcornerprogressbar.IconRoundCornerProgressBar
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                app:rcp_backgroundColor="@color/round_corner_progress_bar_custom_progress_background"
+                app:rcp_backgroundPadding="5dp"
+                app:rcp_backgroundRadius="5dp"
+                app:rcp_headerColor="@color/round_corner_progress_bar_custom_progress_green_header"
+                app:rcp_iconPadding="3dp"
+                app:rcp_iconSize="30dp"
+                app:rcp_iconSrc="@drawable/test_back1"
+                app:rcp_max="150"
+                app:rcp_progress="150"
+                app:rcp_progressColor="@color/round_corner_progress_bar_custom_progress_green_progress" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="icon_corner_rounder_3"
+                android:textColor="@color/round_corner_progress_bar_text"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/round_corner_progress_bar_background_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.marshalchen.common.uimodule.roundcornerprogressbar.IconRoundCornerProgressBar
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                app:rcp_backgroundColor="@color/round_corner_progress_bar_custom_progress_background"
+                app:rcp_backgroundPadding="10dp"
+                app:rcp_backgroundRadius="0dp"
+                app:rcp_headerColor="@color/round_corner_progress_bar_custom_progress_purple_header"
+                app:rcp_iconPadding="3dp"
+                app:rcp_iconSize="50dp"
+                app:rcp_iconSrc="@drawable/test_back2"
+                app:rcp_max="150"
+                app:rcp_progress="5"
+                app:rcp_progressColor="@color/round_corner_progress_bar_custom_progress_purple_progress" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="icon_corner_rounder_4"
+                android:textColor="@color/round_corner_progress_bar_text"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/round_corner_progress_bar_background_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.marshalchen.common.uimodule.roundcornerprogressbar.IconRoundCornerProgressBar
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                app:rcp_backgroundColor="@color/round_corner_progress_bar_custom_progress_background"
+                app:rcp_backgroundPadding="5dp"
+                app:rcp_backgroundRadius="30dp"
+                app:rcp_headerColor="@color/round_corner_progress_bar_custom_progress_orange_header"
+                app:rcp_iconPadding="10dp"
+                app:rcp_iconSize="20dp"
+                app:rcp_iconSrc="@drawable/test_back"
+                app:rcp_max="150"
+                app:rcp_progress="100"
+                app:rcp_progressColor="@color/round_corner_progress_bar_custom_progress_orange_progress" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="icon_corner_rounder_5"
+                android:textColor="@color/round_corner_progress_bar_text"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="programmatically"
+            android:textColor="@color/round_corner_progress_bar_text"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/round_corner_progress_bar_background_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.marshalchen.common.uimodule.roundcornerprogressbar.IconRoundCornerProgressBar
+                android:id="@+id/progress_one"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                app:rcp_progress="5"
+                app:rcp_max="10" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="decrease"
+                    android:id="@+id/button_progress_one_decrease"
+                    android:textSize="18sp"
+                    android:textColor="@color/round_corner_progress_bar_text" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="zero"
+                    android:id="@+id/text_progress_one"
+                    android:textColor="@color/round_corner_progress_bar_text"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="increase"
+                    android:id="@+id/button_progress_one_increase"
+                    android:textSize="18sp"
+                    android:textColor="@color/round_corner_progress_bar_text" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/round_corner_progress_bar_background_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.marshalchen.common.uimodule.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/progress_two"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                app:rcp_progress="5"
+                app:rcp_max="10" />
+
+            <com.marshalchen.common.uimodule.roundcornerprogressbar.TextRoundCornerProgressBar
+                android:id="@+id/progress_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:rcp_backgroundColor="#00000000"
+                app:rcp_backgroundPadding="0dp"
+                app:rcp_backgroundRadius="10dp"
+                app:rcp_autoTextChange="true"
+                app:rcp_textProgressWidth="40dp"
+                app:rcp_textProgressColor="#ffffff"
+                app:rcp_textProgressSize="14sp"
+                app:rcp_max="10"
+                app:rcp_progress="5"
+                app:rcp_progressColor="@color/round_corner_progress_bar_custom_progress_orange_progress" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="decrease"
+                    android:id="@+id/button_progress_two_decrease"
+                    android:textSize="18sp"
+                    android:textColor="@color/round_corner_progress_bar_text" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="zero"
+                    android:id="@+id/text_progress_two"
+                    android:textColor="@color/round_corner_progress_bar_text"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="increase"
+                    android:id="@+id/button_progress_two_increase"
+                    android:textSize="18sp"
+                    android:textColor="@color/round_corner_progress_bar_text" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

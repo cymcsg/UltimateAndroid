@@ -2,6 +2,7 @@ package com.marshalchen.common.demoofui.sampleModules;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.transitions.everywhere.ChangeBounds;
 import android.transitions.everywhere.ChangeImageTransform;
 import android.transitions.everywhere.Scene;
@@ -10,13 +11,17 @@ import android.transitions.everywhere.TransitionInflater;
 import android.transitions.everywhere.TransitionManager;
 import android.transitions.everywhere.TransitionSet;
 import android.view.Gravity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RadioGroup;
 
+import com.marshalchen.common.commonUtils.basicUtils.BasicUtils;
+import com.marshalchen.common.demoofui.HowToUseActivity;
 import com.marshalchen.common.demoofui.R;
 
-public class TransitionEverywhereActivity extends Activity implements RadioGroup.OnCheckedChangeListener {
+public class TransitionEverywhereActivity extends ActionBarActivity implements RadioGroup.OnCheckedChangeListener {
 
     // We transition between these Scenes
     private Scene mScene1;
@@ -93,6 +98,23 @@ public class TransitionEverywhereActivity extends Activity implements RadioGroup
                 break;
             }
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_how_to_use, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.howToUse) {
+            BasicUtils.sendIntent(this, HowToUseActivity.class, "data", "TransitionEverywhereActivity");
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
 }

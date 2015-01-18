@@ -120,7 +120,7 @@ public class MaterialRippleLayout extends FrameLayout {
         gestureDetector = new GestureDetector(context, longClickListener);
 
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.MaterialRippleLayout);
-        rippleColor = a.getColor(R.styleable.MaterialRippleLayout_rippleColor, DEFAULT_COLOR);
+        rippleColor = a.getColor(R.styleable.MaterialRippleLayout_mrl_rippleColor, DEFAULT_COLOR);
         rippleDiameter = a.getDimensionPixelSize(
             R.styleable.MaterialRippleLayout_rippleDimension,
             (int) dpToPx(getResources(), DEFAULT_DIAMETER_DP)

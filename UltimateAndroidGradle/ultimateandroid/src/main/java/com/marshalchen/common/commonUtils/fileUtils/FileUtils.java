@@ -553,4 +553,58 @@ public class FileUtils {
         return (file.exists() && file.isFile() ? file.length() : -1);
     }
 
+
+    /**
+     * Get file which from assets
+     *
+     * @param context
+     * @param fileName The name of the asset to open.
+     * @return
+     */
+    public static String getFileFromAssets(Context context, String fileName) {
+        if (context == null || BasicUtils.judgeNotNull(fileName)) {
+            return null;
+        }
+
+        StringBuilder s = new StringBuilder("");
+        try {
+            InputStreamReader in = new InputStreamReader(context.getResources().getAssets().open(fileName));
+            BufferedReader br = new BufferedReader(in);
+            String line;
+            while ((line = br.readLine()) != null) {
+                s.append(line);
+            }
+            return s.toString();
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    /**
+     * Get file which from Raw
+     * @param context
+     * @param resId
+     * @return
+     */
+    public static String getFileFromRaw(Context context, int resId) {
+        if (context == null) {
+            return null;
+        }
+
+        StringBuilder s = new StringBuilder();
+        try {
+            InputStreamReader in = new InputStreamReader(context.getResources().openRawResource(resId));
+            BufferedReader br = new BufferedReader(in);
+            String line;
+            while ((line = br.readLine()) != null) {
+                s.append(line);
+            }
+            return s.toString();
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
 }

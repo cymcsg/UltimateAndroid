@@ -1,7 +1,9 @@
 package com.marshalchen.common.usefulModule;
 
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.database.DataSetObserver;
+import android.os.Build;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
@@ -10,8 +12,10 @@ import android.widget.AdapterView;
 import android.widget.LinearLayout;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+
 import com.marshalchen.common.R;
 
+@TargetApi(Build.VERSION_CODES.HONEYCOMB)
 /**
  * UltimateListView which can pull to refresh using the SwipeRefreshLayout and load more
  */
@@ -29,6 +33,7 @@ public class UltimateListview extends LinearLayout {
         initView();
 
     }
+
 
     public UltimateListview(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
@@ -50,9 +55,11 @@ public class UltimateListview extends LinearLayout {
     public SwipeRefreshLayout getSwipeRefreshLayout() {
         return mSwipeRefreshLayout;
     }
+
     public BasicUltimateListView getListView() {
         return mBasicUltimateListView;
     }
+
     public void setAdapter(ListAdapter adapter) {
 
 //        mSwipeRefreshLayout.setRefreshing(false);
@@ -85,11 +92,10 @@ public class UltimateListview extends LinearLayout {
     }
 
 
-
-
     public void setOnItemClickListener(AdapterView.OnItemClickListener listener) {
         mBasicUltimateListView.setOnItemClickListener(listener);
     }
+
     public ListAdapter getAdapter() {
         return mBasicUltimateListView.getAdapter();
     }

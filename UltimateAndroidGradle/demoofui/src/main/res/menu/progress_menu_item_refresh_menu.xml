@@ -8,4 +8,6 @@
         app:showAsAction="always"
         android:title="refresh"
         tools:ignore="UnusedAttribute"/>
+    <item android:id="@+id/howToUse" android:title="How to Use"
+        android:orderInCategory="100" app:showAsAction="ifRoom" />
 </menu>

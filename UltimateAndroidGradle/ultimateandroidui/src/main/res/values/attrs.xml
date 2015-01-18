@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources  xmlns:tools="http://schemas.android.com/tools">
-    <declare-styleable name="SwipeLayout">
-        <attr name="drag_edge" format="enum">
-            <enum name="left" value="0"/>
-            <enum name="right" value="1"/>
-            <enum name="top" value="2"/>
-            <enum name="bottom" value="3"/>
-        </attr>
-        <attr name="show_mode" format="enum">
-            <enum name="lay_down" value="0"/>
-            <enum name="pull_out" value="1"/>
-        </attr>
-    </declare-styleable>
+
 
 
     <declare-styleable name="SliderLayout">
@@ -806,5 +795,53 @@
 
     <declare-styleable name="WaveViewTheme">
         <attr name="waveViewStyle" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="NumberProgressBar">
+        <attr name="progress_num" format="integer" />
+        <attr name="number_progressbar_max" format="integer" />
+        <attr name="progress_unreached_color" format="color" />
+        <attr name="progress_reached_color" format="color" />
+
+        <attr name="progress_reached_bar_height" format="dimension" />
+        <attr name="progress_unreached_bar_height" format="dimension" />
+
+        <attr name="progress_text_size" format="dimension" />
+        <attr name="progress_text_color" format="color" />
+
+        <attr name="progress_text_offset" format="dimension" />
+
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="NumberProgressBarStyle">
+        <attr name="numberProgressBarStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="DraggableFlagView">
+        <attr name="df_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundCornerProgress">
+        <attr name="rcp_progress" format="integer" />
+        <attr name="rcp_backgroundPadding" format="dimension" />
+        <attr name="rcp_backgroundRadius" format="dimension" />
+        <attr name="rcp_max" format="integer" />
+        <attr name="rcp_iconSrc" format="integer" />
+        <attr name="rcp_iconSize" format="dimension" />
+        <attr name="rcp_iconPadding" format="dimension" />
+        <attr name="rcp_headerColor" format="color" />
+        <attr name="rcp_progressColor" format="color" />
+        <attr name="rcp_backgroundColor" format="color" />
+        <attr name="rcp_textProgressColor" format="color" />
+        <attr name="rcp_textProgress" format="string" />
+        <attr name="rcp_textProgressUnit" format="string" />
+        <attr name="rcp_textProgressSize" format="dimension" />
+        <attr name="rcp_textProgressWidth" format="dimension" />
+        <attr name="rcp_textProgressPadding" format="dimension" />
+        <attr name="rcp_autoTextChange" format="boolean" />
     </declare-styleable>
 </resources>

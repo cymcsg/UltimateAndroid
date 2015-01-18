@@ -1,23 +1,32 @@
 package com.marshalchen.common.demoofui.materialdesigndemo;
 
-
+import com.gc.materialdesign.views.ButtonFloatSmall;
+import com.gc.materialdesign.views.LayoutRipple;
+import com.gc.materialdesign.widgets.ColorSelector;
+import com.gc.materialdesign.widgets.ColorSelector.OnColorSelectedListener;
+import com.marshalchen.common.commonUtils.basicUtils.BasicUtils;
+import com.marshalchen.common.demoofui.HowToUseActivity;
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uimodule.materialdesign.views.ButtonFloatSmall;
-import com.marshalchen.common.uimodule.materialdesign.views.LayoutRipple;
-import com.marshalchen.common.uimodule.materialdesign.widgets.ColorSelector;
+import com.marshalchen.common.demoofui.swipelayoutdemo.GridViewExample;
+import com.marshalchen.common.demoofui.swipelayoutdemo.ListViewExample;
+import com.marshalchen.common.demoofui.swipelayoutdemo.NestedExample;
 import com.nineoldandroids.view.ViewHelper;
 
 import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.View.OnClickListener;
 
 
-public class MaterialDesignActivity extends Activity implements ColorSelector.OnColorSelectedListener {
+public class MaterialDesignActivity extends Activity implements OnColorSelectedListener {
 
     int backgroundColor = Color.parseColor("#1E88E5");
     ButtonFloatSmall buttonSelectColor;
@@ -121,5 +130,20 @@ public class MaterialDesignActivity extends Activity implements ColorSelector.On
         buttonSelectColor.setBackgroundColor(color);
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_how_to_use, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.howToUse) {
+            BasicUtils.sendIntent(this, HowToUseActivity.class, "data", "MaterialDesignActivity");
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }

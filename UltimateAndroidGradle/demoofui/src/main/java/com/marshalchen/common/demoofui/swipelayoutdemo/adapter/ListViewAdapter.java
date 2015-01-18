@@ -11,9 +11,9 @@ import android.widget.Toast;
 import com.marshalchen.common.demoofui.R;
 import com.marshalchen.common.uimodule.androidanimations.Techniques;
 import com.marshalchen.common.uimodule.androidanimations.YoYo;
-import com.marshalchen.common.uimodule.swipelayout.SimpleSwipeListener;
-import com.marshalchen.common.uimodule.swipelayout.SwipeLayout;
-import com.marshalchen.common.uimodule.swipelayout.adapters.BaseSwipeAdapter;
+import com.daimajia.swipe.SimpleSwipeListener;
+import com.daimajia.swipe.SwipeLayout;
+import com.daimajia.swipe.adapters.BaseSwipeAdapter;
 
 
 public class ListViewAdapter extends BaseSwipeAdapter {

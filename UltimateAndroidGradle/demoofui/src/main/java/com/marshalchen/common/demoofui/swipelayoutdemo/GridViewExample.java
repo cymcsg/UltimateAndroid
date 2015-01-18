@@ -7,8 +7,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
+import com.daimajia.swipe.implments.SwipeItemMangerImpl;
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uimodule.swipelayout.implments.SwipeItemMangerImpl;
 import com.marshalchen.common.demoofui.swipelayoutdemo.adapter.GridViewAdapter;
 
 public class GridViewExample extends Activity{

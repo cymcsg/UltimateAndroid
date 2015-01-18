@@ -3,7 +3,7 @@ package com.marshalchen.common.demoofui.sampleModules;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.ui.NumberProgressBar;
+import com.marshalchen.common.uimodule.simplemodule.NumberProgressBar;
 
 
 import java.util.Timer;

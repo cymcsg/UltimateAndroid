@@ -15,7 +15,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uimodule.swipelayout.implments.SwipeItemMangerImpl;
+import com.daimajia.swipe.implments.SwipeItemMangerImpl;
 import com.marshalchen.common.demoofui.swipelayoutdemo.adapter.ListViewAdapter;
 
 public class ListViewExample extends Activity {

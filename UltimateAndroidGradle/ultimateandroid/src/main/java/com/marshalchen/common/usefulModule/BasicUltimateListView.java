@@ -7,7 +7,7 @@ import android.widget.ListView;
 import com.marshalchen.common.commonUtils.logUtils.Logs;
 
 /**
- * Load more list view in UltimateListView
+ * A component in UltimateListView which provide load more
  */
 public class BasicUltimateListView extends ListView {
 

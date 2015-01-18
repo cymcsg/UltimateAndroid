@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.marshalchen.common.demoofui.HowToUseActivity">
+    <item android:id="@+id/howToUse" android:title="How to Use" android:icon="@drawable/launcher"
+        android:orderInCategory="100" app:showAsAction="ifRoom|withText" />
+</menu>

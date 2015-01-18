@@ -1,7 +1,5 @@
 package com.marshalchen.common.demoofui.materialdesigndemo;
 
-
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.graphics.Color;

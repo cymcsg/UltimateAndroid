@@ -1,14 +1,23 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MyActivity" >
     <item android:id="@+id/action_listview"
         android:title="ListView"
-        android:orderInCategory="100"
+        app:showAsAction="ifRoom|withText"
+        android:orderInCategory="501"
         />
     <item android:id="@+id/action_gridview"
         android:title="GridView"
-        android:orderInCategory="100"
+        app:showAsAction="ifRoom|withText"
+        android:orderInCategory="502"
         />
     <item android:id="@+id/action_nexted"
-        android:title="Complicate"/>
+        app:showAsAction="ifRoom|withText"
+        android:title="Complicate"
+        android:orderInCategory="503"/>
+    <item android:id="@+id/how_to_use"
+        app:showAsAction="ifRoom|withText"
+        android:orderInCategory="504"
+        android:title="How to Use"/>
 </menu>

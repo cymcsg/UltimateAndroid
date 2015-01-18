@@ -4,16 +4,19 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.marshalchen.common.commonUtils.basicUtils.BasicUtils;
+import com.marshalchen.common.demoofui.HowToUseActivity;
 import com.marshalchen.common.demoofui.R;
 import com.marshalchen.common.uimodule.nineoldandroids.view.ViewHelper;
-import com.marshalchen.common.uimodule.swipelayout.SwipeLayout;
+import com.daimajia.swipe.SwipeLayout;
 
-public class SwipeLayoutActivity extends Activity {
+public class SwipeLayoutActivity extends ActionBarActivity {
 
     private SwipeLayout sample1, sample2, sample3;
 
@@ -99,7 +102,7 @@ public class SwipeLayoutActivity extends Activity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.swipe_layout_menu, menu);
-        return true;
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
@@ -116,6 +119,9 @@ public class SwipeLayoutActivity extends Activity {
             return true;
         } else if (id == R.id.action_nexted) {
             startActivity(new Intent(this, NestedExample.class));
+            return true;
+        } else if (id == R.id.how_to_use) {
+            BasicUtils.sendIntent(this, HowToUseActivity.class,"data","SwipeLayoutActivity");
             return true;
         }
         return super.onOptionsItemSelected(item);
