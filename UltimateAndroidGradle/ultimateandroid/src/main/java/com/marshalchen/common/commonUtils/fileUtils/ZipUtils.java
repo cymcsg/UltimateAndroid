@@ -8,7 +8,7 @@ import java.util.zip.*;
 /**
  * Zip an unzip utils that can use zip or gzip
  */
-public class ZipAndUnzip {
+public class ZipUtils {
 
 
     /**
