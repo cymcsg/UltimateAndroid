@@ -6,7 +6,9 @@ import android.widget.AbsListView;
 import android.widget.ListView;
 import com.marshalchen.common.commonUtils.logUtils.Logs;
 
-
+/**
+ * Listview which can do something when scroll to the bottom.
+ */
 public class LoadMoreListView extends ListView {
 
     int currentFirstVisibleItem;
