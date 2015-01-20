@@ -10,9 +10,9 @@ import com.marshalchen.common.commonUtils.basicUtils.HandlerUtils;
 import com.marshalchen.common.uimodule.nineoldandroids.animation.Animator;
 import com.marshalchen.common.uimodule.nineoldandroids.animation.ObjectAnimator;
 import com.marshalchen.common.uimodule.nineoldandroids.animation.ValueAnimator;
-import com.marshalchen.common.ui.HoloCircularProgressBar;
 import com.marshalchen.common.ui.HomeasUpActionbarActivity;
 import com.marshalchen.common.demoofui.R;
+import com.marshalchen.common.uimodule.simplemodule.HoloCircularProgressBar;
 
 /**
  * Created by cym on 14-6-26.
