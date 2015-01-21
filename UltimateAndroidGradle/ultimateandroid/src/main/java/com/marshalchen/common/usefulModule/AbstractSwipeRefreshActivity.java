@@ -7,9 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import com.marshalchen.common.R;
 
-/**
- * Created by cym on 14-9-11.
- */
+
 public abstract class AbstractSwipeRefreshActivity extends ActionBarActivity implements SwipeRefreshLayout.OnRefreshListener {
 
     protected SwipeRefreshLayout refreshLayout;

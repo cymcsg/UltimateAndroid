@@ -443,8 +443,6 @@ public class BasicUtils {
      * if v1 is null, v2 is null return 0
      * if v1 < v2, return -1
      * if v1 is null, v2 is not null  return -1
-     * <p/>
-     * return v1.{@link Comparable#compareTo(Object)}
      *
      * @param v1
      * @param v2

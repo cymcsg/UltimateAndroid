@@ -98,6 +98,7 @@ public class StringUtils {
 
     /**
      * Judge if the ArrayList<String> contains the String variable
+     * This method judges  trim String.
      *
      * @param s
      * @param arrayList
