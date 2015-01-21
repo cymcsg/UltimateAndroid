@@ -37,4 +37,19 @@
     <dimen name="patio_default_thumbnail_width">100dp</dimen>
     <dimen name="patio_default_thumbnail_height">100dp</dimen>
     <dimen name="patio_default_thumbnails_container_padding">8dp</dimen>
+
+    <dimen name="drop_down_list_header_padding_top">12dp</dimen>
+    <dimen name="drop_down_list_header_padding_bottom">15dp</dimen>
+    <dimen name="drop_down_list_header_release_min_distance">20dp</dimen>
+    <dimen name="drop_down_list_header_progress_bar_height">36dp</dimen>
+    <dimen name="drop_down_list_footer_progress_bar_height">36dp</dimen>
+    <dimen name="drop_down_list_footer_button_margin_left">8dp</dimen>
+    <dimen name="drop_down_list_footer_button_height">48dp</dimen>
+
+    <dimen name="showcase_radius">94dp</dimen>
+    <dimen name="showcase_radius_inner">96dp</dimen>
+    <dimen name="showcase_radius_outer">128dp</dimen>
+    <dimen name="showcase_button_margin">12dp</dimen>
+    <dimen name="showcase_text_padding">24dp</dimen>
+    <dimen name="showcase_action_bar_offset">66dp</dimen>
 </resources>
