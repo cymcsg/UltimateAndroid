@@ -1,7 +1,6 @@
 package com.marshalchen.common.commonUtils.urlUtils;
 
 
-import android.accounts.NetworkErrorException;
 import android.content.Context;
 
 import com.marshalchen.common.commonUtils.logUtils.Logs;
@@ -23,6 +22,9 @@ import java.security.cert.CertificateException;
 import java.security.cert.CertificateFactory;
 import java.security.cert.X509Certificate;
 
+/**
+ * Send https request
+ */
 public class HttpsUtils {
 
     /**
