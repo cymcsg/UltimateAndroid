@@ -42,7 +42,7 @@ My Email is ``cymcsg # gmail.com``
 
 ---
 
-#####UltimateAndroid is a rapid development framework for developing  apps.UltimateAndroid framework contains many features like View Injection,ORM,Asynchronous Networking and Image Loader,User scenario testing,over 100 Ui effects etc.And there are also many useful features like WebViewUtils,DaoUtils,Https Utils, CryptographyUtils etc.The framework will be added  more feature in the future. 
+#####UltimateAndroid is a rapid development framework for developing  apps.UltimateAndroid framework contains many features like View Injection,ORM,Asynchronous Networking and Image Loader,User scenario testing,over 100 Ui effects etc.And there are also many useful features like WebViewUtils,DaoUtils,Https Utils, CryptographyUtils,file upload etc.The framework will be added  more feature in the future. 
 
 
 
@@ -145,7 +145,7 @@ public class MyAdapter extends BaseAdapter {
 ```
 
 4.Asynchronous Network:
-  Use asynchronous utils,you do not need to use an addtional Thread to visit network.
+  Use asynchronous utils,you do not need to use an addtional Thread to visit network.It also contains file upload etc.
 
 ``` java
 HttpUtilsAsync.get("http://www.google.com", new AsyncHttpResponseHandler() {
@@ -283,7 +283,7 @@ Please set the ides before you run the demo apps.
  <h2 ><a name="chinese_introduction"></a>简介</h2>
 
 ---
-####框架目前主要包含的功能有View Injection,ORM,异步网络请求和图片加载，自动化脚本测试,磁盘LRU等功能.同时提供了类似于TripleDes、Webview快速设置、Cryptography处理、String处理,Https处理等常用工具类，还有超过100多种UI控件效果。并且这些功能正在逐步增加中。
+####框架目前主要包含的功能有View Injection,ORM,异步网络请求和图片加载，自动化脚本测试,磁盘LRU等功能.同时提供了类似于TripleDes、Webview快速设置、Cryptography处理、String处理,Https处理，文件上传等常用工具类，还有超过100多种UI控件效果。并且这些功能正在逐步增加中。
 
 #####UltimateAndroid框架是如图flask框架（python）那样包含了许多其他的开源项目的框架，比如 [Butter Knife][1],[Asynchronous Http Client for Android][2], [Universal Image Loader for Android][3] 还有许多我在 Readme 或者 updatelog中提到的.
 
@@ -388,7 +388,7 @@ public class MyAdapter extends BaseAdapter {
 ```
 
 4.异步网络请求:
-  使用异步网络请求工具，你不需要在额外的声明Thread来进行网络请求。
+  使用异步网络请求工具，你不需要在额外的声明Thread来进行网络请求。同时也包括文件上传等内容。
 
 ``` java
 HttpUtilsAsync.get("http://www.google.com", new AsyncHttpResponseHandler() {
@@ -604,7 +604,7 @@ The opensource program which I use:
 
 16.[Android View Animations](https://github.com/daimajia/AndroidViewAnimations)
 
-17.[Trinea](https://github.com/Trinea/android-common)
+17.[android-common](https://github.com/Trinea/android-common)
 
 18.[ListviewAnimations](https://github.com/nhaarman/ListViewAnimations)
 
