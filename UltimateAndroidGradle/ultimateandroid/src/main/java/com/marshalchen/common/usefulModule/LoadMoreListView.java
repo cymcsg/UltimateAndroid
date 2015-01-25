@@ -33,11 +33,7 @@ public class LoadMoreListView extends ListView {
     }
 
     private void isScrollCompleted() {
-        Logs.d("totalItemCounts---" + totalItemCounts + "    " + "   " + currentFirstVisibleItem + "   " + currentVisibleItemCount);
         if (this.currentVisibleItemCount > 0 && this.currentScrollState == OnScrollListener.SCROLL_STATE_IDLE && (currentFirstVisibleItem + currentVisibleItemCount) >= totalItemCounts - 1) {
-            /*** In this way I detect if there's been a scroll which has completed ***/
-            /*** do the work for load more date! ***/
-            Logs.d("more---");
             if (!isLoading) {
                 isLoading = true;
                 onLoadMore();
