@@ -41,6 +41,8 @@ import com.marshalchen.common.R;
  * <li>{@link #setFooterDefaultText(String)}, {@link #setFooterLoadingText(String)},
  * {@link #setFooterNoMoreText(String)} to set text</li>
  * </ul>
+ *
+ * @author <a href="http://www.trinea.cn" target="_blank">Trinea</a> 2013-5-16
  */
 public class DropDownListView extends ListView implements OnScrollListener {
 

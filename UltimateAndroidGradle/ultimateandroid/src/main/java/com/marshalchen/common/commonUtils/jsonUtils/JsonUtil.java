@@ -11,8 +11,10 @@ import com.google.gson.reflect.TypeToken;
 import java.util.*;
 
 /**
- * Use Gson to parse jsons
+ * Use Gson to parse jsons.
+ * Prepare to change to Jackson
  */
+@Deprecated
 public class JsonUtil {
     public static <T> T getListFromJson(String jsonString, TypeToken typeToken) {
         Gson gson = new Gson();

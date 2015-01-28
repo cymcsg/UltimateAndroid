@@ -33,10 +33,8 @@ public class BasicUltimateListView extends ListView {
     }
 
     private void isScrollCompleted() {
-        Logs.d("totalItemCounts---" + totalItemCounts + "    " + "   " + currentFirstVisibleItem + "   " + currentVisibleItemCount);
         if (this.currentVisibleItemCount > 0 && this.currentScrollState == OnScrollListener.SCROLL_STATE_IDLE && (currentFirstVisibleItem + currentVisibleItemCount) >= totalItemCounts - 1) {
 
-            Logs.d("more---");
             if (!isLoading) {
                 isLoading = true;
                 onLoadMore();

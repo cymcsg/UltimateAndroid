@@ -12,7 +12,8 @@ import android.os.Build;
 import android.view.View;
 
 /**
- * Some shake Animation
+ * Some  Animations.
+ * There are only some shake animations so far.
  */
 @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
 public class AnimationUtils {

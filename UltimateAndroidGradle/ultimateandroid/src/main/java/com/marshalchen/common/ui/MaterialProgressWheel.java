@@ -26,8 +26,6 @@ import com.marshalchen.common.R;
  *         http://www.apache.org/licenses/LICENSE-2.0
  */
 public class MaterialProgressWheel extends View {
-    private static final String TAG = ProgressWheel.class.getSimpleName();
-
     //Sizes (with defaults)
     private int circleRadius = 80;
     private boolean fillRadius = false;

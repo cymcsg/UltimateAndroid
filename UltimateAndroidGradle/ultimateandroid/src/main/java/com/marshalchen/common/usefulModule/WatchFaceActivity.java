@@ -9,9 +9,7 @@ import android.content.Context;
 import android.hardware.display.DisplayManager;
 import android.os.Bundle;
 
-/**
- * Created by cym on 14-8-2.
- */
+
 public abstract class WatchFaceActivity extends Activity
     //    implements DisplayManager.DisplayListener
 {

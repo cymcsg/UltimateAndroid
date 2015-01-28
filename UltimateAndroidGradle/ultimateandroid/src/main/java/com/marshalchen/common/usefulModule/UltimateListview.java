@@ -46,7 +46,7 @@ public class UltimateListview extends LinearLayout {
         mSwipeRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.ultimate_listview_swipe_layout);
         mBasicUltimateListView = (BasicUltimateListView) view.findViewById(R.id.basicUltimateListView);
         mSwipeRefreshLayout.setEnabled(false);
-        mSwipeRefreshLayout.setColorScheme(android.R.color.holo_blue_bright,
+        mSwipeRefreshLayout.setColorSchemeResources(android.R.color.holo_blue_bright,
                 android.R.color.holo_green_light,
                 android.R.color.holo_orange_light,
                 android.R.color.holo_red_light);

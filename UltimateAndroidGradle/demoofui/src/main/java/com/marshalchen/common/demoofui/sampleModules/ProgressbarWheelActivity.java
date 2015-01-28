@@ -10,8 +10,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import com.marshalchen.common.ui.ProgressWheel;
+
 import com.marshalchen.common.demoofui.R;
+import com.marshalchen.common.uimodule.simplemodule.ProgressWheel;
 
 /**
  * A sample activity showing some of the functions of the progress bar 

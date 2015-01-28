@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.marshalchen.common.ui;
+package com.marshalchen.common.uimodule.simplemodule;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -16,7 +16,9 @@ import android.os.Parcelable;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.View;
-import com.marshalchen.common.R;
+
+import com.marshalchen.common.uimodule.R;
+
 
 /**
  * The Class HoloCircularProgressBar.
