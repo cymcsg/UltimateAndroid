@@ -618,6 +618,8 @@ The opensource program which I use:
 
 23.[KenBurns](https://github.com/flavioarfaria/KenBurnsView)  
 
+24.[AndroidSwipeLayout](https://github.com/daimajia/AndroidSwipeLayout)
+
 There are some other projects which I write in [Update Log](https://github.com/cymcsg/UltimateAndroid/blob/master/updateLog.md).
 
 
