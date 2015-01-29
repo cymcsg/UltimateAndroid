@@ -39,7 +39,7 @@ ext {
     PUBLISH_ARTIFACT_ID = 'ultimateandroid'
     PUBLISH_VERSION = '0.5.0'
 }
-apply from: 'android-release-aar.gradle'
+//apply from: 'android-release-aar.gradle'
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
