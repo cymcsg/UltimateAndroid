@@ -11,7 +11,7 @@ idea{
 
 android {
     compileSdkVersion 21
-    buildToolsVersion "21.1.0"
+    buildToolsVersion "21.1.2"
 
     defaultConfig {
         //applicationId "com.marshalchen.common.uimodule"
@@ -40,7 +40,7 @@ ext {
     PUBLISH_ARTIFACT_ID = 'ultimateandroidui'
     PUBLISH_VERSION = '0.5.0'
 }
-apply from: 'android-release-aar.gradle'
+//apply from: 'android-release-aar.gradle'
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
