@@ -12,7 +12,7 @@ android {
     buildToolsVersion "21.1.2"
 
     defaultConfig {
-       // applicationId "com.marshalchen.common"
+        // applicationId "com.marshalchen.common"
         minSdkVersion 7
         targetSdkVersion 21
         versionCode 1
