@@ -5,14 +5,14 @@ UltimateAndroid
 
 
 
-###UltimateAndroid is a rapid development framework for developing your apps
+###UltimateAndroid is a rapid development framework for developing apps
 
 
-### 快速开发Android应用框架  UltimateAndroid
+### Android快速开发框架  UltimateAndroid
 
-#####Master branch:[![Build Status](https://travis-ci.org/cymcsg/UltimateAndroid.svg?branch=master)](https://travis-ci.org/cymcsg/UltimateAndroid)
+####Master branch:[![Build Status](https://travis-ci.org/cymcsg/UltimateAndroid.svg?branch=master)](https://travis-ci.org/cymcsg/UltimateAndroid)
 
-#####Dev branch:[![Build Status](https://travis-ci.org/cymcsg/UltimateAndroid.svg?branch=dev)](https://travis-ci.org/cymcsg/UltimateAndroid)
+####Dev branch:[![Build Status](https://travis-ci.org/cymcsg/UltimateAndroid.svg?branch=dev)](https://travis-ci.org/cymcsg/UltimateAndroid)
 
 
 [English Introduction](#english_introduction)
