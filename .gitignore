@@ -40,3 +40,11 @@ build/
 
 # Ignore Gradle GUI config
 gradle-app.setting
+
+
+
+key info:
+ultimateandroid.jks
+keystore.properties
+gradleinfo.properties
+

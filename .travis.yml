@@ -37,4 +37,4 @@ android:
 
 script:
 
-  ./gradlew build
+  ./gradlew assembleDebug
