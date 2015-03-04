@@ -8,7 +8,7 @@ UltimateAndroid快速开发框架教程（二）:导入DemoOfUi,实现多种UI�
 
     注意事项：
     1.JDK,Android Sdk配置完毕，JDK建议是JDK1.7版本，否则需要修改项目语言版本；
-    2.本教程的操作系统环境是OS X 10.9，IDE环境eclipse4.4，Intellij Idea 13.1，Android Sdk 为4.4.2和23.0，Android Studio是在Intellij基础上衍生出来的，配置方法相似。
+    2.本教程的操作系统环境是OS X 10.9，IDE环境eclipse4.4，Intellij Idea 13.1，Android Sdk 为5.0和23.0，Android Studio是在Intellij基础上衍生出来的，配置方法相似。
     3.由于本人使用Intellij Idea，所以之后的教程将基本已Intellij Idea环境下为样本。
     
     
