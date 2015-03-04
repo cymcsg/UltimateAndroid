@@ -288,7 +288,7 @@ Please set the ides before you run the demo apps.
 ---
 ####框架目前主要包含的功能有View Injection,ORM,异步网络请求和图片加载，自动化脚本测试,磁盘LRU等功能.同时提供了类似于TripleDes、Webview快速设置、Cryptography处理、String处理,Https处理，文件上传等常用工具类，还有超过100多种UI控件效果。并且这些功能正在逐步增加中。
 
-#####UltimateAndroid框架是如图flask框架（python）那样包含了许多其他的开源项目的框架，比如 [Butter Knife][1],[Asynchronous Http Client for Android][2], [Universal Image Loader for Android][3] 还有许多我在 Readme 或者 updatelog中提到的.
+#####UltimateAndroid框架是如同flask框架（python）那样包含了许多其他的开源项目的框架，比如 [Butter Knife][1],[Asynchronous Http Client for Android][2], [Universal Image Loader for Android][3] 还有许多我在 Readme 或者 updatelog中提到的.
 
 欢迎各种fork与提意见。
 
@@ -298,6 +298,7 @@ Please set the ides before you run the demo apps.
 
 [UI截图在这里](#demo_of_ui)
 
+[部分UI模块介绍](http://arccode.net/2015/02/03/UltimateAndroid-demo%E6%95%88%E6%9E%9C%E5%9B%BE%E6%96%87%E6%A1%A3-%E4%B8%80/)（感谢arccode）
 
 #####Welcome to fork.
 
