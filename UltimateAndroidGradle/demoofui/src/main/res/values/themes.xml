@@ -330,7 +330,6 @@
     </style>
 
 
-
     <style name="match_view_dialog" parent="@android:style/Theme.Holo.Light.Dialog">
         <item name="android:windowFrame">@null</item>
         <!-- Border -->
@@ -345,4 +344,8 @@
     </style>
 
 
+    <style name="UltimateRecyclerviewTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionModeOverlay">true</item>
+    </style>
 </resources>
