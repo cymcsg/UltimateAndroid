@@ -38,7 +38,7 @@ ext {
 
     PUBLISH_GROUP_ID = 'com.marshalchen.ultimateandroid'
     PUBLISH_ARTIFACT_ID = 'ultimateandroidui'
-    PUBLISH_VERSION = '0.5.0'
+    PUBLISH_VERSION = '0.6.0'
 }
 //apply from: 'android-release-aar.gradle'
 apply from: 'maven-push.gradle'
