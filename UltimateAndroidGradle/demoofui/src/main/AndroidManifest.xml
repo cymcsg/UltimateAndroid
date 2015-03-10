@@ -30,10 +30,6 @@
     <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-
-    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
-
-    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <!-- <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"></uses-permission> -->
     <uses-permission android:name="android.permission.ACCESS_GPS" />
