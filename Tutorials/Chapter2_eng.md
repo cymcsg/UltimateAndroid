@@ -7,7 +7,7 @@ UltimateAndroid rapid development framework tutorial (b): Many Ui effect of Demo
     Note：
     1.You need Jdk1.7 or set 1.7 as your java compile level；
     
-    2.My OS environment is OS X 10.9，IDE is eclipse4.4，Intellij Idea 13.1，Android Sdk is 4.4.2 and 23.0.
+    2.My OS environment is OS X 10.9，IDE is eclipse4.4，Intellij Idea 13.1，Android Sdk is 5.0 and 23.0.
     
     
 #####一、[Import Demo](https://github.com/cymcsg/UltimateAndroid/blob/master/Tutorials/Chapter1_eng.md)

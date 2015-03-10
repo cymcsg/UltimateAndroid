@@ -1030,6 +1030,13 @@
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ultimaterecyclerview.UltimateRecyclerViewActivity"
+            android:theme="@style/UltimateRecyclerviewTheme">
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

@@ -48,3 +48,5 @@ ultimateandroid.jks
 keystore.properties
 gradleinfo.properties
 
+
+manifest-merger-release-report.txt

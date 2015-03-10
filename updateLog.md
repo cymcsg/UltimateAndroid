@@ -3,7 +3,11 @@
 
 2014.1.6 reconstruct utils
 
+2014.12.16 add [TimelyView](https://github.com/adnan-SM/TimelyTextView)
+
 2014.12.14 add [WaveView](https://github.com/john990/WaveView)
+
+2014.12.12 add [MatchView](https://github.com/Rogero0o/MatchView)
 
 2014.12.10 
 ######Support Android Studio 1.0

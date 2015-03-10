@@ -22,7 +22,7 @@ task androidSourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
 }
 
-generateArchives {
+uploadArchives {
     repositories.mavenDeployer {
         pom.groupId = groupId
         pom.artifactId = artifactId
@@ -49,5 +49,5 @@ generateRelease.dependsOn(zipRelease)
 
 artifacts {
     archives androidSourcesJar
-    archives androidJavadocsJar
+  //  archives androidJavadocsJar
 }

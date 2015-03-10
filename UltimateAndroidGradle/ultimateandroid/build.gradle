@@ -37,15 +37,16 @@ android {
 ext {
     PUBLISH_GROUP_ID = 'com.marshalchen.ultimateandroid'
     PUBLISH_ARTIFACT_ID = 'ultimateandroid'
-    PUBLISH_VERSION = '0.5.0'
+    PUBLISH_VERSION = '0.6.0'
 }
-//apply from: 'android-release-aar.gradle'
-apply from: 'maven-push.gradle'
+apply from: 'android-release-aar.gradle'
+//apply from: 'maven-push.gradle'
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:21.0.2'
     compile 'com.android.support:support-v4:21.0.2'
     compile 'com.android.support:recyclerview-v7:21.0.2'
+    compile 'com.marshalchen.ultimaterecyclerview:library:0.2.1'
 }
 
 
