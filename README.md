@@ -32,7 +32,7 @@ UltimateAndroid
 ### Support Android Studio 1.0
 ##### You can see javadoc [here](http://blog.marshalchen.com/UltimateAndroid/ultimateandroiddoc/index.html)
 
-#####There is a awesome recyclerview which contains  pulling to refresh, loading more, swiping to dismiss, draging and drop, animations ,show or hide toolbar and FAB when scrolling and many other features,you can try it [here](https://github.com/cymcsg/UltimateRecyclerView).
+#####There is an awesome recyclerview which contains pulling to refresh, loading more, swiping to dismiss, draging and drop, animations ,showing or hiding toolbar and floating action button when scrolling and many other features,you can try it [here](https://github.com/cymcsg/UltimateRecyclerView).
 
 
 
@@ -47,7 +47,7 @@ My Email is ``cymcsg # gmail.com``
 
 ---
 
-#####UltimateAndroid is a rapid development framework for developing  apps.UltimateAndroid framework contains many features like View Injection,ORM,Asynchronous Networking and Image Loader,User scenario testing,over 100 Ui effects etc.And there are also many useful features like WebViewUtils,DaoUtils,Https Utils, CryptographyUtils,file upload etc.The framework will be added  more feature in the future. 
+#####UltimateAndroid is a rapid development framework for developing  apps.UltimateAndroid framework contains many features like View Injection,ORM,Asynchronous Networking and Image Loader,User scenario testing,over 100 Ui effects etc.And there are also many useful features like WebViewUtils,DaoUtils,Https Utils,CryptographyUtils,FileUploadUtils etc.The framework will be added more feature in the future. 
 
 
 
