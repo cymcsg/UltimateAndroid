@@ -358,8 +358,8 @@ public class BasicUtils {
      * @return
      */
     public static boolean judgeNotNull(List list) {
-        //return list != null && list.size() > 0 ? true : false;
-        return judgeNotNull(list, (Class<?>) null);
+        return list != null && list.size() > 0 ? true : false;
+
     }
 
     /**
