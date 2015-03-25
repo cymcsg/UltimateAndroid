@@ -1033,6 +1033,12 @@
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
         </activity>
+        <activity android:name=".sampleModules.ShimmerFacebookActivity">
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>
