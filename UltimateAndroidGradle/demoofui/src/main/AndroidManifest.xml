@@ -1038,6 +1038,11 @@
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
         </activity>
+        <activity android:name=".sampleModules.SearchDrawableActivity">
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui" />
+            </intent-filter>
+        </activity>
 
     </application>
 
