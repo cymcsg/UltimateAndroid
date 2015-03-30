@@ -1,6 +1,12 @@
 
 ##Update：
 
+2014.3.26 add [SearchAnimation](https://github.com/NiaNingXue/SearchAnimation)
+
+add [Shimmer](https://github.com/facebook/shimmer-android)
+
+2014.3.9 add [UltimateRecyclerView](https://github.com/cymcsg/UltimateRecyclerView)
+
 2014.1.6 reconstruct utils
 
 2014.12.16 add [TimelyView](https://github.com/adnan-SM/TimelyTextView)
