@@ -28,6 +28,7 @@ import com.marshalchen.common.demoofui.sampleModules.MaterialListViewActivity;
 import com.marshalchen.common.demoofui.sampleModules.MotionSampleActivity;
 import com.marshalchen.common.demoofui.sampleModules.NumberProgressBarActivity;
 import com.marshalchen.common.demoofui.sampleModules.RippleEffectActivity;
+import com.marshalchen.common.demoofui.sampleModules.SearchDrawableActivity;
 import com.marshalchen.common.demoofui.sampleModules.SignaturePadActivity;
 import com.marshalchen.common.demoofui.ultimaterecyclerview.UltimateRecyclerViewActivity;
 import com.marshalchen.common.ui.Typefaces;
@@ -194,6 +195,9 @@ public class LandingFragment extends Fragment {
         addItemToTop(myData,
                 "MaterialDesignActivity",
                 new Intent(getActivity(), MaterialDesignActivity.class));
+        addItemToTop(myData,
+                "SearchDrawableActivity",
+                new Intent(getActivity(), SearchDrawableActivity.class));
         addItemToTop(myData,
                 "UltimateRecyclerViewActivity",
                 new Intent(getActivity(), UltimateRecyclerViewActivity.class));
