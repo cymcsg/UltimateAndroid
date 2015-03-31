@@ -106,7 +106,7 @@ public class UltimateRecyclerViewActivity extends ActionBarActivity implements A
             }
         });
 
-        ultimateRecyclerView.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+        ultimateRecyclerView.setDefaultOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
                 new Handler().postDelayed(new Runnable() {
@@ -175,7 +175,7 @@ public class UltimateRecyclerViewActivity extends ActionBarActivity implements A
                             toolbar.startActionMode(UltimateRecyclerViewActivity.this);
                             toggleSelection(position);
                             dragDropTouchListener.startDrag();
-                            ultimateRecyclerView.enableSwipeRefresh(false);
+                            ultimateRecyclerView.enableDefaultSwipeRefresh(false);
                         }
 
                     }
@@ -221,7 +221,7 @@ public class UltimateRecyclerViewActivity extends ActionBarActivity implements A
             @Override
             protected void onItemDrop(RecyclerView recyclerView, int position) {
                 Logs.d("drop----");
-                ultimateRecyclerView.enableSwipeRefresh(true);
+                ultimateRecyclerView.enableDefaultSwipeRefresh(true);
             }
         };
         dragDropTouchListener.setCustomDragHighlight(getResources().getDrawable(R.drawable.custom_drag_frame));
