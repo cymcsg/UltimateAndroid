@@ -534,7 +534,7 @@ Some stuff is just implemented to showcase its functionality and so they are not
 
 <h2 ><a name="demo_of_ui">Screen Shot:</h2>  
 
-![tutorials2](https://bytebucket.org/marshalchen/images/raw/e943b6016246e1f3c2085a24e1a773e0107775b3/ultimateandroid/tutorial2-15.gif)
+![tutorials2](https://bytebucket.org/marshalchen/images/raw/0bed76fcdecb604afab39df9ce1a509af4b6f995/ultimaterecyclerview/ultimate_recyclerview6.gif)
 
 
 ![tutorials2](https://bytebucket.org/marshalchen/images/raw/e943b6016246e1f3c2085a24e1a773e0107775b3/ultimateandroid/tutorial2-14.gif)
