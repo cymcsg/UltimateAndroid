@@ -13,7 +13,7 @@ import android.widget.Toast;
 import com.marshalchen.common.commonUtils.basicUtils.BasicUtils;
 import com.marshalchen.common.demoofui.HowToUseActivity;
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uimodule.nineoldandroids.view.ViewHelper;
+import  com.nineoldandroids.view.ViewHelper;
 import com.daimajia.swipe.SwipeLayout;
 
 public class SwipeLayoutActivity extends ActionBarActivity {
