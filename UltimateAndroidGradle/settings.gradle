@@ -1,1 +1,1 @@
-include ':app', ':ultimateandroid', ':ultimateandroidui', ':demoofui'
+include ':app', ':ultimateandroid', ':ultimateandroidui', ':demoofui', ':ultimateandroiduiwidget', ':ultimateandroiduianimation'
