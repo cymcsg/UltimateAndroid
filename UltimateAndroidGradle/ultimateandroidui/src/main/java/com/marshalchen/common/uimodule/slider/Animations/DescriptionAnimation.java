@@ -3,9 +3,9 @@ package com.marshalchen.common.uimodule.slider.Animations;
 import android.view.View;
 
 import com.marshalchen.common.uimodule.R;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.ObjectAnimator;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.ValueAnimator;
-import com.marshalchen.common.uimodule.nineoldandroids.view.ViewHelper;
+import com.nineoldandroids.animation.ObjectAnimator;
+import com.nineoldandroids.animation.ValueAnimator;
+import com.nineoldandroids.view.ViewHelper;
 
 /**
  * A demo class to show how to use {@link com.marshalchen.common.uimodule.slider.Animations.BaseAnimationInterface}

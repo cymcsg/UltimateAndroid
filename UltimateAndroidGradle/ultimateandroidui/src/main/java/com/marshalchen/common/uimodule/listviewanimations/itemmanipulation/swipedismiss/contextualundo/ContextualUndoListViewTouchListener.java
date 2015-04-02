@@ -25,12 +25,12 @@ import android.widget.AdapterView;
 import com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.swipedismiss.DismissableManager;
 import com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.swipedismiss.SwipeOnTouchListener;
 import com.marshalchen.common.uimodule.listviewanimations.util.AdapterViewUtil;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.Animator;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.AnimatorListenerAdapter;
+import com.nineoldandroids.animation.Animator;
+import com.nineoldandroids.animation.AnimatorListenerAdapter;
 
-import static com.marshalchen.common.uimodule.nineoldandroids.view.ViewHelper.setAlpha;
-import static com.marshalchen.common.uimodule.nineoldandroids.view.ViewHelper.setTranslationX;
-import static com.marshalchen.common.uimodule.nineoldandroids.view.ViewPropertyAnimator.animate;
+import static com.nineoldandroids.view.ViewHelper.setAlpha;
+import static com.nineoldandroids.view.ViewHelper.setTranslationX;
+import static com.nineoldandroids.view.ViewPropertyAnimator.animate;
 
 /**
  * An {@link android.view.View.OnTouchListener} for the {@link ContextualUndoAdapter}. Don't use

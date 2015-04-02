@@ -19,8 +19,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import com.marshalchen.common.uimodule.listviewanimations.swinginadapters.SingleAnimationAdapter;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.Animator;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.ObjectAnimator;
+import com.nineoldandroids.animation.Animator;
+import com.nineoldandroids.animation.ObjectAnimator;
 
 /**
  * An implementation of the AnimationAdapter class which applies a

@@ -1,7 +1,7 @@
 package com.marshalchen.common.uimodule.niftymodaldialogeffects.effects;
 
 import android.view.View;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.ObjectAnimator;
+import com.nineoldandroids.animation.ObjectAnimator;
 
 
 /**

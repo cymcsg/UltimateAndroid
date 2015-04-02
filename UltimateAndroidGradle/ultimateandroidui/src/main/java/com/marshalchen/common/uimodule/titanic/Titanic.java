@@ -3,10 +3,10 @@ package com.marshalchen.common.uimodule.titanic;
 
 import android.os.Build;
 import android.view.animation.LinearInterpolator;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.Animator;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.AnimatorSet;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.ObjectAnimator;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.ValueAnimator;
+import com.nineoldandroids.animation.Animator;
+import com.nineoldandroids.animation.AnimatorSet;
+import com.nineoldandroids.animation.ObjectAnimator;
+import com.nineoldandroids.animation.ValueAnimator;
 
 
 public class Titanic {

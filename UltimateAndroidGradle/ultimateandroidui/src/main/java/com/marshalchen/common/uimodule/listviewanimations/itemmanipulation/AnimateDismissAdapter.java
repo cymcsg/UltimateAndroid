@@ -20,11 +20,11 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import com.marshalchen.common.uimodule.listviewanimations.BaseAdapterDecorator;
 import com.marshalchen.common.uimodule.listviewanimations.util.AdapterViewUtil;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.Animator;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.AnimatorListenerAdapter;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.AnimatorSet;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.ValueAnimator;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.ValueAnimator.AnimatorUpdateListener;
+import com.nineoldandroids.animation.Animator;
+import com.nineoldandroids.animation.AnimatorListenerAdapter;
+import com.nineoldandroids.animation.AnimatorSet;
+import com.nineoldandroids.animation.ValueAnimator;
+import com.nineoldandroids.animation.ValueAnimator.AnimatorUpdateListener;
 
 import java.util.*;
 

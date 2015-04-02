@@ -2,7 +2,7 @@ package com.marshalchen.common.uimodule.slider.Transformers;
 
 import android.view.View;
 
-import com.marshalchen.common.uimodule.nineoldandroids.view.ViewHelper;
+import com.nineoldandroids.view.ViewHelper;
 
 public class StackTransformer extends BaseTransformer {
 

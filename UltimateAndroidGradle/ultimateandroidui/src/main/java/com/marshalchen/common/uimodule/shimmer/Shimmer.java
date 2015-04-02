@@ -3,9 +3,9 @@ package com.marshalchen.common.uimodule.shimmer;
 
 import android.os.Build;
 import android.view.View;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.Animator;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.ObjectAnimator;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.ValueAnimator;
+import com.nineoldandroids.animation.Animator;
+import com.nineoldandroids.animation.ObjectAnimator;
+import com.nineoldandroids.animation.ValueAnimator;
 
 /**
  * Shimmer

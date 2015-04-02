@@ -28,8 +28,8 @@ import android.util.DisplayMetrics;
 import android.view.*;
 import android.widget.*;
 import com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.swipedismiss.SwipeOnTouchListener;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.*;
-import com.marshalchen.common.uimodule.nineoldandroids.view.ViewHelper;
+import com.nineoldandroids.animation.*;
+import com.nineoldandroids.view.ViewHelper;
 
 /**
  * The DynamicListView is an extension of {@link android.widget.ListView} that supports cell dragging

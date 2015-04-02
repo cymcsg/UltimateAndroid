@@ -4,7 +4,7 @@ import android.view.View;
 
 import com.marshalchen.common.uimodule.slider.Animations.BaseAnimationInterface;
 import com.marshalchen.common.uimodule.slider.Tricks.ViewPagerEx;
-import com.marshalchen.common.uimodule.nineoldandroids.view.ViewHelper;
+import com.nineoldandroids.view.ViewHelper;
 
 import java.util.ArrayList;
 import java.util.HashMap;

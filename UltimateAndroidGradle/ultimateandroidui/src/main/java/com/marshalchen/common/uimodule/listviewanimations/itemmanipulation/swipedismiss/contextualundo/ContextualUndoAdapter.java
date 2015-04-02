@@ -24,15 +24,15 @@ import android.widget.AbsListView;
 import android.widget.BaseAdapter;
 import com.marshalchen.common.uimodule.listviewanimations.BaseAdapterDecorator;
 import com.marshalchen.common.uimodule.listviewanimations.util.AdapterViewUtil;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.Animator;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.AnimatorListenerAdapter;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.ObjectAnimator;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.ValueAnimator;
-import com.marshalchen.common.uimodule.nineoldandroids.view.ViewHelper;
+import com.nineoldandroids.animation.Animator;
+import com.nineoldandroids.animation.AnimatorListenerAdapter;
+import com.nineoldandroids.animation.ObjectAnimator;
+import com.nineoldandroids.animation.ValueAnimator;
+import com.nineoldandroids.view.ViewHelper;
 
-import static com.marshalchen.common.uimodule.nineoldandroids.view.ViewHelper.setAlpha;
-import static com.marshalchen.common.uimodule.nineoldandroids.view.ViewHelper.setTranslationX;
-import static com.marshalchen.common.uimodule.nineoldandroids.view.ViewPropertyAnimator.animate;
+import static com.nineoldandroids.view.ViewHelper.setAlpha;
+import static com.nineoldandroids.view.ViewHelper.setTranslationX;
+import static com.nineoldandroids.view.ViewPropertyAnimator.animate;
 
 /**
  * Warning: a stable id for each item in the adapter is required. The decorated

@@ -24,11 +24,11 @@ import android.util.AttributeSet;
 import android.view.*;
 import android.widget.*;
 import com.marshalchen.common.uimodule.R;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.Animator;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.AnimatorListenerAdapter;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.ValueAnimator;
-import com.marshalchen.common.uimodule.nineoldandroids.view.ViewHelper;
-import com.marshalchen.common.uimodule.nineoldandroids.view.ViewPropertyAnimator;
+import com.nineoldandroids.animation.Animator;
+import com.nineoldandroids.animation.AnimatorListenerAdapter;
+import com.nineoldandroids.animation.ValueAnimator;
+import com.nineoldandroids.view.ViewHelper;
+import com.nineoldandroids.view.ViewPropertyAnimator;
 
 import java.util.*;
 

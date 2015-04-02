@@ -22,16 +22,16 @@ import android.support.v4.view.MotionEventCompat;
 import android.view.*;
 import android.widget.AbsListView;
 import android.widget.ListView;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.Animator;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.AnimatorListenerAdapter;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.ValueAnimator;
-import com.marshalchen.common.uimodule.nineoldandroids.view.animation.AnimatorProxy;
+import com.nineoldandroids.animation.Animator;
+import com.nineoldandroids.animation.AnimatorListenerAdapter;
+import com.nineoldandroids.animation.ValueAnimator;
+import com.nineoldandroids.view.animation.AnimatorProxy;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import static com.marshalchen.common.uimodule.nineoldandroids.view.ViewPropertyAnimator.animate;
+import static com.nineoldandroids.view.ViewPropertyAnimator.animate;
 
 /**
  * A {@link android.view.View.OnTouchListener} that makes the list items in a {@link android.widget.ListView}

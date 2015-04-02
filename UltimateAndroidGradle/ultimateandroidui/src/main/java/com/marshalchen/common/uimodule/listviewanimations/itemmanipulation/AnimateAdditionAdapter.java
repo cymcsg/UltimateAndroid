@@ -23,7 +23,7 @@ import android.widget.AbsListView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import com.marshalchen.common.uimodule.listviewanimations.BaseAdapterDecorator;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.*;
+import com.nineoldandroids.animation.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;

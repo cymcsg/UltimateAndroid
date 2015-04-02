@@ -4,7 +4,7 @@ import android.os.Build;
 import android.view.View;
 
 import com.marshalchen.common.uimodule.slider.Tricks.ViewPagerEx;
-import com.marshalchen.common.uimodule.nineoldandroids.view.ViewHelper;
+import com.nineoldandroids.view.ViewHelper;
 
 public class FlipPageViewTransformer extends BaseTransformer {
 

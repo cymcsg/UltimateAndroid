@@ -7,7 +7,7 @@ package com.marshalchen.common.uimodule.risenumber;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.TextView;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.ValueAnimator;
+import com.nineoldandroids.animation.ValueAnimator;
 
 import java.text.DecimalFormat;
 

@@ -14,7 +14,7 @@ import android.widget.BaseAdapter;
 import android.widget.FrameLayout;
 import com.marshalchen.common.uimodule.foldablelayout.shading.FoldShading;
 import com.marshalchen.common.uimodule.foldablelayout.shading.SimpleFoldShading;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.ObjectAnimator;
+import com.nineoldandroids.animation.ObjectAnimator;
 
 import java.util.LinkedList;
 import java.util.Queue;

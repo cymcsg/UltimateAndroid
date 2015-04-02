@@ -11,9 +11,9 @@ import android.widget.LinearLayout;
 import com.marshalchen.common.uimodule.listviewanimations.ArrayAdapter;
 import com.marshalchen.common.uimodule.listviewanimations.ListViewSetter;
 import com.marshalchen.common.uimodule.listviewanimations.util.AdapterViewUtil;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.Animator;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.AnimatorListenerAdapter;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.ValueAnimator;
+import com.nineoldandroids.animation.Animator;
+import com.nineoldandroids.animation.AnimatorListenerAdapter;
+import com.nineoldandroids.animation.ValueAnimator;
 
 import java.util.ArrayList;
 import java.util.HashSet;
