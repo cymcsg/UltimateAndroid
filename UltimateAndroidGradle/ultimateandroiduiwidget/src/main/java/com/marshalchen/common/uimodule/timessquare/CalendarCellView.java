@@ -5,7 +5,8 @@ package com.marshalchen.common.uimodule.timessquare;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.TextView;
-import com.marshalchen.common.uimodule.R;
+
+import com.marshalchen.common.uimodule.widgets.R;
 
 
 public class CalendarCellView extends TextView {

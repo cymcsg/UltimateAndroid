@@ -8,8 +8,8 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
-import com.marshalchen.common.uimodule.R;
-import com.marshalchen.common.commonUtils.logUtils.Logs;
+
+import com.marshalchen.common.uimodule.widgets.R;
 
 import static android.view.View.MeasureSpec.*;
 
@@ -86,11 +86,11 @@ public class CalendarGridView extends ViewGroup {
   }
 
   @Override protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-    Logs.d("Grid.onMeasure w=%s h=%s"+MeasureSpec.toString(widthMeasureSpec)+
-            MeasureSpec.toString(heightMeasureSpec));
+   // Logs.d("Grid.onMeasure w=%s h=%s"+MeasureSpec.toString(widthMeasureSpec)+
+   //         MeasureSpec.toString(heightMeasureSpec));
     int widthMeasureSize = MeasureSpec.getSize(widthMeasureSpec);
     if (oldWidthMeasureSize == widthMeasureSize) {
-      Logs.d("SKIP Grid.onMeasure");
+   //   Logs.d("SKIP Grid.onMeasure");
       setMeasuredDimension(getMeasuredWidth(), getMeasuredHeight());
       return;
     }
@@ -115,7 +115,7 @@ public class CalendarGridView extends ViewGroup {
     }
     final int measuredWidth = widthMeasureSize + 2; // Fudge factor to make the borders show up.
     setMeasuredDimension(measuredWidth, totalHeight);
-    Logs.d("Grid.onMeasure %d ms"+(System.currentTimeMillis() - start));
+   // Logs.d("Grid.onMeasure %d ms"+(System.currentTimeMillis() - start));
   }
 
   @Override protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
@@ -127,7 +127,7 @@ public class CalendarGridView extends ViewGroup {
       child.layout(left, top, right, top + rowHeight);
       top += rowHeight;
     }
-    Logs.d("Grid.onLayout %d ms"+(System.currentTimeMillis() - start));
+   // Logs.d("Grid.onLayout %d ms"+(System.currentTimeMillis() - start));
   }
 
   public void setNumRows(int numRows) {

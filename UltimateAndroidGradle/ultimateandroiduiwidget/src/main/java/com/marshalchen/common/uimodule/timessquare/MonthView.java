@@ -7,8 +7,9 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.marshalchen.common.uimodule.R;
-import com.marshalchen.common.commonUtils.logUtils.Logs;
+
+
+import com.marshalchen.common.uimodule.widgets.R;
 
 import java.text.DateFormat;
 import java.util.Calendar;
@@ -58,7 +59,7 @@ public class MonthView extends LinearLayout {
 
   public void init(MonthDescriptor month, List<List<MonthCellDescriptor>> cells,
       boolean displayOnly) {
-    Logs.d("Initializing MonthView (%d) for %s", System.identityHashCode(this), month);
+   // Logs.d("Initializing MonthView (%d) for %s", System.identityHashCode(this), month);
     long start = System.currentTimeMillis();
     title.setText(month.getLabel());
 
@@ -90,7 +91,7 @@ public class MonthView extends LinearLayout {
         weekRow.setVisibility(GONE);
       }
     }
-    Logs.d("MonthView.init took %d ms", System.currentTimeMillis() - start);
+   // Logs.d("MonthView.init took %d ms", System.currentTimeMillis() - start);
   }
 
   public void setDividerColor(int color) {

@@ -7,7 +7,6 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import com.marshalchen.common.commonUtils.logUtils.Logs;
 
 import static android.view.View.MeasureSpec.*;
 
@@ -44,7 +43,7 @@ public class CalendarRowView extends ViewGroup implements View.OnClickListener {
     final int widthWithPadding = totalWidth + getPaddingLeft() + getPaddingRight();
     final int heightWithPadding = rowHeight + getPaddingTop() + getPaddingBottom();
     setMeasuredDimension(widthWithPadding, heightWithPadding);
-    Logs.d("Row.onMeasure %d ms", System.currentTimeMillis() - start);
+ //   Logs.d("Row.onMeasure %d ms", System.currentTimeMillis() - start);
   }
 
   @Override protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
@@ -54,7 +53,7 @@ public class CalendarRowView extends ViewGroup implements View.OnClickListener {
       final View child = getChildAt(c);
       child.layout(c * cellSize, 0, (c + 1) * cellSize, cellHeight);
     }
-      Logs.d("Row.onLayout %d ms", System.currentTimeMillis() - start);
+     // Logs.d("Row.onLayout %d ms", System.currentTimeMillis() - start);
   }
 
   public void setIsHeaderRow(boolean isHeaderRow) {

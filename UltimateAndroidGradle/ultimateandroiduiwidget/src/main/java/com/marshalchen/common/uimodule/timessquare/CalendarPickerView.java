@@ -11,9 +11,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
-import com.marshalchen.common.uimodule.R;
-import com.marshalchen.common.commonUtils.logUtils.Logs;
 import com.marshalchen.common.uimodule.timessquare.MonthCellDescriptor.RangeState;
+import com.marshalchen.common.uimodule.widgets.R;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -201,7 +200,7 @@ public class CalendarPickerView extends ListView {
                     new MonthDescriptor(monthCounter.get(MONTH), monthCounter.get(YEAR), date,
                             monthNameFormat.format(date));
             cells.add(getMonthCells(month, monthCounter));
-            Logs.d("Adding month %s" + month);
+            //Logs.d("Adding month %s" + month);
             months.add(month);
             monthCounter.add(MONTH, 1);
         }
@@ -298,7 +297,7 @@ public class CalendarPickerView extends ListView {
         post(new Runnable() {
             @Override
             public void run() {
-                Logs.d("Scrolling to position %d" + selectedIndex);
+              //  Logs.d("Scrolling to position %d" + selectedIndex);
 
                 if (smoothScroll) {
                     smoothScrollToPosition(selectedIndex);
@@ -341,7 +340,7 @@ public class CalendarPickerView extends ListView {
      * {@link android.app.DialogFragment#onStart()}).
      */
     public void fixDialogDimens() {
-        Logs.d("Fixing dimensions to h = %d / w = %d"+getMeasuredHeight()+getMeasuredWidth());
+       // Logs.d("Fixing dimensions to h = %d / w = %d"+getMeasuredHeight()+getMeasuredWidth());
         // Fix the layout height/width after the dialog has been shown.
         getLayoutParams().height = getMeasuredHeight();
         getLayoutParams().width = getMeasuredWidth();
@@ -349,7 +348,7 @@ public class CalendarPickerView extends ListView {
         post(new Runnable() {
             @Override
             public void run() {
-                Logs.d("Dimens are fixed: now scroll to the selected date");
+             //   Logs.d("Dimens are fixed: now scroll to the selected date");
                 scrollToSelectedDates();
             }
         });
@@ -360,7 +359,7 @@ public class CalendarPickerView extends ListView {
      * be called when the screen has been rotated and the dialog should be re-measured.
      */
     public void unfixDialogDimens() {
-        Logs.d("Reset the fixed dimensions to allow for re-measurement");
+        //Logs.d("Reset the fixed dimensions to allow for re-measurement");
         // Fix the layout height/width after the dialog has been shown.
         getLayoutParams().height = LayoutParams.MATCH_PARENT;
         getLayoutParams().width = LayoutParams.MATCH_PARENT;
@@ -697,7 +696,7 @@ public class CalendarPickerView extends ListView {
 
         while ((cal.get(MONTH) < month.getMonth() + 1 || cal.get(YEAR) < month.getYear()) //
                 && cal.get(YEAR) <= month.getYear()) {
-            Logs.d("Building week row starting at %s"+cal.getTime());
+            //Logs.d("Building week row starting at %s"+cal.getTime());
             List<MonthCellDescriptor> weekCells = new ArrayList<MonthCellDescriptor>();
             cells.add(weekCells);
             for (int c = 0; c < 7; c++) {
