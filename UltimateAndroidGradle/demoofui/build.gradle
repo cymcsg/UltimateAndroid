@@ -72,5 +72,6 @@ dependencies {
     compile project(':ultimateandroidui')
     compile project(':ultimateandroiduiwidget')
     compile project(':ultimateandroiduianimation')
+    compile project(':ultimateandroiduicomponent')
   //  compile 'com.marshalchen.ultimateandroid:ultimateandroidui:0.6.0'
 }
