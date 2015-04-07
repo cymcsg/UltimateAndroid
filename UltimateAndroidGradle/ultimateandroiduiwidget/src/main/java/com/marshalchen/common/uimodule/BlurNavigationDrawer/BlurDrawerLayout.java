@@ -6,7 +6,8 @@ import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.support.v4.widget.DrawerLayout;
 import android.util.AttributeSet;
-import com.marshalchen.common.uimodule.R;
+
+import com.marshalchen.common.uimodule.widgets.R;
 
 /**
  * Created by charbgr on 9/4/14.
