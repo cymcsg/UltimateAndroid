@@ -6,8 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.marshalchen.common.uimodule.R;
 import com.marshalchen.common.uimodule.cardsSwiped.model.CardModel;
+import com.marshalchen.ultimateandroiduicomponent.R;
 
 
 public final class SimpleCardStackAdapter extends CardStackAdapter {

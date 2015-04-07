@@ -14,9 +14,9 @@ import android.view.animation.AccelerateInterpolator;
 import android.view.animation.LinearInterpolator;
 import android.widget.AdapterView;
 import android.widget.ListAdapter;
-import com.marshalchen.common.uimodule.R;
 import com.marshalchen.common.uimodule.cardsSwiped.model.CardModel;
 import com.marshalchen.common.uimodule.cardsSwiped.model.Orientations;
+import com.marshalchen.ultimateandroiduicomponent.R;
 
 import java.util.Random;
 
@@ -93,7 +93,7 @@ public class CardContainer extends AdapterView<ListAdapter> {
 				R.styleable.CardContainer);
 
 		setGravity(a.getInteger(R.styleable.CardContainer_android_gravity, Gravity.CENTER));
-		int orientation = a.getInteger(R.styleable.CardContainer_orientation, 1);
+		int orientation = a.getInteger(R.styleable.CardContainer_cardContainerOrientation, 1);
 		setOrientation(Orientations.Orientation.fromIndex(orientation));
 
 		a.recycle();
@@ -237,7 +237,7 @@ public class CardContainer extends AdapterView<ListAdapter> {
 		if (mGestureDetector.onTouchEvent(event)) {
 			return true;
 		}
-		Log.d("Touch Event", MotionEvent.actionToString(event.getActionMasked()) + " ");
+		//Log.d("Touch Event", MotionEvent.actionToString(event.getActionMasked()) + " ");
 		final int pointerIndex;
 		final float x, y;
 		final float dx, dy;

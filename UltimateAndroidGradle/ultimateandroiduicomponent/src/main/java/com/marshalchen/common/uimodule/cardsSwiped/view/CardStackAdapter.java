@@ -4,8 +4,8 @@ import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
-import com.marshalchen.common.uimodule.R;
 import com.marshalchen.common.uimodule.cardsSwiped.model.CardModel;
+import com.marshalchen.ultimateandroiduicomponent.R;
 
 import java.util.ArrayList;
 import java.util.Collection;

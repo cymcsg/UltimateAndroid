@@ -354,8 +354,7 @@
     <color name="passlock_list_row_selected">#78c8e6</color>
     <color name="white_translucent">#50FFFFFF</color>
 
-    <color name="card_bg">#EBEBEB</color>
-    <color name="card_outline">#D0D0CE</color>
+
 
     <color name="divider_color">#11000000</color>
     <color name="msg_color">#FFFFFFFF</color>
