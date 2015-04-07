@@ -65,4 +65,24 @@
         <attr name="openDescription" format="reference"/>
         <attr name="closeDescription" format="reference"/>
     </declare-styleable>
+
+    <declare-styleable name="DayPickerView">
+        <attr name="dpv_colorCurrentDay" format="color"/>
+        <attr name="dpv_colorSelectedDayBackground" format="color"/>
+        <attr name="dpv_colorSelectedDayText" format="color"/>
+        <attr name="dpv_colorPreviousDay" format="color"/>
+        <attr name="dpv_colorNormalDay" format="color"/>
+        <attr name="dpv_colorMonthName" format="color"/>
+        <attr name="dpv_colorDayName" format="color"/>
+        <attr name="dpv_textSizeDay" format="dimension"/>
+        <attr name="dpv_textSizeMonth" format="dimension"/>
+        <attr name="dpv_textSizeDayName" format="dimension"/>
+        <attr name="dpv_headerMonthHeight" format="dimension"/>
+        <attr name="dpv_selectedDayRadius" format="dimension"/>
+        <attr name="dpv_calendarHeight" format="dimension"/>
+        <attr name="dpv_enablePreviousDay" format="boolean"/>
+        <attr name="dpv_startCurrentMonth" format="boolean"/>
+        <attr name="dpv_currentDaySelected" format="boolean"/>
+        <attr name="dpv_drawRoundRect" format="boolean"/>
+    </declare-styleable>
 </resources>

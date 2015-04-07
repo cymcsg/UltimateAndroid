@@ -30,7 +30,8 @@ import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.AbsListView;
 import android.widget.BaseAdapter;
-import com.marshalchen.common.uimodule.R;
+
+import com.marshalchen.common.uimodule.widgets.R;
 
 import java.io.Serializable;
 import java.util.Calendar;
@@ -48,7 +49,7 @@ public class SimpleMonthAdapter extends BaseAdapter implements SimpleMonthView.O
 
 	public SimpleMonthAdapter(Context context, DatePickerController datePickerController, TypedArray typedArray) {
         this.typedArray = typedArray;
-        startCurrentMonth = typedArray.getBoolean(R.styleable.DayPickerView_startCurrentMonth, false);
+        startCurrentMonth = typedArray.getBoolean(R.styleable.DayPickerView_dpv_startCurrentMonth, false);
         selectedDays = new SelectedDays<CalendarDay>();
 		mContext = context;
 		mController = datePickerController;
@@ -138,7 +139,7 @@ public class SimpleMonthAdapter extends BaseAdapter implements SimpleMonthView.O
 	}
 
 	protected void init() {
-        if (typedArray.getBoolean(R.styleable.DayPickerView_currentDaySelected, false))
+        if (typedArray.getBoolean(R.styleable.DayPickerView_dpv_currentDaySelected, false))
             onDayTapped(new CalendarDay(System.currentTimeMillis()));
 	}
 

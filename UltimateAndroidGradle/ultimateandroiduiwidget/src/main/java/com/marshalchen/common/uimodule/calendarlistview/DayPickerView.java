@@ -28,7 +28,8 @@ import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.widget.AbsListView;
 import android.widget.ListView;
-import com.marshalchen.common.uimodule.R;
+
+import com.marshalchen.common.uimodule.widgets.R;
 
 public class DayPickerView extends ListView implements AbsListView.OnScrollListener
 {
