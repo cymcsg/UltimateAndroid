@@ -15,7 +15,8 @@ import android.view.animation.ScaleAnimation;
 import android.view.animation.Animation.AnimationListener;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import com.marshalchen.common.uimodule.R;
+
+import com.marshalchen.common.uimodule.widgets.R;
 
 public class RayMenu extends RelativeLayout {
 	private RayLayout mRayLayout;

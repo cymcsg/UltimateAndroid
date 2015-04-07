@@ -7,8 +7,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        custom:childSize="44px"
-        custom:leftHolderWidth="60dp" />
+        custom:arcChildSize="44px"
+        custom:arcLeftHolderWidth="60dp" />
 
     <FrameLayout
         android:id="@+id/control_layout"

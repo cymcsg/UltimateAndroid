@@ -32,7 +32,8 @@ import android.view.animation.ScaleAnimation;
 import android.view.animation.Animation.AnimationListener;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import com.marshalchen.common.uimodule.R;
+
+import com.marshalchen.common.uimodule.widgets.R;
 
 /**
  * A custom view that looks like the menu in <a href="https://path.com">Path
@@ -85,12 +86,12 @@ public class ArcMenu extends RelativeLayout {
         if (attrs != null) {
             TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.ArcLayout, 0, 0);
 
-            float fromDegrees = a.getFloat(R.styleable.ArcLayout_fromDegrees, ArcLayout.DEFAULT_FROM_DEGREES);
-            float toDegrees = a.getFloat(R.styleable.ArcLayout_toDegrees, ArcLayout.DEFAULT_TO_DEGREES);
+            float fromDegrees = a.getFloat(R.styleable.ArcLayout_arcFromDegrees, ArcLayout.DEFAULT_FROM_DEGREES);
+            float toDegrees = a.getFloat(R.styleable.ArcLayout_arcToDegrees, ArcLayout.DEFAULT_TO_DEGREES);
             mArcLayout.setArc(fromDegrees, toDegrees);
 
             int defaultChildSize = mArcLayout.getChildSize();
-            int newChildSize = a.getDimensionPixelSize(R.styleable.ArcLayout_childSize, defaultChildSize);
+            int newChildSize = a.getDimensionPixelSize(R.styleable.ArcLayout_arcChildSize, defaultChildSize);
             mArcLayout.setChildSize(newChildSize);
 
             a.recycle();

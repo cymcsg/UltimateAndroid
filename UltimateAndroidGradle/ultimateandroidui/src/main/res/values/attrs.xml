@@ -550,60 +550,8 @@
         <attr name="velocityFilterWeight" format="float"/>
     </declare-styleable>
 
-    <declare-styleable name="WeekView">
-        <attr name="firstDayOfWeek" format="enum">
-            <enum name="sunday" value="1"/>
-            <enum name="monday" value="2"/>
-            <enum name="tuesday" value="3"/>
-            <enum name="wednesday" value="4"/>
-            <enum name="thursday" value="5"/>
-            <enum name="friday" value="6"/>
-            <enum name="saturday" value="7"/>
-        </attr>
-        <attr name="hourHeight" format="dimension"/>
-        <attr name="textSize"/>
-        <attr name="eventTextSize" format="dimension"/>
-        <attr name="headerColumnPadding" format="dimension"/>
-        <attr name="headerRowPadding" format="dimension"/>
-        <attr name="columnGap" format="dimension"/>
-        <attr name="headerColumnTextColor" format="color"/>
-        <attr name="noOfVisibleDays" format="integer"/>
-        <attr name="headerRowBackgroundColor" format="color"/>
-        <attr name="dayBackgroundColor" format="color"/>
-        <attr name="hourSeparatorColor" format="color"/>
-        <attr name="todayBackgroundColor" format="color"/>
-        <attr name="todayHeaderTextColor" format="color"/>
-        <attr name="hourSeparatorHeight" format="dimension"/>
-        <attr name="eventTextColor" format="color"/>
-        <attr name="eventPadding" format="dimension"/>
-        <attr name="headerColumnBackground" format="color"/>
-        <attr name="dayNameLength" format="enum">
-            <enum name="length_short" value="1"/>
-            <enum name="length_long" value="2"/>
-        </attr>
-
-    </declare-styleable>
 
 
-    <attr name="fromDegrees" format="float|reference"/>
-    <attr name="toDegrees" format="float|reference"/>
-    <attr name="childSize" format="dimension|reference"/>
-
-    <declare-styleable name="ArcLayout">
-        <attr name="fromDegrees"/>
-        <attr name="toDegrees"/>
-        <attr name="childSize"/>
-    </declare-styleable>
-
-    <declare-styleable name="ArcMenu">
-        <attr name="fromDegrees"/>
-        <attr name="toDegrees"/>
-        <attr name="childSize"/>
-    </declare-styleable>
-
-    <declare-styleable name="RayLayout">
-        <attr name="leftHolderWidth" format="dimension"/>
-    </declare-styleable>
 
 
     <declare-styleable name="PullToZoomScrollView">

@@ -30,7 +30,8 @@ import android.view.animation.LinearInterpolator;
 import android.view.animation.OvershootInterpolator;
 import android.view.animation.RotateAnimation;
 import android.view.animation.Animation.AnimationListener;
-import com.marshalchen.common.uimodule.R;
+
+import com.marshalchen.common.uimodule.widgets.R;
 
 /**
  * A Layout that arranges its children around its center. The arc can be set by
@@ -75,9 +76,9 @@ public class ArcLayout extends ViewGroup {
 
         if (attrs != null) {
             TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.ArcLayout, 0, 0);
-            mFromDegrees = a.getFloat(R.styleable.ArcLayout_fromDegrees, DEFAULT_FROM_DEGREES);
-            mToDegrees = a.getFloat(R.styleable.ArcLayout_toDegrees, DEFAULT_TO_DEGREES);
-            mChildSize = Math.max(a.getDimensionPixelSize(R.styleable.ArcLayout_childSize, 0), 0);
+            mFromDegrees = a.getFloat(R.styleable.ArcLayout_arcFromDegrees, DEFAULT_FROM_DEGREES);
+            mToDegrees = a.getFloat(R.styleable.ArcLayout_arcToDegrees, DEFAULT_TO_DEGREES);
+            mChildSize = Math.max(a.getDimensionPixelSize(R.styleable.ArcLayout_arcChildSize, 0), 0);
 
             a.recycle();
         }

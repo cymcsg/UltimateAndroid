@@ -14,7 +14,8 @@ import android.view.animation.LinearInterpolator;
 import android.view.animation.OvershootInterpolator;
 import android.view.animation.RotateAnimation;
 import android.view.animation.Animation.AnimationListener;
-import com.marshalchen.common.uimodule.R;
+
+import com.marshalchen.common.uimodule.widgets.R;
 
 public class RayLayout extends ViewGroup {
 
@@ -40,11 +41,11 @@ public class RayLayout extends ViewGroup {
 
 		if (attrs != null) {
 			TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.ArcLayout, 0, 0);
-			mChildSize = Math.max(a.getDimensionPixelSize(R.styleable.ArcLayout_childSize, 0), 0);
+			mChildSize = Math.max(a.getDimensionPixelSize(R.styleable.ArcLayout_arcChildSize, 0), 0);
 			a.recycle();
 
 			a = getContext().obtainStyledAttributes(attrs, R.styleable.RayLayout, 0, 0);
-			mLeftHolderWidth = Math.max(a.getDimensionPixelSize(R.styleable.RayLayout_leftHolderWidth, 0), 0);
+			mLeftHolderWidth = Math.max(a.getDimensionPixelSize(R.styleable.RayLayout_arcLeftHolderWidth, 0), 0);
 			a.recycle();
 
 		}

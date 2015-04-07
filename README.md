@@ -28,11 +28,11 @@ UltimateAndroid
 [Try Demo](#sample)
 
 
-###Update Ui for Material Design!
-### Support Android Studio 1.0
+######Update Ui for Material Design! Support Android Studio 1.0
+
 ##### You can see javadoc [here](http://blog.marshalchen.com/UltimateAndroid/ultimateandroiddoc/index.html)
 
-#####There is an awesome recyclerview which contains pulling to refresh, loading more, swiping to dismiss, draging and drop, animations ,showing or hiding toolbar and floating action button when scrolling and many other features,you can try it [here](https://github.com/cymcsg/UltimateRecyclerView).
+#####There is an awesome recyclerview which contains pulling to refresh, loading more, swiping to dismiss, draging and drop, animations ,showing or hiding toolbar and floating action button when scrolling and many other features,you can try it [here UltimateRecyclerView](https://github.com/cymcsg/UltimateRecyclerView).
 
 
 
@@ -101,7 +101,7 @@ If you use normal way,you can pay attention that UltimateAndroid  depends on app
 2.As the function of View Injection which uses ButterKnife,you should config your IDE before you can compile the project.***Most of  IDEs require additional configuration in order to enable annotation processing for Butter Knife,
 or you can see [IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse Configuration for butter Knife][102].***
 
-***Notice:The latest version of the framework needs Android Sdk  of Version 21. If you use gradle project, you should use android studio which version should be 1.0.0+***
+***Notice:The latest version of the framework needs Android Sdk  of Version 21. If you use gradle project, you should use android studio which version should be 1.0.0+. If you use latest Android Studio ,you do not need set annotation processing***
 
 3.View Injection:
 
@@ -345,7 +345,7 @@ dependencies {
 
 2.Demo的Apk文件可以直接下载使用.由于框架使用了View Injection，**大部分IDE需要开启annotation的编译（使用了Butter Knife），如果不清楚如何开启可以看一下[IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse Configuration for butter Knife][102].**
 
-***注意：UltimateAndroid框架需要API21版本的Android SDK来进行编译,如果使用了gradle的project，android studio的版本需要大于1.0.0***
+***注意：UltimateAndroid框架需要API21版本的Android SDK来进行编译,如果使用了gradle的project，android studio的版本需要大于1.0.0如果你用的是最新版的Android Studio，你不需要显式的开启annotation processing了***
 
 3.视图注入：
 
