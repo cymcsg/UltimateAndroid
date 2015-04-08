@@ -163,4 +163,86 @@
         <attr name="psv_headerHeight" format="dimension"/>
         <attr name="psv_headerVisibleHeight" format="dimension"/>
     </declare-styleable>
+
+    <declare-styleable name="ListBuddiesOptions">
+        <attr name="gap" format="reference"/>
+        <attr name="gapColor" format="color"/>
+        <attr name="speed" format="integer"/>
+        <attr name="listsDivider" format="reference"/>
+        <attr name="listsDividerHeight" format="reference"/>
+        <attr name="autoScrollFaster" format="enum">
+            <enum name="right" value="0"/>
+            <enum name="left" value="1"/>
+        </attr>
+        <attr name="scrollFaster" format="enum">
+            <enum name="right" value="0"/>
+            <enum name="left" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ParallaxImageView">
+        <attr name="pi_intensity" format="float"/>
+        <attr name="tiltSensitivity" format="float"/>
+        <attr name="forwardTiltOffset" format="float"/>
+        <attr name="scaledIntensity" format="boolean"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="SelectorOptions">
+        <attr name="so_selectorColor" format="color"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="ShowcaseView">
+        <attr name="sv_backgroundColor" format="color|reference"/>
+        <attr name="sv_detailTextColor" format="color|reference"/>
+        <attr name="sv_titleTextColor" format="color|reference"/>
+        <attr name="sv_buttonBackgroundColor" format="color|reference"/>
+        <attr name="sv_buttonForegroundColor" format="color|reference"/>
+        <attr name="sv_buttonText" format="string|reference"/>
+        <attr name="sv_detailTextAppearance" format="reference"/>
+        <attr name="sv_titleTextAppearance" format="reference"/>
+        <attr name="sv_showcaseColor" format="color|reference"/>
+        <attr name="sv_tintButtonColor" format="boolean|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="ParallaxScroll">
+        <attr name="parallax_factor" format="float"/>
+        <attr name="inner_parallax_factor" format="float"/>
+        <attr name="parallax_views_num" format="integer"/>
+        <attr name="circular_parallax" format="boolean"/>
+    </declare-styleable>
+
+
+
+    <declare-styleable name="PullToZoomScrollView">
+        <attr name="scrollHeadView" format="reference"/>
+        <attr name="scrollContentView" format="reference"/>
+        <attr name="scrollZoomView" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="PullToZoomListView">
+        <attr name="listHeadView" format="reference"/>
+        <attr name="isHeadParallax" format="boolean"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="CustomTheme">
+        <attr name="showcaseViewStyle" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="StaggeredGridView">
+        <attr name="column_count" format="integer"/>
+        <attr name="column_count_portrait" format="integer"/>
+        <attr name="column_count_landscape" format="integer"/>
+        <attr name="item_margin" format="dimension"/>
+        <attr name="grid_paddingLeft" format="dimension"/>
+        <attr name="grid_paddingRight" format="dimension"/>
+        <attr name="grid_paddingTop" format="dimension"/>
+        <attr name="grid_paddingBottom" format="dimension"/>
+    </declare-styleable>
+
+
+
+
 </resources>
