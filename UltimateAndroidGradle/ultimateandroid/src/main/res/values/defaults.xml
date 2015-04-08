@@ -10,11 +10,5 @@
     <bool name="spb_default_mirror_mode">false</bool>
     <bool name="spb_default_progressiveStart_activated">false</bool>
 
-    <integer-array name="google_colors">
-        <item>@color/red</item>
-        <item>@color/blue</item>
-        <item>@color/Yellow</item>
-        <item>@color/Green</item>
-    </integer-array>
     <integer name="default_type">0</integer>
 </resources>

@@ -12,6 +12,7 @@ import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.RelativeLayout;
+
 import com.marshalchen.common.uimodule.flowtextview.helpers.ClickHandler;
 import com.marshalchen.common.uimodule.flowtextview.helpers.CollisionHelper;
 import com.marshalchen.common.uimodule.flowtextview.helpers.PaintHelper;

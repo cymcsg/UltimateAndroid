@@ -5,6 +5,7 @@ import android.text.Spannable;
 import android.text.TextPaint;
 import android.text.style.StyleSpan;
 import android.text.style.URLSpan;
+
 import com.marshalchen.common.uimodule.flowtextview.FlowTextView;
 import com.marshalchen.common.uimodule.flowtextview.models.HtmlLink;
 import com.marshalchen.common.uimodule.flowtextview.models.HtmlObject;

@@ -2,6 +2,7 @@ package com.marshalchen.common.uimodule.flowtextview.helpers;
 
 import android.view.MotionEvent;
 import android.view.View;
+
 import com.marshalchen.common.uimodule.flowtextview.listeners.OnLinkClickListener;
 import com.marshalchen.common.uimodule.flowtextview.models.HtmlLink;
 

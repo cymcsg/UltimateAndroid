@@ -64,7 +64,7 @@ public class PullRefreshLayout extends ViewGroup {
         super(context, attrs);
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.CustomPullRefreshLayout);
         final int type = a.getInteger(R.styleable.CustomPullRefreshLayout_cprlType, STYLE_CIRCLES);
-        final int colorsId = a.getResourceId(R.styleable.CustomPullRefreshLayout_cprlColors, R.array.google_colors);
+        final int colorsId = a.getResourceId(R.styleable.CustomPullRefreshLayout_cprlColors, R.array.pull_colors);
         a.recycle();
 
         mDecelerateInterpolator = new DecelerateInterpolator(DECELERATE_INTERPOLATION_FACTOR);

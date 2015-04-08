@@ -5,7 +5,9 @@ import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.widget.ProgressBar;
-import com.marshalchen.common.uimodule.R;
+
+import com.marshalchen.ultimateandroiduilollipop.R;
+
 
 public class GoogleProgressBar extends ProgressBar {
 
