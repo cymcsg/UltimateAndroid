@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="patio_default_thumbnail_width">100dp</dimen>
+    <dimen name="patio_default_thumbnail_height">100dp</dimen>
+    <dimen name="patio_default_thumbnails_container_padding">8dp</dimen>
+</resources>

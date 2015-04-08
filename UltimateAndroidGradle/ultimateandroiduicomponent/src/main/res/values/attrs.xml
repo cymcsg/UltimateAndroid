@@ -116,4 +116,42 @@
     <declare-styleable name="DraggableFlagView">
         <attr name="df_color" format="color"/>
     </declare-styleable>
+
+    <declare-styleable name="EdgeEffectView">
+        <attr name="edgeeffect_color" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="FancyCoverFlow">
+        <attr name="unselectedAlpha" format="float"/>
+        <attr name="unselectedSaturation" format="float"/>
+        <attr name="unselectedScale" format="float"/>
+        <attr name="maxRotation" format="integer"/>
+        <attr name="scaleDownGravity" format="float"/>
+        <attr name="actionDistance" format="integer">
+            <enum name="auto" value="2147483647"/>
+        </attr>
+    </declare-styleable>
+
+
+    <!--FlipViews-->
+    <declare-styleable name="FlipViewController">
+
+        <attr name="orientation"></attr>
+
+        <attr name="animationBitmapFormat" format="enum">
+            <enum name="ARGB_8888" value="0"/>
+            <enum name="ARGB_4444" value="1"/>
+            <enum name="RGB_565" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="FlipView">
+        <attr name="orientation"></attr>
+        <attr name="overFlipMode" format="enum">
+            <enum name="glow" value="0"/>
+            <enum name="rubber_band" value="1"/>
+        </attr>
+    </declare-styleable>
+
 </resources>

@@ -38,8 +38,8 @@ public class EasingAdapter extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
         Object o = getItem(i);
         BaseEasingMethod b = ((Skill) o).getMethod(1000);
-        int start = b.getClass().getName().lastIndexOf(".") + 1;
-        String name = b.getClass().getName().substring(start);
+        int start = ((Object)b).getClass().getName().lastIndexOf(".") + 1;
+        String name = ((Object)b).getClass().getName().substring(start);
         View v = LayoutInflater.from(mContext).inflate(R.layout.easing_item, null);
         TextView tv = (TextView) v.findViewById(R.id.list_item_text);
         tv.setText(name);

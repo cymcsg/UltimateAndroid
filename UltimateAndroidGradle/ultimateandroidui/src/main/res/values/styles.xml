@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="elv_fade_animation">
-        <item name="@android:windowEnterAnimation">@anim/elv_popup_show</item>
-        <item name="@android:windowExitAnimation">@anim/elv_popup_hide</item>
-    </style>
+
 
     <!--smooth progressbar-->
     <style name="Theme.SmoothProgressBarDefaults" parent="android:Theme">
@@ -318,14 +315,6 @@
         <attr name="hasIcons" format="boolean" />
     </declare-styleable>
 
-
-    <style name="PatioToolbarButton" parent="@android:style/Widget.Holo.Button.Borderless">
-        <item name="android:textSize">14sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textAllCaps">true</item>
-        <item name="android:paddingLeft">20dp</item>
-        <item name="android:paddingRight">20dp</item>
-    </style>
 
 
 
