@@ -13,10 +13,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.RotateAnimation;
-import android.widget.*;
+import android.widget.AbsListView;
 import android.widget.AbsListView.OnScrollListener;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.ListAdapter;
+import android.widget.ListView;
+import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 
-import com.marshalchen.common.uimodule.R;
+import com.marshalchen.ultimateandroiduicomponent.R;
 
 
 /**
@@ -26,7 +33,7 @@ import com.marshalchen.common.uimodule.R;
  * <strong>DropDown Listener</strong>
  * <li>define isDropDownStyle="true" at layout xml or call {@link #setDropDownStyle(boolean)} to enable drop down style
  * before</li>
- * <li>{@link #setOnDropDownListener(DropDownListView.OnDropDownListener)} set listener which will be excuted when drop down, but you
+ * <li>{@link #setOnDropDownListener(com.marshalchen.common.uimodule.simplemodule.DropDownListView.OnDropDownListener)} set listener which will be excuted when drop down, but you
  * should call {@link #onDropDownComplete()} manual at the end of listener to reinstate status.</li>
  * <li>{@link #setHeaderDefaultText(String)}, {@link #setHeaderLoadingText(String)}, {@link #setHeaderPullText(String)},
  * {@link #setHeaderReleaseText(String)}, {@link #setHeaderSecondText(CharSequence)} to set text</li>

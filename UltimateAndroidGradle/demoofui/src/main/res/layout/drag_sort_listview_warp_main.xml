@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2014. Marshal Chen.
+  -->
+
+<com.marshalchen.common.uimodule.dragSortListView.DragSortListView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dslv="http://schemas.android.com/apk/res-auto"
+    android:id="@android:id/list"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    android:paddingLeft="10dp"
+    android:layout_margin="10dp"
+    android:dividerHeight="5dp"
+    android:fastScrollEnabled="true"
+    dslv:dslv_drag_enabled="true"
+    dslv:dslv_collapsed_height="2dp"
+    dslv:dslv_drag_scroll_start="0.33"
+    dslv:dslv_max_drag_scroll_speed="0.5"
+    dslv:dslv_float_alpha="0.6"
+    dslv:dslv_slide_shuffle_speed="0.3"
+    dslv:dslv_track_drag_sort="false"
+    dslv:dslv_use_default_controller="true"
+    dslv:dslv_drag_handle_id="@id/drag_handle"
+    dslv:dslv_sort_enabled="true"
+    dslv:dslv_remove_enabled="true"
+    dslv:dslv_drag_start_mode="onDown"
+    dslv:dslv_remove_mode="flingRemove" />

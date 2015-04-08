@@ -113,4 +113,7 @@
         <attr name="dslv_use_default_controller" format="boolean"/>
     </declare-styleable>
 
+    <declare-styleable name="DraggableFlagView">
+        <attr name="df_color" format="color"/>
+    </declare-styleable>
 </resources>

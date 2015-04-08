@@ -12,8 +12,9 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-import com.marshalchen.common.uimodule.R;
+
 import com.marshalchen.common.commonUtils.logUtils.Logs;
+import com.marshalchen.ultimateandroiduicomponent.R;
 
 import java.util.BitSet;
 

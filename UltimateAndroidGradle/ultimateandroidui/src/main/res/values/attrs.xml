@@ -618,9 +618,6 @@
         <attr name="numberProgressBarStyle" format="reference" />
     </declare-styleable>
 
-    <declare-styleable name="DraggableFlagView">
-        <attr name="df_color" format="color"/>
-    </declare-styleable>
 
     <declare-styleable name="RoundCornerProgress">
         <attr name="rcp_progress" format="integer" />

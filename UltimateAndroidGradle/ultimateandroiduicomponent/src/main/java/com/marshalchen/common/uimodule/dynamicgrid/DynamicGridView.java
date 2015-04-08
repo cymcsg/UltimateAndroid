@@ -1,6 +1,11 @@
 package com.marshalchen.common.uimodule.dynamicgrid;
 
-import android.animation.*;
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
+import android.animation.TypeEvaluator;
+import android.animation.ValueAnimator;
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -21,9 +26,15 @@ import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ListAdapter;
-import com.marshalchen.common.uimodule.R;
 
-import java.util.*;
+
+import com.marshalchen.ultimateandroiduicomponent.R;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Stack;
 
 /**
  * Author: alex askerov

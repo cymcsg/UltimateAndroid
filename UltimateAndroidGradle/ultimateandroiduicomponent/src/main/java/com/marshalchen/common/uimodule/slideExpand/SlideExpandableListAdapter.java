@@ -2,7 +2,9 @@ package com.marshalchen.common.uimodule.slideExpand;
 
 import android.view.View;
 import android.widget.ListAdapter;
-import com.marshalchen.common.uimodule.R;
+
+import com.marshalchen.ultimateandroiduicomponent.R;
+
 
 /**
  * ListAdapter that adds sliding functionality to a list.
