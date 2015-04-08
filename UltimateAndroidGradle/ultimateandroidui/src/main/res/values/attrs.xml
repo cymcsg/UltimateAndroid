@@ -224,26 +224,6 @@
 
 
 
-
-
-    <declare-styleable name="DiscrollView_LayoutParams">
-        <attr name="discrollve_alpha" format="boolean"/>
-        <attr name="discrollve_scaleX" format="boolean"/>
-        <attr name="discrollve_scaleY" format="boolean"/>
-        <attr name="discrollve_threshold" format="float"/>
-        <attr name="discrollve_fromBgColor" format="color"/>
-        <attr name="discrollve_toBgColor" format="color"/>
-        <attr name="discrollve_translation"/>
-    </declare-styleable>
-
-    <attr name="discrollve_translation">
-        <flag name="fromTop" value="0x01"/>
-        <flag name="fromBottom" value="0x02"/>
-        <flag name="fromLeft" value="0x04"/>
-        <flag name="fromRight" value="0x08"/>
-    </attr>
-
-
     <declare-styleable name="PanningView">
         <attr name="panningDurationInMs" format="integer"/>
     </declare-styleable>
@@ -383,33 +363,7 @@
     </declare-styleable>
 
 
-    <declare-styleable name="DragSortListView">
-        <attr name="collapsed_height" format="dimension"/>
-        <attr name="drag_scroll_start" format="float"/>
-        <attr name="max_drag_scroll_speed" format="float"/>
-        <attr name="float_background_color" format="color"/>
-        <attr name="remove_mode">
-            <enum name="clickRemove" value="0"/>
-            <enum name="flingRemove" value="1"/>
-        </attr>
-        <attr name="track_drag_sort" format="boolean"/>
-        <attr name="float_alpha" format="float"/>
-        <attr name="slide_shuffle_speed" format="float"/>
-        <attr name="remove_animation_duration" format="integer"/>
-        <attr name="drop_animation_duration" format="integer"/>
-        <attr name="drag_enabled" format="boolean"/>
-        <attr name="sort_enabled" format="boolean"/>
-        <attr name="remove_enabled" format="boolean"/>
-        <attr name="drag_start_mode">
-            <enum name="onDown" value="0"/>
-            <enum name="onMove" value="1"/>
-            <enum name="onLongPress" value="2"/>
-        </attr>
-        <attr name="drag_handle_id" format="integer"/>
-        <attr name="fling_handle_id" format="integer"/>
-        <attr name="click_remove_id" format="integer"/>
-        <attr name="use_default_controller" format="boolean"/>
-    </declare-styleable>
+
 
     <declare-styleable name="GoogleProgressBar">
         <attr name="type" format="enum">
@@ -471,16 +425,6 @@
         <attr name="strokeMiter" format="dimension"/>
     </declare-styleable>
 
-    <declare-styleable name="CustomShapeImageView">
-        <attr name="shape_custom" format="integer">
-            <enum name="circle" value="1"/>
-            <enum name="rectangle" value="2"/>
-            <enum name="svg" value="3"/>
-        </attr>
-
-        <attr name="svg_raw_resource" format="reference"/>
-
-    </declare-styleable>
 
 
     <declare-styleable name="SignaturePad">
@@ -541,14 +485,7 @@
 
 
 
-    <declare-styleable name="CustomPullRefreshLayout">
-        <attr name="cprlType" format="enum">
-            <enum name="circles" value="0" />
-            <enum name="water_drop" value="1" />
-            <enum name="ring" value="2" />
-        </attr>
-        <attr name="cprlColors" format="reference"/>
-    </declare-styleable>
+
 
 
     <declare-styleable name="CustomAttributes">
@@ -617,22 +554,6 @@
     </declare-styleable>
 
 
-
-    <attr name="discreteSeekBarStyle" format="reference"/>
-    <declare-styleable name="DiscreteSeekBar">
-        <attr name="dsb_min" format="integer|dimension"/>
-        <attr name="dsb_max" format="integer|dimension"/>
-        <attr name="dsb_value" format="integer|dimension"/>
-        <attr name="dsb_mirrorForRtl" format="boolean"/>
-        <attr name="dsb_allowTrackClickToDrag" format="boolean"/>
-        <attr name="dsb_progressColor" format="color|reference"/>
-        <attr name="dsb_trackColor" format="color|reference"/>
-        <attr name="dsb_indicatorTextAppearance" format="reference"/>
-        <attr name="dsb_indicatorColor" format="color|reference"/>
-        <attr name="dsb_indicatorElevation" format="dimension"/>
-        <attr name="dsb_indicatorFormatter" format="string|reference"/>
-        <attr name="dsb_rippleColor" format="color|reference"/>
-    </declare-styleable>
 
 
     <!--<declare-styleable name="match">-->

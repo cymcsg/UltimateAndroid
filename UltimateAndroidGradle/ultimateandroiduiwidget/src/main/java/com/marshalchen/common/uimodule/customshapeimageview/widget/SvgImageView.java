@@ -8,9 +8,9 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
 import android.util.AttributeSet;
-import com.marshalchen.common.uimodule.R;
 import com.marshalchen.common.uimodule.customshapeimageview.svgandroid.SVG;
 import com.marshalchen.common.uimodule.customshapeimageview.svgandroid.SVGParser;
+import com.marshalchen.common.uimodule.widgets.R;
 
 
 /**

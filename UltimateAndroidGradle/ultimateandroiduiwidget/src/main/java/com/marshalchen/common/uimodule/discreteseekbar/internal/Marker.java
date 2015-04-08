@@ -31,10 +31,10 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
-import com.marshalchen.common.uimodule.R;
 import com.marshalchen.common.uimodule.discreteseekbar.internal.compat.SeekBarCompat;
 import com.marshalchen.common.uimodule.discreteseekbar.internal.drawable.MarkerDrawable;
 import com.marshalchen.common.uimodule.discreteseekbar.internal.drawable.ThumbDrawable;
+import com.marshalchen.common.uimodule.widgets.R;
 
 /**
  * {@link android.view.ViewGroup} to be used as the real indicator.

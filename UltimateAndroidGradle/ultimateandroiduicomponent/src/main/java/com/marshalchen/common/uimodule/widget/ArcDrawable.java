@@ -1,10 +1,9 @@
-package com.marshalchen.common.uimodule.customPullRefreshLayout.widget;
+package com.marshalchen.common.uimodule.widget;
 
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.Path;
 import android.graphics.Rect;
 import android.graphics.RectF;
 import android.os.Handler;
@@ -13,7 +12,7 @@ import android.util.TypedValue;
 /**
  * Created by baoyz on 14/11/2.
  */
-class RingDrawable extends RefreshDrawable{
+class ArcDrawable extends RefreshDrawable{
 
     private static final int MAX_LEVEL = 200;
 
@@ -24,24 +23,20 @@ class RingDrawable extends RefreshDrawable{
     private int mTop;
     private int mOffsetTop;
     private Paint mPaint;
-    private Path mPath;
     private float mAngle;
     private int[] mColorSchemeColors;
     private Handler mHandler = new Handler();
     private int mLevel;
-    private float mDegress;
 
-    RingDrawable(Context context, PullRefreshLayout layout) {
+    ArcDrawable(Context context, PullRefreshLayout layout) {
         super(context, layout);
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        mPaint.setStyle(Paint.Style.STROKE);
-        mPaint.setStrokeWidth(dp2px(3));
-        mPath = new Path();
+        mPaint.setColor(Color.RED);
     }
 
     @Override
     public void setPercent(float percent) {
-        mPaint.setColor(evaluate(percent, mColorSchemeColors[0], mColorSchemeColors[1]));
+        mPaint.setColor(evaluate(percent, mColorSchemeColors[3], mColorSchemeColors[0]));
     }
 
     @Override
@@ -53,22 +48,16 @@ class RingDrawable extends RefreshDrawable{
     public void offsetTopAndBottom(int offset) {
         mTop += offset;
         mOffsetTop += offset;
-        float offsetTop = mOffsetTop - dp2px(20);
-        if (offsetTop <= 0) {
-            mAngle = 0;
-        }else {
-            int finalOffset = getRefreshLayout().getFinalOffset() - dp2px(20);
-            if (offsetTop > finalOffset) {
-                offsetTop = finalOffset;
-            }
-            mAngle = 340 * (offsetTop / finalOffset);
+        float offsetTop = mOffsetTop;
+        if (mOffsetTop > getRefreshLayout().getFinalOffset()){
+            offsetTop = getRefreshLayout().getFinalOffset();
         }
+        mAngle = 360 * (offsetTop / getRefreshLayout().getFinalOffset());
         invalidateSelf();
     }
 
     @Override
     public void start() {
-        mLevel = 50;
         isRunning = true;
         mHandler.post(mAnimationTask);
     }
@@ -96,15 +85,12 @@ class RingDrawable extends RefreshDrawable{
         int startColor = mColorSchemeColors[stateForLevel];
         int endColor = mColorSchemeColors[(stateForLevel + 1) % mColorSchemeColors.length];
         mPaint.setColor(evaluate(percent, startColor, endColor));
-
-        mDegress = 360 * percent;
     }
 
     @Override
     public void stop() {
         isRunning = false;
         mHandler.removeCallbacks(mAnimationTask);
-        mDegress = 0;
     }
 
     @Override
@@ -115,26 +101,21 @@ class RingDrawable extends RefreshDrawable{
     @Override
     protected void onBoundsChange(Rect bounds) {
         super.onBoundsChange(bounds);
-        mWidth = getRefreshLayout().getFinalOffset();
+        mWidth = dp2px(40);
         mHeight = mWidth;
         mBounds = new RectF(bounds.width() / 2 - mWidth / 2, bounds.top, bounds.width() / 2 + mWidth / 2, bounds.top + mHeight);
-        mBounds.inset(dp2px(15), dp2px(15));
     }
 
     @Override
     public void draw(Canvas canvas) {
         canvas.save();
 //        canvas.translate(0, mTop);
-        canvas.rotate(mDegress, mBounds.centerX(), mBounds.centerY());
         drawRing(canvas);
         canvas.restore();
     }
 
     private void drawRing(Canvas canvas){
-        mPath.reset();
-        mPath.arcTo(mBounds, 270, mAngle, true);
-        canvas.drawPath(mPath, mPaint);
-//        canvas.drawArc(mBounds, 270, mAngle, true, mPaint);
+        canvas.drawArc(mBounds, 270, mAngle, true, mPaint);
     }
 
     private int dp2px(int dp) {

@@ -10,6 +10,6 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:dividerHeight="1px"
-    dslv:drag_enabled="true"
-    dslv:float_alpha="0.6"
-    dslv:use_default_controller="false" />
+    dslv:dslv_drag_enabled="true"
+    dslv:dslv_float_alpha="0.6"
+    dslv:dslv_use_default_controller="false" />

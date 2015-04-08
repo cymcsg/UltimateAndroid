@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.marshalchen.common.uimodule.customPullRefreshLayout.widget;
+package com.marshalchen.common.uimodule.widget;
 
 import android.util.TypedValue;
 import android.view.animation.AccelerateDecelerateInterpolator;
@@ -27,7 +27,6 @@ import android.content.res.Resources;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.ColorFilter;
-import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.Paint.Style;
 import android.graphics.Path;

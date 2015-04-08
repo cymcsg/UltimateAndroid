@@ -39,13 +39,13 @@ import android.view.ViewConfiguration;
 import android.view.ViewParent;
 
 
-import com.marshalchen.common.uimodule.R;
 import com.marshalchen.common.uimodule.discreteseekbar.internal.PopupIndicator;
 import com.marshalchen.common.uimodule.discreteseekbar.internal.compat.AnimatorCompat;
 import com.marshalchen.common.uimodule.discreteseekbar.internal.compat.SeekBarCompat;
 import com.marshalchen.common.uimodule.discreteseekbar.internal.drawable.MarkerDrawable;
 import com.marshalchen.common.uimodule.discreteseekbar.internal.drawable.ThumbDrawable;
 import com.marshalchen.common.uimodule.discreteseekbar.internal.drawable.TrackRectDrawable;
+import com.marshalchen.common.uimodule.widgets.R;
 
 import java.util.Formatter;
 import java.util.Locale;

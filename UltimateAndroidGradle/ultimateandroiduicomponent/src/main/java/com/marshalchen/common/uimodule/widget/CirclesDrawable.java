@@ -1,4 +1,4 @@
-package com.marshalchen.common.uimodule.customPullRefreshLayout.widget;
+package com.marshalchen.common.uimodule.widget;
 
 import android.content.Context;
 import android.graphics.Canvas;

@@ -22,8 +22,8 @@
     <attr name="hcp_cpb_progress" format="float" />
 
     <declare-styleable name="SpanVariableGridView">
-        <attr name="SpanVariableGridView_numColumns" format="integer"/>
-        <attr name="SpanVariableGridView_itemMargin" format="dimension"/>
+        <attr name="SpanVariableGridView_numColumns" format="integer" />
+        <attr name="SpanVariableGridView_itemMargin" format="dimension" />
     </declare-styleable>
 
     <declare-styleable name="CreditsRollView">
@@ -34,28 +34,83 @@
     </declare-styleable>
 
 
-    <attr name="cropImageStyle" format="reference"/>
+    <attr name="cropImageStyle" format="reference" />
 
     <declare-styleable name="CropImageView">
-        <attr name="crop_highlightColor" format="reference|color"/>
-        <attr name="crop_showThirds" format="boolean"/>
+        <attr name="crop_highlightColor" format="reference|color" />
+        <attr name="crop_showThirds" format="boolean" />
         <attr name="crop_showHandles">
-            <enum name="changing" value="0"/>
-            <enum name="always" value="1"/>
-            <enum name="never" value="2"/>
+            <enum name="changing" value="0" />
+            <enum name="always" value="1" />
+            <enum name="never" value="2" />
         </attr>
     </declare-styleable>
 
 
     <declare-styleable name="CropperImageView">
         <attr name="crop_guidelines">
-            <enum name="on" value="2"/>
-            <enum name="onTouch" value="1"/>
-            <enum name="off" value="0"/>
+            <enum name="on" value="2" />
+            <enum name="onTouch" value="1" />
+            <enum name="off" value="0" />
         </attr>
-        <attr name="crop_fixAspectRatio" format="boolean"/>
-        <attr name="crop_aspectRatioX" format="integer"/>
-        <attr name="crop_aspectRatioY" format="integer"/>
-        <attr name="crop_imageResource" format="reference"/>
+        <attr name="crop_fixAspectRatio" format="boolean" />
+        <attr name="crop_aspectRatioX" format="integer" />
+        <attr name="crop_aspectRatioY" format="integer" />
+        <attr name="crop_imageResource" format="reference" />
     </declare-styleable>
+
+    <declare-styleable name="CustomPullRefreshLayout">
+        <attr name="cprlType" format="enum">
+            <enum name="circles" value="0" />
+            <enum name="water_drop" value="1" />
+            <enum name="ring" value="2" />
+        </attr>
+        <attr name="cprlColors" format="reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="DiscrollView_LayoutParams">
+        <attr name="discrollve_alpha" format="boolean" />
+        <attr name="discrollve_scaleX" format="boolean" />
+        <attr name="discrollve_scaleY" format="boolean" />
+        <attr name="discrollve_threshold" format="float" />
+        <attr name="discrollve_fromBgColor" format="color" />
+        <attr name="discrollve_toBgColor" format="color" />
+        <attr name="discrollve_translation">
+            <flag name="fromTop" value="0x01" />
+            <flag name="fromBottom" value="0x02" />
+            <flag name="fromLeft" value="0x04" />
+            <flag name="fromRight" value="0x08" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="DragSortListView">
+        <attr name="dslv_collapsed_height" format="dimension"/>
+        <attr name="dslv_drag_scroll_start" format="float"/>
+        <attr name="dslv_max_drag_scroll_speed" format="float"/>
+        <attr name="dslv_float_background_color" format="color"/>
+        <attr name="dslv_remove_mode">
+            <enum name="clickRemove" value="0"/>
+            <enum name="flingRemove" value="1"/>
+        </attr>
+        <attr name="dslv_track_drag_sort" format="boolean"/>
+        <attr name="dslv_float_alpha" format="float"/>
+        <attr name="dslv_slide_shuffle_speed" format="float"/>
+        <attr name="dslv_remove_animation_duration" format="integer"/>
+        <attr name="dslv_drop_animation_duration" format="integer"/>
+        <attr name="dslv_drag_enabled" format="boolean"/>
+        <attr name="dslv_sort_enabled" format="boolean"/>
+        <attr name="dslv_remove_enabled" format="boolean"/>
+        <attr name="dslv_drag_start_mode">
+            <enum name="onDown" value="0"/>
+            <enum name="onMove" value="1"/>
+            <enum name="onLongPress" value="2"/>
+        </attr>
+        <attr name="dslv_drag_handle_id" format="integer"/>
+        <attr name="dslv_fling_handle_id" format="integer"/>
+        <attr name="dslv_click_remove_id" format="integer"/>
+        <attr name="dslv_use_default_controller" format="boolean"/>
+    </declare-styleable>
+
 </resources>

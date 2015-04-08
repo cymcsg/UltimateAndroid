@@ -4,7 +4,8 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.util.AttributeSet;
-import com.marshalchen.common.uimodule.R;
+
+import com.marshalchen.common.uimodule.widgets.R;
 
 /**
  * Created by Mostafa Gazar on 11/2/13.
@@ -44,7 +45,7 @@ public class CustomShapeImageView extends BaseImageView {
 
     private void sharedConstructor(Context context, AttributeSet attrs) {
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.CustomShapeImageView);
-        mShape = a.getInt(R.styleable.CustomShapeImageView_shape_custom, Shape.CIRCLE);
+        mShape = a.getInt(R.styleable.CustomShapeImageView_custom_shape_custom, Shape.CIRCLE);
         mSvgRawResourceId = a.getResourceId(R.styleable.CustomShapeImageView_svg_raw_resource, 0);
         a.recycle();
     }

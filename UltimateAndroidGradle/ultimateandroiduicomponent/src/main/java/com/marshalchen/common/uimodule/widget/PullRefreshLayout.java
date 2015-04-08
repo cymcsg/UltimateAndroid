@@ -1,4 +1,4 @@
-package com.marshalchen.common.uimodule.customPullRefreshLayout.widget;
+package com.marshalchen.common.uimodule.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -16,7 +16,8 @@ import android.view.animation.Interpolator;
 import android.view.animation.Transformation;
 import android.widget.AbsListView;
 import android.widget.ImageView;
-import com.marshalchen.common.uimodule.R;
+
+import com.marshalchen.ultimateandroiduicomponent.R;
 
 import java.security.InvalidParameterException;
 

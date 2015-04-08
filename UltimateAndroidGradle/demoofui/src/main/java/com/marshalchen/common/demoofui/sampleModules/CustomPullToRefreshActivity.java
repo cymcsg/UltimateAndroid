@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import com.marshalchen.common.demoofui.R;
-import com.marshalchen.common.uimodule.customPullRefreshLayout.widget.PullRefreshLayout;
+import com.marshalchen.common.uimodule.widget.PullRefreshLayout;
 
 
 public class CustomPullToRefreshActivity extends Activity {
