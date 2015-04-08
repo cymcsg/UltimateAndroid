@@ -154,4 +154,13 @@
         </attr>
     </declare-styleable>
 
+    <declare-styleable name="FoldingMenu">
+        <attr name="foldNumber" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="PullScrollView">
+        <attr name="psv_header" format="reference"/>
+        <attr name="psv_headerHeight" format="dimension"/>
+        <attr name="psv_headerVisibleHeight" format="dimension"/>
+    </declare-styleable>
 </resources>

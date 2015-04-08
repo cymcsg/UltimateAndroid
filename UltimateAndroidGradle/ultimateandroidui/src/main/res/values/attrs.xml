@@ -43,18 +43,7 @@
         <attr name="reflectionColor" format="color"/>
     </declare-styleable>
 
-
-
-
-
-
     <attr name="fontPath" format="string"/>
-
-    <declare-styleable name="FoldingMenu">
-        <attr name="foldNumber" format="integer"/>
-    </declare-styleable>
-
-
 
 
 
@@ -71,11 +60,7 @@
     </declare-styleable>
 
 
-    <declare-styleable name="PullScrollView">
-        <attr name="header" format="reference"/>
-        <attr name="headerHeight" format="dimension"/>
-        <attr name="headerVisibleHeight" format="dimension"/>
-    </declare-styleable>
+
 
     <declare-styleable name="CardContainer">
         <attr name="android:gravity"/>
