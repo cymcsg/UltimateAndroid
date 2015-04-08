@@ -754,17 +754,7 @@
         <attr name="rcp_autoTextChange" format="boolean" />
     </declare-styleable>
 
-    <attr name="circularProgressBarStyle" format="reference" />
-    <declare-styleable name="HoloCircularProgressBar">
-        <attr name="stroke_width" format="dimension" />
-        <attr name="hcp_progress" format="float" />
-        <attr name="marker_progress" format="float" />
-        <attr name="progress_color" format="color" />
-        <attr name="progress_background_color" format="color" />
-        <attr name="thumb_visible" format="boolean" />
-        <attr name="marker_visible" format="boolean" />
-        <attr name="android:gravity" />
-    </declare-styleable>
+
 
 
     <declare-styleable name="ProgressWheel">

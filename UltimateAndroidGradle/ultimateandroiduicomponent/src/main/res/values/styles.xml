@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--CircularProgressBar-->
+    <style name="CircularProgressBar">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="hcp_stroke_width">5dp</item>
+        <item name="hcp_cpb_progress" format="float">0.1</item>
+        <item name="hcp_progress_color">#ffff4444</item>
+        <item name="hcp_progress_background_color">@android:color/background_light</item>
+        <item name="hcp_marker_visible">true</item>
+        <item name="hcp_thumb_visible">true</item>
+    </style>
+
+    <style name="CircularProgressBarLight">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="hcp_stroke_width">5dp</item>
+        <item name="hcp_cpb_progress" format="float">0.1</item>
+        <item name="hcp_progress_color">#ffff4444</item>
+        <item name="hcp_progress_background_color">@android:color/darker_gray</item>
+        <item name="hcp_marker_visible">true</item>
+        <item name="hcp_thumb_visible">true</item>
+    </style>
+</resources>

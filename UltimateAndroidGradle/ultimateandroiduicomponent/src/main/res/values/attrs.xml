@@ -7,4 +7,17 @@
             <enum name="horizontal" value="1" />
         </attr>
     </declare-styleable>
+
+    <declare-styleable name="HoloCircularProgressBar">
+        <attr name="hcp_stroke_width" format="dimension" />
+        <attr name="hcp_hcp_progress" format="float" />
+        <attr name="hcp_marker_progress" format="float" />
+        <attr name="hcp_progress_color" format="color" />
+        <attr name="hcp_progress_background_color" format="color" />
+        <attr name="hcp_thumb_visible" format="boolean" />
+        <attr name="hcp_marker_visible" format="boolean" />
+        <attr name="android:gravity" />
+    </declare-styleable>
+    <attr name="hcpCircularProgressBarStyle" format="reference" />
+    <attr name="hcp_cpb_progress" format="float" />
 </resources>

@@ -173,7 +173,7 @@
         <attr name="mpwFillRadius" format="boolean" />
         <attr name="mpwBarWidth" format="dimension" />
     </declare-styleable>
-    <attr name="cpb_progress" format="float" />
+
 
     <declare-styleable name="ShimmerFrameLayout">
         <attr name="auto_start" format="boolean"/>
