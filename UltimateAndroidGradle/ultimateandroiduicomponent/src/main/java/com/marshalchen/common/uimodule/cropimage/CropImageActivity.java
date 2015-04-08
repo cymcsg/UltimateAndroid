@@ -34,8 +34,8 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.view.Window;
 import com.marshalchen.common.commonUtils.logUtils.Logs;
-import com.marshalchen.common.uimodule.R;
 import com.marshalchen.common.uimodule.cropimage.util.Log;
+import com.marshalchen.ultimateandroiduicomponent.R;
 
 import java.io.IOException;
 import java.io.InputStream;

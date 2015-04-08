@@ -30,7 +30,8 @@ import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
-import com.marshalchen.common.uimodule.R;
+import com.marshalchen.ultimateandroiduicomponent.R;
+
 
 /**
  * Implements a Star Wars-like credits roll.
@@ -82,19 +83,19 @@ public class CreditsRollView extends TextView {
             for (int i = 0; i < N; ++i) {
                 int attr = a.getIndex(i);
 
-                if (attr == R.styleable.CreditsRollView_angle) {
+                if (attr == R.styleable.CreditsRollView_crv_angle) {
                     float angle = a.getFloat(attr, mAngle);
                     setAngle(angle);
                 }
-                else if (attr == R.styleable.CreditsRollView_scrollPosition) {
+                else if (attr == R.styleable.CreditsRollView_crv_scrollPosition) {
                     float scrollPercent = a.getFloat(attr, 0f);
                     setScrollPosition(scrollPercent);
                 }
-                else if (attr == R.styleable.CreditsRollView_endScrollMultiplier) {
+                else if (attr == R.styleable.CreditsRollView_crv_endScrollMultiplier) {
                     float scrollMult = a.getFloat(attr, 0f);
                     setEndScrollMult(scrollMult);
                 }
-                else if (attr == R.styleable.CreditsRollView_distanceFromText) {
+                else if (attr == R.styleable.CreditsRollView_crv_distanceFromText) {
                     float distance = a.getFloat(attr, 0f);
                     setDistanceFromText(distance);
                 }

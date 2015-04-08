@@ -25,4 +25,37 @@
         <attr name="SpanVariableGridView_numColumns" format="integer"/>
         <attr name="SpanVariableGridView_itemMargin" format="dimension"/>
     </declare-styleable>
+
+    <declare-styleable name="CreditsRollView">
+        <attr name="crv_scrollPosition" format="float" />
+        <attr name="crv_angle" format="float" />
+        <attr name="crv_endScrollMultiplier" format="float" />
+        <attr name="crv_distanceFromText" format="float" />
+    </declare-styleable>
+
+
+    <attr name="cropImageStyle" format="reference"/>
+
+    <declare-styleable name="CropImageView">
+        <attr name="crop_highlightColor" format="reference|color"/>
+        <attr name="crop_showThirds" format="boolean"/>
+        <attr name="crop_showHandles">
+            <enum name="changing" value="0"/>
+            <enum name="always" value="1"/>
+            <enum name="never" value="2"/>
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="CropperImageView">
+        <attr name="crop_guidelines">
+            <enum name="on" value="2"/>
+            <enum name="onTouch" value="1"/>
+            <enum name="off" value="0"/>
+        </attr>
+        <attr name="crop_fixAspectRatio" format="boolean"/>
+        <attr name="crop_aspectRatioX" format="integer"/>
+        <attr name="crop_aspectRatioY" format="integer"/>
+        <attr name="crop_imageResource" format="reference"/>
+    </declare-styleable>
 </resources>

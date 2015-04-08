@@ -30,7 +30,8 @@ import android.graphics.Region;
 import android.os.Build;
 import android.util.TypedValue;
 import android.view.View;
-import com.marshalchen.common.uimodule.R;
+
+import com.marshalchen.ultimateandroiduicomponent.R;
 
 /*
  * Modified from version in AOSP.
@@ -87,10 +88,10 @@ class HighlightView {
         context.getTheme().resolveAttribute(R.attr.cropImageStyle, outValue, true);
         TypedArray attributes = context.obtainStyledAttributes(outValue.resourceId, R.styleable.CropImageView);
         try {
-            showThirds = attributes.getBoolean(R.styleable.CropImageView_showThirds, false);
-            highlightColor = attributes.getColor(R.styleable.CropImageView_highlightColor,
+            showThirds = attributes.getBoolean(R.styleable.CropImageView_crop_showThirds, false);
+            highlightColor = attributes.getColor(R.styleable.CropImageView_crop_highlightColor,
                     DEFAULT_HIGHLIGHT_COLOR);
-            handleMode = HandleMode.values()[attributes.getInt(R.styleable.CropImageView_showHandles, 0)];
+            handleMode = HandleMode.values()[attributes.getInt(R.styleable.CropImageView_crop_showHandles, 0)];
         } finally {
             attributes.recycle();
         }

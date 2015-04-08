@@ -29,10 +29,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import com.marshalchen.common.uimodule.R;
 import com.marshalchen.common.uimodule.cropperimage.cropwindow.CropOverlayView;
 import com.marshalchen.common.uimodule.cropperimage.cropwindow.edge.Edge;
 import com.marshalchen.common.uimodule.cropperimage.util.ImageViewUtil;
+import com.marshalchen.ultimateandroiduicomponent.R;
 
 
 /**
@@ -85,12 +85,12 @@ public class CropImageView extends FrameLayout {
         TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.CropperImageView, 0, 0);
 
         try {
-            mGuidelines = ta.getInteger(R.styleable.CropperImageView_guidelines, DEFAULT_GUIDELINES);
-            mFixAspectRatio = ta.getBoolean(R.styleable.CropperImageView_fixAspectRatio,
+            mGuidelines = ta.getInteger(R.styleable.CropperImageView_crop_guidelines, DEFAULT_GUIDELINES);
+            mFixAspectRatio = ta.getBoolean(R.styleable.CropperImageView_crop_fixAspectRatio,
                                             DEFAULT_FIXED_ASPECT_RATIO);
-            mAspectRatioX = ta.getInteger(R.styleable.CropperImageView_aspectRatioX, DEFAULT_ASPECT_RATIO_X);
-            mAspectRatioY = ta.getInteger(R.styleable.CropperImageView_aspectRatioY, DEFAULT_ASPECT_RATIO_Y);
-            mImageResource = ta.getResourceId(R.styleable.CropperImageView_imageResource, DEFAULT_IMAGE_RESOURCE);
+            mAspectRatioX = ta.getInteger(R.styleable.CropperImageView_crop_aspectRatioX, DEFAULT_ASPECT_RATIO_X);
+            mAspectRatioY = ta.getInteger(R.styleable.CropperImageView_crop_aspectRatioY, DEFAULT_ASPECT_RATIO_Y);
+            mImageResource = ta.getResourceId(R.styleable.CropperImageView_crop_imageResource, DEFAULT_IMAGE_RESOURCE);
         } finally {
             ta.recycle();
         }
