@@ -15,8 +15,8 @@ import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
-import com.marshalchen.common.uimodule.R;
 import com.marshalchen.common.commonUtils.logUtils.Logs;
+import com.marshalchen.ultimateandroiduicomponent.R;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -149,8 +149,8 @@ public class SpanVariableGridView extends AdapterView<BaseAdapter> {
             TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.SpanVariableGridView);
 
             try {
-                mColCount = a.getInteger(R.styleable.SpanVariableGridView_numColumns, 2);
-                mItemMargin = a.getDimensionPixelSize(R.styleable.SpanVariableGridView_itemMargin, 0);
+                mColCount = a.getInteger(R.styleable.SpanVariableGridView_SpanVariableGridView_numColumns, 2);
+                mItemMargin = a.getDimensionPixelSize(R.styleable.SpanVariableGridView_SpanVariableGridView_itemMargin, 0);
 
             } finally {
                 a.recycle();

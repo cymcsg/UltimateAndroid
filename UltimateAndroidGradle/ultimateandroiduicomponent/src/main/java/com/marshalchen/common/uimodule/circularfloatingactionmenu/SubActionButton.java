@@ -9,7 +9,8 @@ import android.os.Build;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.FrameLayout;
-import com.marshalchen.common.uimodule.R;
+
+import com.marshalchen.ultimateandroiduicomponent.R;
 
 /**
  * A simple button implementation with a similar look an feel to{@link FloatingActionButton}.

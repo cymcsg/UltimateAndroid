@@ -15,9 +15,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
-import com.marshalchen.common.uimodule.R;
 import com.marshalchen.common.uimodule.circularfloatingactionmenu.animation.DefaultAnimationHandler;
 import com.marshalchen.common.uimodule.circularfloatingactionmenu.animation.MenuAnimationHandler;
+import com.marshalchen.ultimateandroiduicomponent.R;
 
 
 import java.util.ArrayList;

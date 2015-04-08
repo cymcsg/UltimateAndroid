@@ -20,4 +20,9 @@
     </declare-styleable>
     <attr name="hcpCircularProgressBarStyle" format="reference" />
     <attr name="hcp_cpb_progress" format="float" />
+
+    <declare-styleable name="SpanVariableGridView">
+        <attr name="SpanVariableGridView_numColumns" format="integer"/>
+        <attr name="SpanVariableGridView_itemMargin" format="dimension"/>
+    </declare-styleable>
 </resources>

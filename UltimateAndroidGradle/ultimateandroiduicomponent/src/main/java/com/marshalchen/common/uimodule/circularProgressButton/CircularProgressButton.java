@@ -19,7 +19,8 @@ import android.os.Parcelable;
 import android.util.AttributeSet;
 import android.util.StateSet;
 import android.widget.Button;
-import com.marshalchen.common.uimodule.R;
+
+import com.marshalchen.ultimateandroiduicomponent.R;
 
 public class CircularProgressButton extends Button {
 
@@ -80,7 +81,7 @@ public class CircularProgressButton extends Button {
     }
 
     private void init(Context context, AttributeSet attributeSet) {
-        mStrokeWidth = (int) getContext().getResources().getDimension(R.dimen.stroke_width);
+        mStrokeWidth = (int) getContext().getResources().getDimension(R.dimen.circular_progress_stroke_width);
 
         initAttributes(context, attributeSet);
 

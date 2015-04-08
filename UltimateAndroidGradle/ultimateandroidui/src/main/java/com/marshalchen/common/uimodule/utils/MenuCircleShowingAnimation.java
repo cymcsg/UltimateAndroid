@@ -44,7 +44,7 @@ public class MenuCircleShowingAnimation {
         context = activityContext;
         promotedActions = new ArrayList<ImageButton>();
         frameLayout = layout;
-        px = (int) context.getResources().getDimension(R.dimen.action_button_margin) * 2
+        px = (int) context.getResources().getDimension(R.dimen.menu_circle_action_button_margin) * 2
                 + (int) context.getResources().getDimension(R.dimen.activity_horizontal_margin) * 2 + 10;
         openRotation();
         closeRotation();
