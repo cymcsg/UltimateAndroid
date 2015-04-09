@@ -10,5 +10,4 @@
     <bool name="spb_default_mirror_mode">false</bool>
     <bool name="spb_default_progressiveStart_activated">false</bool>
 
-    <integer name="default_type">0</integer>
 </resources>

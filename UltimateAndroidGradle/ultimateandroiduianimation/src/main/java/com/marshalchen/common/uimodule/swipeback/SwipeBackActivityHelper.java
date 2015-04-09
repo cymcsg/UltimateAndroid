@@ -5,7 +5,8 @@ import android.app.Activity;
 import android.graphics.drawable.ColorDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
-import com.marshalchen.common.uimodule.R;
+
+import com.marshalchen.common.uimodule.animation.R;
 
 import java.lang.reflect.Method;
 

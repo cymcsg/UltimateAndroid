@@ -3,6 +3,7 @@ package com.marshalchen.common.uimodule.shimmer;
 
 import android.os.Build;
 import android.view.View;
+
 import com.nineoldandroids.animation.Animator;
 import com.nineoldandroids.animation.ObjectAnimator;
 import com.nineoldandroids.animation.ValueAnimator;

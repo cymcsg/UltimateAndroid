@@ -6,10 +6,20 @@ package com.marshalchen.common.uimodule.wireframe;
 
 import android.content.Context;
 import android.content.res.Resources;
-import android.graphics.*;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.DashPathEffect;
+import android.graphics.LinearGradient;
+import android.graphics.Paint;
+import android.graphics.Path;
+import android.graphics.PathEffect;
+import android.graphics.Shader;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
-import com.marshalchen.common.uimodule.R;
+
+import com.marshalchen.common.uimodule.animation.R;
 
 import java.util.ArrayList;
 import java.util.Collections;

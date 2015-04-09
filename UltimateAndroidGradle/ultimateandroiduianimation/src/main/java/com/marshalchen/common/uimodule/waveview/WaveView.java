@@ -9,7 +9,7 @@ import android.util.AttributeSet;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
-import com.marshalchen.common.uimodule.R;
+import com.marshalchen.common.uimodule.animation.R;
 
 /**
  * Created by John on 2014/10/15.

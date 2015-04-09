@@ -6,9 +6,14 @@ import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
-import android.view.animation.*;
+import android.view.animation.AccelerateDecelerateInterpolator;
+import android.view.animation.AccelerateInterpolator;
+import android.view.animation.DecelerateInterpolator;
+import android.view.animation.Interpolator;
+import android.view.animation.LinearInterpolator;
 import android.widget.ProgressBar;
-import com.marshalchen.common.uimodule.R;
+
+import com.marshalchen.common.uimodule.animation.R;
 
 
 /**

@@ -4,4 +4,6 @@
     <dimen name="patio_default_thumbnail_height">100dp</dimen>
     <dimen name="patio_default_thumbnails_container_padding">8dp</dimen>
     <dimen name="dialog_padding">25dp</dimen>
+    <dimen name="historyscore_tb">10dp</dimen>
+
 </resources>

@@ -2,13 +2,18 @@ package com.marshalchen.common.uimodule.smoothprogressbar;
 
 import android.content.Context;
 import android.content.res.Resources;
-import android.graphics.*;
+import android.graphics.Canvas;
+import android.graphics.ColorFilter;
+import android.graphics.Paint;
+import android.graphics.PixelFormat;
+import android.graphics.Rect;
 import android.graphics.drawable.Animatable;
 import android.graphics.drawable.Drawable;
 import android.os.SystemClock;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.Interpolator;
-import com.marshalchen.common.uimodule.R;
+
+import com.marshalchen.common.uimodule.animation.R;
 
 
 /**

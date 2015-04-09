@@ -13,7 +13,8 @@ import android.graphics.Paint.Style;
 import android.graphics.RectF;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
-import com.marshalchen.common.uimodule.R;
+
+import com.marshalchen.common.uimodule.animation.R;
 
 import java.util.List;
 

@@ -2,11 +2,16 @@ package com.marshalchen.common.uimodule.titanic;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
-import android.graphics.*;
+import android.graphics.Bitmap;
+import android.graphics.BitmapShader;
+import android.graphics.Canvas;
+import android.graphics.Matrix;
+import android.graphics.Shader;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.widget.TextView;
-import com.marshalchen.common.uimodule.R;
+
+import com.marshalchen.common.uimodule.animation.R;
 
 
 public class TitanicTextView extends TextView {

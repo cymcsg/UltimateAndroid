@@ -8,7 +8,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.marshalchen.common.uimodule.R;
+import com.marshalchen.common.uimodule.animation.R;
 
 // y=Asin(ωx+φ)+k
 class Wave extends View {

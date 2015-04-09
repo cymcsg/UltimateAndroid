@@ -3,6 +3,7 @@ package com.marshalchen.common.uimodule.titanic;
 
 import android.os.Build;
 import android.view.animation.LinearInterpolator;
+
 import com.nineoldandroids.animation.Animator;
 import com.nineoldandroids.animation.AnimatorSet;
 import com.nineoldandroids.animation.ObjectAnimator;

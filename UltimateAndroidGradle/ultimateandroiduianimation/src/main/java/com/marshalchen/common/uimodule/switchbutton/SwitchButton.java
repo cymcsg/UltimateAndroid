@@ -18,7 +18,7 @@ import android.view.ViewConfiguration;
 import android.view.ViewParent;
 import android.widget.CompoundButton;
 
-import com.marshalchen.common.uimodule.R;
+import com.marshalchen.common.uimodule.animation.R;
 import com.marshalchen.common.uimodule.switchbutton.AnimationController.OnAnimateListener;
 
 /**

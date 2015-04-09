@@ -7,4 +7,6 @@
         <item>@color/Yellow</item>
         <item>@color/Green</item>
     </integer-array>
+
+    <integer name="default_type">0</integer>
 </resources>

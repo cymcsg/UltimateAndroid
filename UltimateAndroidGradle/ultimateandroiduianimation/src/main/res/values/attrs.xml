@@ -102,4 +102,96 @@
     <declare-styleable name="PanningView">
         <attr name="panningDurationInMs" format="integer" />
     </declare-styleable>
+
+    <declare-styleable name="ShimmerView">
+        <attr name="reflectionColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="SmoothProgressBar">
+        <attr name="spbStyle" format="reference"/>
+        <attr name="spb_color" format="color"/>
+        <attr name="spb_stroke_width" format="dimension"/>
+        <attr name="spb_stroke_separator_length" format="dimension"/>
+        <attr name="spb_sections_count" format="integer"/>
+        <attr name="spb_speed" format="float"/>
+        <attr name="spb_progressiveStart_speed" format="float"/>
+        <attr name="spb_progressiveStop_speed" format="float"/>
+        <attr name="spb_interpolator" format="enum">
+            <enum name="spb_interpolator_accelerate" value="0"/>
+            <enum name="spb_interpolator_linear" value="1"/>
+            <enum name="spb_interpolator_acceleratedecelerate" value="2"/>
+            <enum name="spb_interpolator_decelerate" value="3"/>
+        </attr>
+        <attr name="spb_reversed" format="boolean"/>
+        <attr name="spb_mirror_mode" format="boolean"/>
+        <attr name="spb_colors" format="reference"/>
+        <attr name="spb_progressiveStart_activated" format="boolean"/>
+        <attr name="spb_background" format="reference"/>
+        <attr name="spb_generate_background_with_colors" format="boolean"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="SwipeBackLayout">
+        <attr name="edge_size" format="dimension"/>
+        <attr name="edge_flag">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+            <enum name="bottom" value="2"/>
+            <enum name="all" value="3"/>
+        </attr>
+        <attr name="shadow_left" format="reference"/>
+        <attr name="shadow_right" format="reference"/>
+        <attr name="shadow_bottom" format="reference"/>
+    </declare-styleable>
+
+    <attr name="SwipeBackLayoutStyle" format="reference"/>
+
+    <declare-styleable name="SwitchButton">
+        <attr name="switch_button_onDrawable" format="reference" />
+        <attr name="switch_button_offDrawable" format="reference" />
+        <attr name="thumbDrawable" format="reference" />
+        <attr name="thumb_margin" format="dimension|reference" />
+        <attr name="thumb_marginTop" format="dimension|reference" />
+        <attr name="thumb_marginBottom" format="dimension|reference" />
+        <attr name="thumb_marginLeft" format="dimension|reference" />
+        <attr name="thumb_marginRight" format="dimension|reference" />
+        <attr name="thumb_width" format="dimension|reference" />
+        <attr name="thumb_height" format="dimension|reference" />
+        <attr name="switch_button_onColor" format="color|reference" />
+        <attr name="switch_button_offColor" format="color|reference" />
+        <attr name="thumbColor" format="color|reference" />
+        <attr name="thumbPressedColor" format="color|reference" />
+        <attr name="animationVelocity" format="integer" />
+        <attr name="switch_button_radius" format="integer" />
+        <attr name="measureFactor" format="float" />
+        <attr name="insetLeft" format="dimension|reference" />
+        <attr name="insetRight" format="dimension|reference" />
+        <attr name="insetTop" format="dimension|reference" />
+        <attr name="insetBottom" format="dimension|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="WaveViewTheme">
+        <attr name="waveViewStyle" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="WaveView">
+        <attr name="above_wave_color" format="color"/>
+        <attr name="blow_wave_color" format="color"/>
+        <attr name="waveViewProgress" format="integer"/>
+        <attr name="wave_length" format="enum">
+            <enum name="large" value="1"/>
+            <enum name="middle" value="2"/>
+            <enum name="little" value="3"/>
+        </attr>
+        <attr name="wave_height" format="enum">
+            <enum name="large" value="1"/>
+            <enum name="middle" value="2"/>
+            <enum name="little" value="3"/>
+        </attr>
+        <attr name="wave_hz" format="enum">
+            <enum name="fast" value="1"/>
+            <enum name="normal" value="2"/>
+            <enum name="slow" value="3"/>
+        </attr>
+    </declare-styleable>
 </resources>

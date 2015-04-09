@@ -7,7 +7,8 @@ import android.graphics.Paint;
 import android.graphics.Shader;
 import android.util.AttributeSet;
 import android.view.View;
-import com.marshalchen.common.uimodule.R;
+
+import com.marshalchen.common.uimodule.animation.R;
 
 /**
  * Shimmer
