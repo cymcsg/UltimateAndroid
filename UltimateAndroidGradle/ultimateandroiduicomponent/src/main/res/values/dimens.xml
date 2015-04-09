@@ -25,4 +25,8 @@
     <dimen name="showcase_button_margin">12dp</dimen>
     <dimen name="showcase_text_padding">24dp</dimen>
     <dimen name="showcase_action_bar_offset">66dp</dimen>
+
+    <dimen name="menu_circle_action_button_margin">12dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
 </resources>

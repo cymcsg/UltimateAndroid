@@ -3,7 +3,6 @@ package com.marshalchen.common.commonUtils.urlUtils;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.Handler;
-import com.marshalchen.common.R;
 import com.nostra13.universalimageloader.cache.disc.impl.UnlimitedDiscCache;
 import com.nostra13.universalimageloader.cache.disc.naming.HashCodeFileNameGenerator;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
@@ -92,7 +91,7 @@ public class UniversalImageLoader {
         DisplayImageOptions.Builder builder = new DisplayImageOptions.Builder()
                 .resetViewBeforeLoading(false)  // default
                         //  .delayBeforeLoading(1000)
-                .showImageOnLoading(R.drawable.titanic_wave_black)
+              //  .showImageOnLoading(R.drawable.titanic_wave_black)
                 .considerExifParams(false) // default
                 .imageScaleType(ImageScaleType.IN_SAMPLE_POWER_OF_2) // default
                 .bitmapConfig(Bitmap.Config.ARGB_8888) // default

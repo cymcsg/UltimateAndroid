@@ -4,5 +4,6 @@
     <item type="id" name="expandable"/>
     <item name="expandable_item" type="id"></item>
     <item type="id" name="dynamic_grid_wobble_tag"/>
-
+    <item name="twowayview_item_click_support" type="id"/>
+    <item name="twowayview_item_selection_support" type="id"/>
 </resources>
