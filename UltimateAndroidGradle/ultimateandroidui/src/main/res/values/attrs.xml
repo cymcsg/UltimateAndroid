@@ -47,14 +47,6 @@
 
 
 
-    <declare-styleable name="PanningView">
-        <attr name="panningDurationInMs" format="integer"/>
-    </declare-styleable>
-
-
-
-
-
 
 
     <declare-styleable name="CardContainer">

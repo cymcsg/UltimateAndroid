@@ -9,8 +9,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
-import android.widget.*;
-import com.marshalchen.common.uimodule.R;
+import android.widget.Button;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+
+import com.marshalchen.common.uimodule.animation.R;
 import com.marshalchen.common.uimodule.niftymodaldialogeffects.effects.BaseEffects;
 
 

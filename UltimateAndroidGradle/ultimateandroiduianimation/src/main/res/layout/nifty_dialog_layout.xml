@@ -55,7 +55,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0.5dp"
                 android:visibility="visible"
-                android:background="@color/divider_color" />
+                android:background="#cccccc" />
         </LinearLayout>
 
         <LinearLayout android:id="@+id/contentPanel"
@@ -67,14 +67,12 @@
                 style="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingStart="16dip"
-                android:paddingEnd="16dip"
                 android:paddingTop="8dip"
                 android:minHeight="72dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:paddingBottom="8dip"
-                android:textColor="@color/msg_color"
+                android:textColor="@color/material_blue_grey_950"
                 android:textIsSelectable="true"/>
         </LinearLayout>
 

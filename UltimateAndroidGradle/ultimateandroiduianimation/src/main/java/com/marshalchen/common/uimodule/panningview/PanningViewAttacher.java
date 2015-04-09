@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.ViewTreeObserver;
 import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
+
 import com.nineoldandroids.animation.Animator;
 import com.nineoldandroids.animation.AnimatorListenerAdapter;
 import com.nineoldandroids.animation.ValueAnimator;
@@ -138,7 +139,7 @@ public class PanningViewAttacher implements ViewTreeObserver.OnGlobalLayoutListe
 	 * Clean-up the resources attached to this object. This needs to be called
 	 * when the ImageView is no longer used. A good example is from
 	 * {@link android.view.View#onDetachedFromWindow()} or from {@link android.app.Activity#onDestroy()}.
-	 * This is automatically called if you are using {@link com.marshalchen.common.uimodule.panningview.PanningView}.
+	 * This is automatically called if you are using {@link PanningView}.
 	 */
 	public final void cleanup() {
 		if (null != mImageView) {

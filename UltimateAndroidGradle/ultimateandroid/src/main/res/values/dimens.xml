@@ -10,7 +10,7 @@
     <dimen name="historyscore_tb">10dp</dimen>
 
     <dimen name="triangle_dp">10dp</dimen>
-    <dimen name="dialog_padding">25dp</dimen>
+
 
 
     <dimen name="fab_size_normal">56dp</dimen>
