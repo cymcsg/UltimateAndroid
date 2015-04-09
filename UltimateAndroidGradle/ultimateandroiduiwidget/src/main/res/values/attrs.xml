@@ -152,4 +152,72 @@
         <attr name="outlineEnabled" format="boolean"/>
         <attr name="outlineColor" format="color|reference"/>
     </declare-styleable>
+
+    <declare-styleable name="RoundCornerProgress">
+        <attr name="rcp_progress" format="integer" />
+        <attr name="rcp_backgroundPadding" format="dimension" />
+        <attr name="rcp_backgroundRadius" format="dimension" />
+        <attr name="rcp_max" format="integer" />
+        <attr name="rcp_iconSrc" format="integer" />
+        <attr name="rcp_iconSize" format="dimension" />
+        <attr name="rcp_iconPadding" format="dimension" />
+        <attr name="rcp_headerColor" format="color" />
+        <attr name="rcp_progressColor" format="color" />
+        <attr name="rcp_backgroundColor" format="color" />
+        <attr name="rcp_textProgressColor" format="color" />
+        <attr name="rcp_textProgress" format="string" />
+        <attr name="rcp_textProgressUnit" format="string" />
+        <attr name="rcp_textProgressSize" format="dimension" />
+        <attr name="rcp_textProgressWidth" format="dimension" />
+        <attr name="rcp_textProgressPadding" format="dimension" />
+        <attr name="rcp_autoTextChange" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ShaderImageView">
+        <attr name="square" format="boolean"/>
+        <attr name="borderColor" format="color"/>
+        <attr name="borderWidth" format="dimension"/>
+        <attr name="borderAlpha" format="float"/>
+        <attr name="foreground" format="integer|reference"/>
+        <!-- Rounded Image View -->
+        <attr name="ShaderImageViewRadius" format="dimension"/>
+        <!--BubbleImageView-->
+        <attr name="arrowPosition"/>
+        <attr name="triangleHeight" format="dimension"/>
+        <!--PorterImageView-->
+        <attr name="ShaderImageViewShape" format="integer|reference"/>
+        <!--ShaderImageView-->
+        <attr name="borderType"/>
+        <attr name="strokeCap"/>
+        <attr name="strokeJoin"/>
+        <attr name="strokeMiter" format="dimension"/>
+    </declare-styleable>
+
+    <attr name="arrowPosition">
+        <enum name="left" value="0"/>
+        <enum name="right" value="1"/>
+    </attr>
+    <attr name="borderType">
+        <enum name="stroke" value="0"/>
+        <enum name="fill" value="1"/>
+    </attr>
+    <attr name="strokeCap">
+        <enum name="butt" value="0"/>
+        <enum name="round" value="1"/>
+        <enum name="square" value="2"/>
+    </attr>
+    <attr name="strokeJoin">
+        <enum name="bevel" value="0"/>
+        <enum name="miter" value="1"/>
+        <enum name="round" value="2"/>
+    </attr>
+
+
+    <declare-styleable name="SignaturePad">
+        <attr name="minWidth" format="float"/>
+        <attr name="maxWidth" format="float"/>
+        <attr name="penColor" format="color"/>
+        <attr name="velocityFilterWeight" format="float"/>
+    </declare-styleable>
+
 </resources>
