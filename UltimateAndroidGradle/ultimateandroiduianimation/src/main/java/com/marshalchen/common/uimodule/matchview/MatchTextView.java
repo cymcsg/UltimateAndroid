@@ -5,9 +5,8 @@ import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.text.TextUtils;
 import android.util.AttributeSet;
-import android.util.Log;
 
-import com.marshalchen.common.uimodule.R;
+import com.marshalchen.common.uimodule.animation.R;
 import com.marshalchen.common.uimodule.matchview.util.MatchView;
 
 
@@ -43,13 +42,13 @@ public class MatchTextView extends MatchView {
     }
 
     void initAttrs(AttributeSet attrs) {
-        TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.match);
+        TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.MatchView);
         //获取尺寸属性值,默认大小为：25
-        mTextSize = a.getDimension(R.styleable.match_textSize, 25);
+        mTextSize = a.getDimension(R.styleable.MatchView_matchViewTextSize, 25);
         //获取颜色属性值,默认颜色为：Color.WHITE
-        mTextColor = a.getColor(R.styleable.match_textColor, Color.WHITE);
+        mTextColor = a.getColor(R.styleable.MatchView_matchViewTextColor, Color.WHITE);
         //获取内容
-        mContent = a.getString(R.styleable.match_text);
+        mContent = a.getString(R.styleable.MatchView_matchViewText);
         init();
     }
 

@@ -3,6 +3,7 @@ package com.marshalchen.common.uimodule.listviewanimations.swinginadapters.prepa
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+
 import com.marshalchen.common.uimodule.listviewanimations.swinginadapters.AnimationAdapter;
 import com.nineoldandroids.animation.Animator;
 

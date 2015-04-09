@@ -22,8 +22,13 @@ import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
+
 import com.marshalchen.common.uimodule.listviewanimations.BaseAdapterDecorator;
-import com.nineoldandroids.animation.*;
+import com.nineoldandroids.animation.Animator;
+import com.nineoldandroids.animation.AnimatorListenerAdapter;
+import com.nineoldandroids.animation.AnimatorSet;
+import com.nineoldandroids.animation.ObjectAnimator;
+import com.nineoldandroids.animation.ValueAnimator;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -36,9 +41,9 @@ import java.util.List;
  * Usage:<br>
  * - Wrap a new instance of this class around a {@link android.widget.BaseAdapter}. <br>
  * - Set a {@code ListView} to this class using {@link #setListView(android.widget.ListView)}.<br>
- * - Call {@link com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.AnimateAdditionAdapter#insert(int, Object)} to animate the addition of an item.
+ * - Call {@link AnimateAdditionAdapter#insert(int, Object)} to animate the addition of an item.
  * <p>
- * Extend this class and override {@link com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.AnimateAdditionAdapter#getAdditionalAnimators(android.view.View,
+ * Extend this class and override {@link AnimateAdditionAdapter#getAdditionalAnimators(android.view.View,
  * android.view.ViewGroup)} to provide extra {@link com.marshalchen.common.uimodule.nineoldandroids.animation.Animator}s.
  */
 @SuppressWarnings("unchecked")
@@ -57,7 +62,7 @@ public class AnimateAdditionAdapter<T> extends BaseAdapterDecorator {
     private long mScrolldownAnimationDurationMs = DEFAULT_SCROLLDOWN_ANIMATION_MS;
 
     /**
-     * Create a new {@link com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.AnimateAdditionAdapter} with given {@link android.widget.BaseAdapter}.
+     * Create a new {@link AnimateAdditionAdapter} with given {@link android.widget.BaseAdapter}.
      *
      * @param baseAdapter should implement {@link com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.AnimateAdditionAdapter.Insertable},
      *                    or be a {@link com.marshalchen.common.uimodule.listviewanimations.BaseAdapterDecorator} whose BaseAdapter implements the interface.

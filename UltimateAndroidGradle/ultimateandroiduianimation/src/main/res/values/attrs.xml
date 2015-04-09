@@ -92,4 +92,10 @@
         <attr name="pager_animation_span" format="integer"/>
 
     </declare-styleable>
+
+    <declare-styleable name="MatchView">
+    <attr name="matchViewText" format="string" />
+    <attr name="matchViewTextColor" format="color" />
+    <attr name="matchViewTextSize" format="dimension" />
+    </declare-styleable>
 </resources>

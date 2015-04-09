@@ -22,6 +22,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
+
 import com.marshalchen.common.uimodule.listviewanimations.BaseAdapterDecorator;
 import com.nineoldandroids.animation.Animator;
 import com.nineoldandroids.animation.AnimatorSet;
@@ -29,7 +30,7 @@ import com.nineoldandroids.animation.ObjectAnimator;
 import com.nineoldandroids.view.ViewHelper;
 
 /**
- * A {@link BaseAdapterDecorator} class which applies multiple {@link Animator}s at once to
+ * A {@link BaseAdapterDecorator} class which applies multiple {@link com.nineoldandroids.animation.Animator}s at once to
  * views when they are first shown. The Animators applied include the animations
  * specified in {@link #getAnimators(android.view.ViewGroup, android.view.View)}, plus an alpha transition.
  */

@@ -21,6 +21,7 @@ import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.BaseAdapter;
 import android.widget.SectionIndexer;
+
 import com.marshalchen.common.uimodule.listviewanimations.widget.DynamicListView;
 import com.marshalchen.common.uimodule.listviewanimations.widget.DynamicListView.Swappable;
 
@@ -31,7 +32,7 @@ import com.marshalchen.common.uimodule.listviewanimations.widget.DynamicListView
  * Classes extending this class can override methods and provide extra
  * functionality before or after calling the super method.
  */
-public abstract class BaseAdapterDecorator extends BaseAdapter implements SectionIndexer, DynamicListView.Swappable, ListViewSetter {
+public abstract class BaseAdapterDecorator extends BaseAdapter implements SectionIndexer, Swappable, ListViewSetter {
 
 	protected final BaseAdapter mDecoratedBaseAdapter;
 

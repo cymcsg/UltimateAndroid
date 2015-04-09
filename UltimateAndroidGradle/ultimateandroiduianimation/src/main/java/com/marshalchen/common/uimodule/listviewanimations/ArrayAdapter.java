@@ -16,14 +16,20 @@
 package com.marshalchen.common.uimodule.listviewanimations;
 
 import android.widget.BaseAdapter;
+
 import com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.AnimateAdditionAdapter;
 import com.marshalchen.common.uimodule.listviewanimations.widget.DynamicListView;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
 
 /**
  * A {@code true} {@link java.util.ArrayList} adapter providing access to all ArrayList methods.
- * Also implements {@link DynamicListView.Swappable} for easy object swapping, and {@link AnimateAdditionAdapter.Insertable} for inserting objects.
+ * Also implements {@link DynamicListView.Swappable} for easy object swapping, and {@link com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.AnimateAdditionAdapter.Insertable} for inserting objects.
  */
 @SuppressWarnings("UnusedDeclaration")
 public abstract class ArrayAdapter<T> extends BaseAdapter implements List<T>, DynamicListView.Swappable, AnimateAdditionAdapter.Insertable<T> {
@@ -38,14 +44,14 @@ public abstract class ArrayAdapter<T> extends BaseAdapter implements List<T>, Dy
     }
 
     /**
-     * Creates a new {@link com.marshalchen.common.uimodule.listviewanimations.ArrayAdapter} using given {@code List} , or an empty {@code List}  if objects == null.
+     * Creates a new {@link ArrayAdapter} using given {@code List} , or an empty {@code List}  if objects == null.
      */
     public ArrayAdapter(final List<T> objects) {
         this(objects, false);
     }
 
     /**
-     * Creates a new {@link com.marshalchen.common.uimodule.listviewanimations.ArrayAdapter}, using (a copy of) given {@code List} , or an empty {@code List}  if objects = null.
+     * Creates a new {@link ArrayAdapter}, using (a copy of) given {@code List} , or an empty {@code List}  if objects = null.
      * @param copyList {@code true} to create a copy of the {@code List} , {@code false} to reuse the reference.
      */
     public ArrayAdapter(final List<T> objects, final boolean copyList) {

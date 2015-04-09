@@ -18,31 +18,31 @@ package com.marshalchen.common.uimodule.listviewanimations.swinginadapters.prepa
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import com.marshalchen.common.uimodule.listviewanimations.swinginadapters.AnimationAdapter;
+
+import com.marshalchen.common.uimodule.listviewanimations.swinginadapters.SingleAnimationAdapter;
 import com.nineoldandroids.animation.Animator;
 import com.nineoldandroids.animation.ObjectAnimator;
 
-public class ScaleInAnimationAdapter extends AnimationAdapter {
+/**
+ * An implementation of the AnimationAdapter class which applies a
+ * swing-in-from-the-right-animation to views.
+ */
+public class SwingRightInAnimationAdapter extends SingleAnimationAdapter {
 
-    private static final float DEFAULTSCALEFROM = 0.8f;
-    private static final String SCALE_X = "scaleX";
-    private static final String SCALE_Y = "scaleY";
-
-    private final float mScaleFrom;
+    private static final String TRANSLATION_X = "translationX";
     private final long mAnimationDelayMillis;
     private final long mAnimationDurationMillis;
 
-    public ScaleInAnimationAdapter(final BaseAdapter baseAdapter) {
-        this(baseAdapter, DEFAULTSCALEFROM);
+    public SwingRightInAnimationAdapter(final BaseAdapter baseAdapter) {
+        this(baseAdapter, DEFAULTANIMATIONDELAYMILLIS, DEFAULTANIMATIONDURATIONMILLIS);
     }
 
-    public ScaleInAnimationAdapter(final BaseAdapter baseAdapter, final float scaleFrom) {
-        this(baseAdapter, scaleFrom, DEFAULTANIMATIONDELAYMILLIS, DEFAULTANIMATIONDURATIONMILLIS);
+    public SwingRightInAnimationAdapter(final BaseAdapter baseAdapter, final long animationDelayMillis) {
+        this(baseAdapter, animationDelayMillis, DEFAULTANIMATIONDURATIONMILLIS);
     }
 
-    public ScaleInAnimationAdapter(final BaseAdapter baseAdapter, final float scaleFrom, final long animationDelayMillis, final long animationDurationMillis) {
+    public SwingRightInAnimationAdapter(final BaseAdapter baseAdapter, final long animationDelayMillis, final long animationDurationMillis) {
         super(baseAdapter);
-        mScaleFrom = scaleFrom;
         mAnimationDelayMillis = animationDelayMillis;
         mAnimationDurationMillis = animationDurationMillis;
     }
@@ -58,9 +58,7 @@ public class ScaleInAnimationAdapter extends AnimationAdapter {
     }
 
     @Override
-    public Animator[] getAnimators(final ViewGroup parent, final View view) {
-        ObjectAnimator scaleX = ObjectAnimator.ofFloat(view, SCALE_X, mScaleFrom, 1f);
-        ObjectAnimator scaleY = ObjectAnimator.ofFloat(view, SCALE_Y, mScaleFrom, 1f);
-        return new ObjectAnimator[]{scaleX, scaleY};
+    protected Animator getAnimator(final ViewGroup parent, final View view) {
+        return ObjectAnimator.ofFloat(view, TRANSLATION_X, parent.getWidth(), 0);
     }
 }

@@ -18,29 +18,30 @@ package com.marshalchen.common.uimodule.listviewanimations.swinginadapters.prepa
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+
 import com.marshalchen.common.uimodule.listviewanimations.swinginadapters.SingleAnimationAdapter;
 import com.nineoldandroids.animation.Animator;
 import com.nineoldandroids.animation.ObjectAnimator;
 
 /**
  * An implementation of the AnimationAdapter class which applies a
- * swing-in-from-the-right-animation to views.
+ * swing-in-from-bottom-animation to views.
  */
-public class SwingRightInAnimationAdapter extends SingleAnimationAdapter {
+public class SwingBottomInAnimationAdapter extends SingleAnimationAdapter {
 
-    private static final String TRANSLATION_X = "translationX";
+    private static final String TRANSLATION_Y = "translationY";
     private final long mAnimationDelayMillis;
     private final long mAnimationDurationMillis;
 
-    public SwingRightInAnimationAdapter(final BaseAdapter baseAdapter) {
+    public SwingBottomInAnimationAdapter(final BaseAdapter baseAdapter) {
         this(baseAdapter, DEFAULTANIMATIONDELAYMILLIS, DEFAULTANIMATIONDURATIONMILLIS);
     }
 
-    public SwingRightInAnimationAdapter(final BaseAdapter baseAdapter, final long animationDelayMillis) {
+    public SwingBottomInAnimationAdapter(final BaseAdapter baseAdapter, final long animationDelayMillis) {
         this(baseAdapter, animationDelayMillis, DEFAULTANIMATIONDURATIONMILLIS);
     }
 
-    public SwingRightInAnimationAdapter(final BaseAdapter baseAdapter, final long animationDelayMillis, final long animationDurationMillis) {
+    public SwingBottomInAnimationAdapter(final BaseAdapter baseAdapter, final long animationDelayMillis, final long animationDurationMillis) {
         super(baseAdapter);
         mAnimationDelayMillis = animationDelayMillis;
         mAnimationDurationMillis = animationDurationMillis;
@@ -58,6 +59,8 @@ public class SwingRightInAnimationAdapter extends SingleAnimationAdapter {
 
     @Override
     protected Animator getAnimator(final ViewGroup parent, final View view) {
-        return ObjectAnimator.ofFloat(view, TRANSLATION_X, parent.getWidth(), 0);
+        // TODO magic number
+        return ObjectAnimator.ofFloat(view, TRANSLATION_Y, 500, 0);
     }
+
 }

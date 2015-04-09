@@ -18,6 +18,7 @@ package com.marshalchen.common.uimodule.listviewanimations.swinginadapters.prepa
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+
 import com.marshalchen.common.uimodule.listviewanimations.swinginadapters.SingleAnimationAdapter;
 import com.nineoldandroids.animation.Animator;
 import com.nineoldandroids.animation.ObjectAnimator;

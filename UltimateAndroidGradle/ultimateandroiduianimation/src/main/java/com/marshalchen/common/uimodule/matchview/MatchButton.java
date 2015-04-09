@@ -3,7 +3,6 @@ package com.marshalchen.common.uimodule.matchview;
 import android.content.Context;
 import android.text.TextUtils;
 import android.util.AttributeSet;
-import android.util.Log;
 
 import com.marshalchen.common.uimodule.matchview.util.MatchPath;
 

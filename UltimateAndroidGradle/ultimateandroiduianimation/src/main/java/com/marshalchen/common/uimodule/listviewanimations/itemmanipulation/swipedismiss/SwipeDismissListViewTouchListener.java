@@ -20,8 +20,13 @@ package com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.swip
 
 import android.annotation.SuppressLint;
 import android.graphics.Rect;
-import android.view.*;
+import android.view.MotionEvent;
+import android.view.VelocityTracker;
+import android.view.View;
+import android.view.ViewConfiguration;
+import android.view.ViewGroup;
 import android.widget.AbsListView;
+
 import com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.OnDismissCallback;
 import com.marshalchen.common.uimodule.listviewanimations.util.AdapterViewUtil;
 import com.nineoldandroids.animation.Animator;
@@ -43,7 +48,7 @@ import static com.nineoldandroids.view.ViewPropertyAnimator.animate;
  * charge of drawing the pressed state (the list selector), handling list item
  * clicks, etc.
  *
- * For performance reasons, do not use this class directly, but use the {@link com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.swipedismiss.SwipeDismissAdapter}.
+ * For performance reasons, do not use this class directly, but use the {@link SwipeDismissAdapter}.
  */
 @SuppressLint("Recycle")
 public class SwipeDismissListViewTouchListener implements SwipeOnTouchListener {
@@ -111,7 +116,7 @@ public class SwipeDismissListViewTouchListener implements SwipeOnTouchListener {
     }
 
     /**
-     * Set the {@link com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.swipedismiss.DismissableManager} to specify which views can or cannot be swiped.
+     * Set the {@link DismissableManager} to specify which views can or cannot be swiped.
      * @param dismissableManager null for no restrictions.
      */
     @SuppressWarnings("UnusedDeclaration")

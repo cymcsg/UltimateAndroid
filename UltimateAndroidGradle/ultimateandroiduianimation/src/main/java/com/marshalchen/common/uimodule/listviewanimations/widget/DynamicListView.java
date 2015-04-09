@@ -25,10 +25,24 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
-import android.view.*;
-import android.widget.*;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.ViewConfiguration;
+import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
+import android.widget.AbsListView;
+import android.widget.AdapterView;
+import android.widget.BaseAdapter;
+import android.widget.HeaderViewListAdapter;
+import android.widget.ListAdapter;
+import android.widget.ListView;
+
 import com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.swipedismiss.SwipeOnTouchListener;
-import com.nineoldandroids.animation.*;
+import com.nineoldandroids.animation.Animator;
+import com.nineoldandroids.animation.AnimatorListenerAdapter;
+import com.nineoldandroids.animation.ObjectAnimator;
+import com.nineoldandroids.animation.TypeEvaluator;
+import com.nineoldandroids.animation.ValueAnimator;
 import com.nineoldandroids.view.ViewHelper;
 
 /**

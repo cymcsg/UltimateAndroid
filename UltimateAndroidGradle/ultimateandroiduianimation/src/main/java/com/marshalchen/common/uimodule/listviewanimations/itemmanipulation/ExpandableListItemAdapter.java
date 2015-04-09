@@ -8,6 +8,7 @@ import android.view.ViewGroup.LayoutParams;
 import android.widget.AbsListView;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
+
 import com.marshalchen.common.uimodule.listviewanimations.ArrayAdapter;
 import com.marshalchen.common.uimodule.listviewanimations.ListViewSetter;
 import com.marshalchen.common.uimodule.listviewanimations.util.AdapterViewUtil;
@@ -21,7 +22,7 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * An {@link ArrayAdapter} which allows items to be expanded using an animation.
+ * An {@link com.marshalchen.common.uimodule.listviewanimations.ArrayAdapter} which allows items to be expanded using an animation.
  */
 @SuppressWarnings("UnusedDeclaration")
 public abstract class ExpandableListItemAdapter<T> extends ArrayAdapter<T> implements ListViewSetter {
@@ -50,7 +51,7 @@ public abstract class ExpandableListItemAdapter<T> extends ArrayAdapter<T> imple
     }
 
     /**
-     * Creates a new {@link com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.ExpandableListItemAdapter} with the specified list,
+     * Creates a new {@link ExpandableListItemAdapter} with the specified list,
      * or an empty list if items == null.
      */
     public ExpandableListItemAdapter(final Context context, final List<T> items) {

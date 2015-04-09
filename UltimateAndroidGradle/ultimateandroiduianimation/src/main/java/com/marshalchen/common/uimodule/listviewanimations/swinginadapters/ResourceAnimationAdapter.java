@@ -15,36 +15,36 @@
  */
 package com.marshalchen.common.uimodule.listviewanimations.swinginadapters;
 
+import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+
 import com.nineoldandroids.animation.Animator;
+import com.nineoldandroids.animation.AnimatorInflater;
 
 /**
- * An implementation of AnimationAdapter which applies a single Animator to
- * views.
+ * An implementation of AnimationAdapter which bases the animations on
+ * resources.
  */
-public abstract class SingleAnimationAdapter extends AnimationAdapter {
+public abstract class ResourceAnimationAdapter<T> extends AnimationAdapter {
 
-    public SingleAnimationAdapter(final BaseAdapter baseAdapter) {
+    private final Context mContext;
+
+    @SuppressWarnings("UnusedDeclaration")
+    public ResourceAnimationAdapter(final BaseAdapter baseAdapter, final Context context) {
         super(baseAdapter);
+        mContext = context;
     }
 
     @Override
     public Animator[] getAnimators(final ViewGroup parent, final View view) {
-        Animator animator = getAnimator(parent, view);
-        return new Animator[]{animator};
+        return new Animator[]{AnimatorInflater.loadAnimator(mContext, getAnimationResourceId())};
     }
 
     /**
-     * Get the {@link Animator} to apply to the {@link android.view.View}.
-     *
-     * @param parent
-     *            the {@link android.view.ViewGroup} which is the parent of the View.
-     * @param view
-     *            the View that will be animated, as retrieved by
-     *            {@link #getView(int, android.view.View, android.view.ViewGroup)}.
+     * Get the resource id of the animation to apply to the views.
      */
-    protected abstract Animator getAnimator(ViewGroup parent, View view);
+    protected abstract int getAnimationResourceId();
 
 }

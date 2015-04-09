@@ -19,9 +19,14 @@
 package com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.swipedismiss.contextualundo;
 
 import android.graphics.Rect;
-import android.view.*;
+import android.view.MotionEvent;
+import android.view.VelocityTracker;
+import android.view.View;
+import android.view.ViewConfiguration;
+import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
+
 import com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.swipedismiss.DismissableManager;
 import com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.swipedismiss.SwipeOnTouchListener;
 import com.marshalchen.common.uimodule.listviewanimations.util.AdapterViewUtil;
@@ -33,7 +38,7 @@ import static com.nineoldandroids.view.ViewHelper.setTranslationX;
 import static com.nineoldandroids.view.ViewPropertyAnimator.animate;
 
 /**
- * An {@link android.view.View.OnTouchListener} for the {@link ContextualUndoAdapter}. Don't use
+ * An {@link android.view.View.OnTouchListener} for the {@link com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.swipedismiss.contextualundo.ContextualUndoAdapter}. Don't use
  * this class directly, use ContextualUndoAdapter to wrap your
  * {@link android.widget.BaseAdapter}s.
  */

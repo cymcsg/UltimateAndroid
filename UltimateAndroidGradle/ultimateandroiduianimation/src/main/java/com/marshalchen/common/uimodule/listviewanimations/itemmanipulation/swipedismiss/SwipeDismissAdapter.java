@@ -17,6 +17,7 @@ package com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.swip
 
 import android.widget.AbsListView;
 import android.widget.BaseAdapter;
+
 import com.marshalchen.common.uimodule.listviewanimations.ArrayAdapter;
 import com.marshalchen.common.uimodule.listviewanimations.BaseAdapterDecorator;
 import com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.OnDismissCallback;
@@ -25,8 +26,8 @@ import com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.OnDis
  * Adds an option to swipe items in an AbsListView away.
  * Do not call {@link android.widget.AbsListView#setOnTouchListener(android.view.View.OnTouchListener)} or
  * {@link android.widget.AbsListView#setOnScrollListener(android.widget.AbsListView.OnScrollListener)} on your AbsListView! To use an {@link android.widget.AbsListView.OnScrollListener},
- * extends {@link SwipeOnScrollListener} and
- * pass it in the constructor {@link #SwipeDismissAdapter(android.widget.BaseAdapter, com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.OnDismissCallback, SwipeOnScrollListener)}.
+ * extends {@link com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.swipedismiss.SwipeOnScrollListener} and
+ * pass it in the constructor {@link #SwipeDismissAdapter(android.widget.BaseAdapter, com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.OnDismissCallback, com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.swipedismiss.SwipeOnScrollListener)}.
  */
 public class SwipeDismissAdapter extends BaseAdapterDecorator {
 
@@ -38,7 +39,7 @@ public class SwipeDismissAdapter extends BaseAdapterDecorator {
      * Create a new SwipeDismissAdapter.
      *
      * @param baseAdapter       the {@link android.widget.BaseAdapter to use}
-     * @param onDismissCallback the {@link OnDismissCallback} to be notified of dismissed items.
+     * @param onDismissCallback the {@link com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.OnDismissCallback} to be notified of dismissed items.
      */
     public SwipeDismissAdapter(final BaseAdapter baseAdapter, final OnDismissCallback onDismissCallback) {
         this(baseAdapter, onDismissCallback, new SwipeOnScrollListener());
@@ -48,8 +49,8 @@ public class SwipeDismissAdapter extends BaseAdapterDecorator {
      * Create a new SwipeDismissAdapter.
      *
      * @param baseAdapter           the {@link android.widget.BaseAdapter to use}
-     * @param onDismissCallback     the {@link OnDismissCallback} to be notified of dismissed items.
-     * @param swipeOnScrollListener the {@link SwipeOnScrollListener} to use.
+     * @param onDismissCallback     the {@link com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.OnDismissCallback} to be notified of dismissed items.
+     * @param swipeOnScrollListener the {@link com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.swipedismiss.SwipeOnScrollListener} to use.
      */
     public SwipeDismissAdapter(final BaseAdapter baseAdapter, final OnDismissCallback onDismissCallback, final SwipeOnScrollListener swipeOnScrollListener) {
         super(baseAdapter);

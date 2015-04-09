@@ -18,6 +18,7 @@ package com.marshalchen.common.uimodule.listviewanimations.itemmanipulation;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+
 import com.marshalchen.common.uimodule.listviewanimations.BaseAdapterDecorator;
 import com.marshalchen.common.uimodule.listviewanimations.util.AdapterViewUtil;
 import com.nineoldandroids.animation.Animator;
@@ -26,10 +27,14 @@ import com.nineoldandroids.animation.AnimatorSet;
 import com.nineoldandroids.animation.ValueAnimator;
 import com.nineoldandroids.animation.ValueAnimator.AnimatorUpdateListener;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 
 /**
- * A {@link BaseAdapterDecorator} class that provides animations to the removal
+ * A {@link com.marshalchen.common.uimodule.listviewanimations.BaseAdapterDecorator} class that provides animations to the removal
  * of items in the given {@link android.widget.BaseAdapter}.
  */
 public class AnimateDismissAdapter extends BaseAdapterDecorator {
@@ -40,7 +45,7 @@ public class AnimateDismissAdapter extends BaseAdapterDecorator {
      * Create a new AnimateDismissAdapter based on the given {@link android.widget.BaseAdapter}.
      *
      * @param callback
-     *            The {@link OnDismissCallback} to trigger when the user has
+     *            The {@link com.marshalchen.common.uimodule.listviewanimations.itemmanipulation.OnDismissCallback} to trigger when the user has
      *            indicated that she would like to dismiss one or more list
      *            items.
      */
