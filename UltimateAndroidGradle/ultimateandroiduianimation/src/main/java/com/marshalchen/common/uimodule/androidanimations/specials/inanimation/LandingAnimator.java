@@ -1,4 +1,4 @@
-package com.marshalchen.common.uimodule.androidanimations.specials.in;
+package com.marshalchen.common.uimodule.androidanimations.specials.inanimation;
 
 import android.view.View;
 
