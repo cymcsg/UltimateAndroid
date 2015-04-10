@@ -194,4 +194,30 @@
             <enum name="slow" value="3"/>
         </attr>
     </declare-styleable>
+
+
+    <!--<declare-styleable name="CustomAttributes">-->
+        <!--&lt;!&ndash;        indicate if the slider must show number indicator &ndash;&gt;-->
+        <!--<attr name="showNumberIndicator" format="boolean" />-->
+        <!--&lt;!&ndash;        in progress view indicate max value of progress &ndash;&gt;-->
+
+        <!--&lt;!&ndash;        in progress view indicate min value of progress &ndash;&gt;-->
+        <!--<attr name="min" format="integer" />-->
+        <!--&lt;!&ndash;        in progress view indicate value of progress &ndash;&gt;-->
+        <!--<attr name="value" format="integer" />-->
+        <!--&lt;!&ndash;        in progress view indicate value of progress &ndash;&gt;-->
+
+        <!--&lt;!&ndash;        in switche's view indicate state of view &ndash;&gt;-->
+        <!--<attr name="check" format="boolean" />-->
+        <!--&lt;!&ndash;        in float button indicate icon resource &ndash;&gt;-->
+        <!--<attr name="iconFloat" format="integer" />-->
+        <!--&lt;!&ndash;        in float button indicate if must start with animation &ndash;&gt;-->
+        <!--<attr name="animate" format="boolean" />-->
+        <!--&lt;!&ndash;        Speed of ripple animation &ndash;&gt;-->
+        <!--<attr name="rippleSpeed" format="float" />-->
+        <!--&lt;!&ndash;        in float button indicate if must start with animation &ndash;&gt;-->
+
+    <!--</declare-styleable>-->
+
+
 </resources>
