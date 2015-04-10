@@ -23,4 +23,14 @@ dependencies {
     compile 'com.android.support:appcompat-v7:22.0.0'
     compile 'com.github.lzyzsd:circleprogress:1.0.0@aar'
     compile project(':ultimateandroid')
+
+    compile 'com.github.pavlospt:roundedletterview:1.0'
+
+    compile 'in.srain.cube:ultra-ptr:1.0.5@aar'
+    compile 'com.github.ksoichiro:android-observablescrollview:1.2.1'
+    compile 'com.github.hotchemi:ProgressMenuItem:0.3.3'
+
+
+    compile "com.daimajia.swipelayout:library:1.1.7@aar"
+    compile 'com.lorentzos.swipecards:library:1.0.8'
 }
