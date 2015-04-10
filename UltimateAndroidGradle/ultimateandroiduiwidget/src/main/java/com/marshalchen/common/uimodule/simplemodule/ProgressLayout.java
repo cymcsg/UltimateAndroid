@@ -3,8 +3,6 @@ package com.marshalchen.common.uimodule.simplemodule;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Color;
-import android.os.Bundle;
-import android.os.Parcelable;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.View;
@@ -13,10 +11,10 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 
-import com.marshalchen.common.uimodule.R;
+
+import com.marshalchen.common.uimodule.widgets.R;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 

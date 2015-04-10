@@ -1,18 +1,8 @@
 package com.marshalchen.common.uimodule.simplemodule;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
-
 import android.content.Context;
 import android.database.DataSetObserver;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver.OnPreDrawListener;
@@ -22,6 +12,7 @@ import android.view.animation.OvershootInterpolator;
 import android.widget.BaseAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+
 import com.marshalchen.common.commonUtils.logUtils.Logs;
 import com.nineoldandroids.animation.Animator;
 import com.nineoldandroids.animation.AnimatorListenerAdapter;
@@ -29,6 +20,15 @@ import com.nineoldandroids.animation.AnimatorSet;
 import com.nineoldandroids.animation.ObjectAnimator;
 import com.nineoldandroids.view.ViewHelper;
 import com.nineoldandroids.view.animation.AnimatorProxy;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
 
 
 @SuppressWarnings({ "rawtypes", "unchecked" })

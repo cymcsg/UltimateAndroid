@@ -12,7 +12,7 @@ import android.os.Message;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.marshalchen.common.uimodule.R;
+import com.marshalchen.common.uimodule.widgets.R;
 
 
 /**

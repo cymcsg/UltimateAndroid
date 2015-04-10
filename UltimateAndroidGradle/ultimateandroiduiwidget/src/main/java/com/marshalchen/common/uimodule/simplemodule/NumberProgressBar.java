@@ -11,7 +11,8 @@ import android.os.Parcelable;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.marshalchen.common.uimodule.R;
+import com.marshalchen.common.uimodule.widgets.R;
+
 
 /**
  * Created by daimajia on 14-4-30.
