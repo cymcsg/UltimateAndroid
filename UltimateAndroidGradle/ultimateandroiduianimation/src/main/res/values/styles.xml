@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <style name="PatioToolbarButton" parent="@android:style/Widget.Holo.Button.Borderless">
         <item name="android:textSize">14sp</item>

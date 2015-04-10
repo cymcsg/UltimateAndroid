@@ -274,7 +274,7 @@
         <attr name="twowayview_colSpan" format="integer"/>
         <attr name="twowayview_rowSpan" format="integer"/>
     </declare-styleable>
-
+    <attr name="fontPath" format="string"/>
 
 
 </resources>
