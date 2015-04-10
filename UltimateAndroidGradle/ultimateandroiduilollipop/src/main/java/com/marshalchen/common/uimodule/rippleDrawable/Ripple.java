@@ -11,7 +11,6 @@ import android.view.animation.Interpolator;
 import android.view.animation.LinearInterpolator;
 
 
-
 /**
  * Draws a Material ripple.
  */

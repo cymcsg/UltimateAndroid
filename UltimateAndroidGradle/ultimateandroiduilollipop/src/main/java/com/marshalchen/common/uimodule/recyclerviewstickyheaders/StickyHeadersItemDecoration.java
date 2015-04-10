@@ -6,7 +6,6 @@ import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.RecyclerViewHelper;
 import android.view.View;
-import android.view.ViewGroup;
 
 import java.util.HashMap;
 import java.util.Iterator;

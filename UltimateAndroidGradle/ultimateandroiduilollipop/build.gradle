@@ -21,5 +21,10 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.0.0'
+    compile 'com.rengwuxian.materialedittext:library:1.1.0'
+    compile 'com.skyfishjy.ripplebackground:library:1.0.1'
+    compile 'com.jpardogo.materialtabstrip:library:1.0.3'
+    compile 'com.github.markushi:android-ui:1.2'
+    compile 'com.github.dexafree:materiallist:1.2.0'
     compile project(':ultimateandroid')
 }

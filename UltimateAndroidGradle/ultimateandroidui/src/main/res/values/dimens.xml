@@ -4,31 +4,4 @@
 
 
 
-
-
-
-
-
-    <dimen name="red_action_button_size">108dp</dimen>
-    <dimen name="red_action_button_margin">48dp</dimen>
-
-    <dimen name="red_action_button_content_size">16dp</dimen>
-    <dimen name="red_action_button_content_margin">36dp</dimen>
-
-    <dimen name="red_action_menu_radius">144dp</dimen>
-    <dimen name="blue_sub_action_button_size">48dp</dimen>
-    <dimen name="blue_sub_action_button_content_margin">16dp</dimen>
-
-    <dimen name="radius_large">120dp</dimen>
-    <dimen name="radius_small">30dp</dimen>
-    <dimen name="radius_medium">72dp</dimen>
-    <dimen name="tabhostHeight">48dp</dimen>
-    <dimen name="tabSelectorHeight">2dp</dimen>
-    <dimen name="materialTextTab">14sp</dimen>
-
-    <dimen name="patio_default_thumbnail_width">100dp</dimen>
-    <dimen name="patio_default_thumbnail_height">100dp</dimen>
-    <dimen name="patio_default_thumbnails_container_padding">8dp</dimen>
-
-
 </resources>

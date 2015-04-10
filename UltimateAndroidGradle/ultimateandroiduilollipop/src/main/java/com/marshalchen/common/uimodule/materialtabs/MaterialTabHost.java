@@ -1,21 +1,20 @@
 package com.marshalchen.common.uimodule.materialtabs;
 
-import java.util.LinkedList;
-import java.util.List;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.content.res.TypedArray;
 import android.content.res.Resources.Theme;
+import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.View;
-import android.view.ViewTreeObserver.OnGlobalLayoutListener;
 import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
 
-import com.marshalchen.common.uimodule.R;
+import com.marshalchen.ultimateandroiduilollipop.R;
+
+import java.util.LinkedList;
+import java.util.List;
 
 
 /**

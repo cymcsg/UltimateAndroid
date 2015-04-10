@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tabhostHeight">48dp</dimen>
+    <dimen name="tabSelectorHeight">2dp</dimen>
+    <dimen name="materialTextTab">14sp</dimen>
+</resources>

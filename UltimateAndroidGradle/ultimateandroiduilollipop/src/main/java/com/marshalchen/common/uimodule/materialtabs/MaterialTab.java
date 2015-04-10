@@ -1,7 +1,5 @@
 package com.marshalchen.common.uimodule.materialtabs;
 
-import java.util.Locale;
-
 import android.animation.Animator;
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -18,7 +16,9 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.marshalchen.common.uimodule.R;
+import com.marshalchen.ultimateandroiduilollipop.R;
+
+import java.util.Locale;
 
 import at.markushi.ui.RevealColorView;
 

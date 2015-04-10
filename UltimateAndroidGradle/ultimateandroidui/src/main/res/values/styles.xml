@@ -153,17 +153,6 @@
 
 
 
-
-
-
-    <declare-styleable name="MaterialTabHost">
-        <attr name="hasIcons" format="boolean" />
-    </declare-styleable>
-
-
-
-
-
     <style name="DefaultIndicatorTextAppearance" parent="android:TextAppearance.Small">
         <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
         <item name="android:padding">6dp</item>
