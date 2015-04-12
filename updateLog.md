@@ -1,6 +1,11 @@
 
 ##Update：
 
+2014.4.10 
+######Divide UltimateAndroidUi project into four sub-projects
+
+2014.3.27 fix some bugs 
+
 2014.3.26 add [SearchAnimation](https://github.com/NiaNingXue/SearchAnimation)
 
 add [Shimmer](https://github.com/facebook/shimmer-android)
