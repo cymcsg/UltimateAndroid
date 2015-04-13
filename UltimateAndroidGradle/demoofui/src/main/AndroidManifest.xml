@@ -624,9 +624,7 @@
         <activity android:name=".dragSortListview.WarpDSLV" />
         <activity android:name=".fadingactionbar.HeaderOverlayActivity" />
         <activity android:name=".fadingactionbar.HomeActivity">
-            <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
-            </intent-filter>
+
         </activity>
         <activity android:name=".fadingactionbar.LightActionBarActivity" />
         <activity android:name=".fadingactionbar.ListViewActivity" />

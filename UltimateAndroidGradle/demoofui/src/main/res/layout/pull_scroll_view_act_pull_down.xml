@@ -19,8 +19,8 @@
         android:id="@+id/scroll_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:headerHeight="300dp"
-        app:headerVisibleHeight="100dp"
+        app:psv_headerHeight="300dp"
+        app:psv_headerVisibleHeight="100dp"
         android:fillViewport="true">
 
         <LinearLayout

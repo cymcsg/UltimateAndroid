@@ -28,10 +28,10 @@ import butterknife.InjectView;
 import com.marshalchen.common.commonUtils.logUtils.Logs;
 import com.marshalchen.common.commonUtils.urlUtils.HttpsUtils;
 import com.marshalchen.common.uimodule.customFonts.CalligraphyContextWrapper;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.Animator;
 import com.marshalchen.common.ui.ToastUtil;
 import com.marshalchen.common.uimodule.shimmer.Shimmer;
 import com.marshalchen.common.uimodule.shimmer.ShimmerTextView;
+import com.nineoldandroids.animation.Animator;
 
 
 public class DemoOfUiActivity extends ActionBarActivity {

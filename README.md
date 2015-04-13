@@ -1,7 +1,7 @@
 UltimateAndroid
 ==========================
 
-###Version:0.6.0
+###Version:0.7.0
 
 
 
@@ -28,19 +28,19 @@ UltimateAndroid
 [Try Demo](#sample)
 
 
-###Update Ui for Material Design!
-### Support Android Studio 1.0
+######Update Ui for Material Design! Support Android Studio 1.0
+
 ##### You can see javadoc [here](http://blog.marshalchen.com/UltimateAndroid/ultimateandroiddoc/index.html)
 
-#####There is an awesome recyclerview which contains pulling to refresh, loading more, swiping to dismiss, draging and drop, animations ,showing or hiding toolbar and floating action button when scrolling and many other features,you can try it [here](https://github.com/cymcsg/UltimateRecyclerView).
+#####There is an awesome recyclerview which contains pulling to refresh, loading more, swiping to dismiss, draging and drop, animations ,showing or hiding toolbar and floating action button when scrolling and many other features,you can try it [here UltimateRecyclerView](https://github.com/cymcsg/UltimateRecyclerView).
 
 
 
 #####Welcome to fork and pull request.
-My Email is ``cymcsg # gmail.com``
+
+If you have some good idea about the framework,you can email to us or put your idea on the issue.My Email is ``cymcsg # gmail.com``
 
 
-[Update Log](https://github.com/cymcsg/UltimateAndroid/blob/master/updateLog.md)
 
 
 <h2 ><a name="english_introduction">Introduction</h2>  
@@ -59,6 +59,10 @@ Up to now,I have only write the demo of most parts of UI modules and View Inject
 
 [Demo of Ui's screenshot is here.](#demo_of_ui)
 
+######New for 0.7.0:
+UltimateAndroidUi project now has four separate ui projects:widget,component,animations and lollipop. So if you want to only use part of the ui project you can simply use the separate project. However if you want to use all of them, you can also use the UltimateAndroidUi project.
+
+[Update Log](https://github.com/cymcsg/UltimateAndroid/blob/master/updateLog.md)
 
 
 
@@ -79,7 +83,7 @@ repositories {
     }
 dependencies {
     ...
-    compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.6.0'
+    compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.7.0'
 }
 ```
 Ui framework:
@@ -89,19 +93,20 @@ repositories {
     }
 dependencies {
     ...
-    compile 'com.marshalchen.ultimateandroid:ultimateandroidui:0.6.0'
+    compile 'com.marshalchen.ultimateandroid:ultimateandroidui:0.7.0'
 }
 ```
 
 
 #####Normal way:
-If you use gradle way and you want to edit it at the same time,you can use ``Import Non-Android Studio Project``(need Android Studio 1.0).
-If you use normal way,you can pay attention that UltimateAndroid  depends on appcompat, UltimateAndroidUi  depends on UltimateAndroid,and the DemoOfUi is depends on UltimateAndroidUi. However,if you want to use UltimateAndroid without the UIModules,you can just depend on UltimateAndroid and this will make the app more flexible.
+If you want to use the framework and edit it at the same time,you can use ``Import Project``(need Android Studio version above 1.0) and choose the ``UltimateAndroidGradle`` folder.
+
+If you want to use UltimateAndroid without the UIModules,you can just depend on UltimateAndroid and this will make the app more flexible.If you use normal way in eclipse,you can import the ``UltimateAndroidNormal`` folder and pay attention that UltimateAndroid  depends on appcompat, UltimateAndroidUi  depends on UltimateAndroid,and the DemoOfUi is depends on UltimateAndroidUi(Notice that the UltimateAndroidNormal project has been deprecated). 
 
 2.As the function of View Injection which uses ButterKnife,you should config your IDE before you can compile the project.***Most of  IDEs require additional configuration in order to enable annotation processing for Butter Knife,
 or you can see [IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse Configuration for butter Knife][102].***
 
-***Notice:The latest version of the framework needs Android Sdk  of Version 21. If you use gradle project, you should use android studio which version should be 1.0.0+***
+***Notice:The latest version of the framework needs Android Sdk  of Version 21. If you use gradle project, you should use android studio which version should be 1.0.0+. If you use latest Android Studio ,you do not need set annotation processing***
 
 3.View Injection:
 
@@ -296,7 +301,8 @@ Please set the ides before you run the demo apps.
 
 如果大家有需要的功能，欢迎随时提意见。
 
-使用DemoOfUI的时候,需要注意UltimateAndroid 依赖 appcompat.UltimateAndroidUi 依赖 UltimateAndroid.DemoOfUi 依赖 UltimateAndroidUi.如果你不需要使用UiModule的话，可以直接依赖UltimateAndroid，这样体积会更纤细。Demo的Apk文件可以直接下载使用.
+######0.7.0新版本：
+UltimateUI 项目分拆成widget，component，animations，lollipop 4个子项目，如果你只需要部分UI效果的话，你可以只依赖这些子项目.如果你想使用多个种类的UI项目的话，也可以简单的依赖UltimateAndroidUi项目。
 
 [UI截图在这里](#demo_of_ui)
 
@@ -324,7 +330,7 @@ repositories {
     }
 dependencies {
     ...
-    compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.6.0'
+    compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.7.0'
 }
 ```
 Ui framework:
@@ -334,18 +340,18 @@ repositories {
     }
 dependencies {
     ...
-    compile 'com.marshalchen.ultimateandroid:ultimateandroidui:0.6.0'
+    compile 'com.marshalchen.ultimateandroid:ultimateandroidui:0.7.0'
 }
 ```
 
 
 #####Normal way:
 
-1.传统的library和gradle 的library在不同的文件夹中。如果你使用gradle方式,你可以拷贝 "ultimateandroid.aar" 到你的项目中 ，添加``  compile(name:'ultimateandroid', ext:'aar')``到gradle file中 .如果你使用gradle方式，并且想同时修改框架，可以用android studio的``Import Non-Android Studio Project``(需要Android Studio1.0)。如果使用普通方式，需要注意UltimateAndroid 依赖 appcompat.UltimateAndroidUi 依赖 UltimateAndroid.DemoOfUi 依赖 UltimateAndroidUi.如果你不需要使用UiModule的话，可以直接依赖UltimateAndroid，这样体积会更纤细。
+1.传统的library和gradle 的library在不同的文件夹中。如果你使用gradle方式,你可以拷贝 "ultimateandroid.aar" 到你的项目中 ，添加``  compile(name:'ultimateandroid', ext:'aar')``到gradle file中 .如果你使用gradle方式，并且想同时修改框架，可以用android studio的``Import Studio Project``(需要Android Studio1.0以上版本) 导入``UltimateAndroidGradle``文件夹。如果使用Eclipse的话，需要注意UltimateAndroid 依赖 appcompat.UltimateAndroidUi 依赖 UltimateAndroid.DemoOfUi 依赖 UltimateAndroidUi.如果你不需要使用UiModule的话，可以直接依赖UltimateAndroid，这样体积会更纤细。
 
 2.Demo的Apk文件可以直接下载使用.由于框架使用了View Injection，**大部分IDE需要开启annotation的编译（使用了Butter Knife），如果不清楚如何开启可以看一下[IntelliJ IDEA Configuration for Butter Knife ][101] or [Eclipse Configuration for butter Knife][102].**
 
-***注意：UltimateAndroid框架需要API21版本的Android SDK来进行编译,如果使用了gradle的project，android studio的版本需要大于1.0.0***
+***注意：UltimateAndroid框架需要API21版本的Android SDK来进行编译,如果使用了gradle的project，android studio的版本需要大于1.0.0如果你用的是最新版的Android Studio，你不需要显式的开启annotation processing了***
 
 3.视图注入：
 
@@ -672,6 +678,7 @@ License
  [101]:http://jakewharton.github.io/butterknife/ide-idea.html
  [102]:http://jakewharton.github.io/butterknife/ide-eclipse.html
  [13]:https://github.com/moagrius/TileView/tree/master
+ 
 =======
 
 

@@ -20,8 +20,8 @@
                     android:id="@+id/coolDragAndDropGridView"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    dragAndDrop:itemMargin="5dp"
-                    dragAndDrop:numColumns="3">
+                    dragAndDrop:SpanVariableGridView_itemMargin="5dp"
+                    dragAndDrop:SpanVariableGridView_numColumns="3">
             </com.marshalchen.common.uimodule.cooldraganddrop.CoolDragAndDropGridView>
             <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="2222"/>
 

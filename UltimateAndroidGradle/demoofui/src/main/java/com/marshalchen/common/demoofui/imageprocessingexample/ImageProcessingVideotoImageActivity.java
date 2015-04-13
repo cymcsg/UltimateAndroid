@@ -5,9 +5,9 @@ import com.marshalchen.common.uimodule.imageprocessing.FastImageProcessingPipeli
 import com.marshalchen.common.uimodule.imageprocessing.FastImageProcessingView;
 import com.marshalchen.common.uimodule.imageprocessing.filter.BasicFilter;
 import com.marshalchen.common.uimodule.imageprocessing.filter.processing.SobelEdgeDetectionFilter;
-import com.marshalchen.common.uimodule.imageprocessing.input.VideoResourceInput;
-import com.marshalchen.common.uimodule.imageprocessing.output.JPGFileEndpoint;
-import com.marshalchen.common.uimodule.imageprocessing.output.ScreenEndpoint;
+import com.marshalchen.common.uimodule.imageprocessing.inputprocess.VideoResourceInput;
+import com.marshalchen.common.uimodule.imageprocessing.outputprocess.JPGFileEndpoint;
+import com.marshalchen.common.uimodule.imageprocessing.outputprocess.ScreenEndpoint;
 import android.os.Bundle;
 import android.os.Environment;
 import android.app.Activity;

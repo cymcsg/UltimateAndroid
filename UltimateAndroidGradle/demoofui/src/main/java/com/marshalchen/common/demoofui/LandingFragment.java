@@ -158,49 +158,49 @@ public class LandingFragment extends Fragment {
         }
         Collections.sort(myData, sDisplayNameComparator);
 
-        addItemToTop(myData,
-                "SignaturePadActivity",
-                new Intent(getActivity(), SignaturePadActivity.class));
-        addItemToTop(myData,
-                "SmoothProgressBarActivity",
-                new Intent(getActivity(), SmoothProgressBarActivity.class));
-        addItemToTop(myData,
-                "RippleEffectActivity",
-                new Intent(getActivity(), RippleEffectActivity.class));
-        addItemToTop(myData,
-                "NumberProgressBarActivity",
-                new Intent(getActivity(), NumberProgressBarActivity.class));
-        addItemToTop(myData,
-                "MotionSampleActivity",
-                new Intent(getActivity(), MotionSampleActivity.class));
-
-        addItemToTop(myData,
-                "MaterialMenuToolbarActivity",
-                new Intent(getActivity(), MaterialMenuToolbarActivity.class));
-        addItemToTop(myData,
-                "MaterialListViewActivity",
-                new Intent(getActivity(), MaterialListViewActivity.class));
-        addItemToTop(myData,
-                "KenBurnsViewActivity",
-                new Intent(getActivity(), KenBurnsViewActivity.class));
-        addItemToTop(myData,
-                "GestureTouchActivity",
-                new Intent(getActivity(), GestureTouchActivity.class));
-        addItemToTop(myData,
-                "FloatingActionButtonDemo",
-                new Intent(getActivity(), FloatingActionButtonDemo.class));
-        addItemToTop(myData,
-                "CoolDragAndDropActivity",
-                new Intent(getActivity(), CoolDragAndDropActivity.class));
-        addItemToTop(myData,
-                "MaterialDesignActivity",
-                new Intent(getActivity(), MaterialDesignActivity.class));
-        addItemToTop(myData,
-                "SearchDrawableActivity",
-                new Intent(getActivity(), SearchDrawableActivity.class));
-        addItemToTop(myData,
-                "UltimateRecyclerViewActivity",
-                new Intent(getActivity(), UltimateRecyclerViewActivity.class));
+//        addItemToTop(myData,
+//                "SignaturePadActivity",
+//                new Intent(getActivity(), SignaturePadActivity.class));
+//        addItemToTop(myData,
+//                "SmoothProgressBarActivity",
+//                new Intent(getActivity(), SmoothProgressBarActivity.class));
+//        addItemToTop(myData,
+//                "RippleEffectActivity",
+//                new Intent(getActivity(), RippleEffectActivity.class));
+//        addItemToTop(myData,
+//                "NumberProgressBarActivity",
+//                new Intent(getActivity(), NumberProgressBarActivity.class));
+//        addItemToTop(myData,
+//                "MotionSampleActivity",
+//                new Intent(getActivity(), MotionSampleActivity.class));
+//
+//        addItemToTop(myData,
+//                "MaterialMenuToolbarActivity",
+//                new Intent(getActivity(), MaterialMenuToolbarActivity.class));
+//        addItemToTop(myData,
+//                "MaterialListViewActivity",
+//                new Intent(getActivity(), MaterialListViewActivity.class));
+//        addItemToTop(myData,
+//                "KenBurnsViewActivity",
+//                new Intent(getActivity(), KenBurnsViewActivity.class));
+//        addItemToTop(myData,
+//                "GestureTouchActivity",
+//                new Intent(getActivity(), GestureTouchActivity.class));
+//        addItemToTop(myData,
+//                "FloatingActionButtonDemo",
+//                new Intent(getActivity(), FloatingActionButtonDemo.class));
+//        addItemToTop(myData,
+//                "CoolDragAndDropActivity",
+//                new Intent(getActivity(), CoolDragAndDropActivity.class));
+//        addItemToTop(myData,
+//                "MaterialDesignActivity",
+//                new Intent(getActivity(), MaterialDesignActivity.class));
+//        addItemToTop(myData,
+//                "SearchDrawableActivity",
+//                new Intent(getActivity(), SearchDrawableActivity.class));
+//        addItemToTop(myData,
+//                "UltimateRecyclerViewActivity",
+//                new Intent(getActivity(), UltimateRecyclerViewActivity.class));
         return myData;
     }
 

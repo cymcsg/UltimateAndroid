@@ -34,6 +34,7 @@ import java.util.Map;
 public class HttpUtilsAsync {
 
     private static int timeout = 25000;
+
     public static int getTimeout() {
         return timeout;
     }
@@ -42,43 +43,46 @@ public class HttpUtilsAsync {
         HttpUtilsAsync.timeout = timeout;
     }
 
+    private static AsyncHttpClient client = new AsyncHttpClient();
+
     /**
      * Perform a HTTP GET request with {@link com.loopj.android.http.RequestParams}
+     *
      * @param url
      * @param params
      * @param responseHandler
      */
     public static void get(String url, RequestParams params, AsyncHttpResponseHandler responseHandler) {
-        AsyncHttpClient client = new AsyncHttpClient();
         client.setTimeout(timeout);
         client.get(getAbsoluteUrl(url), params, responseHandler);
     }
 
     /**
      * Perform a HTTP POST request with {@link com.loopj.android.http.RequestParams}
+     *
      * @param url
      * @param params
      * @param responseHandler
      */
     public static void post(String url, RequestParams params, AsyncHttpResponseHandler responseHandler) {
-        AsyncHttpClient client = new AsyncHttpClient();
         client.setTimeout(timeout);
         client.post(getAbsoluteUrl(url), params, responseHandler);
     }
 
     /**
      * Perform a HTTP GET request, without any parameters.
+     *
      * @param url
      * @param responseHandler
      */
     public static void get(String url, AsyncHttpResponseHandler responseHandler) {
-        AsyncHttpClient client = new AsyncHttpClient();
         client.setTimeout(timeout);
         client.get(getAbsoluteUrl(url), responseHandler);
     }
 
     /**
      * Perform a HTTP GET request with cookie which generate by own context
+     *
      * @param context
      * @param url
      * @param responseHandler
@@ -89,29 +93,12 @@ public class HttpUtilsAsync {
         //  myCookieStore.clear();
         client.setCookieStore(myCookieStore);
         client.get(getAbsoluteUrl(url), responseHandler);
-//        Iterator iterator = myCookieStore.getCookies().iterator();
-//        while (iterator.hasNext()) {
-//            Cookie cookie = (Cookie) iterator.next();
-//            Logs.d("cookie name--" + cookie.getName());
-//            Logs.d("cookie value--" + cookie.getValue());
-//        }
-
-//        BasicCookieStore basicCookieStore = new BasicCookieStore();
-//
-//        client.setCookieStore(basicCookieStore);
-//        client.get(getAbsoluteUrl(url), responseHandler);
-//        Iterator iterator = basicCookieStore.getCookies().iterator();
-//        while (iterator.hasNext()) {
-//            Cookie cookie = (Cookie) iterator.next();
-//            Logs.d("sssss" + cookie.getName());
-//            Logs.d("sssss" + cookie.getValue());
-//        }
-
 
     }
 
     /**
      * Perform a HTTP GET request with cookies which are defined in hashmap
+     *
      * @param context
      * @param url
      * @param hashMap
@@ -137,6 +124,7 @@ public class HttpUtilsAsync {
 
     /**
      * Perform a HTTP GET request with cookie which generate by own context
+     *
      * @param context
      * @param url
      * @param responseHandler
@@ -150,16 +138,17 @@ public class HttpUtilsAsync {
 
     /**
      * Perform a HTTP POST request, without any parameters.
+     *
      * @param url
      * @param responseHandler
      */
     public static void post(String url, AsyncHttpResponseHandler responseHandler) {
-        AsyncHttpClient client = new AsyncHttpClient();
         client.post(getAbsoluteUrl(url), responseHandler);
     }
 
     /**
      * Perform a HTTP POST request with cookie which generate by own context
+     *
      * @param context
      * @param url
      * @param responseHandler
@@ -174,6 +163,7 @@ public class HttpUtilsAsync {
 
     /**
      * Perform a HTTP POST request with cookie which generate by own context
+     *
      * @param context
      * @param url
      * @param params
@@ -188,6 +178,7 @@ public class HttpUtilsAsync {
 
     /**
      * Perform a HTTP POST request with cookies which are defined in hashmap
+     *
      * @param context
      * @param url
      * @param hashMap

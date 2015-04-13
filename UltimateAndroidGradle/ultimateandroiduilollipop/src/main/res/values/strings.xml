@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">UltimateAndroidUiLollipop</string>
+
+    <integer-array name="google_colors">
+        <item>@color/red</item>
+        <item>@color/blue</item>
+        <item>@color/Yellow</item>
+        <item>@color/Green</item>
+    </integer-array>
+
+    <integer name="default_type">0</integer>
+</resources>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources  xmlns:tools="http://schemas.android.com/tools">
+    <declare-styleable name="WeekView">
+        <attr name="firstDayOfWeek" format="enum">
+            <enum name="sunday" value="1"/>
+            <enum name="monday" value="2"/>
+            <enum name="tuesday" value="3"/>
+            <enum name="wednesday" value="4"/>
+            <enum name="thursday" value="5"/>
+            <enum name="friday" value="6"/>
+            <enum name="saturday" value="7"/>
+        </attr>
+        <attr name="hourHeight" format="dimension"/>
+        <attr name="weekTextSize" format="dimension"/>
+        <attr name="eventTextSize" format="dimension"/>
+        <attr name="headerColumnPadding" format="dimension"/>
+        <attr name="headerRowPadding" format="dimension"/>
+        <attr name="columnGap" format="dimension"/>
+        <attr name="headerColumnTextColor" format="color"/>
+        <attr name="noOfVisibleDays" format="integer"/>
+        <attr name="headerRowBackgroundColor" format="color"/>
+        <attr name="dayBackgroundColor" format="color"/>
+        <attr name="hourSeparatorColor" format="color"/>
+        <attr name="todayBackgroundColor" format="color"/>
+        <attr name="todayHeaderTextColor" format="color"/>
+        <attr name="hourSeparatorHeight" format="dimension"/>
+        <attr name="eventTextColor" format="color"/>
+        <attr name="eventPadding" format="dimension"/>
+        <attr name="headerColumnBackground" format="color"/>
+        <attr name="dayNameLength" format="enum">
+            <enum name="length_short" value="1"/>
+            <enum name="length_long" value="2"/>
+        </attr>
+
+    </declare-styleable>
+
+
+    <attr name="arcFromDegrees" format="float|reference"/>
+    <attr name="arcToDegrees" format="float|reference"/>
+    <attr name="arcChildSize" format="dimension|reference"/>
+
+
+
+    <declare-styleable name="ArcLayout">
+        <attr name="arcFromDegrees"/>
+        <attr name="arcToDegrees"/>
+        <attr name="arcChildSize"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="ArcMenu">
+        <attr name="arcFromDegrees"/>
+        <attr name="arcToDegrees"/>
+        <attr name="arcChildSize"/>
+    </declare-styleable>
+
+    <declare-styleable name="RayLayout">
+        <attr name="arcLeftHolderWidth" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="BlurDrawerLayout">
+        <attr name="blurRadius" format="integer"/>
+        <attr name="downScaleFactor" format="float"/>
+        <attr name="drawerUpImageId" format="reference"/>
+        <attr name="openDescription" format="reference"/>
+        <attr name="closeDescription" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="DayPickerView">
+        <attr name="dpv_colorCurrentDay" format="color"/>
+        <attr name="dpv_colorSelectedDayBackground" format="color"/>
+        <attr name="dpv_colorSelectedDayText" format="color"/>
+        <attr name="dpv_colorPreviousDay" format="color"/>
+        <attr name="dpv_colorNormalDay" format="color"/>
+        <attr name="dpv_colorMonthName" format="color"/>
+        <attr name="dpv_colorDayName" format="color"/>
+        <attr name="dpv_textSizeDay" format="dimension"/>
+        <attr name="dpv_textSizeMonth" format="dimension"/>
+        <attr name="dpv_textSizeDayName" format="dimension"/>
+        <attr name="dpv_headerMonthHeight" format="dimension"/>
+        <attr name="dpv_selectedDayRadius" format="dimension"/>
+        <attr name="dpv_calendarHeight" format="dimension"/>
+        <attr name="dpv_enablePreviousDay" format="boolean"/>
+        <attr name="dpv_startCurrentMonth" format="boolean"/>
+        <attr name="dpv_currentDaySelected" format="boolean"/>
+        <attr name="dpv_drawRoundRect" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="CalendarPickerView">
+        <attr name="android:background"/>
+        <attr name="dividerColor" format="color"/>
+        <attr name="dayBackground" format="reference"/>
+        <attr name="dayTextColor" format="color"/>
+        <attr name="titleTextColor" format="color"/>
+        <attr name="headerTextColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="calendar_cell">
+        <attr name="state_selectable" format="boolean"/>
+        <attr name="state_current_month" format="boolean"/>
+        <attr name="state_today" format="boolean"/>
+        <attr name="state_range_first" format="boolean"/>
+        <attr name="state_range_middle" format="boolean"/>
+        <attr name="state_range_last" format="boolean"/>
+        <attr name="state_highlighted" format="boolean"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="CustomShapeImageView">
+        <attr name="custom_shape_custom" format="integer">
+            <enum name="circle" value="1"/>
+            <enum name="rectangle" value="2"/>
+            <enum name="svg" value="3"/>
+        </attr>
+
+        <attr name="svg_raw_resource" format="reference"/>
+
+    </declare-styleable>
+
+    <attr name="discreteSeekBarStyle" format="reference"/>
+    <declare-styleable name="DiscreteSeekBar">
+        <attr name="dsb_min" format="integer|dimension"/>
+        <attr name="dsb_max" format="integer|dimension"/>
+        <attr name="dsb_value" format="integer|dimension"/>
+        <attr name="dsb_mirrorForRtl" format="boolean"/>
+        <attr name="dsb_allowTrackClickToDrag" format="boolean"/>
+        <attr name="dsb_progressColor" format="color|reference"/>
+        <attr name="dsb_trackColor" format="color|reference"/>
+        <attr name="dsb_indicatorTextAppearance" format="reference"/>
+        <attr name="dsb_indicatorColor" format="color|reference"/>
+        <attr name="dsb_indicatorElevation" format="dimension"/>
+        <attr name="dsb_indicatorFormatter" format="string|reference"/>
+        <attr name="dsb_rippleColor" format="color|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="JazzyViewPager">
+        <attr name="style">
+            <enum name="standard" value="0"/>
+            <enum name="tablet" value="1"/>
+            <enum name="cubein" value="2"/>
+            <enum name="cubeout" value="3"/>
+            <enum name="flipvertical" value="4"/>
+            <enum name="fliphorizontal" value="5"/>
+            <enum name="stack" value="6"/>
+            <enum name="zoomin" value="7"/>
+            <enum name="zoomout" value="8"/>
+            <enum name="rotateup" value="9"/>
+            <enum name="rotatedown" value="10"/>
+            <enum name="accordion" value="11"/>
+        </attr>
+        <attr name="fadeEnabled" format="boolean"/>
+        <attr name="outlineEnabled" format="boolean"/>
+        <attr name="outlineColor" format="color|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundCornerProgress">
+        <attr name="rcp_progress" format="integer" />
+        <attr name="rcp_backgroundPadding" format="dimension" />
+        <attr name="rcp_backgroundRadius" format="dimension" />
+        <attr name="rcp_max" format="integer" />
+        <attr name="rcp_iconSrc" format="integer" />
+        <attr name="rcp_iconSize" format="dimension" />
+        <attr name="rcp_iconPadding" format="dimension" />
+        <attr name="rcp_headerColor" format="color" />
+        <attr name="rcp_progressColor" format="color" />
+        <attr name="rcp_backgroundColor" format="color" />
+        <attr name="rcp_textProgressColor" format="color" />
+        <attr name="rcp_textProgress" format="string" />
+        <attr name="rcp_textProgressUnit" format="string" />
+        <attr name="rcp_textProgressSize" format="dimension" />
+        <attr name="rcp_textProgressWidth" format="dimension" />
+        <attr name="rcp_textProgressPadding" format="dimension" />
+        <attr name="rcp_autoTextChange" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ShaderImageView">
+        <attr name="square" format="boolean"/>
+        <attr name="borderColor" format="color"/>
+        <attr name="borderWidth" format="dimension"/>
+        <attr name="borderAlpha" format="float"/>
+        <attr name="foreground" format="integer|reference"/>
+        <!-- Rounded Image View -->
+        <attr name="ShaderImageViewRadius" format="dimension"/>
+        <!--BubbleImageView-->
+        <attr name="arrowPosition"/>
+        <attr name="triangleHeight" format="dimension"/>
+        <!--PorterImageView-->
+        <attr name="ShaderImageViewShape" format="integer|reference"/>
+        <!--ShaderImageView-->
+        <attr name="borderType"/>
+        <attr name="strokeCap"/>
+        <attr name="strokeJoin"/>
+        <attr name="strokeMiter" format="dimension"/>
+    </declare-styleable>
+
+    <attr name="arrowPosition">
+        <enum name="left" value="0"/>
+        <enum name="right" value="1"/>
+    </attr>
+    <attr name="borderType">
+        <enum name="stroke" value="0"/>
+        <enum name="fill" value="1"/>
+    </attr>
+    <attr name="strokeCap">
+        <enum name="butt" value="0"/>
+        <enum name="round" value="1"/>
+        <enum name="square" value="2"/>
+    </attr>
+    <attr name="strokeJoin">
+        <enum name="bevel" value="0"/>
+        <enum name="miter" value="1"/>
+        <enum name="round" value="2"/>
+    </attr>
+
+
+    <declare-styleable name="SignaturePad">
+        <attr name="minWidth" format="float"/>
+        <attr name="maxWidth" format="float"/>
+        <attr name="penColor" format="color"/>
+        <attr name="velocityFilterWeight" format="float"/>
+    </declare-styleable>
+
+
+
+
+    <declare-styleable name="ProgressLayout">
+        <attr name="progressLayoutProgressBackground" format="color"/>
+        <attr name="progressLayoutProgress" format="boolean"/>
+    </declare-styleable>
+
+
+
+
+    <declare-styleable name="NumberProgressBar">
+        <attr format="integer" name="np_max" />
+        <attr format="integer" name="np_progress" />
+        <attr name="progress_num" format="integer" />
+        <attr name="number_progressbar_max" format="integer" />
+        <attr name="progress_unreached_color" format="color" />
+        <attr name="progress_reached_color" format="color" />
+
+        <attr name="progress_reached_bar_height" format="dimension" />
+        <attr name="progress_unreached_bar_height" format="dimension" />
+
+        <attr name="progress_text_size" format="dimension" />
+        <attr name="progress_text_color" format="color" />
+
+        <attr name="progress_text_offset" format="dimension" />
+
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="NumberProgressBarStyle">
+        <attr name="numberProgressBarStyle" format="reference" />
+    </declare-styleable>
+
+
+
+
+
+    <declare-styleable name="ProgressWheel">
+        <attr name="text" format="string" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize"></attr>
+        <attr name="barColor" format="color" />
+        <attr name="rimColor" format="color" />
+        <attr name="rimWidth" format="dimension" />
+        <attr name="spinSpeed" format="dimension" />
+        <attr name="delayMillis" format="integer" />
+        <attr name="circleColor" format="color" />
+        <attr name="radius" />
+        <attr name="barWidth" format="dimension" />
+        <attr name="barLength" format="dimension" />
+        <attr name="contourColor" format="color" />
+        <attr name="contourSize" format="dimension" />
+    </declare-styleable>
+
+    <!--<declare-styleable name="CustomAttributes">-->
+        <!--<attr format="color|reference" name="rippleColor" />-->
+        <!--<attr format="float" name="rippleSpeed" />-->
+        <!--<attr format="boolean" name="showNumberIndicator" />-->
+        <!--<attr format="integer" name="max" />-->
+        <!--<attr format="integer" name="progress" />-->
+        <!--<attr format="integer" name="min" />-->
+        <!--<attr format="integer" name="value" />-->
+     <!---->
+        <!--<attr format="dimension" name="ringWidth" />-->
+        <!--<attr format="boolean" name="checked" />-->
+        <!--<attr format="dimension" name="checkBoxSize" />-->
+        <!--<attr format="dimension" name="thumbSize" />-->
+        <!--<attr format="integer" name="iconDrawable" />-->
+        <!--<attr format="dimension" name="iconSize" />-->
+        <!--<attr format="boolean" name="animate" />-->
+        <!--<attr format="float" name="rippleBorderRadius" />-->
+        <!--<attr format="boolean" name="clickAfterRipple" />-->
+    <!--</declare-styleable>-->
+</resources>
