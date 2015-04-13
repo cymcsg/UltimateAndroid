@@ -38,7 +38,7 @@ ext {
 
     PUBLISH_GROUP_ID = 'com.marshalchen.ultimateandroid'
     PUBLISH_ARTIFACT_ID = 'ultimateandroidui'
-    PUBLISH_VERSION = '0.6.0'
+    PUBLISH_VERSION = '0.7.0'
 }
 apply from: 'android-release-aar.gradle'
 //apply from: 'maven-push.gradle'
@@ -47,10 +47,11 @@ dependencies {
     compile 'com.android.support:appcompat-v7:21.0.2'
     compile 'com.android.support:support-v13:21.0.2'
     compile 'com.android.support:recyclerview-v7:21.0.2'
-    compile project(':ultimateandroid')
-    compile project(':ultimateandroiduiwidget')
-    compile project(':ultimateandroiduianimation')
-    compile project(':ultimateandroiduicomponent')
-    compile project(':ultimateandroiduilollipop')
+//    compile project(':ultimateandroid')
+    compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.7.0'
+//    compile project(':ultimateandroiduiwidget')
+//    compile project(':ultimateandroiduianimation')
+//    compile project(':ultimateandroiduicomponent')
+//    compile project(':ultimateandroiduilollipop')
 
 }

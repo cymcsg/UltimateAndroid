@@ -21,14 +21,15 @@ ext {
 
     PUBLISH_GROUP_ID = 'com.marshalchen.ultimateandroid'
     PUBLISH_ARTIFACT_ID = 'ultimateandroiduilollipop'
-    PUBLISH_VERSION = '0.6.0'
+    PUBLISH_VERSION = '0.7.0'
 }
 apply from: 'android-release-aar.gradle'
 //apply from: 'maven-push.gradle'
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.0.0'
-    compile project(':ultimateandroid')
+    compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.7.0'
+    // compile project(':ultimateandroid')
     compile 'com.rengwuxian.materialedittext:library:1.1.0'
     compile 'com.skyfishjy.ripplebackground:library:1.0.1'
     compile 'com.jpardogo.materialtabstrip:library:1.0.3'
