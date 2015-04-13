@@ -20,8 +20,8 @@ android {
 
 ext {
 
-    PUBLISH_GROUP_ID = 'com.marshalchen.ultimateandroid.ultimateandroidui'
-    PUBLISH_ARTIFACT_ID = 'widget'
+    PUBLISH_GROUP_ID = 'com.marshalchen.ultimateandroid'
+    PUBLISH_ARTIFACT_ID = 'ultimateandroiduiwidget'
     PUBLISH_VERSION = '0.7.0'
 }
 apply from: 'android-release-aar.gradle'
