@@ -13,7 +13,7 @@ import android.widget.Toast;
 import com.marshalchen.common.demoofui.R;
 import com.marshalchen.common.uimodule.androidanimations.Techniques;
 import com.marshalchen.common.uimodule.androidanimations.YoYo;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.Animator;
+import  com.nineoldandroids.animation.Animator;
 
 
 public class AndroidAnimationsDemoActivity extends Activity {

@@ -8,10 +8,10 @@ import com.marshalchen.common.uimodule.imageprocessing.FastImageProcessingPipeli
 import com.marshalchen.common.uimodule.imageprocessing.FastImageProcessingView;
 import com.marshalchen.common.uimodule.imageprocessing.filter.MultiInputFilter;
 import com.marshalchen.common.uimodule.imageprocessing.filter.blend.*;
-import com.marshalchen.common.uimodule.imageprocessing.input.CameraPreviewInput;
-import com.marshalchen.common.uimodule.imageprocessing.input.GLTextureOutputRenderer;
-import com.marshalchen.common.uimodule.imageprocessing.input.ImageResourceInput;
-import com.marshalchen.common.uimodule.imageprocessing.output.ScreenEndpoint;
+import com.marshalchen.common.uimodule.imageprocessing.inputprocess.CameraPreviewInput;
+import com.marshalchen.common.uimodule.imageprocessing.inputprocess.GLTextureOutputRenderer;
+import com.marshalchen.common.uimodule.imageprocessing.inputprocess.ImageResourceInput;
+import com.marshalchen.common.uimodule.imageprocessing.outputprocess.ScreenEndpoint;
 import android.os.Build;
 import android.os.Bundle;
 import android.app.Activity;

@@ -26,9 +26,9 @@
             android:id="@+id/arc_menu_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            arc:fromDegrees="@dimen/menuFromDegrees"
-            arc:toDegrees="@dimen/menuToDegrees"
-            arc:childSize="@dimen/menuChildSize"/>
+            arc:arcFromDegrees="@dimen/menuFromDegrees"
+            arc:arcToDegrees="@dimen/menuToDegrees"
+            arc:arcChildSize="@dimen/menuChildSize"/>
 
     </LinearLayout>
 </ScrollView>

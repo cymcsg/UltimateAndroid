@@ -60,7 +60,7 @@ public class ListAnimationActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_anim_activity_main);
 
-        bindService(new Intent("com.android.vending.billing.InAppBillingService.BIND"), mServiceConn, Context.BIND_AUTO_CREATE);
+//        bindService(new Intent("com.android.vending.billing.InAppBillingService.BIND"), mServiceConn, Context.BIND_AUTO_CREATE);
     }
 
     @Override
@@ -162,9 +162,9 @@ public class ListAnimationActivity extends Activity {
     @Override
     public void onDestroy() {
         super.onDestroy();
-        if (mServiceConn != null) {
-            unbindService(mServiceConn);
-        }
+//        if (mServiceConn != null) {
+//            unbindService(mServiceConn);
+//        }
     }
 
     @Override

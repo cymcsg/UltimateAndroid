@@ -10,7 +10,7 @@
     <com.marshalchen.common.uimodule.matchview.MatchTextView
         android:id="@+id/mMatchTextView"
         android:layout_centerInParent="true"
-        match:text="MATCH VIEW"
+        match:matchViewText="MATCH VIEW"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
@@ -28,7 +28,7 @@
         android:layout_marginTop="20dp"
         android:layout_below="@+id/mSeekBar"
         android:layout_centerInParent="true"
-        match:text="Yes"
+        match:matchViewText="Yes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 

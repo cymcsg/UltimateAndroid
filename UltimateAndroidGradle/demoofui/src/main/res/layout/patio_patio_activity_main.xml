@@ -12,12 +12,12 @@
         android:id="@+id/patio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:thumbnailHeight="200dp"
-        app:thumbnailWidth="200dp"
-        app:thumbnailsContainerPadding="10dp"
-        app:thumbnailsContainerBackground="#ddd"
-        app:maxPictures="3"
-        app:thumbnailsMessage="patio_footer"
-        app:actionsTextColor="#333"/>
+        app:patio_thumbnailHeight="200dp"
+        app:patio_thumbnailWidth="200dp"
+        app:patio_thumbnailsContainerPadding="10dp"
+        app:patio_thumbnailsContainerBackground="#ddd"
+        app:patio_maxPictures="3"
+        app:patio_thumbnailsMessage="patio_footer"
+        app:patio_actionsTextColor="#333"/>
 
 </LinearLayout>

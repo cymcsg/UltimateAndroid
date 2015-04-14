@@ -14,8 +14,8 @@ import com.marshalchen.common.demoofui.R;
 import com.marshalchen.common.uimodule.easing.BaseEasingMethod;
 import com.marshalchen.common.uimodule.easing.Glider;
 import com.marshalchen.common.uimodule.easing.Skill;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.AnimatorSet;
-import com.marshalchen.common.uimodule.nineoldandroids.animation.ObjectAnimator;
+import  com.nineoldandroids.animation.AnimatorSet;
+import  com.nineoldandroids.animation.ObjectAnimator;
 
 
 public class EasingActivity extends Activity {

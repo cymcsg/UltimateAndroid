@@ -133,58 +133,6 @@
     <color name="three9">#ff999999</color>
 
 
-    <!--smooth progressbar-->
-    <integer-array name="colors">
-        <item>@color/holo_blue_dark</item>
-        <item>@color/holo_yellow_dark</item>
-        <item>@color/holo_green_dark</item>
-        <item>@color/holo_purple_dark</item>
-        <item>@color/holo_red_dark</item>
-    </integer-array>
-
-    <integer-array name="gplus_colors">
-        <item>@color/holo_blue_dark</item>
-        <item>@color/holo_yellow_dark</item>
-        <item>@color/holo_green_dark</item>
-        <item>@color/holo_purple_dark</item>
-        <item>@color/holo_red_dark</item>
-    </integer-array>
-
-    <integer-array name="pocket_bar_colors">
-        <item>@color/pocket_color_1</item>
-        <item>@color/pocket_color_1</item>
-        <item>@color/pocket_color_1</item>
-        <item>@color/pocket_color_1</item>
-        <item>@color/pocket_color_2</item>
-        <item>@color/pocket_color_2</item>
-        <item>@color/pocket_color_2</item>
-        <item>@color/pocket_color_2</item>
-        <item>@color/pocket_color_3</item>
-        <item>@color/pocket_color_3</item>
-        <item>@color/pocket_color_3</item>
-        <item>@color/pocket_color_3</item>
-        <item>@color/pocket_color_4</item>
-        <item>@color/pocket_color_4</item>
-        <item>@color/pocket_color_4</item>
-        <item>@color/pocket_color_4</item>
-    </integer-array>
-
-    <integer-array name="pocket_background_colors">
-        <item>@color/pocket_color_1</item>
-        <item>@color/pocket_color_2</item>
-        <item>@color/pocket_color_3</item>
-        <item>@color/pocket_color_4</item>
-    </integer-array>
-
-    <color name="pocket_color_1">#85edb9</color>
-    <color name="pocket_color_2">#34bdb7</color>
-    <color name="pocket_color_3">#ee4458</color>
-    <color name="pocket_color_4">#fcb74d</color>
-
-    <color name="gplus_color_1">#3e802f</color>
-    <color name="gplus_color_2">#f4b400</color>
-    <color name="gplus_color_3">#427fed</color>
-    <color name="gplus_color_4">#b23424</color>
 
     <color name="holo_blue_dark">#0099cc</color>
     <color name="holo_yellow_dark">#ff8800</color>
@@ -345,17 +293,7 @@
 
 
 
-    <color name="calendar_active_month_bg">#fff5f7f9</color>
-    <color name="calendar_bg">#ffffffff</color>
-    <color name="calendar_divider">#ffbababa</color>
-    <color name="calendar_inactive_month_bg">#ffd7d9db</color>
-    <color name="calendar_selected_day_bg">#ff379bff</color>
-    <color name="calendar_highlighted_day_bg">#ccffcc</color>
-    <color name="calendar_selected_range_bg">#ff96caff</color>
-    <color name="calendar_text_inactive">#40778088</color>
-    <color name="calendar_text_active">#ff778088</color>
-    <color name="calendar_text_selected">#ffffffff</color>
-    <color name="calendar_text_unselectable">#7f778088</color>
+
 
     <color name="pager_sliding_tab_background_tab_pressed">#6633B5E5</color>
 
@@ -364,17 +302,10 @@
     <color name="passlock_list_row_selected">#78c8e6</color>
     <color name="white_translucent">#50FFFFFF</color>
 
-    <color name="card_bg">#EBEBEB</color>
-    <color name="card_outline">#D0D0CE</color>
+
 
     <color name="divider_color">#11000000</color>
-    <color name="msg_color">#FFFFFFFF</color>
-    <color name="dialog_bg">#ffe74c3c</color>
 
-    <color name="btn_press_color">#FFa5281b</color>
-    <color name="btn_unpress_color">#FFc0392b</color>
-
-    <color name="default_edgeeffect_color">#FF33B5E5</color>
 
     <color name="rippelColor">#FFFFFF</color>
 </resources>
