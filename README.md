@@ -97,7 +97,50 @@ dependencies {
 }
 ```
 
+Separate Ui framework:
+```groovy
+repositories {
+        jcenter()
+    }
+dependencies {
+    ...
+    compile 'com.marshalchen.ultimateandroid:ultimateandroiduiwidget:0.7.0'
+}
+```
 
+```groovy
+repositories {
+        jcenter()
+    }
+dependencies {
+    ...
+    compile 'com.marshalchen.ultimateandroid:ultimateandroiduicomponent:0.7.0'
+}
+```
+
+```groovy
+repositories {
+        jcenter()
+    }
+dependencies {
+    ...
+    compile 'com.marshalchen.ultimateandroid:ultimateandroiduianimation:0.7.0'
+}
+```
+
+```groovy
+repositories {
+        jcenter()
+    }
+dependencies {
+    ...
+    compile 'com.marshalchen.ultimateandroid:ultimateandroiduilollipop:0.7.0'
+}
+```
+
+
+
+UltimateAndroidUi project now has four separate ui projects:widget,component,animations and lollipop. So if you want to only use part of the ui project you can simply use the separate project. However if you want to use all of them, you can also use the UltimateAndroidUi project.
 #####Normal way:
 If you want to use the framework and edit it at the same time,you can use ``Import Project``(need Android Studio version above 1.0) and choose the ``UltimateAndroidGradle`` folder.
 
@@ -344,6 +387,43 @@ dependencies {
 }
 ```
 
+分离的UI项目:
+```groovy
+repositories {
+        jcenter()
+    }
+dependencies {
+    ...
+    compile 'com.marshalchen.ultimateandroid:ultimateandroiduiwidget:0.7.0'
+}
+```
+```groovy
+repositories {
+        jcenter()
+    }
+dependencies {
+    ...
+    compile 'com.marshalchen.ultimateandroid:ultimateandroiduicomponent:0.7.0'
+}
+```
+```groovy
+repositories {
+        jcenter()
+    }
+dependencies {
+    ...
+    compile 'com.marshalchen.ultimateandroid:ultimateandroiduilollipop:0.7.0'
+}
+```
+```groovy
+repositories {
+        jcenter()
+    }
+dependencies {
+    ...
+    compile 'com.marshalchen.ultimateandroid:ultimateandroiduianimation:0.7.0'
+}
+```
 
 #####Normal way:
 
