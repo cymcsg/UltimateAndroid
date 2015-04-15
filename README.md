@@ -140,7 +140,7 @@ dependencies {
 
 
 
-UltimateAndroidUi project now has four separate ui projects:widget,component,animations and lollipop. So if you want to only use part of the ui project you can simply use the separate project. However if you want to use all of them, you can also use the UltimateAndroidUi project.
+UltimateAndroidUi project now has four separate ui projects:widget,component,animations and lollipop. So if you want to only use part of the ui project you can simply use the separate projects. However if you want to use all of them, you can also use the UltimateAndroidUi project(you can use four separate projects together either).
 #####Normal way:
 If you want to use the framework and edit it at the same time,you can use ``Import Project``(need Android Studio version above 1.0) and choose the ``UltimateAndroidGradle`` folder.
 
@@ -310,12 +310,7 @@ String imageUri = "drawable://" + R.drawable.image; // from drawables (only imag
 
 6.ORM:
 
- The Orm Module of the framework contains both [GreenDao](https://github.com/greenrobot/greenDAO) and [ActiveRecord](https://github.com/pardom/ActiveAndroid).
-
- You can choose either of them freely.
-
-
-Please set the ides before you run the demo apps.
+You can read the documents of [GreenDao](https://github.com/greenrobot/greenDAO) 
 
 
 
