@@ -340,7 +340,7 @@ You can read the documents of [GreenDao](https://github.com/greenrobot/greenDAO)
 如果大家有需要的功能，欢迎随时提意见。
 
 ######0.7.0新版本：
-UltimateUI 项目分拆成widget，component，animations，lollipop 4个子项目，如果你只需要部分UI效果的话，你可以只依赖这些子项目.如果你想使用多个种类的UI项目的话，也可以简单的依赖UltimateAndroidUi项目。
+UltimateUI 项目分拆成widget，component，animations，lollipop 4个子项目，如果你只需要部分UI效果的话，你可以只依赖这些子项目.如果你想使用多个种类的UI项目的话，也可以简单的依赖UltimateAndroidUi项目(当然，你也可以依赖4个子项目)。
 
 [UI截图在这里](#demo_of_ui)
 
@@ -587,9 +587,7 @@ String imageUri = "drawable://" + R.drawable.image; // from drawables (only imag
 
 6.ORM:
 
- Orm模块包括[GreenDao](https://github.com/greenrobot/greenDAO) and [ActiveRecord](https://github.com/pardom/ActiveAndroid).
-
- 你可以自由选择两者中的一个。
+ 可以查看Greendao的文档 ：[GreenDao](https://github.com/greenrobot/greenDAO) 
 
 
 ##UI 模块
