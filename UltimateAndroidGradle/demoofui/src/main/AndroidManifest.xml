@@ -1039,6 +1039,16 @@
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
         </activity>
+        <activity android:name=".snackbar.SnackbarSampleActivity">
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".snackbar.SnackbarImmersiveModeSampleActivity"></activity>
+        <activity android:name=".snackbar.SnackbarListViewSampleActivity"></activity>
+        <activity android:name=".snackbar.SnackbarNavigationBarTranslucentSampleActivity"></activity>
+        <activity android:name=".snackbar.SnackbarRecyclerViewSampleActivity"></activity>
+        <activity android:name=".snackbar.SnackbarShowInDialogSampleActivity"></activity>
     </application>
 
 </manifest>
