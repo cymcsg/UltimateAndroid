@@ -42,4 +42,5 @@ dependencies {
 
     compile "com.daimajia.swipelayout:library:1.1.7@aar"
     compile 'com.lorentzos.swipecards:library:1.0.8'
+    compile 'com.nispok:snackbar:2.10.7'
 }
