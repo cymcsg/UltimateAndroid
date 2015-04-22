@@ -560,13 +560,6 @@
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
         </activity>
-        <activity android:name=".superlistview.SuperListViewActivity">
-            <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".superlistview.ListSample" />
-        <activity android:name=".superlistview.GridSample" />
         <activity android:name=".staggeredgridview.StaggeredGridActivity" />
         <activity android:name=".staggeredgridview.ListViewActivity" />
         <activity android:name=".staggeredgridview.StaggeredGridActivityFragment" />
@@ -1041,7 +1034,11 @@
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".circularimageview.CircularImageViewActivity">
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

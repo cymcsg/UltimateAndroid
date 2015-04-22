@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <com.marshalchen.common.ui.CircularImageView
+        android:id="@+id/imgAvatar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        app:civ_selector="true"
+        app:civ_selectorColor="#44FFBB33"
+        app:civ_selectorStrokeColor="#88FF8800"
+        app:civ_selectorStrokeWidth="2dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="56dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Single line item"
+        android:textColor="#d9000000"
+        android:textSize="16sp" />
+
+</LinearLayout>
