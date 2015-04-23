@@ -43,4 +43,8 @@
     <dimen name="red_action_menu_radius">144dp</dimen>
     <dimen name="blue_sub_action_button_size">48dp</dimen>
     <dimen name="blue_sub_action_button_content_margin">16dp</dimen>
+
+    <dimen name="multi_image_select_image_size">120dp</dimen>
+    <dimen name="multi_image_select_space_size">2dp</dimen>
+    <dimen name="multi_image_select_folder_cover_size">72dp</dimen>
 </resources>

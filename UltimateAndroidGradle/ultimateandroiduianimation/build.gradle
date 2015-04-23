@@ -38,4 +38,5 @@ dependencies {
  //   compile 'com.nineoldandroids:library:2.4.0'
     compile project(':ultimateandroid')
   //  compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.7.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
 }

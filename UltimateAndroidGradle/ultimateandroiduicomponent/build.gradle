@@ -33,6 +33,7 @@ dependencies {
  //   compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.7.0'
      compile project(':ultimateandroid')
     compile 'com.lid.labelview:lib:0.1.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
 
 
 }
