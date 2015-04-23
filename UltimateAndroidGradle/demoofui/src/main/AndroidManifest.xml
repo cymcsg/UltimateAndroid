@@ -1049,6 +1049,13 @@
         <activity android:name=".snackbar.SnackbarNavigationBarTranslucentSampleActivity"></activity>
         <activity android:name=".snackbar.SnackbarRecyclerViewSampleActivity"></activity>
         <activity android:name=".snackbar.SnackbarShowInDialogSampleActivity"></activity>
+        <activity android:name=".labelview.LabelViewActivity">
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".labelview.ListViewActivity"></activity>
     </application>
+
 
 </manifest>
