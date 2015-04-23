@@ -1055,6 +1055,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".labelview.ListViewActivity"></activity>
+
+        <activity android:name=".sampleModules.MultiImageSelectorActivity">
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.marshalchen.common.uimodule.multi_image_selector.MultiImageSelectorActivity"></activity>
     </application>
 
 
