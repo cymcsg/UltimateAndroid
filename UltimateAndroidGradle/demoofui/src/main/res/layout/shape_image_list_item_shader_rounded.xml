@@ -15,7 +15,7 @@
         app:borderWidth="4dp"
         app:borderAlpha="0.7"
         app:borderColor="@color/blue"
-        app:radius="8dp"
+        app:shape_image_radius="8dp"
         android:alpha="1"/>
 
     <TextView

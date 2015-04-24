@@ -38,21 +38,21 @@
 
     <declare-styleable name="CirclePageIndicator">
         <!-- Whether or not the indicators should be centered. -->
-        <attr name="centered"/>
+        <attr name="cpi_centered" format="boolean"/>
         <!-- Color of the filled circle that represents the current page. -->
-        <attr name="fillColor" format="color"/>
+        <attr name="cpi_fillColor" format="color"/>
         <!-- Color of the filled circles that represents pages. -->
-        <attr name="pageColor" format="color"/>
+        <attr name="cpi_pageColor" format="color"/>
         <!-- Orientation of the indicator. -->
         <attr name="android:orientation"/>
         <!-- Radius of the circles. This is also the spacing between circles. -->
-        <attr name="radius"/>
+        <attr name="cpi_radius" format="dimension" />
         <!-- Whether or not the selected indicator snaps to the circles. -->
-        <attr name="snap" format="boolean"/>
+        <attr name="cpi_snap" format="boolean"/>
         <!-- Color of the open circles. -->
-        <attr name="strokeColor" format="color"/>
+        <attr name="cpi_strokeColor" format="color"/>
         <!-- Width of the stroke used to draw the circles. -->
-        <attr name="strokeWidth"/>
+        <attr name="cpi_strokeWidth" format="dimension"/>
         <!-- View background -->
         <attr name="android:background"/>
     </declare-styleable>

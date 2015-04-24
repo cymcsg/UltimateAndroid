@@ -39,7 +39,6 @@
     </declare-styleable>
 
 
-    <attr name="radius" format="dimension" />
     <attr name="orientation" format="enum">
         <enum name="vertical" value="0" />
         <enum name="horizontal" value="1" />

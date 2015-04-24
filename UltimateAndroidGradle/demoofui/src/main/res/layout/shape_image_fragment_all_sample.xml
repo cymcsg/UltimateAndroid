@@ -40,7 +40,7 @@
                 android:layout_weight="1"
                 android:layout_margin="8dp"
                 android:src="@drawable/shape_image_neo"
-                app:radius="6dp"
+                app:shape_image_radius="6dp"
                 app:borderWidth="6dp"
                 app:borderColor="@color/DarkGray"
                 app:square="true"/>
