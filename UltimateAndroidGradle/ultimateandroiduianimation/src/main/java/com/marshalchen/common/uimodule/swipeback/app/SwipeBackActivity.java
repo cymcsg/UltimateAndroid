@@ -1,9 +1,12 @@
 
-package com.marshalchen.common.uimodule.swipeback;
+package com.marshalchen.common.uimodule.swipeback.app;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.View;
+
+import com.marshalchen.common.uimodule.swipeback.SwipeBackLayout;
+import com.marshalchen.common.uimodule.swipeback.Utils;
 
 
 public class SwipeBackActivity extends FragmentActivity implements SwipeBackActivityBase {
@@ -42,6 +45,7 @@ public class SwipeBackActivity extends FragmentActivity implements SwipeBackActi
 
     @Override
     public void scrollToFinishActivity() {
+        Utils.convertActivityToTranslucent(this);
         getSwipeBackLayout().scrollToFinishActivity();
     }
 }

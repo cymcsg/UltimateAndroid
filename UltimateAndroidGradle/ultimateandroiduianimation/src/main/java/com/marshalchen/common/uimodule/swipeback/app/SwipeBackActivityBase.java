@@ -1,5 +1,6 @@
-package com.marshalchen.common.uimodule.swipeback;
+package com.marshalchen.common.uimodule.swipeback.app;
 
+import com.marshalchen.common.uimodule.swipeback.SwipeBackLayout;
 
 /**
  * @author Yrom

@@ -1,9 +1,11 @@
 
-package com.marshalchen.common.uimodule.swipeback;
+package com.marshalchen.common.uimodule.swipeback.app;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.view.View;
+
+import com.marshalchen.common.uimodule.swipeback.SwipeBackLayout;
 
 public class SwipeBackPreferenceActivity extends PreferenceActivity implements SwipeBackActivityBase {
     private SwipeBackActivityHelper mHelper;
