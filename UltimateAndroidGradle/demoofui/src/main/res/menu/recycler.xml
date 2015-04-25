@@ -5,7 +5,7 @@
   >
 
     <item android:id="@+id/action_add"
-          android:icon="@drawable/group_add_pic"
+          android:icon="@drawable/ic_add"
           android:title="add"
           android:orderInCategory="100"
           android:showAsAction="always" />
