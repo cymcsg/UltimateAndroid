@@ -92,17 +92,17 @@ public class CirclePageIndicator extends View implements PageIndicator {
         //Retrieve styles attributes
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.CirclePageIndicator, defStyle, 0);
 
-        mCentered = a.getBoolean(R.styleable.CirclePageIndicator_centered, defaultCentered);
+        mCentered = a.getBoolean(R.styleable.CirclePageIndicator_cpi_centered, defaultCentered);
         mOrientation = a.getInt(R.styleable.CirclePageIndicator_android_orientation, defaultOrientation);
         mPaintPageFill.setStyle(Style.FILL);
-        mPaintPageFill.setColor(a.getColor(R.styleable.CirclePageIndicator_pageColor, defaultPageColor));
+        mPaintPageFill.setColor(a.getColor(R.styleable.CirclePageIndicator_cpi_pageColor, defaultPageColor));
         mPaintStroke.setStyle(Style.STROKE);
-        mPaintStroke.setColor(a.getColor(R.styleable.CirclePageIndicator_strokeColor, defaultStrokeColor));
-        mPaintStroke.setStrokeWidth(a.getDimension(R.styleable.CirclePageIndicator_strokeWidth, defaultStrokeWidth));
+        mPaintStroke.setColor(a.getColor(R.styleable.CirclePageIndicator_cpi_strokeColor, defaultStrokeColor));
+        mPaintStroke.setStrokeWidth(a.getDimension(R.styleable.CirclePageIndicator_cpi_strokeWidth, defaultStrokeWidth));
         mPaintFill.setStyle(Style.FILL);
-        mPaintFill.setColor(a.getColor(R.styleable.CirclePageIndicator_fillColor, defaultFillColor));
-        mRadius = a.getDimension(R.styleable.CirclePageIndicator_radius, defaultRadius);
-        mSnap = a.getBoolean(R.styleable.CirclePageIndicator_snap, defaultSnap);
+        mPaintFill.setColor(a.getColor(R.styleable.CirclePageIndicator_cpi_fillColor, defaultFillColor));
+        mRadius = a.getDimension(R.styleable.CirclePageIndicator_cpi_radius, defaultRadius);
+        mSnap = a.getBoolean(R.styleable.CirclePageIndicator_cpi_snap, defaultSnap);
 
         Drawable background = a.getDrawable(R.styleable.CirclePageIndicator_android_background);
         if (background != null) {

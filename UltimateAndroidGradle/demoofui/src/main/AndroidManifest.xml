@@ -560,13 +560,6 @@
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
         </activity>
-        <activity android:name=".superlistview.SuperListViewActivity">
-            <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".superlistview.ListSample" />
-        <activity android:name=".superlistview.GridSample" />
         <activity android:name=".staggeredgridview.StaggeredGridActivity" />
         <activity android:name=".staggeredgridview.ListViewActivity" />
         <activity android:name=".staggeredgridview.StaggeredGridActivityFragment" />
@@ -1041,7 +1034,35 @@
                 <action android:name="com.marshalchen.common.demoofui" />
             </intent-filter>
         </activity>
+        <activity android:name=".circularimageview.CircularImageViewActivity">
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".snackbar.SnackbarSampleActivity">
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".snackbar.SnackbarImmersiveModeSampleActivity"></activity>
+        <activity android:name=".snackbar.SnackbarListViewSampleActivity"></activity>
+        <activity android:name=".snackbar.SnackbarNavigationBarTranslucentSampleActivity"></activity>
+        <activity android:name=".snackbar.SnackbarRecyclerViewSampleActivity"></activity>
+        <activity android:name=".snackbar.SnackbarShowInDialogSampleActivity"></activity>
+        <activity android:name=".labelview.LabelViewActivity">
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".labelview.ListViewActivity"></activity>
 
+        <activity android:name=".sampleModules.MultiImageSelectorActivity">
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.marshalchen.common.uimodule.multi_image_selector.MultiImageSelectorActivity"></activity>
     </application>
+
 
 </manifest>

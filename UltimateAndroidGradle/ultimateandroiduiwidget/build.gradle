@@ -30,8 +30,8 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.0.0'
     compile 'com.github.lzyzsd:circleprogress:1.0.0@aar'
-    compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.7.0'
-    // compile project(':ultimateandroid')
+    //compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.7.0'
+    compile project(':ultimateandroid')
 
     compile 'com.github.pavlospt:roundedletterview:1.0'
 
@@ -42,4 +42,5 @@ dependencies {
 
     compile "com.daimajia.swipelayout:library:1.1.7@aar"
     compile 'com.lorentzos.swipecards:library:1.0.8'
+    compile 'com.nispok:snackbar:2.10.7'
 }

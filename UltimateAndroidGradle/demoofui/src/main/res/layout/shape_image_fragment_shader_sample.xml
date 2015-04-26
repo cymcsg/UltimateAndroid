@@ -32,7 +32,7 @@
                 android:layout_weight="1"
                 android:layout_margin="8dp"
                 android:src="@drawable/shape_image_neo"
-                app:radius="6dp"
+                app:shape_image_radius="6dp"
                 app:borderWidth="6dp"
                 app:borderColor="@color/DarkGray"
                 app:square="true"/>
@@ -86,14 +86,14 @@
                 android:layout_height="80dp"
                 android:layout_margin="8dp"
                 android:src="@drawable/shape_image_neo"
-                app:radius="6dp"/>
+                app:shape_image_radius="6dp"/>
 
             <com.marshalchen.common.uimodule.shapeimageview.RoundedImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_margin="8dp"
                 android:src="@drawable/shape_image_neo"
-                app:radius="6dp"
+                app:shape_image_radius="6dp"
                 app:borderWidth="6dp"
                 app:borderColor="@color/DarkGray"/>
 
@@ -102,7 +102,7 @@
                 android:layout_height="80dp"
                 android:layout_margin="8dp"
                 android:src="@drawable/shape_image_neo"
-                app:radius="6dp"
+                app:shape_image_radius="6dp"
                 app:borderWidth="6dp"
                 app:borderColor="@color/DarkGray"/>
 

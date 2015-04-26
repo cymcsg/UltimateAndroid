@@ -140,7 +140,7 @@ dependencies {
 
 
 
-UltimateAndroidUi project now has four separate ui projects:widget,component,animations and lollipop. So if you want to only use part of the ui project you can simply use the separate project. However if you want to use all of them, you can also use the UltimateAndroidUi project.
+UltimateAndroidUi project now has four separate ui projects:widget,component,animations and lollipop. So if you want to only use part of the ui project you can simply use the separate projects. However if you want to use all of them, you can also use the UltimateAndroidUi project(you can use four separate projects together either).
 #####Normal way:
 If you want to use the framework and edit it at the same time,you can use ``Import Project``(need Android Studio version above 1.0) and choose the ``UltimateAndroidGradle`` folder.
 
@@ -310,12 +310,7 @@ String imageUri = "drawable://" + R.drawable.image; // from drawables (only imag
 
 6.ORM:
 
- The Orm Module of the framework contains both [GreenDao](https://github.com/greenrobot/greenDAO) and [ActiveRecord](https://github.com/pardom/ActiveAndroid).
-
- You can choose either of them freely.
-
-
-Please set the ides before you run the demo apps.
+You can read the documents of [GreenDao](https://github.com/greenrobot/greenDAO) 
 
 
 
@@ -345,7 +340,7 @@ Please set the ides before you run the demo apps.
 如果大家有需要的功能，欢迎随时提意见。
 
 ######0.7.0新版本：
-UltimateUI 项目分拆成widget，component，animations，lollipop 4个子项目，如果你只需要部分UI效果的话，你可以只依赖这些子项目.如果你想使用多个种类的UI项目的话，也可以简单的依赖UltimateAndroidUi项目。
+UltimateUI 项目分拆成widget，component，animations，lollipop 4个子项目，如果你只需要部分UI效果的话，你可以只依赖这些子项目.如果你想使用多个种类的UI项目的话，也可以简单的依赖UltimateAndroidUi项目(当然，你也可以依赖4个子项目)。
 
 [UI截图在这里](#demo_of_ui)
 
@@ -592,9 +587,7 @@ String imageUri = "drawable://" + R.drawable.image; // from drawables (only imag
 
 6.ORM:
 
- Orm模块包括[GreenDao](https://github.com/greenrobot/greenDAO) and [ActiveRecord](https://github.com/pardom/ActiveAndroid).
-
- 你可以自由选择两者中的一个。
+ 可以查看Greendao的文档 ：[GreenDao](https://github.com/greenrobot/greenDAO) 
 
 
 ##UI 模块

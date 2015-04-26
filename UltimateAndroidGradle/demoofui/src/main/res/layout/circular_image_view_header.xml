@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/white"
+  android:orientation="vertical">
+
+  <TextView
+    android:id="@+id/txtWow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:paddingLeft="16dp"
+    android:paddingTop="8dp"
+    android:text="Wow"
+    android:textColor="#ffe51c23"
+    android:textSize="24sp"
+    android:visibility="invisible" />
+
+  <com.marshalchen.common.ui.CircularImageView
+    android:id="@+id/imgDoge"
+    android:layout_width="196dp"
+    android:layout_height="196dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="8dp"
+    android:clickable="true"
+    android:src="@drawable/test_back2"
+    app:civ_border="true"
+    app:civ_borderColor="#FFFFFFFF"
+    app:civ_borderWidth="4dp"
+    app:civ_selector="true"
+    app:civ_selectorColor="#4403a9f4"
+    app:civ_selectorStrokeColor="#aa5677fc"
+    app:civ_selectorStrokeWidth="4dp"
+    app:civ_shadow="true" />
+
+  <TextView
+    android:id="@+id/txtClick"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:paddingBottom="8dp"
+    android:paddingRight="16dp"
+    android:text="Such Click"
+    android:textColor="#ff00bcd4"
+    android:textSize="24sp"
+    android:visibility="invisible" />
+
+</LinearLayout>

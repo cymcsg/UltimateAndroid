@@ -1,0 +1,151 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nispok.samples.snackbar.SnackbarSampleActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <Button
+            android:id="@+id/single_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Single-line" />
+
+        <Button
+            android:id="@+id/single_line_with_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Single-line + Action" />
+
+        <Button
+            android:id="@+id/multi_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Multi-line" />
+
+        <Button
+            android:id="@+id/multi_line_with_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Multi-line + Action" />
+
+        <Button
+            android:id="@+id/no_animation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No animation" />
+
+        <Button
+            android:id="@+id/event_listener"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Event Listener" />
+
+        <Button
+            android:id="@+id/custom_colors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Custom colors" />
+
+        <Button
+            android:id="@+id/unswipeable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Unswipeable" />
+
+        <Button
+            android:id="@+id/indefinite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Indefinite Duration" />
+
+        <Button
+            android:id="@+id/list_example"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ListView Listener" />
+
+        <Button
+            android:id="@+id/recycler_example"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RecyclerView Listener" />
+
+        <Button
+            android:id="@+id/typeface_example"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Custom Typefaces" />
+
+        <Button
+            android:id="@+id/navigation_bar_translucent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Navigation Bar Translucent"/>
+
+        <Button
+            android:id="@+id/immersive_mode_example"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Immersive Mode"/>
+
+        <Button
+            android:id="@+id/show_in_dialog_example"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show in Dialog"/>
+
+	    <Button
+		    android:id="@+id/single_line_top"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="Single-line Top" />
+
+	    <Button
+		    android:id="@+id/single_line_margins"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="Single-line Margins" />
+
+	    <Button
+		    android:id="@+id/single_line_shape"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="Custom Shape Touchable" />
+
+	    <Button
+		    android:id="@+id/single_line_inside"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="Single-line Inside RelativeLayout" />
+
+	    <Button
+		    android:id="@+id/single_line_top_inside"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="Single-line Top Inside LinearLayout" />
+
+	    <RelativeLayout
+		    android:id="@+id/view_relative_layout"
+		    android:layout_width="match_parent"
+		    android:layout_height="100dp"
+		    android:orientation="horizontal"
+		    android:background="@color/material_deep_teal_500" />
+
+	    <LinearLayout
+		    android:id="@+id/view_linear_layout"
+		    android:layout_width="match_parent"
+		    android:layout_height="100dp"
+		    android:orientation="horizontal"
+		    android:background="@color/material_deep_teal_200" />
+
+    </LinearLayout>
+</ScrollView>
