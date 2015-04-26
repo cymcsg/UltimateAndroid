@@ -1,4 +1,4 @@
-package com.marshalchen.common.ui;
+package com.marshalchen.common.uimodule.simplemodule;
 
 
 import android.annotation.SuppressLint;
@@ -16,7 +16,8 @@ import android.view.animation.Interpolator;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Scroller;
-import com.marshalchen.common.R;
+
+import com.marshalchen.ultimateandroiduicomponent.R;
 
 
 public class PullDoorView extends RelativeLayout {
@@ -54,11 +55,9 @@ public class PullDoorView extends RelativeLayout {
     @SuppressLint("NewApi")
     private void setupView() {
 
-        // 这个Interpolator你可以设置别的 我这里选择的是有弹跳效果的Interpolator
         Interpolator polator = new BounceInterpolator();
         mScroller = new Scroller(mContext, polator);
 
-        // 获取屏幕分辨率
         WindowManager wm = (WindowManager) (mContext
                 .getSystemService(Context.WINDOW_SERVICE));
         DisplayMetrics dm = new DisplayMetrics();
@@ -66,27 +65,23 @@ public class PullDoorView extends RelativeLayout {
         mScreenHeigh = dm.heightPixels;
         mScreenWidth = dm.widthPixels;
 
-        // 这里你一定要设置成透明背景,不然会影响你看到底层布局
         this.setBackgroundColor(Color.argb(0, 0, 0, 0));
         mImgView = new ImageView(mContext);
         mImgView.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT,
                 LayoutParams.MATCH_PARENT));
-        mImgView.setScaleType(ImageView.ScaleType.FIT_XY);// 填充整个屏幕
-        mImgView.setImageResource(R.drawable.circle_button_ic_action_tick); // 默认背景
+        mImgView.setScaleType(ImageView.ScaleType.FIT_XY);
+        mImgView.setImageResource(R.drawable.circle_button_ic_action_tick);
         addView(mImgView);
     }
 
-    // 设置推动门背景
     public void setBgImage(int id) {
         mImgView.setImageResource(id);
     }
 
-    // 设置推动门背景
     public void setBgImage(Drawable drawable) {
         mImgView.setImageDrawable(drawable);
     }
 
-    // 推动门的动画
     public void startBounceAnim(int startY, int dy, int duration) {
         mScroller.startScroll(0, startY, 0, dy, duration);
         invalidate();
@@ -141,7 +136,6 @@ public class PullDoorView extends RelativeLayout {
             Log.i("scroller", "getCurrX()= " + mScroller.getCurrX()
                     + "     getCurrY()=" + mScroller.getCurrY()
                     + "  getFinalY() =  " + mScroller.getFinalY());
-            // 不要忘记更新界面
             postInvalidate();
         } else {
             if (mCloseFlag) {
