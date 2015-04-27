@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.marshalchen.common.demoofui.flipviewpager.views.FontTextView
+        style="@style/FlipViewPagerTextView.Nickname"
+        android:id="@+id/nickname" />
+
+    <LinearLayout
+        android:layout_below="@+id/nickname"
+        android:id="@+id/interestsPrimary"
+        style="@style/FlipViewPagerLinearLayout.Interests">
+
+        <com.marshalchen.common.demoofui.flipviewpager.views.FontTextView
+            style="@style/FlipViewPagerTextView.Interest"
+            android:id="@+id/interest_1" />
+
+        <com.marshalchen.common.demoofui.flipviewpager.views.FontTextView
+            style="@style/FlipViewPagerTextView.Interest"
+            android:id="@+id/interest_2" />
+
+        <com.marshalchen.common.demoofui.flipviewpager.views.FontTextView
+            style="@style/FlipViewPagerTextView.Interest"
+            android:id="@+id/interest_3" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/interestsPrimary"
+        android:id="@+id/interestsSecondary"
+        android:layout_marginTop="5dp"
+        style="@style/FlipViewPagerLinearLayout.Interests">
+
+        <com.marshalchen.common.demoofui.flipviewpager.views.FontTextView
+            android:id="@+id/interest_4"
+            style="@style/FlipViewPagerTextView.Interest" />
+
+        <com.marshalchen.common.demoofui.flipviewpager.views.FontTextView
+            android:id="@+id/interest_5"
+            style="@style/FlipViewPagerTextView.Interest" />
+    </LinearLayout>
+
+</RelativeLayout>
