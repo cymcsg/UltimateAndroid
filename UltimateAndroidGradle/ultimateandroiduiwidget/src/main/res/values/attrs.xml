@@ -299,4 +299,7 @@
     <!--</declare-styleable>-->
 
     <attr name="shape_image_radius" format="dimension" />
+
+    <item type="id" name="kugou_layout_md__drawer"/>
+    <item type="id" name="kugou_layout_md__content"/>
 </resources>
