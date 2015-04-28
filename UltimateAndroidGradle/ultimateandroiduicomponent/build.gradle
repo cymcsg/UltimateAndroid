@@ -35,6 +35,7 @@ dependencies {
     compile 'com.lid.labelview:lib:0.1.1'
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.yalantis:flipviewpager:1.0.0'
+    compile 'net.steamcrafted:load-toast:1.0.6'
 
 
 }
