@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView android:src="@drawable/test_back" android:layout_width="match_parent"
+                android:layout_height="match_parent"  android:scaleType="centerCrop"/>
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="150dp" android:scaleType="centerCrop"
+                        android:layout_height="150dp" android:src="@drawable/test"/>
+                    <ImageView
+                        android:layout_width="150dp" android:scaleType="centerCrop"
+                        android:layout_height="150dp" android:src="@drawable/test_back"/>
+                    <ImageView
+                        android:layout_width="150dp" android:scaleType="centerCrop"
+                        android:layout_height="150dp" android:src="@drawable/test_back1"/>
+                    <ImageView
+                        android:layout_width="150dp" android:scaleType="centerCrop"
+                        android:layout_height="150dp" android:src="@drawable/test_back2"/>
+                    <ImageView
+                        android:layout_width="150dp" android:scaleType="centerCrop"
+                        android:layout_height="150dp" android:src="@drawable/test"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
