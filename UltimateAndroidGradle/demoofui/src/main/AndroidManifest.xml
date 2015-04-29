@@ -1062,6 +1062,28 @@
             </intent-filter>
         </activity>
         <activity android:name="com.marshalchen.common.uimodule.multi_image_selector.MultiImageSelectorActivity"></activity>
+
+        <activity android:name=".flipviewpager.activity.FlipViewPagerFriendActivity">
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".kugoulayout.KugouLayoutActivity">
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".kugoulayout.KugouLayoutActivityDemo">
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".sampleModules.LoadToastLibActivity">
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui" />
+            </intent-filter>
+        </activity>
     </application>
 
 
