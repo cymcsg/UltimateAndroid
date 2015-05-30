@@ -261,6 +261,8 @@
         <activity android:name=".blurdialogfragment.SampleActionBarActivity"></activity>
         <activity android:name=".blurdialogfragment.SampleFullScreenActivity"></activity>
         <activity android:name=".sampleModules.CustomPullToRefreshActivity" android:theme="@style/android:Theme.Holo.Light.DarkActionBar"></activity>
+
+        <service android:name=".jsoup.UtilsDemoActivity$TitleService" android:exported="false"/>
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->
