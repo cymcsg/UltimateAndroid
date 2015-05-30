@@ -7,8 +7,13 @@ import java.util.Collections;
 import java.util.Locale;
 
 import android.app.Activity;
-import android.os.AsyncTask;
+import android.app.IntentService;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
+import android.support.v4.content.LocalBroadcastManager;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -23,6 +28,8 @@ import com.marshalchen.common.demoofui.listviewfilter.PinnedHeaderAdapter;
 
 // Activity that display customized list view and search box
 public class ListViewFilterActivity extends Activity {
+
+    private static final String POPULATE_FILTER = "ListViewFilterActivity_populateReceiver";
 
     // an array of countries to display in the list
     static final String[] ITEMS = new String[]{"张三", "李四", "East Timor", "Ecuador",
@@ -106,6 +113,8 @@ public class ListViewFilterActivity extends Activity {
     // empty view
     TextView mEmptyView;
 
+    PoplulateReceiver populateReceiver;
+
     @SuppressWarnings("unchecked")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -118,6 +127,10 @@ public class ListViewFilterActivity extends Activity {
         mItems = new ArrayList<String>(Arrays.asList(ITEMS));
         mListSectionPos = new ArrayList<Integer>();
         mListItems = new ArrayList<String>();
+
+        populateReceiver = new PoplulateReceiver();
+        LocalBroadcastManager.getInstance(this)
+            .registerReceiver(populateReceiver, new IntentFilter(POPULATE_FILTER));
 
         // for handling configuration change
         if (savedInstanceState != null) {
@@ -135,8 +148,21 @@ public class ListViewFilterActivity extends Activity {
                 setIndexBarViewVisibility(constraint);
             }
         } else {
-            new Poplulate().execute(mItems);
+            Intent populate = new Intent(this, PopulateService.class);
+            populateReceiver.showLoading();
+            populate.putExtra("mListSectionPos", mListSectionPos);
+            populate.putExtra("mListItems", mListItems);
+            populate.putExtra("mItems", mItems);
+            populate.putExtra("params", mItems);
+            this.startService(populate);
         }
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        if (populateReceiver != null)
+            LocalBroadcastManager.getInstance(this).unregisterReceiver(populateReceiver);
     }
 
     private void setupViews() {
@@ -246,7 +272,13 @@ public class ListViewFilterActivity extends Activity {
             ArrayList<String> filtered = (ArrayList<String>) results.values;
             setIndexBarViewVisibility(constraint.toString());
             // sort array and extract sections in background Thread
-            new Poplulate().execute(filtered);
+            Intent populate = new Intent(ListViewFilterActivity.this, PopulateService.class);
+            populateReceiver.showLoading();
+            populate.putExtra("mListSectionPos", mListSectionPos);
+            populate.putExtra("mListItems", mListItems);
+            populate.putExtra("mItems", mItems);
+            populate.putExtra("params", filtered);
+            ListViewFilterActivity.this.startService(populate);
         }
 
     }
@@ -260,9 +292,7 @@ public class ListViewFilterActivity extends Activity {
         }
     }
 
-    // sort array and extract sections in background Thread here we use
-    // AsyncTask
-    private class Poplulate extends AsyncTask<ArrayList<String>, Void, Void> {
+    private class PoplulateReceiver extends BroadcastReceiver {
 
         private void showLoading(View contentView, View loadingView,
                                  View emptyView) {
@@ -285,18 +315,44 @@ public class ListViewFilterActivity extends Activity {
             emptyView.setVisibility(View.VISIBLE);
         }
 
-        @Override
-        protected void onPreExecute() {
+        protected void showLoading() {
             // show loading indicator
             showLoading(mListView, mLoadingView, mEmptyView);
-            super.onPreExecute();
         }
 
         @Override
-        protected Void doInBackground(ArrayList<String>... params) {
+        public void onReceive(Context receiverContext, Intent receiverIntent) {
+            mListItems = receiverIntent.getStringArrayListExtra("mListItems");
+            mListSectionPos = receiverIntent.getIntegerArrayListExtra("mListSectionPos");
+            if (mListItems.size() <= 0) {
+                showEmptyText(mListView, mLoadingView, mEmptyView);
+            } else {
+                setListAdaptor();
+                showContent(mListView, mLoadingView, mEmptyView);
+            }
+        }
+    }
+
+    // sort array and extract sections in background Thread here we use
+    // IntentService
+    public static class PopulateService extends IntentService {
+        ArrayList<Integer> mListSectionPos;
+        ArrayList<String> mListItems;
+        ArrayList<String> mItems;
+
+        public PopulateService() {
+            super("PopulateService");
+        }
+
+        public void onHandleIntent(Intent intent) {
+            this.mListSectionPos = intent.getIntegerArrayListExtra("mListSectionPos");
+            this.mListItems = intent.getStringArrayListExtra("mListItems");
+            this.mItems = intent.getStringArrayListExtra("mItems");
+            ArrayList<String> params = intent.getStringArrayListExtra("params");
+
             mListItems.clear();
             mListSectionPos.clear();
-            ArrayList<String> items = params[0];
+            ArrayList<String> items = params;
             if (mItems.size() > 0) {
 
                 // NOT forget to sort array
@@ -320,20 +376,10 @@ public class ListViewFilterActivity extends Activity {
                     i++;
                 }
             }
-            return null;
-        }
-
-        @Override
-        protected void onPostExecute(Void result) {
-            if (!isCancelled()) {
-                if (mListItems.size() <= 0) {
-                    showEmptyText(mListView, mLoadingView, mEmptyView);
-                } else {
-                    setListAdaptor();
-                    showContent(mListView, mLoadingView, mEmptyView);
-                }
-            }
-            super.onPostExecute(result);
+            Intent resultIntent = new Intent(POPULATE_FILTER);
+            resultIntent.putExtra("mListItems", mListItems);
+            resultIntent.putExtra("mListSectionPos", mListSectionPos);
+            LocalBroadcastManager.getInstance(this).sendBroadcast(resultIntent);
         }
     }
 
