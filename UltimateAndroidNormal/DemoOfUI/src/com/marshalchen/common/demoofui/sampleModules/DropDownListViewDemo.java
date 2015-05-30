@@ -6,8 +6,14 @@ import java.util.Date;
 import java.util.LinkedList;
 
 import android.app.Activity;
+import android.app.IntentService;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v4.content.LocalBroadcastManager;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
@@ -35,6 +41,9 @@ public class DropDownListViewDemo extends Activity {
     public static final int MORE_DATA_MAX_COUNT = 3;
     public int moreDataCount = 0;
 
+    private GetDataReceiver onDropDownReceiver;
+    private GetDataReceiver onClickReceiver;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         // super.onCreate(savedInstanceState, R.layout.drop_down_listview_demo);
@@ -42,20 +51,30 @@ public class DropDownListViewDemo extends Activity {
         setContentView(R.layout.drop_down_listview_demo);
         listView = (DropDownListView) findViewById(R.id.list_view);
         // set drop down listener
+        onDropDownReceiver = new GetDataReceiver(true);
+        LocalBroadcastManager.getInstance(this).registerReceiver(onDropDownReceiver,
+                new IntentFilter("onDropDownReceiver"));
         listView.setOnDropDownListener(new DropDownListView.OnDropDownListener() {
 
             @Override
             public void onDropDown() {
-                new GetDataTask(true).execute();
+                Intent getData = new Intent(DropDownListViewDemo.this, GetDataService.class);
+                getData.putExtra("FILTER", "onDropDownReceiver");
+                DropDownListViewDemo.this.startService(getData);
             }
         });
 
         // set on bottom listener
+        onClickReceiver = new GetDataReceiver(false);
+        LocalBroadcastManager.getInstance(this).registerReceiver(onClickReceiver,
+                new IntentFilter("onClickReceiver"));
         listView.setOnBottomListener(new OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                new GetDataTask(false).execute();
+                Intent getData = new Intent(DropDownListViewDemo.this, GetDataService.class);
+                getData.putExtra("FILTER", "onClickReceiver");
+                DropDownListViewDemo.this.startService(getData);
             }
         });
         listView.setOnItemClickListener(new OnItemClickListener() {
@@ -73,26 +92,25 @@ public class DropDownListViewDemo extends Activity {
         listView.setAdapter(adapter);
     }
 
-    private class GetDataTask extends AsyncTask<Void, Void, String[]> {
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        if (onClickReceiver != null)
+            LocalBroadcastManager.getInstance(this).unregisterReceiver(onClickReceiver);
+        if (onDropDownReceiver != null)
+            LocalBroadcastManager.getInstance(this).unregisterReceiver(onDropDownReceiver);
+    }
+
+    private class GetDataReceiver extends BroadcastReceiver {
 
         private boolean isDropDown;
 
-        public GetDataTask(boolean isDropDown) {
+        public GetDataReceiver(boolean isDropDown) {
             this.isDropDown = isDropDown;
         }
 
         @Override
-        protected String[] doInBackground(Void... params) {
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                ;
-            }
-            return mStrings;
-        }
-
-        @Override
-        protected void onPostExecute(String[] result) {
+        public void onReceive(Context receiverContext, Intent receiverIntent) {
 
             if (isDropDown) {
                 listItems.addFirst("Added after drop down");
@@ -113,8 +131,23 @@ public class DropDownListViewDemo extends Activity {
                 // should call onBottomComplete function of DropDownListView at end of on bottom complete.
                 listView.onBottomComplete();
             }
+        }
+    }
 
-            super.onPostExecute(result);
+    public static class GetDataService extends IntentService {
+
+        public GetDataService() {
+            super("GetDataService");
+        }
+
+        public void onHandleIntent(Intent intent) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                ;
+            }
+            Intent resultIntent = new Intent(intent.getStringExtra("FILTER"));
+            LocalBroadcastManager.getInstance(this).sendBroadcast(resultIntent);
         }
     }
 }

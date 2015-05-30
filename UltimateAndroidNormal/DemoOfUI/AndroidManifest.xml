@@ -263,6 +263,7 @@
         <activity android:name=".sampleModules.CustomPullToRefreshActivity" android:theme="@style/android:Theme.Holo.Light.DarkActionBar"></activity>
 
         <service android:name=".jsoup.UtilsDemoActivity$TitleService" android:exported="false"/>
+        <service android:name=".sampleModules.DropDownListViewDemo$GetDataService" android:exported="false"/>
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->
