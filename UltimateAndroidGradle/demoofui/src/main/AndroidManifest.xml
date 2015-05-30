@@ -1086,6 +1086,7 @@
         </activity>
 
         <service android:name=".pullMenuItem.ReloadIntentService" android:exported="false"/>
+        <service android:name=".switchbuttondemo.UseActivity$LongService" android:exported="false"/>
     </application>
 
 

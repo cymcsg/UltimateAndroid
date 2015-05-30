@@ -1,8 +1,13 @@
 package com.marshalchen.common.demoofui.switchbuttondemo;
 
 import android.app.Activity;
-import android.os.AsyncTask;
+import android.app.IntentService;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
+import android.support.v4.content.LocalBroadcastManager;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -22,6 +27,7 @@ public class UseActivity extends Activity implements OnClickListener {
     private ProgressBar mPb;
     private Button mStartBt, mToggleAniBt, mToggleNotAniBt, mCheckedAniBt, mCheckNotAniBt;
     private TextView mListenerFinish;
+    private LongServiceReceiver longServiceReceiver;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,11 +47,18 @@ public class UseActivity extends Activity implements OnClickListener {
         });
 
         // work with stuff takes long
+        longServiceReceiver = new LongServiceReceiver();
+        IntentFilter recevierFilter = new IntentFilter();
+        recevierFilter.addAction("LongServiceReceiver_ReturnIntent");
+        recevierFilter.addAction("PROGRESS_UPDATE");
+        LocalBroadcastManager.getInstance(this).registerReceiver(longServiceReceiver, recevierFilter);
         mStartBt.setOnClickListener(new OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                new LongTask().execute();
+                Intent longService = new Intent(UseActivity.this, LongService.class);
+                longServiceReceiver.onPreExecute();
+                UseActivity.this.startService(longService);
             }
         });
 
@@ -56,6 +69,13 @@ public class UseActivity extends Activity implements OnClickListener {
         // checked
         mCheckedAniBt.setOnClickListener(this);
         mCheckNotAniBt.setOnClickListener(this);
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        if (longServiceReceiver != null)
+            LocalBroadcastManager.getInstance(this).unregisterReceiver(longServiceReceiver);
     }
 
     private void findView() {
@@ -78,34 +98,14 @@ public class UseActivity extends Activity implements OnClickListener {
         mListenerFinish.setVisibility(mListenerSb.isChecked() ? View.VISIBLE : View.INVISIBLE);
     }
 
-    class LongTask extends AsyncTask<Void, Integer, Void> {
+    class LongServiceReceiver extends BroadcastReceiver {
 
-        private int progress = 0;
-
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
+        public void onPreExecute() {
             mLongSb.setChecked(false);
             mStartBt.setEnabled(false);
         }
 
-        @Override
-        protected Void doInBackground(Void... params) {
-            while (progress < 100) {
-                progress++;
-                try {
-                    Thread.sleep(20);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                publishProgress(progress);
-            }
-            return null;
-        }
-
-        @Override
-        protected void onProgressUpdate(Integer... values) {
-            super.onProgressUpdate(values);
+        public void onProgressUpdate(Integer... values) {
             if (values == null || values.length == 0) {
                 return;
             }
@@ -114,12 +114,39 @@ public class UseActivity extends Activity implements OnClickListener {
         }
 
         @Override
-        protected void onPostExecute(Void result) {
-            super.onPostExecute(result);
+        public void onReceive(Context receiverContext, Intent receiverIntent) {
+            if (receiverIntent.getAction().equals("PROGRESS_UPDATE")) {
+                onProgressUpdate(receiverIntent.getIntExtra("progress", 0));
+                return;
+            }
             mLongSb.slideToChecked(true);
             mStartBt.setEnabled(true);
         }
 
+    }
+
+    public static class LongService extends IntentService {
+        private int progress = 0;
+
+        public LongService() {
+            super("LongService");
+        }
+
+        public void onHandleIntent(Intent intent) {
+            while (progress < 100) {
+                progress++;
+                try {
+                    Thread.sleep(20);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                Intent updateIntent = new Intent("PROGRESS_UPDATE");
+                updateIntent.putExtra("progress", progress);
+                LocalBroadcastManager.getInstance(this).sendBroadcast(updateIntent);
+            }
+            Intent resultIntent = new Intent("LongServiceReceiver_ReturnIntent");
+            LocalBroadcastManager.getInstance(this).sendBroadcast(resultIntent);
+        }
     }
 
     @Override
