@@ -264,6 +264,7 @@
 
         <service android:name=".jsoup.UtilsDemoActivity$TitleService" android:exported="false"/>
         <service android:name=".sampleModules.DropDownListViewDemo$GetDataService" android:exported="false"/>
+        <service android:name=".staggeredgridview.StaggeredGridEmptyViewActivity$FetchDataService" android:exported="false"/>
     </application>
 
     <!--<uses-configuration android:reqTouchScreen="finger"/>-->
