@@ -27,9 +27,6 @@ public class ProgressMenuItemActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.progress_menu_item_activity_main);
-        reloadReceiver = new ReloadReceiver(progressHelper);
-        LocalBroadcastManager.getInstance(this)
-            .registerReceiver(reloadReceiver, new IntentFilter(RELOAD_FILTER));
     }
 
     @Override
@@ -43,6 +40,9 @@ public class ProgressMenuItemActivity extends ActionBarActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.progress_menu_item_refresh_menu, menu);
         progressHelper = new ProgressMenuItemHelper(menu, R.id.action_refresh, ProgressMenuItemSize.LARGE);
+        reloadReceiver = new ReloadReceiver(progressHelper);
+        LocalBroadcastManager.getInstance(this)
+            .registerReceiver(reloadReceiver, new IntentFilter(RELOAD_FILTER));
         return true;
     }
 
