@@ -43,7 +43,7 @@ gradle-app.setting
 
 
 
-key info:
+# key info:
 ultimateandroid.jks
 keystore.properties
 gradleinfo.properties

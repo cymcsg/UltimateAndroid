@@ -1,9 +1,14 @@
 package com.marshalchen.common.demoofui.staggeredgridview;
 
 import android.app.Activity;
-import android.os.AsyncTask;
+import android.app.IntentService;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
 import android.os.SystemClock;
+import android.support.v4.content.LocalBroadcastManager;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -22,11 +27,13 @@ public class StaggeredGridEmptyViewActivity extends Activity implements AbsListV
 
     public static final String SAVED_DATA_KEY = "SAVED_DATA";
     private static final int FETCH_DATA_TASK_DURATION = 2000;
+    private static final String FETCH_DATA_FILTER = "StaggeredGridEmptyViewActivity_fetchDataReceiver";
 
     private StaggeredGridView mGridView;
     private SampleAdapter mAdapter;
 
     private ArrayList<String> mData;
+    private BroadcastReceiver fetchDataReceiver;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,7 +72,22 @@ public class StaggeredGridEmptyViewActivity extends Activity implements AbsListV
 
         mGridView.setOnItemClickListener(this);
 
+        fetchDataReceiver = new BroadcastReceiver() {
+            @Override
+            public void onReceive(Context receiverContext, Intent receiverIntent) {
+                fillAdapter();
+            }
+        };
+        LocalBroadcastManager.getInstance(this)
+            .registerReceiver(fetchDataReceiver, new IntentFilter(FETCH_DATA_FILTER));
         fetchData();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        if (fetchDataReceiver != null)
+            LocalBroadcastManager.getInstance(this).unregisterReceiver(fetchDataReceiver);
     }
 
     private void fillAdapter() {
@@ -75,18 +97,8 @@ public class StaggeredGridEmptyViewActivity extends Activity implements AbsListV
     }
 
     private void fetchData() {
-        new AsyncTask<Void, Void, Void>() {
-            @Override
-            protected Void doInBackground(Void... params) {
-                SystemClock.sleep(FETCH_DATA_TASK_DURATION);
-                return null;
-            }
-
-            @Override
-            protected void onPostExecute(Void aVoid) {
-                fillAdapter();
-            }
-        }.execute();
+        Intent fetchData = new Intent(this, FetchDataService.class);
+        this.startService(fetchData);
     }
 
     @Override
@@ -111,5 +123,17 @@ public class StaggeredGridEmptyViewActivity extends Activity implements AbsListV
     protected void onSaveInstanceState(final Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putStringArrayList(SAVED_DATA_KEY, mData);
+    }
+
+    public static class FetchDataService extends IntentService {
+        public FetchDataService() {
+            super("FetchDataService");
+        }
+
+        public void onHandleIntent(Intent intent) {
+            SystemClock.sleep(FETCH_DATA_TASK_DURATION);
+            Intent resultIntent = new Intent(FETCH_DATA_FILTER);
+            LocalBroadcastManager.getInstance(this).sendBroadcast(resultIntent);
+        }
     }
 }
