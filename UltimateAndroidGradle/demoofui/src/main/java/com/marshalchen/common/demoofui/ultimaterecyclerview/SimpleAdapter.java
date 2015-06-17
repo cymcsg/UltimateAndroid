@@ -1,5 +1,6 @@
 package com.marshalchen.common.demoofui.ultimaterecyclerview;
 
+import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,8 +10,11 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.marshalchen.common.demoofui.R;
+import com.marshalchen.ultimaterecyclerview.URLogs;
+import com.marshalchen.ultimaterecyclerview.UltimateRecyclerviewViewHolder;
 import com.marshalchen.ultimaterecyclerview.UltimateViewAdapter;
 
+import java.security.SecureRandom;
 import java.util.List;
 
 
@@ -38,7 +42,7 @@ public class SimpleAdapter extends UltimateViewAdapter {
     }
 
     @Override
-    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent) {
+    public UltimateRecyclerviewViewHolder onCreateViewHolder(ViewGroup parent) {
         View v = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.recycler_view_adapter, parent, false);
         ViewHolder vh = new ViewHolder(v);
@@ -79,7 +83,55 @@ public class SimpleAdapter extends UltimateViewAdapter {
     }
 
 
-    class ViewHolder extends RecyclerView.ViewHolder {
+    @Override
+    public long generateHeaderId(int position) {
+        // URLogs.d("position--" + position + "   " + getItem(position));
+        if (getItem(position).length() > 0)
+            return getItem(position).charAt(0);
+        else return -1;
+    }
+
+    @Override
+    public RecyclerView.ViewHolder onCreateHeaderViewHolder(ViewGroup viewGroup) {
+        View view = LayoutInflater.from(viewGroup.getContext())
+                .inflate(R.layout.stick_header_item, viewGroup, false);
+        return new RecyclerView.ViewHolder(view) {
+        };
+    }
+
+    @Override
+    public void onBindHeaderViewHolder(RecyclerView.ViewHolder viewHolder, int position) {
+
+        TextView textView = (TextView) viewHolder.itemView.findViewById(R.id.stick_text);
+        textView.setText(String.valueOf(getItem(position).charAt(0)));
+//        viewHolder.itemView.setBackgroundColor(Color.parseColor("#AA70DB93"));
+        viewHolder.itemView.setBackgroundColor(Color.parseColor("#AAffffff"));
+        ImageView imageView = (ImageView) viewHolder.itemView.findViewById(R.id.stick_img);
+
+        SecureRandom imgGen = new SecureRandom();
+        switch (imgGen.nextInt(3)) {
+            case 0:
+                imageView.setImageResource(R.drawable.test_back1);
+                break;
+            case 1:
+                imageView.setImageResource(R.drawable.test_back2);
+                break;
+            case 2:
+                imageView.setImageResource(R.drawable.test_back);
+                break;
+        }
+
+    }
+//
+//    private int getRandomColor() {
+//        SecureRandom rgen = new SecureRandom();
+//        return Color.HSVToColor(150, new float[]{
+//                rgen.nextInt(359), 1, 1
+//        });
+//    }
+
+
+    class ViewHolder extends UltimateRecyclerviewViewHolder {
 
         TextView textViewSample;
         ImageView imageViewSample;
@@ -108,4 +160,13 @@ public class SimpleAdapter extends UltimateViewAdapter {
             progressBarSample.setVisibility(View.GONE);
         }
     }
+
+    public String getItem(int position) {
+        if (customHeaderView != null)
+            position--;
+        if (position < stringList.size())
+            return stringList.get(position);
+        else return "";
+    }
+
 }
