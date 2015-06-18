@@ -1,7 +1,7 @@
 UltimateAndroid
 ==========================
 
-###Version:0.7.0
+###Version:0.7.1
 
 
 
@@ -83,7 +83,7 @@ repositories {
     }
 dependencies {
     ...
-    compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.7.0'
+    compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.7.1'
 }
 ```
 Ui framework:
@@ -368,7 +368,7 @@ repositories {
     }
 dependencies {
     ...
-    compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.7.0'
+    compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.7.1'
 }
 ```
 Ui framework:
