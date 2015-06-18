@@ -10,13 +10,13 @@ idea{
 
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
 
     defaultConfig {
         //applicationId "com.marshalchen.common.uimodule"
         minSdkVersion 14
-        targetSdkVersion 21
+        targetSdkVersion 22
         versionCode 1
         versionName "1.0"
     }
@@ -44,9 +44,9 @@ apply from: 'android-release-aar.gradle'
 //apply from: 'maven-push.gradle'
 dependencies {
     //compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:21.0.2'
-    compile 'com.android.support:support-v13:21.0.2'
-    compile 'com.android.support:recyclerview-v7:21.0.2'
+    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.android.support:support-v13:22.2.0'
+    compile 'com.android.support:recyclerview-v7:22.2.0'
 //    compile project(':ultimateandroid')
     compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.7.0'
     compile 'com.marshalchen.ultimateandroid:ultimateandroiduiwidget:0.7.0'
