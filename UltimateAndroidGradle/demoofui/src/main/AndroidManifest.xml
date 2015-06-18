@@ -368,11 +368,7 @@
         </activity>
         <activity android:name=".pulltozoomview.PullToZoomListActivity" />
         <activity android:name=".pulltozoomview.PullToZoomScrollActivity" />
-        <activity android:name=".twowayview.TwoWayViewActivity">
-            <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
-            </intent-filter>
-        </activity>
+
         <activity android:name=".recyclerplayground.RecyclerViewPlayGroundActivity">
             <intent-filter>
                 <action android:name="com.marshalchen.common.demoofui" />

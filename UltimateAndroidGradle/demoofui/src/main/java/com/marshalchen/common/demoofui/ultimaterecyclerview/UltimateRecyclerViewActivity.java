@@ -225,6 +225,11 @@ public class UltimateRecyclerViewActivity extends ActionBarActivity {
 
         dragDropTouchListener = new DragDropTouchListener(ultimateRecyclerView.mRecyclerView, this) {
             @Override
+            public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
+
+            }
+
+            @Override
             protected void onItemSwitch(RecyclerView recyclerView, int from, int to) {
                 if (from > 0 && to > 0) {
                     simpleRecyclerViewAdapter.swapPositions(from, to);
