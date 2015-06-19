@@ -1081,6 +1081,20 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".materialAnimations.MaterialAnimationActivity">
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".materialAnimations.DetailActivity1">
+
+        </activity>
+        <activity android:name=".materialAnimations.DetailActivity2">
+
+        </activity>
+        <activity android:name=".materialAnimations.DetailActivity3">
+
+        </activity>
         <service android:name=".pullMenuItem.ReloadIntentService" android:exported="false"/>
         <service android:name=".switchbuttondemo.UseActivity$LongService" android:exported="false"/>
     </application>

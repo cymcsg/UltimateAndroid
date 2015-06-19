@@ -19,6 +19,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.marshalchen.common.demoofui.cooldraganddrop.CoolDragAndDropActivity;
+import com.marshalchen.common.demoofui.materialAnimations.MaterialAnimationActivity;
 import com.marshalchen.common.demoofui.materialdesigndemo.MaterialDesignActivity;
 import com.marshalchen.common.demoofui.materialmenu.MaterialMenuToolbarActivity;
 import com.marshalchen.common.demoofui.sampleModules.FloatingActionButtonDemo;
@@ -195,6 +196,9 @@ public class LandingFragment extends Fragment {
         addItemToTop(myData,
                 "MaterialDesignActivity",
                 new Intent(getActivity(), MaterialDesignActivity.class));
+        addItemToTop(myData,
+                "MaterialAnimationActivity",
+                new Intent(getActivity(), MaterialAnimationActivity.class));
         addItemToTop(myData,
                 "SearchDrawableActivity",
                 new Intent(getActivity(), SearchDrawableActivity.class));
