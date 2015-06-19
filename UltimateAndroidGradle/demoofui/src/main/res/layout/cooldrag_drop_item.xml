@@ -25,7 +25,7 @@
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
         android:padding="5dp"
-        android:src="@drawable/ic_launcher" />
+        android:src="@drawable/test" />
 
     <TextView
         android:id="@+id/textViewTitle"

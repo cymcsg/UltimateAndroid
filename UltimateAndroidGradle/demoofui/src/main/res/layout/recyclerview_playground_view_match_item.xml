@@ -55,13 +55,13 @@
         android:layout_height="wrap_content"
         android:layout_column="2"
         android:layout_row="0"
-        android:src="@drawable/ic_launcher"/>
+        android:src="@drawable/test"/>
     <ImageView
         android:id="@+id/logo_team_home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_column="2"
         android:layout_row="1"
-        android:src="@drawable/ic_launcher"/>
+        android:src="@drawable/test"/>
 
 </GridLayout>

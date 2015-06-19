@@ -44,7 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:contentDescription="@string/desc_about_app"
-            android:src="@drawable/ic_launcher" />
+            android:src="@drawable/test" />
 
         <TextView
             android:id="@+id/app_version"
