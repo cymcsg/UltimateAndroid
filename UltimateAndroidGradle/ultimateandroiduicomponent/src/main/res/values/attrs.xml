@@ -232,14 +232,14 @@
     </declare-styleable>
 
     <declare-styleable name="StaggeredGridView">
-        <attr name="column_count" format="integer"/>
-        <attr name="column_count_portrait" format="integer"/>
-        <attr name="column_count_landscape" format="integer"/>
-        <attr name="item_margin" format="dimension"/>
-        <attr name="grid_paddingLeft" format="dimension"/>
-        <attr name="grid_paddingRight" format="dimension"/>
-        <attr name="grid_paddingTop" format="dimension"/>
-        <attr name="grid_paddingBottom" format="dimension"/>
+        <attr name="sg_column_count" format="integer"/>
+        <attr name="sg_column_count_portrait" format="integer"/>
+        <attr name="sg_column_count_landscape" format="integer"/>
+        <attr name="sg_item_margin" format="dimension"/>
+        <attr name="sg_grid_paddingLeft" format="dimension"/>
+        <attr name="sg_grid_paddingRight" format="dimension"/>
+        <attr name="sg_grid_paddingTop" format="dimension"/>
+        <attr name="sg_grid_paddingBottom" format="dimension"/>
     </declare-styleable>
 
 

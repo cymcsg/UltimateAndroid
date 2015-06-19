@@ -177,9 +177,9 @@ public class LandingFragment extends Fragment {
         addItemToTop(myData,
                 "MaterialMenuToolbarActivity",
                 new Intent(getActivity(), MaterialMenuToolbarActivity.class));
-        addItemToTop(myData,
-                "MaterialListViewActivity",
-                new Intent(getActivity(), MaterialListViewActivity.class));
+//        addItemToTop(myData,
+//                "MaterialListViewActivity",
+//                new Intent(getActivity(), MaterialListViewActivity.class));
         addItemToTop(myData,
                 "KenBurnsViewActivity",
                 new Intent(getActivity(), KenBurnsViewActivity.class));

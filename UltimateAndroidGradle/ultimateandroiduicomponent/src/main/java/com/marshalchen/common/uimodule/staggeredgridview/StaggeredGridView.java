@@ -156,7 +156,7 @@ public class StaggeredGridView extends ExtendableListView {
             TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.StaggeredGridView, defStyle, 0);
 
             mColumnCount = typedArray.getInteger(
-                    R.styleable.StaggeredGridView_column_count, 0);
+                    R.styleable.StaggeredGridView_sg_column_count, 0);
 
             if (mColumnCount > 0) {
                 mColumnCountPortrait = mColumnCount;
@@ -164,23 +164,23 @@ public class StaggeredGridView extends ExtendableListView {
             }
             else {
                 mColumnCountPortrait = typedArray.getInteger(
-                        R.styleable.StaggeredGridView_column_count_portrait,
+                        R.styleable.StaggeredGridView_sg_column_count_portrait,
                         DEFAULT_COLUMNS_PORTRAIT);
                 mColumnCountLandscape = typedArray.getInteger(
-                        R.styleable.StaggeredGridView_column_count_landscape,
+                        R.styleable.StaggeredGridView_sg_column_count_landscape,
                         DEFAULT_COLUMNS_LANDSCAPE);
             }
 
             mItemMargin = typedArray.getDimensionPixelSize(
-                    R.styleable.StaggeredGridView_item_margin, 0);
+                    R.styleable.StaggeredGridView_sg_item_margin, 0);
             mGridPaddingLeft = typedArray.getDimensionPixelSize(
-                    R.styleable.StaggeredGridView_grid_paddingLeft, 0);
+                    R.styleable.StaggeredGridView_sg_grid_paddingLeft, 0);
             mGridPaddingRight = typedArray.getDimensionPixelSize(
-                    R.styleable.StaggeredGridView_grid_paddingRight, 0);
+                    R.styleable.StaggeredGridView_sg_grid_paddingRight, 0);
             mGridPaddingTop = typedArray.getDimensionPixelSize(
-                    R.styleable.StaggeredGridView_grid_paddingTop, 0);
+                    R.styleable.StaggeredGridView_sg_grid_paddingTop, 0);
             mGridPaddingBottom = typedArray.getDimensionPixelSize(
-                    R.styleable.StaggeredGridView_grid_paddingBottom, 0);
+                    R.styleable.StaggeredGridView_sg_grid_paddingBottom, 0);
 
             typedArray.recycle();
         }

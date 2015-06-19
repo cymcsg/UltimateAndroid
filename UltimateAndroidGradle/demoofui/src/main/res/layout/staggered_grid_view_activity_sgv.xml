@@ -4,5 +4,5 @@
     android:id="@+id/grid_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:item_margin="8dp"
+    app:sg_item_margin="8dp"
     app:column_count="2" />
