@@ -16,6 +16,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    lintOptions {
+        abortOnError false
+    }
 }
 ext {
 
@@ -23,7 +26,7 @@ ext {
     PUBLISH_ARTIFACT_ID = 'ultimateandroiduicomponent'
     PUBLISH_VERSION = '0.7.0'
 }
-apply from: 'android-release-aar.gradle'
+//apply from: 'android-release-aar.gradle'
 //apply from: 'maven-push.gradle'
 
 dependencies {
