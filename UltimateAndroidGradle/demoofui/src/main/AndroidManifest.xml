@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.marshalchen.common.demoofui">
+<manifest
+    package="com.marshalchen.common.demoofui"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- <uses-configuration android:reqTouchScreen="finger"/> -->
 
@@ -12,29 +13,29 @@
     <!-- android:name="android.hardware.touchscreen.multitouch" -->
     <!-- android:required="true"/> -->
 
-    <uses-permission android:name="com.android.vending.BILLING" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
-    <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.READ_LOGS" />
-    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
-    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
-    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
-    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <!-- <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"></uses-permission> -->
-    <uses-permission android:name="android.permission.ACCESS_GPS" />
-    <uses-permission android:name="android.permission.NFC" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_GPS"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
 
     <application
         android:name=".CommonApplication"
@@ -45,348 +46,348 @@
             android:name=".DemoOfUiActivity"
             android:label="@string/app_name">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".MaterialActivity"
-            android:theme="@style/Theme.MaterialTheme" />
+            android:theme="@style/Theme.MaterialTheme"/>
         <activity android:name=".SmoothProgressBarActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".dynamicgrid.example.DynamicGridActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".cooldraganddrop.CoolDragAndDropActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".stickygridheadersexample.StickGridItemListActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".listviewfilter.ui.ListViewFilterActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.FlipViewActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.PhotoViewActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
-        <activity android:name=".sampleModules.SquareProgressBarActivity" />
+        <activity android:name=".sampleModules.SquareProgressBarActivity"/>
         <activity android:name=".sampleModules.CircularBarActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".foldingDrawer.FoldingActivitys">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
-        <activity android:name=".foldingDrawer.FoldingDrawerLayoutActivity" />
-        <activity android:name=".foldingDrawer.FoldingLayoutActivity" />
-        <activity android:name=".foldingDrawer.FoldingPaneLayoutActivity" />
+        <activity android:name=".foldingDrawer.FoldingDrawerLayoutActivity"/>
+        <activity android:name=".foldingDrawer.FoldingLayoutActivity"/>
+        <activity android:name=".foldingDrawer.FoldingPaneLayoutActivity"/>
         <activity android:name=".foldableLayout.activities.FoldableListActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".foldableLayout.activities.UnfoldableDetailsActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.CalendarSquareActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.KenBurnsViewActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".discrollview.DiscrollActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.PanningViewActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".parallaxscrollexample.ParallaxScrollActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
-        <activity android:name=".parallaxscrollexample.SingleParallaxExpandableListView" />
-        <activity android:name=".parallaxscrollexample.SingleParallaxListView" />
-        <activity android:name=".parallaxscrollexample.SingleParallaxScrollView" />
-        <activity android:name=".parallaxscrollexample.MultipleParallaxExpandableListView" />
-        <activity android:name=".parallaxscrollexample.MultipleParallaxListView" />
-        <activity android:name=".parallaxscrollexample.MultipleParallaxScrollView" />
+        <activity android:name=".parallaxscrollexample.SingleParallaxExpandableListView"/>
+        <activity android:name=".parallaxscrollexample.SingleParallaxListView"/>
+        <activity android:name=".parallaxscrollexample.SingleParallaxScrollView"/>
+        <activity android:name=".parallaxscrollexample.MultipleParallaxExpandableListView"/>
+        <activity android:name=".parallaxscrollexample.MultipleParallaxListView"/>
+        <activity android:name=".parallaxscrollexample.MultipleParallaxScrollView"/>
         <activity android:name=".sampleModules.ProgressbarWheelActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".viewpagerSlidingTab.ViewpagerSlidingTabsActivity"
             android:theme="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".rebound.ReboundActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".rebound.ReboundActivitySimple">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.FaceCropActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".listviewanimations.ListAnimationActivity"
             android:theme="@style/Widget.AppCompat.Light.ActionBar.Solid">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
-        <activity android:name=".listviewanimations.ListAnimationListActivity" />
-        <activity android:name=".listviewanimations.GoogleCardsActivity" />
-        <activity android:name=".listviewanimations.GridViewActivity" />
-        <activity android:name=".listviewanimations.itemmanipulationexamples.AnimateAdditionActivity" />
-        <activity android:name=".listviewanimations.itemmanipulationexamples.DragAndDropActivity" />
-        <activity android:name=".listviewanimations.appearanceexamples.AppearanceExamplesActivity" />
-        <activity android:name=".listviewanimations.itemmanipulationexamples.ItemManipulationsExamplesActivity" />
-        <activity android:name=".listviewanimations.itemmanipulationexamples.ExpandableListItemActivity" />
-        <activity android:name=".listviewanimations.itemmanipulationexamples.SwipeDismissActivity" />
-        <activity android:name=".listviewanimations.itemmanipulationexamples.AnimateDismissActivity" />
+        <activity android:name=".listviewanimations.ListAnimationListActivity"/>
+        <activity android:name=".listviewanimations.GoogleCardsActivity"/>
+        <activity android:name=".listviewanimations.GridViewActivity"/>
+        <activity android:name=".listviewanimations.itemmanipulationexamples.AnimateAdditionActivity"/>
+        <activity android:name=".listviewanimations.itemmanipulationexamples.DragAndDropActivity"/>
+        <activity android:name=".listviewanimations.appearanceexamples.AppearanceExamplesActivity"/>
+        <activity android:name=".listviewanimations.itemmanipulationexamples.ItemManipulationsExamplesActivity"/>
+        <activity android:name=".listviewanimations.itemmanipulationexamples.ExpandableListItemActivity"/>
+        <activity android:name=".listviewanimations.itemmanipulationexamples.SwipeDismissActivity"/>
+        <activity android:name=".listviewanimations.itemmanipulationexamples.AnimateDismissActivity"/>
         <activity android:name=".sampleModules.PullSplashActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".jsoup.UtilsDemoActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.ViewServerActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".activitytransition.ActivityTransitionActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
-        <activity android:name=".activitytransition.ActivityTransitiorSecond" />
+        <activity android:name=".activitytransition.ActivityTransitiorSecond"/>
         <activity
             android:name=".sampleModules.JazzyViewActivity"
             android:theme="@style/Theme.AppCompat.Light">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".imageprocessingexample.ImageProcessingActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
-        <activity android:name=".imageprocessingexample.ImageProcessingGenericFilterExample" />
-        <activity android:name=".imageprocessingexample.ImageProcessingTwoInputfilterActivity" />
+        <activity android:name=".imageprocessingexample.ImageProcessingGenericFilterExample"/>
+        <activity android:name=".imageprocessingexample.ImageProcessingTwoInputfilterActivity"/>
         <activity android:name=".imageprocessingexample.ImageProcessingVideotoImageActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.TestHTML5WebView">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.CropExample">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
-        <activity android:name="com.marshalchen.common.uimodule.cropimage.CropImageActivity" />
+        <activity android:name="com.marshalchen.common.uimodule.cropimage.CropImageActivity"/>
         <activity android:name=".sampleModules.CropperSample">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.ImageFilterActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.MotionSampleActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".shapeimageview.ShapeImageViewActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.CustomShapeImageViewActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.MarqueeViewSample">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.SignaturePadActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.DrawableActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.AndroidWeekViewActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.FilckerAnimationListActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.ArcMenuActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.ExpandCircleProgressExampleActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".artbook.FreeFlowArtbookActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.FreeFlowPhotoGridActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.RecyclerViewSample">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".recyclerviewitemanimator.RecyclerViewItemAnimatorActivity"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.RippleEffectActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.FloatingActionButtonActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.FloatingActionButtonDemo">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
-        <activity android:name=".circularfloatingactionmenu.MenuInScrollViewActivity" />
+        <activity android:name=".circularfloatingactionmenu.MenuInScrollViewActivity"/>
         <activity android:name=".circularfloatingactionmenu.CircularFloatingActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
-        <activity android:name=".circularfloatingactionmenu.MenuWithCustomActionButtonActivity" />
-        <activity android:name=".circularfloatingactionmenu.MenuWithCustomAnimationActivity" />
-        <activity android:name=".circularfloatingactionmenu.MenuWithFABActivity" />
+        <activity android:name=".circularfloatingactionmenu.MenuWithCustomActionButtonActivity"/>
+        <activity android:name=".circularfloatingactionmenu.MenuWithCustomAnimationActivity"/>
+        <activity android:name=".circularfloatingactionmenu.MenuWithFABActivity"/>
         <activity
             android:name=".materialmenu.MaterialMenuToolbarActivity"
             android:theme="@style/Theme.MaterialTheme">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".materialmenu.HomeIconActivity"
-            android:theme="@style/MaterialMenuTheme" />
+            android:theme="@style/MaterialMenuTheme"/>
         <activity
             android:name=".materialmenu.MaterialMenuAppcompatActivity"
             android:theme="@style/MaterialMenuTheme">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".pulltozoomview.PullToZoomActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
-        <activity android:name=".pulltozoomview.PullToZoomListActivity" />
-        <activity android:name=".pulltozoomview.PullToZoomScrollActivity" />
+        <activity android:name=".pulltozoomview.PullToZoomListActivity"/>
+        <activity android:name=".pulltozoomview.PullToZoomScrollActivity"/>
 
         <activity android:name=".recyclerplayground.RecyclerViewPlayGroundActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".recyclerviewstickyheaders.RecyclerViewStickyHeadersActivity"
             android:theme="@style/Theme.MaterialTheme">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".slideactivity.SlideActivityActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
-        <activity android:name=".slideactivity.DetailActivity" />
+        <activity android:name=".slideactivity.DetailActivity"/>
 
         <provider
             android:name="android.support.v4.content.FileProvider"
@@ -395,604 +396,604 @@
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/filepaths" />
+                android:resource="@xml/filepaths"/>
         </provider>
 
         <activity
             android:name="com.marshalchen.common.uimodule.passcodelock.PasscodeUnlockActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" />
+            android:windowSoftInputMode="stateHidden"/>
         <activity
             android:name="com.marshalchen.common.uimodule.passcodelock.PasscodePreferencesActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity
             android:name="com.marshalchen.common.uimodule.passcodelock.PasscodeManagePasswordActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" />
+            android:windowSoftInputMode="stateHidden"/>
         <activity android:name=".sampleModules.GestureTouchActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".activityanimation.ActivityAnimationsActivity"
             android:theme="@style/AppTheme.Transparent">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".activityanimation.SecondActivity"
-            android:theme="@style/AppTheme.Transparent" />
+            android:theme="@style/AppTheme.Transparent"/>
         <activity
             android:name=".activityanimation.ThirdActivity"
-            android:theme="@style/AppTheme.Transparent" />
+            android:theme="@style/AppTheme.Transparent"/>
         <activity
             android:name=".activityanimation.DoorActivity"
-            android:theme="@style/AppTheme.Transparent" />
-        <activity android:name=".pullscrollview.PulldownViewActivity" />
+            android:theme="@style/AppTheme.Transparent"/>
+        <activity android:name=".pullscrollview.PulldownViewActivity"/>
         <activity android:name=".pullscrollview.PullScrollViewActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
-        <activity android:name=".pullscrollview.StretchViewActivity" />
+        <activity android:name=".pullscrollview.StretchViewActivity"/>
         <activity android:name=".sampleModules.CardsSwipedActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".showcaseview.ShowCaseSampleActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
-        <activity android:name=".showcaseview.animations.AnimationSampleActivity" />
-        <activity android:name=".showcaseview.legacy.MultipleShowcaseSampleActivity" />
-        <activity android:name=".showcaseview.SingleShotActivity" />
-        <activity android:name=".showcaseview.MemoryManagementTesting" />
+        <activity android:name=".showcaseview.animations.AnimationSampleActivity"/>
+        <activity android:name=".showcaseview.legacy.MultipleShowcaseSampleActivity"/>
+        <activity android:name=".showcaseview.SingleShotActivity"/>
+        <activity android:name=".showcaseview.MemoryManagementTesting"/>
         <activity android:name=".listbuddies.ListBuddiesActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".ResideMenuDemo.ResideMenuActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.AutofitTextViewActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.DraggableGridViewPagerTestActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.FloatLabelActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.WireFrameActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.TriangleFrameActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.RiseNumberActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.NiftyDialogActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.DifferentIconsActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".edgeeffectoverride.EdgeEffectActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
-        <activity android:name=".edgeeffectoverride.ExpandableListViewActivity" />
-        <activity android:name=".edgeeffectoverride.ListViewActivity" />
-        <activity android:name=".edgeeffectoverride.ScrollViewActivity" />
-        <activity android:name=".edgeeffectoverride.ViewPagerActivity" />
-        <activity android:name=".edgeeffectoverride.WebViewActivity" />
-        <activity android:name=".edgeeffectoverride.GridViewActivity" />
+        <activity android:name=".edgeeffectoverride.ExpandableListViewActivity"/>
+        <activity android:name=".edgeeffectoverride.ListViewActivity"/>
+        <activity android:name=".edgeeffectoverride.ScrollViewActivity"/>
+        <activity android:name=".edgeeffectoverride.ViewPagerActivity"/>
+        <activity android:name=".edgeeffectoverride.WebViewActivity"/>
+        <activity android:name=".edgeeffectoverride.GridViewActivity"/>
         <activity
             android:name=".sampleModules.ViewPagerTransformerActivity"
             android:theme="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".standUpTimer.ConfigureStandupTimer">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
-        <activity android:name=".standUpTimer.Help" />
-        <activity android:name=".standUpTimer.MeetingDetails" />
-        <activity android:name=".standUpTimer.Prefs" />
-        <activity android:name=".standUpTimer.StandupTimer" />
-        <activity android:name=".standUpTimer.TeamDetails" />
-        <activity android:name=".standUpTimer.TeamList" />
-        <activity android:name=".circularProgressButton.Sample1Activity" />
-        <activity android:name=".circularProgressButton.Sample2Activity" />
-        <activity android:name=".circularProgressButton.Sample3Activity" />
-        <activity android:name=".circularProgressButton.Sample4Activity" />
-        <activity android:name=".circularProgressButton.Sample5Activity" />
+        <activity android:name=".standUpTimer.Help"/>
+        <activity android:name=".standUpTimer.MeetingDetails"/>
+        <activity android:name=".standUpTimer.Prefs"/>
+        <activity android:name=".standUpTimer.StandupTimer"/>
+        <activity android:name=".standUpTimer.TeamDetails"/>
+        <activity android:name=".standUpTimer.TeamList"/>
+        <activity android:name=".circularProgressButton.Sample1Activity"/>
+        <activity android:name=".circularProgressButton.Sample2Activity"/>
+        <activity android:name=".circularProgressButton.Sample3Activity"/>
+        <activity android:name=".circularProgressButton.Sample4Activity"/>
+        <activity android:name=".circularProgressButton.Sample5Activity"/>
         <activity android:name=".circularProgressButton.CircularProgressButtonActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.PulltoZoomListViewActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".quickreturnlistview.QuickReturnListViewActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
-        <activity android:name=".staggeredgridview.StaggeredGridActivity" />
-        <activity android:name=".staggeredgridview.ListViewActivity" />
-        <activity android:name=".staggeredgridview.StaggeredGridActivityFragment" />
-        <activity android:name=".staggeredgridview.StaggeredGridEmptyViewActivity" />
+        <activity android:name=".staggeredgridview.StaggeredGridActivity"/>
+        <activity android:name=".staggeredgridview.ListViewActivity"/>
+        <activity android:name=".staggeredgridview.StaggeredGridActivityFragment"/>
+        <activity android:name=".staggeredgridview.StaggeredGridEmptyViewActivity"/>
         <activity android:name=".staggeredgridview.StaggeredGridViewActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.DropDownListViewDemo">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.FlowTextViewActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.GoogleProgressBarActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.NumberProgressBarActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".fancyCoverFlow.FancyCoverFlowActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
-        <activity android:name=".fancyCoverFlow.example.SimpleExample" />
-        <activity android:name=".fancyCoverFlow.example.ViewGroupExample" />
-        <activity android:name=".fancyCoverFlow.example.ViewGroupReflectionExample" />
-        <activity android:name=".fancyCoverFlow.example.XmlInflateExample" />
-        <activity android:name=".dragSortListview.ArbItemSizeDSLV" />
-        <activity android:name=".dragSortListview.Launcher" />
+        <activity android:name=".fancyCoverFlow.example.SimpleExample"/>
+        <activity android:name=".fancyCoverFlow.example.ViewGroupExample"/>
+        <activity android:name=".fancyCoverFlow.example.ViewGroupReflectionExample"/>
+        <activity android:name=".fancyCoverFlow.example.XmlInflateExample"/>
+        <activity android:name=".dragSortListview.ArbItemSizeDSLV"/>
+        <activity android:name=".dragSortListview.Launcher"/>
         <activity android:name=".dragSortListview.MultipleChoiceListView">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
-        <activity android:name=".dragSortListview.Sections" />
-        <activity android:name=".dragSortListview.BGHandle" />
-        <activity android:name=".dragSortListview.CursorDSLV" />
+        <activity android:name=".dragSortListview.Sections"/>
+        <activity android:name=".dragSortListview.BGHandle"/>
+        <activity android:name=".dragSortListview.CursorDSLV"/>
         <activity android:name=".dragSortListview.SingleChoiceListView">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
-        <activity android:name=".dragSortListview.TestBedDSLV" />
-        <activity android:name=".dragSortListview.WarpDSLV" />
-        <activity android:name=".fadingactionbar.HeaderOverlayActivity" />
+        <activity android:name=".dragSortListview.TestBedDSLV"/>
+        <activity android:name=".dragSortListview.WarpDSLV"/>
+        <activity android:name=".fadingactionbar.HeaderOverlayActivity"/>
         <activity android:name=".fadingactionbar.HomeActivity">
 
         </activity>
-        <activity android:name=".fadingactionbar.LightActionBarActivity" />
-        <activity android:name=".fadingactionbar.ListViewActivity" />
-        <activity android:name=".fadingactionbar.LightBackgroundActivity" />
-        <activity android:name=".fadingactionbar.NavigationDrawerActivity" />
-        <activity android:name=".fadingactionbar.NoParallaxActivity" />
-        <activity android:name=".fadingactionbar.SampleFragmentActivity" />
-        <activity android:name=".fadingactionbar.ScrollViewActivity" />
-        <activity android:name=".fadingactionbar.ShortContentActivity" />
-        <activity android:name=".fadingactionbar.WebViewActivity" />
+        <activity android:name=".fadingactionbar.LightActionBarActivity"/>
+        <activity android:name=".fadingactionbar.ListViewActivity"/>
+        <activity android:name=".fadingactionbar.LightBackgroundActivity"/>
+        <activity android:name=".fadingactionbar.NavigationDrawerActivity"/>
+        <activity android:name=".fadingactionbar.NoParallaxActivity"/>
+        <activity android:name=".fadingactionbar.SampleFragmentActivity"/>
+        <activity android:name=".fadingactionbar.ScrollViewActivity"/>
+        <activity android:name=".fadingactionbar.ShortContentActivity"/>
+        <activity android:name=".fadingactionbar.WebViewActivity"/>
         <activity android:name=".sampleModules.SwipeRefreshLayoutDemo">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.UltimateListviewActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".swipelayoutdemo.SwipeLayoutActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
-        <activity android:name=".swipelayoutdemo.GridViewExample" />
-        <activity android:name=".swipelayoutdemo.ListViewExample" />
-        <activity android:name=".swipelayoutdemo.NestedExample" />
+        <activity android:name=".swipelayoutdemo.GridViewExample"/>
+        <activity android:name=".swipelayoutdemo.ListViewExample"/>
+        <activity android:name=".swipelayoutdemo.NestedExample"/>
         <activity android:name=".androidanimationsdemo.AndroidAnimationsDemoActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
-        <activity android:name=".androidanimationsdemo.ExampleActivity" />
+        <activity android:name=".androidanimationsdemo.ExampleActivity"/>
         <activity android:name=".easingDemo.EasingActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.JumpingBeansActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.AndroidViewHoverActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".slider.SliderActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.CalendarListViewActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".easyandroidanimations.EasyAnimationListActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".easyandroidanimations.AnimationDetailActivity"
-            android:theme="@style/android:Theme.Holo.Light.DarkActionBar" />
+            android:theme="@style/android:Theme.Holo.Light.DarkActionBar"/>
         <activity
             android:name=".roundedimageview.RoundedImageViewActivity"
             android:theme="@style/android:Theme.Holo.Light.DarkActionBar">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".BlurNavigationDrawer.BlurNavigationDrawerActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".blurdialogfragment.BlurDialogActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
-        <activity android:name=".blurdialogfragment.SampleActionBarActivity" />
-        <activity android:name=".blurdialogfragment.SampleFullScreenActivity" />
+        <activity android:name=".blurdialogfragment.SampleActionBarActivity"/>
+        <activity android:name=".blurdialogfragment.SampleFullScreenActivity"/>
         <activity
             android:name=".sampleModules.CustomPullToRefreshActivity"
             android:theme="@style/android:Theme.Holo.Light.DarkActionBar">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.MaterialEditTextActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.RippleBackgroundActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".pagerSlidingTabStrip.PagerSlidingTabStripActivity"
             android:theme="@style/PagerSlidingTabStrip">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".materialripple.MaterialRippleActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
-        <activity android:name=".materialripple.MaterialRippleListActivity" />
+        <activity android:name=".materialripple.MaterialRippleListActivity"/>
         <activity android:name=".sampleModules.CircleProgressActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".materialdesigndemo.MaterialDesignActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
-        <activity android:name=".materialdesigndemo.ButtonsActivity" />
-        <activity android:name=".materialdesigndemo.ProgressActivity" />
-        <activity android:name=".materialdesigndemo.SwitchActivity" />
-        <activity android:name=".materialdesigndemo.WidgetActivity" />
+        <activity android:name=".materialdesigndemo.ButtonsActivity"/>
+        <activity android:name=".materialdesigndemo.ProgressActivity"/>
+        <activity android:name=".materialdesigndemo.SwitchActivity"/>
+        <activity android:name=".materialdesigndemo.WidgetActivity"/>
         <activity
             android:name=".smoothswitch.SwitchAnimationActivity"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
-        <activity android:name=".smoothswitch.FragmentDemo" />
-        <activity android:name=".smoothswitch.GridActivity" />
-        <activity android:name=".smoothswitch.ListActivity" />
+        <activity android:name=".smoothswitch.FragmentDemo"/>
+        <activity android:name=".smoothswitch.GridActivity"/>
+        <activity android:name=".smoothswitch.ListActivity"/>
         <activity android:name=".rippleDrawable.RippleDrawableActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.MaterialProgressWheelActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.MenuCircleShowingAnimationActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".switchbuttondemo.SwitchButtonActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".switchbuttondemo.UseActivity"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
         <activity
             android:name=".switchbuttondemo.StyleActivity"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
         <activity
             android:name=".sampleModules.MaterialTabsWithIconsActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".sampleModules.MaterialTabTextActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.MaterialListViewActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.PatioDemoActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.CreditScrollDemoActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".observablescrollview.ObservableScrollViewActivity"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".observablescrollview.ViewPagerTabListViewActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="com.marshalchen.common.demoofui" />
+                <category android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".observablescrollview.ToolbarControlRecyclerViewActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="com.marshalchen.common.demoofui" />
+                <category android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".observablescrollview.ToolbarControlScrollViewActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="com.marshalchen.common.demoofui" />
+                <category android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".observablescrollview.ToolbarControlWebViewActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="com.marshalchen.common.demoofui" />
+                <category android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".observablescrollview.AboutActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity android:name=".observablescrollview.ActionBarControlGridViewActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="com.marshalchen.common.demoofui" />
+                <category android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".observablescrollview.ActionBarControlListViewActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="com.marshalchen.common.demoofui" />
+                <category android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".observablescrollview.ActionBarControlRecyclerViewActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="com.marshalchen.common.demoofui" />
+                <category android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".observablescrollview.ActionBarControlScrollViewActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="com.marshalchen.common.demoofui" />
+                <category android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".observablescrollview.ActionBarControlWebViewActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="com.marshalchen.common.demoofui" />
+                <category android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".observablescrollview.FlexibleSpaceToolbarScrollViewActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="com.marshalchen.common.demoofui" />
+                <category android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".observablescrollview.ScrollFromBottomListViewActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="com.marshalchen.common.demoofui" />
+                <category android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".observablescrollview.ScrollFromBottomRecyclerViewActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="com.marshalchen.common.demoofui" />
+                <category android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".observablescrollview.ViewPagerTabActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="com.marshalchen.common.demoofui" />
+                <category android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".observablescrollview.ViewPagerTabScrollViewActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="com.marshalchen.common.demoofui" />
+                <category android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".ultraPullToRefresh.UltraPullToRefreshActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".ultraPullToRefresh.UltraPullToRefreshStoreHouseActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.WaveViewActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".androidprogresslayout.ProgressLayoutActivity"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".sampleModules.DiscreteSeekBarActivity"
             android:theme="@style/android:Theme.Light">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".matchview.MatchViewActivity"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.TimelyViewActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.TransitionEverywhereActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".pullMenuItem.ProgressMenuItemActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.AnimationUtilsDemo">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity
@@ -1000,44 +1001,44 @@
             android:label="@string/title_activity_how_to_use"></activity>
         <activity android:name=".sampleModules.SwipeCardActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.DraggableFlagViewActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.RoundCornerProgressBarActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".ultimaterecyclerview.UltimateRecyclerViewActivity"
             android:theme="@style/UltimateRecyclerviewTheme">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.ShimmerFacebookActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.SearchDrawableActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".circularimageview.CircularImageViewActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".snackbar.SnackbarSampleActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".snackbar.SnackbarImmersiveModeSampleActivity"></activity>
@@ -1047,43 +1048,57 @@
         <activity android:name=".snackbar.SnackbarShowInDialogSampleActivity"></activity>
         <activity android:name=".labelview.LabelViewActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".labelview.ListViewActivity"></activity>
 
         <activity android:name=".sampleModules.MultiImageSelectorActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name="com.marshalchen.common.uimodule.multi_image_selector.MultiImageSelectorActivity"></activity>
 
         <activity android:name=".flipviewpager.activity.FlipViewPagerFriendActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
 
         <activity android:name=".kugoulayout.KugouLayoutActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".kugoulayout.KugouLayoutActivityDemo">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".sampleModules.LoadToastLibActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
-
+        <activity android:name=".appintroexample.AppintroActivity">
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".appintroexample.animations.CustomAnimation">
+        </activity>
+        <activity android:name=".appintroexample.animations.FadeAnimation">
+        </activity>
+        <activity android:name=".appintroexample.CustomIntro">
+        </activity>
+        <activity android:name=".appintroexample.DefaultIntro">
+        </activity>
+        <activity android:name=".appintroexample.SecondLayoutIntro">
+        </activity>
         <activity android:name=".materialAnimations.MaterialAnimationActivity">
             <intent-filter>
-                <action android:name="com.marshalchen.common.demoofui" />
+                <action android:name="com.marshalchen.common.demoofui"/>
             </intent-filter>
         </activity>
         <activity android:name=".materialAnimations.DetailActivity1">
@@ -1095,8 +1110,13 @@
         <activity android:name=".materialAnimations.DetailActivity3">
 
         </activity>
-        <service android:name=".pullMenuItem.ReloadIntentService" android:exported="false"/>
-        <service android:name=".switchbuttondemo.UseActivity$LongService" android:exported="false"/>
+
+        <service
+            android:name=".pullMenuItem.ReloadIntentService"
+            android:exported="false"/>
+        <service
+            android:name=".switchbuttondemo.UseActivity$LongService"
+            android:exported="false"/>
     </application>
 
 
