@@ -28,7 +28,7 @@
     <array name="paintings_images">
         <item>@drawable/test</item>
         <item>@drawable/test_back</item>
-        <item>@drawable/ic_launcher</item>
+        <item>@drawable/test</item>
         <item>@drawable/ico_arrow_grey2x</item>
         <item>@drawable/ic_action_search</item>
     </array>

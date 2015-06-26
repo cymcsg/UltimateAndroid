@@ -3,7 +3,8 @@ package com.marshalchen.common.commonUtils.urlUtils;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.Handler;
-import com.nostra13.universalimageloader.cache.disc.impl.UnlimitedDiscCache;
+
+import com.nostra13.universalimageloader.cache.disc.impl.UnlimitedDiskCache;
 import com.nostra13.universalimageloader.cache.disc.naming.HashCodeFileNameGenerator;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
@@ -62,7 +63,7 @@ public class UniversalImageLoader {
 //                .memoryCache(new LruMemoryCache(2 * 1024 * 1024))
 //                .memoryCacheSize(2 * 1024 * 1024)
                 .memoryCacheSizePercentage(13) // default
-                .diskCache(new UnlimitedDiscCache(cacheDir)) // default
+                .diskCache(new UnlimitedDiskCache(cacheDir)) // default
 //                .discCacheSize(50 * 1024 * 1024)
                 .diskCacheFileCount(1000)
                 .diskCacheFileNameGenerator(new HashCodeFileNameGenerator()) // default

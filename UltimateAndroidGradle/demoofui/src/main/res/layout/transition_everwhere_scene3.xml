@@ -19,7 +19,7 @@
         android:layout_height="100dp"
         android:scaleType="fitXY"
         android:layout_alignParentBottom="true"
-        android:src="@drawable/ic_launcher"/>
+        android:src="@drawable/test"/>
 
     <View
         android:id="@+id/transition_oval"

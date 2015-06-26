@@ -16,6 +16,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    lintOptions {
+        abortOnError false
+    }
 }
 ext {
 
@@ -23,7 +26,7 @@ ext {
     PUBLISH_ARTIFACT_ID = 'ultimateandroiduicomponent'
     PUBLISH_VERSION = '0.7.0'
 }
-apply from: 'android-release-aar.gradle'
+//apply from: 'android-release-aar.gradle'
 //apply from: 'maven-push.gradle'
 
 dependencies {
@@ -36,6 +39,7 @@ dependencies {
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.yalantis:flipviewpager:1.0.0'
     compile 'net.steamcrafted:load-toast:1.0.6'
+    compile 'com.github.paolorotolo:appintro:1.4.0'
 
 
 }

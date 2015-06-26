@@ -16,6 +16,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    lintOptions {
+        abortOnError false
+    }
 }
 ext {
 
@@ -23,7 +26,7 @@ ext {
     PUBLISH_ARTIFACT_ID = 'ultimateandroiduilollipop'
     PUBLISH_VERSION = '0.7.0'
 }
-apply from: 'android-release-aar.gradle'
+//apply from: 'android-release-aar.gradle'
 //apply from: 'maven-push.gradle'
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -34,7 +37,7 @@ dependencies {
     compile 'com.skyfishjy.ripplebackground:library:1.0.1'
     compile 'com.jpardogo.materialtabstrip:library:1.0.3'
     compile 'com.github.markushi:android-ui:1.2'
-    compile 'com.github.dexafree:materiallist:1.2.0'
+    compile 'com.github.dexafree:materiallist:2.4.3'
     compile "com.github.andkulikov:transitions-everywhere:1.2.1"
     compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
     compile(group: 'com.github.navasmdc', name: 'MaterialDesign', version: '1.0', ext: 'aar')

@@ -9,7 +9,7 @@
 
     <TextView
         android:id="@+id/number"
-        android:background="@drawable/ic_launcher"
+        android:background="@drawable/test"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textColor="@color/ripple_drawable_example_colors_state_text"
