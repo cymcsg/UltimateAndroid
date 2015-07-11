@@ -11,4 +11,13 @@
         <attr name="mm_strokeWidth" format="integer"/>
         <attr name="mm_rtlEnabled" format="boolean"/>
     </declare-styleable>
+
+
+    <style name="ParallaxSwipeBackTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowActionBar">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
 </resources>
