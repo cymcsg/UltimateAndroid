@@ -228,7 +228,7 @@ HttpUtilsAsync.get("http://www.google.com", new AsyncHttpResponseHandler() {
 Post request:
 
 ``` java
-HttpUtilsAsync.post("http://www.google.com", new AsyncHttpResponseHandler() {
+HttpUtilsAsync.post("http://www.google.com", params,new AsyncHttpResponseHandler() {
 
   @Override
   public void onStart() {

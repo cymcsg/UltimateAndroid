@@ -1111,6 +1111,17 @@
 
         </activity>
 
+
+        <activity android:name=".parallaxswipeback.ParallaxSwipeBackDemoActivity" android:theme="@style/ParallaxSwipeBackTheme">
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".parallaxswipeback.ParallaxSwipeBackNextActivity" android:theme="@style/ParallaxSwipeBackTheme">
+
+        </activity>
+
+
         <service
             android:name=".pullMenuItem.ReloadIntentService"
             android:exported="false"/>
