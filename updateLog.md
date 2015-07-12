@@ -1,18 +1,35 @@
 
 ##Update：
 
-2014.4.10 
+2015.6 
+
+add [com.github.paolorotolo:appintro](https://github.com/PaoloRotolo/AppIntro)
+       
+add  [demo of parallax swipe back](https://github.com/bushijie/ParallaxSwipeBack)
+       
+
+2015.5 
+
+add [com.nispok:snackbar](https://github.com/nispok/snackbar)
+ 
+add [com.lid.labelview](https://github.com/linger1216/labelview)
+
+add [kugou layout](https://github.com/zhaozhentao/KugouLayout)
+
+
+2015.4.10 
+
 ######Divide UltimateAndroidUi project into four sub-projects
 
-2014.3.27 fix some bugs 
+2015.3.27 fix some bugs 
 
-2014.3.26 add [SearchAnimation](https://github.com/NiaNingXue/SearchAnimation)
+2015.3.26 add [SearchAnimation](https://github.com/NiaNingXue/SearchAnimation)
 
 add [Shimmer](https://github.com/facebook/shimmer-android)
 
-2014.3.9 add [UltimateRecyclerView](https://github.com/cymcsg/UltimateRecyclerView)
+2015.3.9 add [UltimateRecyclerView](https://github.com/cymcsg/UltimateRecyclerView)
 
-2014.1.6 reconstruct utils
+2015.1.6 reconstruct utils
 
 2014.12.16 add [TimelyView](https://github.com/adnan-SM/TimelyTextView)
 
