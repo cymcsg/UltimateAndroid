@@ -41,5 +41,5 @@ dependencies {
     compile 'net.steamcrafted:load-toast:1.0.6'
     compile 'com.github.paolorotolo:appintro:1.4.0'
 
-
+    compile 'ch.halcyon:driveimageview:1.0.0'
 }
