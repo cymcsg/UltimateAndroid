@@ -78,4 +78,20 @@
     <color name="sienna">#EB6460</color>
     <color name="purple">#7c57e4</color>
     <color name="pink">#ff4284</color>
+
+
+    <color name="red_dark_primary_color">#D32F2F</color>
+    <color name="red_primary_color">#F44336</color>
+    <color name="red_light_primary_color">#FFCDD2</color>
+    <color name="red_text_icon_color">#FFFFFF</color>
+
+    <color name="blue_primary_color">#2196F3</color>
+    <color name="blue_light_primary_color">#BBDEFB</color>
+    <color name="blue_dark_primary_color">#1976D2</color>
+    <color name="blue_text_icon_color">#FFFFFF</color>
+
+    <color name="green_dark_primary_color">#388E3C</color>
+    <color name="green_primary_color">#4CAF50</color>
+    <color name="green_light_primary_color">#C8E6C9</color>
+    <color name="green_text_icon_color">#FFFFFF</color>
 </resources>

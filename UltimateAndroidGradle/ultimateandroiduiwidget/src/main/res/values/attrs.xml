@@ -302,4 +302,19 @@
 
     <item type="id" name="kugou_layout_md__drawer"/>
     <item type="id" name="kugou_layout_md__content"/>
+
+
+    <declare-styleable name="DownloadProgressView">
+        <attr name="dpv_circleRadius" format="dimension"/>
+        <attr name="dpv_strokeWidth" format="dimension"/>
+        <attr name="dpv_lineWidth" format="dimension"/>
+        <attr name="dpv_progressDuration" format="integer"/>
+        <attr name="dpv_resultDuration" format="integer"/>
+        <attr name="dpv_progressBackgroundColor" format="color"/>
+        <attr name="dpv_drawingColor" format="color"/>
+        <attr name="dpv_progressColor" format="color"/>
+        <attr name="dpv_circleBackgroundColor" format="color"/>
+        <attr name="dpv_overshootValue" format="float"/>
+    </declare-styleable>
+
 </resources>

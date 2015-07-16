@@ -1139,6 +1139,12 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".sampleModules.DownloadProgressbarActivity"  >
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui"/>
+            </intent-filter>
+        </activity>
+
         <service
             android:name=".pullMenuItem.ReloadIntentService"
             android:exported="false"/>
