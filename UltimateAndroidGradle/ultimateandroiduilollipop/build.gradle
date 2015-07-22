@@ -40,5 +40,6 @@ dependencies {
     compile 'com.github.dexafree:materiallist:2.4.3'
     compile "com.github.andkulikov:transitions-everywhere:1.2.1"
     compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    compile 'com.wdullaer:materialdatetimepicker:1.4.1'
     compile(group: 'com.github.navasmdc', name: 'MaterialDesign', version: '1.0', ext: 'aar')
 }

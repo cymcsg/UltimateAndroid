@@ -376,4 +376,10 @@
     </style>
 
     <style name="FlipViewPagerLinearLayout" />
+
+    <style name="MaterialDataTimePickerTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#009688</item>
+        <item name="colorPrimaryDark">#00796b</item>
+    </style>
+
 </resources>

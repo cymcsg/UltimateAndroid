@@ -1111,6 +1111,34 @@
 
         </activity>
 
+
+        <activity android:name=".parallaxswipeback.ParallaxSwipeBackDemoActivity" android:theme="@style/ParallaxSwipeBackTheme">
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".parallaxswipeback.ParallaxSwipeBackNextActivity" android:theme="@style/ParallaxSwipeBackTheme">
+
+        </activity>
+
+        <activity android:name=".sampleModules.MaterialDataTimePickerActivity" >
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".percentsamples.PercentSampleActivity" android:theme="@style/MaterialDataTimePickerTheme" >
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".driveimageview.DriveImageViewActivity"  >
+            <intent-filter>
+                <action android:name="com.marshalchen.common.demoofui"/>
+            </intent-filter>
+        </activity>
+
         <service
             android:name=".pullMenuItem.ReloadIntentService"
             android:exported="false"/>

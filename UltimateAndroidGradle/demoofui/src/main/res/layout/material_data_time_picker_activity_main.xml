@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+   >
+
+    <TextView
+        android:id="@+id/time_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="selected_time"/>
+
+    <Button
+        android:id="@+id/time_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pick_time"/>
+
+    <CheckBox
+        android:id="@+id/mode_24_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mode_24_hours" />
+    <CheckBox
+        android:id="@+id/mode_dark_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mode_dark_time" />
+
+    <TextView
+        android:id="@+id/date_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="selected_date"/>
+
+    <Button
+        android:id="@+id/date_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pick_date"/>
+
+    <CheckBox
+        android:id="@+id/mode_dark_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mode_dark_date" />
+
+</LinearLayout>

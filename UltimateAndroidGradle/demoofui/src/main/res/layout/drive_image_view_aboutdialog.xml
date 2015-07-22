@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Help / About"
+        android:id="@+id/textView8"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="sans-serif" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="This application is a sample on how you can customize the driveimageview library.\n\nIf you have problems with displaying the DriveImageView&apos;s then please send me an email with a description and a screenshot. You can also add new feature-requests to the GitHub Repository.\n\nThe images used in these application are from deathtothestockphoto.com."
+        android:id="@+id/textView9"
+        android:layout_below="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_marginTop="6dp"
+        android:fontFamily="sans-serif-light" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thanks!"
+        android:id="@+id/about_submit"
+        style="@android:style/Holo.Light.ButtonBar"
+        android:layout_below="@+id/gridLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="6dp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentStart="true"
+        android:columnCount="2"
+        android:rowCount="4"
+        android:layout_marginTop="6dp"
+        android:id="@+id/gridLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Version:"
+            android:id="@+id/textView12"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:textStyle="bold"
+            android:layout_margin="3dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last updated:"
+            android:id="@+id/textView13"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:textStyle="bold"
+            android:layout_margin="3dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30.6.2015"
+            android:id="@+id/textView16"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_margin="3dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Libraries:"
+            android:id="@+id/textView14"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:textStyle="bold"
+            android:layout_margin="3dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.0.0"
+            android:id="@+id/textView15"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_margin="3dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="com.android.support:appcompat-v7\nch.halcyon:driveimageview"
+            android:id="@+id/textView17"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_margin="3dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:id="@+id/textView10"
+            android:textStyle="bold"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_margin="3dp" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ted@halcyon.ch"
+            android:id="@+id/textView11"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_margin="3dp" />
+    </GridLayout>
+
+</RelativeLayout>
