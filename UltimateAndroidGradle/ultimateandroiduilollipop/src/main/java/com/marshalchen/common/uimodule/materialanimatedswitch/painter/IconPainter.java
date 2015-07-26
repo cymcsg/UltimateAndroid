@@ -38,7 +38,7 @@ public abstract class IconPainter implements SwitchInboxPinnedPainter {
   }
 
   protected void initBitmap() {
-    int iconSize = (int) context.getResources().getDimension(R.dimen.icon_size);
+    int iconSize = (int) context.getResources().getDimension(R.dimen.mas_icon_size);
     iconBitmap = Bitmap.createScaledBitmap(iconBitmap, iconSize, iconSize, false);
     imageHeight = iconBitmap.getHeight();
     imageWidth = iconBitmap.getWidth();

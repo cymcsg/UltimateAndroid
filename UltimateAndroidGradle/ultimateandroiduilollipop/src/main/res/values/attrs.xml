@@ -9,4 +9,19 @@
         <attr name="colors" format="reference"/>
     </declare-styleable>
 
+
+    <declare-styleable name="materialAnimatedSwitch">
+        <attr name="mas_icon_release"
+              format="reference"/>
+        <attr name="mas_icon_press"
+              format="reference"/>
+        <attr name="mas_base_release_color"
+              format="color"/>
+        <attr name="mas_base_press_color"
+              format="color"/>
+        <attr name="mas_ball_release_color"
+              format="color"/>
+        <attr name="mas_ball_press_color"
+              format="color"/>
+    </declare-styleable>
 </resources>

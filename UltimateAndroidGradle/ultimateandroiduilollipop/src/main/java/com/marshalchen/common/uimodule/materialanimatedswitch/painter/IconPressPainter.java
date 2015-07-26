@@ -36,8 +36,8 @@ public class IconPressPainter extends IconPainter {
   }
 
   private void initValueAnimator() {
-    int movementAnimationDuration = context.getResources().getInteger(R.integer.animation_duration);
-    int exitAnimationDuration = context.getResources().getInteger(R.integer.exitAnimator);
+    int movementAnimationDuration = context.getResources().getInteger(R.integer.mas_animation_duration);
+    int exitAnimationDuration = context.getResources().getInteger(R.integer.mas_exitAnimator);
 
     enterAnimator = ValueAnimator.ofInt();
     enterAnimator.setDuration(movementAnimationDuration);
@@ -60,15 +60,15 @@ public class IconPressPainter extends IconPainter {
   private void initValues() {
     middle = height / 2;
     iconMargin = imageWidth / 2;
-    ballRadius = (int) context.getResources().getDimension(R.dimen.ball_radius);
+    ballRadius = (int) context.getResources().getDimension(R.dimen.mas_ball_radius);
     iconXPosition = (width - ballRadius) + iconMargin;
   }
 
   private void initAnimationValues() {
     enterAnimationStartValue =
-        (int) context.getResources().getDimension(R.dimen.enterAnimationStartValue);
+        (int) context.getResources().getDimension(R.dimen.mas_enterAnimationStartValue);
     exitAnimationExitValue =
-        (int) context.getResources().getDimension(R.dimen.exitAnimationExitValue);
+        (int) context.getResources().getDimension(R.dimen.mas_exitAnimationExitValue);
   }
 
   @Override public void setColor(int color) {

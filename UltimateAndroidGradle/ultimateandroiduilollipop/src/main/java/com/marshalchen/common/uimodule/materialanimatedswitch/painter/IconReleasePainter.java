@@ -43,11 +43,11 @@ public class IconReleasePainter extends IconPainter {
   }
 
   private void initValueAnimator() {
-    int movementAnimationDuration = context.getResources().getInteger(R.integer.animation_duration);
+    int movementAnimationDuration = context.getResources().getInteger(R.integer.mas_animation_duration);
     int alphaAnimationDuration =
-        context.getResources().getInteger(R.integer.alpha_animation_duration);
+        context.getResources().getInteger(R.integer.mas_alpha_animation_duration);
     int curveCompensation =
-        context.getResources().getInteger(R.integer.animation_curvature_compensation);
+        context.getResources().getInteger(R.integer.mas_animation_curvature_compensation);
 
     enterXAnimator = ValueAnimator.ofInt(0, width);
     enterXAnimator.setDuration(movementAnimationDuration);
@@ -132,9 +132,9 @@ public class IconReleasePainter extends IconPainter {
   }
 
   private void initAnimationsValues() {
-    exitXAnimationStart = (int) context.getResources().getDimension(R.dimen.exitXAnimationStart);
-    exitYAnimatorFinish = (int) context.getResources().getDimension(R.dimen.exitYAnimatorFinish);
-    enterYAnimationStart = (int) context.getResources().getDimension(R.dimen.enterYAnimationStart);
+    exitXAnimationStart = (int) context.getResources().getDimension(R.dimen.mas_exitXAnimationStart);
+    exitYAnimatorFinish = (int) context.getResources().getDimension(R.dimen.mas_exitYAnimatorFinish);
+    enterYAnimationStart = (int) context.getResources().getDimension(R.dimen.mas_enterYAnimationStart);
   }
 
   /**

@@ -56,8 +56,8 @@ public class BallPainter implements SwitchInboxPinnedPainter {
     toBgPainter.setStyle(Paint.Style.FILL);
     toBgPainter.setAntiAlias(true);
     toBgPainter.setAlpha(0);
-    radius = (int) context.getResources().getDimension(R.dimen.ball_radius);
-    ballStartPositionX = (int) context.getResources().getDimension(R.dimen.ball_start_position);
+    radius = (int) context.getResources().getDimension(R.dimen.mas_ball_radius);
+    ballStartPositionX = (int) context.getResources().getDimension(R.dimen.mas_ball_start_position);
     ballPositionX = padding;
   }
 

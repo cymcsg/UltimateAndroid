@@ -9,4 +9,9 @@
     </integer-array>
 
     <integer name="default_type">0</integer>
+
+    <integer name="mas_animation_duration">400</integer>
+    <integer name="mas_alpha_animation_duration">200</integer>
+    <integer name="mas_animation_curvature_compensation">14</integer>
+    <integer name="mas_exitAnimator">200</integer>
 </resources>

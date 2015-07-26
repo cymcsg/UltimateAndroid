@@ -93,20 +93,20 @@ public class MaterialAnimatedSwitch extends View {
   }
 
   private void initAttributes(TypedArray attributes) {
-    baseColorRelease = attributes.getColor(R.styleable.materialAnimatedSwitch_base_release_color,
+    baseColorRelease = attributes.getColor(R.styleable.materialAnimatedSwitch_mas_base_release_color,
         baseColorRelease);
     baseColorPress =
-        attributes.getColor(R.styleable.materialAnimatedSwitch_base_press_color, baseColorPress);
-    ballColorRelease = attributes.getColor(R.styleable.materialAnimatedSwitch_ball_release_color,
+        attributes.getColor(R.styleable.materialAnimatedSwitch_mas_base_press_color, baseColorPress);
+    ballColorRelease = attributes.getColor(R.styleable.materialAnimatedSwitch_mas_ball_release_color,
         ballColorRelease);
     ballColorPress =
-        attributes.getColor(R.styleable.materialAnimatedSwitch_ball_press_color, ballColorPress);
+        attributes.getColor(R.styleable.materialAnimatedSwitch_mas_ball_press_color, ballColorPress);
     pressIcon = BitmapFactory.decodeResource(getResources(),
-        attributes.getResourceId(R.styleable.materialAnimatedSwitch_icon_press,
-            R.drawable.tack_save_button_32_blue));
+        attributes.getResourceId(R.styleable.materialAnimatedSwitch_mas_icon_press,
+            R.drawable.mas_tack_save_button_32_blue));
     releaseIcon = BitmapFactory.decodeResource(getResources(),
-        attributes.getResourceId(R.styleable.materialAnimatedSwitch_icon_release,
-            R.drawable.tack_save_button_32_white));
+        attributes.getResourceId(R.styleable.materialAnimatedSwitch_mas_icon_release,
+            R.drawable.mas_tack_save_button_32_white));
   }
 
   private void initObservables() {
