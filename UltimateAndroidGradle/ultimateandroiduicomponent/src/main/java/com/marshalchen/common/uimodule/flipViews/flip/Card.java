@@ -24,10 +24,10 @@ import javax.microedition.khronos.opengles.GL10;
 import java.nio.FloatBuffer;
 import java.nio.ShortBuffer;
 
-import static android.util.FloatMath.cos;
-import static android.util.FloatMath.sin;
 import static com.marshalchen.common.uimodule.flipViews.flip.FlipRenderer.checkError;
 import static com.marshalchen.common.uimodule.flipViews.utils.TextureUtils.*;
+import static java.lang.Math.cos;
+import static java.lang.Math.sin;
 import static javax.microedition.khronos.opengles.GL10.*;
 
 public class Card {
@@ -202,8 +202,8 @@ public class Card {
 
       if (axis == AXIS_TOP) {
         if (orientationVertical) {
-          h = (cardVertices[Y_00] - cardVertices[Y_01]) * (1.0f - cos(d2r(angle)));
-          z = (cardVertices[Y_00] - cardVertices[Y_01]) * sin(d2r(angle));
+          h = (cardVertices[Y_00] - cardVertices[Y_01]) * (1.0f - (float)cos(d2r(angle)));
+          z = (cardVertices[Y_00] - cardVertices[Y_01]) * (float)sin(d2r(angle));
           shadowVertices = new float[]{
               cardVertices[X_00], cardVertices[Y_01] + h, z,
               cardVertices[X_01], cardVertices[Y_01], 0f,
@@ -211,8 +211,8 @@ public class Card {
               cardVertices[X_10], cardVertices[Y_01] + h, z
           };
         } else { //horizontal
-          w = (cardVertices[X_10] - cardVertices[X_00]) * (1.0f - cos(d2r(angle)));
-          z = (cardVertices[X_10] - cardVertices[X_00]) * sin(d2r(angle));
+          w = (cardVertices[X_10] - cardVertices[X_00]) * (1.0f - (float)cos(d2r(angle)));
+          z = (cardVertices[X_10] - cardVertices[X_00]) * (float)sin(d2r(angle));
           shadowVertices = new float[]{
               cardVertices[X_10] - w, cardVertices[Y_00], z,
               cardVertices[X_11] - w, cardVertices[Y_01], z,
@@ -222,8 +222,8 @@ public class Card {
         }
       } else {
         if (orientationVertical) {
-          h = (cardVertices[Y_00] - cardVertices[Y_01]) * (1f - cos(d2r(angle)));
-          z = (cardVertices[Y_00] - cardVertices[Y_01]) * sin(d2r(angle));
+          h = (cardVertices[Y_00] - cardVertices[Y_01]) * (1f - (float)cos(d2r(angle)));
+          z = (cardVertices[Y_00] - cardVertices[Y_01]) * (float)sin(d2r(angle));
           shadowVertices = new float[]{
               cardVertices[X_00], cardVertices[Y_00], 0f,
               cardVertices[X_01], cardVertices[Y_00] - h, z,
@@ -231,8 +231,9 @@ public class Card {
               cardVertices[X_10], cardVertices[Y_00], 0f
           };
         } else { //horizontal
-          w = (cardVertices[X_10] - cardVertices[X_00]) * (1f - cos(d2r(angle)));
-          z = (cardVertices[X_10] - cardVertices[X_00]) * sin(d2r(angle));
+          double tempDouble=d2r(angle);
+          w = (cardVertices[X_10] - cardVertices[X_00]) * (1f - (float)cos(tempDouble));
+          z = (cardVertices[X_10] - cardVertices[X_00]) * (float)sin(tempDouble);
           shadowVertices = new float[]{
               cardVertices[X_00], cardVertices[Y_00], 0f,
               cardVertices[X_01], cardVertices[Y_01], 0f,
