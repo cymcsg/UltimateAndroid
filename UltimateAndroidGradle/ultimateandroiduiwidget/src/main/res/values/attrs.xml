@@ -88,11 +88,11 @@
 
     <declare-styleable name="CalendarPickerView">
         <attr name="android:background"/>
-        <attr name="dividerColor" format="color"/>
-        <attr name="dayBackground" format="reference"/>
-        <attr name="dayTextColor" format="color"/>
-        <attr name="titleTextColor" format="color"/>
-        <attr name="headerTextColor" format="color"/>
+        <attr name="cp_dividerColor" format="color"/>
+        <attr name="cp_dayBackground" format="reference"/>
+        <attr name="cp_dayTextColor" format="color"/>
+        <attr name="cp_titleTextColor" format="color"/>
+        <attr name="cp_headerTextColor" format="color"/>
     </declare-styleable>
 
     <declare-styleable name="calendar_cell">
@@ -262,20 +262,20 @@
 
 
     <declare-styleable name="ProgressWheel">
-        <attr name="text" format="string" />
-        <attr name="textColor" format="color" />
+        <attr name="pw_text" format="string" />
+        <attr name="pw_textColor" format="color" />
         <attr name="textSize"></attr>
-        <attr name="barColor" format="color" />
-        <attr name="rimColor" format="color" />
-        <attr name="rimWidth" format="dimension" />
-        <attr name="spinSpeed" format="dimension" />
-        <attr name="delayMillis" format="integer" />
-        <attr name="circleColor" format="color" />
-        <attr name="progress_wheel_radius" format="dimension"/>
-        <attr name="barWidth" format="dimension" />
-        <attr name="barLength" format="dimension" />
-        <attr name="contourColor" format="color" />
-        <attr name="contourSize" format="dimension" />
+        <attr name="pw_barColor" format="color" />
+        <attr name="pw_rimColor" format="color" />
+        <attr name="pw_rimWidth" format="dimension" />
+        <attr name="pw_spinSpeed" format="dimension" />
+        <attr name="pw_delayMillis" format="integer" />
+        <attr name="pw_circleColor" format="color" />
+        <attr name="pw_progress_wheel_radius" format="dimension"/>
+        <attr name="pw_barWidth" format="dimension" />
+        <attr name="pw_barLength" format="dimension" />
+        <attr name="pw_contourColor" format="color" />
+        <attr name="pw_contourSize" format="dimension" />
     </declare-styleable>
 
     <!--<declare-styleable name="CustomAttributes">-->

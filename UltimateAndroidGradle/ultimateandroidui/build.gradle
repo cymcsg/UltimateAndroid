@@ -47,15 +47,15 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.0.1'
     compile 'com.android.support:support-v13:23.0.1'
     compile 'com.android.support:recyclerview-v7:23.0.1'
-//    compile project(':ultimateandroid')
-    compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.7.0'
-    compile 'com.marshalchen.ultimateandroid:ultimateandroiduiwidget:0.7.0'
-    compile 'com.marshalchen.ultimateandroid:ultimateandroiduicomponent:0.7.0'
-    compile 'com.marshalchen.ultimateandroid:ultimateandroiduilollipop:0.7.0'
-    compile 'com.marshalchen.ultimateandroid:ultimateandroiduianimation:0.7.0'
-//    compile project(':ultimateandroiduiwidget')
-//    compile project(':ultimateandroiduianimation')
-//    compile project(':ultimateandroiduicomponent')
-//    compile project(':ultimateandroiduilollipop')
+    compile project(':ultimateandroid')
+//    compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.7.0'
+//    compile 'com.marshalchen.ultimateandroid:ultimateandroiduiwidget:0.7.0'
+//    compile 'com.marshalchen.ultimateandroid:ultimateandroiduicomponent:0.7.0'
+//    compile 'com.marshalchen.ultimateandroid:ultimateandroiduilollipop:0.7.0'
+//    compile 'com.marshalchen.ultimateandroid:ultimateandroiduianimation:0.7.0'
+    compile project(':ultimateandroiduiwidget')
+    compile project(':ultimateandroiduianimation')
+    compile project(':ultimateandroiduicomponent')
+    compile project(':ultimateandroiduilollipop')
 
 }

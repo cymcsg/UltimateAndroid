@@ -2,7 +2,7 @@ package com.marshalchen.common.uimodule.gesturedetectors;
 
 import android.content.Context;
 import android.util.DisplayMetrics;
-import android.util.FloatMath;
+
 import android.view.MotionEvent;
 import android.view.ViewConfiguration;
 

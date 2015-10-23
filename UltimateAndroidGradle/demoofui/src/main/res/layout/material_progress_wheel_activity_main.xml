@@ -86,7 +86,7 @@
         android:layout_height="80dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        wheel:barColor="#5588FF"
+        wheel:mpwBarColor="#5588FF"
         wheel:mpwProgressIndeterminate="true" />
 
 </RelativeLayout>

@@ -35,15 +35,15 @@
 		        android:id="@+id/progressBarTwo"
 		        android:layout_width="150dp"
 		        android:layout_height="150dp"
-		        ProgressWheel:text="Click\none of the\nbuttons"
-		        ProgressWheel:textColor="#222222"
+		        ProgressWheel:pw_text="Click\none of the\nbuttons"
+		        ProgressWheel:pw_textColor="#222222"
 		        ProgressWheel:textSize="14sp"
-		        ProgressWheel:rimColor="#44000000"
-		        ProgressWheel:barLength="60dp" 
-		        ProgressWheel:barColor="#339BB9"
-		        ProgressWheel:barWidth="25dp"
-		        ProgressWheel:rimWidth="25dp" 
-		        ProgressWheel:spinSpeed="3dp" />
+		        ProgressWheel:pw_rimColor="#44000000"
+		        ProgressWheel:pw_barLength="60dp" 
+		        ProgressWheel:pw_barColor="#339BB9"
+		        ProgressWheel:pw_barWidth="25dp"
+		        ProgressWheel:pw_rimWidth="25dp" 
+		        ProgressWheel:pw_spinSpeed="3dp" />
 	    </LinearLayout>
     
         <LinearLayout android:layout_width="wrap_content"
@@ -54,31 +54,31 @@
 		        android:id="@+id/progressBarThree"
 		        android:layout_width="150dp"
 		        android:layout_height="150dp"
-		        ProgressWheel:text=""
-		        ProgressWheel:textColor="#222222"
+		        ProgressWheel:pw_text=""
+		        ProgressWheel:pw_textColor="#222222"
 		        ProgressWheel:textSize="14sp"
-		        ProgressWheel:rimColor="#44000000"
-		        ProgressWheel:circleColor="#2E9121"
-		        ProgressWheel:barLength="20dp" 
-		        ProgressWheel:barColor="#8000"
-		        ProgressWheel:barWidth="25dp"
-		        ProgressWheel:rimWidth="25dp" 
-		        ProgressWheel:spinSpeed="-1dp" />
+		        ProgressWheel:pw_rimColor="#44000000"
+		        ProgressWheel:pw_circleColor="#2E9121"
+		        ProgressWheel:pw_barLength="20dp" 
+		        ProgressWheel:pw_barColor="#8000"
+		        ProgressWheel:pw_barWidth="25dp"
+		        ProgressWheel:pw_rimWidth="25dp" 
+		        ProgressWheel:pw_spinSpeed="-1dp" />
 		    
 		    <com.marshalchen.common.uimodule.simplemodule.ProgressWheel
 		        android:id="@+id/progressBarFour"
 		        android:layout_width="50dp"
 		        android:layout_height="50dp"
-		        ProgressWheel:text=""
-		        ProgressWheel:textColor="#222222"
+		        ProgressWheel:pw_text=""
+		        ProgressWheel:pw_textColor="#222222"
 		        ProgressWheel:textSize="14sp"
-		        ProgressWheel:rimColor="#4000"
-		        ProgressWheel:barLength="30dp" 
-		        ProgressWheel:barColor="#222"
-		        ProgressWheel:barWidth="4dp"
-		        ProgressWheel:rimWidth="1dp" 
-		        ProgressWheel:spinSpeed="30dp"
-		        ProgressWheel:delayMillis="75" />
+		        ProgressWheel:pw_rimColor="#4000"
+		        ProgressWheel:pw_barLength="30dp" 
+		        ProgressWheel:pw_barColor="#222"
+		        ProgressWheel:pw_barWidth="4dp"
+		        ProgressWheel:pw_rimWidth="1dp" 
+		        ProgressWheel:pw_spinSpeed="30dp"
+		        ProgressWheel:pw_delayMillis="75" />
 		    
 	    </LinearLayout>
     

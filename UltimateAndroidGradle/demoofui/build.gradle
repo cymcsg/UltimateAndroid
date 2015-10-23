@@ -9,8 +9,8 @@ idea {
 }
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "22.0.1"
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
 
     defaultConfig {
         applicationId "com.marshalchen.common.demoofui"
@@ -61,6 +61,10 @@ android {
         exclude 'META-INF/NOTICE'
         exclude 'META-INF/LICENSE'
     }
+
+    dexOptions {
+        jumboMode true
+    }
 }
 configurations.all {
     // check for updates every build
@@ -68,16 +72,16 @@ configurations.all {
 }
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:22.2.0'
-    compile 'com.android.support:support-v4:22.2.0'
-    compile 'com.android.support:support-v13:22.2.0'
-    compile 'com.android.support:recyclerview-v7:22.2.0'
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    compile 'com.android.support:support-v4:23.1.0'
+    compile 'com.android.support:support-v13:23.1.0'
+    compile 'com.android.support:recyclerview-v7:23.1.0'
 //    compile project(':ultimateandroidui')
     compile project(':ultimateandroiduiwidget')
     compile project(':ultimateandroiduianimation')
     compile project(':ultimateandroiduicomponent')
     compile project(':ultimateandroiduilollipop')
     //  compile 'com.marshalchen.ultimateandroid:ultimateandroidui:0.6.0'
-    compile 'com.android.support:percent:22.2.0'
+    compile 'com.android.support:percent:23.1.0'
 
 }
