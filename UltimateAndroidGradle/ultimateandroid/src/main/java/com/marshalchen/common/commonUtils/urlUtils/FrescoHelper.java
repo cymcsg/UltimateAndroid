@@ -23,8 +23,8 @@ import com.facebook.imagepipeline.request.Postprocessor;
 import java.io.File;
 
 /**
- *
- * Created by echo on 2015/10/24.
+ *  Fresco support images show effect
+ *  Fresco支持的图片显示效果
  */
 public class FrescoHelper {
     Uri uri;
@@ -285,24 +285,27 @@ public class FrescoHelper {
         return this;
     }
 
-    /*
-        修改图片尺寸
-        调整大小并不是修改原来的文件，而是在解码之前，在native内存中修改。
-
-        这个缩放方法，比Android内置的缩放范围更大。Android相机生成的照片一般尺寸都很大，需要调整大小之后才能被显示。
-
-        目前，仅仅支持JPEG格式的图片，同时，大部分的Android系统相机图片都是JPEG的。
-
-        如果要修改图片尺寸，创建ImageRequest时，提供一个 ResizeOptions:
+    /**
+     * Modify the image size before decode.
+     * This scaling method, bigger than Android built-in zoom range.
+     * Android camera pictures generated average size is very big, need to adjust the size to be displayed.
+     * At present, support only JPEG images but fortunately most of the Android camera is JPEG images.
+     * If you want to modify the image size, create ImageRequest, provide a ResizeOptions
+     * 修改图片尺寸,调整大小并不是修改原来的文件，而是在解码之前，在native内存中修改。
+     * 这个缩放方法，比Android内置的缩放范围更大。Android相机生成的照片一般尺寸都很大，需要调整大小之后才能被显示。
+     * 目前，仅仅支持JPEG格式的图片，同时，大部分的Android系统相机图片都是JPEG的。
+     * 如果要修改图片尺寸，创建ImageRequest时，提供一个 ResizeOptions:
+     * @return
      */
     public FrescoHelper resizeOptions(int width, int height) {
         this.resizeOptions = new ResizeOptions(width, height);
         return this;
     }
 
-    /*
-        自动旋转
-        如果看到的图片是侧着的，用户是难受的。许多设备会在JPEG文件的metadata中记录下照片的方向。如果你想图片呈现的方向和设备屏幕的方向一致，你可以简单地这样做到:
+    /**
+     * Auto rotate
+     * 自动旋转
+     * @return
      */
     public FrescoHelper autoRotateEnabled() {
         this.autoRotateEnabled = true;
