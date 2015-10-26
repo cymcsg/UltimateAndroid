@@ -24,7 +24,6 @@ import java.io.File;
 
 /**
  *  Fresco support images show effect
- *  Fresco支持的图片显示效果
  */
 public class FrescoHelper {
     Uri uri;
@@ -44,7 +43,6 @@ public class FrescoHelper {
 
     /**
      * Initialize Fresco
-     * Fresco初始化
      */
     public static void init(Context context, ImagePipelineConfig config) {
         Fresco.initialize(context, config);
@@ -59,7 +57,6 @@ public class FrescoHelper {
 
     /**
      * Laod image with URI
-     * 图片载入
      * @return
      */
     public static FrescoHelper load(String path) {
@@ -85,7 +82,6 @@ public class FrescoHelper {
 
     /**
      * Set placeholderImage
-     * 设置占位图
      * @return
      */
     public FrescoHelper placeholder(int placeholderResId) {
@@ -100,7 +96,6 @@ public class FrescoHelper {
 
     /**
      * Center without zooming
-     * 居中，无缩放
      * @return
      */
     public FrescoHelper center() {
@@ -109,7 +104,6 @@ public class FrescoHelper {
 
     /**
      * Center with keep zooming and both sides is greater than or equal to show boundaries
-     * 保持宽高比缩小或放大，使得两边都大于或等于显示边界。居中显示
      * @return
      */
     public FrescoHelper centerCrop() {
@@ -118,7 +112,6 @@ public class FrescoHelper {
 
     /**
      * specified point with keep zooming and both sides is greater than or equal to show boundaries
-     * 同centerCrop, 但居中点不是中点，而是指定的某个点
      * @return
      */
     public FrescoHelper focusCrop(PointF point) {
@@ -133,8 +126,6 @@ public class FrescoHelper {
 
     /**
      * Center with keep within the border
-     * 使两边都在显示边界内，居中显示。
-     * 如果图尺寸大于显示边界，则保持长宽比缩小图片
      * @return
      */
     public FrescoHelper centerInside() {
@@ -143,7 +134,6 @@ public class FrescoHelper {
 
     /**
      * Center with keep zooming and fully displayed in the picture within the boundary
-     * 保持宽高比，缩小或者放大，使得图片完全显示在显示边界内。居中显示
      * @return
      */
     public FrescoHelper fitCenter() {
@@ -153,7 +143,6 @@ public class FrescoHelper {
     //
     /**
      * Top left corner with keep zooming and fully displayed in the picture within the boundary
-     * 保持宽高比，缩小或者放大，使得图片完全显示在显示边界内。但不居中，和显示边界左上对齐
      * @return
      */
     public FrescoHelper fitStart() {
@@ -162,7 +151,6 @@ public class FrescoHelper {
 
     /**
      * Bottom right corner with keep zooming and fully displayed in the picture within the boundary
-     * 保持宽高比，缩小或者放大，使得图片完全显示在显示边界内。但不居中，和显示边界右下对齐
      * @return
      */
     public FrescoHelper fitEnd() {
@@ -171,17 +159,11 @@ public class FrescoHelper {
 
     /**
      * Do not save aspect ratio, fill the full display boundary
-     * 不保存宽高比，填充满显示边界
      * @return
      */
     public FrescoHelper fitXY() {
         return setScaleType(ScalingUtils.ScaleType.FIT_XY);
     }
-
-//    //如要使用tile mode显示, 需要设置为none
-//    public RFresco tile() {
-//        return setScaleType(ScalingUtils.ScaleType.fromString("none"));
-//    }
 
     public FrescoHelper setScaleType(ScalingUtils.ScaleType actualScaleType) {
         this.actualScaleType = actualScaleType;
@@ -190,7 +172,6 @@ public class FrescoHelper {
 
     /**
      * Circle image
-     * 圆图
      * @return
      */
     public FrescoHelper circle() {
@@ -199,7 +180,6 @@ public class FrescoHelper {
 
     /**
      * Circle image with border
-     * 圆图加边框
      * @return
      */
     public FrescoHelper circle(int borderWidth, int borderColor) {
@@ -208,7 +188,6 @@ public class FrescoHelper {
 
     /**
      * The elliptical Settings
-     * 椭圆各项设置
      * @return
      */
     public FrescoHelper roundedCorner(float radius) {
@@ -234,7 +213,6 @@ public class FrescoHelper {
 
     /**
      * Set overlayImage
-     * 设置叠加图
      * @return
      */
     public FrescoHelper overlay(Drawable overlayDrawable) {
@@ -244,7 +222,6 @@ public class FrescoHelper {
 
     /**
      * Gif auto play
-     * gif图是否自动播放
      * @return
      */
     public FrescoHelper autoPlayAnimations() {
@@ -254,7 +231,6 @@ public class FrescoHelper {
 
     /**
      * Set click reload image if iamge request failure
-     * 图片请求失败后，点击图片是否重新加载
      * @return
      */
     public FrescoHelper tapToRetryEnabled() {
@@ -264,7 +240,6 @@ public class FrescoHelper {
 
     /**
      * Set image progressiveRendering or not
-     * 是否支持图片渐进显示渲染（仅针对jpg）
      * @return
      */
     public FrescoHelper progressiveRenderingEnabled() {
@@ -275,9 +250,6 @@ public class FrescoHelper {
     /**
      * Thumbnail Preview.
      * This feature support local URI only and iamge must be JPEG format
-     * 缩略图预览
-     * 本功能仅支持本地URI，并且是JPEG图片格式
-     * 如果本地JPEG图，有EXIF的缩略图，image pipeline 会立刻返回一个缩略图。完整的清晰大图，在decode完之后再显示。
      * @return
      */
     public FrescoHelper localThumbnailPreviewsEnabled() {
@@ -291,10 +263,6 @@ public class FrescoHelper {
      * Android camera pictures generated average size is very big, need to adjust the size to be displayed.
      * At present, support only JPEG images but fortunately most of the Android camera is JPEG images.
      * If you want to modify the image size, create ImageRequest, provide a ResizeOptions
-     * 修改图片尺寸,调整大小并不是修改原来的文件，而是在解码之前，在native内存中修改。
-     * 这个缩放方法，比Android内置的缩放范围更大。Android相机生成的照片一般尺寸都很大，需要调整大小之后才能被显示。
-     * 目前，仅仅支持JPEG格式的图片，同时，大部分的Android系统相机图片都是JPEG的。
-     * 如果要修改图片尺寸，创建ImageRequest时，提供一个 ResizeOptions:
      * @return
      */
     public FrescoHelper resizeOptions(int width, int height) {
@@ -304,7 +272,6 @@ public class FrescoHelper {
 
     /**
      * Auto rotate
-     * 自动旋转
      * @return
      */
     public FrescoHelper autoRotateEnabled() {
