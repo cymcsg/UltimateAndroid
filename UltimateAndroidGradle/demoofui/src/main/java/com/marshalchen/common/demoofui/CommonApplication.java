@@ -1,6 +1,8 @@
 package com.marshalchen.common.demoofui;
 
 import android.app.Application;
+import android.support.multidex.MultiDexApplication;
+
 import com.marshalchen.common.commonUtils.urlUtils.UniversalImageLoader;
 import com.marshalchen.common.uimodule.customFonts.CalligraphyConfig;
 import com.marshalchen.common.uimodule.passcodelock.AppLockManager;
@@ -10,7 +12,7 @@ import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 /**
  * Created by cym on 14-4-30.
  */
-public class CommonApplication extends Application {
+public class CommonApplication extends MultiDexApplication {
     @Override
     public void onCreate() {
         super.onCreate();

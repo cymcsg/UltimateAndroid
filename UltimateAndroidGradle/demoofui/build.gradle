@@ -15,7 +15,7 @@ android {
     defaultConfig {
         applicationId "com.marshalchen.common.demoofui"
         minSdkVersion 14
-        targetSdkVersion 22
+        targetSdkVersion 23
         versionCode 5
         versionName "1.0.4"
         renderscriptTargetApi 22
@@ -85,5 +85,5 @@ dependencies {
     compile project(':ultimateandroiduilollipop')
     //  compile 'com.marshalchen.ultimateandroid:ultimateandroidui:0.6.0'
     compile 'com.android.support:percent:23.1.0'
-
+    compile 'com.android.support:multidex:1.0.1'
 }
