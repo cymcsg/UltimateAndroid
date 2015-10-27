@@ -64,6 +64,8 @@ Up to now,I have only write the demo of most parts of UI modules and View Inject
 
 UltimateAndroidUi project now has four separate ui projects:widget,component,animations and lollipop. So if you want to only use part of the ui project you can simply use the separate project. However if you want to use all of them, you can also use the UltimateAndroidUi project.
 
+facebook/fresco is integrated into the framework，this provides a new image loading plan. Fresco is a powerful system for displaying images in Android applications. Fresco takes care of image loading and display, so you don't have to. It will load images from the network, local storage, or local resources, and display a placeholder until the image has arrived. It has two levels of cache; one in memory and another in internal storage.
+
 [Update Log](https://github.com/cymcsg/UltimateAndroid/blob/master/updateLog.md)
 
 
@@ -326,6 +328,72 @@ String imageUri = "drawable://" + R.drawable.image; // from drawables (only imag
 You can read the documents of [GreenDao](https://github.com/greenrobot/greenDAO) 
 
 
+7.A new scheme for display Images
+
+  If you have already use or extend CommonApplication,you can use like this:
+
+``` //circle image and set a placeholder image
+	FrescoHelper.load(Uri.parse(imageUrl))
+                .placeholder(CommonUtil.getDrawable(R.drawable.ic_image3))
+                .circle()
+                .into(simple_drawee_view);```
+
+  Or for some advantage usage:
+
+        FrescoHelper.load(Uri.parse(imageUrl))
+                .placeholder(CommonUtil.getDrawable(R.drawable.ic_image3))
+                .circle()
+                .into(simple_drawee_view, new ControllerListener<Object>() {
+                    @Override
+                    public void onSubmit(String s, Object o) {
+						...
+                    }
+                    @Override
+                    public void onFinalImageSet(String s, Object o, Animatable animatable) {
+						...
+                    }
+                    @Override
+                    public void onIntermediateImageSet(String s, Object o) {
+						...
+                    }
+                    @Override
+                    public void onIntermediateImageFailed(String s, Throwable throwable) {
+						...
+                    }
+                    @Override
+                    public void onFailure(String s, Throwable throwable) {
+						...
+                    }
+                    @Override
+                    public void onRelease(String s) {
+						...
+                    }
+                }, new Postprocessor() {
+                    @Override
+                    public CloseableReference<Bitmap> process(Bitmap bitmap, PlatformBitmapFactory platformBitmapFactory) {
+                        return null;
+                    }
+                    @Override
+                    public String getName() {
+                        return null;
+                    }
+                    @Override
+                    public CacheKey getPostprocessorCacheKey() {
+                        return null;
+                    }
+                });
+
+Acceptable URIs examples:
+
+``` java
+String imageUri = "http://site.com/image.png"; // from Web
+String imageUri = "https://static.pexels.com/photos/6789/flowers-petals-gift-flower-medium.jpg"; // from SSL Web
+String imageUri = "file:///mnt/sdcard/image.png"; // from SD card
+String imageUri = "content://media/external/audio/albumart/13"; // from content provider
+String imageUri = "assets://image.png"; // from assets
+String imageUri = "res://package name(any String or "")/" + R.drawable.ic_launcher
+```
+
 
 ## UI Modules
 
@@ -366,6 +434,8 @@ You can read the documents of [GreenDao](https://github.com/greenrobot/greenDAO)
 ###### 0.7.0新版本：
 
 UltimateUI 项目分拆成widget，component，animations，lollipop 4个子项目，如果你只需要部分UI效果的话，你可以只依赖这些子项目.如果你想使用多个种类的UI项目的话，也可以简单的依赖UltimateAndroidUi项目(当然，你也可以依赖4个子项目)。
+
+将facebook/fresco集成入框架中，这提供了一种新的图片加载方案。此框架加载图片的效率更高，会自动处理包括显示占位图直到加载完成、下载图片、缓存图片、图片不再显示时，从内存中移除等等功能。
 
 [UI截图在这里](#demo_of_ui)
 
@@ -626,6 +696,72 @@ String imageUri = "drawable://" + R.drawable.image; // from drawables (only imag
 
  可以查看Greendao的文档 ：[GreenDao](https://github.com/greenrobot/greenDAO) 
 
+
+7.新的图片加载方案
+
+  如果你已经使用或继承了CommonApplication，你可以如下使用:
+
+``` //圆形图片，并设置占位图
+	FrescoHelper.load(Uri.parse(imageUrl))
+                .placeholder(CommonUtil.getDrawable(R.drawable.ic_image3))
+                .circle()
+                .into(simple_drawee_view);```
+
+  或者高级使用:
+
+        FrescoHelper.load(Uri.parse(imageUrl))
+                .placeholder(CommonUtil.getDrawable(R.drawable.ic_image3))
+                .circle()
+                .into(simple_drawee_view, new ControllerListener<Object>() {
+                    @Override
+                    public void onSubmit(String s, Object o) {
+						...
+                    }
+                    @Override
+                    public void onFinalImageSet(String s, Object o, Animatable animatable) {
+						...
+                    }
+                    @Override
+                    public void onIntermediateImageSet(String s, Object o) {
+						...
+                    }
+                    @Override
+                    public void onIntermediateImageFailed(String s, Throwable throwable) {
+						...
+                    }
+                    @Override
+                    public void onFailure(String s, Throwable throwable) {
+						...
+                    }
+                    @Override
+                    public void onRelease(String s) {
+						...
+                    }
+                }, new Postprocessor() {
+                    @Override
+                    public CloseableReference<Bitmap> process(Bitmap bitmap, PlatformBitmapFactory platformBitmapFactory) {
+                        return null;
+                    }
+                    @Override
+                    public String getName() {
+                        return null;
+                    }
+                    @Override
+                    public CacheKey getPostprocessorCacheKey() {
+                        return null;
+                    }
+                });
+
+可以使用的URI格式:
+
+``` java
+String imageUri = "http://site.com/image.png"; // from Web
+String imageUri = "https://static.pexels.com/photos/6789/flowers-petals-gift-flower-medium.jpg"; // from SSL Web
+String imageUri = "file:///mnt/sdcard/image.png"; // from SD card
+String imageUri = "content://media/external/audio/albumart/13"; // from content provider
+String imageUri = "assets://image.png"; // from assets
+String imageUri = "res://package name(any String or "")/" + R.drawable.ic_launcher
+```
 
 
 ## UI 模块
