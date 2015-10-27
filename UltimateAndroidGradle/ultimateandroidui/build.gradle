@@ -38,9 +38,9 @@ ext {
 
     PUBLISH_GROUP_ID = 'com.marshalchen.ultimateandroid'
     PUBLISH_ARTIFACT_ID = 'ultimateandroidui'
-    PUBLISH_VERSION = '0.7.0'
+    PUBLISH_VERSION = '0.7.2'
 }
-//apply from: 'android-release-aar.gradle'
+apply from: 'android-release-aar.gradle'
 //apply from: 'maven-push.gradle'
 dependencies {
     //compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -48,11 +48,11 @@ dependencies {
     compile 'com.android.support:support-v13:23.0.1'
     compile 'com.android.support:recyclerview-v7:23.0.1'
     compile project(':ultimateandroid')
-//    compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.7.0'
-//    compile 'com.marshalchen.ultimateandroid:ultimateandroiduiwidget:0.7.0'
-//    compile 'com.marshalchen.ultimateandroid:ultimateandroiduicomponent:0.7.0'
-//    compile 'com.marshalchen.ultimateandroid:ultimateandroiduilollipop:0.7.0'
-//    compile 'com.marshalchen.ultimateandroid:ultimateandroiduianimation:0.7.0'
+//    compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.7.2'
+//    compile 'com.marshalchen.ultimateandroid:ultimateandroiduiwidget:0.7.2'
+//    compile 'com.marshalchen.ultimateandroid:ultimateandroiduicomponent:0.7.2'
+//    compile 'com.marshalchen.ultimateandroid:ultimateandroiduilollipop:0.7.2'
+//    compile 'com.marshalchen.ultimateandroid:ultimateandroiduianimation:0.7.2'
     compile project(':ultimateandroiduiwidget')
     compile project(':ultimateandroiduianimation')
     compile project(':ultimateandroiduicomponent')

@@ -81,7 +81,7 @@ dependencies {
     compile project(':ultimateandroiduianimation')
     compile project(':ultimateandroiduicomponent')
     compile project(':ultimateandroiduilollipop')
-    //  compile 'com.marshalchen.ultimateandroid:ultimateandroidui:0.6.0'
+//    compile 'com.marshalchen.ultimateandroid:ultimateandroidui:0.7.2'
     compile 'com.android.support:percent:23.1.0'
 
 }
