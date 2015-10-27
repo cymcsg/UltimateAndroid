@@ -1,6 +1,6 @@
 # UltimateAndroid
 
-### Version:0.7.1
+### Version:0.7.2
 
 
 
@@ -86,7 +86,7 @@ repositories {
     }
 dependencies {
     ...
-    compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.7.1'
+    compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.7.2'
 }
 ```
 
@@ -98,7 +98,7 @@ repositories {
     }
 dependencies {
     ...
-    compile 'com.marshalchen.ultimateandroid:ultimateandroidui:0.7.0'
+    compile 'com.marshalchen.ultimateandroid:ultimateandroidui:0.7.2'
 }
 ```
 
@@ -110,7 +110,7 @@ repositories {
     }
 dependencies {
     ...
-    compile 'com.marshalchen.ultimateandroid:ultimateandroiduiwidget:0.7.0'
+    compile 'com.marshalchen.ultimateandroid:ultimateandroiduiwidget:0.7.2'
 }
 ```
 
@@ -120,7 +120,7 @@ repositories {
     }
 dependencies {
     ...
-    compile 'com.marshalchen.ultimateandroid:ultimateandroiduicomponent:0.7.0'
+    compile 'com.marshalchen.ultimateandroid:ultimateandroiduicomponent:0.7.2'
 }
 ```
 
@@ -130,7 +130,7 @@ repositories {
     }
 dependencies {
     ...
-    compile 'com.marshalchen.ultimateandroid:ultimateandroiduianimation:0.7.0'
+    compile 'com.marshalchen.ultimateandroid:ultimateandroiduianimation:0.7.2'
 }
 ```
 
@@ -140,7 +140,7 @@ repositories {
     }
 dependencies {
     ...
-    compile 'com.marshalchen.ultimateandroid:ultimateandroiduilollipop:0.7.0'
+    compile 'com.marshalchen.ultimateandroid:ultimateandroiduilollipop:0.7.2'
 }
 ```
 
@@ -395,7 +395,7 @@ repositories {
     }
 dependencies {
     ...
-    compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.7.1'
+    compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.7.2'
 }
 ```
 
@@ -407,7 +407,7 @@ repositories {
     }
 dependencies {
     ...
-    compile 'com.marshalchen.ultimateandroid:ultimateandroidui:0.7.0'
+    compile 'com.marshalchen.ultimateandroid:ultimateandroidui:0.7.2'
 }
 ```
 
@@ -419,7 +419,7 @@ repositories {
     }
 dependencies {
     ...
-    compile 'com.marshalchen.ultimateandroid:ultimateandroiduiwidget:0.7.0'
+    compile 'com.marshalchen.ultimateandroid:ultimateandroiduiwidget:0.7.2'
 }
 ```
 
@@ -429,7 +429,7 @@ repositories {
     }
 dependencies {
     ...
-    compile 'com.marshalchen.ultimateandroid:ultimateandroiduicomponent:0.7.0'
+    compile 'com.marshalchen.ultimateandroid:ultimateandroiduicomponent:0.7.2'
 }
 ```
 
@@ -439,7 +439,7 @@ repositories {
     }
 dependencies {
     ...
-    compile 'com.marshalchen.ultimateandroid:ultimateandroiduilollipop:0.7.0'
+    compile 'com.marshalchen.ultimateandroid:ultimateandroiduilollipop:0.7.2'
 }
 ```
 
@@ -449,7 +449,7 @@ repositories {
     }
 dependencies {
     ...
-    compile 'com.marshalchen.ultimateandroid:ultimateandroiduianimation:0.7.0'
+    compile 'com.marshalchen.ultimateandroid:ultimateandroiduianimation:0.7.2'
 }
 ```
 

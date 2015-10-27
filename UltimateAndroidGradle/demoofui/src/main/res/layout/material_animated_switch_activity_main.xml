@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="#4285F4"
+    >
+  <com.marshalchen.common.uimodule.materialanimatedswitch.MaterialAnimatedSwitch
+      android:id="@+id/masterSwitch"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="20dp"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentRight="true"
+      app:mas_base_release_color="@color/md_teal_900"
+      app:mas_base_press_color="@color/md_teal_50"
+      app:mas_ball_release_color="@color/md_teal_500"
+      app:mas_ball_press_color="@color/md_white_1000"
+      app:mas_icon_release="@drawable/mas_ic_radio_button_off_white_36dp"
+      app:mas_icon_press="@drawable/mas_ic_radio_button_on_teal_500_36dp"
+      />
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:weightSum="4"
+      android:orientation="vertical"
+      android:layout_centerInParent="true"
+      >
+
+    <com.marshalchen.common.uimodule.materialanimatedswitch.MaterialAnimatedSwitch
+        android:id="@+id/pin"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <com.marshalchen.common.uimodule.materialanimatedswitch.MaterialAnimatedSwitch
+        android:layout_marginTop="20dp"
+        android:id="@+id/pin2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:mas_base_release_color="@color/md_green_900"
+        app:mas_base_press_color="@color/md_green_50"
+        app:mas_ball_release_color="@color/md_green_500"
+        app:mas_ball_press_color="@color/md_white_1000"
+        app:mas_icon_release="@drawable/mas_shield_with_sword_64"
+        app:mas_icon_press="@drawable/mas_sword_in_vertical_position_64"
+        />
+
+    <com.marshalchen.common.uimodule.materialanimatedswitch.MaterialAnimatedSwitch
+        android:id="@+id/pin3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        app:mas_base_release_color="@color/md_deep_purple_900"
+        app:mas_base_press_color="@color/md_deep_purple_50"
+        app:mas_ball_release_color="@color/md_deep_purple_500"
+        app:mas_ball_press_color="@color/md_white_1000"
+        app:mas_icon_release="@drawable/mas_ic_create_white_36dp"
+        app:mas_icon_press="@drawable/mas_ic_delete_deep_purple_500_36dp"
+        />
+
+    <com.marshalchen.common.uimodule.materialanimatedswitch.MaterialAnimatedSwitch
+        android:id="@+id/pin4"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        app:mas_base_release_color="@color/md_deep_orange_900"
+        app:mas_base_press_color="@color/md_deep_orange_50"
+        app:mas_ball_release_color="@color/md_deep_orange_500"
+        app:mas_ball_press_color="@color/md_white_1000"
+        app:mas_icon_release="@drawable/mas_ic_play_arrow_white_36dp"
+        app:mas_icon_press="@drawable/mas_ic_stop_deep_orange_500_36dp"
+        />
+  </LinearLayout>
+
+</RelativeLayout>

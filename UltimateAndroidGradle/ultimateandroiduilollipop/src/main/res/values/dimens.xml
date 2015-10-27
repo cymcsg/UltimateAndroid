@@ -3,4 +3,14 @@
     <dimen name="tabhostHeight">48dp</dimen>
     <dimen name="tabSelectorHeight">2dp</dimen>
     <dimen name="materialTextTab">14sp</dimen>
+
+    <dimen name="mas_exitXAnimationStart">-15dp</dimen>
+    <dimen name="mas_exitYAnimatorFinish">34dp</dimen>
+    <dimen name="mas_enterYAnimationStart">-30dp</dimen>
+    <dimen name="mas_enterAnimationStartValue">-25dp</dimen>
+    <dimen name="mas_exitAnimationExitValue">25dp</dimen>
+    <dimen name="mas_icon_size">11dp</dimen>
+    <dimen name="margin">14dp</dimen>
+    <dimen name="mas_ball_radius">11dp</dimen>
+    <dimen name="mas_ball_start_position">12dp</dimen>
 </resources>

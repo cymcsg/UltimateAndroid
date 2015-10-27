@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dpv="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red_primary_color">
+
+    <com.marshalchen.common.uimodule.simplemodule.DownloadProgressBar
+        android:id="@+id/dpv3"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        dpv:dpv_circleBackgroundColor="@color/red_light_primary_color"
+        dpv:dpv_progressBackgroundColor="@color/red_light_primary_color"
+        dpv:dpv_progressColor="@color/red_text_icon_color"
+        dpv:dpv_drawingColor="@color/red_text_icon_color"
+        dpv:dpv_progressDuration="2000"
+        dpv:dpv_resultDuration="5000"
+        dpv:dpv_circleRadius="48dp"
+        dpv:dpv_lineWidth="3dp"
+        dpv:dpv_strokeWidth="3dp"
+        dpv:dpv_overshootValue="2.5"
+        />
+
+    <TextView
+        android:id="@+id/success_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="48dp"
+        android:textSize="40sp"
+        android:textColor="@color/blue_light_primary_color"
+        android:text="Click to download" />
+
+</LinearLayout>

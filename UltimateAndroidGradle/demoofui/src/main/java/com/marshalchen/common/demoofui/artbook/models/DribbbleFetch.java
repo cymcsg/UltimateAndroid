@@ -29,7 +29,8 @@ import com.google.gson.Gson;
 
 import android.os.AsyncTask;
 import android.util.Log;
-import org.apache.http.Header;
+
+import cz.msebera.android.httpclient.Header;
 
 
 public class DribbbleFetch {
