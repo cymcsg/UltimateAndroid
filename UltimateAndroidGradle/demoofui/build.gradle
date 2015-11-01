@@ -20,6 +20,8 @@ android {
         versionName "1.0.4"
         renderscriptTargetApi 22
         renderscriptSupportModeEnabled true
+
+        multiDexEnabled true
     }
 
     signingConfigs {
