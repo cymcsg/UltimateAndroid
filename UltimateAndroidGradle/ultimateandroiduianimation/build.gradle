@@ -39,4 +39,5 @@ dependencies {
     compile project(':ultimateandroid')
   //  compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.7.2'
     compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.wingjay:blurimageviewlib:1.0.+'
 }
