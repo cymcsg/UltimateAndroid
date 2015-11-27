@@ -26,7 +26,7 @@ android:
     - platform-tools
     - tools
     # The BuildTools version we are using for our project
-    - build-tools-23.0.1
+    - build-tools-23.0.2
 
     # Additional components
     - extra-google-google_play_services
