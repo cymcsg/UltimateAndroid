@@ -73,7 +73,7 @@ public class ActivityAnimationsActivity extends Activity implements View.OnClick
     }
 
     @Override
-    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {    //RadiozGroup的回调，监听checked change
         int id = buttonView.getId();
         if(id == R.id.random_anim && isChecked) {
             mAnimationType = AnimatedRectLayout.ANIMATION_RANDOM;
