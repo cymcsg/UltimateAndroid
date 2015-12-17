@@ -108,15 +108,15 @@ public class AnimatedRectLayout extends ViewGroup {
         int w = getMeasuredWidth();
         int h = getMeasuredHeight();
 
-        int rectWidth = w/ RECT_COUNT_IN_WIDTH;
+        int rectWidth = w/ RECT_COUNT_IN_WIDTH; //根基宽度判断    RECT_COUNT_IN_WIDTH范围内的个数
         int rectHeight = rectWidth;
 
-        mRectCountInWidth = w/rectWidth;
+        mRectCountInWidth = w/rectWidth;   //count个数
         mRectCountInHeight = h/rectHeight;
 
-        int delta = w%rectWidth;
-        if(delta>0) {
-            rectWidth += delta/mRectCountInWidth;
+        int delta = w%rectWidth;   // 取余数
+        if(delta>0) {   //宽度的微调
+            rectWidth += delta/mRectCountInWidth;   //保证 rectWidti * mRectCountInWidth == w
         }
 
         delta = h%rectWidth;
@@ -124,8 +124,8 @@ public class AnimatedRectLayout extends ViewGroup {
             rectHeight += delta/mRectCountInHeight;
         }
 
-        mRects = new Rect[mRectCountInWidth][mRectCountInHeight];
-        mRectIndexes = new int[mRectCountInWidth * mRectCountInHeight][2];
+        mRects = new Rect[mRectCountInWidth][mRectCountInHeight];   //初始化数组和数组元素是分开的嘛？？
+        mRectIndexes = new int[mRectCountInWidth * mRectCountInHeight][2];  //每个方块的显示顺序 x y的index
 
         for (int x = 0; x < mRectCountInWidth; x++) {
             for (int y = 0; y < mRectCountInHeight; y++) {
@@ -134,21 +134,21 @@ public class AnimatedRectLayout extends ViewGroup {
                 int right = left + rectWidth;
                 int bottom = top + rectHeight;
 
-                if (x + 1 >= mRectCountInWidth) {
+                if (x + 1 >= mRectCountInWidth) {   //如果右边没有空间了
                     right = w;
                 }
                 if (y + 1 >= mRectCountInHeight) {
                     bottom = h;
                 }
 
-                mRects[x][y] = new Rect(left, top, right, bottom);
+                mRects[x][y] = new Rect(left, top, right, bottom);  //如果不加这个new的操作是不是会报错
             }
         }
 
         sIndexesBuilder.get(mAnimationType).build(mRectIndexes, mRectCountInWidth, mRectCountInHeight);
 
         if (IS_JBMR2) {
-            mFullBitmap = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
+            mFullBitmap = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);   //创建一张整个屏幕大小的Bitmap
             Canvas canvas = new Canvas(mFullBitmap);
             getChildAt(0).draw(canvas);
         }
@@ -167,7 +167,7 @@ public class AnimatedRectLayout extends ViewGroup {
             if(i >= threshold) {
                 return;
             }
-            canvas.save();
+            canvas.save();  //保存画布的状态       Note：保证画布的其他的东西不受影响
 
             int[] index = mRectIndexes[i];
             Rect rect = mRects[index[0]][index[1]];
@@ -175,11 +175,11 @@ public class AnimatedRectLayout extends ViewGroup {
             if(IS_JBMR2) {
                 canvas.drawBitmap(mFullBitmap, rect, rect, null);
             } else {
-                canvas.clipRect(rect);
+                canvas.clipRect(rect);  //局部绘制  截取画布中的一块区域
                 super.dispatchDraw(canvas);
             }
 
-            canvas.restore();
+            canvas.restore();   //取出画布的状态
         }
     }
 
@@ -198,7 +198,7 @@ public class AnimatedRectLayout extends ViewGroup {
                     index++;
                 }
             }
-            return shuffle(indexes);
+            return shuffle(indexes);    //random的实现
         }
     };
 

@@ -40,9 +40,14 @@ public class ProgressLayout extends RelativeLayout {
     }
 
     private void init(AttributeSet attrs) {
-        TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.ProgressLayout);
+        TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.ProgressLayout);  // 属性数组
         int backgroundColor = a.getColor(R.styleable.ProgressLayout_progressLayoutProgressBackground, Color.TRANSPARENT);
         boolean startFromProgress = a.getBoolean(R.styleable.ProgressLayout_progressLayoutProgress, false);
+        /*
+        * 在TypedArray后调用recycle主要是为了缓存。
+        * 当recycle被调用后，这就说明这个对象从现在可以被重用了。
+        * TypedArray 内部持有部分数组，它们缓存在Resources类中的静态字段中，这样就不用每次使用前都需要分配内存。你可以看看TypedArray.recycle()中的代码:
+        * */
         a.recycle();
 
         LayoutParams layoutParams;
