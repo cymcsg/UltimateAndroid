@@ -35,7 +35,7 @@ public class AndroidAnimationsDemoActivity extends Activity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Techniques technique = (Techniques)view.getTag();
-                rope =  YoYo.with(technique)
+                rope =  YoYo.with(technique)    //设置动画
                             .duration(1200)
                             .interpolate(new AccelerateDecelerateInterpolator())
                             .withListener(new Animator.AnimatorListener() {
