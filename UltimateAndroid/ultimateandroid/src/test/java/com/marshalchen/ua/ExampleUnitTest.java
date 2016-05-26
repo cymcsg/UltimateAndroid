@@ -1,4 +1,4 @@
-package com.marshalchen.ultimateandroid;
+package com.marshalchen.ua;
 
 import org.junit.Test;
 

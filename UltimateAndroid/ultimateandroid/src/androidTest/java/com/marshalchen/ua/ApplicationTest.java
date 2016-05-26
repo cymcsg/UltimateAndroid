@@ -1,4 +1,4 @@
-package com.marshalchen.ultimateandroid;
+package com.marshalchen.ua;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
