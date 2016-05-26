@@ -6,6 +6,7 @@ import android.content.Context;
 import com.marshalchen.ua.common.commonUtils.logUtils.Logs;
 
 import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.KeyManagerFactory;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.TrustManagerFactory;
@@ -56,50 +57,108 @@ public class HttpsUtils {
      * @param certFilePath
      * @return
      */
-    public static SSLSocketFactory buildSslSocketFactory(Context context, String certFilePath) {
+    public static SSLSocketFactory getSSLSocketFactory(Context context, String certFilePath) throws NoSuchAlgorithmException,
+            KeyStoreException, KeyManagementException, CertificateException, IOException {
+
+        // Load CAs from an InputStream
+        // (could be from a resource or ByteArrayInputStream or ...)
+        CertificateFactory cf = CertificateFactory.getInstance("X.509");
+
+        InputStream is = context.getResources().getAssets().open(certFilePath);
+        InputStream caInput = new BufferedInputStream(is);
+        Certificate ca;
         try {
-            // Load CAs from an InputStream
-            // (could be from a resource or ByteArrayInputStream or ...)
-            CertificateFactory cf = CertificateFactory.getInstance("X.509");
-
-            InputStream is = context.getResources().getAssets().open(certFilePath);
-            InputStream caInput = new BufferedInputStream(is);
-            Certificate ca;
-            try {
-                ca = cf.generateCertificate(caInput);
-                // System.out.println("ca=" + ((X509Certificate) ca).getSubjectDN());
-            } finally {
-                caInput.close();
-            }
-
-            // Create a KeyStore containing our trusted CAs
-            String keyStoreType = KeyStore.getDefaultType();
-            KeyStore keyStore = KeyStore.getInstance(keyStoreType);
-            keyStore.load(null, null);
-            keyStore.setCertificateEntry("ca", ca);
-
-            // Create a TrustManager that trusts the CAs in our KeyStore
-            String tmfAlgorithm = TrustManagerFactory.getDefaultAlgorithm();
-            TrustManagerFactory tmf = TrustManagerFactory.getInstance(tmfAlgorithm);
-            tmf.init(keyStore);
-
-            // Create an SSLContext that uses our TrustManager
-            SSLContext contexts = SSLContext.getInstance("TLS");
-            contexts.init(null, tmf.getTrustManagers(), null);
-            return contexts.getSocketFactory();
-
-        } catch (NoSuchAlgorithmException e) {
-            e.printStackTrace();
-        } catch (KeyStoreException e) {
-            e.printStackTrace();
-        } catch (KeyManagementException e) {
-            e.printStackTrace();
-        } catch (CertificateException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
+            ca = cf.generateCertificate(caInput);
+            // System.out.println("ca=" + ((X509Certificate) ca).getSubjectDN());
+        } finally {
+            caInput.close();
         }
-        return null;
+
+        // Create a KeyStore containing our trusted CAs
+        String keyStoreType = KeyStore.getDefaultType();
+        KeyStore keyStore = KeyStore.getInstance(keyStoreType);
+        keyStore.load(null, null);
+        keyStore.setCertificateEntry("ca", ca);
+
+        // Create a TrustManager that trusts the CAs in our KeyStore
+        String tmfAlgorithm = TrustManagerFactory.getDefaultAlgorithm();
+        TrustManagerFactory tmf = TrustManagerFactory.getInstance(tmfAlgorithm);
+        tmf.init(keyStore);
+
+        // Create an SSLContext that uses our TrustManager
+        SSLContext contexts = SSLContext.getInstance("TLS");
+        contexts.init(null, tmf.getTrustManagers(), null);
+        return contexts.getSocketFactory();
+
+
+    }
+
+    /**
+     * Build SSLSocketFactory using certificate file from assets.
+     * @param context
+     * @param certFilePath
+     * @param key
+     * @param keyPassword
+     * @return
+     * @throws NoSuchAlgorithmException
+     * @throws KeyStoreException
+     * @throws KeyManagementException
+     * @throws CertificateException
+     * @throws IOException
+     */
+    public static SSLSocketFactory getSSLSocketFactory(Context context, String certFilePath, InputStream key, String keyPassword) throws NoSuchAlgorithmException,
+            KeyStoreException, KeyManagementException, CertificateException, IOException {
+
+        InputStream is = context.getResources().getAssets().open(certFilePath);
+        return getSSLSocketFactory(is, key, keyPassword);
+
+    }
+
+    /**
+     * Build SSLSocketFactory using certificate InputStream
+     * @param certificates
+     * @param key
+     * @param keyPassword
+     * @return
+     * @throws NoSuchAlgorithmException
+     * @throws KeyStoreException
+     * @throws KeyManagementException
+     * @throws CertificateException
+     * @throws IOException
+     */
+    public static SSLSocketFactory getSSLSocketFactory(InputStream certificates, InputStream key, String keyPassword) throws NoSuchAlgorithmException,
+            KeyStoreException, KeyManagementException, CertificateException, IOException {
+
+
+        CertificateFactory cf = CertificateFactory.getInstance("X.509");
+
+        InputStream caInput = new BufferedInputStream(certificates);
+        Certificate ca;
+        try {
+            ca = cf.generateCertificate(caInput);
+        } finally {
+            caInput.close();
+        }
+
+        // Create a KeyStore containing our trusted CAs
+        String keyStoreType = KeyStore.getDefaultType();
+        KeyStore keyStore = KeyStore.getInstance(keyStoreType);
+        keyStore.load(null, null);
+        keyStore.setCertificateEntry("ca", ca);
+
+        KeyManagerFactory kmf = null;
+        if (key != null && keyPassword != null) {
+            kmf = getKeyManagerFactory(key, keyPassword);
+        }
+        // Create a TrustManager that trusts the CAs in our KeyStore
+        String tmfAlgorithm = TrustManagerFactory.getDefaultAlgorithm();
+        TrustManagerFactory tmf = TrustManagerFactory.getInstance(tmfAlgorithm);
+        tmf.init(keyStore);
+
+        // Create an SSLContext that uses our TrustManager
+        SSLContext contexts = SSLContext.getInstance("TLS");
+        contexts.init(kmf == null ? null : kmf.getKeyManagers(), tmf.getTrustManagers(), null);
+        return contexts.getSocketFactory();
 
     }
 
@@ -137,8 +196,8 @@ public class HttpsUtils {
      * @return The response from server.
      * @throws Exception
      */
-    public static String sendWithSSlSocketWithCrt(Context context, String certFilePath, String uri) throws Exception{
-        SSLSocketFactory sslsocketfactory = buildSslSocketFactory(context, certFilePath);
+    public static String sendWithSSlSocketWithCrt(Context context, String certFilePath, String uri) throws Exception {
+        SSLSocketFactory sslsocketfactory = getSSLSocketFactory(context, certFilePath);
         URL url;
         InputStream inputstream = null;
         InputStreamReader inputstreamreader = null;
@@ -170,5 +229,24 @@ public class HttpsUtils {
                 bufferedreader.close();
         }
 
+    }
+
+    private static KeyManagerFactory getKeyManagerFactory(InputStream key, String keyPassword) {
+        KeyManagerFactory kmf = null;
+
+        try {
+            String keyStoreType = "BKS";
+            KeyStore keyStore = KeyStore.getInstance(keyStoreType);
+            keyStore.load(key, keyPassword.toCharArray());
+
+            String kmfAlgorithm = KeyManagerFactory.getDefaultAlgorithm();
+            kmf = KeyManagerFactory.getInstance(kmfAlgorithm);
+            kmf.init(keyStore, keyPassword.toCharArray());
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return kmf;
     }
 }
