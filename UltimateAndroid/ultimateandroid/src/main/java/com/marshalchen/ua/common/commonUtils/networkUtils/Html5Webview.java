@@ -3,9 +3,7 @@ package com.marshalchen.ua.common.commonUtils.networkUtils;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,7 +15,8 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
-import com.marshalchen.ua.common.R;
+
+import com.marshalchen.ua.R;
 
 /**
  * A webview which support many Html5 feature like video ,audio etc.
@@ -42,9 +41,9 @@ public class Html5Webview extends WebView {
 
         mLayout = new FrameLayout(context);
 
-        mBrowserFrameLayout = (FrameLayout) LayoutInflater.from(mActivity).inflate(R.layout.custom_screen, null);
-        mContentView = (FrameLayout) mBrowserFrameLayout.findViewById(R.id.main_content);
-        mCustomViewContainer = (FrameLayout) mBrowserFrameLayout.findViewById(R.id.fullscreen_custom_content);
+        mBrowserFrameLayout = (FrameLayout) LayoutInflater.from(mActivity).inflate(R.layout.html5_webview_custom_screen, null);
+        mContentView = (FrameLayout) mBrowserFrameLayout.findViewById(R.id.html5_webview_main_content);
+        mCustomViewContainer = (FrameLayout) mBrowserFrameLayout.findViewById(R.id.html5_webview_fullscreen_custom_content);
 
         mLayout.addView(mBrowserFrameLayout, COVER_SCREEN_PARAMS);
 
@@ -160,7 +159,7 @@ public class Html5Webview extends WebView {
 
             if (mVideoProgressView == null) {
                 LayoutInflater inflater = LayoutInflater.from(mContext);
-                mVideoProgressView = inflater.inflate(R.layout.video_loading, null);
+                mVideoProgressView = inflater.inflate(R.layout.html5_webview_video_loading, null);
             }
             return mVideoProgressView;
         }
