@@ -5,7 +5,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 
 import com.marshalchen.ua.common.commonUtils.fileUtils.FileUtils;
-import com.marshalchen.ua.common.commonUtils.logUtils.Logs;
 
 import java.io.*;
 
