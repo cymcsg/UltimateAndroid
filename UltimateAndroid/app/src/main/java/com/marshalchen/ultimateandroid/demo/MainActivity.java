@@ -29,7 +29,7 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
-
+    @BindView(R.id.mainActivityListView)
     ListView mainActivityListView;
     List<Map<String, ?>> listData;
 
@@ -37,9 +37,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.setDebug(true);
         ButterKnife.bind(this);
         listData = getData("com.marshalchen.ultimateandroid.demo");
-        mainActivityListView = (ListView) findViewById(R.id.mainActivityListView);
+        //    mainActivityListView = (ListView) findViewById(R.id.mainActivityListView);
         mainActivityListView.setAdapter(new ListviewAdapter(listData));
         mainActivityListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -47,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity((Intent) listData.get(position).get("intent"));
             }
         });
-        Timber.plant(new Timber.DebugTree());
     }
 
     class ListviewAdapter extends BaseAdapter {
@@ -55,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            Timber.d(mapList.size() + "   size   ");
             return mapList.size();
         }
 
