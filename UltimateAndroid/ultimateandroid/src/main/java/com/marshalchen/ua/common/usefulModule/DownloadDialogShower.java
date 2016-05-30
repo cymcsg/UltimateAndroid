@@ -31,7 +31,6 @@ public class DownloadDialogShower {
 
     private DownloadDialogShower(Context mContext) {
         this.mContext = mContext;
-        initVariables();
     }
 
 
@@ -78,20 +77,7 @@ public class DownloadDialogShower {
 
     public int progress = 0;
 
-    private void initVariables() {
-        noticeTitle = mContext.getResources().getString(R.string.dialog_shower_notice_title);
-        positiveButtonString = mContext.getResources().getString(R.string.dialog_shower_positive_button);
-        negativeButtonString = mContext.getResources().getString(R.string.dialog_shower_negative_button);
-        updateCurrentTextViewString = mContext.getResources().getString(R.string.dialog_shower_notice_current_textview);
-        prepareDownloadingTextViewString = mContext.getResources().getString(R.string.dialog_shower_notice_prepare_downloading);
-        downloadTitle = mContext.getResources().getString(R.string.dialog_shower_download_title);
-        downloadFinshed = mContext.getResources().getString(R.string.dialog_shower_download_finish);
-        downloadCancel = mContext.getResources().getString(R.string.dialog_shower_download_cancel);
-        errorTitle = mContext.getResources().getString(R.string.dialog_shower_download_error_title);
-        errorMessage = mContext.getResources().getString(R.string.dialog_shower_download_error_message);
-        errorButton = mContext.getResources().getString(R.string.dialog_shower_download_error_button);
 
-    }
 
     public void showNoticeDialog(String alertInfo, final Thread thread) {
         AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
