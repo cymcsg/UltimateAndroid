@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">UltimateAndroid</string>
+    <string name="title_activity_rxbasic">RxbasicActivity</string>
 </resources>
