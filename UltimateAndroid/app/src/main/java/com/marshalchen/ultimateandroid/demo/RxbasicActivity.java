@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.marshalchen.ua.common.commonUtils.basicUtils.RxUtils;
 import com.marshalchen.ua.common.commonUtils.logUtils.Logs;
 
 import java.util.ArrayList;
@@ -42,7 +43,7 @@ public class RxbasicActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        dataAdapter = new DataAdapter(this,new ArrayList<String>());
+        dataAdapter = new DataAdapter(this,dataList);
         rxBasicListview.setAdapter(dataAdapter);
     }
 
@@ -64,7 +65,7 @@ public class RxbasicActivity extends AppCompatActivity {
             public Boolean call(Boolean aBoolean) {
                 addData("Within Observable");
                 _doSomeLongOperation_thatBlocksCurrentThread();
-                return aBoolean;
+                return false;
             }
         });
     }
@@ -99,29 +100,30 @@ public class RxbasicActivity extends AppCompatActivity {
     }
 
     private void addData(String logMsg) {
-        if (isCurrentlyOnMainThread()) {
-            dataList.add(0,logMsg + " (main thread) ");
-            dataAdapter.clear();
-            dataAdapter.addAll(dataList);
-        } else {
-            dataList.add(0,logMsg + " (NOT main thread) ");
-
-            // You can only do below stuff on main thread.
-            new Handler(Looper.getMainLooper()).post(new Runnable() {
-
-                @Override
-                public void run() {
-                    dataAdapter.clear();
-                    dataAdapter.addAll(dataList);
-
-                }
-            });
-        }
+        Logs.d("addData---"+dataList.size());
+        dataList.add(0,logMsg + " (main thread) ");
+        dataAdapter.notifyDataSetChanged();
+//        if (RxUtils.isCurrentlyOnMainThread()) {
+//            dataList.add(0,logMsg + " (main thread) ");
+//            dataAdapter.clear();
+//            dataAdapter.addAll(dataList);
+//        } else {
+//            dataList.add(0,logMsg + " (NOT main thread) ");
+//
+//            // You can only do below stuff on main thread.
+//            new Handler(Looper.getMainLooper()).post(new Runnable() {
+//
+//                @Override
+//                public void run() {
+//                    dataAdapter.clear();
+//                    dataAdapter.addAll(dataList);
+//
+//                }
+//            });
+//        }
     }
 
-    private boolean isCurrentlyOnMainThread() {
-        return Looper.myLooper() == Looper.getMainLooper();
-    }
+
 
     private class DataAdapter
             extends ArrayAdapter<String> {
