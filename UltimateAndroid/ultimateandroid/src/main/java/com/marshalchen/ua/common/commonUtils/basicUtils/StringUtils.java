@@ -1,5 +1,10 @@
 package com.marshalchen.ua.common.commonUtils.basicUtils;
 
+import android.content.ClipData;
+import android.content.ClipboardManager;
+import android.content.Context;
+import android.widget.Toast;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -54,6 +59,7 @@ public class StringUtils {
 
     /**
      * Decode Html String
+     *
      * @param string
      * @return
      */
@@ -72,9 +78,9 @@ public class StringUtils {
     }
 
 
-
     /**
      * Convert byte[] to Hex String
+     *
      * @param keyData
      * @return
      */
@@ -93,7 +99,6 @@ public class StringUtils {
         }
         return sb.toString();
     }
-
 
 
     /**
@@ -131,5 +136,20 @@ public class StringUtils {
         }
 
         return false;
+    }
+
+    /**
+     * Copy text to system clip board
+     *
+     * @param context
+     * @param text
+     * @param success
+     */
+    public static void copyToClipBoard(Context context, String text, String success) {
+        ClipData clipData = ClipData.newPlainText("UA", text);
+        ClipboardManager manager = (ClipboardManager) context.getSystemService(
+                Context.CLIPBOARD_SERVICE);
+        manager.setPrimaryClip(clipData);
+        Toast.makeText(context, success, Toast.LENGTH_SHORT).show();
     }
 }
