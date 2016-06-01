@@ -1,5 +1,7 @@
 package com.marshalchen.ua.common.commonUtils.moduleUtils;
 
+import android.webkit.WebResourceError;
+import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -27,15 +29,12 @@ public class SampleWebViewClient extends WebViewClient {
         super.onPageFinished(view, url);    //To change body of overridden methods use File | Settings | File Templates.
     }
 
-    @Override
-    public void onReceivedError(WebView view, int errorCode,
-                                String description, String failingUrl) {
-        super.onReceivedError(view, errorCode, description, failingUrl);
 
-        Logs.i("-MyWebViewClient->onReceivedError()--\n errorCode=" + errorCode + " \ndescription=" + description + " \nfailingUrl=" + failingUrl);
+    @Override
+    public void onReceivedError(WebView view, WebResourceRequest request, WebResourceError error) {
+        super.onReceivedError(view, request, error);
 
         view.loadDataWithBaseURL("", showErrorString, "text/html", "utf-8", null);
-
     }
 
     public String getShowErrorString() {
