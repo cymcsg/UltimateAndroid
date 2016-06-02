@@ -31,3 +31,5 @@ dependencies {
     compile 'com.squareup.retrofit2:retrofit:2.0.2'
 
 }
+
+apply from: 'android-release-aar.gradle'

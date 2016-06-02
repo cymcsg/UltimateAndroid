@@ -1,0 +1,5 @@
+ext {
+    PUBLISH_GROUP_ID = 'com.marshalchen.ultimateandroid'
+    PUBLISH_ARTIFACT_ID = 'ultimateandroid'
+    PUBLISH_VERSION = '0.10.1'
+}
