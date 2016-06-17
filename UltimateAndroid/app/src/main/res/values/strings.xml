@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">UltimateAndroid</string>
-    <string name="title_activity_rxbasic">RxbasicActivity</string>
-    <string name="title_activity_rx_image">RxImageActivity</string>
+    <string name="title_activity_rx_image">GithubActivity</string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
 </resources>
