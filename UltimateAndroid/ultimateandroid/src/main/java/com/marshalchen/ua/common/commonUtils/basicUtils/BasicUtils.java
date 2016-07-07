@@ -25,8 +25,6 @@ import java.util.*;
  * <p>{@link #iterateListHashMap(java.util.List)}</p>
  * <p>{@link #sendIntent(android.content.Context, Class)}</p>
  * <p>{@link #sendIntent(android.content.Context, Class, String, android.os.Parcelable)}</p>
- * <p>{@link #getSharedPreferences(android.content.Context, String, String)}</p>
- * <p>{@link #putSharedPreferences(android.content.Context, String, String, String)}</p>
  */
 public class BasicUtils {
     /**

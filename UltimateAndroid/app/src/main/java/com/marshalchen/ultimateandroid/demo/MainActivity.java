@@ -12,9 +12,6 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.marshalchen.ua.common.commonUtils.basicUtils.BasicUtils;
-import com.marshalchen.ua.common.commonUtils.logUtils.Timber;
-
 import java.text.Collator;
 import java.util.ArrayList;
 import java.util.Collections;
