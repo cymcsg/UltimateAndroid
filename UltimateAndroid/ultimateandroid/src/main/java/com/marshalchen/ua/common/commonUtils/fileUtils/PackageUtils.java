@@ -21,25 +21,25 @@ import com.marshalchen.ua.common.commonUtils.basicUtils.BasicUtils;
 /**
  * PackageUtils
  * <ul>
- * <strong>Install package</strong>
+ * Install package
  * <li>{@link PackageUtils#installNormal(Context, String)}</li>
  * <li>{@link PackageUtils#installSilent(Context, String)}</li>
  * <li>{@link PackageUtils#install(Context, String)}</li>
  * </ul>
  * <ul>
- * <strong>Uninstall package</strong>
+ * Uninstall package
  * <li>{@link PackageUtils#uninstallNormal(Context, String)}</li>
  * <li>{@link PackageUtils#uninstallSilent(Context, String)}</li>
  * <li>{@link PackageUtils#uninstall(Context, String)}</li>
  * </ul>
  * <ul>
- * <strong>Is system application</strong>
+ * Is system application
  * <li>{@link PackageUtils#isSystemApplication(Context)}</li>
  * <li>{@link PackageUtils#isSystemApplication(Context, String)}</li>
  * <li>{@link PackageUtils#isSystemApplication(PackageManager, String)}</li>
  * </ul>
  * <ul>
- * <strong>Others</strong>
+ * Others
  * <li>{@link PackageUtils#getInstallLocation()} get system install location</li>
  * <li>{@link PackageUtils#isTopActivity(Context, String)} whether the app whost package's name is packageName is on the
  * top of the stack</li>
@@ -102,9 +102,9 @@ public class PackageUtils {
     /**
      * install package silent by root
      * <ul>
-     * <strong>Attentions:</strong>
+     * Attentions:
      * <li>Don't call this on the ui thread, it may costs some times.</li>
-     * <li>You should add <strong>android.permission.INSTALL_PACKAGES</strong> in manifest, so no need to request root
+     * <li>You should add android.permission.INSTALL_PACKAGES in manifest, so no need to request root
      * permission, if you are system app.</li>
      * <li>Default pm install params is "-r".</li>
      * </ul>
@@ -122,9 +122,9 @@ public class PackageUtils {
     /**
      * install package silent by root
      * <ul>
-     * <strong>Attentions:</strong>
+     * Attentions:
      * <li>Don't call this on the ui thread, it may costs some times.</li>
-     * <li>You should add <strong>android.permission.INSTALL_PACKAGES</strong> in manifest, so no need to request root
+     * <li>You should add android.permission.INSTALL_PACKAGES in manifest, so no need to request root
      * permission, if you are system app.</li>
      * </ul>
      *
@@ -322,9 +322,9 @@ public class PackageUtils {
     /**
      * uninstall package silent by root
      * <ul>
-     * <strong>Attentions:</strong>
+     * Attentions:
      * <li>Don't call this on the ui thread, it may costs some times.</li>
-     * <li>You should add <strong>android.permission.DELETE_PACKAGES</strong> in manifest, so no need to request root
+     * <li>You should add android.permission.DELETE_PACKAGES in manifest, so no need to request root
      * permission, if you are system app.</li>
      * </ul>
      *
@@ -424,8 +424,8 @@ public class PackageUtils {
     /**
      * whether the app whost package's name is packageName is on the top of the stack
      * <ul>
-     * <strong>Attentions:</strong>
-     * <li>You should add <strong>android.permission.GET_TASKS</strong> in manifest</li>
+     * Attentions:
+     * <li>You should add android.permission.GET_TASKS in manifest</li>
      * </ul>
      *
      * @param context
@@ -476,7 +476,7 @@ public class PackageUtils {
     }
 
     /**
-     * get system install location<br/>
+     * get system install location
      * can be set by System Menu Setting->Storage->Prefered install location
      *
      * @return
@@ -540,255 +540,255 @@ public class PackageUtils {
     }
 
     /**
-     * Installation return code<br/>
+     * <p>Installation return code</p>
      * install success.
      */
     public static final int INSTALL_SUCCEEDED = 1;
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * the package is already installed.
      */
     public static final int INSTALL_FAILED_ALREADY_EXISTS = -1;
 
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * the package archive file is invalid.
      */
     public static final int INSTALL_FAILED_INVALID_APK = -2;
 
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * the URI passed in is invalid.
      */
     public static final int INSTALL_FAILED_INVALID_URI = -3;
 
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * the package manager service found that the device didn't have enough storage space to install the app.
      */
     public static final int INSTALL_FAILED_INSUFFICIENT_STORAGE = -4;
 
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * a package is already installed with the same name.
      */
     public static final int INSTALL_FAILED_DUPLICATE_PACKAGE = -5;
 
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * the requested shared user does not exist.
      */
     public static final int INSTALL_FAILED_NO_SHARED_USER = -6;
 
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * a previously installed package of the same name has a different signature than the new package (and the old
      * package's data was not removed).
      */
     public static final int INSTALL_FAILED_UPDATE_INCOMPATIBLE = -7;
 
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * the new package is requested a shared user which is already installed on the device and does not have matching
      * signature.
      */
     public static final int INSTALL_FAILED_SHARED_USER_INCOMPATIBLE = -8;
 
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * the new package uses a shared library that is not available.
      */
     public static final int INSTALL_FAILED_MISSING_SHARED_LIBRARY = -9;
 
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * the new package uses a shared library that is not available.
      */
     public static final int INSTALL_FAILED_REPLACE_COULDNT_DELETE = -10;
 
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * the new package failed while optimizing and validating its dex files, either because there was not enough storage
      * or the validation failed.
      */
     public static final int INSTALL_FAILED_DEXOPT = -11;
 
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * the new package failed because the current SDK version is older than that required by the package.
      */
     public static final int INSTALL_FAILED_OLDER_SDK = -12;
 
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * the new package failed because it contains a content provider with the same authority as a provider already
      * installed in the system.
      */
     public static final int INSTALL_FAILED_CONFLICTING_PROVIDER = -13;
 
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * the new package failed because the current SDK version is newer than that required by the package.
      */
     public static final int INSTALL_FAILED_NEWER_SDK = -14;
 
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * the new package failed because it has specified that it is a test-only package and the caller has not supplied
      */
     public static final int INSTALL_FAILED_TEST_ONLY = -15;
 
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * the package being installed contains native code, but none that is compatible with the the device's CPU_ABI.
      */
     public static final int INSTALL_FAILED_CPU_ABI_INCOMPATIBLE = -16;
 
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * the new package uses a feature that is not available.
      */
     public static final int INSTALL_FAILED_MISSING_FEATURE = -17;
 
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * a secure container mount point couldn't be accessed on external media.
      */
     public static final int INSTALL_FAILED_CONTAINER_ERROR = -18;
 
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * the new package couldn't be installed in the specified install location.
      */
     public static final int INSTALL_FAILED_INVALID_INSTALL_LOCATION = -19;
 
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * the new package couldn't be installed in the specified install location because the media is not available.
      */
     public static final int INSTALL_FAILED_MEDIA_UNAVAILABLE = -20;
 
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * the new package couldn't be installed because the verification timed out.
      */
     public static final int INSTALL_FAILED_VERIFICATION_TIMEOUT = -21;
 
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * the new package couldn't be installed because the verification did not succeed.
      */
     public static final int INSTALL_FAILED_VERIFICATION_FAILURE = -22;
 
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * the package changed from what the calling program expected.
      */
     public static final int INSTALL_FAILED_PACKAGE_CHANGED = -23;
 
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * the new package is assigned a different UID than it previously held.
      */
     public static final int INSTALL_FAILED_UID_CHANGED = -24;
 
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * if the parser was given a path that is not a file, or does not end with the expected '.apk' extension.
      */
     public static final int INSTALL_PARSE_FAILED_NOT_APK = -100;
 
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * if the parser was unable to retrieve the AndroidManifest.xml file.
      */
     public static final int INSTALL_PARSE_FAILED_BAD_MANIFEST = -101;
 
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * if the parser encountered an unexpected exception.
      */
     public static final int INSTALL_PARSE_FAILED_UNEXPECTED_EXCEPTION = -102;
 
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * if the parser did not find any certificates in the .apk.
      */
     public static final int INSTALL_PARSE_FAILED_NO_CERTIFICATES = -103;
 
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * if the parser found inconsistent certificates on the files in the .apk.
      */
     public static final int INSTALL_PARSE_FAILED_INCONSISTENT_CERTIFICATES = -104;
 
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * if the parser encountered a CertificateEncodingException in one of the files in the .apk.
      */
     public static final int INSTALL_PARSE_FAILED_CERTIFICATE_ENCODING = -105;
 
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * if the parser encountered a bad or missing package name in the manifest.
      */
     public static final int INSTALL_PARSE_FAILED_BAD_PACKAGE_NAME = -106;
 
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * if the parser encountered a bad shared user id name in the manifest.
      */
     public static final int INSTALL_PARSE_FAILED_BAD_SHARED_USER_ID = -107;
 
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * if the parser encountered some structural problem in the manifest.
      */
     public static final int INSTALL_PARSE_FAILED_MANIFEST_MALFORMED = -108;
 
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * if the parser did not find any actionable tags (instrumentation or application) in the manifest.
      */
     public static final int INSTALL_PARSE_FAILED_MANIFEST_EMPTY = -109;
 
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * if the system failed to install the package because of system issues.
      */
     public static final int INSTALL_FAILED_INTERNAL_ERROR = -110;
     /**
-     * Installation return code<br/>
+     * <p> Installation return code</p>
      * other reason
      */
     public static final int INSTALL_FAILED_OTHER = -1000000;
 
     /**
-     * Uninstall return code<br/>
+     * <p> Uninstall return code</p>
      * uninstall success.
      */
     public static final int DELETE_SUCCEEDED = 1;
 
     /**
-     * Uninstall return code<br/>
+     * <p> Uninstall return code</p>
      * uninstall fail if the system failed to delete the package for an unspecified reason.
      */
     public static final int DELETE_FAILED_INTERNAL_ERROR = -1;
 
     /**
-     * Uninstall return code<br/>
+     * <p> Uninstall return code</p>
      * uninstall fail if the system failed to delete the package because it is the active DevicePolicy manager.
      */
     public static final int DELETE_FAILED_DEVICE_POLICY_MANAGER = -2;
 
     /**
-     * Uninstall return code<br/>
+     * <p> Uninstall return code</p>
      * uninstall fail if pcakge name is invalid
      */
     public static final int DELETE_FAILED_INVALID_PACKAGE = -3;
 
     /**
-     * Uninstall return code<br/>
+     * <p> Uninstall return code</p>
      * uninstall fail if permission denied
      */
     public static final int DELETE_FAILED_PERMISSION_DENIED = -4;

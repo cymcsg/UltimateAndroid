@@ -6,13 +6,7 @@ import android.support.v7.widget.Toolbar;
 
 import android.os.Bundle;
 
-import com.marshalchen.ua.common.commonUtils.logUtils.Logs;
 
-import java.io.File;
-
-import rx.Observable;
-import rx.functions.Action1;
-import rx.functions.Func1;
 
 
 public class GithubActivity extends AppCompatActivity {
