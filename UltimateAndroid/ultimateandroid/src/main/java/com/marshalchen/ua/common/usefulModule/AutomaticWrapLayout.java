@@ -6,7 +6,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.marshalchen.ua.common.commonUtils.uiUtils.BasicUiUtils;
+import com.marshalchen.ua.common.commonUtils.uiUtils.UiUtils;
 
 
 /**
@@ -27,14 +27,14 @@ public class AutomaticWrapLayout extends ViewGroup {
         super(context);
         AutomaticWrapLayout.countsArray[0]=0;
         AutomaticWrapLayout.countsArray[1]=0;
-        VIEW_MARGIN= BasicUiUtils.dip2px(context, 6.0f);
+        VIEW_MARGIN= UiUtils.dip2px(context, 6.0f);
         this.context=context;
 
     }
 
     public AutomaticWrapLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
-        VIEW_MARGIN= BasicUiUtils.dip2px(context,6.0f);
+        VIEW_MARGIN= UiUtils.dip2px(context,6.0f);
         this.context=context;
     }
 

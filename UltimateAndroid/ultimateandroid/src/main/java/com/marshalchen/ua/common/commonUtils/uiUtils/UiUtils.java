@@ -1,13 +1,12 @@
 package com.marshalchen.ua.common.commonUtils.uiUtils;
 
 import android.app.Activity;
-import android.app.ActivityManager;
 import android.app.AlertDialog;
-import android.content.ComponentName;
 import android.content.Context;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.graphics.Rect;
+import android.util.DisplayMetrics;
 import android.util.TypedValue;
 import android.view.MotionEvent;
 import android.view.View;
@@ -18,12 +17,10 @@ import android.view.animation.Transformation;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.RelativeLayout;
 
-import java.util.List;
-
 /**
  * Some method help do some UI works
  */
-public class BasicUiUtils {
+public class UiUtils {
     /**
      * Hide soft keyboard method.
      *
@@ -56,7 +53,7 @@ public class BasicUiUtils {
      */
     public static void hiddenKeyBoardByClick(Context context, Activity activity, MotionEvent motionEvent) {
         if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
-            BasicUiUtils.hiddenKeyboard(context, activity);
+            UiUtils.hiddenKeyboard(context, activity);
         }
     }
 
@@ -272,6 +269,20 @@ public class BasicUiUtils {
      */
     public static int getTopBarHeight(Activity activity) {
         return activity.getWindow().findViewById(Window.ID_ANDROID_CONTENT).getTop();
+    }
+
+    public static int getScreenWidth(Context context) {
+        WindowManager windowManager = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
+        DisplayMetrics outMetrics = new DisplayMetrics();
+        windowManager.getDefaultDisplay().getMetrics(outMetrics);
+        return outMetrics.widthPixels;
+    }
+
+    public static int getScreenHeight(Context context) {
+        WindowManager windowManager = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
+        DisplayMetrics outMetrics = new DisplayMetrics();
+        windowManager.getDefaultDisplay().getMetrics(outMetrics);
+        return outMetrics.heightPixels;
     }
 
 }

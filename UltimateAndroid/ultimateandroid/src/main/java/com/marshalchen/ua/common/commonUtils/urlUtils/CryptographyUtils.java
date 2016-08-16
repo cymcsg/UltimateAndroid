@@ -159,4 +159,28 @@ public class CryptographyUtils {
     }
 
 
+    public static String getSHA256(String data) {
+        return getSHA256(data.getBytes());
+    }
+
+
+    public static String getSHA256(byte[] data) {
+        return byteArrayToHex(encryptSHA256(data));
+    }
+
+    public static byte[] encryptSHA256(byte[] data) {
+        return encryptAlgorithm(data, "SHA-256");
+    }
+
+
+    public static byte[] encryptAlgorithm(byte[] data, String algorithm) {
+        try {
+            MessageDigest md = MessageDigest.getInstance(algorithm);
+            md.update(data);
+            return md.digest();
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        }
+        return new byte[0];
+    }
 }
