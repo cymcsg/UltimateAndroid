@@ -55,21 +55,21 @@ or grab via Maven
 >
 > 1. [Butter Knife](https://github.com/JakeWharton/butterknife) for View Injection
 >
->2. [retrofit](https://github.com/square/retrofit)
+> 2. [retrofit](https://github.com/square/retrofit)
 >
->3. [RxJava](https://github.com/ReactiveX/RxJava)
+> 3. [RxJava](https://github.com/ReactiveX/RxJava)
 >
->4. [RxAndroid](https://github.com/ReactiveX/RxAndroid)
+> 4. [RxAndroid](https://github.com/ReactiveX/RxAndroid)
 >
->5. [RxBinding](https://github.com/JakeWharton/RxBinding)
+> 5. [RxBinding](https://github.com/JakeWharton/RxBinding)
 >
->6. [DiskLruCache](https://github.com/JakeWharton/DiskLruCache)
+> 6. [DiskLruCache](https://github.com/JakeWharton/DiskLruCache)
 >
->7. [glide](https://github.com/bumptech/glide)
+> 7. [glide](https://github.com/bumptech/glide)
 >
->8. [google-gson](https://github.com/google/gson)
+> 8. [google-gson](https://github.com/google/gson)
 >
->9. [glide-transformations](https://github.com/wasabeef/glide-transformations)
+> 9. [glide-transformations](https://github.com/wasabeef/glide-transformations)
 >
 
 
@@ -77,6 +77,44 @@ or grab via Maven
 If there's anything I forgot to mention,I would be very appreciated for helping me notice it.
 
 
+
+Screenshot:
+
+<h2 ><a name="demo_of_ui">Screen Shot:</h2>  
+
+![tutorials2](https://bytebucket.org/marshalchen/images/raw/0bed76fcdecb604afab39df9ce1a509af4b6f995/ultimaterecyclerview/ultimate_recyclerview6.gif)
+
+
+
+![tutorials2](https://bytebucket.org/marshalchen/images/raw/e943b6016246e1f3c2085a24e1a773e0107775b3/ultimateandroid/tutorial2-14.gif)
+
+![tutorials2](https://bytebucket.org/marshalchen/images/raw/e943b6016246e1f3c2085a24e1a773e0107775b3/ultimateandroid/tutorial2-1.gif)
+
+![tutorials2](https://bytebucket.org/marshalchen/images/raw/e943b6016246e1f3c2085a24e1a773e0107775b3/ultimateandroid/tutorial2-2.gif)
+
+![tutorials2](https://bytebucket.org/marshalchen/images/raw/e943b6016246e1f3c2085a24e1a773e0107775b3/ultimateandroid/tutorial2-3.gif)
+
+![tutorials2](https://bytebucket.org/marshalchen/images/raw/e943b6016246e1f3c2085a24e1a773e0107775b3/ultimateandroid/tutorial2-4.gif)
+
+![tutorials2](https://bytebucket.org/marshalchen/images/raw/e943b6016246e1f3c2085a24e1a773e0107775b3/ultimateandroid/tutorial2-5.gif)
+
+![tutorials2](https://bytebucket.org/marshalchen/images/raw/e943b6016246e1f3c2085a24e1a773e0107775b3/ultimateandroid/tutorial2-6.gif)
+
+![tutorials2](https://bytebucket.org/marshalchen/images/raw/e943b6016246e1f3c2085a24e1a773e0107775b3/ultimateandroid/tutorial2-7.gif)
+
+![tutorials2](https://bytebucket.org/marshalchen/images/raw/e943b6016246e1f3c2085a24e1a773e0107775b3/ultimateandroid/tutorial2-8.gif)
+
+![tutorials2](https://bytebucket.org/marshalchen/images/raw/e943b6016246e1f3c2085a24e1a773e0107775b3/ultimateandroid/tutorial2-9.gif)
+
+![tutorials2](https://bytebucket.org/marshalchen/images/raw/e943b6016246e1f3c2085a24e1a773e0107775b3/ultimateandroid/tutorial2-10.gif)
+
+![tutorials2](https://bytebucket.org/marshalchen/images/raw/e943b6016246e1f3c2085a24e1a773e0107775b3/ultimateandroid/tutorial2-11.gif)
+
+![tutorials2](https://bytebucket.org/marshalchen/images/raw/e943b6016246e1f3c2085a24e1a773e0107775b3/ultimateandroid/tutorial2-12.gif)
+
+
+
+<br>
 
 
 ## License
