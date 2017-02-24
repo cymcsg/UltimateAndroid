@@ -17,11 +17,15 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    lintOptions {
+        abortOnError false
+    }
+
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile('com.android.support:appcompat-v7:24.0.0@aar') {
+    compile('com.android.support:appcompat-v7:25.2.0@aar') {
         transitive = true
     }
     compile('org.greenrobot:greendao:2.2.1@jar') {

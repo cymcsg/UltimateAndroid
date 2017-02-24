@@ -1,7 +1,7 @@
 ext {
     PUBLISH_GROUP_ID = 'com.marshalchen.ultimateandroid'
     PUBLISH_ARTIFACT_ID = 'ultimateandroid'
-    PUBLISH_VERSION = '0.10.1'
+    PUBLISH_VERSION = '0.10.2'
     POM_DESCRIPTION='UltimateAndroid is a rapid development framework for developing your apps'
     POM_URL='https://github.com/cymcsg/UltimateAndroid'
     POM_SCM_URL='https://github.com/cymcsg/UltimateAndroid'
