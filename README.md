@@ -1,6 +1,6 @@
 # UltimateAndroid
 
-### Version:0.10.1
+### Version:0.10.2
 
 ### UltimateAndroid is a rapid development framework for developing apps
 
@@ -33,7 +33,7 @@ repositories {
     }
 dependencies {
     ...
-    compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.10.1'
+    compile 'com.marshalchen.ultimateandroid:ultimateandroid:0.10.2'
 }
 ```
 
