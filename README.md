@@ -43,7 +43,7 @@ or grab via Maven
 <dependency>
   <groupId>com.marshalchen.ultimateandroid</groupId>
   <artifactId>ultimateandroid</artifactId>
-  <version>0.10.1</version>
+  <version>0.10.2</version>
 </dependency>
 ```
 
