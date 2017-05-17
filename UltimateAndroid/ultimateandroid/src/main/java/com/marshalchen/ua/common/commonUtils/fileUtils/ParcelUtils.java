@@ -54,7 +54,7 @@ public class ParcelUtils {
             return null;
         }
 
-        Map<String, String> map = new HashMap<String, String>();
+        Map<String, String> map = new HashMap<>();
         for (int i = 0; i < size; i++) {
             String key = in.readString();
             map.put(key, in.readString());
@@ -100,7 +100,7 @@ public class ParcelUtils {
             return null;
         }
 
-        Map<String, V> map = new HashMap<String, V>();
+        Map<String, V> map = new HashMap<>();
         for (int i = 0; i < size; i++) {
             String key = in.readString();
             map.put(key, (V)in.readParcelable(loader));
@@ -147,7 +147,7 @@ public class ParcelUtils {
             return null;
         }
 
-        Map<K, V> map = new HashMap<K, V>();
+        Map<K, V> map = new HashMap<>();
         for (int i = 0; i < size; i++) {
             map.put((K)in.readParcelable(loader), (V)in.readParcelable(loader));
         }

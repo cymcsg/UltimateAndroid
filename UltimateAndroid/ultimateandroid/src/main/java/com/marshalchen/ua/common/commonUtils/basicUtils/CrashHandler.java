@@ -39,7 +39,7 @@ public class CrashHandler implements UncaughtExceptionHandler {
 
     private Context mContext;
 
-    private Map<String, String> infos = new HashMap<String, String>();
+    private Map<String, String> infos = new HashMap<>();
 
 
     private SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
