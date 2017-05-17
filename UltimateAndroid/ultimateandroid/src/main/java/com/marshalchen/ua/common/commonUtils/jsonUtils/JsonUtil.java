@@ -32,7 +32,7 @@ public class JsonUtil {
         Gson gson = new Gson();
         JsonElement jsonElement = jsonParser.parse(jsonString);
         Logs.d(jsonElement.isJsonArray() + "   " + jsonElement.isJsonObject());
-        ArrayList<HashMap<String, Object>> arrayList = new ArrayList<HashMap<String, Object>>();
+        ArrayList<HashMap<String, Object>> arrayList = new ArrayList<>();
         if (jsonElement.isJsonObject()) {
             arrayList.add(gson.fromJson(jsonElement, HashMap.class));
         } else if (jsonElement.isJsonArray()) {
