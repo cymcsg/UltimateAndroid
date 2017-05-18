@@ -24,7 +24,7 @@ public class JsonMetaReader<T> {
 
     public List<T> read(Reader reader) throws IOException {
         com.google.gson.stream.JsonReader jsonReader = new com.google.gson.stream.JsonReader(reader);
-        List<T> objs = new ArrayList<T>();
+        List<T> objs = new ArrayList<>();
         jsonReader.beginArray();
         while (jsonReader.hasNext()) {
             T obj = (new Gson()).fromJson(jsonReader, getPersistentClass());
