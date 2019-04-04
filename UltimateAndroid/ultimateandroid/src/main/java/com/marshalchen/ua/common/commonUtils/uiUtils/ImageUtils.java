@@ -83,7 +83,7 @@ public class ImageUtils {
         // draw watermark into
         cv.drawBitmap(watermark, w - ww + 5, h - wh + 5, null);
         // save all clip
-        cv.save(Canvas.ALL_SAVE_FLAG);
+        cv.save();
         // store
         cv.restore();
         return newb;
